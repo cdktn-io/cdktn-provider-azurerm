@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,96 +13,92 @@ import * as cdktn from 'cdktn';
 
 export interface LogAnalyticsWorkspaceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#allow_resource_only_permissions LogAnalyticsWorkspace#allow_resource_only_permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#allow_resource_only_permissions LogAnalyticsWorkspace#allow_resource_only_permissions}
   */
   readonly allowResourceOnlyPermissions?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#cmk_for_query_forced LogAnalyticsWorkspace#cmk_for_query_forced}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#cmk_for_query_forced LogAnalyticsWorkspace#cmk_for_query_forced}
   */
   readonly cmkForQueryForced?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#daily_quota_gb LogAnalyticsWorkspace#daily_quota_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#daily_quota_gb LogAnalyticsWorkspace#daily_quota_gb}
   */
   readonly dailyQuotaGb?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#data_collection_rule_id LogAnalyticsWorkspace#data_collection_rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#data_collection_rule_id LogAnalyticsWorkspace#data_collection_rule_id}
   */
   readonly dataCollectionRuleId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#id LogAnalyticsWorkspace#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#id LogAnalyticsWorkspace#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#immediate_data_purge_on_30_days_enabled LogAnalyticsWorkspace#immediate_data_purge_on_30_days_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#immediate_data_purge_on_30_days_enabled LogAnalyticsWorkspace#immediate_data_purge_on_30_days_enabled}
   */
   readonly immediateDataPurgeOn30DaysEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#internet_ingestion_enabled LogAnalyticsWorkspace#internet_ingestion_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#internet_ingestion_access_type LogAnalyticsWorkspace#internet_ingestion_access_type}
   */
-  readonly internetIngestionEnabled?: boolean | cdktn.IResolvable;
+  readonly internetIngestionAccessType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#internet_query_enabled LogAnalyticsWorkspace#internet_query_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#internet_query_access_type LogAnalyticsWorkspace#internet_query_access_type}
   */
-  readonly internetQueryEnabled?: boolean | cdktn.IResolvable;
+  readonly internetQueryAccessType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#local_authentication_disabled LogAnalyticsWorkspace#local_authentication_disabled}
-  */
-  readonly localAuthenticationDisabled?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#local_authentication_enabled LogAnalyticsWorkspace#local_authentication_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#local_authentication_enabled LogAnalyticsWorkspace#local_authentication_enabled}
   */
   readonly localAuthenticationEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#location LogAnalyticsWorkspace#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#location LogAnalyticsWorkspace#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#name LogAnalyticsWorkspace#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#name LogAnalyticsWorkspace#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#reservation_capacity_in_gb_per_day LogAnalyticsWorkspace#reservation_capacity_in_gb_per_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#reservation_capacity_in_gb_per_day LogAnalyticsWorkspace#reservation_capacity_in_gb_per_day}
   */
   readonly reservationCapacityInGbPerDay?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#resource_group_name LogAnalyticsWorkspace#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#resource_group_name LogAnalyticsWorkspace#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#retention_in_days LogAnalyticsWorkspace#retention_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#retention_in_days LogAnalyticsWorkspace#retention_in_days}
   */
   readonly retentionInDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#sku LogAnalyticsWorkspace#sku}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#sku LogAnalyticsWorkspace#sku}
   */
   readonly sku?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#tags LogAnalyticsWorkspace#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#tags LogAnalyticsWorkspace#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#identity LogAnalyticsWorkspace#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#identity LogAnalyticsWorkspace#identity}
   */
   readonly identity?: LogAnalyticsWorkspaceIdentity;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#timeouts LogAnalyticsWorkspace#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#timeouts LogAnalyticsWorkspace#timeouts}
   */
   readonly timeouts?: LogAnalyticsWorkspaceTimeouts;
 }
 export interface LogAnalyticsWorkspaceIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#identity_ids LogAnalyticsWorkspace#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#identity_ids LogAnalyticsWorkspace#identity_ids}
   */
   readonly identityIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#type LogAnalyticsWorkspace#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#type LogAnalyticsWorkspace#type}
   */
   readonly type: string;
 }
@@ -222,19 +218,19 @@ export class LogAnalyticsWorkspaceIdentityOutputReference extends cdktn.ComplexO
 }
 export interface LogAnalyticsWorkspaceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#create LogAnalyticsWorkspace#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#create LogAnalyticsWorkspace#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#delete LogAnalyticsWorkspace#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#delete LogAnalyticsWorkspace#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#read LogAnalyticsWorkspace#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#read LogAnalyticsWorkspace#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#update LogAnalyticsWorkspace#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#update LogAnalyticsWorkspace#update}
   */
   readonly update?: string;
 }
@@ -415,7 +411,7 @@ export class LogAnalyticsWorkspaceTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace}
 */
 export class LogAnalyticsWorkspace extends cdktn.TerraformResource {
 
@@ -431,7 +427,7 @@ export class LogAnalyticsWorkspace extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a LogAnalyticsWorkspace resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogAnalyticsWorkspace to import
-  * @param importFromId The id of the existing LogAnalyticsWorkspace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogAnalyticsWorkspace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogAnalyticsWorkspace to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -443,7 +439,7 @@ export class LogAnalyticsWorkspace extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -454,8 +450,8 @@ export class LogAnalyticsWorkspace extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_log_analytics_workspace',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.81.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -471,9 +467,8 @@ export class LogAnalyticsWorkspace extends cdktn.TerraformResource {
     this._dataCollectionRuleId = config.dataCollectionRuleId;
     this._id = config.id;
     this._immediateDataPurgeOn30DaysEnabled = config.immediateDataPurgeOn30DaysEnabled;
-    this._internetIngestionEnabled = config.internetIngestionEnabled;
-    this._internetQueryEnabled = config.internetQueryEnabled;
-    this._localAuthenticationDisabled = config.localAuthenticationDisabled;
+    this._internetIngestionAccessType = config.internetIngestionAccessType;
+    this._internetQueryAccessType = config.internetQueryAccessType;
     this._localAuthenticationEnabled = config.localAuthenticationEnabled;
     this._location = config.location;
     this._name = config.name;
@@ -586,55 +581,39 @@ export class LogAnalyticsWorkspace extends cdktn.TerraformResource {
     return this._immediateDataPurgeOn30DaysEnabled;
   }
 
-  // internet_ingestion_enabled - computed: false, optional: true, required: false
-  private _internetIngestionEnabled?: boolean | cdktn.IResolvable; 
-  public get internetIngestionEnabled() {
-    return this.getBooleanAttribute('internet_ingestion_enabled');
+  // internet_ingestion_access_type - computed: false, optional: true, required: false
+  private _internetIngestionAccessType?: string; 
+  public get internetIngestionAccessType() {
+    return this.getStringAttribute('internet_ingestion_access_type');
   }
-  public set internetIngestionEnabled(value: boolean | cdktn.IResolvable) {
-    this._internetIngestionEnabled = value;
+  public set internetIngestionAccessType(value: string) {
+    this._internetIngestionAccessType = value;
   }
-  public resetInternetIngestionEnabled() {
-    this._internetIngestionEnabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get internetIngestionEnabledInput() {
-    return this._internetIngestionEnabled;
-  }
-
-  // internet_query_enabled - computed: false, optional: true, required: false
-  private _internetQueryEnabled?: boolean | cdktn.IResolvable; 
-  public get internetQueryEnabled() {
-    return this.getBooleanAttribute('internet_query_enabled');
-  }
-  public set internetQueryEnabled(value: boolean | cdktn.IResolvable) {
-    this._internetQueryEnabled = value;
-  }
-  public resetInternetQueryEnabled() {
-    this._internetQueryEnabled = undefined;
+  public resetInternetIngestionAccessType() {
+    this._internetIngestionAccessType = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get internetQueryEnabledInput() {
-    return this._internetQueryEnabled;
+  public get internetIngestionAccessTypeInput() {
+    return this._internetIngestionAccessType;
   }
 
-  // local_authentication_disabled - computed: true, optional: true, required: false
-  private _localAuthenticationDisabled?: boolean | cdktn.IResolvable; 
-  public get localAuthenticationDisabled() {
-    return this.getBooleanAttribute('local_authentication_disabled');
+  // internet_query_access_type - computed: false, optional: true, required: false
+  private _internetQueryAccessType?: string; 
+  public get internetQueryAccessType() {
+    return this.getStringAttribute('internet_query_access_type');
   }
-  public set localAuthenticationDisabled(value: boolean | cdktn.IResolvable) {
-    this._localAuthenticationDisabled = value;
+  public set internetQueryAccessType(value: string) {
+    this._internetQueryAccessType = value;
   }
-  public resetLocalAuthenticationDisabled() {
-    this._localAuthenticationDisabled = undefined;
+  public resetInternetQueryAccessType() {
+    this._internetQueryAccessType = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get localAuthenticationDisabledInput() {
-    return this._localAuthenticationDisabled;
+  public get internetQueryAccessTypeInput() {
+    return this._internetQueryAccessType;
   }
 
-  // local_authentication_enabled - computed: true, optional: true, required: false
+  // local_authentication_enabled - computed: false, optional: true, required: false
   private _localAuthenticationEnabled?: boolean | cdktn.IResolvable; 
   public get localAuthenticationEnabled() {
     return this.getBooleanAttribute('local_authentication_enabled');
@@ -812,9 +791,8 @@ export class LogAnalyticsWorkspace extends cdktn.TerraformResource {
       data_collection_rule_id: cdktn.stringToTerraform(this._dataCollectionRuleId),
       id: cdktn.stringToTerraform(this._id),
       immediate_data_purge_on_30_days_enabled: cdktn.booleanToTerraform(this._immediateDataPurgeOn30DaysEnabled),
-      internet_ingestion_enabled: cdktn.booleanToTerraform(this._internetIngestionEnabled),
-      internet_query_enabled: cdktn.booleanToTerraform(this._internetQueryEnabled),
-      local_authentication_disabled: cdktn.booleanToTerraform(this._localAuthenticationDisabled),
+      internet_ingestion_access_type: cdktn.stringToTerraform(this._internetIngestionAccessType),
+      internet_query_access_type: cdktn.stringToTerraform(this._internetQueryAccessType),
       local_authentication_enabled: cdktn.booleanToTerraform(this._localAuthenticationEnabled),
       location: cdktn.stringToTerraform(this._location),
       name: cdktn.stringToTerraform(this._name),
@@ -866,23 +844,17 @@ export class LogAnalyticsWorkspace extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "boolean",
       },
-      internet_ingestion_enabled: {
-        value: cdktn.booleanToHclTerraform(this._internetIngestionEnabled),
+      internet_ingestion_access_type: {
+        value: cdktn.stringToHclTerraform(this._internetIngestionAccessType),
         isBlock: false,
         type: "simple",
-        storageClassType: "boolean",
+        storageClassType: "string",
       },
-      internet_query_enabled: {
-        value: cdktn.booleanToHclTerraform(this._internetQueryEnabled),
+      internet_query_access_type: {
+        value: cdktn.stringToHclTerraform(this._internetQueryAccessType),
         isBlock: false,
         type: "simple",
-        storageClassType: "boolean",
-      },
-      local_authentication_disabled: {
-        value: cdktn.booleanToHclTerraform(this._localAuthenticationDisabled),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
+        storageClassType: "string",
       },
       local_authentication_enabled: {
         value: cdktn.booleanToHclTerraform(this._localAuthenticationEnabled),

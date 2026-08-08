@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_system_topic
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_system_topic
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,60 +13,56 @@ import * as cdktn from 'cdktn';
 
 export interface EventgridSystemTopicConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_system_topic#id EventgridSystemTopic#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_system_topic#id EventgridSystemTopic#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_system_topic#location EventgridSystemTopic#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_system_topic#location EventgridSystemTopic#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_system_topic#name EventgridSystemTopic#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_system_topic#name EventgridSystemTopic#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_system_topic#resource_group_name EventgridSystemTopic#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_system_topic#resource_group_name EventgridSystemTopic#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_system_topic#source_arm_resource_id EventgridSystemTopic#source_arm_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_system_topic#source_resource_id EventgridSystemTopic#source_resource_id}
   */
-  readonly sourceArmResourceId?: string;
+  readonly sourceResourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_system_topic#source_resource_id EventgridSystemTopic#source_resource_id}
-  */
-  readonly sourceResourceId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_system_topic#tags EventgridSystemTopic#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_system_topic#tags EventgridSystemTopic#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_system_topic#topic_type EventgridSystemTopic#topic_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_system_topic#topic_type EventgridSystemTopic#topic_type}
   */
   readonly topicType: string;
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_system_topic#identity EventgridSystemTopic#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_system_topic#identity EventgridSystemTopic#identity}
   */
   readonly identity?: EventgridSystemTopicIdentity;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_system_topic#timeouts EventgridSystemTopic#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_system_topic#timeouts EventgridSystemTopic#timeouts}
   */
   readonly timeouts?: EventgridSystemTopicTimeouts;
 }
 export interface EventgridSystemTopicIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_system_topic#identity_ids EventgridSystemTopic#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_system_topic#identity_ids EventgridSystemTopic#identity_ids}
   */
   readonly identityIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_system_topic#type EventgridSystemTopic#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_system_topic#type EventgridSystemTopic#type}
   */
   readonly type: string;
 }
@@ -186,19 +182,19 @@ export class EventgridSystemTopicIdentityOutputReference extends cdktn.ComplexOb
 }
 export interface EventgridSystemTopicTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_system_topic#create EventgridSystemTopic#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_system_topic#create EventgridSystemTopic#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_system_topic#delete EventgridSystemTopic#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_system_topic#delete EventgridSystemTopic#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_system_topic#read EventgridSystemTopic#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_system_topic#read EventgridSystemTopic#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_system_topic#update EventgridSystemTopic#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_system_topic#update EventgridSystemTopic#update}
   */
   readonly update?: string;
 }
@@ -379,7 +375,7 @@ export class EventgridSystemTopicTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic}
 */
 export class EventgridSystemTopic extends cdktn.TerraformResource {
 
@@ -395,7 +391,7 @@ export class EventgridSystemTopic extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EventgridSystemTopic resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventgridSystemTopic to import
-  * @param importFromId The id of the existing EventgridSystemTopic that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_system_topic#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EventgridSystemTopic that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_system_topic#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventgridSystemTopic to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -407,7 +403,7 @@ export class EventgridSystemTopic extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_system_topic azurerm_eventgrid_system_topic} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -418,8 +414,8 @@ export class EventgridSystemTopic extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_eventgrid_system_topic',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.81.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -433,7 +429,6 @@ export class EventgridSystemTopic extends cdktn.TerraformResource {
     this._location = config.location;
     this._name = config.name;
     this._resourceGroupName = config.resourceGroupName;
-    this._sourceArmResourceId = config.sourceArmResourceId;
     this._sourceResourceId = config.sourceResourceId;
     this._tags = config.tags;
     this._topicType = config.topicType;
@@ -474,11 +469,6 @@ export class EventgridSystemTopic extends cdktn.TerraformResource {
     return this._location;
   }
 
-  // metric_arm_resource_id - computed: true, optional: false, required: false
-  public get metricArmResourceId() {
-    return this.getStringAttribute('metric_arm_resource_id');
-  }
-
   // metric_resource_id - computed: true, optional: false, required: false
   public get metricResourceId() {
     return this.getStringAttribute('metric_resource_id');
@@ -510,32 +500,13 @@ export class EventgridSystemTopic extends cdktn.TerraformResource {
     return this._resourceGroupName;
   }
 
-  // source_arm_resource_id - computed: true, optional: true, required: false
-  private _sourceArmResourceId?: string; 
-  public get sourceArmResourceId() {
-    return this.getStringAttribute('source_arm_resource_id');
-  }
-  public set sourceArmResourceId(value: string) {
-    this._sourceArmResourceId = value;
-  }
-  public resetSourceArmResourceId() {
-    this._sourceArmResourceId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sourceArmResourceIdInput() {
-    return this._sourceArmResourceId;
-  }
-
-  // source_resource_id - computed: true, optional: true, required: false
+  // source_resource_id - computed: false, optional: false, required: true
   private _sourceResourceId?: string; 
   public get sourceResourceId() {
     return this.getStringAttribute('source_resource_id');
   }
   public set sourceResourceId(value: string) {
     this._sourceResourceId = value;
-  }
-  public resetSourceResourceId() {
-    this._sourceResourceId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get sourceResourceIdInput() {
@@ -613,7 +584,6 @@ export class EventgridSystemTopic extends cdktn.TerraformResource {
       location: cdktn.stringToTerraform(this._location),
       name: cdktn.stringToTerraform(this._name),
       resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
-      source_arm_resource_id: cdktn.stringToTerraform(this._sourceArmResourceId),
       source_resource_id: cdktn.stringToTerraform(this._sourceResourceId),
       tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       topic_type: cdktn.stringToTerraform(this._topicType),
@@ -644,12 +614,6 @@ export class EventgridSystemTopic extends cdktn.TerraformResource {
       },
       resource_group_name: {
         value: cdktn.stringToHclTerraform(this._resourceGroupName),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      source_arm_resource_id: {
-        value: cdktn.stringToHclTerraform(this._sourceArmResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

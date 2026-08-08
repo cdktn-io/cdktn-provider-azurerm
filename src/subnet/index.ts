@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,78 +13,96 @@ import * as cdktn from 'cdktn';
 
 export interface SubnetConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#address_prefixes Subnet#address_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#address_prefixes Subnet#address_prefixes}
   */
   readonly addressPrefixes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#default_outbound_access_enabled Subnet#default_outbound_access_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#default_outbound_access_enabled Subnet#default_outbound_access_enabled}
   */
   readonly defaultOutboundAccessEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#id Subnet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#id Subnet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#name Subnet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#name Subnet#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#private_endpoint_network_policies Subnet#private_endpoint_network_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#network_security_group_id_wo Subnet#network_security_group_id_wo}
+  */
+  readonly networkSecurityGroupIdWo?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#network_security_group_id_wo_version Subnet#network_security_group_id_wo_version}
+  */
+  readonly networkSecurityGroupIdWoVersion?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#private_endpoint_network_policies Subnet#private_endpoint_network_policies}
   */
   readonly privateEndpointNetworkPolicies?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#private_link_service_network_policies_enabled Subnet#private_link_service_network_policies_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#private_link_service_network_policies_enabled Subnet#private_link_service_network_policies_enabled}
   */
   readonly privateLinkServiceNetworkPoliciesEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#resource_group_name Subnet#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#resource_group_name Subnet#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#service_endpoint_policy_ids Subnet#service_endpoint_policy_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#route_table_id_wo Subnet#route_table_id_wo}
+  */
+  readonly routeTableIdWo?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#route_table_id_wo_version Subnet#route_table_id_wo_version}
+  */
+  readonly routeTableIdWoVersion?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#service_endpoint_policy_ids Subnet#service_endpoint_policy_ids}
   */
   readonly serviceEndpointPolicyIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#service_endpoints Subnet#service_endpoints}
-  */
-  readonly serviceEndpoints?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#sharing_scope Subnet#sharing_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#sharing_scope Subnet#sharing_scope}
   */
   readonly sharingScope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#virtual_network_name Subnet#virtual_network_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#virtual_network_name Subnet#virtual_network_name}
   */
   readonly virtualNetworkName: string;
   /**
   * delegation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#delegation Subnet#delegation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#delegation Subnet#delegation}
   */
   readonly delegation?: SubnetDelegation[] | cdktn.IResolvable;
   /**
   * ip_address_pool block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#ip_address_pool Subnet#ip_address_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#ip_address_pool Subnet#ip_address_pool}
   */
   readonly ipAddressPool?: SubnetIpAddressPool;
   /**
+  * service_endpoint block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#service_endpoint Subnet#service_endpoint}
+  */
+  readonly serviceEndpoint?: SubnetServiceEndpoint[] | cdktn.IResolvable;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#timeouts Subnet#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#timeouts Subnet#timeouts}
   */
   readonly timeouts?: SubnetTimeouts;
 }
 export interface SubnetDelegationServiceDelegation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#actions Subnet#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#actions Subnet#actions}
   */
   readonly actions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#name Subnet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#name Subnet#name}
   */
   readonly name: string;
 }
@@ -194,13 +212,13 @@ export class SubnetDelegationServiceDelegationOutputReference extends cdktn.Comp
 }
 export interface SubnetDelegation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#name Subnet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#name Subnet#name}
   */
   readonly name: string;
   /**
   * service_delegation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#service_delegation Subnet#service_delegation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#service_delegation Subnet#service_delegation}
   */
   readonly serviceDelegation: SubnetDelegationServiceDelegation;
 }
@@ -339,14 +357,14 @@ export class SubnetDelegationList extends cdktn.ComplexList {
 }
 export interface SubnetIpAddressPool {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#id Subnet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#id Subnet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#number_of_ip_addresses Subnet#number_of_ip_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#number_of_ip_addresses Subnet#number_of_ip_addresses}
   */
   readonly numberOfIpAddresses: string;
 }
@@ -456,21 +474,167 @@ export class SubnetIpAddressPoolOutputReference extends cdktn.ComplexObject {
     return this._numberOfIpAddresses;
   }
 }
+export interface SubnetServiceEndpoint {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#network_identifier Subnet#network_identifier}
+  */
+  readonly networkIdentifier?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#service Subnet#service}
+  */
+  readonly service: string;
+}
+
+export function subnetServiceEndpointToTerraform(struct?: SubnetServiceEndpoint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    network_identifier: cdktn.stringToTerraform(struct!.networkIdentifier),
+    service: cdktn.stringToTerraform(struct!.service),
+  }
+}
+
+
+export function subnetServiceEndpointToHclTerraform(struct?: SubnetServiceEndpoint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    network_identifier: {
+      value: cdktn.stringToHclTerraform(struct!.networkIdentifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktn.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SubnetServiceEndpointOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SubnetServiceEndpoint | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._networkIdentifier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkIdentifier = this._networkIdentifier;
+    }
+    if (this._service !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.service = this._service;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SubnetServiceEndpoint | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._networkIdentifier = undefined;
+      this._service = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._networkIdentifier = value.networkIdentifier;
+      this._service = value.service;
+    }
+  }
+
+  // network_identifier - computed: false, optional: true, required: false
+  private _networkIdentifier?: string; 
+  public get networkIdentifier() {
+    return this.getStringAttribute('network_identifier');
+  }
+  public set networkIdentifier(value: string) {
+    this._networkIdentifier = value;
+  }
+  public resetNetworkIdentifier() {
+    this._networkIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkIdentifierInput() {
+    return this._networkIdentifier;
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service;
+  }
+}
+
+export class SubnetServiceEndpointList extends cdktn.ComplexList {
+  public internalValue? : SubnetServiceEndpoint[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SubnetServiceEndpointOutputReference {
+    return new SubnetServiceEndpointOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SubnetTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#create Subnet#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#create Subnet#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#delete Subnet#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#delete Subnet#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#read Subnet#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#read Subnet#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#update Subnet#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#update Subnet#update}
   */
   readonly update?: string;
 }
@@ -651,7 +815,7 @@ export class SubnetTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet azurerm_subnet}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet azurerm_subnet}
 */
 export class Subnet extends cdktn.TerraformResource {
 
@@ -667,7 +831,7 @@ export class Subnet extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Subnet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Subnet to import
-  * @param importFromId The id of the existing Subnet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Subnet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Subnet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -679,7 +843,7 @@ export class Subnet extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet azurerm_subnet} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet azurerm_subnet} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -690,8 +854,8 @@ export class Subnet extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_subnet',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.81.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -705,15 +869,19 @@ export class Subnet extends cdktn.TerraformResource {
     this._defaultOutboundAccessEnabled = config.defaultOutboundAccessEnabled;
     this._id = config.id;
     this._name = config.name;
+    this._networkSecurityGroupIdWo = config.networkSecurityGroupIdWo;
+    this._networkSecurityGroupIdWoVersion = config.networkSecurityGroupIdWoVersion;
     this._privateEndpointNetworkPolicies = config.privateEndpointNetworkPolicies;
     this._privateLinkServiceNetworkPoliciesEnabled = config.privateLinkServiceNetworkPoliciesEnabled;
     this._resourceGroupName = config.resourceGroupName;
+    this._routeTableIdWo = config.routeTableIdWo;
+    this._routeTableIdWoVersion = config.routeTableIdWoVersion;
     this._serviceEndpointPolicyIds = config.serviceEndpointPolicyIds;
-    this._serviceEndpoints = config.serviceEndpoints;
     this._sharingScope = config.sharingScope;
     this._virtualNetworkName = config.virtualNetworkName;
     this._delegation.internalValue = config.delegation;
     this._ipAddressPool.internalValue = config.ipAddressPool;
+    this._serviceEndpoint.internalValue = config.serviceEndpoint;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -782,6 +950,46 @@ export class Subnet extends cdktn.TerraformResource {
     return this._name;
   }
 
+  // network_security_group_id - computed: true, optional: false, required: false
+  public get networkSecurityGroupId() {
+    return this.getStringAttribute('network_security_group_id');
+  }
+
+  // network_security_group_id_wo - computed: false, optional: true, required: false
+  private _networkSecurityGroupIdWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
+  public get networkSecurityGroupIdWo() {
+    return this.getStringAttribute('network_security_group_id_wo');
+  }
+  public set networkSecurityGroupIdWo(value: string) {
+    this._networkSecurityGroupIdWo = value;
+  }
+  public resetNetworkSecurityGroupIdWo() {
+    this._networkSecurityGroupIdWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkSecurityGroupIdWoInput() {
+    return this._networkSecurityGroupIdWo;
+  }
+
+  // network_security_group_id_wo_version - computed: false, optional: true, required: false
+  private _networkSecurityGroupIdWoVersion?: number; 
+  public get networkSecurityGroupIdWoVersion() {
+    return this.getNumberAttribute('network_security_group_id_wo_version');
+  }
+  public set networkSecurityGroupIdWoVersion(value: number) {
+    this._networkSecurityGroupIdWoVersion = value;
+  }
+  public resetNetworkSecurityGroupIdWoVersion() {
+    this._networkSecurityGroupIdWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkSecurityGroupIdWoVersionInput() {
+    return this._networkSecurityGroupIdWoVersion;
+  }
+
   // private_endpoint_network_policies - computed: false, optional: true, required: false
   private _privateEndpointNetworkPolicies?: string; 
   public get privateEndpointNetworkPolicies() {
@@ -827,6 +1035,46 @@ export class Subnet extends cdktn.TerraformResource {
     return this._resourceGroupName;
   }
 
+  // route_table_id - computed: true, optional: false, required: false
+  public get routeTableId() {
+    return this.getStringAttribute('route_table_id');
+  }
+
+  // route_table_id_wo - computed: false, optional: true, required: false
+  private _routeTableIdWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
+  public get routeTableIdWo() {
+    return this.getStringAttribute('route_table_id_wo');
+  }
+  public set routeTableIdWo(value: string) {
+    this._routeTableIdWo = value;
+  }
+  public resetRouteTableIdWo() {
+    this._routeTableIdWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeTableIdWoInput() {
+    return this._routeTableIdWo;
+  }
+
+  // route_table_id_wo_version - computed: false, optional: true, required: false
+  private _routeTableIdWoVersion?: number; 
+  public get routeTableIdWoVersion() {
+    return this.getNumberAttribute('route_table_id_wo_version');
+  }
+  public set routeTableIdWoVersion(value: number) {
+    this._routeTableIdWoVersion = value;
+  }
+  public resetRouteTableIdWoVersion() {
+    this._routeTableIdWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeTableIdWoVersionInput() {
+    return this._routeTableIdWoVersion;
+  }
+
   // service_endpoint_policy_ids - computed: false, optional: true, required: false
   private _serviceEndpointPolicyIds?: string[]; 
   public get serviceEndpointPolicyIds() {
@@ -841,22 +1089,6 @@ export class Subnet extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get serviceEndpointPolicyIdsInput() {
     return this._serviceEndpointPolicyIds;
-  }
-
-  // service_endpoints - computed: false, optional: true, required: false
-  private _serviceEndpoints?: string[]; 
-  public get serviceEndpoints() {
-    return cdktn.Fn.tolist(this.getListAttribute('service_endpoints'));
-  }
-  public set serviceEndpoints(value: string[]) {
-    this._serviceEndpoints = value;
-  }
-  public resetServiceEndpoints() {
-    this._serviceEndpoints = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get serviceEndpointsInput() {
-    return this._serviceEndpoints;
   }
 
   // sharing_scope - computed: false, optional: true, required: false
@@ -920,6 +1152,22 @@ export class Subnet extends cdktn.TerraformResource {
     return this._ipAddressPool.internalValue;
   }
 
+  // service_endpoint - computed: false, optional: true, required: false
+  private _serviceEndpoint = new SubnetServiceEndpointList(this, "service_endpoint", false);
+  public get serviceEndpoint() {
+    return this._serviceEndpoint;
+  }
+  public putServiceEndpoint(value: SubnetServiceEndpoint[] | cdktn.IResolvable) {
+    this._serviceEndpoint.internalValue = value;
+  }
+  public resetServiceEndpoint() {
+    this._serviceEndpoint.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceEndpointInput() {
+    return this._serviceEndpoint.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new SubnetTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -946,15 +1194,19 @@ export class Subnet extends cdktn.TerraformResource {
       default_outbound_access_enabled: cdktn.booleanToTerraform(this._defaultOutboundAccessEnabled),
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
+      network_security_group_id_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._networkSecurityGroupIdWo)),
+      network_security_group_id_wo_version: cdktn.numberToTerraform(this._networkSecurityGroupIdWoVersion),
       private_endpoint_network_policies: cdktn.stringToTerraform(this._privateEndpointNetworkPolicies),
       private_link_service_network_policies_enabled: cdktn.booleanToTerraform(this._privateLinkServiceNetworkPoliciesEnabled),
       resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      route_table_id_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._routeTableIdWo)),
+      route_table_id_wo_version: cdktn.numberToTerraform(this._routeTableIdWoVersion),
       service_endpoint_policy_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._serviceEndpointPolicyIds),
-      service_endpoints: cdktn.listMapper(cdktn.stringToTerraform, false)(this._serviceEndpoints),
       sharing_scope: cdktn.stringToTerraform(this._sharingScope),
       virtual_network_name: cdktn.stringToTerraform(this._virtualNetworkName),
       delegation: cdktn.listMapper(subnetDelegationToTerraform, true)(this._delegation.internalValue),
       ip_address_pool: subnetIpAddressPoolToTerraform(this._ipAddressPool.internalValue),
+      service_endpoint: cdktn.listMapper(subnetServiceEndpointToTerraform, true)(this._serviceEndpoint.internalValue),
       timeouts: subnetTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -985,6 +1237,18 @@ export class Subnet extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      network_security_group_id_wo: {
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._networkSecurityGroupIdWo)),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_security_group_id_wo_version: {
+        value: cdktn.numberToHclTerraform(this._networkSecurityGroupIdWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       private_endpoint_network_policies: {
         value: cdktn.stringToHclTerraform(this._privateEndpointNetworkPolicies),
         isBlock: false,
@@ -1003,14 +1267,20 @@ export class Subnet extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      route_table_id_wo: {
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._routeTableIdWo)),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      route_table_id_wo_version: {
+        value: cdktn.numberToHclTerraform(this._routeTableIdWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       service_endpoint_policy_ids: {
         value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._serviceEndpointPolicyIds),
-        isBlock: false,
-        type: "set",
-        storageClassType: "stringList",
-      },
-      service_endpoints: {
-        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._serviceEndpoints),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
@@ -1038,6 +1308,12 @@ export class Subnet extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "SubnetIpAddressPoolList",
+      },
+      service_endpoint: {
+        value: cdktn.listMapperHcl(subnetServiceEndpointToHclTerraform, true)(this._serviceEndpoint.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SubnetServiceEndpointList",
       },
       timeouts: {
         value: subnetTimeoutsToHclTerraform(this._timeouts.internalValue),

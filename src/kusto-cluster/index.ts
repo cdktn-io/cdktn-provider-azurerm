@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,126 +13,114 @@ import * as cdktn from 'cdktn';
 
 export interface KustoClusterConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#allowed_fqdns KustoCluster#allowed_fqdns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#allowed_fqdns KustoCluster#allowed_fqdns}
   */
   readonly allowedFqdns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#allowed_ip_ranges KustoCluster#allowed_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#allowed_ip_ranges KustoCluster#allowed_ip_ranges}
   */
   readonly allowedIpRanges?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#auto_stop_enabled KustoCluster#auto_stop_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#auto_stop_enabled KustoCluster#auto_stop_enabled}
   */
   readonly autoStopEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#disk_encryption_enabled KustoCluster#disk_encryption_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#disk_encryption_enabled KustoCluster#disk_encryption_enabled}
   */
   readonly diskEncryptionEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#double_encryption_enabled KustoCluster#double_encryption_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#double_encryption_enabled KustoCluster#double_encryption_enabled}
   */
   readonly doubleEncryptionEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#id KustoCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#id KustoCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#location KustoCluster#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#location KustoCluster#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#name KustoCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#name KustoCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#outbound_network_access_restricted KustoCluster#outbound_network_access_restricted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#outbound_network_access_restricted KustoCluster#outbound_network_access_restricted}
   */
   readonly outboundNetworkAccessRestricted?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#public_ip_type KustoCluster#public_ip_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#public_ip_type KustoCluster#public_ip_type}
   */
   readonly publicIpType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#public_network_access_enabled KustoCluster#public_network_access_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#public_network_access_enabled KustoCluster#public_network_access_enabled}
   */
   readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#purge_enabled KustoCluster#purge_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#purge_enabled KustoCluster#purge_enabled}
   */
   readonly purgeEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#resource_group_name KustoCluster#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#resource_group_name KustoCluster#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#streaming_ingestion_enabled KustoCluster#streaming_ingestion_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#streaming_ingestion_enabled KustoCluster#streaming_ingestion_enabled}
   */
   readonly streamingIngestionEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#tags KustoCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#tags KustoCluster#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#trusted_external_tenants KustoCluster#trusted_external_tenants}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#trusted_external_tenants KustoCluster#trusted_external_tenants}
   */
   readonly trustedExternalTenants?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#zones KustoCluster#zones}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#zones KustoCluster#zones}
   */
   readonly zones?: string[];
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#identity KustoCluster#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#identity KustoCluster#identity}
   */
   readonly identity?: KustoClusterIdentity;
   /**
   * language_extension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#language_extension KustoCluster#language_extension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#language_extension KustoCluster#language_extension}
   */
   readonly languageExtension?: KustoClusterLanguageExtension[] | cdktn.IResolvable;
   /**
-  * language_extensions block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#language_extensions KustoCluster#language_extensions}
-  */
-  readonly languageExtensions?: KustoClusterLanguageExtensions[] | cdktn.IResolvable;
-  /**
   * optimized_auto_scale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#optimized_auto_scale KustoCluster#optimized_auto_scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#optimized_auto_scale KustoCluster#optimized_auto_scale}
   */
   readonly optimizedAutoScale?: KustoClusterOptimizedAutoScale;
   /**
   * sku block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#sku KustoCluster#sku}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#sku KustoCluster#sku}
   */
   readonly sku: KustoClusterSku;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#timeouts KustoCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#timeouts KustoCluster#timeouts}
   */
   readonly timeouts?: KustoClusterTimeouts;
-  /**
-  * virtual_network_configuration block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#virtual_network_configuration KustoCluster#virtual_network_configuration}
-  */
-  readonly virtualNetworkConfiguration?: KustoClusterVirtualNetworkConfiguration;
 }
 export interface KustoClusterIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#identity_ids KustoCluster#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#identity_ids KustoCluster#identity_ids}
   */
   readonly identityIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#type KustoCluster#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#type KustoCluster#type}
   */
   readonly type: string;
 }
@@ -252,11 +240,11 @@ export class KustoClusterIdentityOutputReference extends cdktn.ComplexObject {
 }
 export interface KustoClusterLanguageExtension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#image KustoCluster#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#image KustoCluster#image}
   */
   readonly image: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#name KustoCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#name KustoCluster#name}
   */
   readonly name: string;
 }
@@ -393,156 +381,13 @@ export class KustoClusterLanguageExtensionList extends cdktn.ComplexList {
     return new KustoClusterLanguageExtensionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface KustoClusterLanguageExtensions {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#image KustoCluster#image}
-  */
-  readonly image: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#name KustoCluster#name}
-  */
-  readonly name: string;
-}
-
-export function kustoClusterLanguageExtensionsToTerraform(struct?: KustoClusterLanguageExtensions | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    image: cdktn.stringToTerraform(struct!.image),
-    name: cdktn.stringToTerraform(struct!.name),
-  }
-}
-
-
-export function kustoClusterLanguageExtensionsToHclTerraform(struct?: KustoClusterLanguageExtensions | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    image: {
-      value: cdktn.stringToHclTerraform(struct!.image),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    name: {
-      value: cdktn.stringToHclTerraform(struct!.name),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class KustoClusterLanguageExtensionsOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): KustoClusterLanguageExtensions | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._image !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.image = this._image;
-    }
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: KustoClusterLanguageExtensions | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._image = undefined;
-      this._name = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._image = value.image;
-      this._name = value.name;
-    }
-  }
-
-  // image - computed: false, optional: false, required: true
-  private _image?: string; 
-  public get image() {
-    return this.getStringAttribute('image');
-  }
-  public set image(value: string) {
-    this._image = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get imageInput() {
-    return this._image;
-  }
-
-  // name - computed: false, optional: false, required: true
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
-  }
-}
-
-export class KustoClusterLanguageExtensionsList extends cdktn.ComplexList {
-  public internalValue? : KustoClusterLanguageExtensions[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): KustoClusterLanguageExtensionsOutputReference {
-    return new KustoClusterLanguageExtensionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface KustoClusterOptimizedAutoScale {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#maximum_instances KustoCluster#maximum_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#maximum_instances KustoCluster#maximum_instances}
   */
   readonly maximumInstances: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#minimum_instances KustoCluster#minimum_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#minimum_instances KustoCluster#minimum_instances}
   */
   readonly minimumInstances: number;
 }
@@ -649,11 +494,11 @@ export class KustoClusterOptimizedAutoScaleOutputReference extends cdktn.Complex
 }
 export interface KustoClusterSku {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#capacity KustoCluster#capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#capacity KustoCluster#capacity}
   */
   readonly capacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#name KustoCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#name KustoCluster#name}
   */
   readonly name: string;
 }
@@ -763,19 +608,19 @@ export class KustoClusterSkuOutputReference extends cdktn.ComplexObject {
 }
 export interface KustoClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#create KustoCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#create KustoCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#delete KustoCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#delete KustoCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#read KustoCluster#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#read KustoCluster#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#update KustoCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#update KustoCluster#update}
   */
   readonly update?: string;
 }
@@ -954,150 +799,9 @@ export class KustoClusterTimeoutsOutputReference extends cdktn.ComplexObject {
     return this._update;
   }
 }
-export interface KustoClusterVirtualNetworkConfiguration {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#data_management_public_ip_id KustoCluster#data_management_public_ip_id}
-  */
-  readonly dataManagementPublicIpId: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#engine_public_ip_id KustoCluster#engine_public_ip_id}
-  */
-  readonly enginePublicIpId: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#subnet_id KustoCluster#subnet_id}
-  */
-  readonly subnetId: string;
-}
-
-export function kustoClusterVirtualNetworkConfigurationToTerraform(struct?: KustoClusterVirtualNetworkConfigurationOutputReference | KustoClusterVirtualNetworkConfiguration): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    data_management_public_ip_id: cdktn.stringToTerraform(struct!.dataManagementPublicIpId),
-    engine_public_ip_id: cdktn.stringToTerraform(struct!.enginePublicIpId),
-    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
-  }
-}
-
-
-export function kustoClusterVirtualNetworkConfigurationToHclTerraform(struct?: KustoClusterVirtualNetworkConfigurationOutputReference | KustoClusterVirtualNetworkConfiguration): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    data_management_public_ip_id: {
-      value: cdktn.stringToHclTerraform(struct!.dataManagementPublicIpId),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    engine_public_ip_id: {
-      value: cdktn.stringToHclTerraform(struct!.enginePublicIpId),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    subnet_id: {
-      value: cdktn.stringToHclTerraform(struct!.subnetId),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class KustoClusterVirtualNetworkConfigurationOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): KustoClusterVirtualNetworkConfiguration | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._dataManagementPublicIpId !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.dataManagementPublicIpId = this._dataManagementPublicIpId;
-    }
-    if (this._enginePublicIpId !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.enginePublicIpId = this._enginePublicIpId;
-    }
-    if (this._subnetId !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.subnetId = this._subnetId;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: KustoClusterVirtualNetworkConfiguration | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._dataManagementPublicIpId = undefined;
-      this._enginePublicIpId = undefined;
-      this._subnetId = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._dataManagementPublicIpId = value.dataManagementPublicIpId;
-      this._enginePublicIpId = value.enginePublicIpId;
-      this._subnetId = value.subnetId;
-    }
-  }
-
-  // data_management_public_ip_id - computed: false, optional: false, required: true
-  private _dataManagementPublicIpId?: string; 
-  public get dataManagementPublicIpId() {
-    return this.getStringAttribute('data_management_public_ip_id');
-  }
-  public set dataManagementPublicIpId(value: string) {
-    this._dataManagementPublicIpId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dataManagementPublicIpIdInput() {
-    return this._dataManagementPublicIpId;
-  }
-
-  // engine_public_ip_id - computed: false, optional: false, required: true
-  private _enginePublicIpId?: string; 
-  public get enginePublicIpId() {
-    return this.getStringAttribute('engine_public_ip_id');
-  }
-  public set enginePublicIpId(value: string) {
-    this._enginePublicIpId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enginePublicIpIdInput() {
-    return this._enginePublicIpId;
-  }
-
-  // subnet_id - computed: false, optional: false, required: true
-  private _subnetId?: string; 
-  public get subnetId() {
-    return this.getStringAttribute('subnet_id');
-  }
-  public set subnetId(value: string) {
-    this._subnetId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get subnetIdInput() {
-    return this._subnetId;
-  }
-}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster azurerm_kusto_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster azurerm_kusto_cluster}
 */
 export class KustoCluster extends cdktn.TerraformResource {
 
@@ -1113,7 +817,7 @@ export class KustoCluster extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a KustoCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KustoCluster to import
-  * @param importFromId The id of the existing KustoCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KustoCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KustoCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1125,7 +829,7 @@ export class KustoCluster extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/kusto_cluster azurerm_kusto_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/kusto_cluster azurerm_kusto_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1136,8 +840,8 @@ export class KustoCluster extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_kusto_cluster',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.81.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1166,11 +870,9 @@ export class KustoCluster extends cdktn.TerraformResource {
     this._zones = config.zones;
     this._identity.internalValue = config.identity;
     this._languageExtension.internalValue = config.languageExtension;
-    this._languageExtensions.internalValue = config.languageExtensions;
     this._optimizedAutoScale.internalValue = config.optimizedAutoScale;
     this._sku.internalValue = config.sku;
     this._timeouts.internalValue = config.timeouts;
-    this._virtualNetworkConfiguration.internalValue = config.virtualNetworkConfiguration;
   }
 
   // ==========
@@ -1482,22 +1184,6 @@ export class KustoCluster extends cdktn.TerraformResource {
     return this._languageExtension.internalValue;
   }
 
-  // language_extensions - computed: false, optional: true, required: false
-  private _languageExtensions = new KustoClusterLanguageExtensionsList(this, "language_extensions", false);
-  public get languageExtensions() {
-    return this._languageExtensions;
-  }
-  public putLanguageExtensions(value: KustoClusterLanguageExtensions[] | cdktn.IResolvable) {
-    this._languageExtensions.internalValue = value;
-  }
-  public resetLanguageExtensions() {
-    this._languageExtensions.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get languageExtensionsInput() {
-    return this._languageExtensions.internalValue;
-  }
-
   // optimized_auto_scale - computed: false, optional: true, required: false
   private _optimizedAutoScale = new KustoClusterOptimizedAutoScaleOutputReference(this, "optimized_auto_scale");
   public get optimizedAutoScale() {
@@ -1543,22 +1229,6 @@ export class KustoCluster extends cdktn.TerraformResource {
     return this._timeouts.internalValue;
   }
 
-  // virtual_network_configuration - computed: false, optional: true, required: false
-  private _virtualNetworkConfiguration = new KustoClusterVirtualNetworkConfigurationOutputReference(this, "virtual_network_configuration");
-  public get virtualNetworkConfiguration() {
-    return this._virtualNetworkConfiguration;
-  }
-  public putVirtualNetworkConfiguration(value: KustoClusterVirtualNetworkConfiguration) {
-    this._virtualNetworkConfiguration.internalValue = value;
-  }
-  public resetVirtualNetworkConfiguration() {
-    this._virtualNetworkConfiguration.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get virtualNetworkConfigurationInput() {
-    return this._virtualNetworkConfiguration.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -1584,11 +1254,9 @@ export class KustoCluster extends cdktn.TerraformResource {
       zones: cdktn.listMapper(cdktn.stringToTerraform, false)(this._zones),
       identity: kustoClusterIdentityToTerraform(this._identity.internalValue),
       language_extension: cdktn.listMapper(kustoClusterLanguageExtensionToTerraform, true)(this._languageExtension.internalValue),
-      language_extensions: cdktn.listMapper(kustoClusterLanguageExtensionsToTerraform, true)(this._languageExtensions.internalValue),
       optimized_auto_scale: kustoClusterOptimizedAutoScaleToTerraform(this._optimizedAutoScale.internalValue),
       sku: kustoClusterSkuToTerraform(this._sku.internalValue),
       timeouts: kustoClusterTimeoutsToTerraform(this._timeouts.internalValue),
-      virtual_network_configuration: kustoClusterVirtualNetworkConfigurationToTerraform(this._virtualNetworkConfiguration.internalValue),
     };
   }
 
@@ -1708,12 +1376,6 @@ export class KustoCluster extends cdktn.TerraformResource {
         type: "list",
         storageClassType: "KustoClusterLanguageExtensionList",
       },
-      language_extensions: {
-        value: cdktn.listMapperHcl(kustoClusterLanguageExtensionsToHclTerraform, true)(this._languageExtensions.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "KustoClusterLanguageExtensionsList",
-      },
       optimized_auto_scale: {
         value: kustoClusterOptimizedAutoScaleToHclTerraform(this._optimizedAutoScale.internalValue),
         isBlock: true,
@@ -1731,12 +1393,6 @@ export class KustoCluster extends cdktn.TerraformResource {
         isBlock: true,
         type: "struct",
         storageClassType: "KustoClusterTimeouts",
-      },
-      virtual_network_configuration: {
-        value: kustoClusterVirtualNetworkConfigurationToHclTerraform(this._virtualNetworkConfiguration.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "KustoClusterVirtualNetworkConfigurationList",
       },
     };
 

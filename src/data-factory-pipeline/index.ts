@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,74 +13,74 @@ import * as cdktn from 'cdktn';
 
 export interface DataFactoryPipelineConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#activities_json DataFactoryPipeline#activities_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#activities_json DataFactoryPipeline#activities_json}
   */
   readonly activitiesJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#annotations DataFactoryPipeline#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#annotations DataFactoryPipeline#annotations}
   */
   readonly annotations?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#concurrency DataFactoryPipeline#concurrency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#concurrency DataFactoryPipeline#concurrency}
   */
   readonly concurrency?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#data_factory_id DataFactoryPipeline#data_factory_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#data_factory_id DataFactoryPipeline#data_factory_id}
   */
   readonly dataFactoryId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#description DataFactoryPipeline#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#description DataFactoryPipeline#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#folder DataFactoryPipeline#folder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#folder DataFactoryPipeline#folder}
   */
   readonly folder?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#id DataFactoryPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#id DataFactoryPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#moniter_metrics_after_duration DataFactoryPipeline#moniter_metrics_after_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#monitor_metrics_after_duration DataFactoryPipeline#monitor_metrics_after_duration}
   */
-  readonly moniterMetricsAfterDuration?: string;
+  readonly monitorMetricsAfterDuration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#name DataFactoryPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#name DataFactoryPipeline#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#parameters DataFactoryPipeline#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#parameters DataFactoryPipeline#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#variables DataFactoryPipeline#variables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#variables DataFactoryPipeline#variables}
   */
   readonly variables?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#timeouts DataFactoryPipeline#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#timeouts DataFactoryPipeline#timeouts}
   */
   readonly timeouts?: DataFactoryPipelineTimeouts;
 }
 export interface DataFactoryPipelineTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#create DataFactoryPipeline#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#create DataFactoryPipeline#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#delete DataFactoryPipeline#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#delete DataFactoryPipeline#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#read DataFactoryPipeline#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#read DataFactoryPipeline#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#update DataFactoryPipeline#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#update DataFactoryPipeline#update}
   */
   readonly update?: string;
 }
@@ -261,7 +261,7 @@ export class DataFactoryPipelineTimeoutsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline azurerm_data_factory_pipeline}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline azurerm_data_factory_pipeline}
 */
 export class DataFactoryPipeline extends cdktn.TerraformResource {
 
@@ -277,7 +277,7 @@ export class DataFactoryPipeline extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DataFactoryPipeline resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataFactoryPipeline to import
-  * @param importFromId The id of the existing DataFactoryPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataFactoryPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataFactoryPipeline to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -289,7 +289,7 @@ export class DataFactoryPipeline extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline azurerm_data_factory_pipeline} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline azurerm_data_factory_pipeline} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -300,8 +300,8 @@ export class DataFactoryPipeline extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_data_factory_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.81.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -318,7 +318,7 @@ export class DataFactoryPipeline extends cdktn.TerraformResource {
     this._description = config.description;
     this._folder = config.folder;
     this._id = config.id;
-    this._moniterMetricsAfterDuration = config.moniterMetricsAfterDuration;
+    this._monitorMetricsAfterDuration = config.monitorMetricsAfterDuration;
     this._name = config.name;
     this._parameters = config.parameters;
     this._variables = config.variables;
@@ -438,20 +438,20 @@ export class DataFactoryPipeline extends cdktn.TerraformResource {
     return this._id;
   }
 
-  // moniter_metrics_after_duration - computed: false, optional: true, required: false
-  private _moniterMetricsAfterDuration?: string; 
-  public get moniterMetricsAfterDuration() {
-    return this.getStringAttribute('moniter_metrics_after_duration');
+  // monitor_metrics_after_duration - computed: false, optional: true, required: false
+  private _monitorMetricsAfterDuration?: string; 
+  public get monitorMetricsAfterDuration() {
+    return this.getStringAttribute('monitor_metrics_after_duration');
   }
-  public set moniterMetricsAfterDuration(value: string) {
-    this._moniterMetricsAfterDuration = value;
+  public set monitorMetricsAfterDuration(value: string) {
+    this._monitorMetricsAfterDuration = value;
   }
-  public resetMoniterMetricsAfterDuration() {
-    this._moniterMetricsAfterDuration = undefined;
+  public resetMonitorMetricsAfterDuration() {
+    this._monitorMetricsAfterDuration = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get moniterMetricsAfterDurationInput() {
-    return this._moniterMetricsAfterDuration;
+  public get monitorMetricsAfterDurationInput() {
+    return this._monitorMetricsAfterDuration;
   }
 
   // name - computed: false, optional: false, required: true
@@ -528,7 +528,7 @@ export class DataFactoryPipeline extends cdktn.TerraformResource {
       description: cdktn.stringToTerraform(this._description),
       folder: cdktn.stringToTerraform(this._folder),
       id: cdktn.stringToTerraform(this._id),
-      moniter_metrics_after_duration: cdktn.stringToTerraform(this._moniterMetricsAfterDuration),
+      monitor_metrics_after_duration: cdktn.stringToTerraform(this._monitorMetricsAfterDuration),
       name: cdktn.stringToTerraform(this._name),
       parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._parameters),
       variables: cdktn.hashMapper(cdktn.stringToTerraform)(this._variables),
@@ -580,8 +580,8 @@ export class DataFactoryPipeline extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      moniter_metrics_after_duration: {
-        value: cdktn.stringToHclTerraform(this._moniterMetricsAfterDuration),
+      monitor_metrics_after_duration: {
+        value: cdktn.stringToHclTerraform(this._monitorMetricsAfterDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

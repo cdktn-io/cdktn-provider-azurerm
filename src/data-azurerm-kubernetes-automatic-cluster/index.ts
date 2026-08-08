@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/function_app
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/kubernetes_automatic_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -11,37 +11,33 @@ import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermFunctionAppConfig extends cdktn.TerraformMetaArguments {
+export interface DataAzurermKubernetesAutomaticClusterConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/function_app#id DataAzurermFunctionApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/kubernetes_automatic_cluster#id DataAzurermKubernetesAutomaticCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/function_app#name DataAzurermFunctionApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/kubernetes_automatic_cluster#name DataAzurermKubernetesAutomaticCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/function_app#resource_group_name DataAzurermFunctionApp#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/kubernetes_automatic_cluster#resource_group_name DataAzurermKubernetesAutomaticCluster#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/function_app#tags DataAzurermFunctionApp#tags}
-  */
-  readonly tags?: { [key: string]: string };
-  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/function_app#timeouts DataAzurermFunctionApp#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/kubernetes_automatic_cluster#timeouts DataAzurermKubernetesAutomaticCluster#timeouts}
   */
-  readonly timeouts?: DataAzurermFunctionAppTimeouts;
+  readonly timeouts?: DataAzurermKubernetesAutomaticClusterTimeouts;
 }
-export interface DataAzurermFunctionAppConnectionString {
+export interface DataAzurermKubernetesAutomaticClusterApiServerAccess {
 }
 
-export function dataAzurermFunctionAppConnectionStringToTerraform(struct?: DataAzurermFunctionAppConnectionString): any {
+export function dataAzurermKubernetesAutomaticClusterApiServerAccessToTerraform(struct?: DataAzurermKubernetesAutomaticClusterApiServerAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -51,7 +47,7 @@ export function dataAzurermFunctionAppConnectionStringToTerraform(struct?: DataA
 }
 
 
-export function dataAzurermFunctionAppConnectionStringToHclTerraform(struct?: DataAzurermFunctionAppConnectionString): any {
+export function dataAzurermKubernetesAutomaticClusterApiServerAccessToHclTerraform(struct?: DataAzurermKubernetesAutomaticClusterApiServerAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -61,7 +57,7 @@ export function dataAzurermFunctionAppConnectionStringToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAzurermFunctionAppConnectionStringOutputReference extends cdktn.ComplexObject {
+export class DataAzurermKubernetesAutomaticClusterApiServerAccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -74,13 +70,13 @@ export class DataAzurermFunctionAppConnectionStringOutputReference extends cdktn
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAzurermFunctionAppConnectionString | undefined {
+  public get internalValue(): DataAzurermKubernetesAutomaticClusterApiServerAccess | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermFunctionAppConnectionString | undefined) {
+  public set internalValue(value: DataAzurermKubernetesAutomaticClusterApiServerAccess | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -89,23 +85,18 @@ export class DataAzurermFunctionAppConnectionStringOutputReference extends cdktn
     }
   }
 
-  // name - computed: true, optional: false, required: false
-  public get name() {
-    return this.getStringAttribute('name');
+  // authorized_ip_ranges - computed: true, optional: false, required: false
+  public get authorizedIpRanges() {
+    return this.getListAttribute('authorized_ip_ranges');
   }
 
-  // type - computed: true, optional: false, required: false
-  public get type() {
-    return this.getStringAttribute('type');
-  }
-
-  // value - computed: true, optional: false, required: false
-  public get value() {
-    return this.getStringAttribute('value');
+  // subnet_id - computed: true, optional: false, required: false
+  public get subnetId() {
+    return this.getStringAttribute('subnet_id');
   }
 }
 
-export class DataAzurermFunctionAppConnectionStringList extends cdktn.ComplexList {
+export class DataAzurermKubernetesAutomaticClusterApiServerAccessList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -119,14 +110,14 @@ export class DataAzurermFunctionAppConnectionStringList extends cdktn.ComplexLis
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataAzurermFunctionAppConnectionStringOutputReference {
-    return new DataAzurermFunctionAppConnectionStringOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataAzurermKubernetesAutomaticClusterApiServerAccessOutputReference {
+    return new DataAzurermKubernetesAutomaticClusterApiServerAccessOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface DataAzurermFunctionAppIdentity {
+export interface DataAzurermKubernetesAutomaticClusterHostedSystem {
 }
 
-export function dataAzurermFunctionAppIdentityToTerraform(struct?: DataAzurermFunctionAppIdentity): any {
+export function dataAzurermKubernetesAutomaticClusterHostedSystemToTerraform(struct?: DataAzurermKubernetesAutomaticClusterHostedSystem): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -136,7 +127,7 @@ export function dataAzurermFunctionAppIdentityToTerraform(struct?: DataAzurermFu
 }
 
 
-export function dataAzurermFunctionAppIdentityToHclTerraform(struct?: DataAzurermFunctionAppIdentity): any {
+export function dataAzurermKubernetesAutomaticClusterHostedSystemToHclTerraform(struct?: DataAzurermKubernetesAutomaticClusterHostedSystem): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -146,7 +137,7 @@ export function dataAzurermFunctionAppIdentityToHclTerraform(struct?: DataAzurer
   return attrs;
 }
 
-export class DataAzurermFunctionAppIdentityOutputReference extends cdktn.ComplexObject {
+export class DataAzurermKubernetesAutomaticClusterHostedSystemOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -159,13 +150,93 @@ export class DataAzurermFunctionAppIdentityOutputReference extends cdktn.Complex
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAzurermFunctionAppIdentity | undefined {
+  public get internalValue(): DataAzurermKubernetesAutomaticClusterHostedSystem | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermFunctionAppIdentity | undefined) {
+  public set internalValue(value: DataAzurermKubernetesAutomaticClusterHostedSystem | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // node_subnet_id - computed: true, optional: false, required: false
+  public get nodeSubnetId() {
+    return this.getStringAttribute('node_subnet_id');
+  }
+
+  // system_node_subnet_id - computed: true, optional: false, required: false
+  public get systemNodeSubnetId() {
+    return this.getStringAttribute('system_node_subnet_id');
+  }
+}
+
+export class DataAzurermKubernetesAutomaticClusterHostedSystemList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAzurermKubernetesAutomaticClusterHostedSystemOutputReference {
+    return new DataAzurermKubernetesAutomaticClusterHostedSystemOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAzurermKubernetesAutomaticClusterIdentity {
+}
+
+export function dataAzurermKubernetesAutomaticClusterIdentityToTerraform(struct?: DataAzurermKubernetesAutomaticClusterIdentity): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataAzurermKubernetesAutomaticClusterIdentityToHclTerraform(struct?: DataAzurermKubernetesAutomaticClusterIdentity): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAzurermKubernetesAutomaticClusterIdentityOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAzurermKubernetesAutomaticClusterIdentity | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzurermKubernetesAutomaticClusterIdentity | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -195,7 +266,7 @@ export class DataAzurermFunctionAppIdentityOutputReference extends cdktn.Complex
   }
 }
 
-export class DataAzurermFunctionAppIdentityList extends cdktn.ComplexList {
+export class DataAzurermKubernetesAutomaticClusterIdentityList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -209,14 +280,14 @@ export class DataAzurermFunctionAppIdentityList extends cdktn.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataAzurermFunctionAppIdentityOutputReference {
-    return new DataAzurermFunctionAppIdentityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataAzurermKubernetesAutomaticClusterIdentityOutputReference {
+    return new DataAzurermKubernetesAutomaticClusterIdentityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface DataAzurermFunctionAppSiteConfigCors {
+export interface DataAzurermKubernetesAutomaticClusterKubeConfig {
 }
 
-export function dataAzurermFunctionAppSiteConfigCorsToTerraform(struct?: DataAzurermFunctionAppSiteConfigCors): any {
+export function dataAzurermKubernetesAutomaticClusterKubeConfigToTerraform(struct?: DataAzurermKubernetesAutomaticClusterKubeConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -226,7 +297,7 @@ export function dataAzurermFunctionAppSiteConfigCorsToTerraform(struct?: DataAzu
 }
 
 
-export function dataAzurermFunctionAppSiteConfigCorsToHclTerraform(struct?: DataAzurermFunctionAppSiteConfigCors): any {
+export function dataAzurermKubernetesAutomaticClusterKubeConfigToHclTerraform(struct?: DataAzurermKubernetesAutomaticClusterKubeConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -236,7 +307,7 @@ export function dataAzurermFunctionAppSiteConfigCorsToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAzurermFunctionAppSiteConfigCorsOutputReference extends cdktn.ComplexObject {
+export class DataAzurermKubernetesAutomaticClusterKubeConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -249,13 +320,13 @@ export class DataAzurermFunctionAppSiteConfigCorsOutputReference extends cdktn.C
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAzurermFunctionAppSiteConfigCors | undefined {
+  public get internalValue(): DataAzurermKubernetesAutomaticClusterKubeConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermFunctionAppSiteConfigCors | undefined) {
+  public set internalValue(value: DataAzurermKubernetesAutomaticClusterKubeConfig | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -264,654 +335,24 @@ export class DataAzurermFunctionAppSiteConfigCorsOutputReference extends cdktn.C
     }
   }
 
-  // allowed_origins - computed: true, optional: false, required: false
-  public get allowedOrigins() {
-    return cdktn.Fn.tolist(this.getListAttribute('allowed_origins'));
+  // client_certificate - computed: true, optional: false, required: false
+  public get clientCertificate() {
+    return this.getStringAttribute('client_certificate');
   }
 
-  // support_credentials - computed: true, optional: false, required: false
-  public get supportCredentials() {
-    return this.getBooleanAttribute('support_credentials');
+  // client_key - computed: true, optional: false, required: false
+  public get clientKey() {
+    return this.getStringAttribute('client_key');
   }
-}
 
-export class DataAzurermFunctionAppSiteConfigCorsList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataAzurermFunctionAppSiteConfigCorsOutputReference {
-    return new DataAzurermFunctionAppSiteConfigCorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface DataAzurermFunctionAppSiteConfigIpRestrictionHeaders {
-}
-
-export function dataAzurermFunctionAppSiteConfigIpRestrictionHeadersToTerraform(struct?: DataAzurermFunctionAppSiteConfigIpRestrictionHeaders): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function dataAzurermFunctionAppSiteConfigIpRestrictionHeadersToHclTerraform(struct?: DataAzurermFunctionAppSiteConfigIpRestrictionHeaders): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataAzurermFunctionAppSiteConfigIpRestrictionHeadersOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataAzurermFunctionAppSiteConfigIpRestrictionHeaders | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataAzurermFunctionAppSiteConfigIpRestrictionHeaders | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // x_azure_fdid - computed: true, optional: false, required: false
-  public get xAzureFdid() {
-    return cdktn.Fn.tolist(this.getListAttribute('x_azure_fdid'));
-  }
-
-  // x_fd_health_probe - computed: true, optional: false, required: false
-  public get xFdHealthProbe() {
-    return cdktn.Fn.tolist(this.getListAttribute('x_fd_health_probe'));
-  }
-
-  // x_forwarded_for - computed: true, optional: false, required: false
-  public get xForwardedFor() {
-    return cdktn.Fn.tolist(this.getListAttribute('x_forwarded_for'));
-  }
-
-  // x_forwarded_host - computed: true, optional: false, required: false
-  public get xForwardedHost() {
-    return cdktn.Fn.tolist(this.getListAttribute('x_forwarded_host'));
-  }
-}
-
-export class DataAzurermFunctionAppSiteConfigIpRestrictionHeadersList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataAzurermFunctionAppSiteConfigIpRestrictionHeadersOutputReference {
-    return new DataAzurermFunctionAppSiteConfigIpRestrictionHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface DataAzurermFunctionAppSiteConfigIpRestriction {
-}
-
-export function dataAzurermFunctionAppSiteConfigIpRestrictionToTerraform(struct?: DataAzurermFunctionAppSiteConfigIpRestriction): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function dataAzurermFunctionAppSiteConfigIpRestrictionToHclTerraform(struct?: DataAzurermFunctionAppSiteConfigIpRestriction): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataAzurermFunctionAppSiteConfigIpRestrictionOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataAzurermFunctionAppSiteConfigIpRestriction | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataAzurermFunctionAppSiteConfigIpRestriction | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // action - computed: true, optional: false, required: false
-  public get action() {
-    return this.getStringAttribute('action');
-  }
-
-  // headers - computed: true, optional: false, required: false
-  private _headers = new DataAzurermFunctionAppSiteConfigIpRestrictionHeadersList(this, "headers", false);
-  public get headers() {
-    return this._headers;
-  }
-
-  // ip_address - computed: true, optional: false, required: false
-  public get ipAddress() {
-    return this.getStringAttribute('ip_address');
-  }
-
-  // name - computed: true, optional: false, required: false
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-
-  // priority - computed: true, optional: false, required: false
-  public get priority() {
-    return this.getNumberAttribute('priority');
-  }
-
-  // service_tag - computed: true, optional: false, required: false
-  public get serviceTag() {
-    return this.getStringAttribute('service_tag');
-  }
-
-  // virtual_network_subnet_id - computed: true, optional: false, required: false
-  public get virtualNetworkSubnetId() {
-    return this.getStringAttribute('virtual_network_subnet_id');
-  }
-}
-
-export class DataAzurermFunctionAppSiteConfigIpRestrictionList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataAzurermFunctionAppSiteConfigIpRestrictionOutputReference {
-    return new DataAzurermFunctionAppSiteConfigIpRestrictionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface DataAzurermFunctionAppSiteConfigScmIpRestrictionHeaders {
-}
-
-export function dataAzurermFunctionAppSiteConfigScmIpRestrictionHeadersToTerraform(struct?: DataAzurermFunctionAppSiteConfigScmIpRestrictionHeaders): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function dataAzurermFunctionAppSiteConfigScmIpRestrictionHeadersToHclTerraform(struct?: DataAzurermFunctionAppSiteConfigScmIpRestrictionHeaders): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataAzurermFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataAzurermFunctionAppSiteConfigScmIpRestrictionHeaders | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataAzurermFunctionAppSiteConfigScmIpRestrictionHeaders | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // x_azure_fdid - computed: true, optional: false, required: false
-  public get xAzureFdid() {
-    return cdktn.Fn.tolist(this.getListAttribute('x_azure_fdid'));
-  }
-
-  // x_fd_health_probe - computed: true, optional: false, required: false
-  public get xFdHealthProbe() {
-    return cdktn.Fn.tolist(this.getListAttribute('x_fd_health_probe'));
-  }
-
-  // x_forwarded_for - computed: true, optional: false, required: false
-  public get xForwardedFor() {
-    return cdktn.Fn.tolist(this.getListAttribute('x_forwarded_for'));
-  }
-
-  // x_forwarded_host - computed: true, optional: false, required: false
-  public get xForwardedHost() {
-    return cdktn.Fn.tolist(this.getListAttribute('x_forwarded_host'));
-  }
-}
-
-export class DataAzurermFunctionAppSiteConfigScmIpRestrictionHeadersList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataAzurermFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference {
-    return new DataAzurermFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface DataAzurermFunctionAppSiteConfigScmIpRestriction {
-}
-
-export function dataAzurermFunctionAppSiteConfigScmIpRestrictionToTerraform(struct?: DataAzurermFunctionAppSiteConfigScmIpRestriction): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function dataAzurermFunctionAppSiteConfigScmIpRestrictionToHclTerraform(struct?: DataAzurermFunctionAppSiteConfigScmIpRestriction): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataAzurermFunctionAppSiteConfigScmIpRestrictionOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataAzurermFunctionAppSiteConfigScmIpRestriction | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataAzurermFunctionAppSiteConfigScmIpRestriction | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // action - computed: true, optional: false, required: false
-  public get action() {
-    return this.getStringAttribute('action');
-  }
-
-  // headers - computed: true, optional: false, required: false
-  private _headers = new DataAzurermFunctionAppSiteConfigScmIpRestrictionHeadersList(this, "headers", false);
-  public get headers() {
-    return this._headers;
-  }
-
-  // ip_address - computed: true, optional: false, required: false
-  public get ipAddress() {
-    return this.getStringAttribute('ip_address');
-  }
-
-  // name - computed: true, optional: false, required: false
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-
-  // priority - computed: true, optional: false, required: false
-  public get priority() {
-    return this.getNumberAttribute('priority');
-  }
-
-  // service_tag - computed: true, optional: false, required: false
-  public get serviceTag() {
-    return this.getStringAttribute('service_tag');
-  }
-
-  // virtual_network_subnet_id - computed: true, optional: false, required: false
-  public get virtualNetworkSubnetId() {
-    return this.getStringAttribute('virtual_network_subnet_id');
-  }
-}
-
-export class DataAzurermFunctionAppSiteConfigScmIpRestrictionList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataAzurermFunctionAppSiteConfigScmIpRestrictionOutputReference {
-    return new DataAzurermFunctionAppSiteConfigScmIpRestrictionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface DataAzurermFunctionAppSiteConfig {
-}
-
-export function dataAzurermFunctionAppSiteConfigToTerraform(struct?: DataAzurermFunctionAppSiteConfig): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function dataAzurermFunctionAppSiteConfigToHclTerraform(struct?: DataAzurermFunctionAppSiteConfig): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataAzurermFunctionAppSiteConfigOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataAzurermFunctionAppSiteConfig | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataAzurermFunctionAppSiteConfig | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // always_on - computed: true, optional: false, required: false
-  public get alwaysOn() {
-    return this.getBooleanAttribute('always_on');
-  }
-
-  // app_scale_limit - computed: true, optional: false, required: false
-  public get appScaleLimit() {
-    return this.getNumberAttribute('app_scale_limit');
-  }
-
-  // auto_swap_slot_name - computed: true, optional: false, required: false
-  public get autoSwapSlotName() {
-    return this.getStringAttribute('auto_swap_slot_name');
-  }
-
-  // cors - computed: true, optional: false, required: false
-  private _cors = new DataAzurermFunctionAppSiteConfigCorsList(this, "cors", false);
-  public get cors() {
-    return this._cors;
-  }
-
-  // dotnet_framework_version - computed: true, optional: false, required: false
-  public get dotnetFrameworkVersion() {
-    return this.getStringAttribute('dotnet_framework_version');
-  }
-
-  // elastic_instance_minimum - computed: true, optional: false, required: false
-  public get elasticInstanceMinimum() {
-    return this.getNumberAttribute('elastic_instance_minimum');
-  }
-
-  // ftps_state - computed: true, optional: false, required: false
-  public get ftpsState() {
-    return this.getStringAttribute('ftps_state');
-  }
-
-  // health_check_path - computed: true, optional: false, required: false
-  public get healthCheckPath() {
-    return this.getStringAttribute('health_check_path');
-  }
-
-  // http2_enabled - computed: true, optional: false, required: false
-  public get http2Enabled() {
-    return this.getBooleanAttribute('http2_enabled');
-  }
-
-  // ip_restriction - computed: true, optional: false, required: false
-  private _ipRestriction = new DataAzurermFunctionAppSiteConfigIpRestrictionList(this, "ip_restriction", false);
-  public get ipRestriction() {
-    return this._ipRestriction;
-  }
-
-  // java_version - computed: true, optional: false, required: false
-  public get javaVersion() {
-    return this.getStringAttribute('java_version');
-  }
-
-  // linux_fx_version - computed: true, optional: false, required: false
-  public get linuxFxVersion() {
-    return this.getStringAttribute('linux_fx_version');
-  }
-
-  // min_tls_version - computed: true, optional: false, required: false
-  public get minTlsVersion() {
-    return this.getStringAttribute('min_tls_version');
-  }
-
-  // pre_warmed_instance_count - computed: true, optional: false, required: false
-  public get preWarmedInstanceCount() {
-    return this.getNumberAttribute('pre_warmed_instance_count');
-  }
-
-  // runtime_scale_monitoring_enabled - computed: true, optional: false, required: false
-  public get runtimeScaleMonitoringEnabled() {
-    return this.getBooleanAttribute('runtime_scale_monitoring_enabled');
-  }
-
-  // scm_ip_restriction - computed: true, optional: false, required: false
-  private _scmIpRestriction = new DataAzurermFunctionAppSiteConfigScmIpRestrictionList(this, "scm_ip_restriction", false);
-  public get scmIpRestriction() {
-    return this._scmIpRestriction;
-  }
-
-  // scm_type - computed: true, optional: false, required: false
-  public get scmType() {
-    return this.getStringAttribute('scm_type');
-  }
-
-  // scm_use_main_ip_restriction - computed: true, optional: false, required: false
-  public get scmUseMainIpRestriction() {
-    return this.getBooleanAttribute('scm_use_main_ip_restriction');
-  }
-
-  // use_32_bit_worker_process - computed: true, optional: false, required: false
-  public get use32BitWorkerProcess() {
-    return this.getBooleanAttribute('use_32_bit_worker_process');
-  }
-
-  // vnet_route_all_enabled - computed: true, optional: false, required: false
-  public get vnetRouteAllEnabled() {
-    return this.getBooleanAttribute('vnet_route_all_enabled');
-  }
-
-  // websockets_enabled - computed: true, optional: false, required: false
-  public get websocketsEnabled() {
-    return this.getBooleanAttribute('websockets_enabled');
-  }
-}
-
-export class DataAzurermFunctionAppSiteConfigList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataAzurermFunctionAppSiteConfigOutputReference {
-    return new DataAzurermFunctionAppSiteConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface DataAzurermFunctionAppSiteCredential {
-}
-
-export function dataAzurermFunctionAppSiteCredentialToTerraform(struct?: DataAzurermFunctionAppSiteCredential): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function dataAzurermFunctionAppSiteCredentialToHclTerraform(struct?: DataAzurermFunctionAppSiteCredential): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class DataAzurermFunctionAppSiteCredentialOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataAzurermFunctionAppSiteCredential | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
+  // cluster_ca_certificate - computed: true, optional: false, required: false
+  public get clusterCaCertificate() {
+    return this.getStringAttribute('cluster_ca_certificate');
   }
 
-  public set internalValue(value: DataAzurermFunctionAppSiteCredential | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
+  // host - computed: true, optional: false, required: false
+  public get host() {
+    return this.getStringAttribute('host');
   }
 
   // password - computed: true, optional: false, required: false
@@ -925,7 +366,7 @@ export class DataAzurermFunctionAppSiteCredentialOutputReference extends cdktn.C
   }
 }
 
-export class DataAzurermFunctionAppSiteCredentialList extends cdktn.ComplexList {
+export class DataAzurermKubernetesAutomaticClusterKubeConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -939,14 +380,14 @@ export class DataAzurermFunctionAppSiteCredentialList extends cdktn.ComplexList 
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataAzurermFunctionAppSiteCredentialOutputReference {
-    return new DataAzurermFunctionAppSiteCredentialOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataAzurermKubernetesAutomaticClusterKubeConfigOutputReference {
+    return new DataAzurermKubernetesAutomaticClusterKubeConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface DataAzurermFunctionAppSourceControl {
+export interface DataAzurermKubernetesAutomaticClusterKubeletIdentity {
 }
 
-export function dataAzurermFunctionAppSourceControlToTerraform(struct?: DataAzurermFunctionAppSourceControl): any {
+export function dataAzurermKubernetesAutomaticClusterKubeletIdentityToTerraform(struct?: DataAzurermKubernetesAutomaticClusterKubeletIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -956,7 +397,7 @@ export function dataAzurermFunctionAppSourceControlToTerraform(struct?: DataAzur
 }
 
 
-export function dataAzurermFunctionAppSourceControlToHclTerraform(struct?: DataAzurermFunctionAppSourceControl): any {
+export function dataAzurermKubernetesAutomaticClusterKubeletIdentityToHclTerraform(struct?: DataAzurermKubernetesAutomaticClusterKubeletIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -966,7 +407,7 @@ export function dataAzurermFunctionAppSourceControlToHclTerraform(struct?: DataA
   return attrs;
 }
 
-export class DataAzurermFunctionAppSourceControlOutputReference extends cdktn.ComplexObject {
+export class DataAzurermKubernetesAutomaticClusterKubeletIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -979,13 +420,13 @@ export class DataAzurermFunctionAppSourceControlOutputReference extends cdktn.Co
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAzurermFunctionAppSourceControl | undefined {
+  public get internalValue(): DataAzurermKubernetesAutomaticClusterKubeletIdentity | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermFunctionAppSourceControl | undefined) {
+  public set internalValue(value: DataAzurermKubernetesAutomaticClusterKubeletIdentity | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -994,33 +435,23 @@ export class DataAzurermFunctionAppSourceControlOutputReference extends cdktn.Co
     }
   }
 
-  // branch - computed: true, optional: false, required: false
-  public get branch() {
-    return this.getStringAttribute('branch');
+  // client_id - computed: true, optional: false, required: false
+  public get clientId() {
+    return this.getStringAttribute('client_id');
   }
 
-  // manual_integration - computed: true, optional: false, required: false
-  public get manualIntegration() {
-    return this.getBooleanAttribute('manual_integration');
+  // object_id - computed: true, optional: false, required: false
+  public get objectId() {
+    return this.getStringAttribute('object_id');
   }
 
-  // repo_url - computed: true, optional: false, required: false
-  public get repoUrl() {
-    return this.getStringAttribute('repo_url');
-  }
-
-  // rollback_enabled - computed: true, optional: false, required: false
-  public get rollbackEnabled() {
-    return this.getBooleanAttribute('rollback_enabled');
-  }
-
-  // use_mercurial - computed: true, optional: false, required: false
-  public get useMercurial() {
-    return this.getBooleanAttribute('use_mercurial');
+  // user_assigned_identity_id - computed: true, optional: false, required: false
+  public get userAssignedIdentityId() {
+    return this.getStringAttribute('user_assigned_identity_id');
   }
 }
 
-export class DataAzurermFunctionAppSourceControlList extends cdktn.ComplexList {
+export class DataAzurermKubernetesAutomaticClusterKubeletIdentityList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -1034,18 +465,465 @@ export class DataAzurermFunctionAppSourceControlList extends cdktn.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataAzurermFunctionAppSourceControlOutputReference {
-    return new DataAzurermFunctionAppSourceControlOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataAzurermKubernetesAutomaticClusterKubeletIdentityOutputReference {
+    return new DataAzurermKubernetesAutomaticClusterKubeletIdentityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface DataAzurermFunctionAppTimeouts {
+export interface DataAzurermKubernetesAutomaticClusterPrivateCluster {
+}
+
+export function dataAzurermKubernetesAutomaticClusterPrivateClusterToTerraform(struct?: DataAzurermKubernetesAutomaticClusterPrivateCluster): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataAzurermKubernetesAutomaticClusterPrivateClusterToHclTerraform(struct?: DataAzurermKubernetesAutomaticClusterPrivateCluster): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAzurermKubernetesAutomaticClusterPrivateClusterOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/function_app#read DataAzurermFunctionApp#read}
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAzurermKubernetesAutomaticClusterPrivateCluster | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzurermKubernetesAutomaticClusterPrivateCluster | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // private_dns_zone_id - computed: true, optional: false, required: false
+  public get privateDnsZoneId() {
+    return this.getStringAttribute('private_dns_zone_id');
+  }
+
+  // public_fully_qualified_domain_name_enabled - computed: true, optional: false, required: false
+  public get publicFullyQualifiedDomainNameEnabled() {
+    return this.getBooleanAttribute('public_fully_qualified_domain_name_enabled');
+  }
+}
+
+export class DataAzurermKubernetesAutomaticClusterPrivateClusterList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAzurermKubernetesAutomaticClusterPrivateClusterOutputReference {
+    return new DataAzurermKubernetesAutomaticClusterPrivateClusterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAzurermKubernetesAutomaticClusterServiceMeshCertificateAuthority {
+}
+
+export function dataAzurermKubernetesAutomaticClusterServiceMeshCertificateAuthorityToTerraform(struct?: DataAzurermKubernetesAutomaticClusterServiceMeshCertificateAuthority): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataAzurermKubernetesAutomaticClusterServiceMeshCertificateAuthorityToHclTerraform(struct?: DataAzurermKubernetesAutomaticClusterServiceMeshCertificateAuthority): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAzurermKubernetesAutomaticClusterServiceMeshCertificateAuthorityOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAzurermKubernetesAutomaticClusterServiceMeshCertificateAuthority | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzurermKubernetesAutomaticClusterServiceMeshCertificateAuthority | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // certificate_chain_object_name - computed: true, optional: false, required: false
+  public get certificateChainObjectName() {
+    return this.getStringAttribute('certificate_chain_object_name');
+  }
+
+  // certificate_object_name - computed: true, optional: false, required: false
+  public get certificateObjectName() {
+    return this.getStringAttribute('certificate_object_name');
+  }
+
+  // key_object_name - computed: true, optional: false, required: false
+  public get keyObjectName() {
+    return this.getStringAttribute('key_object_name');
+  }
+
+  // key_vault_id - computed: true, optional: false, required: false
+  public get keyVaultId() {
+    return this.getStringAttribute('key_vault_id');
+  }
+
+  // root_certificate_object_name - computed: true, optional: false, required: false
+  public get rootCertificateObjectName() {
+    return this.getStringAttribute('root_certificate_object_name');
+  }
+}
+
+export class DataAzurermKubernetesAutomaticClusterServiceMeshCertificateAuthorityList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAzurermKubernetesAutomaticClusterServiceMeshCertificateAuthorityOutputReference {
+    return new DataAzurermKubernetesAutomaticClusterServiceMeshCertificateAuthorityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAzurermKubernetesAutomaticClusterServiceMesh {
+}
+
+export function dataAzurermKubernetesAutomaticClusterServiceMeshToTerraform(struct?: DataAzurermKubernetesAutomaticClusterServiceMesh): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataAzurermKubernetesAutomaticClusterServiceMeshToHclTerraform(struct?: DataAzurermKubernetesAutomaticClusterServiceMesh): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAzurermKubernetesAutomaticClusterServiceMeshOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAzurermKubernetesAutomaticClusterServiceMesh | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzurermKubernetesAutomaticClusterServiceMesh | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // certificate_authority - computed: true, optional: false, required: false
+  private _certificateAuthority = new DataAzurermKubernetesAutomaticClusterServiceMeshCertificateAuthorityList(this, "certificate_authority", false);
+  public get certificateAuthority() {
+    return this._certificateAuthority;
+  }
+
+  // external_ingress_gateway_enabled - computed: true, optional: false, required: false
+  public get externalIngressGatewayEnabled() {
+    return this.getBooleanAttribute('external_ingress_gateway_enabled');
+  }
+
+  // internal_ingress_gateway_enabled - computed: true, optional: false, required: false
+  public get internalIngressGatewayEnabled() {
+    return this.getBooleanAttribute('internal_ingress_gateway_enabled');
+  }
+
+  // proxy_redirect_mechanism - computed: true, optional: false, required: false
+  public get proxyRedirectMechanism() {
+    return this.getStringAttribute('proxy_redirect_mechanism');
+  }
+
+  // revisions - computed: true, optional: false, required: false
+  public get revisions() {
+    return this.getListAttribute('revisions');
+  }
+}
+
+export class DataAzurermKubernetesAutomaticClusterServiceMeshList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAzurermKubernetesAutomaticClusterServiceMeshOutputReference {
+    return new DataAzurermKubernetesAutomaticClusterServiceMeshOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAzurermKubernetesAutomaticClusterWebAppRoutingIngressWebAppRoutingIdentity {
+}
+
+export function dataAzurermKubernetesAutomaticClusterWebAppRoutingIngressWebAppRoutingIdentityToTerraform(struct?: DataAzurermKubernetesAutomaticClusterWebAppRoutingIngressWebAppRoutingIdentity): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataAzurermKubernetesAutomaticClusterWebAppRoutingIngressWebAppRoutingIdentityToHclTerraform(struct?: DataAzurermKubernetesAutomaticClusterWebAppRoutingIngressWebAppRoutingIdentity): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAzurermKubernetesAutomaticClusterWebAppRoutingIngressWebAppRoutingIdentityOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAzurermKubernetesAutomaticClusterWebAppRoutingIngressWebAppRoutingIdentity | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzurermKubernetesAutomaticClusterWebAppRoutingIngressWebAppRoutingIdentity | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // client_id - computed: true, optional: false, required: false
+  public get clientId() {
+    return this.getStringAttribute('client_id');
+  }
+
+  // object_id - computed: true, optional: false, required: false
+  public get objectId() {
+    return this.getStringAttribute('object_id');
+  }
+
+  // user_assigned_identity_id - computed: true, optional: false, required: false
+  public get userAssignedIdentityId() {
+    return this.getStringAttribute('user_assigned_identity_id');
+  }
+}
+
+export class DataAzurermKubernetesAutomaticClusterWebAppRoutingIngressWebAppRoutingIdentityList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAzurermKubernetesAutomaticClusterWebAppRoutingIngressWebAppRoutingIdentityOutputReference {
+    return new DataAzurermKubernetesAutomaticClusterWebAppRoutingIngressWebAppRoutingIdentityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAzurermKubernetesAutomaticClusterWebAppRoutingIngress {
+}
+
+export function dataAzurermKubernetesAutomaticClusterWebAppRoutingIngressToTerraform(struct?: DataAzurermKubernetesAutomaticClusterWebAppRoutingIngress): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataAzurermKubernetesAutomaticClusterWebAppRoutingIngressToHclTerraform(struct?: DataAzurermKubernetesAutomaticClusterWebAppRoutingIngress): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAzurermKubernetesAutomaticClusterWebAppRoutingIngressOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAzurermKubernetesAutomaticClusterWebAppRoutingIngress | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzurermKubernetesAutomaticClusterWebAppRoutingIngress | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // default_nginx_controller - computed: true, optional: false, required: false
+  public get defaultNginxController() {
+    return this.getStringAttribute('default_nginx_controller');
+  }
+
+  // dns_zone_ids - computed: true, optional: false, required: false
+  public get dnsZoneIds() {
+    return this.getListAttribute('dns_zone_ids');
+  }
+
+  // istio_enabled - computed: true, optional: false, required: false
+  public get istioEnabled() {
+    return this.getBooleanAttribute('istio_enabled');
+  }
+
+  // web_app_routing_identity - computed: true, optional: false, required: false
+  private _webAppRoutingIdentity = new DataAzurermKubernetesAutomaticClusterWebAppRoutingIngressWebAppRoutingIdentityList(this, "web_app_routing_identity", false);
+  public get webAppRoutingIdentity() {
+    return this._webAppRoutingIdentity;
+  }
+}
+
+export class DataAzurermKubernetesAutomaticClusterWebAppRoutingIngressList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAzurermKubernetesAutomaticClusterWebAppRoutingIngressOutputReference {
+    return new DataAzurermKubernetesAutomaticClusterWebAppRoutingIngressOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAzurermKubernetesAutomaticClusterTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/kubernetes_automatic_cluster#read DataAzurermKubernetesAutomaticCluster#read}
   */
   readonly read?: string;
 }
 
-export function dataAzurermFunctionAppTimeoutsToTerraform(struct?: DataAzurermFunctionAppTimeouts | cdktn.IResolvable): any {
+export function dataAzurermKubernetesAutomaticClusterTimeoutsToTerraform(struct?: DataAzurermKubernetesAutomaticClusterTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1056,7 +934,7 @@ export function dataAzurermFunctionAppTimeoutsToTerraform(struct?: DataAzurermFu
 }
 
 
-export function dataAzurermFunctionAppTimeoutsToHclTerraform(struct?: DataAzurermFunctionAppTimeouts | cdktn.IResolvable): any {
+export function dataAzurermKubernetesAutomaticClusterTimeoutsToHclTerraform(struct?: DataAzurermKubernetesAutomaticClusterTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -1074,7 +952,7 @@ export function dataAzurermFunctionAppTimeoutsToHclTerraform(struct?: DataAzurer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermFunctionAppTimeoutsOutputReference extends cdktn.ComplexObject {
+export class DataAzurermKubernetesAutomaticClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -1086,7 +964,7 @@ export class DataAzurermFunctionAppTimeoutsOutputReference extends cdktn.Complex
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermFunctionAppTimeouts | cdktn.IResolvable | undefined {
+  public get internalValue(): DataAzurermKubernetesAutomaticClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1099,7 +977,7 @@ export class DataAzurermFunctionAppTimeoutsOutputReference extends cdktn.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermFunctionAppTimeouts | cdktn.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermKubernetesAutomaticClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1134,27 +1012,27 @@ export class DataAzurermFunctionAppTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/function_app azurerm_function_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/kubernetes_automatic_cluster azurerm_kubernetes_automatic_cluster}
 */
-export class DataAzurermFunctionApp extends cdktn.TerraformDataSource {
+export class DataAzurermKubernetesAutomaticCluster extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "azurerm_function_app";
+  public static readonly tfResourceType = "azurerm_kubernetes_automatic_cluster";
 
   // ==============
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTN code for importing a DataAzurermFunctionApp resource upon running "cdktn plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermKubernetesAutomaticCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
-  * @param importToId The construct id used in the generated config for the DataAzurermFunctionApp to import
-  * @param importFromId The id of the existing DataAzurermFunctionApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/function_app#import import section} in the documentation of this resource for the id to use
-  * @param provider? Optional instance of the provider where the DataAzurermFunctionApp to import is found
+  * @param importToId The construct id used in the generated config for the DataAzurermKubernetesAutomaticCluster to import
+  * @param importFromId The id of the existing DataAzurermKubernetesAutomaticCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/kubernetes_automatic_cluster#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataAzurermKubernetesAutomaticCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
-        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_function_app", importId: importFromId, provider });
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_kubernetes_automatic_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -1162,19 +1040,19 @@ export class DataAzurermFunctionApp extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/function_app azurerm_function_app} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/kubernetes_automatic_cluster azurerm_kubernetes_automatic_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataAzurermFunctionAppConfig
+  * @param options DataAzurermKubernetesAutomaticClusterConfig
   */
-  public constructor(scope: Construct, id: string, config: DataAzurermFunctionAppConfig) {
+  public constructor(scope: Construct, id: string, config: DataAzurermKubernetesAutomaticClusterConfig) {
     super(scope, id, {
-      terraformResourceType: 'azurerm_function_app',
+      terraformResourceType: 'azurerm_kubernetes_automatic_cluster',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.81.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1187,7 +1065,6 @@ export class DataAzurermFunctionApp extends cdktn.TerraformDataSource {
     this._id = config.id;
     this._name = config.name;
     this._resourceGroupName = config.resourceGroupName;
-    this._tags = config.tags;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -1195,41 +1072,31 @@ export class DataAzurermFunctionApp extends cdktn.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // app_service_plan_id - computed: true, optional: false, required: false
-  public get appServicePlanId() {
-    return this.getStringAttribute('app_service_plan_id');
+  // api_server_access - computed: true, optional: false, required: false
+  private _apiServerAccess = new DataAzurermKubernetesAutomaticClusterApiServerAccessList(this, "api_server_access", false);
+  public get apiServerAccess() {
+    return this._apiServerAccess;
   }
 
-  // app_settings - computed: true, optional: false, required: false
-  private _appSettings = new cdktn.StringMap(this, "app_settings");
-  public get appSettings() {
-    return this._appSettings;
+  // current_kubernetes_version - computed: true, optional: false, required: false
+  public get currentKubernetesVersion() {
+    return this.getStringAttribute('current_kubernetes_version');
   }
 
-  // client_cert_mode - computed: true, optional: false, required: false
-  public get clientCertMode() {
-    return this.getStringAttribute('client_cert_mode');
+  // dns_prefix - computed: true, optional: false, required: false
+  public get dnsPrefix() {
+    return this.getStringAttribute('dns_prefix');
   }
 
-  // connection_string - computed: true, optional: false, required: false
-  private _connectionString = new DataAzurermFunctionAppConnectionStringList(this, "connection_string", false);
-  public get connectionString() {
-    return this._connectionString;
+  // fully_qualified_domain_name - computed: true, optional: false, required: false
+  public get fullyQualifiedDomainName() {
+    return this.getStringAttribute('fully_qualified_domain_name');
   }
 
-  // custom_domain_verification_id - computed: true, optional: false, required: false
-  public get customDomainVerificationId() {
-    return this.getStringAttribute('custom_domain_verification_id');
-  }
-
-  // default_hostname - computed: true, optional: false, required: false
-  public get defaultHostname() {
-    return this.getStringAttribute('default_hostname');
-  }
-
-  // enabled - computed: true, optional: false, required: false
-  public get enabled() {
-    return this.getBooleanAttribute('enabled');
+  // hosted_system - computed: true, optional: false, required: false
+  private _hostedSystem = new DataAzurermKubernetesAutomaticClusterHostedSystemList(this, "hosted_system", false);
+  public get hostedSystem() {
+    return this._hostedSystem;
   }
 
   // id - computed: true, optional: true, required: false
@@ -1249,9 +1116,31 @@ export class DataAzurermFunctionApp extends cdktn.TerraformDataSource {
   }
 
   // identity - computed: true, optional: false, required: false
-  private _identity = new DataAzurermFunctionAppIdentityList(this, "identity", false);
+  private _identity = new DataAzurermKubernetesAutomaticClusterIdentityList(this, "identity", false);
   public get identity() {
     return this._identity;
+  }
+
+  // kube_config - computed: true, optional: false, required: false
+  private _kubeConfig = new DataAzurermKubernetesAutomaticClusterKubeConfigList(this, "kube_config", false);
+  public get kubeConfig() {
+    return this._kubeConfig;
+  }
+
+  // kube_config_raw - computed: true, optional: false, required: false
+  public get kubeConfigRaw() {
+    return this.getStringAttribute('kube_config_raw');
+  }
+
+  // kubelet_identity - computed: true, optional: false, required: false
+  private _kubeletIdentity = new DataAzurermKubernetesAutomaticClusterKubeletIdentityList(this, "kubelet_identity", false);
+  public get kubeletIdentity() {
+    return this._kubeletIdentity;
+  }
+
+  // kubernetes_version - computed: true, optional: false, required: false
+  public get kubernetesVersion() {
+    return this.getStringAttribute('kubernetes_version');
   }
 
   // location - computed: true, optional: false, required: false
@@ -1272,19 +1161,30 @@ export class DataAzurermFunctionApp extends cdktn.TerraformDataSource {
     return this._name;
   }
 
-  // os_type - computed: true, optional: false, required: false
-  public get osType() {
-    return this.getStringAttribute('os_type');
+  // node_resource_group - computed: true, optional: false, required: false
+  public get nodeResourceGroup() {
+    return this.getStringAttribute('node_resource_group');
   }
 
-  // outbound_ip_addresses - computed: true, optional: false, required: false
-  public get outboundIpAddresses() {
-    return this.getStringAttribute('outbound_ip_addresses');
+  // node_resource_group_id - computed: true, optional: false, required: false
+  public get nodeResourceGroupId() {
+    return this.getStringAttribute('node_resource_group_id');
   }
 
-  // possible_outbound_ip_addresses - computed: true, optional: false, required: false
-  public get possibleOutboundIpAddresses() {
-    return this.getStringAttribute('possible_outbound_ip_addresses');
+  // portal_fully_qualified_domain_name - computed: true, optional: false, required: false
+  public get portalFullyQualifiedDomainName() {
+    return this.getStringAttribute('portal_fully_qualified_domain_name');
+  }
+
+  // private_cluster - computed: true, optional: false, required: false
+  private _privateCluster = new DataAzurermKubernetesAutomaticClusterPrivateClusterList(this, "private_cluster", false);
+  public get privateCluster() {
+    return this._privateCluster;
+  }
+
+  // private_fully_qualified_domain_name - computed: true, optional: false, required: false
+  public get privateFullyQualifiedDomainName() {
+    return this.getStringAttribute('private_fully_qualified_domain_name');
   }
 
   // resource_group_name - computed: false, optional: false, required: true
@@ -1300,46 +1200,30 @@ export class DataAzurermFunctionApp extends cdktn.TerraformDataSource {
     return this._resourceGroupName;
   }
 
-  // site_config - computed: true, optional: false, required: false
-  private _siteConfig = new DataAzurermFunctionAppSiteConfigList(this, "site_config", false);
-  public get siteConfig() {
-    return this._siteConfig;
+  // service_mesh - computed: true, optional: false, required: false
+  private _serviceMesh = new DataAzurermKubernetesAutomaticClusterServiceMeshList(this, "service_mesh", false);
+  public get serviceMesh() {
+    return this._serviceMesh;
   }
 
-  // site_credential - computed: true, optional: false, required: false
-  private _siteCredential = new DataAzurermFunctionAppSiteCredentialList(this, "site_credential", false);
-  public get siteCredential() {
-    return this._siteCredential;
-  }
-
-  // source_control - computed: true, optional: false, required: false
-  private _sourceControl = new DataAzurermFunctionAppSourceControlList(this, "source_control", false);
-  public get sourceControl() {
-    return this._sourceControl;
-  }
-
-  // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string }; 
+  // tags - computed: true, optional: false, required: false
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
-    return this.getStringMapAttribute('tags');
-  }
-  public set tags(value: { [key: string]: string }) {
-    this._tags = value;
-  }
-  public resetTags() {
-    this._tags = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tagsInput() {
     return this._tags;
   }
 
+  // web_app_routing_ingress - computed: true, optional: false, required: false
+  private _webAppRoutingIngress = new DataAzurermKubernetesAutomaticClusterWebAppRoutingIngressList(this, "web_app_routing_ingress", false);
+  public get webAppRoutingIngress() {
+    return this._webAppRoutingIngress;
+  }
+
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DataAzurermFunctionAppTimeoutsOutputReference(this, "timeouts");
+  private _timeouts = new DataAzurermKubernetesAutomaticClusterTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }
-  public putTimeouts(value: DataAzurermFunctionAppTimeouts) {
+  public putTimeouts(value: DataAzurermKubernetesAutomaticClusterTimeouts) {
     this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
@@ -1359,8 +1243,7 @@ export class DataAzurermFunctionApp extends cdktn.TerraformDataSource {
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
       resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
-      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
-      timeouts: dataAzurermFunctionAppTimeoutsToTerraform(this._timeouts.internalValue),
+      timeouts: dataAzurermKubernetesAutomaticClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 
@@ -1384,17 +1267,11 @@ export class DataAzurermFunctionApp extends cdktn.TerraformDataSource {
         type: "simple",
         storageClassType: "string",
       },
-      tags: {
-        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
-        isBlock: false,
-        type: "map",
-        storageClassType: "stringMap",
-      },
       timeouts: {
-        value: dataAzurermFunctionAppTimeoutsToHclTerraform(this._timeouts.internalValue),
+        value: dataAzurermKubernetesAutomaticClusterTimeoutsToHclTerraform(this._timeouts.internalValue),
         isBlock: true,
         type: "struct",
-        storageClassType: "DataAzurermFunctionAppTimeouts",
+        storageClassType: "DataAzurermKubernetesAutomaticClusterTimeouts",
       },
     };
 

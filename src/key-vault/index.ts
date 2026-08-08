@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,118 +13,108 @@ import * as cdktn from 'cdktn';
 
 export interface KeyVaultConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#access_policy KeyVault#access_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#access_policy KeyVault#access_policy}
   */
   readonly accessPolicy?: KeyVaultAccessPolicy[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#enable_rbac_authorization KeyVault#enable_rbac_authorization}
-  */
-  readonly enableRbacAuthorization?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#enabled_for_deployment KeyVault#enabled_for_deployment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#enabled_for_deployment KeyVault#enabled_for_deployment}
   */
   readonly enabledForDeployment?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#enabled_for_disk_encryption KeyVault#enabled_for_disk_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#enabled_for_disk_encryption KeyVault#enabled_for_disk_encryption}
   */
   readonly enabledForDiskEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#enabled_for_template_deployment KeyVault#enabled_for_template_deployment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#enabled_for_template_deployment KeyVault#enabled_for_template_deployment}
   */
   readonly enabledForTemplateDeployment?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#id KeyVault#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#id KeyVault#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#location KeyVault#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#location KeyVault#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#name KeyVault#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#name KeyVault#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#public_network_access_enabled KeyVault#public_network_access_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#public_network_access_enabled KeyVault#public_network_access_enabled}
   */
   readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#purge_protection_enabled KeyVault#purge_protection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#purge_protection_enabled KeyVault#purge_protection_enabled}
   */
   readonly purgeProtectionEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#rbac_authorization_enabled KeyVault#rbac_authorization_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#rbac_authorization_enabled KeyVault#rbac_authorization_enabled}
   */
-  readonly rbacAuthorizationEnabled?: boolean | cdktn.IResolvable;
+  readonly rbacAuthorizationEnabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#resource_group_name KeyVault#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#resource_group_name KeyVault#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#sku_name KeyVault#sku_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#sku_name KeyVault#sku_name}
   */
   readonly skuName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#soft_delete_retention_days KeyVault#soft_delete_retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#soft_delete_retention_days KeyVault#soft_delete_retention_days}
   */
   readonly softDeleteRetentionDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#tags KeyVault#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#tags KeyVault#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#tenant_id KeyVault#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#tenant_id KeyVault#tenant_id}
   */
   readonly tenantId: string;
   /**
-  * contact block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#contact KeyVault#contact}
-  */
-  readonly contact?: KeyVaultContact[] | cdktn.IResolvable;
-  /**
   * network_acls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#network_acls KeyVault#network_acls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#network_acls KeyVault#network_acls}
   */
   readonly networkAcls?: KeyVaultNetworkAcls;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#timeouts KeyVault#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#timeouts KeyVault#timeouts}
   */
   readonly timeouts?: KeyVaultTimeouts;
 }
 export interface KeyVaultAccessPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#application_id KeyVault#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#application_id KeyVault#application_id}
   */
   readonly applicationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#certificate_permissions KeyVault#certificate_permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#certificate_permissions KeyVault#certificate_permissions}
   */
   readonly certificatePermissions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#key_permissions KeyVault#key_permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#key_permissions KeyVault#key_permissions}
   */
   readonly keyPermissions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#object_id KeyVault#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#object_id KeyVault#object_id}
   */
   readonly objectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#secret_permissions KeyVault#secret_permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#secret_permissions KeyVault#secret_permissions}
   */
   readonly secretPermissions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#storage_permissions KeyVault#storage_permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#storage_permissions KeyVault#storage_permissions}
   */
   readonly storagePermissions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#tenant_id KeyVault#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#tenant_id KeyVault#tenant_id}
   */
   readonly tenantId?: string;
 }
@@ -412,200 +402,21 @@ export class KeyVaultAccessPolicyList extends cdktn.ComplexList {
     return new KeyVaultAccessPolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface KeyVaultContact {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#email KeyVault#email}
-  */
-  readonly email: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#name KeyVault#name}
-  */
-  readonly name?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#phone KeyVault#phone}
-  */
-  readonly phone?: string;
-}
-
-export function keyVaultContactToTerraform(struct?: KeyVaultContact | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    email: cdktn.stringToTerraform(struct!.email),
-    name: cdktn.stringToTerraform(struct!.name),
-    phone: cdktn.stringToTerraform(struct!.phone),
-  }
-}
-
-
-export function keyVaultContactToHclTerraform(struct?: KeyVaultContact | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    email: {
-      value: cdktn.stringToHclTerraform(struct!.email),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    name: {
-      value: cdktn.stringToHclTerraform(struct!.name),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    phone: {
-      value: cdktn.stringToHclTerraform(struct!.phone),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class KeyVaultContactOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): KeyVaultContact | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._email !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.email = this._email;
-    }
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
-    if (this._phone !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.phone = this._phone;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: KeyVaultContact | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._email = undefined;
-      this._name = undefined;
-      this._phone = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._email = value.email;
-      this._name = value.name;
-      this._phone = value.phone;
-    }
-  }
-
-  // email - computed: false, optional: false, required: true
-  private _email?: string; 
-  public get email() {
-    return this.getStringAttribute('email');
-  }
-  public set email(value: string) {
-    this._email = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get emailInput() {
-    return this._email;
-  }
-
-  // name - computed: false, optional: true, required: false
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
-  }
-
-  // phone - computed: false, optional: true, required: false
-  private _phone?: string; 
-  public get phone() {
-    return this.getStringAttribute('phone');
-  }
-  public set phone(value: string) {
-    this._phone = value;
-  }
-  public resetPhone() {
-    this._phone = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get phoneInput() {
-    return this._phone;
-  }
-}
-
-export class KeyVaultContactList extends cdktn.ComplexList {
-  public internalValue? : KeyVaultContact[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): KeyVaultContactOutputReference {
-    return new KeyVaultContactOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface KeyVaultNetworkAcls {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#bypass KeyVault#bypass}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#bypass KeyVault#bypass}
   */
   readonly bypass: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#default_action KeyVault#default_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#default_action KeyVault#default_action}
   */
   readonly defaultAction: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#ip_rules KeyVault#ip_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#ip_rules KeyVault#ip_rules}
   */
   readonly ipRules?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#virtual_network_subnet_ids KeyVault#virtual_network_subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#virtual_network_subnet_ids KeyVault#virtual_network_subnet_ids}
   */
   readonly virtualNetworkSubnetIds?: string[];
 }
@@ -770,19 +581,19 @@ export class KeyVaultNetworkAclsOutputReference extends cdktn.ComplexObject {
 }
 export interface KeyVaultTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#create KeyVault#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#create KeyVault#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#delete KeyVault#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#delete KeyVault#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#read KeyVault#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#read KeyVault#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#update KeyVault#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#update KeyVault#update}
   */
   readonly update?: string;
 }
@@ -963,7 +774,7 @@ export class KeyVaultTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault azurerm_key_vault}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault azurerm_key_vault}
 */
 export class KeyVault extends cdktn.TerraformResource {
 
@@ -979,7 +790,7 @@ export class KeyVault extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a KeyVault resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KeyVault to import
-  * @param importFromId The id of the existing KeyVault that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KeyVault that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KeyVault to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -991,7 +802,7 @@ export class KeyVault extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault azurerm_key_vault} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault azurerm_key_vault} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1002,8 +813,8 @@ export class KeyVault extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_key_vault',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.81.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1014,7 +825,6 @@ export class KeyVault extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._accessPolicy.internalValue = config.accessPolicy;
-    this._enableRbacAuthorization = config.enableRbacAuthorization;
     this._enabledForDeployment = config.enabledForDeployment;
     this._enabledForDiskEncryption = config.enabledForDiskEncryption;
     this._enabledForTemplateDeployment = config.enabledForTemplateDeployment;
@@ -1029,7 +839,6 @@ export class KeyVault extends cdktn.TerraformResource {
     this._softDeleteRetentionDays = config.softDeleteRetentionDays;
     this._tags = config.tags;
     this._tenantId = config.tenantId;
-    this._contact.internalValue = config.contact;
     this._networkAcls.internalValue = config.networkAcls;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -1052,22 +861,6 @@ export class KeyVault extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get accessPolicyInput() {
     return this._accessPolicy.internalValue;
-  }
-
-  // enable_rbac_authorization - computed: true, optional: true, required: false
-  private _enableRbacAuthorization?: boolean | cdktn.IResolvable; 
-  public get enableRbacAuthorization() {
-    return this.getBooleanAttribute('enable_rbac_authorization');
-  }
-  public set enableRbacAuthorization(value: boolean | cdktn.IResolvable) {
-    this._enableRbacAuthorization = value;
-  }
-  public resetEnableRbacAuthorization() {
-    this._enableRbacAuthorization = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableRbacAuthorizationInput() {
-    return this._enableRbacAuthorization;
   }
 
   // enabled_for_deployment - computed: false, optional: true, required: false
@@ -1192,16 +985,13 @@ export class KeyVault extends cdktn.TerraformResource {
     return this._purgeProtectionEnabled;
   }
 
-  // rbac_authorization_enabled - computed: true, optional: true, required: false
+  // rbac_authorization_enabled - computed: false, optional: false, required: true
   private _rbacAuthorizationEnabled?: boolean | cdktn.IResolvable; 
   public get rbacAuthorizationEnabled() {
     return this.getBooleanAttribute('rbac_authorization_enabled');
   }
   public set rbacAuthorizationEnabled(value: boolean | cdktn.IResolvable) {
     this._rbacAuthorizationEnabled = value;
-  }
-  public resetRbacAuthorizationEnabled() {
-    this._rbacAuthorizationEnabled = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get rbacAuthorizationEnabledInput() {
@@ -1284,22 +1074,6 @@ export class KeyVault extends cdktn.TerraformResource {
     return this.getStringAttribute('vault_uri');
   }
 
-  // contact - computed: false, optional: true, required: false
-  private _contact = new KeyVaultContactList(this, "contact", true);
-  public get contact() {
-    return this._contact;
-  }
-  public putContact(value: KeyVaultContact[] | cdktn.IResolvable) {
-    this._contact.internalValue = value;
-  }
-  public resetContact() {
-    this._contact.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get contactInput() {
-    return this._contact.internalValue;
-  }
-
   // network_acls - computed: false, optional: true, required: false
   private _networkAcls = new KeyVaultNetworkAclsOutputReference(this, "network_acls");
   public get networkAcls() {
@@ -1339,7 +1113,6 @@ export class KeyVault extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       access_policy: cdktn.listMapper(keyVaultAccessPolicyToTerraform, false)(this._accessPolicy.internalValue),
-      enable_rbac_authorization: cdktn.booleanToTerraform(this._enableRbacAuthorization),
       enabled_for_deployment: cdktn.booleanToTerraform(this._enabledForDeployment),
       enabled_for_disk_encryption: cdktn.booleanToTerraform(this._enabledForDiskEncryption),
       enabled_for_template_deployment: cdktn.booleanToTerraform(this._enabledForTemplateDeployment),
@@ -1354,7 +1127,6 @@ export class KeyVault extends cdktn.TerraformResource {
       soft_delete_retention_days: cdktn.numberToTerraform(this._softDeleteRetentionDays),
       tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       tenant_id: cdktn.stringToTerraform(this._tenantId),
-      contact: cdktn.listMapper(keyVaultContactToTerraform, true)(this._contact.internalValue),
       network_acls: keyVaultNetworkAclsToTerraform(this._networkAcls.internalValue),
       timeouts: keyVaultTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1367,12 +1139,6 @@ export class KeyVault extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "KeyVaultAccessPolicyList",
-      },
-      enable_rbac_authorization: {
-        value: cdktn.booleanToHclTerraform(this._enableRbacAuthorization),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
       },
       enabled_for_deployment: {
         value: cdktn.booleanToHclTerraform(this._enabledForDeployment),
@@ -1457,12 +1223,6 @@ export class KeyVault extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      contact: {
-        value: cdktn.listMapperHcl(keyVaultContactToHclTerraform, true)(this._contact.internalValue),
-        isBlock: true,
-        type: "set",
-        storageClassType: "KeyVaultContactList",
       },
       network_acls: {
         value: keyVaultNetworkAclsToHclTerraform(this._networkAcls.internalValue),

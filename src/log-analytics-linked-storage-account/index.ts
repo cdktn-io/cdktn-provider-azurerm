@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_linked_storage_account
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_linked_storage_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +13,50 @@ import * as cdktn from 'cdktn';
 
 export interface LogAnalyticsLinkedStorageAccountConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_linked_storage_account#data_source_type LogAnalyticsLinkedStorageAccount#data_source_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_linked_storage_account#data_source_type LogAnalyticsLinkedStorageAccount#data_source_type}
   */
   readonly dataSourceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_linked_storage_account#id LogAnalyticsLinkedStorageAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_linked_storage_account#id LogAnalyticsLinkedStorageAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_linked_storage_account#resource_group_name LogAnalyticsLinkedStorageAccount#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_linked_storage_account#resource_group_name LogAnalyticsLinkedStorageAccount#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_linked_storage_account#storage_account_ids LogAnalyticsLinkedStorageAccount#storage_account_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_linked_storage_account#storage_account_ids LogAnalyticsLinkedStorageAccount#storage_account_ids}
   */
   readonly storageAccountIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_linked_storage_account#workspace_id LogAnalyticsLinkedStorageAccount#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_linked_storage_account#workspace_id LogAnalyticsLinkedStorageAccount#workspace_id}
   */
-  readonly workspaceId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_linked_storage_account#workspace_resource_id LogAnalyticsLinkedStorageAccount#workspace_resource_id}
-  */
-  readonly workspaceResourceId?: string;
+  readonly workspaceId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_linked_storage_account#timeouts LogAnalyticsLinkedStorageAccount#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_linked_storage_account#timeouts LogAnalyticsLinkedStorageAccount#timeouts}
   */
   readonly timeouts?: LogAnalyticsLinkedStorageAccountTimeouts;
 }
 export interface LogAnalyticsLinkedStorageAccountTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_linked_storage_account#create LogAnalyticsLinkedStorageAccount#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_linked_storage_account#create LogAnalyticsLinkedStorageAccount#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_linked_storage_account#delete LogAnalyticsLinkedStorageAccount#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_linked_storage_account#delete LogAnalyticsLinkedStorageAccount#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_linked_storage_account#read LogAnalyticsLinkedStorageAccount#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_linked_storage_account#read LogAnalyticsLinkedStorageAccount#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_linked_storage_account#update LogAnalyticsLinkedStorageAccount#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_linked_storage_account#update LogAnalyticsLinkedStorageAccount#update}
   */
   readonly update?: string;
 }
@@ -241,7 +237,7 @@ export class LogAnalyticsLinkedStorageAccountTimeoutsOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_linked_storage_account azurerm_log_analytics_linked_storage_account}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_linked_storage_account azurerm_log_analytics_linked_storage_account}
 */
 export class LogAnalyticsLinkedStorageAccount extends cdktn.TerraformResource {
 
@@ -257,7 +253,7 @@ export class LogAnalyticsLinkedStorageAccount extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a LogAnalyticsLinkedStorageAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogAnalyticsLinkedStorageAccount to import
-  * @param importFromId The id of the existing LogAnalyticsLinkedStorageAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_linked_storage_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogAnalyticsLinkedStorageAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_linked_storage_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogAnalyticsLinkedStorageAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -269,7 +265,7 @@ export class LogAnalyticsLinkedStorageAccount extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/log_analytics_linked_storage_account azurerm_log_analytics_linked_storage_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/log_analytics_linked_storage_account azurerm_log_analytics_linked_storage_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -280,8 +276,8 @@ export class LogAnalyticsLinkedStorageAccount extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_log_analytics_linked_storage_account',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.81.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -296,7 +292,6 @@ export class LogAnalyticsLinkedStorageAccount extends cdktn.TerraformResource {
     this._resourceGroupName = config.resourceGroupName;
     this._storageAccountIds = config.storageAccountIds;
     this._workspaceId = config.workspaceId;
-    this._workspaceResourceId = config.workspaceResourceId;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -359,7 +354,7 @@ export class LogAnalyticsLinkedStorageAccount extends cdktn.TerraformResource {
     return this._storageAccountIds;
   }
 
-  // workspace_id - computed: true, optional: true, required: false
+  // workspace_id - computed: false, optional: false, required: true
   private _workspaceId?: string; 
   public get workspaceId() {
     return this.getStringAttribute('workspace_id');
@@ -367,28 +362,9 @@ export class LogAnalyticsLinkedStorageAccount extends cdktn.TerraformResource {
   public set workspaceId(value: string) {
     this._workspaceId = value;
   }
-  public resetWorkspaceId() {
-    this._workspaceId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get workspaceIdInput() {
     return this._workspaceId;
-  }
-
-  // workspace_resource_id - computed: true, optional: true, required: false
-  private _workspaceResourceId?: string; 
-  public get workspaceResourceId() {
-    return this.getStringAttribute('workspace_resource_id');
-  }
-  public set workspaceResourceId(value: string) {
-    this._workspaceResourceId = value;
-  }
-  public resetWorkspaceResourceId() {
-    this._workspaceResourceId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get workspaceResourceIdInput() {
-    return this._workspaceResourceId;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -418,7 +394,6 @@ export class LogAnalyticsLinkedStorageAccount extends cdktn.TerraformResource {
       resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       storage_account_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._storageAccountIds),
       workspace_id: cdktn.stringToTerraform(this._workspaceId),
-      workspace_resource_id: cdktn.stringToTerraform(this._workspaceResourceId),
       timeouts: logAnalyticsLinkedStorageAccountTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -451,12 +426,6 @@ export class LogAnalyticsLinkedStorageAccount extends cdktn.TerraformResource {
       },
       workspace_id: {
         value: cdktn.stringToHclTerraform(this._workspaceId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      workspace_resource_id: {
-        value: cdktn.stringToHclTerraform(this._workspaceResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

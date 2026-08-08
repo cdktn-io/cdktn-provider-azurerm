@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_txt_record
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_txt_record
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,44 @@ import * as cdktn from 'cdktn';
 
 export interface PrivateDnsTxtRecordConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_txt_record#id PrivateDnsTxtRecord#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_txt_record#id PrivateDnsTxtRecord#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_txt_record#name PrivateDnsTxtRecord#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_txt_record#name PrivateDnsTxtRecord#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_txt_record#resource_group_name PrivateDnsTxtRecord#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_txt_record#private_dns_zone_id PrivateDnsTxtRecord#private_dns_zone_id}
   */
-  readonly resourceGroupName: string;
+  readonly privateDnsZoneId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_txt_record#tags PrivateDnsTxtRecord#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_txt_record#tags PrivateDnsTxtRecord#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_txt_record#ttl PrivateDnsTxtRecord#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_txt_record#ttl PrivateDnsTxtRecord#ttl}
   */
   readonly ttl: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_txt_record#zone_name PrivateDnsTxtRecord#zone_name}
-  */
-  readonly zoneName: string;
-  /**
   * record block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_txt_record#record PrivateDnsTxtRecord#record}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_txt_record#record PrivateDnsTxtRecord#record}
   */
   readonly record: PrivateDnsTxtRecordRecord[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_txt_record#timeouts PrivateDnsTxtRecord#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_txt_record#timeouts PrivateDnsTxtRecord#timeouts}
   */
   readonly timeouts?: PrivateDnsTxtRecordTimeouts;
 }
 export interface PrivateDnsTxtRecordRecord {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_txt_record#value PrivateDnsTxtRecord#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_txt_record#value PrivateDnsTxtRecord#value}
   */
   readonly value: string;
 }
@@ -167,19 +163,19 @@ export class PrivateDnsTxtRecordRecordList extends cdktn.ComplexList {
 }
 export interface PrivateDnsTxtRecordTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_txt_record#create PrivateDnsTxtRecord#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_txt_record#create PrivateDnsTxtRecord#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_txt_record#delete PrivateDnsTxtRecord#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_txt_record#delete PrivateDnsTxtRecord#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_txt_record#read PrivateDnsTxtRecord#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_txt_record#read PrivateDnsTxtRecord#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_txt_record#update PrivateDnsTxtRecord#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_txt_record#update PrivateDnsTxtRecord#update}
   */
   readonly update?: string;
 }
@@ -360,7 +356,7 @@ export class PrivateDnsTxtRecordTimeoutsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_txt_record azurerm_private_dns_txt_record}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_txt_record azurerm_private_dns_txt_record}
 */
 export class PrivateDnsTxtRecord extends cdktn.TerraformResource {
 
@@ -376,7 +372,7 @@ export class PrivateDnsTxtRecord extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PrivateDnsTxtRecord resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PrivateDnsTxtRecord to import
-  * @param importFromId The id of the existing PrivateDnsTxtRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_txt_record#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PrivateDnsTxtRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_txt_record#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PrivateDnsTxtRecord to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -388,7 +384,7 @@ export class PrivateDnsTxtRecord extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_txt_record azurerm_private_dns_txt_record} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_txt_record azurerm_private_dns_txt_record} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -399,8 +395,8 @@ export class PrivateDnsTxtRecord extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_private_dns_txt_record',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.81.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -412,10 +408,9 @@ export class PrivateDnsTxtRecord extends cdktn.TerraformResource {
     });
     this._id = config.id;
     this._name = config.name;
-    this._resourceGroupName = config.resourceGroupName;
+    this._privateDnsZoneId = config.privateDnsZoneId;
     this._tags = config.tags;
     this._ttl = config.ttl;
-    this._zoneName = config.zoneName;
     this._record.internalValue = config.record;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -458,17 +453,17 @@ export class PrivateDnsTxtRecord extends cdktn.TerraformResource {
     return this._name;
   }
 
-  // resource_group_name - computed: false, optional: false, required: true
-  private _resourceGroupName?: string; 
-  public get resourceGroupName() {
-    return this.getStringAttribute('resource_group_name');
+  // private_dns_zone_id - computed: false, optional: false, required: true
+  private _privateDnsZoneId?: string; 
+  public get privateDnsZoneId() {
+    return this.getStringAttribute('private_dns_zone_id');
   }
-  public set resourceGroupName(value: string) {
-    this._resourceGroupName = value;
+  public set privateDnsZoneId(value: string) {
+    this._privateDnsZoneId = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get resourceGroupNameInput() {
-    return this._resourceGroupName;
+  public get privateDnsZoneIdInput() {
+    return this._privateDnsZoneId;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -498,19 +493,6 @@ export class PrivateDnsTxtRecord extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get ttlInput() {
     return this._ttl;
-  }
-
-  // zone_name - computed: false, optional: false, required: true
-  private _zoneName?: string; 
-  public get zoneName() {
-    return this.getStringAttribute('zone_name');
-  }
-  public set zoneName(value: string) {
-    this._zoneName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get zoneNameInput() {
-    return this._zoneName;
   }
 
   // record - computed: false, optional: false, required: true
@@ -550,10 +532,9 @@ export class PrivateDnsTxtRecord extends cdktn.TerraformResource {
     return {
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
-      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      private_dns_zone_id: cdktn.stringToTerraform(this._privateDnsZoneId),
       tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       ttl: cdktn.numberToTerraform(this._ttl),
-      zone_name: cdktn.stringToTerraform(this._zoneName),
       record: cdktn.listMapper(privateDnsTxtRecordRecordToTerraform, true)(this._record.internalValue),
       timeouts: privateDnsTxtRecordTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -573,8 +554,8 @@ export class PrivateDnsTxtRecord extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      resource_group_name: {
-        value: cdktn.stringToHclTerraform(this._resourceGroupName),
+      private_dns_zone_id: {
+        value: cdktn.stringToHclTerraform(this._privateDnsZoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -590,12 +571,6 @@ export class PrivateDnsTxtRecord extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "number",
-      },
-      zone_name: {
-        value: cdktn.stringToHclTerraform(this._zoneName),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
       },
       record: {
         value: cdktn.listMapperHcl(privateDnsTxtRecordRecordToHclTerraform, true)(this._record.internalValue),

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_table
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermStorageTableConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_table#name DataAzurermStorageTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_table#name DataAzurermStorageTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_table#storage_account_id DataAzurermStorageTable#storage_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_table#storage_account_id DataAzurermStorageTable#storage_account_id}
   */
-  readonly storageAccountId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_table#storage_account_name DataAzurermStorageTable#storage_account_name}
-  */
-  readonly storageAccountName?: string;
+  readonly storageAccountId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_table#timeouts DataAzurermStorageTable#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_table#timeouts DataAzurermStorageTable#timeouts}
   */
   readonly timeouts?: DataAzurermStorageTableTimeouts;
 }
@@ -199,7 +195,7 @@ export class DataAzurermStorageTableAclList extends cdktn.ComplexList {
 }
 export interface DataAzurermStorageTableTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_table#read DataAzurermStorageTable#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_table#read DataAzurermStorageTable#read}
   */
   readonly read?: string;
 }
@@ -293,7 +289,7 @@ export class DataAzurermStorageTableTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_table azurerm_storage_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_table azurerm_storage_table}
 */
 export class DataAzurermStorageTable extends cdktn.TerraformDataSource {
 
@@ -309,7 +305,7 @@ export class DataAzurermStorageTable extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermStorageTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermStorageTable to import
-  * @param importFromId The id of the existing DataAzurermStorageTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermStorageTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermStorageTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -321,7 +317,7 @@ export class DataAzurermStorageTable extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_table azurerm_storage_table} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_table azurerm_storage_table} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -332,8 +328,8 @@ export class DataAzurermStorageTable extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_storage_table',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.81.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -345,7 +341,6 @@ export class DataAzurermStorageTable extends cdktn.TerraformDataSource {
     });
     this._name = config.name;
     this._storageAccountId = config.storageAccountId;
-    this._storageAccountName = config.storageAccountName;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -382,7 +377,7 @@ export class DataAzurermStorageTable extends cdktn.TerraformDataSource {
     return this.getStringAttribute('resource_manager_id');
   }
 
-  // storage_account_id - computed: true, optional: true, required: false
+  // storage_account_id - computed: false, optional: false, required: true
   private _storageAccountId?: string; 
   public get storageAccountId() {
     return this.getStringAttribute('storage_account_id');
@@ -390,28 +385,9 @@ export class DataAzurermStorageTable extends cdktn.TerraformDataSource {
   public set storageAccountId(value: string) {
     this._storageAccountId = value;
   }
-  public resetStorageAccountId() {
-    this._storageAccountId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get storageAccountIdInput() {
     return this._storageAccountId;
-  }
-
-  // storage_account_name - computed: true, optional: true, required: false
-  private _storageAccountName?: string; 
-  public get storageAccountName() {
-    return this.getStringAttribute('storage_account_name');
-  }
-  public set storageAccountName(value: string) {
-    this._storageAccountName = value;
-  }
-  public resetStorageAccountName() {
-    this._storageAccountName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get storageAccountNameInput() {
-    return this._storageAccountName;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -438,7 +414,6 @@ export class DataAzurermStorageTable extends cdktn.TerraformDataSource {
     return {
       name: cdktn.stringToTerraform(this._name),
       storage_account_id: cdktn.stringToTerraform(this._storageAccountId),
-      storage_account_name: cdktn.stringToTerraform(this._storageAccountName),
       timeouts: dataAzurermStorageTableTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -453,12 +428,6 @@ export class DataAzurermStorageTable extends cdktn.TerraformDataSource {
       },
       storage_account_id: {
         value: cdktn.stringToHclTerraform(this._storageAccountId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      storage_account_name: {
-        value: cdktn.stringToHclTerraform(this._storageAccountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
