@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -11,73 +11,73 @@ import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StorageAccountQueuePropertiesAConfig extends cdktn.TerraformMetaArguments {
+export interface StorageAccountQueuePropertiesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#id StorageAccountQueuePropertiesA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#id StorageAccountQueueProperties#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#storage_account_id StorageAccountQueuePropertiesA#storage_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#storage_account_id StorageAccountQueueProperties#storage_account_id}
   */
   readonly storageAccountId: string;
   /**
   * cors_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#cors_rule StorageAccountQueuePropertiesA#cors_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#cors_rule StorageAccountQueueProperties#cors_rule}
   */
-  readonly corsRule?: StorageAccountQueuePropertiesCorsRuleA[] | cdktn.IResolvable;
+  readonly corsRule?: StorageAccountQueuePropertiesCorsRule[] | cdktn.IResolvable;
   /**
   * hour_metrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#hour_metrics StorageAccountQueuePropertiesA#hour_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#hour_metrics StorageAccountQueueProperties#hour_metrics}
   */
-  readonly hourMetrics?: StorageAccountQueuePropertiesHourMetricsA;
+  readonly hourMetrics?: StorageAccountQueuePropertiesHourMetrics;
   /**
   * logging block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#logging StorageAccountQueuePropertiesA#logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#logging StorageAccountQueueProperties#logging}
   */
-  readonly logging?: StorageAccountQueuePropertiesLoggingA;
+  readonly logging?: StorageAccountQueuePropertiesLogging;
   /**
   * minute_metrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#minute_metrics StorageAccountQueuePropertiesA#minute_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#minute_metrics StorageAccountQueueProperties#minute_metrics}
   */
-  readonly minuteMetrics?: StorageAccountQueuePropertiesMinuteMetricsA;
+  readonly minuteMetrics?: StorageAccountQueuePropertiesMinuteMetrics;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#timeouts StorageAccountQueuePropertiesA#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#timeouts StorageAccountQueueProperties#timeouts}
   */
   readonly timeouts?: StorageAccountQueuePropertiesTimeouts;
 }
-export interface StorageAccountQueuePropertiesCorsRuleA {
+export interface StorageAccountQueuePropertiesCorsRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#allowed_headers StorageAccountQueuePropertiesA#allowed_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#allowed_headers StorageAccountQueueProperties#allowed_headers}
   */
   readonly allowedHeaders: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#allowed_methods StorageAccountQueuePropertiesA#allowed_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#allowed_methods StorageAccountQueueProperties#allowed_methods}
   */
   readonly allowedMethods: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#allowed_origins StorageAccountQueuePropertiesA#allowed_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#allowed_origins StorageAccountQueueProperties#allowed_origins}
   */
   readonly allowedOrigins: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#exposed_headers StorageAccountQueuePropertiesA#exposed_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#exposed_headers StorageAccountQueueProperties#exposed_headers}
   */
   readonly exposedHeaders: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#max_age_in_seconds StorageAccountQueuePropertiesA#max_age_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#max_age_in_seconds StorageAccountQueueProperties#max_age_in_seconds}
   */
   readonly maxAgeInSeconds: number;
 }
 
-export function storageAccountQueuePropertiesCorsRuleAToTerraform(struct?: StorageAccountQueuePropertiesCorsRuleA | cdktn.IResolvable): any {
+export function storageAccountQueuePropertiesCorsRuleToTerraform(struct?: StorageAccountQueuePropertiesCorsRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -92,7 +92,7 @@ export function storageAccountQueuePropertiesCorsRuleAToTerraform(struct?: Stora
 }
 
 
-export function storageAccountQueuePropertiesCorsRuleAToHclTerraform(struct?: StorageAccountQueuePropertiesCorsRuleA | cdktn.IResolvable): any {
+export function storageAccountQueuePropertiesCorsRuleToHclTerraform(struct?: StorageAccountQueuePropertiesCorsRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -134,7 +134,7 @@ export function storageAccountQueuePropertiesCorsRuleAToHclTerraform(struct?: St
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageAccountQueuePropertiesCorsRuleAOutputReference extends cdktn.ComplexObject {
+export class StorageAccountQueuePropertiesCorsRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -148,7 +148,7 @@ export class StorageAccountQueuePropertiesCorsRuleAOutputReference extends cdktn
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): StorageAccountQueuePropertiesCorsRuleA | cdktn.IResolvable | undefined {
+  public get internalValue(): StorageAccountQueuePropertiesCorsRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -177,7 +177,7 @@ export class StorageAccountQueuePropertiesCorsRuleAOutputReference extends cdktn
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageAccountQueuePropertiesCorsRuleA | cdktn.IResolvable | undefined) {
+  public set internalValue(value: StorageAccountQueuePropertiesCorsRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -268,8 +268,8 @@ export class StorageAccountQueuePropertiesCorsRuleAOutputReference extends cdktn
   }
 }
 
-export class StorageAccountQueuePropertiesCorsRuleAList extends cdktn.ComplexList {
-  public internalValue? : StorageAccountQueuePropertiesCorsRuleA[] | cdktn.IResolvable
+export class StorageAccountQueuePropertiesCorsRuleList extends cdktn.ComplexList {
+  public internalValue? : StorageAccountQueuePropertiesCorsRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -283,26 +283,26 @@ export class StorageAccountQueuePropertiesCorsRuleAList extends cdktn.ComplexLis
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): StorageAccountQueuePropertiesCorsRuleAOutputReference {
-    return new StorageAccountQueuePropertiesCorsRuleAOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): StorageAccountQueuePropertiesCorsRuleOutputReference {
+    return new StorageAccountQueuePropertiesCorsRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface StorageAccountQueuePropertiesHourMetricsA {
+export interface StorageAccountQueuePropertiesHourMetrics {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#include_apis StorageAccountQueuePropertiesA#include_apis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#include_apis StorageAccountQueueProperties#include_apis}
   */
   readonly includeApis?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#retention_policy_days StorageAccountQueuePropertiesA#retention_policy_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#retention_policy_days StorageAccountQueueProperties#retention_policy_days}
   */
   readonly retentionPolicyDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#version StorageAccountQueuePropertiesA#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#version StorageAccountQueueProperties#version}
   */
   readonly version: string;
 }
 
-export function storageAccountQueuePropertiesHourMetricsAToTerraform(struct?: StorageAccountQueuePropertiesHourMetricsAOutputReference | StorageAccountQueuePropertiesHourMetricsA): any {
+export function storageAccountQueuePropertiesHourMetricsToTerraform(struct?: StorageAccountQueuePropertiesHourMetricsOutputReference | StorageAccountQueuePropertiesHourMetrics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -315,7 +315,7 @@ export function storageAccountQueuePropertiesHourMetricsAToTerraform(struct?: St
 }
 
 
-export function storageAccountQueuePropertiesHourMetricsAToHclTerraform(struct?: StorageAccountQueuePropertiesHourMetricsAOutputReference | StorageAccountQueuePropertiesHourMetricsA): any {
+export function storageAccountQueuePropertiesHourMetricsToHclTerraform(struct?: StorageAccountQueuePropertiesHourMetricsOutputReference | StorageAccountQueuePropertiesHourMetrics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -345,7 +345,7 @@ export function storageAccountQueuePropertiesHourMetricsAToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageAccountQueuePropertiesHourMetricsAOutputReference extends cdktn.ComplexObject {
+export class StorageAccountQueuePropertiesHourMetricsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -356,7 +356,7 @@ export class StorageAccountQueuePropertiesHourMetricsAOutputReference extends cd
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): StorageAccountQueuePropertiesHourMetricsA | undefined {
+  public get internalValue(): StorageAccountQueuePropertiesHourMetrics | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._includeApis !== undefined) {
@@ -374,7 +374,7 @@ export class StorageAccountQueuePropertiesHourMetricsAOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageAccountQueuePropertiesHourMetricsA | undefined) {
+  public set internalValue(value: StorageAccountQueuePropertiesHourMetrics | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._includeApis = undefined;
@@ -434,30 +434,30 @@ export class StorageAccountQueuePropertiesHourMetricsAOutputReference extends cd
     return this._version;
   }
 }
-export interface StorageAccountQueuePropertiesLoggingA {
+export interface StorageAccountQueuePropertiesLogging {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#delete StorageAccountQueuePropertiesA#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#delete StorageAccountQueueProperties#delete}
   */
   readonly delete: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#read StorageAccountQueuePropertiesA#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#read StorageAccountQueueProperties#read}
   */
   readonly read: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#retention_policy_days StorageAccountQueuePropertiesA#retention_policy_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#retention_policy_days StorageAccountQueueProperties#retention_policy_days}
   */
   readonly retentionPolicyDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#version StorageAccountQueuePropertiesA#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#version StorageAccountQueueProperties#version}
   */
   readonly version: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#write StorageAccountQueuePropertiesA#write}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#write StorageAccountQueueProperties#write}
   */
   readonly write: boolean | cdktn.IResolvable;
 }
 
-export function storageAccountQueuePropertiesLoggingAToTerraform(struct?: StorageAccountQueuePropertiesLoggingAOutputReference | StorageAccountQueuePropertiesLoggingA): any {
+export function storageAccountQueuePropertiesLoggingToTerraform(struct?: StorageAccountQueuePropertiesLoggingOutputReference | StorageAccountQueuePropertiesLogging): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -472,7 +472,7 @@ export function storageAccountQueuePropertiesLoggingAToTerraform(struct?: Storag
 }
 
 
-export function storageAccountQueuePropertiesLoggingAToHclTerraform(struct?: StorageAccountQueuePropertiesLoggingAOutputReference | StorageAccountQueuePropertiesLoggingA): any {
+export function storageAccountQueuePropertiesLoggingToHclTerraform(struct?: StorageAccountQueuePropertiesLoggingOutputReference | StorageAccountQueuePropertiesLogging): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -514,7 +514,7 @@ export function storageAccountQueuePropertiesLoggingAToHclTerraform(struct?: Sto
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageAccountQueuePropertiesLoggingAOutputReference extends cdktn.ComplexObject {
+export class StorageAccountQueuePropertiesLoggingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -525,7 +525,7 @@ export class StorageAccountQueuePropertiesLoggingAOutputReference extends cdktn.
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): StorageAccountQueuePropertiesLoggingA | undefined {
+  public get internalValue(): StorageAccountQueuePropertiesLogging | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._delete !== undefined) {
@@ -551,7 +551,7 @@ export class StorageAccountQueuePropertiesLoggingAOutputReference extends cdktn.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageAccountQueuePropertiesLoggingA | undefined) {
+  public set internalValue(value: StorageAccountQueuePropertiesLogging | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._delete = undefined;
@@ -638,22 +638,22 @@ export class StorageAccountQueuePropertiesLoggingAOutputReference extends cdktn.
     return this._write;
   }
 }
-export interface StorageAccountQueuePropertiesMinuteMetricsA {
+export interface StorageAccountQueuePropertiesMinuteMetrics {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#include_apis StorageAccountQueuePropertiesA#include_apis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#include_apis StorageAccountQueueProperties#include_apis}
   */
   readonly includeApis?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#retention_policy_days StorageAccountQueuePropertiesA#retention_policy_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#retention_policy_days StorageAccountQueueProperties#retention_policy_days}
   */
   readonly retentionPolicyDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#version StorageAccountQueuePropertiesA#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#version StorageAccountQueueProperties#version}
   */
   readonly version: string;
 }
 
-export function storageAccountQueuePropertiesMinuteMetricsAToTerraform(struct?: StorageAccountQueuePropertiesMinuteMetricsAOutputReference | StorageAccountQueuePropertiesMinuteMetricsA): any {
+export function storageAccountQueuePropertiesMinuteMetricsToTerraform(struct?: StorageAccountQueuePropertiesMinuteMetricsOutputReference | StorageAccountQueuePropertiesMinuteMetrics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -666,7 +666,7 @@ export function storageAccountQueuePropertiesMinuteMetricsAToTerraform(struct?: 
 }
 
 
-export function storageAccountQueuePropertiesMinuteMetricsAToHclTerraform(struct?: StorageAccountQueuePropertiesMinuteMetricsAOutputReference | StorageAccountQueuePropertiesMinuteMetricsA): any {
+export function storageAccountQueuePropertiesMinuteMetricsToHclTerraform(struct?: StorageAccountQueuePropertiesMinuteMetricsOutputReference | StorageAccountQueuePropertiesMinuteMetrics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -696,7 +696,7 @@ export function storageAccountQueuePropertiesMinuteMetricsAToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageAccountQueuePropertiesMinuteMetricsAOutputReference extends cdktn.ComplexObject {
+export class StorageAccountQueuePropertiesMinuteMetricsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -707,7 +707,7 @@ export class StorageAccountQueuePropertiesMinuteMetricsAOutputReference extends 
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): StorageAccountQueuePropertiesMinuteMetricsA | undefined {
+  public get internalValue(): StorageAccountQueuePropertiesMinuteMetrics | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._includeApis !== undefined) {
@@ -725,7 +725,7 @@ export class StorageAccountQueuePropertiesMinuteMetricsAOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageAccountQueuePropertiesMinuteMetricsA | undefined) {
+  public set internalValue(value: StorageAccountQueuePropertiesMinuteMetrics | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._includeApis = undefined;
@@ -787,19 +787,19 @@ export class StorageAccountQueuePropertiesMinuteMetricsAOutputReference extends 
 }
 export interface StorageAccountQueuePropertiesTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#create StorageAccountQueuePropertiesA#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#create StorageAccountQueueProperties#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#delete StorageAccountQueuePropertiesA#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#delete StorageAccountQueueProperties#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#read StorageAccountQueuePropertiesA#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#read StorageAccountQueueProperties#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#update StorageAccountQueuePropertiesA#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#update StorageAccountQueueProperties#update}
   */
   readonly update?: string;
 }
@@ -980,9 +980,9 @@ export class StorageAccountQueuePropertiesTimeoutsOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties azurerm_storage_account_queue_properties}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties azurerm_storage_account_queue_properties}
 */
-export class StorageAccountQueuePropertiesA extends cdktn.TerraformResource {
+export class StorageAccountQueueProperties extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -993,11 +993,11 @@ export class StorageAccountQueuePropertiesA extends cdktn.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTN code for importing a StorageAccountQueuePropertiesA resource upon running "cdktn plan <stack-name>"
+  * Generates CDKTN code for importing a StorageAccountQueueProperties resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
-  * @param importToId The construct id used in the generated config for the StorageAccountQueuePropertiesA to import
-  * @param importFromId The id of the existing StorageAccountQueuePropertiesA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties#import import section} in the documentation of this resource for the id to use
-  * @param provider? Optional instance of the provider where the StorageAccountQueuePropertiesA to import is found
+  * @param importToId The construct id used in the generated config for the StorageAccountQueueProperties to import
+  * @param importFromId The id of the existing StorageAccountQueueProperties that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the StorageAccountQueueProperties to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
         return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_account_queue_properties", importId: importFromId, provider });
@@ -1008,19 +1008,19 @@ export class StorageAccountQueuePropertiesA extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_queue_properties azurerm_storage_account_queue_properties} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties azurerm_storage_account_queue_properties} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options StorageAccountQueuePropertiesAConfig
+  * @param options StorageAccountQueuePropertiesConfig
   */
-  public constructor(scope: Construct, id: string, config: StorageAccountQueuePropertiesAConfig) {
+  public constructor(scope: Construct, id: string, config: StorageAccountQueuePropertiesConfig) {
     super(scope, id, {
       terraformResourceType: 'azurerm_storage_account_queue_properties',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.81.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1073,11 +1073,11 @@ export class StorageAccountQueuePropertiesA extends cdktn.TerraformResource {
   }
 
   // cors_rule - computed: false, optional: true, required: false
-  private _corsRule = new StorageAccountQueuePropertiesCorsRuleAList(this, "cors_rule", false);
+  private _corsRule = new StorageAccountQueuePropertiesCorsRuleList(this, "cors_rule", false);
   public get corsRule() {
     return this._corsRule;
   }
-  public putCorsRule(value: StorageAccountQueuePropertiesCorsRuleA[] | cdktn.IResolvable) {
+  public putCorsRule(value: StorageAccountQueuePropertiesCorsRule[] | cdktn.IResolvable) {
     this._corsRule.internalValue = value;
   }
   public resetCorsRule() {
@@ -1089,11 +1089,11 @@ export class StorageAccountQueuePropertiesA extends cdktn.TerraformResource {
   }
 
   // hour_metrics - computed: false, optional: true, required: false
-  private _hourMetrics = new StorageAccountQueuePropertiesHourMetricsAOutputReference(this, "hour_metrics");
+  private _hourMetrics = new StorageAccountQueuePropertiesHourMetricsOutputReference(this, "hour_metrics");
   public get hourMetrics() {
     return this._hourMetrics;
   }
-  public putHourMetrics(value: StorageAccountQueuePropertiesHourMetricsA) {
+  public putHourMetrics(value: StorageAccountQueuePropertiesHourMetrics) {
     this._hourMetrics.internalValue = value;
   }
   public resetHourMetrics() {
@@ -1105,11 +1105,11 @@ export class StorageAccountQueuePropertiesA extends cdktn.TerraformResource {
   }
 
   // logging - computed: false, optional: true, required: false
-  private _logging = new StorageAccountQueuePropertiesLoggingAOutputReference(this, "logging");
+  private _logging = new StorageAccountQueuePropertiesLoggingOutputReference(this, "logging");
   public get logging() {
     return this._logging;
   }
-  public putLogging(value: StorageAccountQueuePropertiesLoggingA) {
+  public putLogging(value: StorageAccountQueuePropertiesLogging) {
     this._logging.internalValue = value;
   }
   public resetLogging() {
@@ -1121,11 +1121,11 @@ export class StorageAccountQueuePropertiesA extends cdktn.TerraformResource {
   }
 
   // minute_metrics - computed: false, optional: true, required: false
-  private _minuteMetrics = new StorageAccountQueuePropertiesMinuteMetricsAOutputReference(this, "minute_metrics");
+  private _minuteMetrics = new StorageAccountQueuePropertiesMinuteMetricsOutputReference(this, "minute_metrics");
   public get minuteMetrics() {
     return this._minuteMetrics;
   }
-  public putMinuteMetrics(value: StorageAccountQueuePropertiesMinuteMetricsA) {
+  public putMinuteMetrics(value: StorageAccountQueuePropertiesMinuteMetrics) {
     this._minuteMetrics.internalValue = value;
   }
   public resetMinuteMetrics() {
@@ -1160,10 +1160,10 @@ export class StorageAccountQueuePropertiesA extends cdktn.TerraformResource {
     return {
       id: cdktn.stringToTerraform(this._id),
       storage_account_id: cdktn.stringToTerraform(this._storageAccountId),
-      cors_rule: cdktn.listMapper(storageAccountQueuePropertiesCorsRuleAToTerraform, true)(this._corsRule.internalValue),
-      hour_metrics: storageAccountQueuePropertiesHourMetricsAToTerraform(this._hourMetrics.internalValue),
-      logging: storageAccountQueuePropertiesLoggingAToTerraform(this._logging.internalValue),
-      minute_metrics: storageAccountQueuePropertiesMinuteMetricsAToTerraform(this._minuteMetrics.internalValue),
+      cors_rule: cdktn.listMapper(storageAccountQueuePropertiesCorsRuleToTerraform, true)(this._corsRule.internalValue),
+      hour_metrics: storageAccountQueuePropertiesHourMetricsToTerraform(this._hourMetrics.internalValue),
+      logging: storageAccountQueuePropertiesLoggingToTerraform(this._logging.internalValue),
+      minute_metrics: storageAccountQueuePropertiesMinuteMetricsToTerraform(this._minuteMetrics.internalValue),
       timeouts: storageAccountQueuePropertiesTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1183,28 +1183,28 @@ export class StorageAccountQueuePropertiesA extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       cors_rule: {
-        value: cdktn.listMapperHcl(storageAccountQueuePropertiesCorsRuleAToHclTerraform, true)(this._corsRule.internalValue),
+        value: cdktn.listMapperHcl(storageAccountQueuePropertiesCorsRuleToHclTerraform, true)(this._corsRule.internalValue),
         isBlock: true,
         type: "list",
-        storageClassType: "StorageAccountQueuePropertiesCorsRuleAList",
+        storageClassType: "StorageAccountQueuePropertiesCorsRuleList",
       },
       hour_metrics: {
-        value: storageAccountQueuePropertiesHourMetricsAToHclTerraform(this._hourMetrics.internalValue),
+        value: storageAccountQueuePropertiesHourMetricsToHclTerraform(this._hourMetrics.internalValue),
         isBlock: true,
         type: "list",
-        storageClassType: "StorageAccountQueuePropertiesHourMetricsAList",
+        storageClassType: "StorageAccountQueuePropertiesHourMetricsList",
       },
       logging: {
-        value: storageAccountQueuePropertiesLoggingAToHclTerraform(this._logging.internalValue),
+        value: storageAccountQueuePropertiesLoggingToHclTerraform(this._logging.internalValue),
         isBlock: true,
         type: "list",
-        storageClassType: "StorageAccountQueuePropertiesLoggingAList",
+        storageClassType: "StorageAccountQueuePropertiesLoggingList",
       },
       minute_metrics: {
-        value: storageAccountQueuePropertiesMinuteMetricsAToHclTerraform(this._minuteMetrics.internalValue),
+        value: storageAccountQueuePropertiesMinuteMetricsToHclTerraform(this._minuteMetrics.internalValue),
         isBlock: true,
         type: "list",
-        storageClassType: "StorageAccountQueuePropertiesMinuteMetricsAList",
+        storageClassType: "StorageAccountQueuePropertiesMinuteMetricsList",
       },
       timeouts: {
         value: storageAccountQueuePropertiesTimeoutsToHclTerraform(this._timeouts.internalValue),

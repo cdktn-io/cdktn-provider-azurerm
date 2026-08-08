@@ -4,12 +4,12 @@
 
 ### RoleManagementPolicy <a name="RoleManagementPolicy" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy azurerm_role_management_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy azurerm_role_management_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicy(scope Construct, id *string, config RoleManagementPolicyConfig) RoleManagementPolicy
 ```
@@ -507,7 +507,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.RoleManagementPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.RoleManagementPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -553,7 +553,7 @@ rolemanagementpolicy.RoleManagementPolicy_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.RoleManagementPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ rolemanagementpolicy.RoleManagementPolicy_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.RoleManagementPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -596,7 +596,7 @@ The construct id used in the generated config for the RoleManagementPolicy to im
 
 The id of the existing RoleManagementPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -994,10 +994,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyActivationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyActivationRules {
-	ApprovalStage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyActivationRulesApprovalStage,
+	ApprovalStage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.roleManagementPolicy.RoleManagementPolicyActivationRulesApprovalStage,
 	MaximumDuration: *string,
 	RequireApproval: interface{},
 	RequiredConditionalAccessAuthenticationContext: *string,
@@ -1031,7 +1031,7 @@ ApprovalStage RoleManagementPolicyActivationRulesApprovalStage
 
 approval_stage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#approval_stage RoleManagementPolicy#approval_stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#approval_stage RoleManagementPolicy#approval_stage}
 
 ---
 
@@ -1045,7 +1045,7 @@ MaximumDuration *string
 
 The time after which the an activation can be valid for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#maximum_duration RoleManagementPolicy#maximum_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#maximum_duration RoleManagementPolicy#maximum_duration}
 
 ---
 
@@ -1059,7 +1059,7 @@ RequireApproval interface{}
 
 Whether an approval is required for activation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#require_approval RoleManagementPolicy#require_approval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#require_approval RoleManagementPolicy#require_approval}
 
 ---
 
@@ -1073,7 +1073,7 @@ RequiredConditionalAccessAuthenticationContext *string
 
 Whether a conditional access context is required during activation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#required_conditional_access_authentication_context RoleManagementPolicy#required_conditional_access_authentication_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#required_conditional_access_authentication_context RoleManagementPolicy#required_conditional_access_authentication_context}
 
 ---
 
@@ -1087,7 +1087,7 @@ RequireJustification interface{}
 
 Whether a justification is required during activation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#require_justification RoleManagementPolicy#require_justification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#require_justification RoleManagementPolicy#require_justification}
 
 ---
 
@@ -1101,7 +1101,7 @@ RequireMultifactorAuthentication interface{}
 
 Whether multi-factor authentication is required during activation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#require_multifactor_authentication RoleManagementPolicy#require_multifactor_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#require_multifactor_authentication RoleManagementPolicy#require_multifactor_authentication}
 
 ---
 
@@ -1115,7 +1115,7 @@ RequireTicketInfo interface{}
 
 Whether ticket information is required during activation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#require_ticket_info RoleManagementPolicy#require_ticket_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#require_ticket_info RoleManagementPolicy#require_ticket_info}
 
 ---
 
@@ -1124,7 +1124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyActivationRulesApprovalStage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyActivationRulesApprovalStage {
 	PrimaryApprover: interface{},
@@ -1149,7 +1149,7 @@ PrimaryApprover interface{}
 
 primary_approver block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#primary_approver RoleManagementPolicy#primary_approver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#primary_approver RoleManagementPolicy#primary_approver}
 
 ---
 
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyActivationRulesApprovalStagePrimaryApprover.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyActivationRulesApprovalStagePrimaryApprover {
 	ObjectId: *string,
@@ -1185,7 +1185,7 @@ ObjectId *string
 
 The ID of the object to act as an approver.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#object_id RoleManagementPolicy#object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#object_id RoleManagementPolicy#object_id}
 
 ---
 
@@ -1199,7 +1199,7 @@ Type *string
 
 The type of object acting as an approver.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#type RoleManagementPolicy#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#type RoleManagementPolicy#type}
 
 ---
 
@@ -1208,7 +1208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyActiveAssignmentRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyActiveAssignmentRules {
 	ExpirationRequired: interface{},
@@ -1241,7 +1241,7 @@ ExpirationRequired interface{}
 
 Must the assignment have an expiry date.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#expiration_required RoleManagementPolicy#expiration_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#expiration_required RoleManagementPolicy#expiration_required}
 
 ---
 
@@ -1255,7 +1255,7 @@ ExpireAfter *string
 
 The duration after which assignments expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#expire_after RoleManagementPolicy#expire_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#expire_after RoleManagementPolicy#expire_after}
 
 ---
 
@@ -1269,7 +1269,7 @@ RequireJustification interface{}
 
 Whether a justification is required to make an assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#require_justification RoleManagementPolicy#require_justification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#require_justification RoleManagementPolicy#require_justification}
 
 ---
 
@@ -1283,7 +1283,7 @@ RequireMultifactorAuthentication interface{}
 
 Whether multi-factor authentication is required to make an assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#require_multifactor_authentication RoleManagementPolicy#require_multifactor_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#require_multifactor_authentication RoleManagementPolicy#require_multifactor_authentication}
 
 ---
 
@@ -1297,7 +1297,7 @@ RequireTicketInfo interface{}
 
 Whether ticket information is required to make an assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#require_ticket_info RoleManagementPolicy#require_ticket_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#require_ticket_info RoleManagementPolicy#require_ticket_info}
 
 ---
 
@@ -1306,7 +1306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyConfig {
 	Connection: interface{},
@@ -1318,12 +1318,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagement
 	Provisioners: *[]interface{},
 	RoleDefinitionId: *string,
 	Scope: *string,
-	ActivationRules: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyActivationRules,
-	ActiveAssignmentRules: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyActiveAssignmentRules,
-	EligibleAssignmentRules: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyEligibleAssignmentRules,
+	ActivationRules: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.roleManagementPolicy.RoleManagementPolicyActivationRules,
+	ActiveAssignmentRules: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.roleManagementPolicy.RoleManagementPolicyActiveAssignmentRules,
+	EligibleAssignmentRules: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.roleManagementPolicy.RoleManagementPolicyEligibleAssignmentRules,
 	Id: *string,
-	NotificationRules: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRules,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyTimeouts,
+	NotificationRules: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.roleManagementPolicy.RoleManagementPolicyNotificationRules,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.roleManagementPolicy.RoleManagementPolicyTimeouts,
 }
 ```
 
@@ -1343,7 +1343,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagement
 | <code><a href="#@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyConfig.property.activationRules">ActivationRules</a></code> | <code><a href="#@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyActivationRules">RoleManagementPolicyActivationRules</a></code> | activation_rules block. |
 | <code><a href="#@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyConfig.property.activeAssignmentRules">ActiveAssignmentRules</a></code> | <code><a href="#@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyActiveAssignmentRules">RoleManagementPolicyActiveAssignmentRules</a></code> | active_assignment_rules block. |
 | <code><a href="#@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyConfig.property.eligibleAssignmentRules">EligibleAssignmentRules</a></code> | <code><a href="#@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyEligibleAssignmentRules">RoleManagementPolicyEligibleAssignmentRules</a></code> | eligible_assignment_rules block. |
-| <code><a href="#@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#id RoleManagementPolicy#id}. |
+| <code><a href="#@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#id RoleManagementPolicy#id}. |
 | <code><a href="#@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyConfig.property.notificationRules">NotificationRules</a></code> | <code><a href="#@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRules">RoleManagementPolicyNotificationRules</a></code> | notification_rules block. |
 | <code><a href="#@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyTimeouts">RoleManagementPolicyTimeouts</a></code> | timeouts block. |
 
@@ -1429,7 +1429,7 @@ RoleDefinitionId *string
 
 ID of the Azure Role to which this policy is assigned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#role_definition_id RoleManagementPolicy#role_definition_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#role_definition_id RoleManagementPolicy#role_definition_id}
 
 ---
 
@@ -1443,7 +1443,7 @@ Scope *string
 
 The scope of the role to which this policy will apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#scope RoleManagementPolicy#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#scope RoleManagementPolicy#scope}
 
 ---
 
@@ -1457,7 +1457,7 @@ ActivationRules RoleManagementPolicyActivationRules
 
 activation_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#activation_rules RoleManagementPolicy#activation_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#activation_rules RoleManagementPolicy#activation_rules}
 
 ---
 
@@ -1471,7 +1471,7 @@ ActiveAssignmentRules RoleManagementPolicyActiveAssignmentRules
 
 active_assignment_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#active_assignment_rules RoleManagementPolicy#active_assignment_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#active_assignment_rules RoleManagementPolicy#active_assignment_rules}
 
 ---
 
@@ -1485,7 +1485,7 @@ EligibleAssignmentRules RoleManagementPolicyEligibleAssignmentRules
 
 eligible_assignment_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#eligible_assignment_rules RoleManagementPolicy#eligible_assignment_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#eligible_assignment_rules RoleManagementPolicy#eligible_assignment_rules}
 
 ---
 
@@ -1497,7 +1497,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#id RoleManagementPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#id RoleManagementPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1514,7 +1514,7 @@ NotificationRules RoleManagementPolicyNotificationRules
 
 notification_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#notification_rules RoleManagementPolicy#notification_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#notification_rules RoleManagementPolicy#notification_rules}
 
 ---
 
@@ -1528,7 +1528,7 @@ Timeouts RoleManagementPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#timeouts RoleManagementPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#timeouts RoleManagementPolicy#timeouts}
 
 ---
 
@@ -1537,7 +1537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyEligibleAssignmentRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyEligibleAssignmentRules {
 	ExpirationRequired: interface{},
@@ -1564,7 +1564,7 @@ ExpirationRequired interface{}
 
 Must the assignment have an expiry date.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#expiration_required RoleManagementPolicy#expiration_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#expiration_required RoleManagementPolicy#expiration_required}
 
 ---
 
@@ -1578,7 +1578,7 @@ ExpireAfter *string
 
 The duration after which assignments expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#expire_after RoleManagementPolicy#expire_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#expire_after RoleManagementPolicy#expire_after}
 
 ---
 
@@ -1587,12 +1587,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRules {
-	ActiveAssignments: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignments,
-	EligibleActivations: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivations,
-	EligibleAssignments: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignments,
+	ActiveAssignments: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignments,
+	EligibleActivations: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivations,
+	EligibleAssignments: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignments,
 }
 ```
 
@@ -1616,7 +1616,7 @@ ActiveAssignments RoleManagementPolicyNotificationRulesActiveAssignments
 
 active_assignments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#active_assignments RoleManagementPolicy#active_assignments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#active_assignments RoleManagementPolicy#active_assignments}
 
 ---
 
@@ -1630,7 +1630,7 @@ EligibleActivations RoleManagementPolicyNotificationRulesEligibleActivations
 
 eligible_activations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#eligible_activations RoleManagementPolicy#eligible_activations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#eligible_activations RoleManagementPolicy#eligible_activations}
 
 ---
 
@@ -1644,7 +1644,7 @@ EligibleAssignments RoleManagementPolicyNotificationRulesEligibleAssignments
 
 eligible_assignments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#eligible_assignments RoleManagementPolicy#eligible_assignments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#eligible_assignments RoleManagementPolicy#eligible_assignments}
 
 ---
 
@@ -1653,12 +1653,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesActiveAssignments {
-	AdminNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications,
-	ApproverNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications,
-	AssigneeNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications,
+	AdminNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications,
+	ApproverNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications,
+	AssigneeNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications,
 }
 ```
 
@@ -1682,7 +1682,7 @@ AdminNotifications RoleManagementPolicyNotificationRulesActiveAssignmentsAdminNo
 
 admin_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#admin_notifications RoleManagementPolicy#admin_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#admin_notifications RoleManagementPolicy#admin_notifications}
 
 ---
 
@@ -1696,7 +1696,7 @@ ApproverNotifications RoleManagementPolicyNotificationRulesActiveAssignmentsAppr
 
 approver_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#approver_notifications RoleManagementPolicy#approver_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#approver_notifications RoleManagementPolicy#approver_notifications}
 
 ---
 
@@ -1710,7 +1710,7 @@ AssigneeNotifications RoleManagementPolicyNotificationRulesActiveAssignmentsAssi
 
 assignee_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#assignee_notifications RoleManagementPolicy#assignee_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#assignee_notifications RoleManagementPolicy#assignee_notifications}
 
 ---
 
@@ -1719,7 +1719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications {
 	DefaultRecipients: interface{},
@@ -1748,7 +1748,7 @@ DefaultRecipients interface{}
 
 Whether the default recipients are notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
 
 ---
 
@@ -1762,7 +1762,7 @@ NotificationLevel *string
 
 What level of notifications are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
 
 ---
 
@@ -1776,7 +1776,7 @@ AdditionalRecipients *[]*string
 
 The additional recipients to notify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
 
 ---
 
@@ -1785,7 +1785,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications {
 	DefaultRecipients: interface{},
@@ -1814,7 +1814,7 @@ DefaultRecipients interface{}
 
 Whether the default recipients are notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
 
 ---
 
@@ -1828,7 +1828,7 @@ NotificationLevel *string
 
 What level of notifications are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
 
 ---
 
@@ -1842,7 +1842,7 @@ AdditionalRecipients *[]*string
 
 The additional recipients to notify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
 
 ---
 
@@ -1851,7 +1851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications {
 	DefaultRecipients: interface{},
@@ -1880,7 +1880,7 @@ DefaultRecipients interface{}
 
 Whether the default recipients are notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
 
 ---
 
@@ -1894,7 +1894,7 @@ NotificationLevel *string
 
 What level of notifications are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
 
 ---
 
@@ -1908,7 +1908,7 @@ AdditionalRecipients *[]*string
 
 The additional recipients to notify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
 
 ---
 
@@ -1917,12 +1917,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesEligibleActivations {
-	AdminNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications,
-	ApproverNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications,
-	AssigneeNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications,
+	AdminNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications,
+	ApproverNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications,
+	AssigneeNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications,
 }
 ```
 
@@ -1946,7 +1946,7 @@ AdminNotifications RoleManagementPolicyNotificationRulesEligibleActivationsAdmin
 
 admin_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#admin_notifications RoleManagementPolicy#admin_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#admin_notifications RoleManagementPolicy#admin_notifications}
 
 ---
 
@@ -1960,7 +1960,7 @@ ApproverNotifications RoleManagementPolicyNotificationRulesEligibleActivationsAp
 
 approver_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#approver_notifications RoleManagementPolicy#approver_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#approver_notifications RoleManagementPolicy#approver_notifications}
 
 ---
 
@@ -1974,7 +1974,7 @@ AssigneeNotifications RoleManagementPolicyNotificationRulesEligibleActivationsAs
 
 assignee_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#assignee_notifications RoleManagementPolicy#assignee_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#assignee_notifications RoleManagementPolicy#assignee_notifications}
 
 ---
 
@@ -1983,7 +1983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications {
 	DefaultRecipients: interface{},
@@ -2012,7 +2012,7 @@ DefaultRecipients interface{}
 
 Whether the default recipients are notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
 
 ---
 
@@ -2026,7 +2026,7 @@ NotificationLevel *string
 
 What level of notifications are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
 
 ---
 
@@ -2040,7 +2040,7 @@ AdditionalRecipients *[]*string
 
 The additional recipients to notify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
 
 ---
 
@@ -2049,7 +2049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications {
 	DefaultRecipients: interface{},
@@ -2078,7 +2078,7 @@ DefaultRecipients interface{}
 
 Whether the default recipients are notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
 
 ---
 
@@ -2092,7 +2092,7 @@ NotificationLevel *string
 
 What level of notifications are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
 
 ---
 
@@ -2106,7 +2106,7 @@ AdditionalRecipients *[]*string
 
 The additional recipients to notify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
 
 ---
 
@@ -2115,7 +2115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications {
 	DefaultRecipients: interface{},
@@ -2144,7 +2144,7 @@ DefaultRecipients interface{}
 
 Whether the default recipients are notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
 
 ---
 
@@ -2158,7 +2158,7 @@ NotificationLevel *string
 
 What level of notifications are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
 
 ---
 
@@ -2172,7 +2172,7 @@ AdditionalRecipients *[]*string
 
 The additional recipients to notify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
 
 ---
 
@@ -2181,12 +2181,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesEligibleAssignments {
-	AdminNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications,
-	ApproverNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications,
-	AssigneeNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications,
+	AdminNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications,
+	ApproverNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications,
+	AssigneeNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications,
 }
 ```
 
@@ -2210,7 +2210,7 @@ AdminNotifications RoleManagementPolicyNotificationRulesEligibleAssignmentsAdmin
 
 admin_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#admin_notifications RoleManagementPolicy#admin_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#admin_notifications RoleManagementPolicy#admin_notifications}
 
 ---
 
@@ -2224,7 +2224,7 @@ ApproverNotifications RoleManagementPolicyNotificationRulesEligibleAssignmentsAp
 
 approver_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#approver_notifications RoleManagementPolicy#approver_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#approver_notifications RoleManagementPolicy#approver_notifications}
 
 ---
 
@@ -2238,7 +2238,7 @@ AssigneeNotifications RoleManagementPolicyNotificationRulesEligibleAssignmentsAs
 
 assignee_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#assignee_notifications RoleManagementPolicy#assignee_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#assignee_notifications RoleManagementPolicy#assignee_notifications}
 
 ---
 
@@ -2247,7 +2247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications {
 	DefaultRecipients: interface{},
@@ -2276,7 +2276,7 @@ DefaultRecipients interface{}
 
 Whether the default recipients are notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
 
 ---
 
@@ -2290,7 +2290,7 @@ NotificationLevel *string
 
 What level of notifications are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
 
 ---
 
@@ -2304,7 +2304,7 @@ AdditionalRecipients *[]*string
 
 The additional recipients to notify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
 
 ---
 
@@ -2313,7 +2313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications {
 	DefaultRecipients: interface{},
@@ -2342,7 +2342,7 @@ DefaultRecipients interface{}
 
 Whether the default recipients are notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
 
 ---
 
@@ -2356,7 +2356,7 @@ NotificationLevel *string
 
 What level of notifications are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
 
 ---
 
@@ -2370,7 +2370,7 @@ AdditionalRecipients *[]*string
 
 The additional recipients to notify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
 
 ---
 
@@ -2379,7 +2379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications {
 	DefaultRecipients: interface{},
@@ -2408,7 +2408,7 @@ DefaultRecipients interface{}
 
 Whether the default recipients are notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
 
 ---
 
@@ -2422,7 +2422,7 @@ NotificationLevel *string
 
 What level of notifications are sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
 
 ---
 
@@ -2436,7 +2436,7 @@ AdditionalRecipients *[]*string
 
 The additional recipients to notify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
 
 ---
 
@@ -2445,7 +2445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyTimeouts {
 	Create: *string,
@@ -2459,10 +2459,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagement
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#create RoleManagementPolicy#create}. |
-| <code><a href="#@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#delete RoleManagementPolicy#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#read RoleManagementPolicy#read}. |
-| <code><a href="#@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#update RoleManagementPolicy#update}. |
+| <code><a href="#@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#create RoleManagementPolicy#create}. |
+| <code><a href="#@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#delete RoleManagementPolicy#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#read RoleManagementPolicy#read}. |
+| <code><a href="#@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#update RoleManagementPolicy#update}. |
 
 ---
 
@@ -2474,7 +2474,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#create RoleManagementPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#create RoleManagementPolicy#create}.
 
 ---
 
@@ -2486,7 +2486,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#delete RoleManagementPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#delete RoleManagementPolicy#delete}.
 
 ---
 
@@ -2498,7 +2498,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#read RoleManagementPolicy#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#read RoleManagementPolicy#read}.
 
 ---
 
@@ -2510,7 +2510,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/role_management_policy#update RoleManagementPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_management_policy#update RoleManagementPolicy#update}.
 
 ---
 
@@ -2521,7 +2521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyActivationRulesApprovalStageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyActivationRulesApprovalStageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyActivationRulesApprovalStageOutputReference
 ```
@@ -2805,7 +2805,7 @@ func InternalValue() RoleManagementPolicyActivationRulesApprovalStage
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyActivationRulesApprovalStagePrimaryApproverList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RoleManagementPolicyActivationRulesApprovalStagePrimaryApproverList
 ```
@@ -2965,7 +2965,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyActivationRulesApprovalStagePrimaryApproverOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RoleManagementPolicyActivationRulesApprovalStagePrimaryApproverOutputReference
 ```
@@ -3276,7 +3276,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyActivationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyActivationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyActivationRulesOutputReference
 ```
@@ -3741,7 +3741,7 @@ func InternalValue() RoleManagementPolicyActivationRules
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyActiveAssignmentRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyActiveAssignmentRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyActiveAssignmentRulesOutputReference
 ```
@@ -4135,7 +4135,7 @@ func InternalValue() RoleManagementPolicyActiveAssignmentRules
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyEligibleAssignmentRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyEligibleAssignmentRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyEligibleAssignmentRulesOutputReference
 ```
@@ -4442,7 +4442,7 @@ func InternalValue() RoleManagementPolicyEligibleAssignmentRules
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsOutputReference
 ```
@@ -4764,7 +4764,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesActiveAssignmentsAdmin
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsOutputReference
 ```
@@ -5086,7 +5086,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesActiveAssignmentsAppro
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsOutputReference
 ```
@@ -5408,7 +5408,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesActiveAssignmentsAssig
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesActiveAssignmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesActiveAssignmentsOutputReference
 ```
@@ -5783,7 +5783,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesActiveAssignments
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsOutputReference
 ```
@@ -6105,7 +6105,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesEligibleActivationsAdm
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsOutputReference
 ```
@@ -6427,7 +6427,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesEligibleActivationsApp
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsOutputReference
 ```
@@ -6749,7 +6749,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesEligibleActivationsAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesEligibleActivationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesEligibleActivationsOutputReference
 ```
@@ -7124,7 +7124,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesEligibleActivations
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsOutputReference
 ```
@@ -7446,7 +7446,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesEligibleAssignmentsAdm
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsOutputReference
 ```
@@ -7768,7 +7768,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesEligibleAssignmentsApp
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsOutputReference
 ```
@@ -8090,7 +8090,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesEligibleAssignmentsAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesEligibleAssignmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesEligibleAssignmentsOutputReference
 ```
@@ -8465,7 +8465,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesEligibleAssignments
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesOutputReference
 ```
@@ -8840,7 +8840,7 @@ func InternalValue() RoleManagementPolicyNotificationRules
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyTimeoutsOutputReference
 ```

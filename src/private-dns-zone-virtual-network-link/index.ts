@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_zone_virtual_network_link
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_zone_virtual_network_link
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,62 +13,58 @@ import * as cdktn from 'cdktn';
 
 export interface PrivateDnsZoneVirtualNetworkLinkConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_zone_virtual_network_link#id PrivateDnsZoneVirtualNetworkLink#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_zone_virtual_network_link#id PrivateDnsZoneVirtualNetworkLink#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_zone_virtual_network_link#name PrivateDnsZoneVirtualNetworkLink#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_zone_virtual_network_link#name PrivateDnsZoneVirtualNetworkLink#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_zone_virtual_network_link#private_dns_zone_name PrivateDnsZoneVirtualNetworkLink#private_dns_zone_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_zone_virtual_network_link#private_dns_zone_id PrivateDnsZoneVirtualNetworkLink#private_dns_zone_id}
   */
-  readonly privateDnsZoneName: string;
+  readonly privateDnsZoneId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_zone_virtual_network_link#registration_enabled PrivateDnsZoneVirtualNetworkLink#registration_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_zone_virtual_network_link#registration_enabled PrivateDnsZoneVirtualNetworkLink#registration_enabled}
   */
   readonly registrationEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_zone_virtual_network_link#resolution_policy PrivateDnsZoneVirtualNetworkLink#resolution_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_zone_virtual_network_link#resolution_policy PrivateDnsZoneVirtualNetworkLink#resolution_policy}
   */
   readonly resolutionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_zone_virtual_network_link#resource_group_name PrivateDnsZoneVirtualNetworkLink#resource_group_name}
-  */
-  readonly resourceGroupName: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_zone_virtual_network_link#tags PrivateDnsZoneVirtualNetworkLink#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_zone_virtual_network_link#tags PrivateDnsZoneVirtualNetworkLink#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_zone_virtual_network_link#virtual_network_id PrivateDnsZoneVirtualNetworkLink#virtual_network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_zone_virtual_network_link#virtual_network_id PrivateDnsZoneVirtualNetworkLink#virtual_network_id}
   */
   readonly virtualNetworkId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_zone_virtual_network_link#timeouts PrivateDnsZoneVirtualNetworkLink#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_zone_virtual_network_link#timeouts PrivateDnsZoneVirtualNetworkLink#timeouts}
   */
   readonly timeouts?: PrivateDnsZoneVirtualNetworkLinkTimeouts;
 }
 export interface PrivateDnsZoneVirtualNetworkLinkTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_zone_virtual_network_link#create PrivateDnsZoneVirtualNetworkLink#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_zone_virtual_network_link#create PrivateDnsZoneVirtualNetworkLink#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_zone_virtual_network_link#delete PrivateDnsZoneVirtualNetworkLink#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_zone_virtual_network_link#delete PrivateDnsZoneVirtualNetworkLink#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_zone_virtual_network_link#read PrivateDnsZoneVirtualNetworkLink#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_zone_virtual_network_link#read PrivateDnsZoneVirtualNetworkLink#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_zone_virtual_network_link#update PrivateDnsZoneVirtualNetworkLink#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_zone_virtual_network_link#update PrivateDnsZoneVirtualNetworkLink#update}
   */
   readonly update?: string;
 }
@@ -249,7 +245,7 @@ export class PrivateDnsZoneVirtualNetworkLinkTimeoutsOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link}
 */
 export class PrivateDnsZoneVirtualNetworkLink extends cdktn.TerraformResource {
 
@@ -265,7 +261,7 @@ export class PrivateDnsZoneVirtualNetworkLink extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PrivateDnsZoneVirtualNetworkLink resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PrivateDnsZoneVirtualNetworkLink to import
-  * @param importFromId The id of the existing PrivateDnsZoneVirtualNetworkLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_zone_virtual_network_link#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PrivateDnsZoneVirtualNetworkLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_zone_virtual_network_link#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PrivateDnsZoneVirtualNetworkLink to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -277,7 +273,7 @@ export class PrivateDnsZoneVirtualNetworkLink extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -288,8 +284,8 @@ export class PrivateDnsZoneVirtualNetworkLink extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_private_dns_zone_virtual_network_link',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.81.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -301,10 +297,9 @@ export class PrivateDnsZoneVirtualNetworkLink extends cdktn.TerraformResource {
     });
     this._id = config.id;
     this._name = config.name;
-    this._privateDnsZoneName = config.privateDnsZoneName;
+    this._privateDnsZoneId = config.privateDnsZoneId;
     this._registrationEnabled = config.registrationEnabled;
     this._resolutionPolicy = config.resolutionPolicy;
-    this._resourceGroupName = config.resourceGroupName;
     this._tags = config.tags;
     this._virtualNetworkId = config.virtualNetworkId;
     this._timeouts.internalValue = config.timeouts;
@@ -343,17 +338,17 @@ export class PrivateDnsZoneVirtualNetworkLink extends cdktn.TerraformResource {
     return this._name;
   }
 
-  // private_dns_zone_name - computed: false, optional: false, required: true
-  private _privateDnsZoneName?: string; 
-  public get privateDnsZoneName() {
-    return this.getStringAttribute('private_dns_zone_name');
+  // private_dns_zone_id - computed: false, optional: false, required: true
+  private _privateDnsZoneId?: string; 
+  public get privateDnsZoneId() {
+    return this.getStringAttribute('private_dns_zone_id');
   }
-  public set privateDnsZoneName(value: string) {
-    this._privateDnsZoneName = value;
+  public set privateDnsZoneId(value: string) {
+    this._privateDnsZoneId = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get privateDnsZoneNameInput() {
-    return this._privateDnsZoneName;
+  public get privateDnsZoneIdInput() {
+    return this._privateDnsZoneId;
   }
 
   // registration_enabled - computed: false, optional: true, required: false
@@ -386,19 +381,6 @@ export class PrivateDnsZoneVirtualNetworkLink extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get resolutionPolicyInput() {
     return this._resolutionPolicy;
-  }
-
-  // resource_group_name - computed: false, optional: false, required: true
-  private _resourceGroupName?: string; 
-  public get resourceGroupName() {
-    return this.getStringAttribute('resource_group_name');
-  }
-  public set resourceGroupName(value: string) {
-    this._resourceGroupName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get resourceGroupNameInput() {
-    return this._resourceGroupName;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -454,10 +436,9 @@ export class PrivateDnsZoneVirtualNetworkLink extends cdktn.TerraformResource {
     return {
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
-      private_dns_zone_name: cdktn.stringToTerraform(this._privateDnsZoneName),
+      private_dns_zone_id: cdktn.stringToTerraform(this._privateDnsZoneId),
       registration_enabled: cdktn.booleanToTerraform(this._registrationEnabled),
       resolution_policy: cdktn.stringToTerraform(this._resolutionPolicy),
-      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       virtual_network_id: cdktn.stringToTerraform(this._virtualNetworkId),
       timeouts: privateDnsZoneVirtualNetworkLinkTimeoutsToTerraform(this._timeouts.internalValue),
@@ -478,8 +459,8 @@ export class PrivateDnsZoneVirtualNetworkLink extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      private_dns_zone_name: {
-        value: cdktn.stringToHclTerraform(this._privateDnsZoneName),
+      private_dns_zone_id: {
+        value: cdktn.stringToHclTerraform(this._privateDnsZoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -492,12 +473,6 @@ export class PrivateDnsZoneVirtualNetworkLink extends cdktn.TerraformResource {
       },
       resolution_policy: {
         value: cdktn.stringToHclTerraform(this._resolutionPolicy),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      resource_group_name: {
-        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

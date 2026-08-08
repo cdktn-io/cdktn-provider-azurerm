@@ -4,7 +4,7 @@
 
 ### Subnet <a name="Subnet" id="@cdktn/provider-azurerm.subnet.Subnet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet azurerm_subnet}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet azurerm_subnet}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subnet.Subnet.Initializer"></a>
 
@@ -29,10 +29,14 @@ subnet.Subnet(
   delegation: IResolvable | typing.List[SubnetDelegation] = None,
   id: str = None,
   ip_address_pool: SubnetIpAddressPool = None,
+  network_security_group_id_wo: str = None,
+  network_security_group_id_wo_version: typing.Union[int, float] = None,
   private_endpoint_network_policies: str = None,
   private_link_service_network_policies_enabled: bool | IResolvable = None,
+  route_table_id_wo: str = None,
+  route_table_id_wo_version: typing.Union[int, float] = None,
+  service_endpoint: IResolvable | typing.List[SubnetServiceEndpoint] = None,
   service_endpoint_policy_ids: typing.List[str] = None,
-  service_endpoints: typing.List[str] = None,
   sharing_scope: str = None,
   timeouts: SubnetTimeouts = None
 )
@@ -49,19 +53,23 @@ subnet.Subnet(
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#name Subnet#name}. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#resource_group_name Subnet#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.virtualNetworkName">virtual_network_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#virtual_network_name Subnet#virtual_network_name}. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.addressPrefixes">address_prefixes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#address_prefixes Subnet#address_prefixes}. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.defaultOutboundAccessEnabled">default_outbound_access_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#default_outbound_access_enabled Subnet#default_outbound_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#name Subnet#name}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#resource_group_name Subnet#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.virtualNetworkName">virtual_network_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#virtual_network_name Subnet#virtual_network_name}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.addressPrefixes">address_prefixes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#address_prefixes Subnet#address_prefixes}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.defaultOutboundAccessEnabled">default_outbound_access_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#default_outbound_access_enabled Subnet#default_outbound_access_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.delegation">delegation</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.subnet.SubnetDelegation">SubnetDelegation</a>]</code> | delegation block. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#id Subnet#id}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#id Subnet#id}. |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.ipAddressPool">ip_address_pool</a></code> | <code><a href="#@cdktn/provider-azurerm.subnet.SubnetIpAddressPool">SubnetIpAddressPool</a></code> | ip_address_pool block. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.privateEndpointNetworkPolicies">private_endpoint_network_policies</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#private_endpoint_network_policies Subnet#private_endpoint_network_policies}. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.privateLinkServiceNetworkPoliciesEnabled">private_link_service_network_policies_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#private_link_service_network_policies_enabled Subnet#private_link_service_network_policies_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.serviceEndpointPolicyIds">service_endpoint_policy_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#service_endpoint_policy_ids Subnet#service_endpoint_policy_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.serviceEndpoints">service_endpoints</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#service_endpoints Subnet#service_endpoints}. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.sharingScope">sharing_scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#sharing_scope Subnet#sharing_scope}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.networkSecurityGroupIdWo">network_security_group_id_wo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#network_security_group_id_wo Subnet#network_security_group_id_wo}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.networkSecurityGroupIdWoVersion">network_security_group_id_wo_version</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#network_security_group_id_wo_version Subnet#network_security_group_id_wo_version}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.privateEndpointNetworkPolicies">private_endpoint_network_policies</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#private_endpoint_network_policies Subnet#private_endpoint_network_policies}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.privateLinkServiceNetworkPoliciesEnabled">private_link_service_network_policies_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#private_link_service_network_policies_enabled Subnet#private_link_service_network_policies_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.routeTableIdWo">route_table_id_wo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#route_table_id_wo Subnet#route_table_id_wo}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.routeTableIdWoVersion">route_table_id_wo_version</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#route_table_id_wo_version Subnet#route_table_id_wo_version}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.serviceEndpoint">service_endpoint</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpoint">SubnetServiceEndpoint</a>]</code> | service_endpoint block. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.serviceEndpointPolicyIds">service_endpoint_policy_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#service_endpoint_policy_ids Subnet#service_endpoint_policy_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.sharingScope">sharing_scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#sharing_scope Subnet#sharing_scope}. |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.subnet.SubnetTimeouts">SubnetTimeouts</a></code> | timeouts block. |
 
 ---
@@ -130,7 +138,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#name Subnet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#name Subnet#name}.
 
 ---
 
@@ -138,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#resource_group_name Subnet#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#resource_group_name Subnet#resource_group_name}.
 
 ---
 
@@ -146,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#virtual_network_name Subnet#virtual_network_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#virtual_network_name Subnet#virtual_network_name}.
 
 ---
 
@@ -154,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#address_prefixes Subnet#address_prefixes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#address_prefixes Subnet#address_prefixes}.
 
 ---
 
@@ -162,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#default_outbound_access_enabled Subnet#default_outbound_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#default_outbound_access_enabled Subnet#default_outbound_access_enabled}.
 
 ---
 
@@ -172,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 delegation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#delegation Subnet#delegation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#delegation Subnet#delegation}
 
 ---
 
@@ -180,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#id Subnet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#id Subnet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -193,7 +201,23 @@ If you experience problems setting this value it might not be settable. Please t
 
 ip_address_pool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#ip_address_pool Subnet#ip_address_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#ip_address_pool Subnet#ip_address_pool}
+
+---
+
+##### `network_security_group_id_wo`<sup>Optional</sup> <a name="network_security_group_id_wo" id="@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.networkSecurityGroupIdWo"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#network_security_group_id_wo Subnet#network_security_group_id_wo}.
+
+---
+
+##### `network_security_group_id_wo_version`<sup>Optional</sup> <a name="network_security_group_id_wo_version" id="@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.networkSecurityGroupIdWoVersion"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#network_security_group_id_wo_version Subnet#network_security_group_id_wo_version}.
 
 ---
 
@@ -201,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#private_endpoint_network_policies Subnet#private_endpoint_network_policies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#private_endpoint_network_policies Subnet#private_endpoint_network_policies}.
 
 ---
 
@@ -209,7 +233,33 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#private_link_service_network_policies_enabled Subnet#private_link_service_network_policies_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#private_link_service_network_policies_enabled Subnet#private_link_service_network_policies_enabled}.
+
+---
+
+##### `route_table_id_wo`<sup>Optional</sup> <a name="route_table_id_wo" id="@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.routeTableIdWo"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#route_table_id_wo Subnet#route_table_id_wo}.
+
+---
+
+##### `route_table_id_wo_version`<sup>Optional</sup> <a name="route_table_id_wo_version" id="@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.routeTableIdWoVersion"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#route_table_id_wo_version Subnet#route_table_id_wo_version}.
+
+---
+
+##### `service_endpoint`<sup>Optional</sup> <a name="service_endpoint" id="@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.serviceEndpoint"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpoint">SubnetServiceEndpoint</a>]
+
+service_endpoint block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#service_endpoint Subnet#service_endpoint}
 
 ---
 
@@ -217,15 +267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#service_endpoint_policy_ids Subnet#service_endpoint_policy_ids}.
-
----
-
-##### `service_endpoints`<sup>Optional</sup> <a name="service_endpoints" id="@cdktn/provider-azurerm.subnet.Subnet.Initializer.parameter.serviceEndpoints"></a>
-
-- *Type:* typing.List[str]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#service_endpoints Subnet#service_endpoints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#service_endpoint_policy_ids Subnet#service_endpoint_policy_ids}.
 
 ---
 
@@ -233,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#sharing_scope Subnet#sharing_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#sharing_scope Subnet#sharing_scope}.
 
 ---
 
@@ -243,7 +285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#timeouts Subnet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#timeouts Subnet#timeouts}
 
 ---
 
@@ -277,16 +319,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.putDelegation">put_delegation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.putIpAddressPool">put_ip_address_pool</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.putServiceEndpoint">put_service_endpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.resetAddressPrefixes">reset_address_prefixes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.resetDefaultOutboundAccessEnabled">reset_default_outbound_access_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.resetDelegation">reset_delegation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.resetIpAddressPool">reset_ip_address_pool</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.resetNetworkSecurityGroupIdWo">reset_network_security_group_id_wo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.resetNetworkSecurityGroupIdWoVersion">reset_network_security_group_id_wo_version</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.resetPrivateEndpointNetworkPolicies">reset_private_endpoint_network_policies</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.resetPrivateLinkServiceNetworkPoliciesEnabled">reset_private_link_service_network_policies_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.resetRouteTableIdWo">reset_route_table_id_wo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.resetRouteTableIdWoVersion">reset_route_table_id_wo_version</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.resetServiceEndpoint">reset_service_endpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.resetServiceEndpointPolicyIds">reset_service_endpoint_policy_ids</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.resetServiceEndpoints">reset_service_endpoints</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.resetSharingScope">reset_sharing_scope</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
@@ -667,7 +714,7 @@ def put_ip_address_pool(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#id Subnet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#id Subnet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -678,7 +725,21 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#number_of_ip_addresses Subnet#number_of_ip_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#number_of_ip_addresses Subnet#number_of_ip_addresses}.
+
+---
+
+##### `put_service_endpoint` <a name="put_service_endpoint" id="@cdktn/provider-azurerm.subnet.Subnet.putServiceEndpoint"></a>
+
+```python
+def put_service_endpoint(
+  value: IResolvable | typing.List[SubnetServiceEndpoint]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.subnet.Subnet.putServiceEndpoint.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpoint">SubnetServiceEndpoint</a>]
 
 ---
 
@@ -697,7 +758,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#create Subnet#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#create Subnet#create}.
 
 ---
 
@@ -705,7 +766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#delete Subnet#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#delete Subnet#delete}.
 
 ---
 
@@ -713,7 +774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#read Subnet#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#read Subnet#read}.
 
 ---
 
@@ -721,7 +782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#update Subnet#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#update Subnet#update}.
 
 ---
 
@@ -755,6 +816,18 @@ def reset_id() -> None
 def reset_ip_address_pool() -> None
 ```
 
+##### `reset_network_security_group_id_wo` <a name="reset_network_security_group_id_wo" id="@cdktn/provider-azurerm.subnet.Subnet.resetNetworkSecurityGroupIdWo"></a>
+
+```python
+def reset_network_security_group_id_wo() -> None
+```
+
+##### `reset_network_security_group_id_wo_version` <a name="reset_network_security_group_id_wo_version" id="@cdktn/provider-azurerm.subnet.Subnet.resetNetworkSecurityGroupIdWoVersion"></a>
+
+```python
+def reset_network_security_group_id_wo_version() -> None
+```
+
 ##### `reset_private_endpoint_network_policies` <a name="reset_private_endpoint_network_policies" id="@cdktn/provider-azurerm.subnet.Subnet.resetPrivateEndpointNetworkPolicies"></a>
 
 ```python
@@ -767,16 +840,28 @@ def reset_private_endpoint_network_policies() -> None
 def reset_private_link_service_network_policies_enabled() -> None
 ```
 
+##### `reset_route_table_id_wo` <a name="reset_route_table_id_wo" id="@cdktn/provider-azurerm.subnet.Subnet.resetRouteTableIdWo"></a>
+
+```python
+def reset_route_table_id_wo() -> None
+```
+
+##### `reset_route_table_id_wo_version` <a name="reset_route_table_id_wo_version" id="@cdktn/provider-azurerm.subnet.Subnet.resetRouteTableIdWoVersion"></a>
+
+```python
+def reset_route_table_id_wo_version() -> None
+```
+
+##### `reset_service_endpoint` <a name="reset_service_endpoint" id="@cdktn/provider-azurerm.subnet.Subnet.resetServiceEndpoint"></a>
+
+```python
+def reset_service_endpoint() -> None
+```
+
 ##### `reset_service_endpoint_policy_ids` <a name="reset_service_endpoint_policy_ids" id="@cdktn/provider-azurerm.subnet.Subnet.resetServiceEndpointPolicyIds"></a>
 
 ```python
 def reset_service_endpoint_policy_ids() -> None
-```
-
-##### `reset_service_endpoints` <a name="reset_service_endpoints" id="@cdktn/provider-azurerm.subnet.Subnet.resetServiceEndpoints"></a>
-
-```python
-def reset_service_endpoints() -> None
 ```
 
 ##### `reset_sharing_scope` <a name="reset_sharing_scope" id="@cdktn/provider-azurerm.subnet.Subnet.resetSharingScope"></a>
@@ -905,7 +990,7 @@ The construct id used in the generated config for the Subnet to import.
 
 The id of the existing Subnet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -937,6 +1022,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.delegation">delegation</a></code> | <code><a href="#@cdktn/provider-azurerm.subnet.SubnetDelegationList">SubnetDelegationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.ipAddressPool">ip_address_pool</a></code> | <code><a href="#@cdktn/provider-azurerm.subnet.SubnetIpAddressPoolOutputReference">SubnetIpAddressPoolOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.networkSecurityGroupId">network_security_group_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.routeTableId">route_table_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.serviceEndpoint">service_endpoint</a></code> | <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList">SubnetServiceEndpointList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.subnet.SubnetTimeoutsOutputReference">SubnetTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.addressPrefixesInput">address_prefixes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.defaultOutboundAccessEnabledInput">default_outbound_access_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -944,11 +1032,15 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.ipAddressPoolInput">ip_address_pool_input</a></code> | <code><a href="#@cdktn/provider-azurerm.subnet.SubnetIpAddressPool">SubnetIpAddressPool</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.networkSecurityGroupIdWoInput">network_security_group_id_wo_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.networkSecurityGroupIdWoVersionInput">network_security_group_id_wo_version_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.privateEndpointNetworkPoliciesInput">private_endpoint_network_policies_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.privateLinkServiceNetworkPoliciesEnabledInput">private_link_service_network_policies_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.routeTableIdWoInput">route_table_id_wo_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.routeTableIdWoVersionInput">route_table_id_wo_version_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.serviceEndpointInput">service_endpoint_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpoint">SubnetServiceEndpoint</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.serviceEndpointPolicyIdsInput">service_endpoint_policy_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.serviceEndpointsInput">service_endpoints_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.sharingScopeInput">sharing_scope_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.subnet.SubnetTimeouts">SubnetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.virtualNetworkNameInput">virtual_network_name_input</a></code> | <code>str</code> | *No description.* |
@@ -956,11 +1048,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.defaultOutboundAccessEnabled">default_outbound_access_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.networkSecurityGroupIdWo">network_security_group_id_wo</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.networkSecurityGroupIdWoVersion">network_security_group_id_wo_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.privateEndpointNetworkPolicies">private_endpoint_network_policies</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.privateLinkServiceNetworkPoliciesEnabled">private_link_service_network_policies_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.routeTableIdWo">route_table_id_wo</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.routeTableIdWoVersion">route_table_id_wo_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.serviceEndpointPolicyIds">service_endpoint_policy_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.serviceEndpoints">service_endpoints</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.sharingScope">sharing_scope</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.Subnet.property.virtualNetworkName">virtual_network_name</a></code> | <code>str</code> | *No description.* |
 
@@ -1128,6 +1223,36 @@ ip_address_pool: SubnetIpAddressPoolOutputReference
 
 ---
 
+##### `network_security_group_id`<sup>Required</sup> <a name="network_security_group_id" id="@cdktn/provider-azurerm.subnet.Subnet.property.networkSecurityGroupId"></a>
+
+```python
+network_security_group_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `route_table_id`<sup>Required</sup> <a name="route_table_id" id="@cdktn/provider-azurerm.subnet.Subnet.property.routeTableId"></a>
+
+```python
+route_table_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `service_endpoint`<sup>Required</sup> <a name="service_endpoint" id="@cdktn/provider-azurerm.subnet.Subnet.property.serviceEndpoint"></a>
+
+```python
+service_endpoint: SubnetServiceEndpointList
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList">SubnetServiceEndpointList</a>
+
+---
+
 ##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azurerm.subnet.Subnet.property.timeouts"></a>
 
 ```python
@@ -1198,6 +1323,26 @@ name_input: str
 
 ---
 
+##### `network_security_group_id_wo_input`<sup>Optional</sup> <a name="network_security_group_id_wo_input" id="@cdktn/provider-azurerm.subnet.Subnet.property.networkSecurityGroupIdWoInput"></a>
+
+```python
+network_security_group_id_wo_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `network_security_group_id_wo_version_input`<sup>Optional</sup> <a name="network_security_group_id_wo_version_input" id="@cdktn/provider-azurerm.subnet.Subnet.property.networkSecurityGroupIdWoVersionInput"></a>
+
+```python
+network_security_group_id_wo_version_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `private_endpoint_network_policies_input`<sup>Optional</sup> <a name="private_endpoint_network_policies_input" id="@cdktn/provider-azurerm.subnet.Subnet.property.privateEndpointNetworkPoliciesInput"></a>
 
 ```python
@@ -1228,20 +1373,40 @@ resource_group_name_input: str
 
 ---
 
+##### `route_table_id_wo_input`<sup>Optional</sup> <a name="route_table_id_wo_input" id="@cdktn/provider-azurerm.subnet.Subnet.property.routeTableIdWoInput"></a>
+
+```python
+route_table_id_wo_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `route_table_id_wo_version_input`<sup>Optional</sup> <a name="route_table_id_wo_version_input" id="@cdktn/provider-azurerm.subnet.Subnet.property.routeTableIdWoVersionInput"></a>
+
+```python
+route_table_id_wo_version_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `service_endpoint_input`<sup>Optional</sup> <a name="service_endpoint_input" id="@cdktn/provider-azurerm.subnet.Subnet.property.serviceEndpointInput"></a>
+
+```python
+service_endpoint_input: IResolvable | typing.List[SubnetServiceEndpoint]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpoint">SubnetServiceEndpoint</a>]
+
+---
+
 ##### `service_endpoint_policy_ids_input`<sup>Optional</sup> <a name="service_endpoint_policy_ids_input" id="@cdktn/provider-azurerm.subnet.Subnet.property.serviceEndpointPolicyIdsInput"></a>
 
 ```python
 service_endpoint_policy_ids_input: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
----
-
-##### `service_endpoints_input`<sup>Optional</sup> <a name="service_endpoints_input" id="@cdktn/provider-azurerm.subnet.Subnet.property.serviceEndpointsInput"></a>
-
-```python
-service_endpoints_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
@@ -1318,6 +1483,28 @@ name: str
 
 ---
 
+##### ~~`network_security_group_id_wo`~~<sup>Required</sup> <a name="network_security_group_id_wo" id="@cdktn/provider-azurerm.subnet.Subnet.property.networkSecurityGroupIdWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```python
+network_security_group_id_wo: str
+```
+
+- *Type:* str
+
+---
+
+##### `network_security_group_id_wo_version`<sup>Required</sup> <a name="network_security_group_id_wo_version" id="@cdktn/provider-azurerm.subnet.Subnet.property.networkSecurityGroupIdWoVersion"></a>
+
+```python
+network_security_group_id_wo_version: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `private_endpoint_network_policies`<sup>Required</sup> <a name="private_endpoint_network_policies" id="@cdktn/provider-azurerm.subnet.Subnet.property.privateEndpointNetworkPolicies"></a>
 
 ```python
@@ -1348,20 +1535,32 @@ resource_group_name: str
 
 ---
 
+##### ~~`route_table_id_wo`~~<sup>Required</sup> <a name="route_table_id_wo" id="@cdktn/provider-azurerm.subnet.Subnet.property.routeTableIdWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```python
+route_table_id_wo: str
+```
+
+- *Type:* str
+
+---
+
+##### `route_table_id_wo_version`<sup>Required</sup> <a name="route_table_id_wo_version" id="@cdktn/provider-azurerm.subnet.Subnet.property.routeTableIdWoVersion"></a>
+
+```python
+route_table_id_wo_version: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `service_endpoint_policy_ids`<sup>Required</sup> <a name="service_endpoint_policy_ids" id="@cdktn/provider-azurerm.subnet.Subnet.property.serviceEndpointPolicyIds"></a>
 
 ```python
 service_endpoint_policy_ids: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
----
-
-##### `service_endpoints`<sup>Required</sup> <a name="service_endpoints" id="@cdktn/provider-azurerm.subnet.Subnet.property.serviceEndpoints"></a>
-
-```python
-service_endpoints: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
@@ -1431,10 +1630,14 @@ subnet.SubnetConfig(
   delegation: IResolvable | typing.List[SubnetDelegation] = None,
   id: str = None,
   ip_address_pool: SubnetIpAddressPool = None,
+  network_security_group_id_wo: str = None,
+  network_security_group_id_wo_version: typing.Union[int, float] = None,
   private_endpoint_network_policies: str = None,
   private_link_service_network_policies_enabled: bool | IResolvable = None,
+  route_table_id_wo: str = None,
+  route_table_id_wo_version: typing.Union[int, float] = None,
+  service_endpoint: IResolvable | typing.List[SubnetServiceEndpoint] = None,
   service_endpoint_policy_ids: typing.List[str] = None,
-  service_endpoints: typing.List[str] = None,
   sharing_scope: str = None,
   timeouts: SubnetTimeouts = None
 )
@@ -1451,19 +1654,23 @@ subnet.SubnetConfig(
 | <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#name Subnet#name}. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#resource_group_name Subnet#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.virtualNetworkName">virtual_network_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#virtual_network_name Subnet#virtual_network_name}. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.addressPrefixes">address_prefixes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#address_prefixes Subnet#address_prefixes}. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.defaultOutboundAccessEnabled">default_outbound_access_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#default_outbound_access_enabled Subnet#default_outbound_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#name Subnet#name}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#resource_group_name Subnet#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.virtualNetworkName">virtual_network_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#virtual_network_name Subnet#virtual_network_name}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.addressPrefixes">address_prefixes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#address_prefixes Subnet#address_prefixes}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.defaultOutboundAccessEnabled">default_outbound_access_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#default_outbound_access_enabled Subnet#default_outbound_access_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.delegation">delegation</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.subnet.SubnetDelegation">SubnetDelegation</a>]</code> | delegation block. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#id Subnet#id}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#id Subnet#id}. |
 | <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.ipAddressPool">ip_address_pool</a></code> | <code><a href="#@cdktn/provider-azurerm.subnet.SubnetIpAddressPool">SubnetIpAddressPool</a></code> | ip_address_pool block. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.privateEndpointNetworkPolicies">private_endpoint_network_policies</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#private_endpoint_network_policies Subnet#private_endpoint_network_policies}. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.privateLinkServiceNetworkPoliciesEnabled">private_link_service_network_policies_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#private_link_service_network_policies_enabled Subnet#private_link_service_network_policies_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.serviceEndpointPolicyIds">service_endpoint_policy_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#service_endpoint_policy_ids Subnet#service_endpoint_policy_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.serviceEndpoints">service_endpoints</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#service_endpoints Subnet#service_endpoints}. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.sharingScope">sharing_scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#sharing_scope Subnet#sharing_scope}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.networkSecurityGroupIdWo">network_security_group_id_wo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#network_security_group_id_wo Subnet#network_security_group_id_wo}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.networkSecurityGroupIdWoVersion">network_security_group_id_wo_version</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#network_security_group_id_wo_version Subnet#network_security_group_id_wo_version}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.privateEndpointNetworkPolicies">private_endpoint_network_policies</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#private_endpoint_network_policies Subnet#private_endpoint_network_policies}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.privateLinkServiceNetworkPoliciesEnabled">private_link_service_network_policies_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#private_link_service_network_policies_enabled Subnet#private_link_service_network_policies_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.routeTableIdWo">route_table_id_wo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#route_table_id_wo Subnet#route_table_id_wo}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.routeTableIdWoVersion">route_table_id_wo_version</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#route_table_id_wo_version Subnet#route_table_id_wo_version}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.serviceEndpoint">service_endpoint</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpoint">SubnetServiceEndpoint</a>]</code> | service_endpoint block. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.serviceEndpointPolicyIds">service_endpoint_policy_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#service_endpoint_policy_ids Subnet#service_endpoint_policy_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.sharingScope">sharing_scope</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#sharing_scope Subnet#sharing_scope}. |
 | <code><a href="#@cdktn/provider-azurerm.subnet.SubnetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.subnet.SubnetTimeouts">SubnetTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1546,7 +1753,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#name Subnet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#name Subnet#name}.
 
 ---
 
@@ -1558,7 +1765,7 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#resource_group_name Subnet#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#resource_group_name Subnet#resource_group_name}.
 
 ---
 
@@ -1570,7 +1777,7 @@ virtual_network_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#virtual_network_name Subnet#virtual_network_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#virtual_network_name Subnet#virtual_network_name}.
 
 ---
 
@@ -1582,7 +1789,7 @@ address_prefixes: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#address_prefixes Subnet#address_prefixes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#address_prefixes Subnet#address_prefixes}.
 
 ---
 
@@ -1594,7 +1801,7 @@ default_outbound_access_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#default_outbound_access_enabled Subnet#default_outbound_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#default_outbound_access_enabled Subnet#default_outbound_access_enabled}.
 
 ---
 
@@ -1608,7 +1815,7 @@ delegation: IResolvable | typing.List[SubnetDelegation]
 
 delegation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#delegation Subnet#delegation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#delegation Subnet#delegation}
 
 ---
 
@@ -1620,7 +1827,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#id Subnet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#id Subnet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1637,7 +1844,31 @@ ip_address_pool: SubnetIpAddressPool
 
 ip_address_pool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#ip_address_pool Subnet#ip_address_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#ip_address_pool Subnet#ip_address_pool}
+
+---
+
+##### `network_security_group_id_wo`<sup>Optional</sup> <a name="network_security_group_id_wo" id="@cdktn/provider-azurerm.subnet.SubnetConfig.property.networkSecurityGroupIdWo"></a>
+
+```python
+network_security_group_id_wo: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#network_security_group_id_wo Subnet#network_security_group_id_wo}.
+
+---
+
+##### `network_security_group_id_wo_version`<sup>Optional</sup> <a name="network_security_group_id_wo_version" id="@cdktn/provider-azurerm.subnet.SubnetConfig.property.networkSecurityGroupIdWoVersion"></a>
+
+```python
+network_security_group_id_wo_version: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#network_security_group_id_wo_version Subnet#network_security_group_id_wo_version}.
 
 ---
 
@@ -1649,7 +1880,7 @@ private_endpoint_network_policies: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#private_endpoint_network_policies Subnet#private_endpoint_network_policies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#private_endpoint_network_policies Subnet#private_endpoint_network_policies}.
 
 ---
 
@@ -1661,7 +1892,45 @@ private_link_service_network_policies_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#private_link_service_network_policies_enabled Subnet#private_link_service_network_policies_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#private_link_service_network_policies_enabled Subnet#private_link_service_network_policies_enabled}.
+
+---
+
+##### `route_table_id_wo`<sup>Optional</sup> <a name="route_table_id_wo" id="@cdktn/provider-azurerm.subnet.SubnetConfig.property.routeTableIdWo"></a>
+
+```python
+route_table_id_wo: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#route_table_id_wo Subnet#route_table_id_wo}.
+
+---
+
+##### `route_table_id_wo_version`<sup>Optional</sup> <a name="route_table_id_wo_version" id="@cdktn/provider-azurerm.subnet.SubnetConfig.property.routeTableIdWoVersion"></a>
+
+```python
+route_table_id_wo_version: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#route_table_id_wo_version Subnet#route_table_id_wo_version}.
+
+---
+
+##### `service_endpoint`<sup>Optional</sup> <a name="service_endpoint" id="@cdktn/provider-azurerm.subnet.SubnetConfig.property.serviceEndpoint"></a>
+
+```python
+service_endpoint: IResolvable | typing.List[SubnetServiceEndpoint]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpoint">SubnetServiceEndpoint</a>]
+
+service_endpoint block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#service_endpoint Subnet#service_endpoint}
 
 ---
 
@@ -1673,19 +1942,7 @@ service_endpoint_policy_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#service_endpoint_policy_ids Subnet#service_endpoint_policy_ids}.
-
----
-
-##### `service_endpoints`<sup>Optional</sup> <a name="service_endpoints" id="@cdktn/provider-azurerm.subnet.SubnetConfig.property.serviceEndpoints"></a>
-
-```python
-service_endpoints: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#service_endpoints Subnet#service_endpoints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#service_endpoint_policy_ids Subnet#service_endpoint_policy_ids}.
 
 ---
 
@@ -1697,7 +1954,7 @@ sharing_scope: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#sharing_scope Subnet#sharing_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#sharing_scope Subnet#sharing_scope}.
 
 ---
 
@@ -1711,7 +1968,7 @@ timeouts: SubnetTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#timeouts Subnet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#timeouts Subnet#timeouts}
 
 ---
 
@@ -1732,7 +1989,7 @@ subnet.SubnetDelegation(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetDelegation.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#name Subnet#name}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetDelegation.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#name Subnet#name}. |
 | <code><a href="#@cdktn/provider-azurerm.subnet.SubnetDelegation.property.serviceDelegation">service_delegation</a></code> | <code><a href="#@cdktn/provider-azurerm.subnet.SubnetDelegationServiceDelegation">SubnetDelegationServiceDelegation</a></code> | service_delegation block. |
 
 ---
@@ -1745,7 +2002,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#name Subnet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#name Subnet#name}.
 
 ---
 
@@ -1759,7 +2016,7 @@ service_delegation: SubnetDelegationServiceDelegation
 
 service_delegation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#service_delegation Subnet#service_delegation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#service_delegation Subnet#service_delegation}
 
 ---
 
@@ -1780,8 +2037,8 @@ subnet.SubnetDelegationServiceDelegation(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetDelegationServiceDelegation.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#name Subnet#name}. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetDelegationServiceDelegation.property.actions">actions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#actions Subnet#actions}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetDelegationServiceDelegation.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#name Subnet#name}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetDelegationServiceDelegation.property.actions">actions</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#actions Subnet#actions}. |
 
 ---
 
@@ -1793,7 +2050,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#name Subnet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#name Subnet#name}.
 
 ---
 
@@ -1805,7 +2062,7 @@ actions: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#actions Subnet#actions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#actions Subnet#actions}.
 
 ---
 
@@ -1826,8 +2083,8 @@ subnet.SubnetIpAddressPool(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetIpAddressPool.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#id Subnet#id}. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetIpAddressPool.property.numberOfIpAddresses">number_of_ip_addresses</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#number_of_ip_addresses Subnet#number_of_ip_addresses}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetIpAddressPool.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#id Subnet#id}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetIpAddressPool.property.numberOfIpAddresses">number_of_ip_addresses</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#number_of_ip_addresses Subnet#number_of_ip_addresses}. |
 
 ---
 
@@ -1839,7 +2096,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#id Subnet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#id Subnet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1854,7 +2111,53 @@ number_of_ip_addresses: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#number_of_ip_addresses Subnet#number_of_ip_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#number_of_ip_addresses Subnet#number_of_ip_addresses}.
+
+---
+
+### SubnetServiceEndpoint <a name="SubnetServiceEndpoint" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpoint"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpoint.Initializer"></a>
+
+```python
+from cdktn_provider_azurerm import subnet
+
+subnet.SubnetServiceEndpoint(
+  service: str,
+  network_identifier: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpoint.property.service">service</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#service Subnet#service}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpoint.property.networkIdentifier">network_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#network_identifier Subnet#network_identifier}. |
+
+---
+
+##### `service`<sup>Required</sup> <a name="service" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpoint.property.service"></a>
+
+```python
+service: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#service Subnet#service}.
+
+---
+
+##### `network_identifier`<sup>Optional</sup> <a name="network_identifier" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpoint.property.networkIdentifier"></a>
+
+```python
+network_identifier: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#network_identifier Subnet#network_identifier}.
 
 ---
 
@@ -1877,10 +2180,10 @@ subnet.SubnetTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#create Subnet#create}. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#delete Subnet#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#read Subnet#read}. |
-| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#update Subnet#update}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#create Subnet#create}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#delete Subnet#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#read Subnet#read}. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#update Subnet#update}. |
 
 ---
 
@@ -1892,7 +2195,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#create Subnet#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#create Subnet#create}.
 
 ---
 
@@ -1904,7 +2207,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#delete Subnet#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#delete Subnet#delete}.
 
 ---
 
@@ -1916,7 +2219,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#read Subnet#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#read Subnet#read}.
 
 ---
 
@@ -1928,7 +2231,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#update Subnet#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#update Subnet#update}.
 
 ---
 
@@ -2366,7 +2669,7 @@ def put_service_delegation(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#name Subnet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#name Subnet#name}.
 
 ---
 
@@ -2374,7 +2677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/subnet#actions Subnet#actions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subnet#actions Subnet#actions}.
 
 ---
 
@@ -3118,6 +3421,521 @@ internal_value: SubnetIpAddressPool
 ```
 
 - *Type:* <a href="#@cdktn/provider-azurerm.subnet.SubnetIpAddressPool">SubnetIpAddressPool</a>
+
+---
+
+
+### SubnetServiceEndpointList <a name="SubnetServiceEndpointList" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.Initializer"></a>
+
+```python
+from cdktn_provider_azurerm import subnet
+
+subnet.SubnetServiceEndpointList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> SubnetServiceEndpointOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpoint">SubnetServiceEndpoint</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[SubnetServiceEndpoint]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpoint">SubnetServiceEndpoint</a>]
+
+---
+
+
+### SubnetServiceEndpointOutputReference <a name="SubnetServiceEndpointOutputReference" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_azurerm import subnet
+
+subnet.SubnetServiceEndpointOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.resetNetworkIdentifier">reset_network_identifier</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_network_identifier` <a name="reset_network_identifier" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.resetNetworkIdentifier"></a>
+
+```python
+def reset_network_identifier() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.property.networkIdentifierInput">network_identifier_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.property.serviceInput">service_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.property.networkIdentifier">network_identifier</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.property.service">service</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpoint">SubnetServiceEndpoint</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `network_identifier_input`<sup>Optional</sup> <a name="network_identifier_input" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.property.networkIdentifierInput"></a>
+
+```python
+network_identifier_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `service_input`<sup>Optional</sup> <a name="service_input" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.property.serviceInput"></a>
+
+```python
+service_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `network_identifier`<sup>Required</sup> <a name="network_identifier" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.property.networkIdentifier"></a>
+
+```python
+network_identifier: str
+```
+
+- *Type:* str
+
+---
+
+##### `service`<sup>Required</sup> <a name="service" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.property.service"></a>
+
+```python
+service: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.subnet.SubnetServiceEndpointOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | SubnetServiceEndpoint
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.subnet.SubnetServiceEndpoint">SubnetServiceEndpoint</a>
 
 ---
 

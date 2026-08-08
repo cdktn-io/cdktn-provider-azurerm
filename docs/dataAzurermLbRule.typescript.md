@@ -4,7 +4,7 @@
 
 ### DataAzurermLbRule <a name="DataAzurermLbRule" id="@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/lb_rule azurerm_lb_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/lb_rule azurerm_lb_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRule.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermLbRule to impor
 
 The id of the existing DataAzurermLbRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/lb_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/lb_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -445,8 +445,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRule.property.backendAddressPoolId">backendAddressPoolId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRule.property.backendPort">backendPort</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRule.property.disableOutboundSnat">disableOutboundSnat</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRule.property.enableFloatingIp">enableFloatingIp</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRule.property.enableTcpReset">enableTcpReset</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRule.property.floatingIpEnabled">floatingIpEnabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRule.property.frontendIpConfigurationName">frontendIpConfigurationName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRule.property.frontendPort">frontendPort</a></code> | <code>number</code> | *No description.* |
@@ -612,26 +610,6 @@ public readonly backendPort: number;
 
 ```typescript
 public readonly disableOutboundSnat: IResolvable;
-```
-
-- *Type:* cdktn.IResolvable
-
----
-
-##### `enableFloatingIp`<sup>Required</sup> <a name="enableFloatingIp" id="@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRule.property.enableFloatingIp"></a>
-
-```typescript
-public readonly enableFloatingIp: IResolvable;
-```
-
-- *Type:* cdktn.IResolvable
-
----
-
-##### `enableTcpReset`<sup>Required</sup> <a name="enableTcpReset" id="@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRule.property.enableTcpReset"></a>
-
-```typescript
-public readonly enableTcpReset: IResolvable;
 ```
 
 - *Type:* cdktn.IResolvable
@@ -839,9 +817,9 @@ const dataAzurermLbRuleConfig: dataAzurermLbRule.DataAzurermLbRuleConfig = { ...
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRuleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRuleConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRuleConfig.property.loadbalancerId">loadbalancerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/lb_rule#loadbalancer_id DataAzurermLbRule#loadbalancer_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRuleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/lb_rule#name DataAzurermLbRule#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/lb_rule#id DataAzurermLbRule#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRuleConfig.property.loadbalancerId">loadbalancerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/lb_rule#loadbalancer_id DataAzurermLbRule#loadbalancer_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRuleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/lb_rule#name DataAzurermLbRule#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/lb_rule#id DataAzurermLbRule#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRuleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRuleTimeouts">DataAzurermLbRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -924,7 +902,7 @@ public readonly loadbalancerId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/lb_rule#loadbalancer_id DataAzurermLbRule#loadbalancer_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/lb_rule#loadbalancer_id DataAzurermLbRule#loadbalancer_id}.
 
 ---
 
@@ -936,7 +914,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/lb_rule#name DataAzurermLbRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/lb_rule#name DataAzurermLbRule#name}.
 
 ---
 
@@ -948,7 +926,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/lb_rule#id DataAzurermLbRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/lb_rule#id DataAzurermLbRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -965,7 +943,7 @@ public readonly timeouts: DataAzurermLbRuleTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/lb_rule#timeouts DataAzurermLbRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/lb_rule#timeouts DataAzurermLbRule#timeouts}
 
 ---
 
@@ -983,7 +961,7 @@ const dataAzurermLbRuleTimeouts: dataAzurermLbRule.DataAzurermLbRuleTimeouts = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRuleTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/lb_rule#read DataAzurermLbRule#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbRule.DataAzurermLbRuleTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/lb_rule#read DataAzurermLbRule#read}. |
 
 ---
 
@@ -995,7 +973,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/lb_rule#read DataAzurermLbRule#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/lb_rule#read DataAzurermLbRule#read}.
 
 ---
 

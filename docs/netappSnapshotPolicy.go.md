@@ -4,12 +4,12 @@
 
 ### NetappSnapshotPolicy <a name="NetappSnapshotPolicy" id="@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy azurerm_netapp_snapshot_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy azurerm_netapp_snapshot_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshotpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/netappsnapshotpolicy"
 
 netappsnapshotpolicy.NewNetappSnapshotPolicy(scope Construct, id *string, config NetappSnapshotPolicyConfig) NetappSnapshotPolicy
 ```
@@ -514,7 +514,7 @@ func ResetWeeklySchedule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshotpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/netappsnapshotpolicy"
 
 netappsnapshotpolicy.NetappSnapshotPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -546,7 +546,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshotpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/netappsnapshotpolicy"
 
 netappsnapshotpolicy.NetappSnapshotPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -560,7 +560,7 @@ netappsnapshotpolicy.NetappSnapshotPolicy_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshotpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/netappsnapshotpolicy"
 
 netappsnapshotpolicy.NetappSnapshotPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -574,7 +574,7 @@ netappsnapshotpolicy.NetappSnapshotPolicy_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshotpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/netappsnapshotpolicy"
 
 netappsnapshotpolicy.NetappSnapshotPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -603,7 +603,7 @@ The construct id used in the generated config for the NetappSnapshotPolicy to im
 
 The id of the existing NetappSnapshotPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1067,7 +1067,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshotpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/netappsnapshotpolicy"
 
 &netappsnapshotpolicy.NetappSnapshotPolicyConfig {
 	Connection: interface{},
@@ -1082,13 +1082,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshot
 	Location: *string,
 	Name: *string,
 	ResourceGroupName: *string,
-	DailySchedule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.netappSnapshotPolicy.NetappSnapshotPolicyDailySchedule,
-	HourlySchedule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.netappSnapshotPolicy.NetappSnapshotPolicyHourlySchedule,
+	DailySchedule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.netappSnapshotPolicy.NetappSnapshotPolicyDailySchedule,
+	HourlySchedule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.netappSnapshotPolicy.NetappSnapshotPolicyHourlySchedule,
 	Id: *string,
-	MonthlySchedule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.netappSnapshotPolicy.NetappSnapshotPolicyMonthlySchedule,
+	MonthlySchedule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.netappSnapshotPolicy.NetappSnapshotPolicyMonthlySchedule,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.netappSnapshotPolicy.NetappSnapshotPolicyTimeouts,
-	WeeklySchedule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.netappSnapshotPolicy.NetappSnapshotPolicyWeeklySchedule,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.netappSnapshotPolicy.NetappSnapshotPolicyTimeouts,
+	WeeklySchedule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.netappSnapshotPolicy.NetappSnapshotPolicyWeeklySchedule,
 }
 ```
 
@@ -1103,16 +1103,16 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshot
 | <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.accountName">AccountName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#account_name NetappSnapshotPolicy#account_name}. |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#enabled NetappSnapshotPolicy#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#location NetappSnapshotPolicy#location}. |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#name NetappSnapshotPolicy#name}. |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#resource_group_name NetappSnapshotPolicy#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.accountName">AccountName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#account_name NetappSnapshotPolicy#account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#enabled NetappSnapshotPolicy#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#location NetappSnapshotPolicy#location}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#name NetappSnapshotPolicy#name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#resource_group_name NetappSnapshotPolicy#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.dailySchedule">DailySchedule</a></code> | <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyDailySchedule">NetappSnapshotPolicyDailySchedule</a></code> | daily_schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.hourlySchedule">HourlySchedule</a></code> | <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyHourlySchedule">NetappSnapshotPolicyHourlySchedule</a></code> | hourly_schedule block. |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#id NetappSnapshotPolicy#id}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#id NetappSnapshotPolicy#id}. |
 | <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.monthlySchedule">MonthlySchedule</a></code> | <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyMonthlySchedule">NetappSnapshotPolicyMonthlySchedule</a></code> | monthly_schedule block. |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#tags NetappSnapshotPolicy#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#tags NetappSnapshotPolicy#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyTimeouts">NetappSnapshotPolicyTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyConfig.property.weeklySchedule">WeeklySchedule</a></code> | <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyWeeklySchedule">NetappSnapshotPolicyWeeklySchedule</a></code> | weekly_schedule block. |
 
@@ -1196,7 +1196,7 @@ AccountName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#account_name NetappSnapshotPolicy#account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#account_name NetappSnapshotPolicy#account_name}.
 
 ---
 
@@ -1208,7 +1208,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#enabled NetappSnapshotPolicy#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#enabled NetappSnapshotPolicy#enabled}.
 
 ---
 
@@ -1220,7 +1220,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#location NetappSnapshotPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#location NetappSnapshotPolicy#location}.
 
 ---
 
@@ -1232,7 +1232,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#name NetappSnapshotPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#name NetappSnapshotPolicy#name}.
 
 ---
 
@@ -1244,7 +1244,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#resource_group_name NetappSnapshotPolicy#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#resource_group_name NetappSnapshotPolicy#resource_group_name}.
 
 ---
 
@@ -1258,7 +1258,7 @@ DailySchedule NetappSnapshotPolicyDailySchedule
 
 daily_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#daily_schedule NetappSnapshotPolicy#daily_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#daily_schedule NetappSnapshotPolicy#daily_schedule}
 
 ---
 
@@ -1272,7 +1272,7 @@ HourlySchedule NetappSnapshotPolicyHourlySchedule
 
 hourly_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#hourly_schedule NetappSnapshotPolicy#hourly_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#hourly_schedule NetappSnapshotPolicy#hourly_schedule}
 
 ---
 
@@ -1284,7 +1284,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#id NetappSnapshotPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#id NetappSnapshotPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1301,7 +1301,7 @@ MonthlySchedule NetappSnapshotPolicyMonthlySchedule
 
 monthly_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#monthly_schedule NetappSnapshotPolicy#monthly_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#monthly_schedule NetappSnapshotPolicy#monthly_schedule}
 
 ---
 
@@ -1313,7 +1313,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#tags NetappSnapshotPolicy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#tags NetappSnapshotPolicy#tags}.
 
 ---
 
@@ -1327,7 +1327,7 @@ Timeouts NetappSnapshotPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#timeouts NetappSnapshotPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#timeouts NetappSnapshotPolicy#timeouts}
 
 ---
 
@@ -1341,7 +1341,7 @@ WeeklySchedule NetappSnapshotPolicyWeeklySchedule
 
 weekly_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#weekly_schedule NetappSnapshotPolicy#weekly_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#weekly_schedule NetappSnapshotPolicy#weekly_schedule}
 
 ---
 
@@ -1350,7 +1350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyDailySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshotpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/netappsnapshotpolicy"
 
 &netappsnapshotpolicy.NetappSnapshotPolicyDailySchedule {
 	Hour: *f64,
@@ -1363,9 +1363,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshot
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyDailySchedule.property.hour">Hour</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#hour NetappSnapshotPolicy#hour}. |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyDailySchedule.property.minute">Minute</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#minute NetappSnapshotPolicy#minute}. |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyDailySchedule.property.snapshotsToKeep">SnapshotsToKeep</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#snapshots_to_keep NetappSnapshotPolicy#snapshots_to_keep}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyDailySchedule.property.hour">Hour</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#hour NetappSnapshotPolicy#hour}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyDailySchedule.property.minute">Minute</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#minute NetappSnapshotPolicy#minute}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyDailySchedule.property.snapshotsToKeep">SnapshotsToKeep</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#snapshots_to_keep NetappSnapshotPolicy#snapshots_to_keep}. |
 
 ---
 
@@ -1377,7 +1377,7 @@ Hour *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#hour NetappSnapshotPolicy#hour}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#hour NetappSnapshotPolicy#hour}.
 
 ---
 
@@ -1389,7 +1389,7 @@ Minute *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#minute NetappSnapshotPolicy#minute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#minute NetappSnapshotPolicy#minute}.
 
 ---
 
@@ -1401,7 +1401,7 @@ SnapshotsToKeep *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#snapshots_to_keep NetappSnapshotPolicy#snapshots_to_keep}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#snapshots_to_keep NetappSnapshotPolicy#snapshots_to_keep}.
 
 ---
 
@@ -1410,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyHourlySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshotpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/netappsnapshotpolicy"
 
 &netappsnapshotpolicy.NetappSnapshotPolicyHourlySchedule {
 	Minute: *f64,
@@ -1422,8 +1422,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshot
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyHourlySchedule.property.minute">Minute</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#minute NetappSnapshotPolicy#minute}. |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyHourlySchedule.property.snapshotsToKeep">SnapshotsToKeep</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#snapshots_to_keep NetappSnapshotPolicy#snapshots_to_keep}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyHourlySchedule.property.minute">Minute</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#minute NetappSnapshotPolicy#minute}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyHourlySchedule.property.snapshotsToKeep">SnapshotsToKeep</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#snapshots_to_keep NetappSnapshotPolicy#snapshots_to_keep}. |
 
 ---
 
@@ -1435,7 +1435,7 @@ Minute *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#minute NetappSnapshotPolicy#minute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#minute NetappSnapshotPolicy#minute}.
 
 ---
 
@@ -1447,7 +1447,7 @@ SnapshotsToKeep *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#snapshots_to_keep NetappSnapshotPolicy#snapshots_to_keep}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#snapshots_to_keep NetappSnapshotPolicy#snapshots_to_keep}.
 
 ---
 
@@ -1456,7 +1456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyMonthlySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshotpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/netappsnapshotpolicy"
 
 &netappsnapshotpolicy.NetappSnapshotPolicyMonthlySchedule {
 	DaysOfMonth: *[]*f64,
@@ -1470,10 +1470,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshot
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyMonthlySchedule.property.daysOfMonth">DaysOfMonth</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#days_of_month NetappSnapshotPolicy#days_of_month}. |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyMonthlySchedule.property.hour">Hour</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#hour NetappSnapshotPolicy#hour}. |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyMonthlySchedule.property.minute">Minute</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#minute NetappSnapshotPolicy#minute}. |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyMonthlySchedule.property.snapshotsToKeep">SnapshotsToKeep</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#snapshots_to_keep NetappSnapshotPolicy#snapshots_to_keep}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyMonthlySchedule.property.daysOfMonth">DaysOfMonth</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#days_of_month NetappSnapshotPolicy#days_of_month}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyMonthlySchedule.property.hour">Hour</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#hour NetappSnapshotPolicy#hour}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyMonthlySchedule.property.minute">Minute</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#minute NetappSnapshotPolicy#minute}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyMonthlySchedule.property.snapshotsToKeep">SnapshotsToKeep</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#snapshots_to_keep NetappSnapshotPolicy#snapshots_to_keep}. |
 
 ---
 
@@ -1485,7 +1485,7 @@ DaysOfMonth *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#days_of_month NetappSnapshotPolicy#days_of_month}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#days_of_month NetappSnapshotPolicy#days_of_month}.
 
 ---
 
@@ -1497,7 +1497,7 @@ Hour *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#hour NetappSnapshotPolicy#hour}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#hour NetappSnapshotPolicy#hour}.
 
 ---
 
@@ -1509,7 +1509,7 @@ Minute *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#minute NetappSnapshotPolicy#minute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#minute NetappSnapshotPolicy#minute}.
 
 ---
 
@@ -1521,7 +1521,7 @@ SnapshotsToKeep *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#snapshots_to_keep NetappSnapshotPolicy#snapshots_to_keep}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#snapshots_to_keep NetappSnapshotPolicy#snapshots_to_keep}.
 
 ---
 
@@ -1530,7 +1530,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshotpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/netappsnapshotpolicy"
 
 &netappsnapshotpolicy.NetappSnapshotPolicyTimeouts {
 	Create: *string,
@@ -1544,10 +1544,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshot
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#create NetappSnapshotPolicy#create}. |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#delete NetappSnapshotPolicy#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#read NetappSnapshotPolicy#read}. |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#update NetappSnapshotPolicy#update}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#create NetappSnapshotPolicy#create}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#delete NetappSnapshotPolicy#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#read NetappSnapshotPolicy#read}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#update NetappSnapshotPolicy#update}. |
 
 ---
 
@@ -1559,7 +1559,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#create NetappSnapshotPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#create NetappSnapshotPolicy#create}.
 
 ---
 
@@ -1571,7 +1571,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#delete NetappSnapshotPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#delete NetappSnapshotPolicy#delete}.
 
 ---
 
@@ -1583,7 +1583,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#read NetappSnapshotPolicy#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#read NetappSnapshotPolicy#read}.
 
 ---
 
@@ -1595,7 +1595,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#update NetappSnapshotPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#update NetappSnapshotPolicy#update}.
 
 ---
 
@@ -1604,7 +1604,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyWeeklySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshotpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/netappsnapshotpolicy"
 
 &netappsnapshotpolicy.NetappSnapshotPolicyWeeklySchedule {
 	DaysOfWeek: *[]*string,
@@ -1618,10 +1618,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshot
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyWeeklySchedule.property.daysOfWeek">DaysOfWeek</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#days_of_week NetappSnapshotPolicy#days_of_week}. |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyWeeklySchedule.property.hour">Hour</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#hour NetappSnapshotPolicy#hour}. |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyWeeklySchedule.property.minute">Minute</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#minute NetappSnapshotPolicy#minute}. |
-| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyWeeklySchedule.property.snapshotsToKeep">SnapshotsToKeep</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#snapshots_to_keep NetappSnapshotPolicy#snapshots_to_keep}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyWeeklySchedule.property.daysOfWeek">DaysOfWeek</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#days_of_week NetappSnapshotPolicy#days_of_week}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyWeeklySchedule.property.hour">Hour</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#hour NetappSnapshotPolicy#hour}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyWeeklySchedule.property.minute">Minute</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#minute NetappSnapshotPolicy#minute}. |
+| <code><a href="#@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyWeeklySchedule.property.snapshotsToKeep">SnapshotsToKeep</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#snapshots_to_keep NetappSnapshotPolicy#snapshots_to_keep}. |
 
 ---
 
@@ -1633,7 +1633,7 @@ DaysOfWeek *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#days_of_week NetappSnapshotPolicy#days_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#days_of_week NetappSnapshotPolicy#days_of_week}.
 
 ---
 
@@ -1645,7 +1645,7 @@ Hour *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#hour NetappSnapshotPolicy#hour}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#hour NetappSnapshotPolicy#hour}.
 
 ---
 
@@ -1657,7 +1657,7 @@ Minute *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#minute NetappSnapshotPolicy#minute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#minute NetappSnapshotPolicy#minute}.
 
 ---
 
@@ -1669,7 +1669,7 @@ SnapshotsToKeep *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/netapp_snapshot_policy#snapshots_to_keep NetappSnapshotPolicy#snapshots_to_keep}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/netapp_snapshot_policy#snapshots_to_keep NetappSnapshotPolicy#snapshots_to_keep}.
 
 ---
 
@@ -1680,7 +1680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyDailyScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshotpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/netappsnapshotpolicy"
 
 netappsnapshotpolicy.NewNetappSnapshotPolicyDailyScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappSnapshotPolicyDailyScheduleOutputReference
 ```
@@ -1995,7 +1995,7 @@ func InternalValue() NetappSnapshotPolicyDailySchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyHourlyScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshotpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/netappsnapshotpolicy"
 
 netappsnapshotpolicy.NewNetappSnapshotPolicyHourlyScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappSnapshotPolicyHourlyScheduleOutputReference
 ```
@@ -2288,7 +2288,7 @@ func InternalValue() NetappSnapshotPolicyHourlySchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyMonthlyScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshotpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/netappsnapshotpolicy"
 
 netappsnapshotpolicy.NewNetappSnapshotPolicyMonthlyScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappSnapshotPolicyMonthlyScheduleOutputReference
 ```
@@ -2625,7 +2625,7 @@ func InternalValue() NetappSnapshotPolicyMonthlySchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshotpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/netappsnapshotpolicy"
 
 netappsnapshotpolicy.NewNetappSnapshotPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappSnapshotPolicyTimeoutsOutputReference
 ```
@@ -2990,7 +2990,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.netappSnapshotPolicy.NetappSnapshotPolicyWeeklyScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappsnapshotpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/netappsnapshotpolicy"
 
 netappsnapshotpolicy.NewNetappSnapshotPolicyWeeklyScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappSnapshotPolicyWeeklyScheduleOutputReference
 ```

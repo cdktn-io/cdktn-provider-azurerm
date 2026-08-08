@@ -4,12 +4,12 @@
 
 ### EmailCommunicationServiceDomain <a name="EmailCommunicationServiceDomain" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain azurerm_email_communication_service_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain azurerm_email_communication_service_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 emailcommunicationservicedomain.NewEmailCommunicationServiceDomain(scope Construct, id *string, config EmailCommunicationServiceDomainConfig) EmailCommunicationServiceDomain
 ```
@@ -441,7 +441,7 @@ func ResetUserEngagementTrackingEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 emailcommunicationservicedomain.EmailCommunicationServiceDomain_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 emailcommunicationservicedomain.EmailCommunicationServiceDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ emailcommunicationservicedomain.EmailCommunicationServiceDomain_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 emailcommunicationservicedomain.EmailCommunicationServiceDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ emailcommunicationservicedomain.EmailCommunicationServiceDomain_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 emailcommunicationservicedomain.EmailCommunicationServiceDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the EmailCommunicationServiceD
 
 The id of the existing EmailCommunicationServiceDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -917,7 +917,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 &emailcommunicationservicedomain.EmailCommunicationServiceDomainConfig {
 	Connection: interface{},
@@ -932,7 +932,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunica
 	Name: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.emailCommunicationServiceDomain.EmailCommunicationServiceDomainTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.emailCommunicationServiceDomain.EmailCommunicationServiceDomainTimeouts,
 	UserEngagementTrackingEnabled: interface{},
 }
 ```
@@ -948,13 +948,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunica
 | <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainConfig.property.domainManagement">DomainManagement</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#domain_management EmailCommunicationServiceDomain#domain_management}. |
-| <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainConfig.property.emailServiceId">EmailServiceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#email_service_id EmailCommunicationServiceDomain#email_service_id}. |
-| <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#name EmailCommunicationServiceDomain#name}. |
-| <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#id EmailCommunicationServiceDomain#id}. |
-| <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#tags EmailCommunicationServiceDomain#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainConfig.property.domainManagement">DomainManagement</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#domain_management EmailCommunicationServiceDomain#domain_management}. |
+| <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainConfig.property.emailServiceId">EmailServiceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#email_service_id EmailCommunicationServiceDomain#email_service_id}. |
+| <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#name EmailCommunicationServiceDomain#name}. |
+| <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#id EmailCommunicationServiceDomain#id}. |
+| <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#tags EmailCommunicationServiceDomain#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainTimeouts">EmailCommunicationServiceDomainTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainConfig.property.userEngagementTrackingEnabled">UserEngagementTrackingEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#user_engagement_tracking_enabled EmailCommunicationServiceDomain#user_engagement_tracking_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainConfig.property.userEngagementTrackingEnabled">UserEngagementTrackingEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#user_engagement_tracking_enabled EmailCommunicationServiceDomain#user_engagement_tracking_enabled}. |
 
 ---
 
@@ -1036,7 +1036,7 @@ DomainManagement *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#domain_management EmailCommunicationServiceDomain#domain_management}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#domain_management EmailCommunicationServiceDomain#domain_management}.
 
 ---
 
@@ -1048,7 +1048,7 @@ EmailServiceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#email_service_id EmailCommunicationServiceDomain#email_service_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#email_service_id EmailCommunicationServiceDomain#email_service_id}.
 
 ---
 
@@ -1060,7 +1060,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#name EmailCommunicationServiceDomain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#name EmailCommunicationServiceDomain#name}.
 
 ---
 
@@ -1072,7 +1072,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#id EmailCommunicationServiceDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#id EmailCommunicationServiceDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1087,7 +1087,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#tags EmailCommunicationServiceDomain#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#tags EmailCommunicationServiceDomain#tags}.
 
 ---
 
@@ -1101,7 +1101,7 @@ Timeouts EmailCommunicationServiceDomainTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#timeouts EmailCommunicationServiceDomain#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#timeouts EmailCommunicationServiceDomain#timeouts}
 
 ---
 
@@ -1113,7 +1113,7 @@ UserEngagementTrackingEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#user_engagement_tracking_enabled EmailCommunicationServiceDomain#user_engagement_tracking_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#user_engagement_tracking_enabled EmailCommunicationServiceDomain#user_engagement_tracking_enabled}.
 
 ---
 
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 &emailcommunicationservicedomain.EmailCommunicationServiceDomainTimeouts {
 	Create: *string,
@@ -1136,10 +1136,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunica
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#create EmailCommunicationServiceDomain#create}. |
-| <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#delete EmailCommunicationServiceDomain#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#read EmailCommunicationServiceDomain#read}. |
-| <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#update EmailCommunicationServiceDomain#update}. |
+| <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#create EmailCommunicationServiceDomain#create}. |
+| <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#delete EmailCommunicationServiceDomain#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#read EmailCommunicationServiceDomain#read}. |
+| <code><a href="#@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#update EmailCommunicationServiceDomain#update}. |
 
 ---
 
@@ -1151,7 +1151,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#create EmailCommunicationServiceDomain#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#create EmailCommunicationServiceDomain#create}.
 
 ---
 
@@ -1163,7 +1163,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#delete EmailCommunicationServiceDomain#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#delete EmailCommunicationServiceDomain#delete}.
 
 ---
 
@@ -1175,7 +1175,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#read EmailCommunicationServiceDomain#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#read EmailCommunicationServiceDomain#read}.
 
 ---
 
@@ -1187,7 +1187,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/email_communication_service_domain#update EmailCommunicationServiceDomain#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/email_communication_service_domain#update EmailCommunicationServiceDomain#update}.
 
 ---
 
@@ -1196,7 +1196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainVerificationRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 &emailcommunicationservicedomain.EmailCommunicationServiceDomainVerificationRecords {
 
@@ -1209,7 +1209,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunica
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainVerificationRecordsDkim.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 &emailcommunicationservicedomain.EmailCommunicationServiceDomainVerificationRecordsDkim {
 
@@ -1222,7 +1222,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunica
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainVerificationRecordsDkim2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 &emailcommunicationservicedomain.EmailCommunicationServiceDomainVerificationRecordsDkim2 {
 
@@ -1235,7 +1235,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunica
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainVerificationRecordsDmarc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 &emailcommunicationservicedomain.EmailCommunicationServiceDomainVerificationRecordsDmarc {
 
@@ -1248,7 +1248,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunica
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainVerificationRecordsDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 &emailcommunicationservicedomain.EmailCommunicationServiceDomainVerificationRecordsDomain {
 
@@ -1261,7 +1261,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunica
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainVerificationRecordsSpf.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 &emailcommunicationservicedomain.EmailCommunicationServiceDomainVerificationRecordsSpf {
 
@@ -1276,7 +1276,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunica
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 emailcommunicationservicedomain.NewEmailCommunicationServiceDomainTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmailCommunicationServiceDomainTimeoutsOutputReference
 ```
@@ -1641,7 +1641,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainVerificationRecordsDkim2List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 emailcommunicationservicedomain.NewEmailCommunicationServiceDomainVerificationRecordsDkim2List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmailCommunicationServiceDomainVerificationRecordsDkim2List
 ```
@@ -1790,7 +1790,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainVerificationRecordsDkim2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 emailcommunicationservicedomain.NewEmailCommunicationServiceDomainVerificationRecordsDkim2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmailCommunicationServiceDomainVerificationRecordsDkim2OutputReference
 ```
@@ -2101,7 +2101,7 @@ func InternalValue() EmailCommunicationServiceDomainVerificationRecordsDkim2
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainVerificationRecordsDkimList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 emailcommunicationservicedomain.NewEmailCommunicationServiceDomainVerificationRecordsDkimList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmailCommunicationServiceDomainVerificationRecordsDkimList
 ```
@@ -2250,7 +2250,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainVerificationRecordsDkimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 emailcommunicationservicedomain.NewEmailCommunicationServiceDomainVerificationRecordsDkimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmailCommunicationServiceDomainVerificationRecordsDkimOutputReference
 ```
@@ -2561,7 +2561,7 @@ func InternalValue() EmailCommunicationServiceDomainVerificationRecordsDkim
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainVerificationRecordsDmarcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 emailcommunicationservicedomain.NewEmailCommunicationServiceDomainVerificationRecordsDmarcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmailCommunicationServiceDomainVerificationRecordsDmarcList
 ```
@@ -2710,7 +2710,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainVerificationRecordsDmarcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 emailcommunicationservicedomain.NewEmailCommunicationServiceDomainVerificationRecordsDmarcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmailCommunicationServiceDomainVerificationRecordsDmarcOutputReference
 ```
@@ -3021,7 +3021,7 @@ func InternalValue() EmailCommunicationServiceDomainVerificationRecordsDmarc
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainVerificationRecordsDomainList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 emailcommunicationservicedomain.NewEmailCommunicationServiceDomainVerificationRecordsDomainList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmailCommunicationServiceDomainVerificationRecordsDomainList
 ```
@@ -3170,7 +3170,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainVerificationRecordsDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 emailcommunicationservicedomain.NewEmailCommunicationServiceDomainVerificationRecordsDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmailCommunicationServiceDomainVerificationRecordsDomainOutputReference
 ```
@@ -3481,7 +3481,7 @@ func InternalValue() EmailCommunicationServiceDomainVerificationRecordsDomain
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainVerificationRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 emailcommunicationservicedomain.NewEmailCommunicationServiceDomainVerificationRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmailCommunicationServiceDomainVerificationRecordsList
 ```
@@ -3630,7 +3630,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainVerificationRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 emailcommunicationservicedomain.NewEmailCommunicationServiceDomainVerificationRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmailCommunicationServiceDomainVerificationRecordsOutputReference
 ```
@@ -3952,7 +3952,7 @@ func InternalValue() EmailCommunicationServiceDomainVerificationRecords
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainVerificationRecordsSpfList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 emailcommunicationservicedomain.NewEmailCommunicationServiceDomainVerificationRecordsSpfList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmailCommunicationServiceDomainVerificationRecordsSpfList
 ```
@@ -4101,7 +4101,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.emailCommunicationServiceDomain.EmailCommunicationServiceDomainVerificationRecordsSpfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/emailcommunicationservicedomain"
 
 emailcommunicationservicedomain.NewEmailCommunicationServiceDomainVerificationRecordsSpfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmailCommunicationServiceDomainVerificationRecordsSpfOutputReference
 ```

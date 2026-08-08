@@ -4,12 +4,12 @@
 
 ### FederatedIdentityCredential <a name="FederatedIdentityCredential" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential azurerm_federated_identity_credential}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential azurerm_federated_identity_credential}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/federatedidentitycredential"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/federatedidentitycredential"
 
 federatedidentitycredential.NewFederatedIdentityCredential(scope Construct, id *string, config FederatedIdentityCredentialConfig) FederatedIdentityCredential
 ```
@@ -76,10 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.resetParentId">ResetParentId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.resetResourceGroupName">ResetResourceGroupName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.resetUserAssignedIdentityId">ResetUserAssignedIdentityId</a></code> | *No description.* |
 
 ---
 
@@ -410,28 +407,10 @@ func PutTimeouts(value FederatedIdentityCredentialTimeouts)
 func ResetId()
 ```
 
-##### `ResetParentId` <a name="ResetParentId" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.resetParentId"></a>
-
-```go
-func ResetParentId()
-```
-
-##### `ResetResourceGroupName` <a name="ResetResourceGroupName" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.resetResourceGroupName"></a>
-
-```go
-func ResetResourceGroupName()
-```
-
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.resetTimeouts"></a>
 
 ```go
 func ResetTimeouts()
-```
-
-##### `ResetUserAssignedIdentityId` <a name="ResetUserAssignedIdentityId" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.resetUserAssignedIdentityId"></a>
-
-```go
-func ResetUserAssignedIdentityId()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -448,7 +427,7 @@ func ResetUserAssignedIdentityId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/federatedidentitycredential"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/federatedidentitycredential"
 
 federatedidentitycredential.FederatedIdentityCredential_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/federatedidentitycredential"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/federatedidentitycredential"
 
 federatedidentitycredential.FederatedIdentityCredential_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +473,7 @@ federatedidentitycredential.FederatedIdentityCredential_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/federatedidentitycredential"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/federatedidentitycredential"
 
 federatedidentitycredential.FederatedIdentityCredential_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +487,7 @@ federatedidentitycredential.FederatedIdentityCredential_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/federatedidentitycredential"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/federatedidentitycredential"
 
 federatedidentitycredential.FederatedIdentityCredential_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +516,7 @@ The construct id used in the generated config for the FederatedIdentityCredentia
 
 The id of the existing FederatedIdentityCredential that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -572,8 +551,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.property.issuerInput">IssuerInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.property.parentIdInput">ParentIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.property.resourceGroupNameInput">ResourceGroupNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.property.subjectInput">SubjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.property.userAssignedIdentityIdInput">UserAssignedIdentityIdInput</a></code> | <code>*string</code> | *No description.* |
@@ -581,8 +558,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.property.issuer">Issuer</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.property.parentId">ParentId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.property.subject">Subject</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.property.userAssignedIdentityId">UserAssignedIdentityId</a></code> | <code>*string</code> | *No description.* |
 
@@ -780,26 +755,6 @@ func NameInput() *string
 
 ---
 
-##### `ParentIdInput`<sup>Optional</sup> <a name="ParentIdInput" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.property.parentIdInput"></a>
-
-```go
-func ParentIdInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `ResourceGroupNameInput`<sup>Optional</sup> <a name="ResourceGroupNameInput" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.property.resourceGroupNameInput"></a>
-
-```go
-func ResourceGroupNameInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `SubjectInput`<sup>Optional</sup> <a name="SubjectInput" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.property.subjectInput"></a>
 
 ```go
@@ -870,26 +825,6 @@ func Name() *string
 
 ---
 
-##### `ParentId`<sup>Required</sup> <a name="ParentId" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.property.parentId"></a>
-
-```go
-func ParentId() *string
-```
-
-- *Type:* *string
-
----
-
-##### `ResourceGroupName`<sup>Required</sup> <a name="ResourceGroupName" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.property.resourceGroupName"></a>
-
-```go
-func ResourceGroupName() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `Subject`<sup>Required</sup> <a name="Subject" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredential.property.subject"></a>
 
 ```go
@@ -935,7 +870,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/federatedidentitycredential"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/federatedidentitycredential"
 
 &federatedidentitycredential.FederatedIdentityCredentialConfig {
 	Connection: interface{},
@@ -949,11 +884,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/federatedident
 	Issuer: *string,
 	Name: *string,
 	Subject: *string,
-	Id: *string,
-	ParentId: *string,
-	ResourceGroupName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.federatedIdentityCredential.FederatedIdentityCredentialTimeouts,
 	UserAssignedIdentityId: *string,
+	Id: *string,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.federatedIdentityCredential.FederatedIdentityCredentialTimeouts,
 }
 ```
 
@@ -968,15 +901,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/federatedident
 | <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.audience">Audience</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#audience FederatedIdentityCredential#audience}. |
-| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.issuer">Issuer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#issuer FederatedIdentityCredential#issuer}. |
-| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#name FederatedIdentityCredential#name}. |
-| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.subject">Subject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#subject FederatedIdentityCredential#subject}. |
-| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#id FederatedIdentityCredential#id}. |
-| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.parentId">ParentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#parent_id FederatedIdentityCredential#parent_id}. |
-| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#resource_group_name FederatedIdentityCredential#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.audience">Audience</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#audience FederatedIdentityCredential#audience}. |
+| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.issuer">Issuer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#issuer FederatedIdentityCredential#issuer}. |
+| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#name FederatedIdentityCredential#name}. |
+| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.subject">Subject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#subject FederatedIdentityCredential#subject}. |
+| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.userAssignedIdentityId">UserAssignedIdentityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#user_assigned_identity_id FederatedIdentityCredential#user_assigned_identity_id}. |
+| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#id FederatedIdentityCredential#id}. |
 | <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialTimeouts">FederatedIdentityCredentialTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.userAssignedIdentityId">UserAssignedIdentityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#user_assigned_identity_id FederatedIdentityCredential#user_assigned_identity_id}. |
 
 ---
 
@@ -1058,7 +989,7 @@ Audience *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#audience FederatedIdentityCredential#audience}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#audience FederatedIdentityCredential#audience}.
 
 ---
 
@@ -1070,7 +1001,7 @@ Issuer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#issuer FederatedIdentityCredential#issuer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#issuer FederatedIdentityCredential#issuer}.
 
 ---
 
@@ -1082,7 +1013,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#name FederatedIdentityCredential#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#name FederatedIdentityCredential#name}.
 
 ---
 
@@ -1094,7 +1025,19 @@ Subject *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#subject FederatedIdentityCredential#subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#subject FederatedIdentityCredential#subject}.
+
+---
+
+##### `UserAssignedIdentityId`<sup>Required</sup> <a name="UserAssignedIdentityId" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.userAssignedIdentityId"></a>
+
+```go
+UserAssignedIdentityId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#user_assigned_identity_id FederatedIdentityCredential#user_assigned_identity_id}.
 
 ---
 
@@ -1106,34 +1049,10 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#id FederatedIdentityCredential#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#id FederatedIdentityCredential#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `ParentId`<sup>Optional</sup> <a name="ParentId" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.parentId"></a>
-
-```go
-ParentId *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#parent_id FederatedIdentityCredential#parent_id}.
-
----
-
-##### `ResourceGroupName`<sup>Optional</sup> <a name="ResourceGroupName" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.resourceGroupName"></a>
-
-```go
-ResourceGroupName *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#resource_group_name FederatedIdentityCredential#resource_group_name}.
 
 ---
 
@@ -1147,19 +1066,7 @@ Timeouts FederatedIdentityCredentialTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#timeouts FederatedIdentityCredential#timeouts}
-
----
-
-##### `UserAssignedIdentityId`<sup>Optional</sup> <a name="UserAssignedIdentityId" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialConfig.property.userAssignedIdentityId"></a>
-
-```go
-UserAssignedIdentityId *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#user_assigned_identity_id FederatedIdentityCredential#user_assigned_identity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#timeouts FederatedIdentityCredential#timeouts}
 
 ---
 
@@ -1168,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/federatedidentitycredential"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/federatedidentitycredential"
 
 &federatedidentitycredential.FederatedIdentityCredentialTimeouts {
 	Create: *string,
@@ -1182,10 +1089,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/federatedident
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#create FederatedIdentityCredential#create}. |
-| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#delete FederatedIdentityCredential#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#read FederatedIdentityCredential#read}. |
-| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#update FederatedIdentityCredential#update}. |
+| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#create FederatedIdentityCredential#create}. |
+| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#delete FederatedIdentityCredential#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#read FederatedIdentityCredential#read}. |
+| <code><a href="#@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#update FederatedIdentityCredential#update}. |
 
 ---
 
@@ -1197,7 +1104,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#create FederatedIdentityCredential#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#create FederatedIdentityCredential#create}.
 
 ---
 
@@ -1209,7 +1116,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#delete FederatedIdentityCredential#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#delete FederatedIdentityCredential#delete}.
 
 ---
 
@@ -1221,7 +1128,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#read FederatedIdentityCredential#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#read FederatedIdentityCredential#read}.
 
 ---
 
@@ -1233,7 +1140,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/federated_identity_credential#update FederatedIdentityCredential#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/federated_identity_credential#update FederatedIdentityCredential#update}.
 
 ---
 
@@ -1244,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.federatedIdentityCredential.FederatedIdentityCredentialTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/federatedidentitycredential"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/federatedidentitycredential"
 
 federatedidentitycredential.NewFederatedIdentityCredentialTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FederatedIdentityCredentialTimeoutsOutputReference
 ```

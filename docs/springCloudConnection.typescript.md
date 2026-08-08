@@ -4,7 +4,7 @@
 
 ### SpringCloudConnection <a name="SpringCloudConnection" id="@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection azurerm_spring_cloud_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection azurerm_spring_cloud_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnection.Initializer"></a>
 
@@ -563,7 +563,7 @@ The construct id used in the generated config for the SpringCloudConnection to i
 
 The id of the existing SpringCloudConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -970,13 +970,13 @@ const springCloudConnectionAuthentication: springCloudConnection.SpringCloudConn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionAuthentication.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#type SpringCloudConnection#type}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionAuthentication.property.certificate">certificate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#certificate SpringCloudConnection#certificate}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionAuthentication.property.clientId">clientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#client_id SpringCloudConnection#client_id}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionAuthentication.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#name SpringCloudConnection#name}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionAuthentication.property.principalId">principalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#principal_id SpringCloudConnection#principal_id}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionAuthentication.property.secret">secret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#secret SpringCloudConnection#secret}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionAuthentication.property.subscriptionId">subscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#subscription_id SpringCloudConnection#subscription_id}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionAuthentication.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#type SpringCloudConnection#type}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionAuthentication.property.certificate">certificate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#certificate SpringCloudConnection#certificate}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionAuthentication.property.clientId">clientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#client_id SpringCloudConnection#client_id}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionAuthentication.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#name SpringCloudConnection#name}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionAuthentication.property.principalId">principalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#principal_id SpringCloudConnection#principal_id}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionAuthentication.property.secret">secret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#secret SpringCloudConnection#secret}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionAuthentication.property.subscriptionId">subscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#subscription_id SpringCloudConnection#subscription_id}. |
 
 ---
 
@@ -988,7 +988,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#type SpringCloudConnection#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#type SpringCloudConnection#type}.
 
 ---
 
@@ -1000,7 +1000,7 @@ public readonly certificate: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#certificate SpringCloudConnection#certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#certificate SpringCloudConnection#certificate}.
 
 ---
 
@@ -1012,7 +1012,7 @@ public readonly clientId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#client_id SpringCloudConnection#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#client_id SpringCloudConnection#client_id}.
 
 ---
 
@@ -1024,7 +1024,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#name SpringCloudConnection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#name SpringCloudConnection#name}.
 
 ---
 
@@ -1036,7 +1036,7 @@ public readonly principalId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#principal_id SpringCloudConnection#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#principal_id SpringCloudConnection#principal_id}.
 
 ---
 
@@ -1048,7 +1048,7 @@ public readonly secret: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#secret SpringCloudConnection#secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#secret SpringCloudConnection#secret}.
 
 ---
 
@@ -1060,7 +1060,7 @@ public readonly subscriptionId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#subscription_id SpringCloudConnection#subscription_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#subscription_id SpringCloudConnection#subscription_id}.
 
 ---
 
@@ -1086,14 +1086,14 @@ const springCloudConnectionConfig: springCloudConnection.SpringCloudConnectionCo
 | <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionConfig.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionAuthentication">SpringCloudConnectionAuthentication</a></code> | authentication block. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#name SpringCloudConnection#name}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionConfig.property.springCloudId">springCloudId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#spring_cloud_id SpringCloudConnection#spring_cloud_id}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionConfig.property.targetResourceId">targetResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#target_resource_id SpringCloudConnection#target_resource_id}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionConfig.property.clientType">clientType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#client_type SpringCloudConnection#client_type}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#id SpringCloudConnection#id}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#name SpringCloudConnection#name}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionConfig.property.springCloudId">springCloudId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#spring_cloud_id SpringCloudConnection#spring_cloud_id}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionConfig.property.targetResourceId">targetResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#target_resource_id SpringCloudConnection#target_resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionConfig.property.clientType">clientType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#client_type SpringCloudConnection#client_type}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#id SpringCloudConnection#id}. |
 | <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionConfig.property.secretStore">secretStore</a></code> | <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionSecretStore">SpringCloudConnectionSecretStore</a></code> | secret_store block. |
 | <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionTimeouts">SpringCloudConnectionTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionConfig.property.vnetSolution">vnetSolution</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#vnet_solution SpringCloudConnection#vnet_solution}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionConfig.property.vnetSolution">vnetSolution</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#vnet_solution SpringCloudConnection#vnet_solution}. |
 
 ---
 
@@ -1177,7 +1177,7 @@ public readonly authentication: SpringCloudConnectionAuthentication;
 
 authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#authentication SpringCloudConnection#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#authentication SpringCloudConnection#authentication}
 
 ---
 
@@ -1189,7 +1189,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#name SpringCloudConnection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#name SpringCloudConnection#name}.
 
 ---
 
@@ -1201,7 +1201,7 @@ public readonly springCloudId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#spring_cloud_id SpringCloudConnection#spring_cloud_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#spring_cloud_id SpringCloudConnection#spring_cloud_id}.
 
 ---
 
@@ -1213,7 +1213,7 @@ public readonly targetResourceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#target_resource_id SpringCloudConnection#target_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#target_resource_id SpringCloudConnection#target_resource_id}.
 
 ---
 
@@ -1225,7 +1225,7 @@ public readonly clientType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#client_type SpringCloudConnection#client_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#client_type SpringCloudConnection#client_type}.
 
 ---
 
@@ -1237,7 +1237,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#id SpringCloudConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#id SpringCloudConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1254,7 +1254,7 @@ public readonly secretStore: SpringCloudConnectionSecretStore;
 
 secret_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#secret_store SpringCloudConnection#secret_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#secret_store SpringCloudConnection#secret_store}
 
 ---
 
@@ -1268,7 +1268,7 @@ public readonly timeouts: SpringCloudConnectionTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#timeouts SpringCloudConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#timeouts SpringCloudConnection#timeouts}
 
 ---
 
@@ -1280,7 +1280,7 @@ public readonly vnetSolution: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#vnet_solution SpringCloudConnection#vnet_solution}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#vnet_solution SpringCloudConnection#vnet_solution}.
 
 ---
 
@@ -1298,7 +1298,7 @@ const springCloudConnectionSecretStore: springCloudConnection.SpringCloudConnect
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionSecretStore.property.keyVaultId">keyVaultId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#key_vault_id SpringCloudConnection#key_vault_id}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionSecretStore.property.keyVaultId">keyVaultId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#key_vault_id SpringCloudConnection#key_vault_id}. |
 
 ---
 
@@ -1310,7 +1310,7 @@ public readonly keyVaultId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#key_vault_id SpringCloudConnection#key_vault_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#key_vault_id SpringCloudConnection#key_vault_id}.
 
 ---
 
@@ -1328,10 +1328,10 @@ const springCloudConnectionTimeouts: springCloudConnection.SpringCloudConnection
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#create SpringCloudConnection#create}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#delete SpringCloudConnection#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#read SpringCloudConnection#read}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#update SpringCloudConnection#update}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#create SpringCloudConnection#create}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#delete SpringCloudConnection#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#read SpringCloudConnection#read}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudConnection.SpringCloudConnectionTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#update SpringCloudConnection#update}. |
 
 ---
 
@@ -1343,7 +1343,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#create SpringCloudConnection#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#create SpringCloudConnection#create}.
 
 ---
 
@@ -1355,7 +1355,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#delete SpringCloudConnection#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#delete SpringCloudConnection#delete}.
 
 ---
 
@@ -1367,7 +1367,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#read SpringCloudConnection#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#read SpringCloudConnection#read}.
 
 ---
 
@@ -1379,7 +1379,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_connection#update SpringCloudConnection#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_connection#update SpringCloudConnection#update}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_queue
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,30 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermServicebusQueueConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#id DataAzurermServicebusQueue#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_queue#id DataAzurermServicebusQueue#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#name DataAzurermServicebusQueue#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_queue#name DataAzurermServicebusQueue#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#namespace_id DataAzurermServicebusQueue#namespace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_queue#namespace_id DataAzurermServicebusQueue#namespace_id}
   */
-  readonly namespaceId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#namespace_name DataAzurermServicebusQueue#namespace_name}
-  */
-  readonly namespaceName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#resource_group_name DataAzurermServicebusQueue#resource_group_name}
-  */
-  readonly resourceGroupName?: string;
+  readonly namespaceId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#timeouts DataAzurermServicebusQueue#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_queue#timeouts DataAzurermServicebusQueue#timeouts}
   */
   readonly timeouts?: DataAzurermServicebusQueueTimeouts;
 }
 export interface DataAzurermServicebusQueueTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#read DataAzurermServicebusQueue#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_queue#read DataAzurermServicebusQueue#read}
   */
   readonly read?: string;
 }
@@ -138,7 +130,7 @@ export class DataAzurermServicebusQueueTimeoutsOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue azurerm_servicebus_queue}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_queue azurerm_servicebus_queue}
 */
 export class DataAzurermServicebusQueue extends cdktn.TerraformDataSource {
 
@@ -154,7 +146,7 @@ export class DataAzurermServicebusQueue extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermServicebusQueue resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermServicebusQueue to import
-  * @param importFromId The id of the existing DataAzurermServicebusQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermServicebusQueue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_queue#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermServicebusQueue to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -166,7 +158,7 @@ export class DataAzurermServicebusQueue extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue azurerm_servicebus_queue} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_queue azurerm_servicebus_queue} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -177,8 +169,8 @@ export class DataAzurermServicebusQueue extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_servicebus_queue',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.81.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -191,8 +183,6 @@ export class DataAzurermServicebusQueue extends cdktn.TerraformDataSource {
     this._id = config.id;
     this._name = config.name;
     this._namespaceId = config.namespaceId;
-    this._namespaceName = config.namespaceName;
-    this._resourceGroupName = config.resourceGroupName;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -223,21 +213,6 @@ export class DataAzurermServicebusQueue extends cdktn.TerraformDataSource {
   // duplicate_detection_history_time_window - computed: true, optional: false, required: false
   public get duplicateDetectionHistoryTimeWindow() {
     return this.getStringAttribute('duplicate_detection_history_time_window');
-  }
-
-  // enable_batched_operations - computed: true, optional: false, required: false
-  public get enableBatchedOperations() {
-    return this.getBooleanAttribute('enable_batched_operations');
-  }
-
-  // enable_express - computed: true, optional: false, required: false
-  public get enableExpress() {
-    return this.getBooleanAttribute('enable_express');
-  }
-
-  // enable_partitioning - computed: true, optional: false, required: false
-  public get enablePartitioning() {
-    return this.getBooleanAttribute('enable_partitioning');
   }
 
   // express_enabled - computed: true, optional: false, required: false
@@ -299,7 +274,7 @@ export class DataAzurermServicebusQueue extends cdktn.TerraformDataSource {
     return this._name;
   }
 
-  // namespace_id - computed: false, optional: true, required: false
+  // namespace_id - computed: false, optional: false, required: true
   private _namespaceId?: string; 
   public get namespaceId() {
     return this.getStringAttribute('namespace_id');
@@ -307,28 +282,9 @@ export class DataAzurermServicebusQueue extends cdktn.TerraformDataSource {
   public set namespaceId(value: string) {
     this._namespaceId = value;
   }
-  public resetNamespaceId() {
-    this._namespaceId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get namespaceIdInput() {
     return this._namespaceId;
-  }
-
-  // namespace_name - computed: false, optional: true, required: false
-  private _namespaceName?: string; 
-  public get namespaceName() {
-    return this.getStringAttribute('namespace_name');
-  }
-  public set namespaceName(value: string) {
-    this._namespaceName = value;
-  }
-  public resetNamespaceName() {
-    this._namespaceName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get namespaceNameInput() {
-    return this._namespaceName;
   }
 
   // partitioning_enabled - computed: true, optional: false, required: false
@@ -344,22 +300,6 @@ export class DataAzurermServicebusQueue extends cdktn.TerraformDataSource {
   // requires_session - computed: true, optional: false, required: false
   public get requiresSession() {
     return this.getBooleanAttribute('requires_session');
-  }
-
-  // resource_group_name - computed: false, optional: true, required: false
-  private _resourceGroupName?: string; 
-  public get resourceGroupName() {
-    return this.getStringAttribute('resource_group_name');
-  }
-  public set resourceGroupName(value: string) {
-    this._resourceGroupName = value;
-  }
-  public resetResourceGroupName() {
-    this._resourceGroupName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get resourceGroupNameInput() {
-    return this._resourceGroupName;
   }
 
   // status - computed: true, optional: false, required: false
@@ -392,8 +332,6 @@ export class DataAzurermServicebusQueue extends cdktn.TerraformDataSource {
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
       namespace_id: cdktn.stringToTerraform(this._namespaceId),
-      namespace_name: cdktn.stringToTerraform(this._namespaceName),
-      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       timeouts: dataAzurermServicebusQueueTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -414,18 +352,6 @@ export class DataAzurermServicebusQueue extends cdktn.TerraformDataSource {
       },
       namespace_id: {
         value: cdktn.stringToHclTerraform(this._namespaceId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      namespace_name: {
-        value: cdktn.stringToHclTerraform(this._namespaceName),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      resource_group_name: {
-        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

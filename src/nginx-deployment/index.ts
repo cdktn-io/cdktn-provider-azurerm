@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,112 +13,98 @@ import * as cdktn from 'cdktn';
 
 export interface NginxDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#automatic_upgrade_channel NginxDeployment#automatic_upgrade_channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#automatic_upgrade_channel NginxDeployment#automatic_upgrade_channel}
   */
   readonly automaticUpgradeChannel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#capacity NginxDeployment#capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#capacity NginxDeployment#capacity}
   */
   readonly capacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#diagnose_support_enabled NginxDeployment#diagnose_support_enabled}
-  */
-  readonly diagnoseSupportEnabled?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#email NginxDeployment#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#email NginxDeployment#email}
   */
   readonly email?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#id NginxDeployment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#id NginxDeployment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#location NginxDeployment#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#location NginxDeployment#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#managed_resource_group NginxDeployment#managed_resource_group}
-  */
-  readonly managedResourceGroup?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#name NginxDeployment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#name NginxDeployment#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#resource_group_name NginxDeployment#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#resource_group_name NginxDeployment#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#sku NginxDeployment#sku}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#sku NginxDeployment#sku}
   */
   readonly sku: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#tags NginxDeployment#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#tags NginxDeployment#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * auto_scale_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#auto_scale_profile NginxDeployment#auto_scale_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#auto_scale_profile NginxDeployment#auto_scale_profile}
   */
   readonly autoScaleProfile?: NginxDeploymentAutoScaleProfile[] | cdktn.IResolvable;
   /**
   * frontend_private block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#frontend_private NginxDeployment#frontend_private}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#frontend_private NginxDeployment#frontend_private}
   */
   readonly frontendPrivate?: NginxDeploymentFrontendPrivate[] | cdktn.IResolvable;
   /**
   * frontend_public block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#frontend_public NginxDeployment#frontend_public}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#frontend_public NginxDeployment#frontend_public}
   */
   readonly frontendPublic?: NginxDeploymentFrontendPublic;
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#identity NginxDeployment#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#identity NginxDeployment#identity}
   */
   readonly identity?: NginxDeploymentIdentity;
   /**
-  * logging_storage_account block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#logging_storage_account NginxDeployment#logging_storage_account}
-  */
-  readonly loggingStorageAccount?: NginxDeploymentLoggingStorageAccount[] | cdktn.IResolvable;
-  /**
   * network_interface block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#network_interface NginxDeployment#network_interface}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#network_interface NginxDeployment#network_interface}
   */
   readonly networkInterface?: NginxDeploymentNetworkInterface[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#timeouts NginxDeployment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#timeouts NginxDeployment#timeouts}
   */
   readonly timeouts?: NginxDeploymentTimeouts;
   /**
   * web_application_firewall block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#web_application_firewall NginxDeployment#web_application_firewall}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#web_application_firewall NginxDeployment#web_application_firewall}
   */
   readonly webApplicationFirewall?: NginxDeploymentWebApplicationFirewall;
 }
 export interface NginxDeploymentAutoScaleProfile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#max_capacity NginxDeployment#max_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#max_capacity NginxDeployment#max_capacity}
   */
   readonly maxCapacity: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#min_capacity NginxDeployment#min_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#min_capacity NginxDeployment#min_capacity}
   */
   readonly minCapacity: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#name NginxDeployment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#name NginxDeployment#name}
   */
   readonly name: string;
 }
@@ -283,15 +269,15 @@ export class NginxDeploymentAutoScaleProfileList extends cdktn.ComplexList {
 }
 export interface NginxDeploymentFrontendPrivate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#allocation_method NginxDeployment#allocation_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#allocation_method NginxDeployment#allocation_method}
   */
   readonly allocationMethod: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#ip_address NginxDeployment#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#ip_address NginxDeployment#ip_address}
   */
   readonly ipAddress: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#subnet_id NginxDeployment#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#subnet_id NginxDeployment#subnet_id}
   */
   readonly subnetId: string;
 }
@@ -456,7 +442,7 @@ export class NginxDeploymentFrontendPrivateList extends cdktn.ComplexList {
 }
 export interface NginxDeploymentFrontendPublic {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#ip_address NginxDeployment#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#ip_address NginxDeployment#ip_address}
   */
   readonly ipAddress?: string[];
 }
@@ -540,11 +526,11 @@ export class NginxDeploymentFrontendPublicOutputReference extends cdktn.ComplexO
 }
 export interface NginxDeploymentIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#identity_ids NginxDeployment#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#identity_ids NginxDeployment#identity_ids}
   */
   readonly identityIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#type NginxDeployment#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#type NginxDeployment#type}
   */
   readonly type: string;
 }
@@ -662,158 +648,9 @@ export class NginxDeploymentIdentityOutputReference extends cdktn.ComplexObject 
     return this._type;
   }
 }
-export interface NginxDeploymentLoggingStorageAccount {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#container_name NginxDeployment#container_name}
-  */
-  readonly containerName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#name NginxDeployment#name}
-  */
-  readonly name?: string;
-}
-
-export function nginxDeploymentLoggingStorageAccountToTerraform(struct?: NginxDeploymentLoggingStorageAccount | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    container_name: cdktn.stringToTerraform(struct!.containerName),
-    name: cdktn.stringToTerraform(struct!.name),
-  }
-}
-
-
-export function nginxDeploymentLoggingStorageAccountToHclTerraform(struct?: NginxDeploymentLoggingStorageAccount | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    container_name: {
-      value: cdktn.stringToHclTerraform(struct!.containerName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    name: {
-      value: cdktn.stringToHclTerraform(struct!.name),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class NginxDeploymentLoggingStorageAccountOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): NginxDeploymentLoggingStorageAccount | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._containerName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.containerName = this._containerName;
-    }
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: NginxDeploymentLoggingStorageAccount | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._containerName = undefined;
-      this._name = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._containerName = value.containerName;
-      this._name = value.name;
-    }
-  }
-
-  // container_name - computed: false, optional: true, required: false
-  private _containerName?: string; 
-  public get containerName() {
-    return this.getStringAttribute('container_name');
-  }
-  public set containerName(value: string) {
-    this._containerName = value;
-  }
-  public resetContainerName() {
-    this._containerName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get containerNameInput() {
-    return this._containerName;
-  }
-
-  // name - computed: false, optional: true, required: false
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
-  }
-}
-
-export class NginxDeploymentLoggingStorageAccountList extends cdktn.ComplexList {
-  public internalValue? : NginxDeploymentLoggingStorageAccount[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): NginxDeploymentLoggingStorageAccountOutputReference {
-    return new NginxDeploymentLoggingStorageAccountOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface NginxDeploymentNetworkInterface {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#subnet_id NginxDeployment#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#subnet_id NginxDeployment#subnet_id}
   */
   readonly subnetId: string;
 }
@@ -926,19 +763,19 @@ export class NginxDeploymentNetworkInterfaceList extends cdktn.ComplexList {
 }
 export interface NginxDeploymentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#create NginxDeployment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#create NginxDeployment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#delete NginxDeployment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#delete NginxDeployment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#read NginxDeployment#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#read NginxDeployment#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#update NginxDeployment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#update NginxDeployment#update}
   */
   readonly update?: string;
 }
@@ -1533,7 +1370,7 @@ export class NginxDeploymentWebApplicationFirewallStatusList extends cdktn.Compl
 }
 export interface NginxDeploymentWebApplicationFirewall {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#activation_state_enabled NginxDeployment#activation_state_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#activation_state_enabled NginxDeployment#activation_state_enabled}
   */
   readonly activationStateEnabled: boolean | cdktn.IResolvable;
 }
@@ -1620,7 +1457,7 @@ export class NginxDeploymentWebApplicationFirewallOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment azurerm_nginx_deployment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment azurerm_nginx_deployment}
 */
 export class NginxDeployment extends cdktn.TerraformResource {
 
@@ -1636,7 +1473,7 @@ export class NginxDeployment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NginxDeployment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NginxDeployment to import
-  * @param importFromId The id of the existing NginxDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NginxDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NginxDeployment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1648,7 +1485,7 @@ export class NginxDeployment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1659,8 +1496,8 @@ export class NginxDeployment extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_nginx_deployment',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.81.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1672,11 +1509,9 @@ export class NginxDeployment extends cdktn.TerraformResource {
     });
     this._automaticUpgradeChannel = config.automaticUpgradeChannel;
     this._capacity = config.capacity;
-    this._diagnoseSupportEnabled = config.diagnoseSupportEnabled;
     this._email = config.email;
     this._id = config.id;
     this._location = config.location;
-    this._managedResourceGroup = config.managedResourceGroup;
     this._name = config.name;
     this._resourceGroupName = config.resourceGroupName;
     this._sku = config.sku;
@@ -1685,7 +1520,6 @@ export class NginxDeployment extends cdktn.TerraformResource {
     this._frontendPrivate.internalValue = config.frontendPrivate;
     this._frontendPublic.internalValue = config.frontendPublic;
     this._identity.internalValue = config.identity;
-    this._loggingStorageAccount.internalValue = config.loggingStorageAccount;
     this._networkInterface.internalValue = config.networkInterface;
     this._timeouts.internalValue = config.timeouts;
     this._webApplicationFirewall.internalValue = config.webApplicationFirewall;
@@ -1730,22 +1564,6 @@ export class NginxDeployment extends cdktn.TerraformResource {
   // dataplane_api_endpoint - computed: true, optional: false, required: false
   public get dataplaneApiEndpoint() {
     return this.getStringAttribute('dataplane_api_endpoint');
-  }
-
-  // diagnose_support_enabled - computed: false, optional: true, required: false
-  private _diagnoseSupportEnabled?: boolean | cdktn.IResolvable; 
-  public get diagnoseSupportEnabled() {
-    return this.getBooleanAttribute('diagnose_support_enabled');
-  }
-  public set diagnoseSupportEnabled(value: boolean | cdktn.IResolvable) {
-    this._diagnoseSupportEnabled = value;
-  }
-  public resetDiagnoseSupportEnabled() {
-    this._diagnoseSupportEnabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get diagnoseSupportEnabledInput() {
-    return this._diagnoseSupportEnabled;
   }
 
   // email - computed: false, optional: true, required: false
@@ -1796,22 +1614,6 @@ export class NginxDeployment extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get locationInput() {
     return this._location;
-  }
-
-  // managed_resource_group - computed: true, optional: true, required: false
-  private _managedResourceGroup?: string; 
-  public get managedResourceGroup() {
-    return this.getStringAttribute('managed_resource_group');
-  }
-  public set managedResourceGroup(value: string) {
-    this._managedResourceGroup = value;
-  }
-  public resetManagedResourceGroup() {
-    this._managedResourceGroup = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get managedResourceGroupInput() {
-    return this._managedResourceGroup;
   }
 
   // name - computed: false, optional: false, required: true
@@ -1938,22 +1740,6 @@ export class NginxDeployment extends cdktn.TerraformResource {
     return this._identity.internalValue;
   }
 
-  // logging_storage_account - computed: false, optional: true, required: false
-  private _loggingStorageAccount = new NginxDeploymentLoggingStorageAccountList(this, "logging_storage_account", false);
-  public get loggingStorageAccount() {
-    return this._loggingStorageAccount;
-  }
-  public putLoggingStorageAccount(value: NginxDeploymentLoggingStorageAccount[] | cdktn.IResolvable) {
-    this._loggingStorageAccount.internalValue = value;
-  }
-  public resetLoggingStorageAccount() {
-    this._loggingStorageAccount.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get loggingStorageAccountInput() {
-    return this._loggingStorageAccount.internalValue;
-  }
-
   // network_interface - computed: false, optional: true, required: false
   private _networkInterface = new NginxDeploymentNetworkInterfaceList(this, "network_interface", false);
   public get networkInterface() {
@@ -2010,11 +1796,9 @@ export class NginxDeployment extends cdktn.TerraformResource {
     return {
       automatic_upgrade_channel: cdktn.stringToTerraform(this._automaticUpgradeChannel),
       capacity: cdktn.numberToTerraform(this._capacity),
-      diagnose_support_enabled: cdktn.booleanToTerraform(this._diagnoseSupportEnabled),
       email: cdktn.stringToTerraform(this._email),
       id: cdktn.stringToTerraform(this._id),
       location: cdktn.stringToTerraform(this._location),
-      managed_resource_group: cdktn.stringToTerraform(this._managedResourceGroup),
       name: cdktn.stringToTerraform(this._name),
       resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       sku: cdktn.stringToTerraform(this._sku),
@@ -2023,7 +1807,6 @@ export class NginxDeployment extends cdktn.TerraformResource {
       frontend_private: cdktn.listMapper(nginxDeploymentFrontendPrivateToTerraform, true)(this._frontendPrivate.internalValue),
       frontend_public: nginxDeploymentFrontendPublicToTerraform(this._frontendPublic.internalValue),
       identity: nginxDeploymentIdentityToTerraform(this._identity.internalValue),
-      logging_storage_account: cdktn.listMapper(nginxDeploymentLoggingStorageAccountToTerraform, true)(this._loggingStorageAccount.internalValue),
       network_interface: cdktn.listMapper(nginxDeploymentNetworkInterfaceToTerraform, true)(this._networkInterface.internalValue),
       timeouts: nginxDeploymentTimeoutsToTerraform(this._timeouts.internalValue),
       web_application_firewall: nginxDeploymentWebApplicationFirewallToTerraform(this._webApplicationFirewall.internalValue),
@@ -2044,12 +1827,6 @@ export class NginxDeployment extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "number",
       },
-      diagnose_support_enabled: {
-        value: cdktn.booleanToHclTerraform(this._diagnoseSupportEnabled),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
-      },
       email: {
         value: cdktn.stringToHclTerraform(this._email),
         isBlock: false,
@@ -2064,12 +1841,6 @@ export class NginxDeployment extends cdktn.TerraformResource {
       },
       location: {
         value: cdktn.stringToHclTerraform(this._location),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      managed_resource_group: {
-        value: cdktn.stringToHclTerraform(this._managedResourceGroup),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -2121,12 +1892,6 @@ export class NginxDeployment extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "NginxDeploymentIdentityList",
-      },
-      logging_storage_account: {
-        value: cdktn.listMapperHcl(nginxDeploymentLoggingStorageAccountToHclTerraform, true)(this._loggingStorageAccount.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "NginxDeploymentLoggingStorageAccountList",
       },
       network_interface: {
         value: cdktn.listMapperHcl(nginxDeploymentNetworkInterfaceToHclTerraform, true)(this._networkInterface.internalValue),

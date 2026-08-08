@@ -4,12 +4,12 @@
 
 ### PrivateDnsCnameRecord <a name="PrivateDnsCnameRecord" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record azurerm_private_dns_cname_record}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record azurerm_private_dns_cname_record}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednscnamerecord"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/privatednscnamerecord"
 
 privatednscnamerecord.NewPrivateDnsCnameRecord(scope Construct, id *string, config PrivateDnsCnameRecordConfig) PrivateDnsCnameRecord
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednscnamerecord"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/privatednscnamerecord"
 
 privatednscnamerecord.PrivateDnsCnameRecord_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednscnamerecord"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/privatednscnamerecord"
 
 privatednscnamerecord.PrivateDnsCnameRecord_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ privatednscnamerecord.PrivateDnsCnameRecord_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednscnamerecord"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/privatednscnamerecord"
 
 privatednscnamerecord.PrivateDnsCnameRecord_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ privatednscnamerecord.PrivateDnsCnameRecord_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednscnamerecord"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/privatednscnamerecord"
 
 privatednscnamerecord.PrivateDnsCnameRecord_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the PrivateDnsCnameRecord to i
 
 The id of the existing PrivateDnsCnameRecord that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -557,19 +557,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordTimeoutsOutputReference">PrivateDnsCnameRecordTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.privateDnsZoneIdInput">PrivateDnsZoneIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.recordInput">RecordInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.resourceGroupNameInput">ResourceGroupNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.ttlInput">TtlInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.zoneNameInput">ZoneNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.privateDnsZoneId">PrivateDnsZoneId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.record">Record</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.ttl">Ttl</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.zoneName">ZoneName</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -755,20 +753,20 @@ func NameInput() *string
 
 ---
 
-##### `RecordInput`<sup>Optional</sup> <a name="RecordInput" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.recordInput"></a>
+##### `PrivateDnsZoneIdInput`<sup>Optional</sup> <a name="PrivateDnsZoneIdInput" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.privateDnsZoneIdInput"></a>
 
 ```go
-func RecordInput() *string
+func PrivateDnsZoneIdInput() *string
 ```
 
 - *Type:* *string
 
 ---
 
-##### `ResourceGroupNameInput`<sup>Optional</sup> <a name="ResourceGroupNameInput" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.resourceGroupNameInput"></a>
+##### `RecordInput`<sup>Optional</sup> <a name="RecordInput" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.recordInput"></a>
 
 ```go
-func ResourceGroupNameInput() *string
+func RecordInput() *string
 ```
 
 - *Type:* *string
@@ -805,16 +803,6 @@ func TtlInput() *f64
 
 ---
 
-##### `ZoneNameInput`<sup>Optional</sup> <a name="ZoneNameInput" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.zoneNameInput"></a>
-
-```go
-func ZoneNameInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.id"></a>
 
 ```go
@@ -835,20 +823,20 @@ func Name() *string
 
 ---
 
-##### `Record`<sup>Required</sup> <a name="Record" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.record"></a>
+##### `PrivateDnsZoneId`<sup>Required</sup> <a name="PrivateDnsZoneId" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.privateDnsZoneId"></a>
 
 ```go
-func Record() *string
+func PrivateDnsZoneId() *string
 ```
 
 - *Type:* *string
 
 ---
 
-##### `ResourceGroupName`<sup>Required</sup> <a name="ResourceGroupName" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.resourceGroupName"></a>
+##### `Record`<sup>Required</sup> <a name="Record" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.record"></a>
 
 ```go
-func ResourceGroupName() *string
+func Record() *string
 ```
 
 - *Type:* *string
@@ -872,16 +860,6 @@ func Ttl() *f64
 ```
 
 - *Type:* *f64
-
----
-
-##### `ZoneName`<sup>Required</sup> <a name="ZoneName" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecord.property.zoneName"></a>
-
-```go
-func ZoneName() *string
-```
-
-- *Type:* *string
 
 ---
 
@@ -910,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednscnamerecord"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/privatednscnamerecord"
 
 &privatednscnamerecord.PrivateDnsCnameRecordConfig {
 	Connection: interface{},
@@ -921,13 +899,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednscnam
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
+	PrivateDnsZoneId: *string,
 	Record: *string,
-	ResourceGroupName: *string,
 	Ttl: *f64,
-	ZoneName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.privateDnsCnameRecord.PrivateDnsCnameRecordTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.privateDnsCnameRecord.PrivateDnsCnameRecordTimeouts,
 }
 ```
 
@@ -942,13 +919,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednscnam
 | <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#name PrivateDnsCnameRecord#name}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordConfig.property.record">Record</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#record PrivateDnsCnameRecord#record}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#resource_group_name PrivateDnsCnameRecord#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordConfig.property.ttl">Ttl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#ttl PrivateDnsCnameRecord#ttl}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordConfig.property.zoneName">ZoneName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#zone_name PrivateDnsCnameRecord#zone_name}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#id PrivateDnsCnameRecord#id}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#tags PrivateDnsCnameRecord#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#name PrivateDnsCnameRecord#name}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordConfig.property.privateDnsZoneId">PrivateDnsZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#private_dns_zone_id PrivateDnsCnameRecord#private_dns_zone_id}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordConfig.property.record">Record</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#record PrivateDnsCnameRecord#record}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordConfig.property.ttl">Ttl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#ttl PrivateDnsCnameRecord#ttl}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#id PrivateDnsCnameRecord#id}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#tags PrivateDnsCnameRecord#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordTimeouts">PrivateDnsCnameRecordTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1031,7 +1007,19 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#name PrivateDnsCnameRecord#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#name PrivateDnsCnameRecord#name}.
+
+---
+
+##### `PrivateDnsZoneId`<sup>Required</sup> <a name="PrivateDnsZoneId" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordConfig.property.privateDnsZoneId"></a>
+
+```go
+PrivateDnsZoneId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#private_dns_zone_id PrivateDnsCnameRecord#private_dns_zone_id}.
 
 ---
 
@@ -1043,19 +1031,7 @@ Record *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#record PrivateDnsCnameRecord#record}.
-
----
-
-##### `ResourceGroupName`<sup>Required</sup> <a name="ResourceGroupName" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordConfig.property.resourceGroupName"></a>
-
-```go
-ResourceGroupName *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#resource_group_name PrivateDnsCnameRecord#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#record PrivateDnsCnameRecord#record}.
 
 ---
 
@@ -1067,19 +1043,7 @@ Ttl *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#ttl PrivateDnsCnameRecord#ttl}.
-
----
-
-##### `ZoneName`<sup>Required</sup> <a name="ZoneName" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordConfig.property.zoneName"></a>
-
-```go
-ZoneName *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#zone_name PrivateDnsCnameRecord#zone_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#ttl PrivateDnsCnameRecord#ttl}.
 
 ---
 
@@ -1091,7 +1055,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#id PrivateDnsCnameRecord#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#id PrivateDnsCnameRecord#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1106,7 +1070,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#tags PrivateDnsCnameRecord#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#tags PrivateDnsCnameRecord#tags}.
 
 ---
 
@@ -1120,7 +1084,7 @@ Timeouts PrivateDnsCnameRecordTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#timeouts PrivateDnsCnameRecord#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#timeouts PrivateDnsCnameRecord#timeouts}
 
 ---
 
@@ -1129,7 +1093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednscnamerecord"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/privatednscnamerecord"
 
 &privatednscnamerecord.PrivateDnsCnameRecordTimeouts {
 	Create: *string,
@@ -1143,10 +1107,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednscnam
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#create PrivateDnsCnameRecord#create}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#delete PrivateDnsCnameRecord#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#read PrivateDnsCnameRecord#read}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#update PrivateDnsCnameRecord#update}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#create PrivateDnsCnameRecord#create}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#delete PrivateDnsCnameRecord#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#read PrivateDnsCnameRecord#read}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#update PrivateDnsCnameRecord#update}. |
 
 ---
 
@@ -1158,7 +1122,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#create PrivateDnsCnameRecord#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#create PrivateDnsCnameRecord#create}.
 
 ---
 
@@ -1170,7 +1134,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#delete PrivateDnsCnameRecord#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#delete PrivateDnsCnameRecord#delete}.
 
 ---
 
@@ -1182,7 +1146,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#read PrivateDnsCnameRecord#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#read PrivateDnsCnameRecord#read}.
 
 ---
 
@@ -1194,7 +1158,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_cname_record#update PrivateDnsCnameRecord#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_cname_record#update PrivateDnsCnameRecord#update}.
 
 ---
 
@@ -1205,7 +1169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.privateDnsCnameRecord.PrivateDnsCnameRecordTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednscnamerecord"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/privatednscnamerecord"
 
 privatednscnamerecord.NewPrivateDnsCnameRecordTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivateDnsCnameRecordTimeoutsOutputReference
 ```

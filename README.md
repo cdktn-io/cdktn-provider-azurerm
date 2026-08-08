@@ -1,7 +1,7 @@
 
-# CDKTN prebuilt bindings for hashicorp/azurerm provider version 4.81.0
+# CDKTN prebuilt bindings for hashicorp/azurerm provider version 5.0.1
 
-This repo builds and publishes the [Terraform azurerm provider](https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs) bindings for [CDK Terrain](https://cdktn.io).
+This repo builds and publishes the [Terraform azurerm provider](https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs) bindings for [CDK Terrain](https://cdktn.io).
 
 ## Available Packages
 
@@ -58,12 +58,12 @@ You can also visit a hosted version of the documentation on [constructs.dev](htt
 
 ## Versioning
 
-This project is explicitly not tracking the Terraform azurerm provider version 1:1. In fact, it always tracks `latest` of `~> 4.0` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by [generating the provider constructs manually](https://cdktn.io/docs/concepts/providers#import-providers).
+This project is explicitly not tracking the Terraform azurerm provider version 1:1. In fact, it always tracks `latest` of `~> 5.0` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by [generating the provider constructs manually](https://cdktn.io/docs/concepts/providers#import-providers).
 
 These are the upstream dependencies:
 
 - [CDK Terrain](https://cdktn.io) - Last official release
-- [Terraform azurerm provider](https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0)
+- [Terraform azurerm provider](https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

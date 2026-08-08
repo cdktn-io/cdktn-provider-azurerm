@@ -4,12 +4,12 @@
 
 ### VirtualHubRoutingIntent <a name="VirtualHubRoutingIntent" id="@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent azurerm_virtual_hub_routing_intent}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent azurerm_virtual_hub_routing_intent}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubroutingintent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/virtualhubroutingintent"
 
 virtualhubroutingintent.NewVirtualHubRoutingIntent(scope Construct, id *string, config VirtualHubRoutingIntentConfig) VirtualHubRoutingIntent
 ```
@@ -440,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntent.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubroutingintent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/virtualhubroutingintent"
 
 virtualhubroutingintent.VirtualHubRoutingIntent_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubroutingintent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/virtualhubroutingintent"
 
 virtualhubroutingintent.VirtualHubRoutingIntent_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ virtualhubroutingintent.VirtualHubRoutingIntent_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntent.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubroutingintent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/virtualhubroutingintent"
 
 virtualhubroutingintent.VirtualHubRoutingIntent_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ virtualhubroutingintent.VirtualHubRoutingIntent_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntent.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubroutingintent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/virtualhubroutingintent"
 
 virtualhubroutingintent.VirtualHubRoutingIntent_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -529,7 +529,7 @@ The construct id used in the generated config for the VirtualHubRoutingIntent to
 
 The id of the existing VirtualHubRoutingIntent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -839,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubroutingintent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/virtualhubroutingintent"
 
 &virtualhubroutingintent.VirtualHubRoutingIntentConfig {
 	Connection: interface{},
@@ -853,7 +853,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubrout
 	RoutingPolicy: interface{},
 	VirtualHubId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualHubRoutingIntent.VirtualHubRoutingIntentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.virtualHubRoutingIntent.VirtualHubRoutingIntentTimeouts,
 }
 ```
 
@@ -868,10 +868,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubrout
 | <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#name VirtualHubRoutingIntent#name}. |
+| <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#name VirtualHubRoutingIntent#name}. |
 | <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentConfig.property.routingPolicy">RoutingPolicy</a></code> | <code>interface{}</code> | routing_policy block. |
-| <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentConfig.property.virtualHubId">VirtualHubId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#virtual_hub_id VirtualHubRoutingIntent#virtual_hub_id}. |
-| <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#id VirtualHubRoutingIntent#id}. |
+| <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentConfig.property.virtualHubId">VirtualHubId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#virtual_hub_id VirtualHubRoutingIntent#virtual_hub_id}. |
+| <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#id VirtualHubRoutingIntent#id}. |
 | <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentTimeouts">VirtualHubRoutingIntentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -954,7 +954,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#name VirtualHubRoutingIntent#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#name VirtualHubRoutingIntent#name}.
 
 ---
 
@@ -968,7 +968,7 @@ RoutingPolicy interface{}
 
 routing_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#routing_policy VirtualHubRoutingIntent#routing_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#routing_policy VirtualHubRoutingIntent#routing_policy}
 
 ---
 
@@ -980,7 +980,7 @@ VirtualHubId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#virtual_hub_id VirtualHubRoutingIntent#virtual_hub_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#virtual_hub_id VirtualHubRoutingIntent#virtual_hub_id}.
 
 ---
 
@@ -992,7 +992,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#id VirtualHubRoutingIntent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#id VirtualHubRoutingIntent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1009,7 +1009,7 @@ Timeouts VirtualHubRoutingIntentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#timeouts VirtualHubRoutingIntent#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#timeouts VirtualHubRoutingIntent#timeouts}
 
 ---
 
@@ -1018,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentRoutingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubroutingintent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/virtualhubroutingintent"
 
 &virtualhubroutingintent.VirtualHubRoutingIntentRoutingPolicy {
 	Destinations: *[]*string,
@@ -1031,9 +1031,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubrout
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentRoutingPolicy.property.destinations">Destinations</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#destinations VirtualHubRoutingIntent#destinations}. |
-| <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentRoutingPolicy.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#name VirtualHubRoutingIntent#name}. |
-| <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentRoutingPolicy.property.nextHop">NextHop</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#next_hop VirtualHubRoutingIntent#next_hop}. |
+| <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentRoutingPolicy.property.destinations">Destinations</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#destinations VirtualHubRoutingIntent#destinations}. |
+| <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentRoutingPolicy.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#name VirtualHubRoutingIntent#name}. |
+| <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentRoutingPolicy.property.nextHop">NextHop</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#next_hop VirtualHubRoutingIntent#next_hop}. |
 
 ---
 
@@ -1045,7 +1045,7 @@ Destinations *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#destinations VirtualHubRoutingIntent#destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#destinations VirtualHubRoutingIntent#destinations}.
 
 ---
 
@@ -1057,7 +1057,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#name VirtualHubRoutingIntent#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#name VirtualHubRoutingIntent#name}.
 
 ---
 
@@ -1069,7 +1069,7 @@ NextHop *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#next_hop VirtualHubRoutingIntent#next_hop}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#next_hop VirtualHubRoutingIntent#next_hop}.
 
 ---
 
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubroutingintent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/virtualhubroutingintent"
 
 &virtualhubroutingintent.VirtualHubRoutingIntentTimeouts {
 	Create: *string,
@@ -1092,10 +1092,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubrout
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#create VirtualHubRoutingIntent#create}. |
-| <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#delete VirtualHubRoutingIntent#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#read VirtualHubRoutingIntent#read}. |
-| <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#update VirtualHubRoutingIntent#update}. |
+| <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#create VirtualHubRoutingIntent#create}. |
+| <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#delete VirtualHubRoutingIntent#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#read VirtualHubRoutingIntent#read}. |
+| <code><a href="#@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#update VirtualHubRoutingIntent#update}. |
 
 ---
 
@@ -1107,7 +1107,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#create VirtualHubRoutingIntent#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#create VirtualHubRoutingIntent#create}.
 
 ---
 
@@ -1119,7 +1119,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#delete VirtualHubRoutingIntent#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#delete VirtualHubRoutingIntent#delete}.
 
 ---
 
@@ -1131,7 +1131,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#read VirtualHubRoutingIntent#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#read VirtualHubRoutingIntent#read}.
 
 ---
 
@@ -1143,7 +1143,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/virtual_hub_routing_intent#update VirtualHubRoutingIntent#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/virtual_hub_routing_intent#update VirtualHubRoutingIntent#update}.
 
 ---
 
@@ -1154,7 +1154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentRoutingPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubroutingintent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/virtualhubroutingintent"
 
 virtualhubroutingintent.NewVirtualHubRoutingIntentRoutingPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualHubRoutingIntentRoutingPolicyList
 ```
@@ -1314,7 +1314,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentRoutingPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubroutingintent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/virtualhubroutingintent"
 
 virtualhubroutingintent.NewVirtualHubRoutingIntentRoutingPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualHubRoutingIntentRoutingPolicyOutputReference
 ```
@@ -1647,7 +1647,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualHubRoutingIntent.VirtualHubRoutingIntentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubroutingintent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/virtualhubroutingintent"
 
 virtualhubroutingintent.NewVirtualHubRoutingIntentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualHubRoutingIntentTimeoutsOutputReference
 ```

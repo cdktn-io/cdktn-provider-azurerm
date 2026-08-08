@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_static_website
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_static_website
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -11,48 +11,48 @@ import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StorageAccountStaticWebsiteAConfig extends cdktn.TerraformMetaArguments {
+export interface StorageAccountStaticWebsiteConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_static_website#error_404_document StorageAccountStaticWebsiteA#error_404_document}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_static_website#error_404_document StorageAccountStaticWebsite#error_404_document}
   */
   readonly error404Document?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_static_website#id StorageAccountStaticWebsiteA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_static_website#id StorageAccountStaticWebsite#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_static_website#index_document StorageAccountStaticWebsiteA#index_document}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_static_website#index_document StorageAccountStaticWebsite#index_document}
   */
   readonly indexDocument?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_static_website#storage_account_id StorageAccountStaticWebsiteA#storage_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_static_website#storage_account_id StorageAccountStaticWebsite#storage_account_id}
   */
   readonly storageAccountId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_static_website#timeouts StorageAccountStaticWebsiteA#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_static_website#timeouts StorageAccountStaticWebsite#timeouts}
   */
   readonly timeouts?: StorageAccountStaticWebsiteTimeouts;
 }
 export interface StorageAccountStaticWebsiteTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_static_website#create StorageAccountStaticWebsiteA#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_static_website#create StorageAccountStaticWebsite#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_static_website#delete StorageAccountStaticWebsiteA#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_static_website#delete StorageAccountStaticWebsite#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_static_website#read StorageAccountStaticWebsiteA#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_static_website#read StorageAccountStaticWebsite#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_static_website#update StorageAccountStaticWebsiteA#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_static_website#update StorageAccountStaticWebsite#update}
   */
   readonly update?: string;
 }
@@ -233,9 +233,9 @@ export class StorageAccountStaticWebsiteTimeoutsOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_static_website azurerm_storage_account_static_website}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_static_website azurerm_storage_account_static_website}
 */
-export class StorageAccountStaticWebsiteA extends cdktn.TerraformResource {
+export class StorageAccountStaticWebsite extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -246,11 +246,11 @@ export class StorageAccountStaticWebsiteA extends cdktn.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTN code for importing a StorageAccountStaticWebsiteA resource upon running "cdktn plan <stack-name>"
+  * Generates CDKTN code for importing a StorageAccountStaticWebsite resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
-  * @param importToId The construct id used in the generated config for the StorageAccountStaticWebsiteA to import
-  * @param importFromId The id of the existing StorageAccountStaticWebsiteA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_static_website#import import section} in the documentation of this resource for the id to use
-  * @param provider? Optional instance of the provider where the StorageAccountStaticWebsiteA to import is found
+  * @param importToId The construct id used in the generated config for the StorageAccountStaticWebsite to import
+  * @param importFromId The id of the existing StorageAccountStaticWebsite that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_static_website#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the StorageAccountStaticWebsite to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
         return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_account_static_website", importId: importFromId, provider });
@@ -261,19 +261,19 @@ export class StorageAccountStaticWebsiteA extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_static_website azurerm_storage_account_static_website} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_static_website azurerm_storage_account_static_website} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options StorageAccountStaticWebsiteAConfig
+  * @param options StorageAccountStaticWebsiteConfig
   */
-  public constructor(scope: Construct, id: string, config: StorageAccountStaticWebsiteAConfig) {
+  public constructor(scope: Construct, id: string, config: StorageAccountStaticWebsiteConfig) {
     super(scope, id, {
       terraformResourceType: 'azurerm_storage_account_static_website',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.81.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

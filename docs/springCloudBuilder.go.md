@@ -4,12 +4,12 @@
 
 ### SpringCloudBuilder <a name="SpringCloudBuilder" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder azurerm_spring_cloud_builder}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder azurerm_spring_cloud_builder}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/springcloudbuilder"
 
 springcloudbuilder.NewSpringCloudBuilder(scope Construct, id *string, config SpringCloudBuilderConfig) SpringCloudBuilder
 ```
@@ -453,7 +453,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilder.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/springcloudbuilder"
 
 springcloudbuilder.SpringCloudBuilder_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/springcloudbuilder"
 
 springcloudbuilder.SpringCloudBuilder_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ springcloudbuilder.SpringCloudBuilder_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilder.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/springcloudbuilder"
 
 springcloudbuilder.SpringCloudBuilder_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ springcloudbuilder.SpringCloudBuilder_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/springcloudbuilder"
 
 springcloudbuilder.SpringCloudBuilder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -542,7 +542,7 @@ The construct id used in the generated config for the SpringCloudBuilder to impo
 
 The id of the existing SpringCloudBuilder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -874,7 +874,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderBuildPackGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/springcloudbuilder"
 
 &springcloudbuilder.SpringCloudBuilderBuildPackGroup {
 	Name: *string,
@@ -886,8 +886,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudbui
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderBuildPackGroup.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#name SpringCloudBuilder#name}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderBuildPackGroup.property.buildPackIds">BuildPackIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#build_pack_ids SpringCloudBuilder#build_pack_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderBuildPackGroup.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#name SpringCloudBuilder#name}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderBuildPackGroup.property.buildPackIds">BuildPackIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#build_pack_ids SpringCloudBuilder#build_pack_ids}. |
 
 ---
 
@@ -899,7 +899,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#name SpringCloudBuilder#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#name SpringCloudBuilder#name}.
 
 ---
 
@@ -911,7 +911,7 @@ BuildPackIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#build_pack_ids SpringCloudBuilder#build_pack_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#build_pack_ids SpringCloudBuilder#build_pack_ids}.
 
 ---
 
@@ -920,7 +920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/springcloudbuilder"
 
 &springcloudbuilder.SpringCloudBuilderConfig {
 	Connection: interface{},
@@ -933,9 +933,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudbui
 	BuildPackGroup: interface{},
 	Name: *string,
 	SpringCloudServiceId: *string,
-	Stack: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudBuilder.SpringCloudBuilderStack,
+	Stack: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.springCloudBuilder.SpringCloudBuilderStack,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudBuilder.SpringCloudBuilderTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.springCloudBuilder.SpringCloudBuilderTimeouts,
 }
 ```
 
@@ -951,10 +951,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudbui
 | <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderConfig.property.buildPackGroup">BuildPackGroup</a></code> | <code>interface{}</code> | build_pack_group block. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#name SpringCloudBuilder#name}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderConfig.property.springCloudServiceId">SpringCloudServiceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#spring_cloud_service_id SpringCloudBuilder#spring_cloud_service_id}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#name SpringCloudBuilder#name}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderConfig.property.springCloudServiceId">SpringCloudServiceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#spring_cloud_service_id SpringCloudBuilder#spring_cloud_service_id}. |
 | <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderConfig.property.stack">Stack</a></code> | <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderStack">SpringCloudBuilderStack</a></code> | stack block. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#id SpringCloudBuilder#id}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#id SpringCloudBuilder#id}. |
 | <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderTimeouts">SpringCloudBuilderTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1039,7 +1039,7 @@ BuildPackGroup interface{}
 
 build_pack_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#build_pack_group SpringCloudBuilder#build_pack_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#build_pack_group SpringCloudBuilder#build_pack_group}
 
 ---
 
@@ -1051,7 +1051,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#name SpringCloudBuilder#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#name SpringCloudBuilder#name}.
 
 ---
 
@@ -1063,7 +1063,7 @@ SpringCloudServiceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#spring_cloud_service_id SpringCloudBuilder#spring_cloud_service_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#spring_cloud_service_id SpringCloudBuilder#spring_cloud_service_id}.
 
 ---
 
@@ -1077,7 +1077,7 @@ Stack SpringCloudBuilderStack
 
 stack block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#stack SpringCloudBuilder#stack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#stack SpringCloudBuilder#stack}
 
 ---
 
@@ -1089,7 +1089,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#id SpringCloudBuilder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#id SpringCloudBuilder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1106,7 +1106,7 @@ Timeouts SpringCloudBuilderTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#timeouts SpringCloudBuilder#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#timeouts SpringCloudBuilder#timeouts}
 
 ---
 
@@ -1115,7 +1115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderStack.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/springcloudbuilder"
 
 &springcloudbuilder.SpringCloudBuilderStack {
 	Id: *string,
@@ -1127,8 +1127,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudbui
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderStack.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#id SpringCloudBuilder#id}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderStack.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#version SpringCloudBuilder#version}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderStack.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#id SpringCloudBuilder#id}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderStack.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#version SpringCloudBuilder#version}. |
 
 ---
 
@@ -1140,7 +1140,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#id SpringCloudBuilder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#id SpringCloudBuilder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1155,7 +1155,7 @@ Version *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#version SpringCloudBuilder#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#version SpringCloudBuilder#version}.
 
 ---
 
@@ -1164,7 +1164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/springcloudbuilder"
 
 &springcloudbuilder.SpringCloudBuilderTimeouts {
 	Create: *string,
@@ -1178,10 +1178,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudbui
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#create SpringCloudBuilder#create}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#delete SpringCloudBuilder#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#read SpringCloudBuilder#read}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#update SpringCloudBuilder#update}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#create SpringCloudBuilder#create}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#delete SpringCloudBuilder#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#read SpringCloudBuilder#read}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#update SpringCloudBuilder#update}. |
 
 ---
 
@@ -1193,7 +1193,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#create SpringCloudBuilder#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#create SpringCloudBuilder#create}.
 
 ---
 
@@ -1205,7 +1205,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#delete SpringCloudBuilder#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#delete SpringCloudBuilder#delete}.
 
 ---
 
@@ -1217,7 +1217,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#read SpringCloudBuilder#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#read SpringCloudBuilder#read}.
 
 ---
 
@@ -1229,7 +1229,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_builder#update SpringCloudBuilder#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_builder#update SpringCloudBuilder#update}.
 
 ---
 
@@ -1240,7 +1240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderBuildPackGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/springcloudbuilder"
 
 springcloudbuilder.NewSpringCloudBuilderBuildPackGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpringCloudBuilderBuildPackGroupList
 ```
@@ -1400,7 +1400,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderBuildPackGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/springcloudbuilder"
 
 springcloudbuilder.NewSpringCloudBuilderBuildPackGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpringCloudBuilderBuildPackGroupOutputReference
 ```
@@ -1718,7 +1718,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderStackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/springcloudbuilder"
 
 springcloudbuilder.NewSpringCloudBuilderStackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudBuilderStackOutputReference
 ```
@@ -2011,7 +2011,7 @@ func InternalValue() SpringCloudBuilderStack
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudBuilder.SpringCloudBuilderTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudbuilder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/springcloudbuilder"
 
 springcloudbuilder.NewSpringCloudBuilderTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudBuilderTimeoutsOutputReference
 ```

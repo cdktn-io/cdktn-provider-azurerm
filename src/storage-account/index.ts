@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,222 +13,210 @@ import * as cdktn from 'cdktn';
 
 export interface StorageAccountConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#access_tier StorageAccount#access_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#access_tier StorageAccount#access_tier}
   */
   readonly accessTier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#account_kind StorageAccount#account_kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#account_kind StorageAccount#account_kind}
   */
   readonly accountKind?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#account_replication_type StorageAccount#account_replication_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#account_replication_type StorageAccount#account_replication_type}
   */
   readonly accountReplicationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#account_tier StorageAccount#account_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#account_tier StorageAccount#account_tier}
   */
   readonly accountTier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allow_nested_items_to_be_public StorageAccount#allow_nested_items_to_be_public}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allow_nested_items_to_be_public StorageAccount#allow_nested_items_to_be_public}
   */
   readonly allowNestedItemsToBePublic?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_copy_scope StorageAccount#allowed_copy_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_copy_scope StorageAccount#allowed_copy_scope}
   */
   readonly allowedCopyScope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#cross_tenant_replication_enabled StorageAccount#cross_tenant_replication_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#cross_tenant_replication_enabled StorageAccount#cross_tenant_replication_enabled}
   */
   readonly crossTenantReplicationEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_to_oauth_authentication StorageAccount#default_to_oauth_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_to_oauth_authentication StorageAccount#default_to_oauth_authentication}
   */
   readonly defaultToOauthAuthentication?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#dns_endpoint_type StorageAccount#dns_endpoint_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#dns_endpoint_type StorageAccount#dns_endpoint_type}
   */
   readonly dnsEndpointType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#edge_zone StorageAccount#edge_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#edge_zone StorageAccount#edge_zone}
   */
   readonly edgeZone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#https_traffic_only_enabled StorageAccount#https_traffic_only_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#https_traffic_only_enabled StorageAccount#https_traffic_only_enabled}
   */
   readonly httpsTrafficOnlyEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#id StorageAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#id StorageAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#infrastructure_encryption_enabled StorageAccount#infrastructure_encryption_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#infrastructure_encryption_enabled StorageAccount#infrastructure_encryption_enabled}
   */
   readonly infrastructureEncryptionEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#is_hns_enabled StorageAccount#is_hns_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#is_hns_enabled StorageAccount#is_hns_enabled}
   */
   readonly isHnsEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#large_file_share_enabled StorageAccount#large_file_share_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#large_file_share_enabled StorageAccount#large_file_share_enabled}
   */
   readonly largeFileShareEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#local_user_enabled StorageAccount#local_user_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#local_user_enabled StorageAccount#local_user_enabled}
   */
   readonly localUserEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#location StorageAccount#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#location StorageAccount#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#min_tls_version StorageAccount#min_tls_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#min_tls_version StorageAccount#min_tls_version}
   */
   readonly minTlsVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#name StorageAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#name StorageAccount#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#nfsv3_enabled StorageAccount#nfsv3_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#nfsv3_enabled StorageAccount#nfsv3_enabled}
   */
   readonly nfsv3Enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#provisioned_billing_model_version StorageAccount#provisioned_billing_model_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#provisioned_billing_model_version StorageAccount#provisioned_billing_model_version}
   */
   readonly provisionedBillingModelVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#public_network_access_enabled StorageAccount#public_network_access_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#public_network_access_enabled StorageAccount#public_network_access_enabled}
   */
   readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#queue_encryption_key_type StorageAccount#queue_encryption_key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#queue_encryption_key_type StorageAccount#queue_encryption_key_type}
   */
   readonly queueEncryptionKeyType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#resource_group_name StorageAccount#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#resource_group_name StorageAccount#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#sftp_enabled StorageAccount#sftp_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#sftp_enabled StorageAccount#sftp_enabled}
   */
   readonly sftpEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#shared_access_key_enabled StorageAccount#shared_access_key_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#shared_access_key_enabled StorageAccount#shared_access_key_enabled}
   */
   readonly sharedAccessKeyEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#table_encryption_key_type StorageAccount#table_encryption_key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#table_encryption_key_type StorageAccount#table_encryption_key_type}
   */
   readonly tableEncryptionKeyType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#tags StorageAccount#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#tags StorageAccount#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * azure_files_authentication block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#azure_files_authentication StorageAccount#azure_files_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#azure_files_authentication StorageAccount#azure_files_authentication}
   */
   readonly azureFilesAuthentication?: StorageAccountAzureFilesAuthentication;
   /**
   * blob_properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#blob_properties StorageAccount#blob_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#blob_properties StorageAccount#blob_properties}
   */
   readonly blobProperties?: StorageAccountBlobProperties;
   /**
   * custom_domain block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#custom_domain StorageAccount#custom_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#custom_domain StorageAccount#custom_domain}
   */
   readonly customDomain?: StorageAccountCustomDomain;
   /**
   * customer_managed_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#customer_managed_key StorageAccount#customer_managed_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#customer_managed_key StorageAccount#customer_managed_key}
   */
   readonly customerManagedKey?: StorageAccountCustomerManagedKey;
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#identity StorageAccount#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#identity StorageAccount#identity}
   */
   readonly identity?: StorageAccountIdentity;
   /**
   * immutability_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#immutability_policy StorageAccount#immutability_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#immutability_policy StorageAccount#immutability_policy}
   */
   readonly immutabilityPolicy?: StorageAccountImmutabilityPolicy;
   /**
   * network_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#network_rules StorageAccount#network_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#network_rules StorageAccount#network_rules}
   */
   readonly networkRules?: StorageAccountNetworkRules;
   /**
-  * queue_properties block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#queue_properties StorageAccount#queue_properties}
-  */
-  readonly queueProperties?: StorageAccountQueueProperties;
-  /**
   * routing block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#routing StorageAccount#routing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#routing StorageAccount#routing}
   */
   readonly routing?: StorageAccountRouting;
   /**
   * sas_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#sas_policy StorageAccount#sas_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#sas_policy StorageAccount#sas_policy}
   */
   readonly sasPolicy?: StorageAccountSasPolicy;
   /**
   * share_properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#share_properties StorageAccount#share_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#share_properties StorageAccount#share_properties}
   */
   readonly shareProperties?: StorageAccountShareProperties;
   /**
-  * static_website block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#static_website StorageAccount#static_website}
-  */
-  readonly staticWebsite?: StorageAccountStaticWebsite;
-  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#timeouts StorageAccount#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#timeouts StorageAccount#timeouts}
   */
   readonly timeouts?: StorageAccountTimeouts;
 }
 export interface StorageAccountAzureFilesAuthenticationActiveDirectory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#domain_guid StorageAccount#domain_guid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#domain_guid StorageAccount#domain_guid}
   */
   readonly domainGuid: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#domain_name StorageAccount#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#domain_name StorageAccount#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#domain_sid StorageAccount#domain_sid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#domain_sid StorageAccount#domain_sid}
   */
   readonly domainSid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#forest_name StorageAccount#forest_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#forest_name StorageAccount#forest_name}
   */
   readonly forestName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#netbios_domain_name StorageAccount#netbios_domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#netbios_domain_name StorageAccount#netbios_domain_name}
   */
   readonly netbiosDomainName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#storage_sid StorageAccount#storage_sid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#storage_sid StorageAccount#storage_sid}
   */
   readonly storageSid?: string;
 }
@@ -451,17 +439,17 @@ export class StorageAccountAzureFilesAuthenticationActiveDirectoryOutputReferenc
 }
 export interface StorageAccountAzureFilesAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_share_level_permission StorageAccount#default_share_level_permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_share_level_permission StorageAccount#default_share_level_permission}
   */
   readonly defaultShareLevelPermission?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#directory_type StorageAccount#directory_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#directory_type StorageAccount#directory_type}
   */
   readonly directoryType: string;
   /**
   * active_directory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#active_directory StorageAccount#active_directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#active_directory StorageAccount#active_directory}
   */
   readonly activeDirectory?: StorageAccountAzureFilesAuthenticationActiveDirectory;
 }
@@ -600,7 +588,7 @@ export class StorageAccountAzureFilesAuthenticationOutputReference extends cdktn
 }
 export interface StorageAccountBlobPropertiesContainerDeleteRetentionPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#days StorageAccount#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#days StorageAccount#days}
   */
   readonly days?: number;
 }
@@ -684,23 +672,23 @@ export class StorageAccountBlobPropertiesContainerDeleteRetentionPolicyOutputRef
 }
 export interface StorageAccountBlobPropertiesCorsRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}
   */
   readonly allowedHeaders: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}
   */
   readonly allowedMethods: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}
   */
   readonly allowedOrigins: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}
   */
   readonly exposedHeaders: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}
   */
   readonly maxAgeInSeconds: number;
 }
@@ -917,11 +905,11 @@ export class StorageAccountBlobPropertiesCorsRuleList extends cdktn.ComplexList 
 }
 export interface StorageAccountBlobPropertiesDeleteRetentionPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#days StorageAccount#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#days StorageAccount#days}
   */
   readonly days?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#permanent_delete_enabled StorageAccount#permanent_delete_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#permanent_delete_enabled StorageAccount#permanent_delete_enabled}
   */
   readonly permanentDeleteEnabled?: boolean | cdktn.IResolvable;
 }
@@ -1034,7 +1022,7 @@ export class StorageAccountBlobPropertiesDeleteRetentionPolicyOutputReference ex
 }
 export interface StorageAccountBlobPropertiesRestorePolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#days StorageAccount#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#days StorageAccount#days}
   */
   readonly days: number;
 }
@@ -1115,47 +1103,47 @@ export class StorageAccountBlobPropertiesRestorePolicyOutputReference extends cd
 }
 export interface StorageAccountBlobProperties {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#change_feed_enabled StorageAccount#change_feed_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#change_feed_enabled StorageAccount#change_feed_enabled}
   */
   readonly changeFeedEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#change_feed_retention_in_days StorageAccount#change_feed_retention_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#change_feed_retention_in_days StorageAccount#change_feed_retention_in_days}
   */
   readonly changeFeedRetentionInDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_service_version StorageAccount#default_service_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_service_version StorageAccount#default_service_version}
   */
   readonly defaultServiceVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#last_access_time_enabled StorageAccount#last_access_time_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#last_access_time_enabled StorageAccount#last_access_time_enabled}
   */
   readonly lastAccessTimeEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#versioning_enabled StorageAccount#versioning_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#versioning_enabled StorageAccount#versioning_enabled}
   */
   readonly versioningEnabled?: boolean | cdktn.IResolvable;
   /**
   * container_delete_retention_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#container_delete_retention_policy StorageAccount#container_delete_retention_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#container_delete_retention_policy StorageAccount#container_delete_retention_policy}
   */
   readonly containerDeleteRetentionPolicy?: StorageAccountBlobPropertiesContainerDeleteRetentionPolicy;
   /**
   * cors_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#cors_rule StorageAccount#cors_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#cors_rule StorageAccount#cors_rule}
   */
   readonly corsRule?: StorageAccountBlobPropertiesCorsRule[] | cdktn.IResolvable;
   /**
   * delete_retention_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#delete_retention_policy StorageAccount#delete_retention_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#delete_retention_policy StorageAccount#delete_retention_policy}
   */
   readonly deleteRetentionPolicy?: StorageAccountBlobPropertiesDeleteRetentionPolicy;
   /**
   * restore_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#restore_policy StorageAccount#restore_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#restore_policy StorageAccount#restore_policy}
   */
   readonly restorePolicy?: StorageAccountBlobPropertiesRestorePolicy;
 }
@@ -1471,11 +1459,11 @@ export class StorageAccountBlobPropertiesOutputReference extends cdktn.ComplexOb
 }
 export interface StorageAccountCustomDomain {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#name StorageAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#name StorageAccount#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#use_subdomain StorageAccount#use_subdomain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#use_subdomain StorageAccount#use_subdomain}
   */
   readonly useSubdomain?: boolean | cdktn.IResolvable;
 }
@@ -1585,15 +1573,11 @@ export class StorageAccountCustomDomainOutputReference extends cdktn.ComplexObje
 }
 export interface StorageAccountCustomerManagedKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#key_vault_key_id StorageAccount#key_vault_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#key_vault_key_id StorageAccount#key_vault_key_id}
   */
-  readonly keyVaultKeyId?: string;
+  readonly keyVaultKeyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#managed_hsm_key_id StorageAccount#managed_hsm_key_id}
-  */
-  readonly managedHsmKeyId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#user_assigned_identity_id StorageAccount#user_assigned_identity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#user_assigned_identity_id StorageAccount#user_assigned_identity_id}
   */
   readonly userAssignedIdentityId: string;
 }
@@ -1605,7 +1589,6 @@ export function storageAccountCustomerManagedKeyToTerraform(struct?: StorageAcco
   }
   return {
     key_vault_key_id: cdktn.stringToTerraform(struct!.keyVaultKeyId),
-    managed_hsm_key_id: cdktn.stringToTerraform(struct!.managedHsmKeyId),
     user_assigned_identity_id: cdktn.stringToTerraform(struct!.userAssignedIdentityId),
   }
 }
@@ -1619,12 +1602,6 @@ export function storageAccountCustomerManagedKeyToHclTerraform(struct?: StorageA
   const attrs = {
     key_vault_key_id: {
       value: cdktn.stringToHclTerraform(struct!.keyVaultKeyId),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    managed_hsm_key_id: {
-      value: cdktn.stringToHclTerraform(struct!.managedHsmKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1659,10 +1636,6 @@ export class StorageAccountCustomerManagedKeyOutputReference extends cdktn.Compl
       hasAnyValues = true;
       internalValueResult.keyVaultKeyId = this._keyVaultKeyId;
     }
-    if (this._managedHsmKeyId !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.managedHsmKeyId = this._managedHsmKeyId;
-    }
     if (this._userAssignedIdentityId !== undefined) {
       hasAnyValues = true;
       internalValueResult.userAssignedIdentityId = this._userAssignedIdentityId;
@@ -1674,18 +1647,16 @@ export class StorageAccountCustomerManagedKeyOutputReference extends cdktn.Compl
     if (value === undefined) {
       this.isEmptyObject = false;
       this._keyVaultKeyId = undefined;
-      this._managedHsmKeyId = undefined;
       this._userAssignedIdentityId = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._keyVaultKeyId = value.keyVaultKeyId;
-      this._managedHsmKeyId = value.managedHsmKeyId;
       this._userAssignedIdentityId = value.userAssignedIdentityId;
     }
   }
 
-  // key_vault_key_id - computed: true, optional: true, required: false
+  // key_vault_key_id - computed: false, optional: false, required: true
   private _keyVaultKeyId?: string; 
   public get keyVaultKeyId() {
     return this.getStringAttribute('key_vault_key_id');
@@ -1693,28 +1664,9 @@ export class StorageAccountCustomerManagedKeyOutputReference extends cdktn.Compl
   public set keyVaultKeyId(value: string) {
     this._keyVaultKeyId = value;
   }
-  public resetKeyVaultKeyId() {
-    this._keyVaultKeyId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get keyVaultKeyIdInput() {
     return this._keyVaultKeyId;
-  }
-
-  // managed_hsm_key_id - computed: true, optional: true, required: false
-  private _managedHsmKeyId?: string; 
-  public get managedHsmKeyId() {
-    return this.getStringAttribute('managed_hsm_key_id');
-  }
-  public set managedHsmKeyId(value: string) {
-    this._managedHsmKeyId = value;
-  }
-  public resetManagedHsmKeyId() {
-    this._managedHsmKeyId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get managedHsmKeyIdInput() {
-    return this._managedHsmKeyId;
   }
 
   // user_assigned_identity_id - computed: false, optional: false, required: true
@@ -1732,11 +1684,11 @@ export class StorageAccountCustomerManagedKeyOutputReference extends cdktn.Compl
 }
 export interface StorageAccountIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#identity_ids StorageAccount#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#identity_ids StorageAccount#identity_ids}
   */
   readonly identityIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#type StorageAccount#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#type StorageAccount#type}
   */
   readonly type: string;
 }
@@ -1856,15 +1808,15 @@ export class StorageAccountIdentityOutputReference extends cdktn.ComplexObject {
 }
 export interface StorageAccountImmutabilityPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allow_protected_append_writes StorageAccount#allow_protected_append_writes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allow_protected_append_writes StorageAccount#allow_protected_append_writes}
   */
   readonly allowProtectedAppendWrites: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#period_since_creation_in_days StorageAccount#period_since_creation_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#period_since_creation_in_days StorageAccount#period_since_creation_in_days}
   */
   readonly periodSinceCreationInDays: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#state StorageAccount#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#state StorageAccount#state}
   */
   readonly state: string;
 }
@@ -1997,11 +1949,11 @@ export class StorageAccountImmutabilityPolicyOutputReference extends cdktn.Compl
 }
 export interface StorageAccountNetworkRulesPrivateLinkAccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#endpoint_resource_id StorageAccount#endpoint_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#endpoint_resource_id StorageAccount#endpoint_resource_id}
   */
   readonly endpointResourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#endpoint_tenant_id StorageAccount#endpoint_tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#endpoint_tenant_id StorageAccount#endpoint_tenant_id}
   */
   readonly endpointTenantId?: string;
 }
@@ -2143,25 +2095,25 @@ export class StorageAccountNetworkRulesPrivateLinkAccessList extends cdktn.Compl
 }
 export interface StorageAccountNetworkRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#bypass StorageAccount#bypass}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#bypass StorageAccount#bypass}
   */
   readonly bypass?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_action StorageAccount#default_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_action StorageAccount#default_action}
   */
   readonly defaultAction: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#ip_rules StorageAccount#ip_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#ip_rules StorageAccount#ip_rules}
   */
   readonly ipRules?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#virtual_network_subnet_ids StorageAccount#virtual_network_subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#virtual_network_subnet_ids StorageAccount#virtual_network_subnet_ids}
   */
   readonly virtualNetworkSubnetIds?: string[];
   /**
   * private_link_access block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#private_link_access StorageAccount#private_link_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#private_link_access StorageAccount#private_link_access}
   */
   readonly privateLinkAccess?: StorageAccountNetworkRulesPrivateLinkAccess[] | cdktn.IResolvable;
 }
@@ -2356,999 +2308,17 @@ export class StorageAccountNetworkRulesOutputReference extends cdktn.ComplexObje
     return this._privateLinkAccess.internalValue;
   }
 }
-export interface StorageAccountQueuePropertiesCorsRule {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}
-  */
-  readonly allowedHeaders: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}
-  */
-  readonly allowedMethods: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}
-  */
-  readonly allowedOrigins: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}
-  */
-  readonly exposedHeaders: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}
-  */
-  readonly maxAgeInSeconds: number;
-}
-
-export function storageAccountQueuePropertiesCorsRuleToTerraform(struct?: StorageAccountQueuePropertiesCorsRule | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    allowed_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedHeaders),
-    allowed_methods: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedMethods),
-    allowed_origins: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedOrigins),
-    exposed_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.exposedHeaders),
-    max_age_in_seconds: cdktn.numberToTerraform(struct!.maxAgeInSeconds),
-  }
-}
-
-
-export function storageAccountQueuePropertiesCorsRuleToHclTerraform(struct?: StorageAccountQueuePropertiesCorsRule | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    allowed_headers: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedHeaders),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    allowed_methods: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedMethods),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    allowed_origins: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedOrigins),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    exposed_headers: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.exposedHeaders),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    max_age_in_seconds: {
-      value: cdktn.numberToHclTerraform(struct!.maxAgeInSeconds),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class StorageAccountQueuePropertiesCorsRuleOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): StorageAccountQueuePropertiesCorsRule | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._allowedHeaders !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.allowedHeaders = this._allowedHeaders;
-    }
-    if (this._allowedMethods !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.allowedMethods = this._allowedMethods;
-    }
-    if (this._allowedOrigins !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.allowedOrigins = this._allowedOrigins;
-    }
-    if (this._exposedHeaders !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.exposedHeaders = this._exposedHeaders;
-    }
-    if (this._maxAgeInSeconds !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.maxAgeInSeconds = this._maxAgeInSeconds;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: StorageAccountQueuePropertiesCorsRule | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._allowedHeaders = undefined;
-      this._allowedMethods = undefined;
-      this._allowedOrigins = undefined;
-      this._exposedHeaders = undefined;
-      this._maxAgeInSeconds = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._allowedHeaders = value.allowedHeaders;
-      this._allowedMethods = value.allowedMethods;
-      this._allowedOrigins = value.allowedOrigins;
-      this._exposedHeaders = value.exposedHeaders;
-      this._maxAgeInSeconds = value.maxAgeInSeconds;
-    }
-  }
-
-  // allowed_headers - computed: false, optional: false, required: true
-  private _allowedHeaders?: string[]; 
-  public get allowedHeaders() {
-    return this.getListAttribute('allowed_headers');
-  }
-  public set allowedHeaders(value: string[]) {
-    this._allowedHeaders = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowedHeadersInput() {
-    return this._allowedHeaders;
-  }
-
-  // allowed_methods - computed: false, optional: false, required: true
-  private _allowedMethods?: string[]; 
-  public get allowedMethods() {
-    return this.getListAttribute('allowed_methods');
-  }
-  public set allowedMethods(value: string[]) {
-    this._allowedMethods = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowedMethodsInput() {
-    return this._allowedMethods;
-  }
-
-  // allowed_origins - computed: false, optional: false, required: true
-  private _allowedOrigins?: string[]; 
-  public get allowedOrigins() {
-    return this.getListAttribute('allowed_origins');
-  }
-  public set allowedOrigins(value: string[]) {
-    this._allowedOrigins = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowedOriginsInput() {
-    return this._allowedOrigins;
-  }
-
-  // exposed_headers - computed: false, optional: false, required: true
-  private _exposedHeaders?: string[]; 
-  public get exposedHeaders() {
-    return this.getListAttribute('exposed_headers');
-  }
-  public set exposedHeaders(value: string[]) {
-    this._exposedHeaders = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get exposedHeadersInput() {
-    return this._exposedHeaders;
-  }
-
-  // max_age_in_seconds - computed: false, optional: false, required: true
-  private _maxAgeInSeconds?: number; 
-  public get maxAgeInSeconds() {
-    return this.getNumberAttribute('max_age_in_seconds');
-  }
-  public set maxAgeInSeconds(value: number) {
-    this._maxAgeInSeconds = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get maxAgeInSecondsInput() {
-    return this._maxAgeInSeconds;
-  }
-}
-
-export class StorageAccountQueuePropertiesCorsRuleList extends cdktn.ComplexList {
-  public internalValue? : StorageAccountQueuePropertiesCorsRule[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): StorageAccountQueuePropertiesCorsRuleOutputReference {
-    return new StorageAccountQueuePropertiesCorsRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface StorageAccountQueuePropertiesHourMetrics {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#enabled StorageAccount#enabled}
-  */
-  readonly enabled: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#include_apis StorageAccount#include_apis}
-  */
-  readonly includeApis?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#retention_policy_days StorageAccount#retention_policy_days}
-  */
-  readonly retentionPolicyDays?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#version StorageAccount#version}
-  */
-  readonly version: string;
-}
-
-export function storageAccountQueuePropertiesHourMetricsToTerraform(struct?: StorageAccountQueuePropertiesHourMetricsOutputReference | StorageAccountQueuePropertiesHourMetrics): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    enabled: cdktn.booleanToTerraform(struct!.enabled),
-    include_apis: cdktn.booleanToTerraform(struct!.includeApis),
-    retention_policy_days: cdktn.numberToTerraform(struct!.retentionPolicyDays),
-    version: cdktn.stringToTerraform(struct!.version),
-  }
-}
-
-
-export function storageAccountQueuePropertiesHourMetricsToHclTerraform(struct?: StorageAccountQueuePropertiesHourMetricsOutputReference | StorageAccountQueuePropertiesHourMetrics): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    enabled: {
-      value: cdktn.booleanToHclTerraform(struct!.enabled),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    include_apis: {
-      value: cdktn.booleanToHclTerraform(struct!.includeApis),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    retention_policy_days: {
-      value: cdktn.numberToHclTerraform(struct!.retentionPolicyDays),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    version: {
-      value: cdktn.stringToHclTerraform(struct!.version),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class StorageAccountQueuePropertiesHourMetricsOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): StorageAccountQueuePropertiesHourMetrics | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._enabled !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.enabled = this._enabled;
-    }
-    if (this._includeApis !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.includeApis = this._includeApis;
-    }
-    if (this._retentionPolicyDays !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.retentionPolicyDays = this._retentionPolicyDays;
-    }
-    if (this._version !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.version = this._version;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: StorageAccountQueuePropertiesHourMetrics | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._enabled = undefined;
-      this._includeApis = undefined;
-      this._retentionPolicyDays = undefined;
-      this._version = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._enabled = value.enabled;
-      this._includeApis = value.includeApis;
-      this._retentionPolicyDays = value.retentionPolicyDays;
-      this._version = value.version;
-    }
-  }
-
-  // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktn.IResolvable; 
-  public get enabled() {
-    return this.getBooleanAttribute('enabled');
-  }
-  public set enabled(value: boolean | cdktn.IResolvable) {
-    this._enabled = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enabledInput() {
-    return this._enabled;
-  }
-
-  // include_apis - computed: false, optional: true, required: false
-  private _includeApis?: boolean | cdktn.IResolvable; 
-  public get includeApis() {
-    return this.getBooleanAttribute('include_apis');
-  }
-  public set includeApis(value: boolean | cdktn.IResolvable) {
-    this._includeApis = value;
-  }
-  public resetIncludeApis() {
-    this._includeApis = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get includeApisInput() {
-    return this._includeApis;
-  }
-
-  // retention_policy_days - computed: false, optional: true, required: false
-  private _retentionPolicyDays?: number; 
-  public get retentionPolicyDays() {
-    return this.getNumberAttribute('retention_policy_days');
-  }
-  public set retentionPolicyDays(value: number) {
-    this._retentionPolicyDays = value;
-  }
-  public resetRetentionPolicyDays() {
-    this._retentionPolicyDays = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get retentionPolicyDaysInput() {
-    return this._retentionPolicyDays;
-  }
-
-  // version - computed: false, optional: false, required: true
-  private _version?: string; 
-  public get version() {
-    return this.getStringAttribute('version');
-  }
-  public set version(value: string) {
-    this._version = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get versionInput() {
-    return this._version;
-  }
-}
-export interface StorageAccountQueuePropertiesLogging {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#delete StorageAccount#delete}
-  */
-  readonly delete: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#read StorageAccount#read}
-  */
-  readonly read: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#retention_policy_days StorageAccount#retention_policy_days}
-  */
-  readonly retentionPolicyDays?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#version StorageAccount#version}
-  */
-  readonly version: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#write StorageAccount#write}
-  */
-  readonly write: boolean | cdktn.IResolvable;
-}
-
-export function storageAccountQueuePropertiesLoggingToTerraform(struct?: StorageAccountQueuePropertiesLoggingOutputReference | StorageAccountQueuePropertiesLogging): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    delete: cdktn.booleanToTerraform(struct!.delete),
-    read: cdktn.booleanToTerraform(struct!.read),
-    retention_policy_days: cdktn.numberToTerraform(struct!.retentionPolicyDays),
-    version: cdktn.stringToTerraform(struct!.version),
-    write: cdktn.booleanToTerraform(struct!.write),
-  }
-}
-
-
-export function storageAccountQueuePropertiesLoggingToHclTerraform(struct?: StorageAccountQueuePropertiesLoggingOutputReference | StorageAccountQueuePropertiesLogging): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    delete: {
-      value: cdktn.booleanToHclTerraform(struct!.delete),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    read: {
-      value: cdktn.booleanToHclTerraform(struct!.read),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    retention_policy_days: {
-      value: cdktn.numberToHclTerraform(struct!.retentionPolicyDays),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    version: {
-      value: cdktn.stringToHclTerraform(struct!.version),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    write: {
-      value: cdktn.booleanToHclTerraform(struct!.write),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class StorageAccountQueuePropertiesLoggingOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): StorageAccountQueuePropertiesLogging | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._delete !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.delete = this._delete;
-    }
-    if (this._read !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.read = this._read;
-    }
-    if (this._retentionPolicyDays !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.retentionPolicyDays = this._retentionPolicyDays;
-    }
-    if (this._version !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.version = this._version;
-    }
-    if (this._write !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.write = this._write;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: StorageAccountQueuePropertiesLogging | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._delete = undefined;
-      this._read = undefined;
-      this._retentionPolicyDays = undefined;
-      this._version = undefined;
-      this._write = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._delete = value.delete;
-      this._read = value.read;
-      this._retentionPolicyDays = value.retentionPolicyDays;
-      this._version = value.version;
-      this._write = value.write;
-    }
-  }
-
-  // delete - computed: false, optional: false, required: true
-  private _delete?: boolean | cdktn.IResolvable; 
-  public get delete() {
-    return this.getBooleanAttribute('delete');
-  }
-  public set delete(value: boolean | cdktn.IResolvable) {
-    this._delete = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get deleteInput() {
-    return this._delete;
-  }
-
-  // read - computed: false, optional: false, required: true
-  private _read?: boolean | cdktn.IResolvable; 
-  public get read() {
-    return this.getBooleanAttribute('read');
-  }
-  public set read(value: boolean | cdktn.IResolvable) {
-    this._read = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get readInput() {
-    return this._read;
-  }
-
-  // retention_policy_days - computed: false, optional: true, required: false
-  private _retentionPolicyDays?: number; 
-  public get retentionPolicyDays() {
-    return this.getNumberAttribute('retention_policy_days');
-  }
-  public set retentionPolicyDays(value: number) {
-    this._retentionPolicyDays = value;
-  }
-  public resetRetentionPolicyDays() {
-    this._retentionPolicyDays = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get retentionPolicyDaysInput() {
-    return this._retentionPolicyDays;
-  }
-
-  // version - computed: false, optional: false, required: true
-  private _version?: string; 
-  public get version() {
-    return this.getStringAttribute('version');
-  }
-  public set version(value: string) {
-    this._version = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get versionInput() {
-    return this._version;
-  }
-
-  // write - computed: false, optional: false, required: true
-  private _write?: boolean | cdktn.IResolvable; 
-  public get write() {
-    return this.getBooleanAttribute('write');
-  }
-  public set write(value: boolean | cdktn.IResolvable) {
-    this._write = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get writeInput() {
-    return this._write;
-  }
-}
-export interface StorageAccountQueuePropertiesMinuteMetrics {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#enabled StorageAccount#enabled}
-  */
-  readonly enabled: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#include_apis StorageAccount#include_apis}
-  */
-  readonly includeApis?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#retention_policy_days StorageAccount#retention_policy_days}
-  */
-  readonly retentionPolicyDays?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#version StorageAccount#version}
-  */
-  readonly version: string;
-}
-
-export function storageAccountQueuePropertiesMinuteMetricsToTerraform(struct?: StorageAccountQueuePropertiesMinuteMetricsOutputReference | StorageAccountQueuePropertiesMinuteMetrics): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    enabled: cdktn.booleanToTerraform(struct!.enabled),
-    include_apis: cdktn.booleanToTerraform(struct!.includeApis),
-    retention_policy_days: cdktn.numberToTerraform(struct!.retentionPolicyDays),
-    version: cdktn.stringToTerraform(struct!.version),
-  }
-}
-
-
-export function storageAccountQueuePropertiesMinuteMetricsToHclTerraform(struct?: StorageAccountQueuePropertiesMinuteMetricsOutputReference | StorageAccountQueuePropertiesMinuteMetrics): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    enabled: {
-      value: cdktn.booleanToHclTerraform(struct!.enabled),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    include_apis: {
-      value: cdktn.booleanToHclTerraform(struct!.includeApis),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    retention_policy_days: {
-      value: cdktn.numberToHclTerraform(struct!.retentionPolicyDays),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    version: {
-      value: cdktn.stringToHclTerraform(struct!.version),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class StorageAccountQueuePropertiesMinuteMetricsOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): StorageAccountQueuePropertiesMinuteMetrics | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._enabled !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.enabled = this._enabled;
-    }
-    if (this._includeApis !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.includeApis = this._includeApis;
-    }
-    if (this._retentionPolicyDays !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.retentionPolicyDays = this._retentionPolicyDays;
-    }
-    if (this._version !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.version = this._version;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: StorageAccountQueuePropertiesMinuteMetrics | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._enabled = undefined;
-      this._includeApis = undefined;
-      this._retentionPolicyDays = undefined;
-      this._version = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._enabled = value.enabled;
-      this._includeApis = value.includeApis;
-      this._retentionPolicyDays = value.retentionPolicyDays;
-      this._version = value.version;
-    }
-  }
-
-  // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktn.IResolvable; 
-  public get enabled() {
-    return this.getBooleanAttribute('enabled');
-  }
-  public set enabled(value: boolean | cdktn.IResolvable) {
-    this._enabled = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enabledInput() {
-    return this._enabled;
-  }
-
-  // include_apis - computed: false, optional: true, required: false
-  private _includeApis?: boolean | cdktn.IResolvable; 
-  public get includeApis() {
-    return this.getBooleanAttribute('include_apis');
-  }
-  public set includeApis(value: boolean | cdktn.IResolvable) {
-    this._includeApis = value;
-  }
-  public resetIncludeApis() {
-    this._includeApis = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get includeApisInput() {
-    return this._includeApis;
-  }
-
-  // retention_policy_days - computed: false, optional: true, required: false
-  private _retentionPolicyDays?: number; 
-  public get retentionPolicyDays() {
-    return this.getNumberAttribute('retention_policy_days');
-  }
-  public set retentionPolicyDays(value: number) {
-    this._retentionPolicyDays = value;
-  }
-  public resetRetentionPolicyDays() {
-    this._retentionPolicyDays = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get retentionPolicyDaysInput() {
-    return this._retentionPolicyDays;
-  }
-
-  // version - computed: false, optional: false, required: true
-  private _version?: string; 
-  public get version() {
-    return this.getStringAttribute('version');
-  }
-  public set version(value: string) {
-    this._version = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get versionInput() {
-    return this._version;
-  }
-}
-export interface StorageAccountQueueProperties {
-  /**
-  * cors_rule block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#cors_rule StorageAccount#cors_rule}
-  */
-  readonly corsRule?: StorageAccountQueuePropertiesCorsRule[] | cdktn.IResolvable;
-  /**
-  * hour_metrics block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#hour_metrics StorageAccount#hour_metrics}
-  */
-  readonly hourMetrics?: StorageAccountQueuePropertiesHourMetrics;
-  /**
-  * logging block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#logging StorageAccount#logging}
-  */
-  readonly logging?: StorageAccountQueuePropertiesLogging;
-  /**
-  * minute_metrics block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#minute_metrics StorageAccount#minute_metrics}
-  */
-  readonly minuteMetrics?: StorageAccountQueuePropertiesMinuteMetrics;
-}
-
-export function storageAccountQueuePropertiesToTerraform(struct?: StorageAccountQueuePropertiesOutputReference | StorageAccountQueueProperties): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    cors_rule: cdktn.listMapper(storageAccountQueuePropertiesCorsRuleToTerraform, true)(struct!.corsRule),
-    hour_metrics: storageAccountQueuePropertiesHourMetricsToTerraform(struct!.hourMetrics),
-    logging: storageAccountQueuePropertiesLoggingToTerraform(struct!.logging),
-    minute_metrics: storageAccountQueuePropertiesMinuteMetricsToTerraform(struct!.minuteMetrics),
-  }
-}
-
-
-export function storageAccountQueuePropertiesToHclTerraform(struct?: StorageAccountQueuePropertiesOutputReference | StorageAccountQueueProperties): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    cors_rule: {
-      value: cdktn.listMapperHcl(storageAccountQueuePropertiesCorsRuleToHclTerraform, true)(struct!.corsRule),
-      isBlock: true,
-      type: "list",
-      storageClassType: "StorageAccountQueuePropertiesCorsRuleList",
-    },
-    hour_metrics: {
-      value: storageAccountQueuePropertiesHourMetricsToHclTerraform(struct!.hourMetrics),
-      isBlock: true,
-      type: "list",
-      storageClassType: "StorageAccountQueuePropertiesHourMetricsList",
-    },
-    logging: {
-      value: storageAccountQueuePropertiesLoggingToHclTerraform(struct!.logging),
-      isBlock: true,
-      type: "list",
-      storageClassType: "StorageAccountQueuePropertiesLoggingList",
-    },
-    minute_metrics: {
-      value: storageAccountQueuePropertiesMinuteMetricsToHclTerraform(struct!.minuteMetrics),
-      isBlock: true,
-      type: "list",
-      storageClassType: "StorageAccountQueuePropertiesMinuteMetricsList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class StorageAccountQueuePropertiesOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): StorageAccountQueueProperties | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._corsRule?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.corsRule = this._corsRule?.internalValue;
-    }
-    if (this._hourMetrics?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.hourMetrics = this._hourMetrics?.internalValue;
-    }
-    if (this._logging?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.logging = this._logging?.internalValue;
-    }
-    if (this._minuteMetrics?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.minuteMetrics = this._minuteMetrics?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: StorageAccountQueueProperties | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._corsRule.internalValue = undefined;
-      this._hourMetrics.internalValue = undefined;
-      this._logging.internalValue = undefined;
-      this._minuteMetrics.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._corsRule.internalValue = value.corsRule;
-      this._hourMetrics.internalValue = value.hourMetrics;
-      this._logging.internalValue = value.logging;
-      this._minuteMetrics.internalValue = value.minuteMetrics;
-    }
-  }
-
-  // cors_rule - computed: false, optional: true, required: false
-  private _corsRule = new StorageAccountQueuePropertiesCorsRuleList(this, "cors_rule", false);
-  public get corsRule() {
-    return this._corsRule;
-  }
-  public putCorsRule(value: StorageAccountQueuePropertiesCorsRule[] | cdktn.IResolvable) {
-    this._corsRule.internalValue = value;
-  }
-  public resetCorsRule() {
-    this._corsRule.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get corsRuleInput() {
-    return this._corsRule.internalValue;
-  }
-
-  // hour_metrics - computed: false, optional: true, required: false
-  private _hourMetrics = new StorageAccountQueuePropertiesHourMetricsOutputReference(this, "hour_metrics");
-  public get hourMetrics() {
-    return this._hourMetrics;
-  }
-  public putHourMetrics(value: StorageAccountQueuePropertiesHourMetrics) {
-    this._hourMetrics.internalValue = value;
-  }
-  public resetHourMetrics() {
-    this._hourMetrics.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get hourMetricsInput() {
-    return this._hourMetrics.internalValue;
-  }
-
-  // logging - computed: false, optional: true, required: false
-  private _logging = new StorageAccountQueuePropertiesLoggingOutputReference(this, "logging");
-  public get logging() {
-    return this._logging;
-  }
-  public putLogging(value: StorageAccountQueuePropertiesLogging) {
-    this._logging.internalValue = value;
-  }
-  public resetLogging() {
-    this._logging.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get loggingInput() {
-    return this._logging.internalValue;
-  }
-
-  // minute_metrics - computed: false, optional: true, required: false
-  private _minuteMetrics = new StorageAccountQueuePropertiesMinuteMetricsOutputReference(this, "minute_metrics");
-  public get minuteMetrics() {
-    return this._minuteMetrics;
-  }
-  public putMinuteMetrics(value: StorageAccountQueuePropertiesMinuteMetrics) {
-    this._minuteMetrics.internalValue = value;
-  }
-  public resetMinuteMetrics() {
-    this._minuteMetrics.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get minuteMetricsInput() {
-    return this._minuteMetrics.internalValue;
-  }
-}
 export interface StorageAccountRouting {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#choice StorageAccount#choice}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#choice StorageAccount#choice}
   */
   readonly choice?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#publish_internet_endpoints StorageAccount#publish_internet_endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#publish_internet_endpoints StorageAccount#publish_internet_endpoints}
   */
   readonly publishInternetEndpoints?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#publish_microsoft_endpoints StorageAccount#publish_microsoft_endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#publish_microsoft_endpoints StorageAccount#publish_microsoft_endpoints}
   */
   readonly publishMicrosoftEndpoints?: boolean | cdktn.IResolvable;
 }
@@ -3490,11 +2460,11 @@ export class StorageAccountRoutingOutputReference extends cdktn.ComplexObject {
 }
 export interface StorageAccountSasPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#expiration_action StorageAccount#expiration_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#expiration_action StorageAccount#expiration_action}
   */
   readonly expirationAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#expiration_period StorageAccount#expiration_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#expiration_period StorageAccount#expiration_period}
   */
   readonly expirationPeriod: string;
 }
@@ -3604,23 +2574,23 @@ export class StorageAccountSasPolicyOutputReference extends cdktn.ComplexObject 
 }
 export interface StorageAccountSharePropertiesCorsRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}
   */
   readonly allowedHeaders: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}
   */
   readonly allowedMethods: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}
   */
   readonly allowedOrigins: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}
   */
   readonly exposedHeaders: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}
   */
   readonly maxAgeInSeconds: number;
 }
@@ -3837,7 +2807,7 @@ export class StorageAccountSharePropertiesCorsRuleList extends cdktn.ComplexList
 }
 export interface StorageAccountSharePropertiesRetentionPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#days StorageAccount#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#days StorageAccount#days}
   */
   readonly days?: number;
 }
@@ -3921,23 +2891,23 @@ export class StorageAccountSharePropertiesRetentionPolicyOutputReference extends
 }
 export interface StorageAccountSharePropertiesSmb {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#authentication_types StorageAccount#authentication_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#authentication_types StorageAccount#authentication_types}
   */
   readonly authenticationTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#channel_encryption_type StorageAccount#channel_encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#channel_encryption_type StorageAccount#channel_encryption_type}
   */
   readonly channelEncryptionType?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#kerberos_ticket_encryption_type StorageAccount#kerberos_ticket_encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#kerberos_ticket_encryption_type StorageAccount#kerberos_ticket_encryption_type}
   */
   readonly kerberosTicketEncryptionType?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#multichannel_enabled StorageAccount#multichannel_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#multichannel_enabled StorageAccount#multichannel_enabled}
   */
   readonly multichannelEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#versions StorageAccount#versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#versions StorageAccount#versions}
   */
   readonly versions?: string[];
 }
@@ -4139,19 +3109,19 @@ export interface StorageAccountShareProperties {
   /**
   * cors_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#cors_rule StorageAccount#cors_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#cors_rule StorageAccount#cors_rule}
   */
   readonly corsRule?: StorageAccountSharePropertiesCorsRule[] | cdktn.IResolvable;
   /**
   * retention_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#retention_policy StorageAccount#retention_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#retention_policy StorageAccount#retention_policy}
   */
   readonly retentionPolicy?: StorageAccountSharePropertiesRetentionPolicy;
   /**
   * smb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#smb StorageAccount#smb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#smb StorageAccount#smb}
   */
   readonly smb?: StorageAccountSharePropertiesSmb;
 }
@@ -4291,138 +3261,21 @@ export class StorageAccountSharePropertiesOutputReference extends cdktn.ComplexO
     return this._smb.internalValue;
   }
 }
-export interface StorageAccountStaticWebsite {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#error_404_document StorageAccount#error_404_document}
-  */
-  readonly error404Document?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#index_document StorageAccount#index_document}
-  */
-  readonly indexDocument?: string;
-}
-
-export function storageAccountStaticWebsiteToTerraform(struct?: StorageAccountStaticWebsiteOutputReference | StorageAccountStaticWebsite): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    error_404_document: cdktn.stringToTerraform(struct!.error404Document),
-    index_document: cdktn.stringToTerraform(struct!.indexDocument),
-  }
-}
-
-
-export function storageAccountStaticWebsiteToHclTerraform(struct?: StorageAccountStaticWebsiteOutputReference | StorageAccountStaticWebsite): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    error_404_document: {
-      value: cdktn.stringToHclTerraform(struct!.error404Document),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    index_document: {
-      value: cdktn.stringToHclTerraform(struct!.indexDocument),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class StorageAccountStaticWebsiteOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): StorageAccountStaticWebsite | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._error404Document !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.error404Document = this._error404Document;
-    }
-    if (this._indexDocument !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.indexDocument = this._indexDocument;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: StorageAccountStaticWebsite | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._error404Document = undefined;
-      this._indexDocument = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._error404Document = value.error404Document;
-      this._indexDocument = value.indexDocument;
-    }
-  }
-
-  // error_404_document - computed: false, optional: true, required: false
-  private _error404Document?: string; 
-  public get error404Document() {
-    return this.getStringAttribute('error_404_document');
-  }
-  public set error404Document(value: string) {
-    this._error404Document = value;
-  }
-  public resetError404Document() {
-    this._error404Document = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get error404DocumentInput() {
-    return this._error404Document;
-  }
-
-  // index_document - computed: false, optional: true, required: false
-  private _indexDocument?: string; 
-  public get indexDocument() {
-    return this.getStringAttribute('index_document');
-  }
-  public set indexDocument(value: string) {
-    this._indexDocument = value;
-  }
-  public resetIndexDocument() {
-    this._indexDocument = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get indexDocumentInput() {
-    return this._indexDocument;
-  }
-}
 export interface StorageAccountTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#create StorageAccount#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#create StorageAccount#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#delete StorageAccount#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#delete StorageAccount#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#read StorageAccount#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#read StorageAccount#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#update StorageAccount#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#update StorageAccount#update}
   */
   readonly update?: string;
 }
@@ -4603,7 +3456,7 @@ export class StorageAccountTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account azurerm_storage_account}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account azurerm_storage_account}
 */
 export class StorageAccount extends cdktn.TerraformResource {
 
@@ -4619,7 +3472,7 @@ export class StorageAccount extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a StorageAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageAccount to import
-  * @param importFromId The id of the existing StorageAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -4631,7 +3484,7 @@ export class StorageAccount extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account azurerm_storage_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account azurerm_storage_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4642,8 +3495,8 @@ export class StorageAccount extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_storage_account',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.81.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -4688,11 +3541,9 @@ export class StorageAccount extends cdktn.TerraformResource {
     this._identity.internalValue = config.identity;
     this._immutabilityPolicy.internalValue = config.immutabilityPolicy;
     this._networkRules.internalValue = config.networkRules;
-    this._queueProperties.internalValue = config.queueProperties;
     this._routing.internalValue = config.routing;
     this._sasPolicy.internalValue = config.sasPolicy;
     this._shareProperties.internalValue = config.shareProperties;
-    this._staticWebsite.internalValue = config.staticWebsite;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -5605,22 +4456,6 @@ export class StorageAccount extends cdktn.TerraformResource {
     return this._networkRules.internalValue;
   }
 
-  // queue_properties - computed: false, optional: true, required: false
-  private _queueProperties = new StorageAccountQueuePropertiesOutputReference(this, "queue_properties");
-  public get queueProperties() {
-    return this._queueProperties;
-  }
-  public putQueueProperties(value: StorageAccountQueueProperties) {
-    this._queueProperties.internalValue = value;
-  }
-  public resetQueueProperties() {
-    this._queueProperties.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get queuePropertiesInput() {
-    return this._queueProperties.internalValue;
-  }
-
   // routing - computed: false, optional: true, required: false
   private _routing = new StorageAccountRoutingOutputReference(this, "routing");
   public get routing() {
@@ -5667,22 +4502,6 @@ export class StorageAccount extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get sharePropertiesInput() {
     return this._shareProperties.internalValue;
-  }
-
-  // static_website - computed: false, optional: true, required: false
-  private _staticWebsite = new StorageAccountStaticWebsiteOutputReference(this, "static_website");
-  public get staticWebsite() {
-    return this._staticWebsite;
-  }
-  public putStaticWebsite(value: StorageAccountStaticWebsite) {
-    this._staticWebsite.internalValue = value;
-  }
-  public resetStaticWebsite() {
-    this._staticWebsite.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get staticWebsiteInput() {
-    return this._staticWebsite.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -5742,11 +4561,9 @@ export class StorageAccount extends cdktn.TerraformResource {
       identity: storageAccountIdentityToTerraform(this._identity.internalValue),
       immutability_policy: storageAccountImmutabilityPolicyToTerraform(this._immutabilityPolicy.internalValue),
       network_rules: storageAccountNetworkRulesToTerraform(this._networkRules.internalValue),
-      queue_properties: storageAccountQueuePropertiesToTerraform(this._queueProperties.internalValue),
       routing: storageAccountRoutingToTerraform(this._routing.internalValue),
       sas_policy: storageAccountSasPolicyToTerraform(this._sasPolicy.internalValue),
       share_properties: storageAccountSharePropertiesToTerraform(this._shareProperties.internalValue),
-      static_website: storageAccountStaticWebsiteToTerraform(this._staticWebsite.internalValue),
       timeouts: storageAccountTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -5963,12 +4780,6 @@ export class StorageAccount extends cdktn.TerraformResource {
         type: "list",
         storageClassType: "StorageAccountNetworkRulesList",
       },
-      queue_properties: {
-        value: storageAccountQueuePropertiesToHclTerraform(this._queueProperties.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "StorageAccountQueuePropertiesList",
-      },
       routing: {
         value: storageAccountRoutingToHclTerraform(this._routing.internalValue),
         isBlock: true,
@@ -5986,12 +4797,6 @@ export class StorageAccount extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "StorageAccountSharePropertiesList",
-      },
-      static_website: {
-        value: storageAccountStaticWebsiteToHclTerraform(this._staticWebsite.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "StorageAccountStaticWebsiteList",
       },
       timeouts: {
         value: storageAccountTimeoutsToHclTerraform(this._timeouts.internalValue),

@@ -4,12 +4,12 @@
 
 ### FunctionAppActiveSlot <a name="FunctionAppActiveSlot" id="@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/function_app_active_slot azurerm_function_app_active_slot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/function_app_active_slot azurerm_function_app_active_slot}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappactiveslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/functionappactiveslot"
 
 functionappactiveslot.NewFunctionAppActiveSlot(scope Construct, id *string, config FunctionAppActiveSlotConfig) FunctionAppActiveSlot
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlot.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappactiveslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/functionappactiveslot"
 
 functionappactiveslot.FunctionAppActiveSlot_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappactiveslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/functionappactiveslot"
 
 functionappactiveslot.FunctionAppActiveSlot_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ functionappactiveslot.FunctionAppActiveSlot_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappactiveslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/functionappactiveslot"
 
 functionappactiveslot.FunctionAppActiveSlot_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ functionappactiveslot.FunctionAppActiveSlot_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappactiveslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/functionappactiveslot"
 
 functionappactiveslot.FunctionAppActiveSlot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the FunctionAppActiveSlot to i
 
 The id of the existing FunctionAppActiveSlot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/function_app_active_slot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/function_app_active_slot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -822,7 +822,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappactiveslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/functionappactiveslot"
 
 &functionappactiveslot.FunctionAppActiveSlotConfig {
 	Connection: interface{},
@@ -835,7 +835,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappact
 	SlotId: *string,
 	Id: *string,
 	OverwriteNetworkConfig: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppActiveSlot.FunctionAppActiveSlotTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.functionAppActiveSlot.FunctionAppActiveSlotTimeouts,
 }
 ```
 
@@ -851,7 +851,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappact
 | <code><a href="#@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlotConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlotConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlotConfig.property.slotId">SlotId</a></code> | <code>*string</code> | The ID of the Slot to swap with `Production`. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/function_app_active_slot#id FunctionAppActiveSlot#id}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/function_app_active_slot#id FunctionAppActiveSlot#id}. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlotConfig.property.overwriteNetworkConfig">OverwriteNetworkConfig</a></code> | <code>interface{}</code> | The swap action should overwrite the Production slot's network configuration with the configuration from this slot. Defaults to `true`. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlotConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlotTimeouts">FunctionAppActiveSlotTimeouts</a></code> | timeouts block. |
 
@@ -937,7 +937,7 @@ SlotId *string
 
 The ID of the Slot to swap with `Production`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/function_app_active_slot#slot_id FunctionAppActiveSlot#slot_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/function_app_active_slot#slot_id FunctionAppActiveSlot#slot_id}
 
 ---
 
@@ -949,7 +949,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/function_app_active_slot#id FunctionAppActiveSlot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/function_app_active_slot#id FunctionAppActiveSlot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -966,7 +966,7 @@ OverwriteNetworkConfig interface{}
 
 The swap action should overwrite the Production slot's network configuration with the configuration from this slot. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/function_app_active_slot#overwrite_network_config FunctionAppActiveSlot#overwrite_network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/function_app_active_slot#overwrite_network_config FunctionAppActiveSlot#overwrite_network_config}
 
 ---
 
@@ -980,7 +980,7 @@ Timeouts FunctionAppActiveSlotTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/function_app_active_slot#timeouts FunctionAppActiveSlot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/function_app_active_slot#timeouts FunctionAppActiveSlot#timeouts}
 
 ---
 
@@ -989,7 +989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlotTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappactiveslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/functionappactiveslot"
 
 &functionappactiveslot.FunctionAppActiveSlotTimeouts {
 	Create: *string,
@@ -1003,10 +1003,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappact
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlotTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/function_app_active_slot#create FunctionAppActiveSlot#create}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlotTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/function_app_active_slot#delete FunctionAppActiveSlot#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlotTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/function_app_active_slot#read FunctionAppActiveSlot#read}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlotTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/function_app_active_slot#update FunctionAppActiveSlot#update}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlotTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/function_app_active_slot#create FunctionAppActiveSlot#create}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlotTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/function_app_active_slot#delete FunctionAppActiveSlot#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlotTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/function_app_active_slot#read FunctionAppActiveSlot#read}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlotTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/function_app_active_slot#update FunctionAppActiveSlot#update}. |
 
 ---
 
@@ -1018,7 +1018,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/function_app_active_slot#create FunctionAppActiveSlot#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/function_app_active_slot#create FunctionAppActiveSlot#create}.
 
 ---
 
@@ -1030,7 +1030,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/function_app_active_slot#delete FunctionAppActiveSlot#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/function_app_active_slot#delete FunctionAppActiveSlot#delete}.
 
 ---
 
@@ -1042,7 +1042,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/function_app_active_slot#read FunctionAppActiveSlot#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/function_app_active_slot#read FunctionAppActiveSlot#read}.
 
 ---
 
@@ -1054,7 +1054,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/function_app_active_slot#update FunctionAppActiveSlot#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/function_app_active_slot#update FunctionAppActiveSlot#update}.
 
 ---
 
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppActiveSlot.FunctionAppActiveSlotTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappactiveslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/functionappactiveslot"
 
 functionappactiveslot.NewFunctionAppActiveSlotTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppActiveSlotTimeoutsOutputReference
 ```

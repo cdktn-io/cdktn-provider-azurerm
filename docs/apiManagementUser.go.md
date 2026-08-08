@@ -4,12 +4,12 @@
 
 ### ApiManagementUser <a name="ApiManagementUser" id="@cdktn/provider-azurerm.apiManagementUser.ApiManagementUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user azurerm_api_management_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user azurerm_api_management_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementUser.ApiManagementUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementuser"
 
 apimanagementuser.NewApiManagementUser(scope Construct, id *string, config ApiManagementUserConfig) ApiManagementUser
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.apiManagementUser.ApiManagementUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementuser"
 
 apimanagementuser.ApiManagementUser_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.apiManagementUser.ApiManagementUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementuser"
 
 apimanagementuser.ApiManagementUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ apimanagementuser.ApiManagementUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.apiManagementUser.ApiManagementUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementuser"
 
 apimanagementuser.ApiManagementUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ apimanagementuser.ApiManagementUser_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.apiManagementUser.ApiManagementUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementuser"
 
 apimanagementuser.ApiManagementUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -544,7 +544,7 @@ The construct id used in the generated config for the ApiManagementUser to impor
 
 The id of the existing ApiManagementUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1008,7 +1008,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementuser"
 
 &apimanagementuser.ApiManagementUserConfig {
 	Connection: interface{},
@@ -1029,7 +1029,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementu
 	Note: *string,
 	Password: *string,
 	State: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.apiManagementUser.ApiManagementUserTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.apiManagementUser.ApiManagementUserTimeouts,
 }
 ```
 
@@ -1044,17 +1044,17 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementu
 | <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.apiManagementName">ApiManagementName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#api_management_name ApiManagementUser#api_management_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#email ApiManagementUser#email}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.firstName">FirstName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#first_name ApiManagementUser#first_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.lastName">LastName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#last_name ApiManagementUser#last_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#resource_group_name ApiManagementUser#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#user_id ApiManagementUser#user_id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.confirmation">Confirmation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#confirmation ApiManagementUser#confirmation}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#id ApiManagementUser#id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.note">Note</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#note ApiManagementUser#note}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#password ApiManagementUser#password}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#state ApiManagementUser#state}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.apiManagementName">ApiManagementName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#api_management_name ApiManagementUser#api_management_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#email ApiManagementUser#email}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.firstName">FirstName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#first_name ApiManagementUser#first_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.lastName">LastName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#last_name ApiManagementUser#last_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#resource_group_name ApiManagementUser#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#user_id ApiManagementUser#user_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.confirmation">Confirmation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#confirmation ApiManagementUser#confirmation}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#id ApiManagementUser#id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.note">Note</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#note ApiManagementUser#note}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#password ApiManagementUser#password}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#state ApiManagementUser#state}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserTimeouts">ApiManagementUserTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1137,7 +1137,7 @@ ApiManagementName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#api_management_name ApiManagementUser#api_management_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#api_management_name ApiManagementUser#api_management_name}.
 
 ---
 
@@ -1149,7 +1149,7 @@ Email *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#email ApiManagementUser#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#email ApiManagementUser#email}.
 
 ---
 
@@ -1161,7 +1161,7 @@ FirstName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#first_name ApiManagementUser#first_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#first_name ApiManagementUser#first_name}.
 
 ---
 
@@ -1173,7 +1173,7 @@ LastName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#last_name ApiManagementUser#last_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#last_name ApiManagementUser#last_name}.
 
 ---
 
@@ -1185,7 +1185,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#resource_group_name ApiManagementUser#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#resource_group_name ApiManagementUser#resource_group_name}.
 
 ---
 
@@ -1197,7 +1197,7 @@ UserId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#user_id ApiManagementUser#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#user_id ApiManagementUser#user_id}.
 
 ---
 
@@ -1209,7 +1209,7 @@ Confirmation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#confirmation ApiManagementUser#confirmation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#confirmation ApiManagementUser#confirmation}.
 
 ---
 
@@ -1221,7 +1221,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#id ApiManagementUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#id ApiManagementUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1236,7 +1236,7 @@ Note *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#note ApiManagementUser#note}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#note ApiManagementUser#note}.
 
 ---
 
@@ -1248,7 +1248,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#password ApiManagementUser#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#password ApiManagementUser#password}.
 
 ---
 
@@ -1260,7 +1260,7 @@ State *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#state ApiManagementUser#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#state ApiManagementUser#state}.
 
 ---
 
@@ -1274,7 +1274,7 @@ Timeouts ApiManagementUserTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#timeouts ApiManagementUser#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#timeouts ApiManagementUser#timeouts}
 
 ---
 
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementuser"
 
 &apimanagementuser.ApiManagementUserTimeouts {
 	Create: *string,
@@ -1297,10 +1297,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#create ApiManagementUser#create}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#delete ApiManagementUser#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#read ApiManagementUser#read}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#update ApiManagementUser#update}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#create ApiManagementUser#create}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#delete ApiManagementUser#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#read ApiManagementUser#read}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#update ApiManagementUser#update}. |
 
 ---
 
@@ -1312,7 +1312,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#create ApiManagementUser#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#create ApiManagementUser#create}.
 
 ---
 
@@ -1324,7 +1324,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#delete ApiManagementUser#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#delete ApiManagementUser#delete}.
 
 ---
 
@@ -1336,7 +1336,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#read ApiManagementUser#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#read ApiManagementUser#read}.
 
 ---
 
@@ -1348,7 +1348,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_user#update ApiManagementUser#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_user#update ApiManagementUser#update}.
 
 ---
 
@@ -1359,7 +1359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementUser.ApiManagementUserTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementuser"
 
 apimanagementuser.NewApiManagementUserTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiManagementUserTimeoutsOutputReference
 ```

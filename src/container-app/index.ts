@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,82 +15,82 @@ export interface ContainerAppConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the Container App Environment to host this Container App.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#container_app_environment_id ContainerApp#container_app_environment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#container_app_environment_id ContainerApp#container_app_environment_id}
   */
   readonly containerAppEnvironmentId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#id ContainerApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#id ContainerApp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#max_inactive_revisions ContainerApp#max_inactive_revisions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#max_inactive_revisions ContainerApp#max_inactive_revisions}
   */
   readonly maxInactiveRevisions?: number;
   /**
   * The name for this Container App.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#name ContainerApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#name ContainerApp#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#resource_group_name ContainerApp#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#resource_group_name ContainerApp#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#revision_mode ContainerApp#revision_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#revision_mode ContainerApp#revision_mode}
   */
   readonly revisionMode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#tags ContainerApp#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#tags ContainerApp#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#workload_profile_name ContainerApp#workload_profile_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#workload_profile_name ContainerApp#workload_profile_name}
   */
   readonly workloadProfileName?: string;
   /**
   * dapr block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#dapr ContainerApp#dapr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#dapr ContainerApp#dapr}
   */
   readonly dapr?: ContainerAppDapr;
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#identity ContainerApp#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#identity ContainerApp#identity}
   */
   readonly identity?: ContainerAppIdentity;
   /**
   * ingress block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#ingress ContainerApp#ingress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#ingress ContainerApp#ingress}
   */
   readonly ingress?: ContainerAppIngress;
   /**
   * registry block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#registry ContainerApp#registry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#registry ContainerApp#registry}
   */
   readonly registry?: ContainerAppRegistry[] | cdktn.IResolvable;
   /**
   * secret block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#secret ContainerApp#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#secret ContainerApp#secret}
   */
   readonly secret?: ContainerAppSecret[] | cdktn.IResolvable;
   /**
   * template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#template ContainerApp#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#template ContainerApp#template}
   */
   readonly template: ContainerAppTemplate;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#timeouts ContainerApp#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#timeouts ContainerApp#timeouts}
   */
   readonly timeouts?: ContainerAppTimeouts;
 }
@@ -98,19 +98,19 @@ export interface ContainerAppDapr {
   /**
   * The Dapr Application Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#app_id ContainerApp#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#app_id ContainerApp#app_id}
   */
   readonly appId: string;
   /**
   * The port which the application is listening on. This is the same as the `ingress` port.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#app_port ContainerApp#app_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#app_port ContainerApp#app_port}
   */
   readonly appPort?: number;
   /**
   * The protocol for the app. Possible values include `http` and `grpc`. Defaults to `http`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#app_protocol ContainerApp#app_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#app_protocol ContainerApp#app_protocol}
   */
   readonly appProtocol?: string;
 }
@@ -249,11 +249,11 @@ export class ContainerAppDaprOutputReference extends cdktn.ComplexObject {
 }
 export interface ContainerAppIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#identity_ids ContainerApp#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#identity_ids ContainerApp#identity_ids}
   */
   readonly identityIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#type ContainerApp#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#type ContainerApp#type}
   */
   readonly type: string;
 }
@@ -458,27 +458,27 @@ export class ContainerAppIngressCustomDomainList extends cdktn.ComplexList {
 }
 export interface ContainerAppIngressCors {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#allow_credentials_enabled ContainerApp#allow_credentials_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#allow_credentials_enabled ContainerApp#allow_credentials_enabled}
   */
   readonly allowCredentialsEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#allowed_headers ContainerApp#allowed_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#allowed_headers ContainerApp#allowed_headers}
   */
   readonly allowedHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#allowed_methods ContainerApp#allowed_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#allowed_methods ContainerApp#allowed_methods}
   */
   readonly allowedMethods?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#allowed_origins ContainerApp#allowed_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#allowed_origins ContainerApp#allowed_origins}
   */
   readonly allowedOrigins: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#exposed_headers ContainerApp#exposed_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#exposed_headers ContainerApp#exposed_headers}
   */
   readonly exposedHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#max_age_in_seconds ContainerApp#max_age_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#max_age_in_seconds ContainerApp#max_age_in_seconds}
   */
   readonly maxAgeInSeconds?: number;
 }
@@ -706,25 +706,25 @@ export interface ContainerAppIngressIpSecurityRestriction {
   /**
   * The action. Allow or Deny.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#action ContainerApp#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#action ContainerApp#action}
   */
   readonly action: string;
   /**
   * Describe the IP restriction rule that is being sent to the container-app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#description ContainerApp#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#description ContainerApp#description}
   */
   readonly description?: string;
   /**
   * The incoming IP address or range of IP addresses (in CIDR notation).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#ip_address_range ContainerApp#ip_address_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#ip_address_range ContainerApp#ip_address_range}
   */
   readonly ipAddressRange: string;
   /**
   * Name for the IP restriction rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#name ContainerApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#name ContainerApp#name}
   */
   readonly name: string;
 }
@@ -920,25 +920,25 @@ export interface ContainerAppIngressTrafficWeight {
   /**
   * The label to apply to the revision as a name prefix for routing traffic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#label ContainerApp#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#label ContainerApp#label}
   */
   readonly label?: string;
   /**
   * This traffic Weight relates to the latest stable Container Revision.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#latest_revision ContainerApp#latest_revision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#latest_revision ContainerApp#latest_revision}
   */
   readonly latestRevision?: boolean | cdktn.IResolvable;
   /**
   * The percentage of traffic to send to this revision.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#percentage ContainerApp#percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#percentage ContainerApp#percentage}
   */
   readonly percentage: number;
   /**
   * The suffix string to append to the revision. This must be unique for the Container App's lifetime. A default hash created by the service will be used if this value is omitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#revision_suffix ContainerApp#revision_suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#revision_suffix ContainerApp#revision_suffix}
   */
   readonly revisionSuffix?: string;
 }
@@ -1140,55 +1140,55 @@ export interface ContainerAppIngress {
   /**
   * Should this ingress allow insecure connections?
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#allow_insecure_connections ContainerApp#allow_insecure_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#allow_insecure_connections ContainerApp#allow_insecure_connections}
   */
   readonly allowInsecureConnections?: boolean | cdktn.IResolvable;
   /**
   * Client certificate mode for mTLS authentication. Ignore indicates server drops client certificate on forwarding. Accept indicates server forwards client certificate but does not require a client certificate. Require indicates server requires a client certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#client_certificate_mode ContainerApp#client_certificate_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#client_certificate_mode ContainerApp#client_certificate_mode}
   */
   readonly clientCertificateMode?: string;
   /**
   * The exposed port on the container for the Ingress traffic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#exposed_port ContainerApp#exposed_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#exposed_port ContainerApp#exposed_port}
   */
   readonly exposedPort?: number;
   /**
   * Is this an external Ingress.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#external_enabled ContainerApp#external_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#external_enabled ContainerApp#external_enabled}
   */
   readonly externalEnabled?: boolean | cdktn.IResolvable;
   /**
   * The target port on the container for the Ingress traffic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#target_port ContainerApp#target_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#target_port ContainerApp#target_port}
   */
   readonly targetPort: number;
   /**
   * The transport method for the Ingress. Possible values include `auto`, `http`, and `http2`, `tcp`. Defaults to `auto`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#transport ContainerApp#transport}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#transport ContainerApp#transport}
   */
   readonly transport?: string;
   /**
   * cors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#cors ContainerApp#cors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#cors ContainerApp#cors}
   */
   readonly cors?: ContainerAppIngressCors;
   /**
   * ip_security_restriction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#ip_security_restriction ContainerApp#ip_security_restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#ip_security_restriction ContainerApp#ip_security_restriction}
   */
   readonly ipSecurityRestriction?: ContainerAppIngressIpSecurityRestriction[] | cdktn.IResolvable;
   /**
   * traffic_weight block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#traffic_weight ContainerApp#traffic_weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#traffic_weight ContainerApp#traffic_weight}
   */
   readonly trafficWeight: ContainerAppIngressTrafficWeight[] | cdktn.IResolvable;
 }
@@ -1511,25 +1511,25 @@ export interface ContainerAppRegistry {
   /**
   * ID of the System or User Managed Identity used to pull images from the Container Registry
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#identity ContainerApp#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#identity ContainerApp#identity}
   */
   readonly identity?: string;
   /**
   * The name of the Secret Reference containing the password value for this user on the Container Registry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#password_secret_name ContainerApp#password_secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#password_secret_name ContainerApp#password_secret_name}
   */
   readonly passwordSecretName?: string;
   /**
   * The hostname for the Container Registry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#server ContainerApp#server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#server ContainerApp#server}
   */
   readonly server: string;
   /**
   * The username to use for this Container Registry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#username ContainerApp#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#username ContainerApp#username}
   */
   readonly username?: string;
 }
@@ -1731,25 +1731,25 @@ export interface ContainerAppSecret {
   /**
   * The identity to use for accessing key vault reference.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#identity ContainerApp#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#identity ContainerApp#identity}
   */
   readonly identity?: string;
   /**
   * The Key Vault Secret ID. Could be either one of `id` or `versionless_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#key_vault_secret_id ContainerApp#key_vault_secret_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#key_vault_secret_id ContainerApp#key_vault_secret_id}
   */
   readonly keyVaultSecretId?: string;
   /**
   * The secret name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#name ContainerApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#name ContainerApp#name}
   */
   readonly name: string;
   /**
   * The value for this secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#value ContainerApp#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#value ContainerApp#value}
   */
   readonly value?: string;
 }
@@ -1949,11 +1949,11 @@ export class ContainerAppSecretList extends cdktn.ComplexList {
 }
 export interface ContainerAppTemplateAzureQueueScaleRuleAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#secret_name ContainerApp#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#secret_name ContainerApp#secret_name}
   */
   readonly secretName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#trigger_parameter ContainerApp#trigger_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#trigger_parameter ContainerApp#trigger_parameter}
   */
   readonly triggerParameter: string;
 }
@@ -2092,21 +2092,21 @@ export class ContainerAppTemplateAzureQueueScaleRuleAuthenticationList extends c
 }
 export interface ContainerAppTemplateAzureQueueScaleRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#name ContainerApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#name ContainerApp#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#queue_length ContainerApp#queue_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#queue_length ContainerApp#queue_length}
   */
   readonly queueLength: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#queue_name ContainerApp#queue_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#queue_name ContainerApp#queue_name}
   */
   readonly queueName: string;
   /**
   * authentication block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#authentication ContainerApp#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#authentication ContainerApp#authentication}
   */
   readonly authentication: ContainerAppTemplateAzureQueueScaleRuleAuthentication[] | cdktn.IResolvable;
 }
@@ -2299,19 +2299,19 @@ export interface ContainerAppTemplateContainerEnv {
   /**
   * The name of the environment variable for the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#name ContainerApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#name ContainerApp#name}
   */
   readonly name: string;
   /**
   * The name of the secret that contains the value for this environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#secret_name ContainerApp#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#secret_name ContainerApp#secret_name}
   */
   readonly secretName?: string;
   /**
   * The value for this environment variable. **NOTE:** This value is ignored if `secret_name` is used
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#value ContainerApp#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#value ContainerApp#value}
   */
   readonly value?: string;
 }
@@ -2484,13 +2484,13 @@ export interface ContainerAppTemplateContainerLivenessProbeHeader {
   /**
   * The HTTP Header Name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#name ContainerApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#name ContainerApp#name}
   */
   readonly name: string;
   /**
   * The HTTP Header value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#value ContainerApp#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#value ContainerApp#value}
   */
   readonly value: string;
 }
@@ -2631,55 +2631,55 @@ export interface ContainerAppTemplateContainerLivenessProbe {
   /**
   * The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `30`. Defaults to `3`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#failure_count_threshold ContainerApp#failure_count_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#failure_count_threshold ContainerApp#failure_count_threshold}
   */
   readonly failureCountThreshold?: number;
   /**
   * The probe hostname. Defaults to the pod IP address. Setting a value for `Host` in `headers` can be used to override this for `http` and `https` type probes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#host ContainerApp#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#host ContainerApp#host}
   */
   readonly host?: string;
   /**
   * The number of seconds elapsed after the container has started before the probe is initiated. Possible values are between `0` and `60`. Defaults to `1` seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#initial_delay ContainerApp#initial_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#initial_delay ContainerApp#initial_delay}
   */
   readonly initialDelay?: number;
   /**
   * How often, in seconds, the probe should run. Possible values are between `1` and `240`. Defaults to `10`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#interval_seconds ContainerApp#interval_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#interval_seconds ContainerApp#interval_seconds}
   */
   readonly intervalSeconds?: number;
   /**
   * The URI to use with the `host` for http type probes. Not valid for `TCP` type probes. Defaults to `/`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#path ContainerApp#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#path ContainerApp#path}
   */
   readonly path?: string;
   /**
   * The port number on which to connect. Possible values are between `1` and `65535`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#port ContainerApp#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#port ContainerApp#port}
   */
   readonly port: number;
   /**
   * Time in seconds after which the probe times out. Possible values are between `1` an `240`. Defaults to `1`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#timeout ContainerApp#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#timeout ContainerApp#timeout}
   */
   readonly timeout?: number;
   /**
   * Type of probe. Possible values are `TCP`, `HTTP`, and `HTTPS`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#transport ContainerApp#transport}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#transport ContainerApp#transport}
   */
   readonly transport: string;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#header ContainerApp#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#header ContainerApp#header}
   */
   readonly header?: ContainerAppTemplateContainerLivenessProbeHeader[] | cdktn.IResolvable;
 }
@@ -2954,11 +2954,6 @@ export class ContainerAppTemplateContainerLivenessProbeOutputReference extends c
     return this._port;
   }
 
-  // termination_grace_period_seconds - computed: true, optional: false, required: false
-  public get terminationGracePeriodSeconds() {
-    return this.getNumberAttribute('termination_grace_period_seconds');
-  }
-
   // timeout - computed: false, optional: true, required: false
   private _timeout?: number; 
   public get timeout() {
@@ -3028,13 +3023,13 @@ export interface ContainerAppTemplateContainerReadinessProbeHeader {
   /**
   * The HTTP Header Name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#name ContainerApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#name ContainerApp#name}
   */
   readonly name: string;
   /**
   * The HTTP Header value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#value ContainerApp#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#value ContainerApp#value}
   */
   readonly value: string;
 }
@@ -3175,61 +3170,61 @@ export interface ContainerAppTemplateContainerReadinessProbe {
   /**
   * The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `48`. Defaults to `3`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#failure_count_threshold ContainerApp#failure_count_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#failure_count_threshold ContainerApp#failure_count_threshold}
   */
   readonly failureCountThreshold?: number;
   /**
   * The probe hostname. Defaults to the pod IP address. Setting a value for `Host` in `headers` can be used to override this for `http` and `https` type probes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#host ContainerApp#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#host ContainerApp#host}
   */
   readonly host?: string;
   /**
   * The number of seconds elapsed after the container has started before the probe is initiated. Possible values are between `0` and `60`. Defaults to `0` seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#initial_delay ContainerApp#initial_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#initial_delay ContainerApp#initial_delay}
   */
   readonly initialDelay?: number;
   /**
   * How often, in seconds, the probe should run. Possible values are between `1` and `240`. Defaults to `10`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#interval_seconds ContainerApp#interval_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#interval_seconds ContainerApp#interval_seconds}
   */
   readonly intervalSeconds?: number;
   /**
   * The URI to use for http type probes. Not valid for `TCP` type probes. Defaults to `/`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#path ContainerApp#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#path ContainerApp#path}
   */
   readonly path?: string;
   /**
   * The port number on which to connect. Possible values are between `1` and `65535`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#port ContainerApp#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#port ContainerApp#port}
   */
   readonly port: number;
   /**
   * The number of consecutive successful responses required to consider this probe as successful. Possible values are between `1` and `10`. Defaults to `3`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#success_count_threshold ContainerApp#success_count_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#success_count_threshold ContainerApp#success_count_threshold}
   */
   readonly successCountThreshold?: number;
   /**
   * Time in seconds after which the probe times out. Possible values are between `1` an `240`. Defaults to `1`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#timeout ContainerApp#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#timeout ContainerApp#timeout}
   */
   readonly timeout?: number;
   /**
   * Type of probe. Possible values are `TCP`, `HTTP`, and `HTTPS`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#transport ContainerApp#transport}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#transport ContainerApp#transport}
   */
   readonly transport: string;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#header ContainerApp#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#header ContainerApp#header}
   */
   readonly header?: ContainerAppTemplateContainerReadinessProbeHeader[] | cdktn.IResolvable;
 }
@@ -3602,13 +3597,13 @@ export interface ContainerAppTemplateContainerStartupProbeHeader {
   /**
   * The HTTP Header Name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#name ContainerApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#name ContainerApp#name}
   */
   readonly name: string;
   /**
   * The HTTP Header value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#value ContainerApp#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#value ContainerApp#value}
   */
   readonly value: string;
 }
@@ -3749,55 +3744,55 @@ export interface ContainerAppTemplateContainerStartupProbe {
   /**
   * The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `240`. Defaults to `3`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#failure_count_threshold ContainerApp#failure_count_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#failure_count_threshold ContainerApp#failure_count_threshold}
   */
   readonly failureCountThreshold?: number;
   /**
   * The probe hostname. Defaults to the pod IP address. Setting a value for `Host` in `headers` can be used to override this for `http` and `https` type probes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#host ContainerApp#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#host ContainerApp#host}
   */
   readonly host?: string;
   /**
   * The number of seconds elapsed after the container has started before the probe is initiated. Possible values are between `0` and `60`. Defaults to `0` seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#initial_delay ContainerApp#initial_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#initial_delay ContainerApp#initial_delay}
   */
   readonly initialDelay?: number;
   /**
   * How often, in seconds, the probe should run. Possible values are between `1` and `240`. Defaults to `10`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#interval_seconds ContainerApp#interval_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#interval_seconds ContainerApp#interval_seconds}
   */
   readonly intervalSeconds?: number;
   /**
   * The URI to use with the `host` for http type probes. Not valid for `TCP` type probes. Defaults to `/`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#path ContainerApp#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#path ContainerApp#path}
   */
   readonly path?: string;
   /**
   * The port number on which to connect. Possible values are between `1` and `65535`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#port ContainerApp#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#port ContainerApp#port}
   */
   readonly port: number;
   /**
   * Time in seconds after which the probe times out. Possible values are between `1` an `240`. Defaults to `1`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#timeout ContainerApp#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#timeout ContainerApp#timeout}
   */
   readonly timeout?: number;
   /**
   * Type of probe. Possible values are `TCP`, `HTTP`, and `HTTPS`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#transport ContainerApp#transport}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#transport ContainerApp#transport}
   */
   readonly transport: string;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#header ContainerApp#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#header ContainerApp#header}
   */
   readonly header?: ContainerAppTemplateContainerStartupProbeHeader[] | cdktn.IResolvable;
 }
@@ -4072,11 +4067,6 @@ export class ContainerAppTemplateContainerStartupProbeOutputReference extends cd
     return this._port;
   }
 
-  // termination_grace_period_seconds - computed: true, optional: false, required: false
-  public get terminationGracePeriodSeconds() {
-    return this.getNumberAttribute('termination_grace_period_seconds');
-  }
-
   // timeout - computed: false, optional: true, required: false
   private _timeout?: number; 
   public get timeout() {
@@ -4146,19 +4136,19 @@ export interface ContainerAppTemplateContainerVolumeMounts {
   /**
   * The name of the Volume to be mounted in the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#name ContainerApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#name ContainerApp#name}
   */
   readonly name: string;
   /**
   * The path in the container at which to mount this volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#path ContainerApp#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#path ContainerApp#path}
   */
   readonly path: string;
   /**
   * The sub path of the volume to be mounted in the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#sub_path ContainerApp#sub_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#sub_path ContainerApp#sub_path}
   */
   readonly subPath?: string;
 }
@@ -4328,67 +4318,67 @@ export interface ContainerAppTemplateContainer {
   /**
   * A list of args to pass to the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#args ContainerApp#args}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#args ContainerApp#args}
   */
   readonly args?: string[];
   /**
   * A command to pass to the container to override the default. This is provided as a list of command line elements without spaces.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#command ContainerApp#command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#command ContainerApp#command}
   */
   readonly command?: string[];
   /**
   * The amount of vCPU to allocate to the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#cpu ContainerApp#cpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#cpu ContainerApp#cpu}
   */
   readonly cpu: number;
   /**
   * The image to use to create the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#image ContainerApp#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#image ContainerApp#image}
   */
   readonly image: string;
   /**
   * The amount of memory to allocate to the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#memory ContainerApp#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#memory ContainerApp#memory}
   */
   readonly memory: string;
   /**
   * The name of the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#name ContainerApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#name ContainerApp#name}
   */
   readonly name: string;
   /**
   * env block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#env ContainerApp#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#env ContainerApp#env}
   */
   readonly env?: ContainerAppTemplateContainerEnv[] | cdktn.IResolvable;
   /**
   * liveness_probe block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#liveness_probe ContainerApp#liveness_probe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#liveness_probe ContainerApp#liveness_probe}
   */
   readonly livenessProbe?: ContainerAppTemplateContainerLivenessProbe[] | cdktn.IResolvable;
   /**
   * readiness_probe block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#readiness_probe ContainerApp#readiness_probe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#readiness_probe ContainerApp#readiness_probe}
   */
   readonly readinessProbe?: ContainerAppTemplateContainerReadinessProbe[] | cdktn.IResolvable;
   /**
   * startup_probe block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#startup_probe ContainerApp#startup_probe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#startup_probe ContainerApp#startup_probe}
   */
   readonly startupProbe?: ContainerAppTemplateContainerStartupProbe[] | cdktn.IResolvable;
   /**
   * volume_mounts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#volume_mounts ContainerApp#volume_mounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#volume_mounts ContainerApp#volume_mounts}
   */
   readonly volumeMounts?: ContainerAppTemplateContainerVolumeMounts[] | cdktn.IResolvable;
 }
@@ -4787,11 +4777,11 @@ export class ContainerAppTemplateContainerList extends cdktn.ComplexList {
 }
 export interface ContainerAppTemplateCustomScaleRuleAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#secret_name ContainerApp#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#secret_name ContainerApp#secret_name}
   */
   readonly secretName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#trigger_parameter ContainerApp#trigger_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#trigger_parameter ContainerApp#trigger_parameter}
   */
   readonly triggerParameter: string;
 }
@@ -4930,27 +4920,27 @@ export class ContainerAppTemplateCustomScaleRuleAuthenticationList extends cdktn
 }
 export interface ContainerAppTemplateCustomScaleRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#custom_rule_type ContainerApp#custom_rule_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#custom_rule_type ContainerApp#custom_rule_type}
   */
   readonly customRuleType: string;
   /**
   * ID of the System or User Managed Identity used to execute scale rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#identity_id ContainerApp#identity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#identity_id ContainerApp#identity_id}
   */
   readonly identityId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#metadata ContainerApp#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#metadata ContainerApp#metadata}
   */
   readonly metadata: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#name ContainerApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#name ContainerApp#name}
   */
   readonly name: string;
   /**
   * authentication block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#authentication ContainerApp#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#authentication ContainerApp#authentication}
   */
   readonly authentication?: ContainerAppTemplateCustomScaleRuleAuthentication[] | cdktn.IResolvable;
 }
@@ -5173,11 +5163,11 @@ export class ContainerAppTemplateCustomScaleRuleList extends cdktn.ComplexList {
 }
 export interface ContainerAppTemplateHttpScaleRuleAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#secret_name ContainerApp#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#secret_name ContainerApp#secret_name}
   */
   readonly secretName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#trigger_parameter ContainerApp#trigger_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#trigger_parameter ContainerApp#trigger_parameter}
   */
   readonly triggerParameter?: string;
 }
@@ -5319,17 +5309,17 @@ export class ContainerAppTemplateHttpScaleRuleAuthenticationList extends cdktn.C
 }
 export interface ContainerAppTemplateHttpScaleRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#concurrent_requests ContainerApp#concurrent_requests}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#concurrent_requests ContainerApp#concurrent_requests}
   */
   readonly concurrentRequests: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#name ContainerApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#name ContainerApp#name}
   */
   readonly name: string;
   /**
   * authentication block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#authentication ContainerApp#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#authentication ContainerApp#authentication}
   */
   readonly authentication?: ContainerAppTemplateHttpScaleRuleAuthentication[] | cdktn.IResolvable;
 }
@@ -5499,19 +5489,19 @@ export interface ContainerAppTemplateInitContainerEnv {
   /**
   * The name of the environment variable for the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#name ContainerApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#name ContainerApp#name}
   */
   readonly name: string;
   /**
   * The name of the secret that contains the value for this environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#secret_name ContainerApp#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#secret_name ContainerApp#secret_name}
   */
   readonly secretName?: string;
   /**
   * The value for this environment variable. **NOTE:** This value is ignored if `secret_name` is used
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#value ContainerApp#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#value ContainerApp#value}
   */
   readonly value?: string;
 }
@@ -5684,19 +5674,19 @@ export interface ContainerAppTemplateInitContainerVolumeMounts {
   /**
   * The name of the Volume to be mounted in the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#name ContainerApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#name ContainerApp#name}
   */
   readonly name: string;
   /**
   * The path in the container at which to mount this volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#path ContainerApp#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#path ContainerApp#path}
   */
   readonly path: string;
   /**
   * The sub path of the volume to be mounted in the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#sub_path ContainerApp#sub_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#sub_path ContainerApp#sub_path}
   */
   readonly subPath?: string;
 }
@@ -5866,49 +5856,49 @@ export interface ContainerAppTemplateInitContainer {
   /**
   * A list of args to pass to the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#args ContainerApp#args}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#args ContainerApp#args}
   */
   readonly args?: string[];
   /**
   * A command to pass to the container to override the default. This is provided as a list of command line elements without spaces.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#command ContainerApp#command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#command ContainerApp#command}
   */
   readonly command?: string[];
   /**
   * The amount of vCPU to allocate to the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#cpu ContainerApp#cpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#cpu ContainerApp#cpu}
   */
   readonly cpu?: number;
   /**
   * The image to use to create the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#image ContainerApp#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#image ContainerApp#image}
   */
   readonly image: string;
   /**
   * The amount of memory to allocate to the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#memory ContainerApp#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#memory ContainerApp#memory}
   */
   readonly memory?: string;
   /**
   * The name of the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#name ContainerApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#name ContainerApp#name}
   */
   readonly name: string;
   /**
   * env block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#env ContainerApp#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#env ContainerApp#env}
   */
   readonly env?: ContainerAppTemplateInitContainerEnv[] | cdktn.IResolvable;
   /**
   * volume_mounts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#volume_mounts ContainerApp#volume_mounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#volume_mounts ContainerApp#volume_mounts}
   */
   readonly volumeMounts?: ContainerAppTemplateInitContainerVolumeMounts[] | cdktn.IResolvable;
 }
@@ -6226,11 +6216,11 @@ export class ContainerAppTemplateInitContainerList extends cdktn.ComplexList {
 }
 export interface ContainerAppTemplateTcpScaleRuleAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#secret_name ContainerApp#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#secret_name ContainerApp#secret_name}
   */
   readonly secretName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#trigger_parameter ContainerApp#trigger_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#trigger_parameter ContainerApp#trigger_parameter}
   */
   readonly triggerParameter?: string;
 }
@@ -6372,17 +6362,17 @@ export class ContainerAppTemplateTcpScaleRuleAuthenticationList extends cdktn.Co
 }
 export interface ContainerAppTemplateTcpScaleRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#concurrent_requests ContainerApp#concurrent_requests}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#concurrent_requests ContainerApp#concurrent_requests}
   */
   readonly concurrentRequests: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#name ContainerApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#name ContainerApp#name}
   */
   readonly name: string;
   /**
   * authentication block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#authentication ContainerApp#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#authentication ContainerApp#authentication}
   */
   readonly authentication?: ContainerAppTemplateTcpScaleRuleAuthentication[] | cdktn.IResolvable;
 }
@@ -6552,25 +6542,25 @@ export interface ContainerAppTemplateVolume {
   /**
   * Mount options used while mounting the AzureFile. Must be a comma-separated string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#mount_options ContainerApp#mount_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#mount_options ContainerApp#mount_options}
   */
   readonly mountOptions?: string;
   /**
   * The name of the volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#name ContainerApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#name ContainerApp#name}
   */
   readonly name: string;
   /**
   * The name of the `AzureFile` storage. Required when `storage_type` is `AzureFile`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#storage_name ContainerApp#storage_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#storage_name ContainerApp#storage_name}
   */
   readonly storageName?: string;
   /**
   * The type of storage volume. Possible values include `AzureFile` and `EmptyDir`. Defaults to `EmptyDir`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#storage_type ContainerApp#storage_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#storage_type ContainerApp#storage_type}
   */
   readonly storageType?: string;
 }
@@ -6772,79 +6762,79 @@ export interface ContainerAppTemplate {
   /**
   * The number of seconds to wait before scaling down the number of instances again.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#cooldown_period_in_seconds ContainerApp#cooldown_period_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#cooldown_period_in_seconds ContainerApp#cooldown_period_in_seconds}
   */
   readonly cooldownPeriodInSeconds?: number;
   /**
   * The maximum number of replicas for this container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#max_replicas ContainerApp#max_replicas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#max_replicas ContainerApp#max_replicas}
   */
   readonly maxReplicas?: number;
   /**
   * The minimum number of replicas for this container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#min_replicas ContainerApp#min_replicas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#min_replicas ContainerApp#min_replicas}
   */
   readonly minReplicas?: number;
   /**
   * The interval in seconds used for polling KEDA.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#polling_interval_in_seconds ContainerApp#polling_interval_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#polling_interval_in_seconds ContainerApp#polling_interval_in_seconds}
   */
   readonly pollingIntervalInSeconds?: number;
   /**
   * The suffix for the revision. This value must be unique for the lifetime of the Resource. If omitted the service will use a hash function to create one.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#revision_suffix ContainerApp#revision_suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#revision_suffix ContainerApp#revision_suffix}
   */
   readonly revisionSuffix?: string;
   /**
   * The time in seconds after the container is sent the termination signal before the process if forcibly killed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#termination_grace_period_seconds ContainerApp#termination_grace_period_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#termination_grace_period_seconds ContainerApp#termination_grace_period_seconds}
   */
   readonly terminationGracePeriodSeconds?: number;
   /**
   * azure_queue_scale_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#azure_queue_scale_rule ContainerApp#azure_queue_scale_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#azure_queue_scale_rule ContainerApp#azure_queue_scale_rule}
   */
   readonly azureQueueScaleRule?: ContainerAppTemplateAzureQueueScaleRule[] | cdktn.IResolvable;
   /**
   * container block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#container ContainerApp#container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#container ContainerApp#container}
   */
   readonly container: ContainerAppTemplateContainer[] | cdktn.IResolvable;
   /**
   * custom_scale_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#custom_scale_rule ContainerApp#custom_scale_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#custom_scale_rule ContainerApp#custom_scale_rule}
   */
   readonly customScaleRule?: ContainerAppTemplateCustomScaleRule[] | cdktn.IResolvable;
   /**
   * http_scale_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#http_scale_rule ContainerApp#http_scale_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#http_scale_rule ContainerApp#http_scale_rule}
   */
   readonly httpScaleRule?: ContainerAppTemplateHttpScaleRule[] | cdktn.IResolvable;
   /**
   * init_container block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#init_container ContainerApp#init_container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#init_container ContainerApp#init_container}
   */
   readonly initContainer?: ContainerAppTemplateInitContainer[] | cdktn.IResolvable;
   /**
   * tcp_scale_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#tcp_scale_rule ContainerApp#tcp_scale_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#tcp_scale_rule ContainerApp#tcp_scale_rule}
   */
   readonly tcpScaleRule?: ContainerAppTemplateTcpScaleRule[] | cdktn.IResolvable;
   /**
   * volume block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#volume ContainerApp#volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#volume ContainerApp#volume}
   */
   readonly volume?: ContainerAppTemplateVolume[] | cdktn.IResolvable;
 }
@@ -7273,19 +7263,19 @@ export class ContainerAppTemplateOutputReference extends cdktn.ComplexObject {
 }
 export interface ContainerAppTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#create ContainerApp#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#create ContainerApp#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#delete ContainerApp#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#delete ContainerApp#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#read ContainerApp#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#read ContainerApp#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#update ContainerApp#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#update ContainerApp#update}
   */
   readonly update?: string;
 }
@@ -7466,7 +7456,7 @@ export class ContainerAppTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app azurerm_container_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app azurerm_container_app}
 */
 export class ContainerApp extends cdktn.TerraformResource {
 
@@ -7482,7 +7472,7 @@ export class ContainerApp extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ContainerApp resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ContainerApp to import
-  * @param importFromId The id of the existing ContainerApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ContainerApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ContainerApp to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -7494,7 +7484,7 @@ export class ContainerApp extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_app azurerm_container_app} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_app azurerm_container_app} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -7505,8 +7495,8 @@ export class ContainerApp extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_container_app',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.81.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

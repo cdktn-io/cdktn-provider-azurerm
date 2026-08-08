@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/log_analytics_workspace
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/log_analytics_workspace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +13,30 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermLogAnalyticsWorkspaceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/log_analytics_workspace#id DataAzurermLogAnalyticsWorkspace#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/log_analytics_workspace#id DataAzurermLogAnalyticsWorkspace#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/log_analytics_workspace#name DataAzurermLogAnalyticsWorkspace#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/log_analytics_workspace#name DataAzurermLogAnalyticsWorkspace#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/log_analytics_workspace#resource_group_name DataAzurermLogAnalyticsWorkspace#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/log_analytics_workspace#resource_group_name DataAzurermLogAnalyticsWorkspace#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/log_analytics_workspace#timeouts DataAzurermLogAnalyticsWorkspace#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/log_analytics_workspace#timeouts DataAzurermLogAnalyticsWorkspace#timeouts}
   */
   readonly timeouts?: DataAzurermLogAnalyticsWorkspaceTimeouts;
 }
 export interface DataAzurermLogAnalyticsWorkspaceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/log_analytics_workspace#read DataAzurermLogAnalyticsWorkspace#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/log_analytics_workspace#read DataAzurermLogAnalyticsWorkspace#read}
   */
   readonly read?: string;
 }
@@ -130,7 +130,7 @@ export class DataAzurermLogAnalyticsWorkspaceTimeoutsOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/log_analytics_workspace azurerm_log_analytics_workspace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/log_analytics_workspace azurerm_log_analytics_workspace}
 */
 export class DataAzurermLogAnalyticsWorkspace extends cdktn.TerraformDataSource {
 
@@ -146,7 +146,7 @@ export class DataAzurermLogAnalyticsWorkspace extends cdktn.TerraformDataSource 
   * Generates CDKTN code for importing a DataAzurermLogAnalyticsWorkspace resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermLogAnalyticsWorkspace to import
-  * @param importFromId The id of the existing DataAzurermLogAnalyticsWorkspace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/log_analytics_workspace#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermLogAnalyticsWorkspace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/log_analytics_workspace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermLogAnalyticsWorkspace to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -158,7 +158,7 @@ export class DataAzurermLogAnalyticsWorkspace extends cdktn.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/log_analytics_workspace azurerm_log_analytics_workspace} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/log_analytics_workspace azurerm_log_analytics_workspace} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -169,8 +169,8 @@ export class DataAzurermLogAnalyticsWorkspace extends cdktn.TerraformDataSource 
       terraformResourceType: 'azurerm_log_analytics_workspace',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.81.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -209,6 +209,16 @@ export class DataAzurermLogAnalyticsWorkspace extends cdktn.TerraformDataSource 
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // internet_ingestion_access_type - computed: true, optional: false, required: false
+  public get internetIngestionAccessType() {
+    return this.getStringAttribute('internet_ingestion_access_type');
+  }
+
+  // internet_query_access_type - computed: true, optional: false, required: false
+  public get internetQueryAccessType() {
+    return this.getStringAttribute('internet_query_access_type');
   }
 
   // location - computed: true, optional: false, required: false

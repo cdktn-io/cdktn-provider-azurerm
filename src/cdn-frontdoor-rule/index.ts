@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,95 +13,95 @@ import * as cdktn from 'cdktn';
 
 export interface CdnFrontdoorRuleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#behavior_on_match CdnFrontdoorRule#behavior_on_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#behaviour_on_match CdnFrontdoorRule#behaviour_on_match}
   */
-  readonly behaviorOnMatch?: string;
+  readonly behaviourOnMatch?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#cdn_frontdoor_rule_set_id CdnFrontdoorRule#cdn_frontdoor_rule_set_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#cdn_frontdoor_rule_set_id CdnFrontdoorRule#cdn_frontdoor_rule_set_id}
   */
   readonly cdnFrontdoorRuleSetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#id CdnFrontdoorRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#id CdnFrontdoorRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#name CdnFrontdoorRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#name CdnFrontdoorRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#order CdnFrontdoorRule#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#order CdnFrontdoorRule#order}
   */
   readonly order: number;
   /**
   * actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#actions CdnFrontdoorRule#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#actions CdnFrontdoorRule#actions}
   */
   readonly actions: CdnFrontdoorRuleActions;
   /**
   * conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#conditions CdnFrontdoorRule#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#conditions CdnFrontdoorRule#conditions}
   */
   readonly conditions?: CdnFrontdoorRuleConditions;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#timeouts CdnFrontdoorRule#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#timeouts CdnFrontdoorRule#timeouts}
   */
   readonly timeouts?: CdnFrontdoorRuleTimeouts;
 }
-export interface CdnFrontdoorRuleActionsRequestHeaderAction {
+export interface CdnFrontdoorRuleActionsModifyRequestHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#header_action CdnFrontdoorRule#header_action}
-  */
-  readonly headerAction: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#header_name CdnFrontdoorRule#header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#header_name CdnFrontdoorRule#header_name}
   */
   readonly headerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#value CdnFrontdoorRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#header_value CdnFrontdoorRule#header_value}
   */
-  readonly value?: string;
+  readonly headerValue?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
+  */
+  readonly operator: string;
 }
 
-export function cdnFrontdoorRuleActionsRequestHeaderActionToTerraform(struct?: CdnFrontdoorRuleActionsRequestHeaderAction | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleActionsModifyRequestHeaderToTerraform(struct?: CdnFrontdoorRuleActionsModifyRequestHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    header_action: cdktn.stringToTerraform(struct!.headerAction),
     header_name: cdktn.stringToTerraform(struct!.headerName),
-    value: cdktn.stringToTerraform(struct!.value),
+    header_value: cdktn.stringToTerraform(struct!.headerValue),
+    operator: cdktn.stringToTerraform(struct!.operator),
   }
 }
 
 
-export function cdnFrontdoorRuleActionsRequestHeaderActionToHclTerraform(struct?: CdnFrontdoorRuleActionsRequestHeaderAction | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleActionsModifyRequestHeaderToHclTerraform(struct?: CdnFrontdoorRuleActionsModifyRequestHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    header_action: {
-      value: cdktn.stringToHclTerraform(struct!.headerAction),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
     header_name: {
       value: cdktn.stringToHclTerraform(struct!.headerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
-    value: {
-      value: cdktn.stringToHclTerraform(struct!.value),
+    header_value: {
+      value: cdktn.stringToHclTerraform(struct!.headerValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operator: {
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -112,7 +112,7 @@ export function cdnFrontdoorRuleActionsRequestHeaderActionToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorRuleActionsRequestHeaderActionOutputReference extends cdktn.ComplexObject {
+export class CdnFrontdoorRuleActionsModifyRequestHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -126,34 +126,34 @@ export class CdnFrontdoorRuleActionsRequestHeaderActionOutputReference extends c
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CdnFrontdoorRuleActionsRequestHeaderAction | cdktn.IResolvable | undefined {
+  public get internalValue(): CdnFrontdoorRuleActionsModifyRequestHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._headerAction !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.headerAction = this._headerAction;
-    }
     if (this._headerName !== undefined) {
       hasAnyValues = true;
       internalValueResult.headerName = this._headerName;
     }
-    if (this._value !== undefined) {
+    if (this._headerValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.value = this._value;
+      internalValueResult.headerValue = this._headerValue;
+    }
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorRuleActionsRequestHeaderAction | cdktn.IResolvable | undefined) {
+  public set internalValue(value: CdnFrontdoorRuleActionsModifyRequestHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._headerAction = undefined;
       this._headerName = undefined;
-      this._value = undefined;
+      this._headerValue = undefined;
+      this._operator = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -162,23 +162,10 @@ export class CdnFrontdoorRuleActionsRequestHeaderActionOutputReference extends c
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._headerAction = value.headerAction;
       this._headerName = value.headerName;
-      this._value = value.value;
+      this._headerValue = value.headerValue;
+      this._operator = value.operator;
     }
-  }
-
-  // header_action - computed: false, optional: false, required: true
-  private _headerAction?: string; 
-  public get headerAction() {
-    return this.getStringAttribute('header_action');
-  }
-  public set headerAction(value: string) {
-    this._headerAction = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get headerActionInput() {
-    return this._headerAction;
   }
 
   // header_name - computed: false, optional: false, required: true
@@ -194,25 +181,38 @@ export class CdnFrontdoorRuleActionsRequestHeaderActionOutputReference extends c
     return this._headerName;
   }
 
-  // value - computed: false, optional: true, required: false
-  private _value?: string; 
-  public get value() {
-    return this.getStringAttribute('value');
+  // header_value - computed: false, optional: true, required: false
+  private _headerValue?: string; 
+  public get headerValue() {
+    return this.getStringAttribute('header_value');
   }
-  public set value(value: string) {
-    this._value = value;
+  public set headerValue(value: string) {
+    this._headerValue = value;
   }
-  public resetValue() {
-    this._value = undefined;
+  public resetHeaderValue() {
+    this._headerValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get valueInput() {
-    return this._value;
+  public get headerValueInput() {
+    return this._headerValue;
+  }
+
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
   }
 }
 
-export class CdnFrontdoorRuleActionsRequestHeaderActionList extends cdktn.ComplexList {
-  public internalValue? : CdnFrontdoorRuleActionsRequestHeaderAction[] | cdktn.IResolvable
+export class CdnFrontdoorRuleActionsModifyRequestHeaderList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorRuleActionsModifyRequestHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -226,58 +226,58 @@ export class CdnFrontdoorRuleActionsRequestHeaderActionList extends cdktn.Comple
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): CdnFrontdoorRuleActionsRequestHeaderActionOutputReference {
-    return new CdnFrontdoorRuleActionsRequestHeaderActionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): CdnFrontdoorRuleActionsModifyRequestHeaderOutputReference {
+    return new CdnFrontdoorRuleActionsModifyRequestHeaderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface CdnFrontdoorRuleActionsResponseHeaderAction {
+export interface CdnFrontdoorRuleActionsModifyResponseHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#header_action CdnFrontdoorRule#header_action}
-  */
-  readonly headerAction: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#header_name CdnFrontdoorRule#header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#header_name CdnFrontdoorRule#header_name}
   */
   readonly headerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#value CdnFrontdoorRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#header_value CdnFrontdoorRule#header_value}
   */
-  readonly value?: string;
+  readonly headerValue?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
+  */
+  readonly operator: string;
 }
 
-export function cdnFrontdoorRuleActionsResponseHeaderActionToTerraform(struct?: CdnFrontdoorRuleActionsResponseHeaderAction | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleActionsModifyResponseHeaderToTerraform(struct?: CdnFrontdoorRuleActionsModifyResponseHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    header_action: cdktn.stringToTerraform(struct!.headerAction),
     header_name: cdktn.stringToTerraform(struct!.headerName),
-    value: cdktn.stringToTerraform(struct!.value),
+    header_value: cdktn.stringToTerraform(struct!.headerValue),
+    operator: cdktn.stringToTerraform(struct!.operator),
   }
 }
 
 
-export function cdnFrontdoorRuleActionsResponseHeaderActionToHclTerraform(struct?: CdnFrontdoorRuleActionsResponseHeaderAction | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleActionsModifyResponseHeaderToHclTerraform(struct?: CdnFrontdoorRuleActionsModifyResponseHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    header_action: {
-      value: cdktn.stringToHclTerraform(struct!.headerAction),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
     header_name: {
       value: cdktn.stringToHclTerraform(struct!.headerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
-    value: {
-      value: cdktn.stringToHclTerraform(struct!.value),
+    header_value: {
+      value: cdktn.stringToHclTerraform(struct!.headerValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operator: {
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -288,7 +288,7 @@ export function cdnFrontdoorRuleActionsResponseHeaderActionToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorRuleActionsResponseHeaderActionOutputReference extends cdktn.ComplexObject {
+export class CdnFrontdoorRuleActionsModifyResponseHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -302,34 +302,34 @@ export class CdnFrontdoorRuleActionsResponseHeaderActionOutputReference extends 
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CdnFrontdoorRuleActionsResponseHeaderAction | cdktn.IResolvable | undefined {
+  public get internalValue(): CdnFrontdoorRuleActionsModifyResponseHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._headerAction !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.headerAction = this._headerAction;
-    }
     if (this._headerName !== undefined) {
       hasAnyValues = true;
       internalValueResult.headerName = this._headerName;
     }
-    if (this._value !== undefined) {
+    if (this._headerValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.value = this._value;
+      internalValueResult.headerValue = this._headerValue;
+    }
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorRuleActionsResponseHeaderAction | cdktn.IResolvable | undefined) {
+  public set internalValue(value: CdnFrontdoorRuleActionsModifyResponseHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._headerAction = undefined;
       this._headerName = undefined;
-      this._value = undefined;
+      this._headerValue = undefined;
+      this._operator = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -338,23 +338,10 @@ export class CdnFrontdoorRuleActionsResponseHeaderActionOutputReference extends 
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._headerAction = value.headerAction;
       this._headerName = value.headerName;
-      this._value = value.value;
+      this._headerValue = value.headerValue;
+      this._operator = value.operator;
     }
-  }
-
-  // header_action - computed: false, optional: false, required: true
-  private _headerAction?: string; 
-  public get headerAction() {
-    return this.getStringAttribute('header_action');
-  }
-  public set headerAction(value: string) {
-    this._headerAction = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get headerActionInput() {
-    return this._headerAction;
   }
 
   // header_name - computed: false, optional: false, required: true
@@ -370,25 +357,38 @@ export class CdnFrontdoorRuleActionsResponseHeaderActionOutputReference extends 
     return this._headerName;
   }
 
-  // value - computed: false, optional: true, required: false
-  private _value?: string; 
-  public get value() {
-    return this.getStringAttribute('value');
+  // header_value - computed: false, optional: true, required: false
+  private _headerValue?: string; 
+  public get headerValue() {
+    return this.getStringAttribute('header_value');
   }
-  public set value(value: string) {
-    this._value = value;
+  public set headerValue(value: string) {
+    this._headerValue = value;
   }
-  public resetValue() {
-    this._value = undefined;
+  public resetHeaderValue() {
+    this._headerValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get valueInput() {
-    return this._value;
+  public get headerValueInput() {
+    return this._headerValue;
+  }
+
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
   }
 }
 
-export class CdnFrontdoorRuleActionsResponseHeaderActionList extends cdktn.ComplexList {
-  public internalValue? : CdnFrontdoorRuleActionsResponseHeaderAction[] | cdktn.IResolvable
+export class CdnFrontdoorRuleActionsModifyResponseHeaderList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorRuleActionsModifyResponseHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -402,78 +402,56 @@ export class CdnFrontdoorRuleActionsResponseHeaderActionList extends cdktn.Compl
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): CdnFrontdoorRuleActionsResponseHeaderActionOutputReference {
-    return new CdnFrontdoorRuleActionsResponseHeaderActionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): CdnFrontdoorRuleActionsModifyResponseHeaderOutputReference {
+    return new CdnFrontdoorRuleActionsModifyResponseHeaderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface CdnFrontdoorRuleActionsRouteConfigurationOverrideAction {
+export interface CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#cache_behavior CdnFrontdoorRule#cache_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#behaviour CdnFrontdoorRule#behaviour}
   */
-  readonly cacheBehavior?: string;
+  readonly behaviour: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#cache_duration CdnFrontdoorRule#cache_duration}
-  */
-  readonly cacheDuration?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#cdn_frontdoor_origin_group_id CdnFrontdoorRule#cdn_frontdoor_origin_group_id}
-  */
-  readonly cdnFrontdoorOriginGroupId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#compression_enabled CdnFrontdoorRule#compression_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#compression_enabled CdnFrontdoorRule#compression_enabled}
   */
   readonly compressionEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#forwarding_protocol CdnFrontdoorRule#forwarding_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#duration CdnFrontdoorRule#duration}
   */
-  readonly forwardingProtocol?: string;
+  readonly duration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#query_string_caching_behavior CdnFrontdoorRule#query_string_caching_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#query_string_behaviour CdnFrontdoorRule#query_string_behaviour}
   */
-  readonly queryStringCachingBehavior?: string;
+  readonly queryStringBehaviour?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#query_string_parameters CdnFrontdoorRule#query_string_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#query_string_parameters CdnFrontdoorRule#query_string_parameters}
   */
   readonly queryStringParameters?: string[];
 }
 
-export function cdnFrontdoorRuleActionsRouteConfigurationOverrideActionToTerraform(struct?: CdnFrontdoorRuleActionsRouteConfigurationOverrideActionOutputReference | CdnFrontdoorRuleActionsRouteConfigurationOverrideAction): any {
+export function cdnFrontdoorRuleActionsRouteConfigurationOverrideCachingToTerraform(struct?: CdnFrontdoorRuleActionsRouteConfigurationOverrideCachingOutputReference | CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    cache_behavior: cdktn.stringToTerraform(struct!.cacheBehavior),
-    cache_duration: cdktn.stringToTerraform(struct!.cacheDuration),
-    cdn_frontdoor_origin_group_id: cdktn.stringToTerraform(struct!.cdnFrontdoorOriginGroupId),
+    behaviour: cdktn.stringToTerraform(struct!.behaviour),
     compression_enabled: cdktn.booleanToTerraform(struct!.compressionEnabled),
-    forwarding_protocol: cdktn.stringToTerraform(struct!.forwardingProtocol),
-    query_string_caching_behavior: cdktn.stringToTerraform(struct!.queryStringCachingBehavior),
+    duration: cdktn.stringToTerraform(struct!.duration),
+    query_string_behaviour: cdktn.stringToTerraform(struct!.queryStringBehaviour),
     query_string_parameters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.queryStringParameters),
   }
 }
 
 
-export function cdnFrontdoorRuleActionsRouteConfigurationOverrideActionToHclTerraform(struct?: CdnFrontdoorRuleActionsRouteConfigurationOverrideActionOutputReference | CdnFrontdoorRuleActionsRouteConfigurationOverrideAction): any {
+export function cdnFrontdoorRuleActionsRouteConfigurationOverrideCachingToHclTerraform(struct?: CdnFrontdoorRuleActionsRouteConfigurationOverrideCachingOutputReference | CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    cache_behavior: {
-      value: cdktn.stringToHclTerraform(struct!.cacheBehavior),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    cache_duration: {
-      value: cdktn.stringToHclTerraform(struct!.cacheDuration),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    cdn_frontdoor_origin_group_id: {
-      value: cdktn.stringToHclTerraform(struct!.cdnFrontdoorOriginGroupId),
+    behaviour: {
+      value: cdktn.stringToHclTerraform(struct!.behaviour),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -484,14 +462,14 @@ export function cdnFrontdoorRuleActionsRouteConfigurationOverrideActionToHclTerr
       type: "simple",
       storageClassType: "boolean",
     },
-    forwarding_protocol: {
-      value: cdktn.stringToHclTerraform(struct!.forwardingProtocol),
+    duration: {
+      value: cdktn.stringToHclTerraform(struct!.duration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
-    query_string_caching_behavior: {
-      value: cdktn.stringToHclTerraform(struct!.queryStringCachingBehavior),
+    query_string_behaviour: {
+      value: cdktn.stringToHclTerraform(struct!.queryStringBehaviour),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -508,7 +486,7 @@ export function cdnFrontdoorRuleActionsRouteConfigurationOverrideActionToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorRuleActionsRouteConfigurationOverrideActionOutputReference extends cdktn.ComplexObject {
+export class CdnFrontdoorRuleActionsRouteConfigurationOverrideCachingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -519,32 +497,24 @@ export class CdnFrontdoorRuleActionsRouteConfigurationOverrideActionOutputRefere
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): CdnFrontdoorRuleActionsRouteConfigurationOverrideAction | undefined {
+  public get internalValue(): CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cacheBehavior !== undefined) {
+    if (this._behaviour !== undefined) {
       hasAnyValues = true;
-      internalValueResult.cacheBehavior = this._cacheBehavior;
-    }
-    if (this._cacheDuration !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.cacheDuration = this._cacheDuration;
-    }
-    if (this._cdnFrontdoorOriginGroupId !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.cdnFrontdoorOriginGroupId = this._cdnFrontdoorOriginGroupId;
+      internalValueResult.behaviour = this._behaviour;
     }
     if (this._compressionEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.compressionEnabled = this._compressionEnabled;
     }
-    if (this._forwardingProtocol !== undefined) {
+    if (this._duration !== undefined) {
       hasAnyValues = true;
-      internalValueResult.forwardingProtocol = this._forwardingProtocol;
+      internalValueResult.duration = this._duration;
     }
-    if (this._queryStringCachingBehavior !== undefined) {
+    if (this._queryStringBehaviour !== undefined) {
       hasAnyValues = true;
-      internalValueResult.queryStringCachingBehavior = this._queryStringCachingBehavior;
+      internalValueResult.queryStringBehaviour = this._queryStringBehaviour;
     }
     if (this._queryStringParameters !== undefined) {
       hasAnyValues = true;
@@ -553,75 +523,36 @@ export class CdnFrontdoorRuleActionsRouteConfigurationOverrideActionOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorRuleActionsRouteConfigurationOverrideAction | undefined) {
+  public set internalValue(value: CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._cacheBehavior = undefined;
-      this._cacheDuration = undefined;
-      this._cdnFrontdoorOriginGroupId = undefined;
+      this._behaviour = undefined;
       this._compressionEnabled = undefined;
-      this._forwardingProtocol = undefined;
-      this._queryStringCachingBehavior = undefined;
+      this._duration = undefined;
+      this._queryStringBehaviour = undefined;
       this._queryStringParameters = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._cacheBehavior = value.cacheBehavior;
-      this._cacheDuration = value.cacheDuration;
-      this._cdnFrontdoorOriginGroupId = value.cdnFrontdoorOriginGroupId;
+      this._behaviour = value.behaviour;
       this._compressionEnabled = value.compressionEnabled;
-      this._forwardingProtocol = value.forwardingProtocol;
-      this._queryStringCachingBehavior = value.queryStringCachingBehavior;
+      this._duration = value.duration;
+      this._queryStringBehaviour = value.queryStringBehaviour;
       this._queryStringParameters = value.queryStringParameters;
     }
   }
 
-  // cache_behavior - computed: false, optional: true, required: false
-  private _cacheBehavior?: string; 
-  public get cacheBehavior() {
-    return this.getStringAttribute('cache_behavior');
+  // behaviour - computed: false, optional: false, required: true
+  private _behaviour?: string; 
+  public get behaviour() {
+    return this.getStringAttribute('behaviour');
   }
-  public set cacheBehavior(value: string) {
-    this._cacheBehavior = value;
-  }
-  public resetCacheBehavior() {
-    this._cacheBehavior = undefined;
+  public set behaviour(value: string) {
+    this._behaviour = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get cacheBehaviorInput() {
-    return this._cacheBehavior;
-  }
-
-  // cache_duration - computed: false, optional: true, required: false
-  private _cacheDuration?: string; 
-  public get cacheDuration() {
-    return this.getStringAttribute('cache_duration');
-  }
-  public set cacheDuration(value: string) {
-    this._cacheDuration = value;
-  }
-  public resetCacheDuration() {
-    this._cacheDuration = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get cacheDurationInput() {
-    return this._cacheDuration;
-  }
-
-  // cdn_frontdoor_origin_group_id - computed: false, optional: true, required: false
-  private _cdnFrontdoorOriginGroupId?: string; 
-  public get cdnFrontdoorOriginGroupId() {
-    return this.getStringAttribute('cdn_frontdoor_origin_group_id');
-  }
-  public set cdnFrontdoorOriginGroupId(value: string) {
-    this._cdnFrontdoorOriginGroupId = value;
-  }
-  public resetCdnFrontdoorOriginGroupId() {
-    this._cdnFrontdoorOriginGroupId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get cdnFrontdoorOriginGroupIdInput() {
-    return this._cdnFrontdoorOriginGroupId;
+  public get behaviourInput() {
+    return this._behaviour;
   }
 
   // compression_enabled - computed: false, optional: true, required: false
@@ -640,36 +571,36 @@ export class CdnFrontdoorRuleActionsRouteConfigurationOverrideActionOutputRefere
     return this._compressionEnabled;
   }
 
-  // forwarding_protocol - computed: false, optional: true, required: false
-  private _forwardingProtocol?: string; 
-  public get forwardingProtocol() {
-    return this.getStringAttribute('forwarding_protocol');
+  // duration - computed: false, optional: true, required: false
+  private _duration?: string; 
+  public get duration() {
+    return this.getStringAttribute('duration');
   }
-  public set forwardingProtocol(value: string) {
-    this._forwardingProtocol = value;
+  public set duration(value: string) {
+    this._duration = value;
   }
-  public resetForwardingProtocol() {
-    this._forwardingProtocol = undefined;
+  public resetDuration() {
+    this._duration = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get forwardingProtocolInput() {
-    return this._forwardingProtocol;
+  public get durationInput() {
+    return this._duration;
   }
 
-  // query_string_caching_behavior - computed: false, optional: true, required: false
-  private _queryStringCachingBehavior?: string; 
-  public get queryStringCachingBehavior() {
-    return this.getStringAttribute('query_string_caching_behavior');
+  // query_string_behaviour - computed: false, optional: true, required: false
+  private _queryStringBehaviour?: string; 
+  public get queryStringBehaviour() {
+    return this.getStringAttribute('query_string_behaviour');
   }
-  public set queryStringCachingBehavior(value: string) {
-    this._queryStringCachingBehavior = value;
+  public set queryStringBehaviour(value: string) {
+    this._queryStringBehaviour = value;
   }
-  public resetQueryStringCachingBehavior() {
-    this._queryStringCachingBehavior = undefined;
+  public resetQueryStringBehaviour() {
+    this._queryStringBehaviour = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get queryStringCachingBehaviorInput() {
-    return this._queryStringCachingBehavior;
+  public get queryStringBehaviourInput() {
+    return this._queryStringBehaviour;
   }
 
   // query_string_parameters - computed: false, optional: true, required: false
@@ -688,41 +619,270 @@ export class CdnFrontdoorRuleActionsRouteConfigurationOverrideActionOutputRefere
     return this._queryStringParameters;
   }
 }
-export interface CdnFrontdoorRuleActionsUrlRedirectAction {
+export interface CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroup {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#destination_fragment CdnFrontdoorRule#destination_fragment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#cdn_frontdoor_origin_group_id CdnFrontdoorRule#cdn_frontdoor_origin_group_id}
+  */
+  readonly cdnFrontdoorOriginGroupId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#forwarding_protocol CdnFrontdoorRule#forwarding_protocol}
+  */
+  readonly forwardingProtocol: string;
+}
+
+export function cdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroupToTerraform(struct?: CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroupOutputReference | CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroup): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    cdn_frontdoor_origin_group_id: cdktn.stringToTerraform(struct!.cdnFrontdoorOriginGroupId),
+    forwarding_protocol: cdktn.stringToTerraform(struct!.forwardingProtocol),
+  }
+}
+
+
+export function cdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroupToHclTerraform(struct?: CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroupOutputReference | CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroup): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    cdn_frontdoor_origin_group_id: {
+      value: cdktn.stringToHclTerraform(struct!.cdnFrontdoorOriginGroupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    forwarding_protocol: {
+      value: cdktn.stringToHclTerraform(struct!.forwardingProtocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroupOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroup | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cdnFrontdoorOriginGroupId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cdnFrontdoorOriginGroupId = this._cdnFrontdoorOriginGroupId;
+    }
+    if (this._forwardingProtocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.forwardingProtocol = this._forwardingProtocol;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroup | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._cdnFrontdoorOriginGroupId = undefined;
+      this._forwardingProtocol = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._cdnFrontdoorOriginGroupId = value.cdnFrontdoorOriginGroupId;
+      this._forwardingProtocol = value.forwardingProtocol;
+    }
+  }
+
+  // cdn_frontdoor_origin_group_id - computed: false, optional: false, required: true
+  private _cdnFrontdoorOriginGroupId?: string; 
+  public get cdnFrontdoorOriginGroupId() {
+    return this.getStringAttribute('cdn_frontdoor_origin_group_id');
+  }
+  public set cdnFrontdoorOriginGroupId(value: string) {
+    this._cdnFrontdoorOriginGroupId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cdnFrontdoorOriginGroupIdInput() {
+    return this._cdnFrontdoorOriginGroupId;
+  }
+
+  // forwarding_protocol - computed: false, optional: false, required: true
+  private _forwardingProtocol?: string; 
+  public get forwardingProtocol() {
+    return this.getStringAttribute('forwarding_protocol');
+  }
+  public set forwardingProtocol(value: string) {
+    this._forwardingProtocol = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forwardingProtocolInput() {
+    return this._forwardingProtocol;
+  }
+}
+export interface CdnFrontdoorRuleActionsRouteConfigurationOverride {
+  /**
+  * caching block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#caching CdnFrontdoorRule#caching}
+  */
+  readonly caching: CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching;
+  /**
+  * origin_group block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#origin_group CdnFrontdoorRule#origin_group}
+  */
+  readonly originGroup?: CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroup;
+}
+
+export function cdnFrontdoorRuleActionsRouteConfigurationOverrideToTerraform(struct?: CdnFrontdoorRuleActionsRouteConfigurationOverrideOutputReference | CdnFrontdoorRuleActionsRouteConfigurationOverride): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    caching: cdnFrontdoorRuleActionsRouteConfigurationOverrideCachingToTerraform(struct!.caching),
+    origin_group: cdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroupToTerraform(struct!.originGroup),
+  }
+}
+
+
+export function cdnFrontdoorRuleActionsRouteConfigurationOverrideToHclTerraform(struct?: CdnFrontdoorRuleActionsRouteConfigurationOverrideOutputReference | CdnFrontdoorRuleActionsRouteConfigurationOverride): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    caching: {
+      value: cdnFrontdoorRuleActionsRouteConfigurationOverrideCachingToHclTerraform(struct!.caching),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CdnFrontdoorRuleActionsRouteConfigurationOverrideCachingList",
+    },
+    origin_group: {
+      value: cdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroupToHclTerraform(struct!.originGroup),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroupList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CdnFrontdoorRuleActionsRouteConfigurationOverrideOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CdnFrontdoorRuleActionsRouteConfigurationOverride | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._caching?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.caching = this._caching?.internalValue;
+    }
+    if (this._originGroup?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.originGroup = this._originGroup?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CdnFrontdoorRuleActionsRouteConfigurationOverride | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._caching.internalValue = undefined;
+      this._originGroup.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._caching.internalValue = value.caching;
+      this._originGroup.internalValue = value.originGroup;
+    }
+  }
+
+  // caching - computed: false, optional: false, required: true
+  private _caching = new CdnFrontdoorRuleActionsRouteConfigurationOverrideCachingOutputReference(this, "caching");
+  public get caching() {
+    return this._caching;
+  }
+  public putCaching(value: CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching) {
+    this._caching.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cachingInput() {
+    return this._caching.internalValue;
+  }
+
+  // origin_group - computed: false, optional: true, required: false
+  private _originGroup = new CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroupOutputReference(this, "origin_group");
+  public get originGroup() {
+    return this._originGroup;
+  }
+  public putOriginGroup(value: CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroup) {
+    this._originGroup.internalValue = value;
+  }
+  public resetOriginGroup() {
+    this._originGroup.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get originGroupInput() {
+    return this._originGroup.internalValue;
+  }
+}
+export interface CdnFrontdoorRuleActionsUrlRedirect {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#destination_fragment CdnFrontdoorRule#destination_fragment}
   */
   readonly destinationFragment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#destination_hostname CdnFrontdoorRule#destination_hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#destination_host_name CdnFrontdoorRule#destination_host_name}
   */
-  readonly destinationHostname: string;
+  readonly destinationHostName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#destination_path CdnFrontdoorRule#destination_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#destination_path CdnFrontdoorRule#destination_path}
   */
   readonly destinationPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#query_string CdnFrontdoorRule#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#query_string CdnFrontdoorRule#query_string}
   */
   readonly queryString?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#redirect_protocol CdnFrontdoorRule#redirect_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#redirect_protocol CdnFrontdoorRule#redirect_protocol}
   */
   readonly redirectProtocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#redirect_type CdnFrontdoorRule#redirect_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#redirect_type CdnFrontdoorRule#redirect_type}
   */
   readonly redirectType: string;
 }
 
-export function cdnFrontdoorRuleActionsUrlRedirectActionToTerraform(struct?: CdnFrontdoorRuleActionsUrlRedirectActionOutputReference | CdnFrontdoorRuleActionsUrlRedirectAction): any {
+export function cdnFrontdoorRuleActionsUrlRedirectToTerraform(struct?: CdnFrontdoorRuleActionsUrlRedirectOutputReference | CdnFrontdoorRuleActionsUrlRedirect): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination_fragment: cdktn.stringToTerraform(struct!.destinationFragment),
-    destination_hostname: cdktn.stringToTerraform(struct!.destinationHostname),
+    destination_host_name: cdktn.stringToTerraform(struct!.destinationHostName),
     destination_path: cdktn.stringToTerraform(struct!.destinationPath),
     query_string: cdktn.stringToTerraform(struct!.queryString),
     redirect_protocol: cdktn.stringToTerraform(struct!.redirectProtocol),
@@ -731,7 +891,7 @@ export function cdnFrontdoorRuleActionsUrlRedirectActionToTerraform(struct?: Cdn
 }
 
 
-export function cdnFrontdoorRuleActionsUrlRedirectActionToHclTerraform(struct?: CdnFrontdoorRuleActionsUrlRedirectActionOutputReference | CdnFrontdoorRuleActionsUrlRedirectAction): any {
+export function cdnFrontdoorRuleActionsUrlRedirectToHclTerraform(struct?: CdnFrontdoorRuleActionsUrlRedirectOutputReference | CdnFrontdoorRuleActionsUrlRedirect): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
@@ -743,8 +903,8 @@ export function cdnFrontdoorRuleActionsUrlRedirectActionToHclTerraform(struct?: 
       type: "simple",
       storageClassType: "string",
     },
-    destination_hostname: {
-      value: cdktn.stringToHclTerraform(struct!.destinationHostname),
+    destination_host_name: {
+      value: cdktn.stringToHclTerraform(struct!.destinationHostName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -779,7 +939,7 @@ export function cdnFrontdoorRuleActionsUrlRedirectActionToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorRuleActionsUrlRedirectActionOutputReference extends cdktn.ComplexObject {
+export class CdnFrontdoorRuleActionsUrlRedirectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -790,16 +950,16 @@ export class CdnFrontdoorRuleActionsUrlRedirectActionOutputReference extends cdk
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): CdnFrontdoorRuleActionsUrlRedirectAction | undefined {
+  public get internalValue(): CdnFrontdoorRuleActionsUrlRedirect | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._destinationFragment !== undefined) {
       hasAnyValues = true;
       internalValueResult.destinationFragment = this._destinationFragment;
     }
-    if (this._destinationHostname !== undefined) {
+    if (this._destinationHostName !== undefined) {
       hasAnyValues = true;
-      internalValueResult.destinationHostname = this._destinationHostname;
+      internalValueResult.destinationHostName = this._destinationHostName;
     }
     if (this._destinationPath !== undefined) {
       hasAnyValues = true;
@@ -820,11 +980,11 @@ export class CdnFrontdoorRuleActionsUrlRedirectActionOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorRuleActionsUrlRedirectAction | undefined) {
+  public set internalValue(value: CdnFrontdoorRuleActionsUrlRedirect | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._destinationFragment = undefined;
-      this._destinationHostname = undefined;
+      this._destinationHostName = undefined;
       this._destinationPath = undefined;
       this._queryString = undefined;
       this._redirectProtocol = undefined;
@@ -833,7 +993,7 @@ export class CdnFrontdoorRuleActionsUrlRedirectActionOutputReference extends cdk
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._destinationFragment = value.destinationFragment;
-      this._destinationHostname = value.destinationHostname;
+      this._destinationHostName = value.destinationHostName;
       this._destinationPath = value.destinationPath;
       this._queryString = value.queryString;
       this._redirectProtocol = value.redirectProtocol;
@@ -857,17 +1017,20 @@ export class CdnFrontdoorRuleActionsUrlRedirectActionOutputReference extends cdk
     return this._destinationFragment;
   }
 
-  // destination_hostname - computed: false, optional: false, required: true
-  private _destinationHostname?: string; 
-  public get destinationHostname() {
-    return this.getStringAttribute('destination_hostname');
+  // destination_host_name - computed: false, optional: true, required: false
+  private _destinationHostName?: string; 
+  public get destinationHostName() {
+    return this.getStringAttribute('destination_host_name');
   }
-  public set destinationHostname(value: string) {
-    this._destinationHostname = value;
+  public set destinationHostName(value: string) {
+    this._destinationHostName = value;
+  }
+  public resetDestinationHostName() {
+    this._destinationHostName = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get destinationHostnameInput() {
-    return this._destinationHostname;
+  public get destinationHostNameInput() {
+    return this._destinationHostName;
   }
 
   // destination_path - computed: false, optional: true, required: false
@@ -931,48 +1094,48 @@ export class CdnFrontdoorRuleActionsUrlRedirectActionOutputReference extends cdk
     return this._redirectType;
   }
 }
-export interface CdnFrontdoorRuleActionsUrlRewriteAction {
+export interface CdnFrontdoorRuleActionsUrlRewrite {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#destination CdnFrontdoorRule#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#destination_path CdnFrontdoorRule#destination_path}
   */
-  readonly destination: string;
+  readonly destinationPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#preserve_unmatched_path CdnFrontdoorRule#preserve_unmatched_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#preserve_unmatched_path_enabled CdnFrontdoorRule#preserve_unmatched_path_enabled}
   */
-  readonly preserveUnmatchedPath?: boolean | cdktn.IResolvable;
+  readonly preserveUnmatchedPathEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#source_pattern CdnFrontdoorRule#source_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#source_pattern CdnFrontdoorRule#source_pattern}
   */
   readonly sourcePattern: string;
 }
 
-export function cdnFrontdoorRuleActionsUrlRewriteActionToTerraform(struct?: CdnFrontdoorRuleActionsUrlRewriteActionOutputReference | CdnFrontdoorRuleActionsUrlRewriteAction): any {
+export function cdnFrontdoorRuleActionsUrlRewriteToTerraform(struct?: CdnFrontdoorRuleActionsUrlRewriteOutputReference | CdnFrontdoorRuleActionsUrlRewrite): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    destination: cdktn.stringToTerraform(struct!.destination),
-    preserve_unmatched_path: cdktn.booleanToTerraform(struct!.preserveUnmatchedPath),
+    destination_path: cdktn.stringToTerraform(struct!.destinationPath),
+    preserve_unmatched_path_enabled: cdktn.booleanToTerraform(struct!.preserveUnmatchedPathEnabled),
     source_pattern: cdktn.stringToTerraform(struct!.sourcePattern),
   }
 }
 
 
-export function cdnFrontdoorRuleActionsUrlRewriteActionToHclTerraform(struct?: CdnFrontdoorRuleActionsUrlRewriteActionOutputReference | CdnFrontdoorRuleActionsUrlRewriteAction): any {
+export function cdnFrontdoorRuleActionsUrlRewriteToHclTerraform(struct?: CdnFrontdoorRuleActionsUrlRewriteOutputReference | CdnFrontdoorRuleActionsUrlRewrite): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    destination: {
-      value: cdktn.stringToHclTerraform(struct!.destination),
+    destination_path: {
+      value: cdktn.stringToHclTerraform(struct!.destinationPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
-    preserve_unmatched_path: {
-      value: cdktn.booleanToHclTerraform(struct!.preserveUnmatchedPath),
+    preserve_unmatched_path_enabled: {
+      value: cdktn.booleanToHclTerraform(struct!.preserveUnmatchedPathEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -989,7 +1152,7 @@ export function cdnFrontdoorRuleActionsUrlRewriteActionToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorRuleActionsUrlRewriteActionOutputReference extends cdktn.ComplexObject {
+export class CdnFrontdoorRuleActionsUrlRewriteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1000,16 +1163,16 @@ export class CdnFrontdoorRuleActionsUrlRewriteActionOutputReference extends cdkt
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): CdnFrontdoorRuleActionsUrlRewriteAction | undefined {
+  public get internalValue(): CdnFrontdoorRuleActionsUrlRewrite | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._destination !== undefined) {
+    if (this._destinationPath !== undefined) {
       hasAnyValues = true;
-      internalValueResult.destination = this._destination;
+      internalValueResult.destinationPath = this._destinationPath;
     }
-    if (this._preserveUnmatchedPath !== undefined) {
+    if (this._preserveUnmatchedPathEnabled !== undefined) {
       hasAnyValues = true;
-      internalValueResult.preserveUnmatchedPath = this._preserveUnmatchedPath;
+      internalValueResult.preserveUnmatchedPathEnabled = this._preserveUnmatchedPathEnabled;
     }
     if (this._sourcePattern !== undefined) {
       hasAnyValues = true;
@@ -1018,48 +1181,48 @@ export class CdnFrontdoorRuleActionsUrlRewriteActionOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorRuleActionsUrlRewriteAction | undefined) {
+  public set internalValue(value: CdnFrontdoorRuleActionsUrlRewrite | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._destination = undefined;
-      this._preserveUnmatchedPath = undefined;
+      this._destinationPath = undefined;
+      this._preserveUnmatchedPathEnabled = undefined;
       this._sourcePattern = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._destination = value.destination;
-      this._preserveUnmatchedPath = value.preserveUnmatchedPath;
+      this._destinationPath = value.destinationPath;
+      this._preserveUnmatchedPathEnabled = value.preserveUnmatchedPathEnabled;
       this._sourcePattern = value.sourcePattern;
     }
   }
 
-  // destination - computed: false, optional: false, required: true
-  private _destination?: string; 
-  public get destination() {
-    return this.getStringAttribute('destination');
+  // destination_path - computed: false, optional: false, required: true
+  private _destinationPath?: string; 
+  public get destinationPath() {
+    return this.getStringAttribute('destination_path');
   }
-  public set destination(value: string) {
-    this._destination = value;
+  public set destinationPath(value: string) {
+    this._destinationPath = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get destinationInput() {
-    return this._destination;
+  public get destinationPathInput() {
+    return this._destinationPath;
   }
 
-  // preserve_unmatched_path - computed: false, optional: true, required: false
-  private _preserveUnmatchedPath?: boolean | cdktn.IResolvable; 
-  public get preserveUnmatchedPath() {
-    return this.getBooleanAttribute('preserve_unmatched_path');
+  // preserve_unmatched_path_enabled - computed: false, optional: true, required: false
+  private _preserveUnmatchedPathEnabled?: boolean | cdktn.IResolvable; 
+  public get preserveUnmatchedPathEnabled() {
+    return this.getBooleanAttribute('preserve_unmatched_path_enabled');
   }
-  public set preserveUnmatchedPath(value: boolean | cdktn.IResolvable) {
-    this._preserveUnmatchedPath = value;
+  public set preserveUnmatchedPathEnabled(value: boolean | cdktn.IResolvable) {
+    this._preserveUnmatchedPathEnabled = value;
   }
-  public resetPreserveUnmatchedPath() {
-    this._preserveUnmatchedPath = undefined;
+  public resetPreserveUnmatchedPathEnabled() {
+    this._preserveUnmatchedPathEnabled = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get preserveUnmatchedPathInput() {
-    return this._preserveUnmatchedPath;
+  public get preserveUnmatchedPathEnabledInput() {
+    return this._preserveUnmatchedPathEnabled;
   }
 
   // source_pattern - computed: false, optional: false, required: true
@@ -1077,35 +1240,35 @@ export class CdnFrontdoorRuleActionsUrlRewriteActionOutputReference extends cdkt
 }
 export interface CdnFrontdoorRuleActions {
   /**
-  * request_header_action block
+  * modify_request_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#request_header_action CdnFrontdoorRule#request_header_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#modify_request_header CdnFrontdoorRule#modify_request_header}
   */
-  readonly requestHeaderAction?: CdnFrontdoorRuleActionsRequestHeaderAction[] | cdktn.IResolvable;
+  readonly modifyRequestHeader?: CdnFrontdoorRuleActionsModifyRequestHeader[] | cdktn.IResolvable;
   /**
-  * response_header_action block
+  * modify_response_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#response_header_action CdnFrontdoorRule#response_header_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#modify_response_header CdnFrontdoorRule#modify_response_header}
   */
-  readonly responseHeaderAction?: CdnFrontdoorRuleActionsResponseHeaderAction[] | cdktn.IResolvable;
+  readonly modifyResponseHeader?: CdnFrontdoorRuleActionsModifyResponseHeader[] | cdktn.IResolvable;
   /**
-  * route_configuration_override_action block
+  * route_configuration_override block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#route_configuration_override_action CdnFrontdoorRule#route_configuration_override_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#route_configuration_override CdnFrontdoorRule#route_configuration_override}
   */
-  readonly routeConfigurationOverrideAction?: CdnFrontdoorRuleActionsRouteConfigurationOverrideAction;
+  readonly routeConfigurationOverride?: CdnFrontdoorRuleActionsRouteConfigurationOverride;
   /**
-  * url_redirect_action block
+  * url_redirect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#url_redirect_action CdnFrontdoorRule#url_redirect_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#url_redirect CdnFrontdoorRule#url_redirect}
   */
-  readonly urlRedirectAction?: CdnFrontdoorRuleActionsUrlRedirectAction;
+  readonly urlRedirect?: CdnFrontdoorRuleActionsUrlRedirect;
   /**
-  * url_rewrite_action block
+  * url_rewrite block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#url_rewrite_action CdnFrontdoorRule#url_rewrite_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#url_rewrite CdnFrontdoorRule#url_rewrite}
   */
-  readonly urlRewriteAction?: CdnFrontdoorRuleActionsUrlRewriteAction;
+  readonly urlRewrite?: CdnFrontdoorRuleActionsUrlRewrite;
 }
 
 export function cdnFrontdoorRuleActionsToTerraform(struct?: CdnFrontdoorRuleActionsOutputReference | CdnFrontdoorRuleActions): any {
@@ -1114,11 +1277,11 @@ export function cdnFrontdoorRuleActionsToTerraform(struct?: CdnFrontdoorRuleActi
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    request_header_action: cdktn.listMapper(cdnFrontdoorRuleActionsRequestHeaderActionToTerraform, true)(struct!.requestHeaderAction),
-    response_header_action: cdktn.listMapper(cdnFrontdoorRuleActionsResponseHeaderActionToTerraform, true)(struct!.responseHeaderAction),
-    route_configuration_override_action: cdnFrontdoorRuleActionsRouteConfigurationOverrideActionToTerraform(struct!.routeConfigurationOverrideAction),
-    url_redirect_action: cdnFrontdoorRuleActionsUrlRedirectActionToTerraform(struct!.urlRedirectAction),
-    url_rewrite_action: cdnFrontdoorRuleActionsUrlRewriteActionToTerraform(struct!.urlRewriteAction),
+    modify_request_header: cdktn.listMapper(cdnFrontdoorRuleActionsModifyRequestHeaderToTerraform, true)(struct!.modifyRequestHeader),
+    modify_response_header: cdktn.listMapper(cdnFrontdoorRuleActionsModifyResponseHeaderToTerraform, true)(struct!.modifyResponseHeader),
+    route_configuration_override: cdnFrontdoorRuleActionsRouteConfigurationOverrideToTerraform(struct!.routeConfigurationOverride),
+    url_redirect: cdnFrontdoorRuleActionsUrlRedirectToTerraform(struct!.urlRedirect),
+    url_rewrite: cdnFrontdoorRuleActionsUrlRewriteToTerraform(struct!.urlRewrite),
   }
 }
 
@@ -1129,35 +1292,35 @@ export function cdnFrontdoorRuleActionsToHclTerraform(struct?: CdnFrontdoorRuleA
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    request_header_action: {
-      value: cdktn.listMapperHcl(cdnFrontdoorRuleActionsRequestHeaderActionToHclTerraform, true)(struct!.requestHeaderAction),
+    modify_request_header: {
+      value: cdktn.listMapperHcl(cdnFrontdoorRuleActionsModifyRequestHeaderToHclTerraform, true)(struct!.modifyRequestHeader),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleActionsRequestHeaderActionList",
+      storageClassType: "CdnFrontdoorRuleActionsModifyRequestHeaderList",
     },
-    response_header_action: {
-      value: cdktn.listMapperHcl(cdnFrontdoorRuleActionsResponseHeaderActionToHclTerraform, true)(struct!.responseHeaderAction),
+    modify_response_header: {
+      value: cdktn.listMapperHcl(cdnFrontdoorRuleActionsModifyResponseHeaderToHclTerraform, true)(struct!.modifyResponseHeader),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleActionsResponseHeaderActionList",
+      storageClassType: "CdnFrontdoorRuleActionsModifyResponseHeaderList",
     },
-    route_configuration_override_action: {
-      value: cdnFrontdoorRuleActionsRouteConfigurationOverrideActionToHclTerraform(struct!.routeConfigurationOverrideAction),
+    route_configuration_override: {
+      value: cdnFrontdoorRuleActionsRouteConfigurationOverrideToHclTerraform(struct!.routeConfigurationOverride),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleActionsRouteConfigurationOverrideActionList",
+      storageClassType: "CdnFrontdoorRuleActionsRouteConfigurationOverrideList",
     },
-    url_redirect_action: {
-      value: cdnFrontdoorRuleActionsUrlRedirectActionToHclTerraform(struct!.urlRedirectAction),
+    url_redirect: {
+      value: cdnFrontdoorRuleActionsUrlRedirectToHclTerraform(struct!.urlRedirect),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleActionsUrlRedirectActionList",
+      storageClassType: "CdnFrontdoorRuleActionsUrlRedirectList",
     },
-    url_rewrite_action: {
-      value: cdnFrontdoorRuleActionsUrlRewriteActionToHclTerraform(struct!.urlRewriteAction),
+    url_rewrite: {
+      value: cdnFrontdoorRuleActionsUrlRewriteToHclTerraform(struct!.urlRewrite),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleActionsUrlRewriteActionList",
+      storageClassType: "CdnFrontdoorRuleActionsUrlRewriteList",
     },
   };
 
@@ -1179,25 +1342,25 @@ export class CdnFrontdoorRuleActionsOutputReference extends cdktn.ComplexObject 
   public get internalValue(): CdnFrontdoorRuleActions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._requestHeaderAction?.internalValue !== undefined) {
+    if (this._modifyRequestHeader?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.requestHeaderAction = this._requestHeaderAction?.internalValue;
+      internalValueResult.modifyRequestHeader = this._modifyRequestHeader?.internalValue;
     }
-    if (this._responseHeaderAction?.internalValue !== undefined) {
+    if (this._modifyResponseHeader?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.responseHeaderAction = this._responseHeaderAction?.internalValue;
+      internalValueResult.modifyResponseHeader = this._modifyResponseHeader?.internalValue;
     }
-    if (this._routeConfigurationOverrideAction?.internalValue !== undefined) {
+    if (this._routeConfigurationOverride?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.routeConfigurationOverrideAction = this._routeConfigurationOverrideAction?.internalValue;
+      internalValueResult.routeConfigurationOverride = this._routeConfigurationOverride?.internalValue;
     }
-    if (this._urlRedirectAction?.internalValue !== undefined) {
+    if (this._urlRedirect?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.urlRedirectAction = this._urlRedirectAction?.internalValue;
+      internalValueResult.urlRedirect = this._urlRedirect?.internalValue;
     }
-    if (this._urlRewriteAction?.internalValue !== undefined) {
+    if (this._urlRewrite?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.urlRewriteAction = this._urlRewriteAction?.internalValue;
+      internalValueResult.urlRewrite = this._urlRewrite?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1205,153 +1368,142 @@ export class CdnFrontdoorRuleActionsOutputReference extends cdktn.ComplexObject 
   public set internalValue(value: CdnFrontdoorRuleActions | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._requestHeaderAction.internalValue = undefined;
-      this._responseHeaderAction.internalValue = undefined;
-      this._routeConfigurationOverrideAction.internalValue = undefined;
-      this._urlRedirectAction.internalValue = undefined;
-      this._urlRewriteAction.internalValue = undefined;
+      this._modifyRequestHeader.internalValue = undefined;
+      this._modifyResponseHeader.internalValue = undefined;
+      this._routeConfigurationOverride.internalValue = undefined;
+      this._urlRedirect.internalValue = undefined;
+      this._urlRewrite.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._requestHeaderAction.internalValue = value.requestHeaderAction;
-      this._responseHeaderAction.internalValue = value.responseHeaderAction;
-      this._routeConfigurationOverrideAction.internalValue = value.routeConfigurationOverrideAction;
-      this._urlRedirectAction.internalValue = value.urlRedirectAction;
-      this._urlRewriteAction.internalValue = value.urlRewriteAction;
+      this._modifyRequestHeader.internalValue = value.modifyRequestHeader;
+      this._modifyResponseHeader.internalValue = value.modifyResponseHeader;
+      this._routeConfigurationOverride.internalValue = value.routeConfigurationOverride;
+      this._urlRedirect.internalValue = value.urlRedirect;
+      this._urlRewrite.internalValue = value.urlRewrite;
     }
   }
 
-  // request_header_action - computed: false, optional: true, required: false
-  private _requestHeaderAction = new CdnFrontdoorRuleActionsRequestHeaderActionList(this, "request_header_action", false);
-  public get requestHeaderAction() {
-    return this._requestHeaderAction;
+  // modify_request_header - computed: false, optional: true, required: false
+  private _modifyRequestHeader = new CdnFrontdoorRuleActionsModifyRequestHeaderList(this, "modify_request_header", false);
+  public get modifyRequestHeader() {
+    return this._modifyRequestHeader;
   }
-  public putRequestHeaderAction(value: CdnFrontdoorRuleActionsRequestHeaderAction[] | cdktn.IResolvable) {
-    this._requestHeaderAction.internalValue = value;
+  public putModifyRequestHeader(value: CdnFrontdoorRuleActionsModifyRequestHeader[] | cdktn.IResolvable) {
+    this._modifyRequestHeader.internalValue = value;
   }
-  public resetRequestHeaderAction() {
-    this._requestHeaderAction.internalValue = undefined;
+  public resetModifyRequestHeader() {
+    this._modifyRequestHeader.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get requestHeaderActionInput() {
-    return this._requestHeaderAction.internalValue;
+  public get modifyRequestHeaderInput() {
+    return this._modifyRequestHeader.internalValue;
   }
 
-  // response_header_action - computed: false, optional: true, required: false
-  private _responseHeaderAction = new CdnFrontdoorRuleActionsResponseHeaderActionList(this, "response_header_action", false);
-  public get responseHeaderAction() {
-    return this._responseHeaderAction;
+  // modify_response_header - computed: false, optional: true, required: false
+  private _modifyResponseHeader = new CdnFrontdoorRuleActionsModifyResponseHeaderList(this, "modify_response_header", false);
+  public get modifyResponseHeader() {
+    return this._modifyResponseHeader;
   }
-  public putResponseHeaderAction(value: CdnFrontdoorRuleActionsResponseHeaderAction[] | cdktn.IResolvable) {
-    this._responseHeaderAction.internalValue = value;
+  public putModifyResponseHeader(value: CdnFrontdoorRuleActionsModifyResponseHeader[] | cdktn.IResolvable) {
+    this._modifyResponseHeader.internalValue = value;
   }
-  public resetResponseHeaderAction() {
-    this._responseHeaderAction.internalValue = undefined;
+  public resetModifyResponseHeader() {
+    this._modifyResponseHeader.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get responseHeaderActionInput() {
-    return this._responseHeaderAction.internalValue;
+  public get modifyResponseHeaderInput() {
+    return this._modifyResponseHeader.internalValue;
   }
 
-  // route_configuration_override_action - computed: false, optional: true, required: false
-  private _routeConfigurationOverrideAction = new CdnFrontdoorRuleActionsRouteConfigurationOverrideActionOutputReference(this, "route_configuration_override_action");
-  public get routeConfigurationOverrideAction() {
-    return this._routeConfigurationOverrideAction;
+  // route_configuration_override - computed: false, optional: true, required: false
+  private _routeConfigurationOverride = new CdnFrontdoorRuleActionsRouteConfigurationOverrideOutputReference(this, "route_configuration_override");
+  public get routeConfigurationOverride() {
+    return this._routeConfigurationOverride;
   }
-  public putRouteConfigurationOverrideAction(value: CdnFrontdoorRuleActionsRouteConfigurationOverrideAction) {
-    this._routeConfigurationOverrideAction.internalValue = value;
+  public putRouteConfigurationOverride(value: CdnFrontdoorRuleActionsRouteConfigurationOverride) {
+    this._routeConfigurationOverride.internalValue = value;
   }
-  public resetRouteConfigurationOverrideAction() {
-    this._routeConfigurationOverrideAction.internalValue = undefined;
+  public resetRouteConfigurationOverride() {
+    this._routeConfigurationOverride.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get routeConfigurationOverrideActionInput() {
-    return this._routeConfigurationOverrideAction.internalValue;
+  public get routeConfigurationOverrideInput() {
+    return this._routeConfigurationOverride.internalValue;
   }
 
-  // url_redirect_action - computed: false, optional: true, required: false
-  private _urlRedirectAction = new CdnFrontdoorRuleActionsUrlRedirectActionOutputReference(this, "url_redirect_action");
-  public get urlRedirectAction() {
-    return this._urlRedirectAction;
+  // url_redirect - computed: false, optional: true, required: false
+  private _urlRedirect = new CdnFrontdoorRuleActionsUrlRedirectOutputReference(this, "url_redirect");
+  public get urlRedirect() {
+    return this._urlRedirect;
   }
-  public putUrlRedirectAction(value: CdnFrontdoorRuleActionsUrlRedirectAction) {
-    this._urlRedirectAction.internalValue = value;
+  public putUrlRedirect(value: CdnFrontdoorRuleActionsUrlRedirect) {
+    this._urlRedirect.internalValue = value;
   }
-  public resetUrlRedirectAction() {
-    this._urlRedirectAction.internalValue = undefined;
+  public resetUrlRedirect() {
+    this._urlRedirect.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get urlRedirectActionInput() {
-    return this._urlRedirectAction.internalValue;
+  public get urlRedirectInput() {
+    return this._urlRedirect.internalValue;
   }
 
-  // url_rewrite_action - computed: false, optional: true, required: false
-  private _urlRewriteAction = new CdnFrontdoorRuleActionsUrlRewriteActionOutputReference(this, "url_rewrite_action");
-  public get urlRewriteAction() {
-    return this._urlRewriteAction;
+  // url_rewrite - computed: false, optional: true, required: false
+  private _urlRewrite = new CdnFrontdoorRuleActionsUrlRewriteOutputReference(this, "url_rewrite");
+  public get urlRewrite() {
+    return this._urlRewrite;
   }
-  public putUrlRewriteAction(value: CdnFrontdoorRuleActionsUrlRewriteAction) {
-    this._urlRewriteAction.internalValue = value;
+  public putUrlRewrite(value: CdnFrontdoorRuleActionsUrlRewrite) {
+    this._urlRewrite.internalValue = value;
   }
-  public resetUrlRewriteAction() {
-    this._urlRewriteAction.internalValue = undefined;
+  public resetUrlRewrite() {
+    this._urlRewrite.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get urlRewriteActionInput() {
-    return this._urlRewriteAction.internalValue;
+  public get urlRewriteInput() {
+    return this._urlRewrite.internalValue;
   }
 }
-export interface CdnFrontdoorRuleConditionsClientPortCondition {
+export interface CdnFrontdoorRuleConditionsClientPort {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#match_values CdnFrontdoorRule#match_values}
-  */
-  readonly matchValues?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#negate_condition CdnFrontdoorRule#negate_condition}
-  */
-  readonly negateCondition?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
   */
   readonly operator: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}
+  */
+  readonly values?: string[];
 }
 
-export function cdnFrontdoorRuleConditionsClientPortConditionToTerraform(struct?: CdnFrontdoorRuleConditionsClientPortCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsClientPortToTerraform(struct?: CdnFrontdoorRuleConditionsClientPort | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    match_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValues),
-    negate_condition: cdktn.booleanToTerraform(struct!.negateCondition),
     operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function cdnFrontdoorRuleConditionsClientPortConditionToHclTerraform(struct?: CdnFrontdoorRuleConditionsClientPortCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsClientPortToHclTerraform(struct?: CdnFrontdoorRuleConditionsClientPort | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    match_values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchValues),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    negate_condition: {
-      value: cdktn.booleanToHclTerraform(struct!.negateCondition),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
     operator: {
       value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
     },
   };
 
@@ -1359,7 +1511,7 @@ export function cdnFrontdoorRuleConditionsClientPortConditionToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorRuleConditionsClientPortConditionOutputReference extends cdktn.ComplexObject {
+export class CdnFrontdoorRuleConditionsClientPortOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -1373,34 +1525,29 @@ export class CdnFrontdoorRuleConditionsClientPortConditionOutputReference extend
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CdnFrontdoorRuleConditionsClientPortCondition | cdktn.IResolvable | undefined {
+  public get internalValue(): CdnFrontdoorRuleConditionsClientPort | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._matchValues !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.matchValues = this._matchValues;
-    }
-    if (this._negateCondition !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.negateCondition = this._negateCondition;
-    }
     if (this._operator !== undefined) {
       hasAnyValues = true;
       internalValueResult.operator = this._operator;
     }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorRuleConditionsClientPortCondition | cdktn.IResolvable | undefined) {
+  public set internalValue(value: CdnFrontdoorRuleConditionsClientPort | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._matchValues = undefined;
-      this._negateCondition = undefined;
       this._operator = undefined;
+      this._values = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -1409,42 +1556,9 @@ export class CdnFrontdoorRuleConditionsClientPortConditionOutputReference extend
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._matchValues = value.matchValues;
-      this._negateCondition = value.negateCondition;
       this._operator = value.operator;
+      this._values = value.values;
     }
-  }
-
-  // match_values - computed: false, optional: true, required: false
-  private _matchValues?: string[]; 
-  public get matchValues() {
-    return this.getListAttribute('match_values');
-  }
-  public set matchValues(value: string[]) {
-    this._matchValues = value;
-  }
-  public resetMatchValues() {
-    this._matchValues = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get matchValuesInput() {
-    return this._matchValues;
-  }
-
-  // negate_condition - computed: false, optional: true, required: false
-  private _negateCondition?: boolean | cdktn.IResolvable; 
-  public get negateCondition() {
-    return this.getBooleanAttribute('negate_condition');
-  }
-  public set negateCondition(value: boolean | cdktn.IResolvable) {
-    this._negateCondition = value;
-  }
-  public resetNegateCondition() {
-    this._negateCondition = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get negateConditionInput() {
-    return this._negateCondition;
   }
 
   // operator - computed: false, optional: false, required: true
@@ -1459,10 +1573,26 @@ export class CdnFrontdoorRuleConditionsClientPortConditionOutputReference extend
   public get operatorInput() {
     return this._operator;
   }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
 }
 
-export class CdnFrontdoorRuleConditionsClientPortConditionList extends cdktn.ComplexList {
-  public internalValue? : CdnFrontdoorRuleConditionsClientPortCondition[] | cdktn.IResolvable
+export class CdnFrontdoorRuleConditionsClientPortList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorRuleConditionsClientPort[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -1476,82 +1606,49 @@ export class CdnFrontdoorRuleConditionsClientPortConditionList extends cdktn.Com
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): CdnFrontdoorRuleConditionsClientPortConditionOutputReference {
-    return new CdnFrontdoorRuleConditionsClientPortConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): CdnFrontdoorRuleConditionsClientPortOutputReference {
+    return new CdnFrontdoorRuleConditionsClientPortOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface CdnFrontdoorRuleConditionsCookiesCondition {
+export interface CdnFrontdoorRuleConditionsDeviceType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#cookie_name CdnFrontdoorRule#cookie_name}
-  */
-  readonly cookieName: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#match_values CdnFrontdoorRule#match_values}
-  */
-  readonly matchValues?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#negate_condition CdnFrontdoorRule#negate_condition}
-  */
-  readonly negateCondition?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}
   */
-  readonly transforms?: string[];
+  readonly values: string[];
 }
 
-export function cdnFrontdoorRuleConditionsCookiesConditionToTerraform(struct?: CdnFrontdoorRuleConditionsCookiesCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsDeviceTypeToTerraform(struct?: CdnFrontdoorRuleConditionsDeviceType | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    cookie_name: cdktn.stringToTerraform(struct!.cookieName),
-    match_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValues),
-    negate_condition: cdktn.booleanToTerraform(struct!.negateCondition),
     operator: cdktn.stringToTerraform(struct!.operator),
-    transforms: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.transforms),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function cdnFrontdoorRuleConditionsCookiesConditionToHclTerraform(struct?: CdnFrontdoorRuleConditionsCookiesCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsDeviceTypeToHclTerraform(struct?: CdnFrontdoorRuleConditionsDeviceType | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    cookie_name: {
-      value: cdktn.stringToHclTerraform(struct!.cookieName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    match_values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchValues),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    negate_condition: {
-      value: cdktn.booleanToHclTerraform(struct!.negateCondition),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
     operator: {
       value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
-    transforms: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.transforms),
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
-      type: "set",
+      type: "list",
       storageClassType: "stringList",
     },
   };
@@ -1560,7 +1657,7 @@ export function cdnFrontdoorRuleConditionsCookiesConditionToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorRuleConditionsCookiesConditionOutputReference extends cdktn.ComplexObject {
+export class CdnFrontdoorRuleConditionsDeviceTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -1574,44 +1671,29 @@ export class CdnFrontdoorRuleConditionsCookiesConditionOutputReference extends c
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CdnFrontdoorRuleConditionsCookiesCondition | cdktn.IResolvable | undefined {
+  public get internalValue(): CdnFrontdoorRuleConditionsDeviceType | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cookieName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.cookieName = this._cookieName;
-    }
-    if (this._matchValues !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.matchValues = this._matchValues;
-    }
-    if (this._negateCondition !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.negateCondition = this._negateCondition;
-    }
     if (this._operator !== undefined) {
       hasAnyValues = true;
       internalValueResult.operator = this._operator;
     }
-    if (this._transforms !== undefined) {
+    if (this._values !== undefined) {
       hasAnyValues = true;
-      internalValueResult.transforms = this._transforms;
+      internalValueResult.values = this._values;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorRuleConditionsCookiesCondition | cdktn.IResolvable | undefined) {
+  public set internalValue(value: CdnFrontdoorRuleConditionsDeviceType | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._cookieName = undefined;
-      this._matchValues = undefined;
-      this._negateCondition = undefined;
       this._operator = undefined;
-      this._transforms = undefined;
+      this._values = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -1620,57 +1702,169 @@ export class CdnFrontdoorRuleConditionsCookiesConditionOutputReference extends c
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._cookieName = value.cookieName;
-      this._matchValues = value.matchValues;
-      this._negateCondition = value.negateCondition;
       this._operator = value.operator;
-      this._transforms = value.transforms;
+      this._values = value.values;
     }
   }
 
-  // cookie_name - computed: false, optional: false, required: true
-  private _cookieName?: string; 
-  public get cookieName() {
-    return this.getStringAttribute('cookie_name');
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
   }
-  public set cookieName(value: string) {
-    this._cookieName = value;
+  public set operator(value: string) {
+    this._operator = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get cookieNameInput() {
-    return this._cookieName;
+  public get operatorInput() {
+    return this._operator;
   }
 
-  // match_values - computed: false, optional: true, required: false
-  private _matchValues?: string[]; 
-  public get matchValues() {
-    return this.getListAttribute('match_values');
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
   }
-  public set matchValues(value: string[]) {
-    this._matchValues = value;
-  }
-  public resetMatchValues() {
-    this._matchValues = undefined;
+  public set values(value: string[]) {
+    this._values = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get matchValuesInput() {
-    return this._matchValues;
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class CdnFrontdoorRuleConditionsDeviceTypeList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorRuleConditionsDeviceType[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
-  // negate_condition - computed: false, optional: true, required: false
-  private _negateCondition?: boolean | cdktn.IResolvable; 
-  public get negateCondition() {
-    return this.getBooleanAttribute('negate_condition');
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CdnFrontdoorRuleConditionsDeviceTypeOutputReference {
+    return new CdnFrontdoorRuleConditionsDeviceTypeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
-  public set negateCondition(value: boolean | cdktn.IResolvable) {
-    this._negateCondition = value;
+}
+export interface CdnFrontdoorRuleConditionsHostName {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
+  */
+  readonly operator: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}
+  */
+  readonly transforms?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}
+  */
+  readonly values?: string[];
+}
+
+export function cdnFrontdoorRuleConditionsHostNameToTerraform(struct?: CdnFrontdoorRuleConditionsHostName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
-  public resetNegateCondition() {
-    this._negateCondition = undefined;
+  return {
+    operator: cdktn.stringToTerraform(struct!.operator),
+    transforms: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.transforms),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
-  // Temporarily expose input value. Use with caution.
-  public get negateConditionInput() {
-    return this._negateCondition;
+}
+
+
+export function cdnFrontdoorRuleConditionsHostNameToHclTerraform(struct?: CdnFrontdoorRuleConditionsHostName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    operator: {
+      value: cdktn.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    transforms: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.transforms),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CdnFrontdoorRuleConditionsHostNameOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CdnFrontdoorRuleConditionsHostName | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._transforms !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transforms = this._transforms;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CdnFrontdoorRuleConditionsHostName | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._operator = undefined;
+      this._transforms = undefined;
+      this._values = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._operator = value.operator;
+      this._transforms = value.transforms;
+      this._values = value.values;
+    }
   }
 
   // operator - computed: false, optional: false, required: true
@@ -1701,10 +1895,26 @@ export class CdnFrontdoorRuleConditionsCookiesConditionOutputReference extends c
   public get transformsInput() {
     return this._transforms;
   }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
 }
 
-export class CdnFrontdoorRuleConditionsCookiesConditionList extends cdktn.ComplexList {
-  public internalValue? : CdnFrontdoorRuleConditionsCookiesCondition[] | cdktn.IResolvable
+export class CdnFrontdoorRuleConditionsHostNameList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorRuleConditionsHostName[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -1718,69 +1928,47 @@ export class CdnFrontdoorRuleConditionsCookiesConditionList extends cdktn.Comple
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): CdnFrontdoorRuleConditionsCookiesConditionOutputReference {
-    return new CdnFrontdoorRuleConditionsCookiesConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): CdnFrontdoorRuleConditionsHostNameOutputReference {
+    return new CdnFrontdoorRuleConditionsHostNameOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface CdnFrontdoorRuleConditionsHostNameCondition {
+export interface CdnFrontdoorRuleConditionsHttpVersion {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#match_values CdnFrontdoorRule#match_values}
-  */
-  readonly matchValues?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#negate_condition CdnFrontdoorRule#negate_condition}
-  */
-  readonly negateCondition?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}
   */
-  readonly transforms?: string[];
+  readonly values: string[];
 }
 
-export function cdnFrontdoorRuleConditionsHostNameConditionToTerraform(struct?: CdnFrontdoorRuleConditionsHostNameCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsHttpVersionToTerraform(struct?: CdnFrontdoorRuleConditionsHttpVersion | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    match_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValues),
-    negate_condition: cdktn.booleanToTerraform(struct!.negateCondition),
     operator: cdktn.stringToTerraform(struct!.operator),
-    transforms: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.transforms),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function cdnFrontdoorRuleConditionsHostNameConditionToHclTerraform(struct?: CdnFrontdoorRuleConditionsHostNameCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsHttpVersionToHclTerraform(struct?: CdnFrontdoorRuleConditionsHttpVersion | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    match_values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchValues),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    negate_condition: {
-      value: cdktn.booleanToHclTerraform(struct!.negateCondition),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
     operator: {
       value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
-    transforms: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.transforms),
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1791,7 +1979,7 @@ export function cdnFrontdoorRuleConditionsHostNameConditionToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorRuleConditionsHostNameConditionOutputReference extends cdktn.ComplexObject {
+export class CdnFrontdoorRuleConditionsHttpVersionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -1805,19 +1993,180 @@ export class CdnFrontdoorRuleConditionsHostNameConditionOutputReference extends 
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CdnFrontdoorRuleConditionsHostNameCondition | cdktn.IResolvable | undefined {
+  public get internalValue(): CdnFrontdoorRuleConditionsHttpVersion | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._matchValues !== undefined) {
+    if (this._operator !== undefined) {
       hasAnyValues = true;
-      internalValueResult.matchValues = this._matchValues;
+      internalValueResult.operator = this._operator;
     }
-    if (this._negateCondition !== undefined) {
+    if (this._values !== undefined) {
       hasAnyValues = true;
-      internalValueResult.negateCondition = this._negateCondition;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CdnFrontdoorRuleConditionsHttpVersion | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._operator = undefined;
+      this._values = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._operator = value.operator;
+      this._values = value.values;
+    }
+  }
+
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class CdnFrontdoorRuleConditionsHttpVersionList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorRuleConditionsHttpVersion[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CdnFrontdoorRuleConditionsHttpVersionOutputReference {
+    return new CdnFrontdoorRuleConditionsHttpVersionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CdnFrontdoorRuleConditionsPostArgument {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#name CdnFrontdoorRule#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
+  */
+  readonly operator: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}
+  */
+  readonly transforms?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}
+  */
+  readonly values?: string[];
+}
+
+export function cdnFrontdoorRuleConditionsPostArgumentToTerraform(struct?: CdnFrontdoorRuleConditionsPostArgument | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    name: cdktn.stringToTerraform(struct!.name),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    transforms: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.transforms),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function cdnFrontdoorRuleConditionsPostArgumentToHclTerraform(struct?: CdnFrontdoorRuleConditionsPostArgument | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    operator: {
+      value: cdktn.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    transforms: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.transforms),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CdnFrontdoorRuleConditionsPostArgumentOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CdnFrontdoorRuleConditionsPostArgument | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
     }
     if (this._operator !== undefined) {
       hasAnyValues = true;
@@ -1827,17 +2176,21 @@ export class CdnFrontdoorRuleConditionsHostNameConditionOutputReference extends 
       hasAnyValues = true;
       internalValueResult.transforms = this._transforms;
     }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorRuleConditionsHostNameCondition | cdktn.IResolvable | undefined) {
+  public set internalValue(value: CdnFrontdoorRuleConditionsPostArgument | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._matchValues = undefined;
-      this._negateCondition = undefined;
+      this._name = undefined;
       this._operator = undefined;
       this._transforms = undefined;
+      this._values = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -1846,43 +2199,24 @@ export class CdnFrontdoorRuleConditionsHostNameConditionOutputReference extends 
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._matchValues = value.matchValues;
-      this._negateCondition = value.negateCondition;
+      this._name = value.name;
       this._operator = value.operator;
       this._transforms = value.transforms;
+      this._values = value.values;
     }
   }
 
-  // match_values - computed: false, optional: true, required: false
-  private _matchValues?: string[]; 
-  public get matchValues() {
-    return this.getListAttribute('match_values');
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
   }
-  public set matchValues(value: string[]) {
-    this._matchValues = value;
-  }
-  public resetMatchValues() {
-    this._matchValues = undefined;
+  public set name(value: string) {
+    this._name = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get matchValuesInput() {
-    return this._matchValues;
-  }
-
-  // negate_condition - computed: false, optional: true, required: false
-  private _negateCondition?: boolean | cdktn.IResolvable; 
-  public get negateCondition() {
-    return this.getBooleanAttribute('negate_condition');
-  }
-  public set negateCondition(value: boolean | cdktn.IResolvable) {
-    this._negateCondition = value;
-  }
-  public resetNegateCondition() {
-    this._negateCondition = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get negateConditionInput() {
-    return this._negateCondition;
+  public get nameInput() {
+    return this._name;
   }
 
   // operator - computed: false, optional: false, required: true
@@ -1913,10 +2247,26 @@ export class CdnFrontdoorRuleConditionsHostNameConditionOutputReference extends 
   public get transformsInput() {
     return this._transforms;
   }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
 }
 
-export class CdnFrontdoorRuleConditionsHostNameConditionList extends cdktn.ComplexList {
-  public internalValue? : CdnFrontdoorRuleConditionsHostNameCondition[] | cdktn.IResolvable
+export class CdnFrontdoorRuleConditionsPostArgumentList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorRuleConditionsPostArgument[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -1930,664 +2280,44 @@ export class CdnFrontdoorRuleConditionsHostNameConditionList extends cdktn.Compl
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): CdnFrontdoorRuleConditionsHostNameConditionOutputReference {
-    return new CdnFrontdoorRuleConditionsHostNameConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): CdnFrontdoorRuleConditionsPostArgumentOutputReference {
+    return new CdnFrontdoorRuleConditionsPostArgumentOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface CdnFrontdoorRuleConditionsHttpVersionCondition {
+export interface CdnFrontdoorRuleConditionsQueryString {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#match_values CdnFrontdoorRule#match_values}
-  */
-  readonly matchValues: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#negate_condition CdnFrontdoorRule#negate_condition}
-  */
-  readonly negateCondition?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
-  */
-  readonly operator?: string;
-}
-
-export function cdnFrontdoorRuleConditionsHttpVersionConditionToTerraform(struct?: CdnFrontdoorRuleConditionsHttpVersionCondition | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    match_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValues),
-    negate_condition: cdktn.booleanToTerraform(struct!.negateCondition),
-    operator: cdktn.stringToTerraform(struct!.operator),
-  }
-}
-
-
-export function cdnFrontdoorRuleConditionsHttpVersionConditionToHclTerraform(struct?: CdnFrontdoorRuleConditionsHttpVersionCondition | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    match_values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchValues),
-      isBlock: false,
-      type: "set",
-      storageClassType: "stringList",
-    },
-    negate_condition: {
-      value: cdktn.booleanToHclTerraform(struct!.negateCondition),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    operator: {
-      value: cdktn.stringToHclTerraform(struct!.operator),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CdnFrontdoorRuleConditionsHttpVersionConditionOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CdnFrontdoorRuleConditionsHttpVersionCondition | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._matchValues !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.matchValues = this._matchValues;
-    }
-    if (this._negateCondition !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.negateCondition = this._negateCondition;
-    }
-    if (this._operator !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.operator = this._operator;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CdnFrontdoorRuleConditionsHttpVersionCondition | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._matchValues = undefined;
-      this._negateCondition = undefined;
-      this._operator = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._matchValues = value.matchValues;
-      this._negateCondition = value.negateCondition;
-      this._operator = value.operator;
-    }
-  }
-
-  // match_values - computed: false, optional: false, required: true
-  private _matchValues?: string[]; 
-  public get matchValues() {
-    return cdktn.Fn.tolist(this.getListAttribute('match_values'));
-  }
-  public set matchValues(value: string[]) {
-    this._matchValues = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get matchValuesInput() {
-    return this._matchValues;
-  }
-
-  // negate_condition - computed: false, optional: true, required: false
-  private _negateCondition?: boolean | cdktn.IResolvable; 
-  public get negateCondition() {
-    return this.getBooleanAttribute('negate_condition');
-  }
-  public set negateCondition(value: boolean | cdktn.IResolvable) {
-    this._negateCondition = value;
-  }
-  public resetNegateCondition() {
-    this._negateCondition = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get negateConditionInput() {
-    return this._negateCondition;
-  }
-
-  // operator - computed: false, optional: true, required: false
-  private _operator?: string; 
-  public get operator() {
-    return this.getStringAttribute('operator');
-  }
-  public set operator(value: string) {
-    this._operator = value;
-  }
-  public resetOperator() {
-    this._operator = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get operatorInput() {
-    return this._operator;
-  }
-}
-
-export class CdnFrontdoorRuleConditionsHttpVersionConditionList extends cdktn.ComplexList {
-  public internalValue? : CdnFrontdoorRuleConditionsHttpVersionCondition[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CdnFrontdoorRuleConditionsHttpVersionConditionOutputReference {
-    return new CdnFrontdoorRuleConditionsHttpVersionConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface CdnFrontdoorRuleConditionsIsDeviceCondition {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#match_values CdnFrontdoorRule#match_values}
-  */
-  readonly matchValues?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#negate_condition CdnFrontdoorRule#negate_condition}
-  */
-  readonly negateCondition?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
-  */
-  readonly operator?: string;
-}
-
-export function cdnFrontdoorRuleConditionsIsDeviceConditionToTerraform(struct?: CdnFrontdoorRuleConditionsIsDeviceCondition | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    match_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValues),
-    negate_condition: cdktn.booleanToTerraform(struct!.negateCondition),
-    operator: cdktn.stringToTerraform(struct!.operator),
-  }
-}
-
-
-export function cdnFrontdoorRuleConditionsIsDeviceConditionToHclTerraform(struct?: CdnFrontdoorRuleConditionsIsDeviceCondition | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    match_values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchValues),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    negate_condition: {
-      value: cdktn.booleanToHclTerraform(struct!.negateCondition),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    operator: {
-      value: cdktn.stringToHclTerraform(struct!.operator),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CdnFrontdoorRuleConditionsIsDeviceConditionOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CdnFrontdoorRuleConditionsIsDeviceCondition | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._matchValues !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.matchValues = this._matchValues;
-    }
-    if (this._negateCondition !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.negateCondition = this._negateCondition;
-    }
-    if (this._operator !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.operator = this._operator;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CdnFrontdoorRuleConditionsIsDeviceCondition | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._matchValues = undefined;
-      this._negateCondition = undefined;
-      this._operator = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._matchValues = value.matchValues;
-      this._negateCondition = value.negateCondition;
-      this._operator = value.operator;
-    }
-  }
-
-  // match_values - computed: false, optional: true, required: false
-  private _matchValues?: string[]; 
-  public get matchValues() {
-    return this.getListAttribute('match_values');
-  }
-  public set matchValues(value: string[]) {
-    this._matchValues = value;
-  }
-  public resetMatchValues() {
-    this._matchValues = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get matchValuesInput() {
-    return this._matchValues;
-  }
-
-  // negate_condition - computed: false, optional: true, required: false
-  private _negateCondition?: boolean | cdktn.IResolvable; 
-  public get negateCondition() {
-    return this.getBooleanAttribute('negate_condition');
-  }
-  public set negateCondition(value: boolean | cdktn.IResolvable) {
-    this._negateCondition = value;
-  }
-  public resetNegateCondition() {
-    this._negateCondition = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get negateConditionInput() {
-    return this._negateCondition;
-  }
-
-  // operator - computed: false, optional: true, required: false
-  private _operator?: string; 
-  public get operator() {
-    return this.getStringAttribute('operator');
-  }
-  public set operator(value: string) {
-    this._operator = value;
-  }
-  public resetOperator() {
-    this._operator = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get operatorInput() {
-    return this._operator;
-  }
-}
-
-export class CdnFrontdoorRuleConditionsIsDeviceConditionList extends cdktn.ComplexList {
-  public internalValue? : CdnFrontdoorRuleConditionsIsDeviceCondition[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CdnFrontdoorRuleConditionsIsDeviceConditionOutputReference {
-    return new CdnFrontdoorRuleConditionsIsDeviceConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface CdnFrontdoorRuleConditionsPostArgsCondition {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#match_values CdnFrontdoorRule#match_values}
-  */
-  readonly matchValues?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#negate_condition CdnFrontdoorRule#negate_condition}
-  */
-  readonly negateCondition?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#post_args_name CdnFrontdoorRule#post_args_name}
-  */
-  readonly postArgsName: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}
   */
   readonly transforms?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}
+  */
+  readonly values?: string[];
 }
 
-export function cdnFrontdoorRuleConditionsPostArgsConditionToTerraform(struct?: CdnFrontdoorRuleConditionsPostArgsCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsQueryStringToTerraform(struct?: CdnFrontdoorRuleConditionsQueryString | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    match_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValues),
-    negate_condition: cdktn.booleanToTerraform(struct!.negateCondition),
     operator: cdktn.stringToTerraform(struct!.operator),
-    post_args_name: cdktn.stringToTerraform(struct!.postArgsName),
     transforms: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.transforms),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function cdnFrontdoorRuleConditionsPostArgsConditionToHclTerraform(struct?: CdnFrontdoorRuleConditionsPostArgsCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsQueryStringToHclTerraform(struct?: CdnFrontdoorRuleConditionsQueryString | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    match_values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchValues),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    negate_condition: {
-      value: cdktn.booleanToHclTerraform(struct!.negateCondition),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    operator: {
-      value: cdktn.stringToHclTerraform(struct!.operator),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    post_args_name: {
-      value: cdktn.stringToHclTerraform(struct!.postArgsName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    transforms: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.transforms),
-      isBlock: false,
-      type: "set",
-      storageClassType: "stringList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CdnFrontdoorRuleConditionsPostArgsConditionOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CdnFrontdoorRuleConditionsPostArgsCondition | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._matchValues !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.matchValues = this._matchValues;
-    }
-    if (this._negateCondition !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.negateCondition = this._negateCondition;
-    }
-    if (this._operator !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.operator = this._operator;
-    }
-    if (this._postArgsName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.postArgsName = this._postArgsName;
-    }
-    if (this._transforms !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.transforms = this._transforms;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CdnFrontdoorRuleConditionsPostArgsCondition | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._matchValues = undefined;
-      this._negateCondition = undefined;
-      this._operator = undefined;
-      this._postArgsName = undefined;
-      this._transforms = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._matchValues = value.matchValues;
-      this._negateCondition = value.negateCondition;
-      this._operator = value.operator;
-      this._postArgsName = value.postArgsName;
-      this._transforms = value.transforms;
-    }
-  }
-
-  // match_values - computed: false, optional: true, required: false
-  private _matchValues?: string[]; 
-  public get matchValues() {
-    return this.getListAttribute('match_values');
-  }
-  public set matchValues(value: string[]) {
-    this._matchValues = value;
-  }
-  public resetMatchValues() {
-    this._matchValues = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get matchValuesInput() {
-    return this._matchValues;
-  }
-
-  // negate_condition - computed: false, optional: true, required: false
-  private _negateCondition?: boolean | cdktn.IResolvable; 
-  public get negateCondition() {
-    return this.getBooleanAttribute('negate_condition');
-  }
-  public set negateCondition(value: boolean | cdktn.IResolvable) {
-    this._negateCondition = value;
-  }
-  public resetNegateCondition() {
-    this._negateCondition = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get negateConditionInput() {
-    return this._negateCondition;
-  }
-
-  // operator - computed: false, optional: false, required: true
-  private _operator?: string; 
-  public get operator() {
-    return this.getStringAttribute('operator');
-  }
-  public set operator(value: string) {
-    this._operator = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get operatorInput() {
-    return this._operator;
-  }
-
-  // post_args_name - computed: false, optional: false, required: true
-  private _postArgsName?: string; 
-  public get postArgsName() {
-    return this.getStringAttribute('post_args_name');
-  }
-  public set postArgsName(value: string) {
-    this._postArgsName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get postArgsNameInput() {
-    return this._postArgsName;
-  }
-
-  // transforms - computed: false, optional: true, required: false
-  private _transforms?: string[]; 
-  public get transforms() {
-    return cdktn.Fn.tolist(this.getListAttribute('transforms'));
-  }
-  public set transforms(value: string[]) {
-    this._transforms = value;
-  }
-  public resetTransforms() {
-    this._transforms = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get transformsInput() {
-    return this._transforms;
-  }
-}
-
-export class CdnFrontdoorRuleConditionsPostArgsConditionList extends cdktn.ComplexList {
-  public internalValue? : CdnFrontdoorRuleConditionsPostArgsCondition[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CdnFrontdoorRuleConditionsPostArgsConditionOutputReference {
-    return new CdnFrontdoorRuleConditionsPostArgsConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface CdnFrontdoorRuleConditionsQueryStringCondition {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#match_values CdnFrontdoorRule#match_values}
-  */
-  readonly matchValues?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#negate_condition CdnFrontdoorRule#negate_condition}
-  */
-  readonly negateCondition?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
-  */
-  readonly operator: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}
-  */
-  readonly transforms?: string[];
-}
-
-export function cdnFrontdoorRuleConditionsQueryStringConditionToTerraform(struct?: CdnFrontdoorRuleConditionsQueryStringCondition | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    match_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValues),
-    negate_condition: cdktn.booleanToTerraform(struct!.negateCondition),
-    operator: cdktn.stringToTerraform(struct!.operator),
-    transforms: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.transforms),
-  }
-}
-
-
-export function cdnFrontdoorRuleConditionsQueryStringConditionToHclTerraform(struct?: CdnFrontdoorRuleConditionsQueryStringCondition | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    match_values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchValues),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    negate_condition: {
-      value: cdktn.booleanToHclTerraform(struct!.negateCondition),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
     operator: {
       value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
@@ -2600,13 +2330,19 @@ export function cdnFrontdoorRuleConditionsQueryStringConditionToHclTerraform(str
       type: "set",
       storageClassType: "stringList",
     },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
   };
 
   // remove undefined attributes
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorRuleConditionsQueryStringConditionOutputReference extends cdktn.ComplexObject {
+export class CdnFrontdoorRuleConditionsQueryStringOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -2620,20 +2356,12 @@ export class CdnFrontdoorRuleConditionsQueryStringConditionOutputReference exten
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CdnFrontdoorRuleConditionsQueryStringCondition | cdktn.IResolvable | undefined {
+  public get internalValue(): CdnFrontdoorRuleConditionsQueryString | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._matchValues !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.matchValues = this._matchValues;
-    }
-    if (this._negateCondition !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.negateCondition = this._negateCondition;
-    }
     if (this._operator !== undefined) {
       hasAnyValues = true;
       internalValueResult.operator = this._operator;
@@ -2642,17 +2370,20 @@ export class CdnFrontdoorRuleConditionsQueryStringConditionOutputReference exten
       hasAnyValues = true;
       internalValueResult.transforms = this._transforms;
     }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorRuleConditionsQueryStringCondition | cdktn.IResolvable | undefined) {
+  public set internalValue(value: CdnFrontdoorRuleConditionsQueryString | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._matchValues = undefined;
-      this._negateCondition = undefined;
       this._operator = undefined;
       this._transforms = undefined;
+      this._values = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -2661,43 +2392,10 @@ export class CdnFrontdoorRuleConditionsQueryStringConditionOutputReference exten
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._matchValues = value.matchValues;
-      this._negateCondition = value.negateCondition;
       this._operator = value.operator;
       this._transforms = value.transforms;
+      this._values = value.values;
     }
-  }
-
-  // match_values - computed: false, optional: true, required: false
-  private _matchValues?: string[]; 
-  public get matchValues() {
-    return this.getListAttribute('match_values');
-  }
-  public set matchValues(value: string[]) {
-    this._matchValues = value;
-  }
-  public resetMatchValues() {
-    this._matchValues = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get matchValuesInput() {
-    return this._matchValues;
-  }
-
-  // negate_condition - computed: false, optional: true, required: false
-  private _negateCondition?: boolean | cdktn.IResolvable; 
-  public get negateCondition() {
-    return this.getBooleanAttribute('negate_condition');
-  }
-  public set negateCondition(value: boolean | cdktn.IResolvable) {
-    this._negateCondition = value;
-  }
-  public resetNegateCondition() {
-    this._negateCondition = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get negateConditionInput() {
-    return this._negateCondition;
   }
 
   // operator - computed: false, optional: false, required: true
@@ -2728,10 +2426,26 @@ export class CdnFrontdoorRuleConditionsQueryStringConditionOutputReference exten
   public get transformsInput() {
     return this._transforms;
   }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
 }
 
-export class CdnFrontdoorRuleConditionsQueryStringConditionList extends cdktn.ComplexList {
-  public internalValue? : CdnFrontdoorRuleConditionsQueryStringCondition[] | cdktn.IResolvable
+export class CdnFrontdoorRuleConditionsQueryStringList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorRuleConditionsQueryString[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -2745,61 +2459,50 @@ export class CdnFrontdoorRuleConditionsQueryStringConditionList extends cdktn.Co
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): CdnFrontdoorRuleConditionsQueryStringConditionOutputReference {
-    return new CdnFrontdoorRuleConditionsQueryStringConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): CdnFrontdoorRuleConditionsQueryStringOutputReference {
+    return new CdnFrontdoorRuleConditionsQueryStringOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface CdnFrontdoorRuleConditionsRemoteAddressCondition {
+export interface CdnFrontdoorRuleConditionsRemoteAddress {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#match_values CdnFrontdoorRule#match_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
   */
-  readonly matchValues?: string[];
+  readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#negate_condition CdnFrontdoorRule#negate_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}
   */
-  readonly negateCondition?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
-  */
-  readonly operator?: string;
+  readonly values: string[];
 }
 
-export function cdnFrontdoorRuleConditionsRemoteAddressConditionToTerraform(struct?: CdnFrontdoorRuleConditionsRemoteAddressCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsRemoteAddressToTerraform(struct?: CdnFrontdoorRuleConditionsRemoteAddress | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    match_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValues),
-    negate_condition: cdktn.booleanToTerraform(struct!.negateCondition),
     operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function cdnFrontdoorRuleConditionsRemoteAddressConditionToHclTerraform(struct?: CdnFrontdoorRuleConditionsRemoteAddressCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsRemoteAddressToHclTerraform(struct?: CdnFrontdoorRuleConditionsRemoteAddress | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    match_values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchValues),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    negate_condition: {
-      value: cdktn.booleanToHclTerraform(struct!.negateCondition),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
     operator: {
       value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
     },
   };
 
@@ -2807,7 +2510,7 @@ export function cdnFrontdoorRuleConditionsRemoteAddressConditionToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorRuleConditionsRemoteAddressConditionOutputReference extends cdktn.ComplexObject {
+export class CdnFrontdoorRuleConditionsRemoteAddressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -2821,34 +2524,29 @@ export class CdnFrontdoorRuleConditionsRemoteAddressConditionOutputReference ext
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CdnFrontdoorRuleConditionsRemoteAddressCondition | cdktn.IResolvable | undefined {
+  public get internalValue(): CdnFrontdoorRuleConditionsRemoteAddress | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._matchValues !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.matchValues = this._matchValues;
-    }
-    if (this._negateCondition !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.negateCondition = this._negateCondition;
-    }
     if (this._operator !== undefined) {
       hasAnyValues = true;
       internalValueResult.operator = this._operator;
     }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorRuleConditionsRemoteAddressCondition | cdktn.IResolvable | undefined) {
+  public set internalValue(value: CdnFrontdoorRuleConditionsRemoteAddress | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._matchValues = undefined;
-      this._negateCondition = undefined;
       this._operator = undefined;
+      this._values = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -2857,45 +2555,12 @@ export class CdnFrontdoorRuleConditionsRemoteAddressConditionOutputReference ext
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._matchValues = value.matchValues;
-      this._negateCondition = value.negateCondition;
       this._operator = value.operator;
+      this._values = value.values;
     }
   }
 
-  // match_values - computed: false, optional: true, required: false
-  private _matchValues?: string[]; 
-  public get matchValues() {
-    return this.getListAttribute('match_values');
-  }
-  public set matchValues(value: string[]) {
-    this._matchValues = value;
-  }
-  public resetMatchValues() {
-    this._matchValues = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get matchValuesInput() {
-    return this._matchValues;
-  }
-
-  // negate_condition - computed: false, optional: true, required: false
-  private _negateCondition?: boolean | cdktn.IResolvable; 
-  public get negateCondition() {
-    return this.getBooleanAttribute('negate_condition');
-  }
-  public set negateCondition(value: boolean | cdktn.IResolvable) {
-    this._negateCondition = value;
-  }
-  public resetNegateCondition() {
-    this._negateCondition = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get negateConditionInput() {
-    return this._negateCondition;
-  }
-
-  // operator - computed: false, optional: true, required: false
+  // operator - computed: false, optional: false, required: true
   private _operator?: string; 
   public get operator() {
     return this.getStringAttribute('operator');
@@ -2903,17 +2568,27 @@ export class CdnFrontdoorRuleConditionsRemoteAddressConditionOutputReference ext
   public set operator(value: string) {
     this._operator = value;
   }
-  public resetOperator() {
-    this._operator = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get operatorInput() {
     return this._operator;
   }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
 }
 
-export class CdnFrontdoorRuleConditionsRemoteAddressConditionList extends cdktn.ComplexList {
-  public internalValue? : CdnFrontdoorRuleConditionsRemoteAddressCondition[] | cdktn.IResolvable
+export class CdnFrontdoorRuleConditionsRemoteAddressList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorRuleConditionsRemoteAddress[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -2927,61 +2602,44 @@ export class CdnFrontdoorRuleConditionsRemoteAddressConditionList extends cdktn.
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): CdnFrontdoorRuleConditionsRemoteAddressConditionOutputReference {
-    return new CdnFrontdoorRuleConditionsRemoteAddressConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): CdnFrontdoorRuleConditionsRemoteAddressOutputReference {
+    return new CdnFrontdoorRuleConditionsRemoteAddressOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface CdnFrontdoorRuleConditionsRequestBodyCondition {
+export interface CdnFrontdoorRuleConditionsRequestBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#match_values CdnFrontdoorRule#match_values}
-  */
-  readonly matchValues: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#negate_condition CdnFrontdoorRule#negate_condition}
-  */
-  readonly negateCondition?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}
   */
   readonly transforms?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}
+  */
+  readonly values?: string[];
 }
 
-export function cdnFrontdoorRuleConditionsRequestBodyConditionToTerraform(struct?: CdnFrontdoorRuleConditionsRequestBodyCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsRequestBodyToTerraform(struct?: CdnFrontdoorRuleConditionsRequestBody | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    match_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValues),
-    negate_condition: cdktn.booleanToTerraform(struct!.negateCondition),
     operator: cdktn.stringToTerraform(struct!.operator),
     transforms: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.transforms),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function cdnFrontdoorRuleConditionsRequestBodyConditionToHclTerraform(struct?: CdnFrontdoorRuleConditionsRequestBodyCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsRequestBodyToHclTerraform(struct?: CdnFrontdoorRuleConditionsRequestBody | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    match_values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchValues),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    negate_condition: {
-      value: cdktn.booleanToHclTerraform(struct!.negateCondition),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
     operator: {
       value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
@@ -2994,13 +2652,19 @@ export function cdnFrontdoorRuleConditionsRequestBodyConditionToHclTerraform(str
       type: "set",
       storageClassType: "stringList",
     },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
   };
 
   // remove undefined attributes
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorRuleConditionsRequestBodyConditionOutputReference extends cdktn.ComplexObject {
+export class CdnFrontdoorRuleConditionsRequestBodyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -3014,20 +2678,12 @@ export class CdnFrontdoorRuleConditionsRequestBodyConditionOutputReference exten
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CdnFrontdoorRuleConditionsRequestBodyCondition | cdktn.IResolvable | undefined {
+  public get internalValue(): CdnFrontdoorRuleConditionsRequestBody | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._matchValues !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.matchValues = this._matchValues;
-    }
-    if (this._negateCondition !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.negateCondition = this._negateCondition;
-    }
     if (this._operator !== undefined) {
       hasAnyValues = true;
       internalValueResult.operator = this._operator;
@@ -3036,17 +2692,20 @@ export class CdnFrontdoorRuleConditionsRequestBodyConditionOutputReference exten
       hasAnyValues = true;
       internalValueResult.transforms = this._transforms;
     }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorRuleConditionsRequestBodyCondition | cdktn.IResolvable | undefined) {
+  public set internalValue(value: CdnFrontdoorRuleConditionsRequestBody | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._matchValues = undefined;
-      this._negateCondition = undefined;
       this._operator = undefined;
       this._transforms = undefined;
+      this._values = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -3055,40 +2714,10 @@ export class CdnFrontdoorRuleConditionsRequestBodyConditionOutputReference exten
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._matchValues = value.matchValues;
-      this._negateCondition = value.negateCondition;
       this._operator = value.operator;
       this._transforms = value.transforms;
+      this._values = value.values;
     }
-  }
-
-  // match_values - computed: false, optional: false, required: true
-  private _matchValues?: string[]; 
-  public get matchValues() {
-    return this.getListAttribute('match_values');
-  }
-  public set matchValues(value: string[]) {
-    this._matchValues = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get matchValuesInput() {
-    return this._matchValues;
-  }
-
-  // negate_condition - computed: false, optional: true, required: false
-  private _negateCondition?: boolean | cdktn.IResolvable; 
-  public get negateCondition() {
-    return this.getBooleanAttribute('negate_condition');
-  }
-  public set negateCondition(value: boolean | cdktn.IResolvable) {
-    this._negateCondition = value;
-  }
-  public resetNegateCondition() {
-    this._negateCondition = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get negateConditionInput() {
-    return this._negateCondition;
   }
 
   // operator - computed: false, optional: false, required: true
@@ -3119,10 +2748,26 @@ export class CdnFrontdoorRuleConditionsRequestBodyConditionOutputReference exten
   public get transformsInput() {
     return this._transforms;
   }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
 }
 
-export class CdnFrontdoorRuleConditionsRequestBodyConditionList extends cdktn.ComplexList {
-  public internalValue? : CdnFrontdoorRuleConditionsRequestBodyCondition[] | cdktn.IResolvable
+export class CdnFrontdoorRuleConditionsRequestBodyList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorRuleConditionsRequestBody[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -3136,71 +2781,54 @@ export class CdnFrontdoorRuleConditionsRequestBodyConditionList extends cdktn.Co
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): CdnFrontdoorRuleConditionsRequestBodyConditionOutputReference {
-    return new CdnFrontdoorRuleConditionsRequestBodyConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): CdnFrontdoorRuleConditionsRequestBodyOutputReference {
+    return new CdnFrontdoorRuleConditionsRequestBodyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface CdnFrontdoorRuleConditionsRequestHeaderCondition {
+export interface CdnFrontdoorRuleConditionsRequestCookies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#header_name CdnFrontdoorRule#header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#name CdnFrontdoorRule#name}
   */
-  readonly headerName: string;
+  readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#match_values CdnFrontdoorRule#match_values}
-  */
-  readonly matchValues?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#negate_condition CdnFrontdoorRule#negate_condition}
-  */
-  readonly negateCondition?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}
   */
   readonly transforms?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}
+  */
+  readonly values?: string[];
 }
 
-export function cdnFrontdoorRuleConditionsRequestHeaderConditionToTerraform(struct?: CdnFrontdoorRuleConditionsRequestHeaderCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsRequestCookiesToTerraform(struct?: CdnFrontdoorRuleConditionsRequestCookies | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    header_name: cdktn.stringToTerraform(struct!.headerName),
-    match_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValues),
-    negate_condition: cdktn.booleanToTerraform(struct!.negateCondition),
+    name: cdktn.stringToTerraform(struct!.name),
     operator: cdktn.stringToTerraform(struct!.operator),
     transforms: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.transforms),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function cdnFrontdoorRuleConditionsRequestHeaderConditionToHclTerraform(struct?: CdnFrontdoorRuleConditionsRequestHeaderCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsRequestCookiesToHclTerraform(struct?: CdnFrontdoorRuleConditionsRequestCookies | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    header_name: {
-      value: cdktn.stringToHclTerraform(struct!.headerName),
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
-    },
-    match_values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchValues),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    negate_condition: {
-      value: cdktn.booleanToHclTerraform(struct!.negateCondition),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
     },
     operator: {
       value: cdktn.stringToHclTerraform(struct!.operator),
@@ -3214,13 +2842,19 @@ export function cdnFrontdoorRuleConditionsRequestHeaderConditionToHclTerraform(s
       type: "set",
       storageClassType: "stringList",
     },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
   };
 
   // remove undefined attributes
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorRuleConditionsRequestHeaderConditionOutputReference extends cdktn.ComplexObject {
+export class CdnFrontdoorRuleConditionsRequestCookiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -3234,23 +2868,15 @@ export class CdnFrontdoorRuleConditionsRequestHeaderConditionOutputReference ext
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CdnFrontdoorRuleConditionsRequestHeaderCondition | cdktn.IResolvable | undefined {
+  public get internalValue(): CdnFrontdoorRuleConditionsRequestCookies | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._headerName !== undefined) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
-      internalValueResult.headerName = this._headerName;
-    }
-    if (this._matchValues !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.matchValues = this._matchValues;
-    }
-    if (this._negateCondition !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.negateCondition = this._negateCondition;
+      internalValueResult.name = this._name;
     }
     if (this._operator !== undefined) {
       hasAnyValues = true;
@@ -3260,18 +2886,21 @@ export class CdnFrontdoorRuleConditionsRequestHeaderConditionOutputReference ext
       hasAnyValues = true;
       internalValueResult.transforms = this._transforms;
     }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorRuleConditionsRequestHeaderCondition | cdktn.IResolvable | undefined) {
+  public set internalValue(value: CdnFrontdoorRuleConditionsRequestCookies | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._headerName = undefined;
-      this._matchValues = undefined;
-      this._negateCondition = undefined;
+      this._name = undefined;
       this._operator = undefined;
       this._transforms = undefined;
+      this._values = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -3280,57 +2909,24 @@ export class CdnFrontdoorRuleConditionsRequestHeaderConditionOutputReference ext
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._headerName = value.headerName;
-      this._matchValues = value.matchValues;
-      this._negateCondition = value.negateCondition;
+      this._name = value.name;
       this._operator = value.operator;
       this._transforms = value.transforms;
+      this._values = value.values;
     }
   }
 
-  // header_name - computed: false, optional: false, required: true
-  private _headerName?: string; 
-  public get headerName() {
-    return this.getStringAttribute('header_name');
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
   }
-  public set headerName(value: string) {
-    this._headerName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get headerNameInput() {
-    return this._headerName;
-  }
-
-  // match_values - computed: false, optional: true, required: false
-  private _matchValues?: string[]; 
-  public get matchValues() {
-    return this.getListAttribute('match_values');
-  }
-  public set matchValues(value: string[]) {
-    this._matchValues = value;
-  }
-  public resetMatchValues() {
-    this._matchValues = undefined;
+  public set name(value: string) {
+    this._name = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get matchValuesInput() {
-    return this._matchValues;
-  }
-
-  // negate_condition - computed: false, optional: true, required: false
-  private _negateCondition?: boolean | cdktn.IResolvable; 
-  public get negateCondition() {
-    return this.getBooleanAttribute('negate_condition');
-  }
-  public set negateCondition(value: boolean | cdktn.IResolvable) {
-    this._negateCondition = value;
-  }
-  public resetNegateCondition() {
-    this._negateCondition = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get negateConditionInput() {
-    return this._negateCondition;
+  public get nameInput() {
+    return this._name;
   }
 
   // operator - computed: false, optional: false, required: true
@@ -3361,10 +2957,26 @@ export class CdnFrontdoorRuleConditionsRequestHeaderConditionOutputReference ext
   public get transformsInput() {
     return this._transforms;
   }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
 }
 
-export class CdnFrontdoorRuleConditionsRequestHeaderConditionList extends cdktn.ComplexList {
-  public internalValue? : CdnFrontdoorRuleConditionsRequestHeaderCondition[] | cdktn.IResolvable
+export class CdnFrontdoorRuleConditionsRequestCookiesList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorRuleConditionsRequestCookies[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -3378,422 +2990,44 @@ export class CdnFrontdoorRuleConditionsRequestHeaderConditionList extends cdktn.
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): CdnFrontdoorRuleConditionsRequestHeaderConditionOutputReference {
-    return new CdnFrontdoorRuleConditionsRequestHeaderConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): CdnFrontdoorRuleConditionsRequestCookiesOutputReference {
+    return new CdnFrontdoorRuleConditionsRequestCookiesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface CdnFrontdoorRuleConditionsRequestMethodCondition {
+export interface CdnFrontdoorRuleConditionsRequestFileExtension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#match_values CdnFrontdoorRule#match_values}
-  */
-  readonly matchValues: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#negate_condition CdnFrontdoorRule#negate_condition}
-  */
-  readonly negateCondition?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
-  */
-  readonly operator?: string;
-}
-
-export function cdnFrontdoorRuleConditionsRequestMethodConditionToTerraform(struct?: CdnFrontdoorRuleConditionsRequestMethodCondition | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    match_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValues),
-    negate_condition: cdktn.booleanToTerraform(struct!.negateCondition),
-    operator: cdktn.stringToTerraform(struct!.operator),
-  }
-}
-
-
-export function cdnFrontdoorRuleConditionsRequestMethodConditionToHclTerraform(struct?: CdnFrontdoorRuleConditionsRequestMethodCondition | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    match_values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchValues),
-      isBlock: false,
-      type: "set",
-      storageClassType: "stringList",
-    },
-    negate_condition: {
-      value: cdktn.booleanToHclTerraform(struct!.negateCondition),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    operator: {
-      value: cdktn.stringToHclTerraform(struct!.operator),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CdnFrontdoorRuleConditionsRequestMethodConditionOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CdnFrontdoorRuleConditionsRequestMethodCondition | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._matchValues !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.matchValues = this._matchValues;
-    }
-    if (this._negateCondition !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.negateCondition = this._negateCondition;
-    }
-    if (this._operator !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.operator = this._operator;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CdnFrontdoorRuleConditionsRequestMethodCondition | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._matchValues = undefined;
-      this._negateCondition = undefined;
-      this._operator = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._matchValues = value.matchValues;
-      this._negateCondition = value.negateCondition;
-      this._operator = value.operator;
-    }
-  }
-
-  // match_values - computed: false, optional: false, required: true
-  private _matchValues?: string[]; 
-  public get matchValues() {
-    return cdktn.Fn.tolist(this.getListAttribute('match_values'));
-  }
-  public set matchValues(value: string[]) {
-    this._matchValues = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get matchValuesInput() {
-    return this._matchValues;
-  }
-
-  // negate_condition - computed: false, optional: true, required: false
-  private _negateCondition?: boolean | cdktn.IResolvable; 
-  public get negateCondition() {
-    return this.getBooleanAttribute('negate_condition');
-  }
-  public set negateCondition(value: boolean | cdktn.IResolvable) {
-    this._negateCondition = value;
-  }
-  public resetNegateCondition() {
-    this._negateCondition = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get negateConditionInput() {
-    return this._negateCondition;
-  }
-
-  // operator - computed: false, optional: true, required: false
-  private _operator?: string; 
-  public get operator() {
-    return this.getStringAttribute('operator');
-  }
-  public set operator(value: string) {
-    this._operator = value;
-  }
-  public resetOperator() {
-    this._operator = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get operatorInput() {
-    return this._operator;
-  }
-}
-
-export class CdnFrontdoorRuleConditionsRequestMethodConditionList extends cdktn.ComplexList {
-  public internalValue? : CdnFrontdoorRuleConditionsRequestMethodCondition[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CdnFrontdoorRuleConditionsRequestMethodConditionOutputReference {
-    return new CdnFrontdoorRuleConditionsRequestMethodConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface CdnFrontdoorRuleConditionsRequestSchemeCondition {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#match_values CdnFrontdoorRule#match_values}
-  */
-  readonly matchValues?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#negate_condition CdnFrontdoorRule#negate_condition}
-  */
-  readonly negateCondition?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
-  */
-  readonly operator?: string;
-}
-
-export function cdnFrontdoorRuleConditionsRequestSchemeConditionToTerraform(struct?: CdnFrontdoorRuleConditionsRequestSchemeCondition | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    match_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValues),
-    negate_condition: cdktn.booleanToTerraform(struct!.negateCondition),
-    operator: cdktn.stringToTerraform(struct!.operator),
-  }
-}
-
-
-export function cdnFrontdoorRuleConditionsRequestSchemeConditionToHclTerraform(struct?: CdnFrontdoorRuleConditionsRequestSchemeCondition | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    match_values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchValues),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    negate_condition: {
-      value: cdktn.booleanToHclTerraform(struct!.negateCondition),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    operator: {
-      value: cdktn.stringToHclTerraform(struct!.operator),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CdnFrontdoorRuleConditionsRequestSchemeConditionOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CdnFrontdoorRuleConditionsRequestSchemeCondition | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._matchValues !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.matchValues = this._matchValues;
-    }
-    if (this._negateCondition !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.negateCondition = this._negateCondition;
-    }
-    if (this._operator !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.operator = this._operator;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CdnFrontdoorRuleConditionsRequestSchemeCondition | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._matchValues = undefined;
-      this._negateCondition = undefined;
-      this._operator = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._matchValues = value.matchValues;
-      this._negateCondition = value.negateCondition;
-      this._operator = value.operator;
-    }
-  }
-
-  // match_values - computed: false, optional: true, required: false
-  private _matchValues?: string[]; 
-  public get matchValues() {
-    return this.getListAttribute('match_values');
-  }
-  public set matchValues(value: string[]) {
-    this._matchValues = value;
-  }
-  public resetMatchValues() {
-    this._matchValues = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get matchValuesInput() {
-    return this._matchValues;
-  }
-
-  // negate_condition - computed: false, optional: true, required: false
-  private _negateCondition?: boolean | cdktn.IResolvable; 
-  public get negateCondition() {
-    return this.getBooleanAttribute('negate_condition');
-  }
-  public set negateCondition(value: boolean | cdktn.IResolvable) {
-    this._negateCondition = value;
-  }
-  public resetNegateCondition() {
-    this._negateCondition = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get negateConditionInput() {
-    return this._negateCondition;
-  }
-
-  // operator - computed: false, optional: true, required: false
-  private _operator?: string; 
-  public get operator() {
-    return this.getStringAttribute('operator');
-  }
-  public set operator(value: string) {
-    this._operator = value;
-  }
-  public resetOperator() {
-    this._operator = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get operatorInput() {
-    return this._operator;
-  }
-}
-
-export class CdnFrontdoorRuleConditionsRequestSchemeConditionList extends cdktn.ComplexList {
-  public internalValue? : CdnFrontdoorRuleConditionsRequestSchemeCondition[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CdnFrontdoorRuleConditionsRequestSchemeConditionOutputReference {
-    return new CdnFrontdoorRuleConditionsRequestSchemeConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface CdnFrontdoorRuleConditionsRequestUriCondition {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#match_values CdnFrontdoorRule#match_values}
-  */
-  readonly matchValues?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#negate_condition CdnFrontdoorRule#negate_condition}
-  */
-  readonly negateCondition?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}
   */
   readonly transforms?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}
+  */
+  readonly values?: string[];
 }
 
-export function cdnFrontdoorRuleConditionsRequestUriConditionToTerraform(struct?: CdnFrontdoorRuleConditionsRequestUriCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsRequestFileExtensionToTerraform(struct?: CdnFrontdoorRuleConditionsRequestFileExtension | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    match_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValues),
-    negate_condition: cdktn.booleanToTerraform(struct!.negateCondition),
     operator: cdktn.stringToTerraform(struct!.operator),
     transforms: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.transforms),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function cdnFrontdoorRuleConditionsRequestUriConditionToHclTerraform(struct?: CdnFrontdoorRuleConditionsRequestUriCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsRequestFileExtensionToHclTerraform(struct?: CdnFrontdoorRuleConditionsRequestFileExtension | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    match_values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchValues),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    negate_condition: {
-      value: cdktn.booleanToHclTerraform(struct!.negateCondition),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
     operator: {
       value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
@@ -3806,13 +3040,19 @@ export function cdnFrontdoorRuleConditionsRequestUriConditionToHclTerraform(stru
       type: "set",
       storageClassType: "stringList",
     },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
   };
 
   // remove undefined attributes
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorRuleConditionsRequestUriConditionOutputReference extends cdktn.ComplexObject {
+export class CdnFrontdoorRuleConditionsRequestFileExtensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -3826,20 +3066,12 @@ export class CdnFrontdoorRuleConditionsRequestUriConditionOutputReference extend
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CdnFrontdoorRuleConditionsRequestUriCondition | cdktn.IResolvable | undefined {
+  public get internalValue(): CdnFrontdoorRuleConditionsRequestFileExtension | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._matchValues !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.matchValues = this._matchValues;
-    }
-    if (this._negateCondition !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.negateCondition = this._negateCondition;
-    }
     if (this._operator !== undefined) {
       hasAnyValues = true;
       internalValueResult.operator = this._operator;
@@ -3848,17 +3080,20 @@ export class CdnFrontdoorRuleConditionsRequestUriConditionOutputReference extend
       hasAnyValues = true;
       internalValueResult.transforms = this._transforms;
     }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorRuleConditionsRequestUriCondition | cdktn.IResolvable | undefined) {
+  public set internalValue(value: CdnFrontdoorRuleConditionsRequestFileExtension | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._matchValues = undefined;
-      this._negateCondition = undefined;
       this._operator = undefined;
       this._transforms = undefined;
+      this._values = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -3867,43 +3102,10 @@ export class CdnFrontdoorRuleConditionsRequestUriConditionOutputReference extend
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._matchValues = value.matchValues;
-      this._negateCondition = value.negateCondition;
       this._operator = value.operator;
       this._transforms = value.transforms;
+      this._values = value.values;
     }
-  }
-
-  // match_values - computed: false, optional: true, required: false
-  private _matchValues?: string[]; 
-  public get matchValues() {
-    return this.getListAttribute('match_values');
-  }
-  public set matchValues(value: string[]) {
-    this._matchValues = value;
-  }
-  public resetMatchValues() {
-    this._matchValues = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get matchValuesInput() {
-    return this._matchValues;
-  }
-
-  // negate_condition - computed: false, optional: true, required: false
-  private _negateCondition?: boolean | cdktn.IResolvable; 
-  public get negateCondition() {
-    return this.getBooleanAttribute('negate_condition');
-  }
-  public set negateCondition(value: boolean | cdktn.IResolvable) {
-    this._negateCondition = value;
-  }
-  public resetNegateCondition() {
-    this._negateCondition = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get negateConditionInput() {
-    return this._negateCondition;
   }
 
   // operator - computed: false, optional: false, required: true
@@ -3934,10 +3136,26 @@ export class CdnFrontdoorRuleConditionsRequestUriConditionOutputReference extend
   public get transformsInput() {
     return this._transforms;
   }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
 }
 
-export class CdnFrontdoorRuleConditionsRequestUriConditionList extends cdktn.ComplexList {
-  public internalValue? : CdnFrontdoorRuleConditionsRequestUriCondition[] | cdktn.IResolvable
+export class CdnFrontdoorRuleConditionsRequestFileExtensionList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorRuleConditionsRequestFileExtension[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -3951,598 +3169,44 @@ export class CdnFrontdoorRuleConditionsRequestUriConditionList extends cdktn.Com
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): CdnFrontdoorRuleConditionsRequestUriConditionOutputReference {
-    return new CdnFrontdoorRuleConditionsRequestUriConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): CdnFrontdoorRuleConditionsRequestFileExtensionOutputReference {
+    return new CdnFrontdoorRuleConditionsRequestFileExtensionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface CdnFrontdoorRuleConditionsServerPortCondition {
+export interface CdnFrontdoorRuleConditionsRequestFilename {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#match_values CdnFrontdoorRule#match_values}
-  */
-  readonly matchValues: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#negate_condition CdnFrontdoorRule#negate_condition}
-  */
-  readonly negateCondition?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
-  */
-  readonly operator: string;
-}
-
-export function cdnFrontdoorRuleConditionsServerPortConditionToTerraform(struct?: CdnFrontdoorRuleConditionsServerPortCondition | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    match_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValues),
-    negate_condition: cdktn.booleanToTerraform(struct!.negateCondition),
-    operator: cdktn.stringToTerraform(struct!.operator),
-  }
-}
-
-
-export function cdnFrontdoorRuleConditionsServerPortConditionToHclTerraform(struct?: CdnFrontdoorRuleConditionsServerPortCondition | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    match_values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchValues),
-      isBlock: false,
-      type: "set",
-      storageClassType: "stringList",
-    },
-    negate_condition: {
-      value: cdktn.booleanToHclTerraform(struct!.negateCondition),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    operator: {
-      value: cdktn.stringToHclTerraform(struct!.operator),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CdnFrontdoorRuleConditionsServerPortConditionOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CdnFrontdoorRuleConditionsServerPortCondition | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._matchValues !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.matchValues = this._matchValues;
-    }
-    if (this._negateCondition !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.negateCondition = this._negateCondition;
-    }
-    if (this._operator !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.operator = this._operator;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CdnFrontdoorRuleConditionsServerPortCondition | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._matchValues = undefined;
-      this._negateCondition = undefined;
-      this._operator = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._matchValues = value.matchValues;
-      this._negateCondition = value.negateCondition;
-      this._operator = value.operator;
-    }
-  }
-
-  // match_values - computed: false, optional: false, required: true
-  private _matchValues?: string[]; 
-  public get matchValues() {
-    return cdktn.Fn.tolist(this.getListAttribute('match_values'));
-  }
-  public set matchValues(value: string[]) {
-    this._matchValues = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get matchValuesInput() {
-    return this._matchValues;
-  }
-
-  // negate_condition - computed: false, optional: true, required: false
-  private _negateCondition?: boolean | cdktn.IResolvable; 
-  public get negateCondition() {
-    return this.getBooleanAttribute('negate_condition');
-  }
-  public set negateCondition(value: boolean | cdktn.IResolvable) {
-    this._negateCondition = value;
-  }
-  public resetNegateCondition() {
-    this._negateCondition = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get negateConditionInput() {
-    return this._negateCondition;
-  }
-
-  // operator - computed: false, optional: false, required: true
-  private _operator?: string; 
-  public get operator() {
-    return this.getStringAttribute('operator');
-  }
-  public set operator(value: string) {
-    this._operator = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get operatorInput() {
-    return this._operator;
-  }
-}
-
-export class CdnFrontdoorRuleConditionsServerPortConditionList extends cdktn.ComplexList {
-  public internalValue? : CdnFrontdoorRuleConditionsServerPortCondition[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CdnFrontdoorRuleConditionsServerPortConditionOutputReference {
-    return new CdnFrontdoorRuleConditionsServerPortConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface CdnFrontdoorRuleConditionsSocketAddressCondition {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#match_values CdnFrontdoorRule#match_values}
-  */
-  readonly matchValues?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#negate_condition CdnFrontdoorRule#negate_condition}
-  */
-  readonly negateCondition?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
-  */
-  readonly operator?: string;
-}
-
-export function cdnFrontdoorRuleConditionsSocketAddressConditionToTerraform(struct?: CdnFrontdoorRuleConditionsSocketAddressCondition | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    match_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValues),
-    negate_condition: cdktn.booleanToTerraform(struct!.negateCondition),
-    operator: cdktn.stringToTerraform(struct!.operator),
-  }
-}
-
-
-export function cdnFrontdoorRuleConditionsSocketAddressConditionToHclTerraform(struct?: CdnFrontdoorRuleConditionsSocketAddressCondition | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    match_values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchValues),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    negate_condition: {
-      value: cdktn.booleanToHclTerraform(struct!.negateCondition),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    operator: {
-      value: cdktn.stringToHclTerraform(struct!.operator),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CdnFrontdoorRuleConditionsSocketAddressConditionOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CdnFrontdoorRuleConditionsSocketAddressCondition | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._matchValues !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.matchValues = this._matchValues;
-    }
-    if (this._negateCondition !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.negateCondition = this._negateCondition;
-    }
-    if (this._operator !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.operator = this._operator;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CdnFrontdoorRuleConditionsSocketAddressCondition | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._matchValues = undefined;
-      this._negateCondition = undefined;
-      this._operator = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._matchValues = value.matchValues;
-      this._negateCondition = value.negateCondition;
-      this._operator = value.operator;
-    }
-  }
-
-  // match_values - computed: false, optional: true, required: false
-  private _matchValues?: string[]; 
-  public get matchValues() {
-    return this.getListAttribute('match_values');
-  }
-  public set matchValues(value: string[]) {
-    this._matchValues = value;
-  }
-  public resetMatchValues() {
-    this._matchValues = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get matchValuesInput() {
-    return this._matchValues;
-  }
-
-  // negate_condition - computed: false, optional: true, required: false
-  private _negateCondition?: boolean | cdktn.IResolvable; 
-  public get negateCondition() {
-    return this.getBooleanAttribute('negate_condition');
-  }
-  public set negateCondition(value: boolean | cdktn.IResolvable) {
-    this._negateCondition = value;
-  }
-  public resetNegateCondition() {
-    this._negateCondition = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get negateConditionInput() {
-    return this._negateCondition;
-  }
-
-  // operator - computed: false, optional: true, required: false
-  private _operator?: string; 
-  public get operator() {
-    return this.getStringAttribute('operator');
-  }
-  public set operator(value: string) {
-    this._operator = value;
-  }
-  public resetOperator() {
-    this._operator = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get operatorInput() {
-    return this._operator;
-  }
-}
-
-export class CdnFrontdoorRuleConditionsSocketAddressConditionList extends cdktn.ComplexList {
-  public internalValue? : CdnFrontdoorRuleConditionsSocketAddressCondition[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CdnFrontdoorRuleConditionsSocketAddressConditionOutputReference {
-    return new CdnFrontdoorRuleConditionsSocketAddressConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface CdnFrontdoorRuleConditionsSslProtocolCondition {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#match_values CdnFrontdoorRule#match_values}
-  */
-  readonly matchValues: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#negate_condition CdnFrontdoorRule#negate_condition}
-  */
-  readonly negateCondition?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
-  */
-  readonly operator?: string;
-}
-
-export function cdnFrontdoorRuleConditionsSslProtocolConditionToTerraform(struct?: CdnFrontdoorRuleConditionsSslProtocolCondition | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    match_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValues),
-    negate_condition: cdktn.booleanToTerraform(struct!.negateCondition),
-    operator: cdktn.stringToTerraform(struct!.operator),
-  }
-}
-
-
-export function cdnFrontdoorRuleConditionsSslProtocolConditionToHclTerraform(struct?: CdnFrontdoorRuleConditionsSslProtocolCondition | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    match_values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchValues),
-      isBlock: false,
-      type: "set",
-      storageClassType: "stringList",
-    },
-    negate_condition: {
-      value: cdktn.booleanToHclTerraform(struct!.negateCondition),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    operator: {
-      value: cdktn.stringToHclTerraform(struct!.operator),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CdnFrontdoorRuleConditionsSslProtocolConditionOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CdnFrontdoorRuleConditionsSslProtocolCondition | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._matchValues !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.matchValues = this._matchValues;
-    }
-    if (this._negateCondition !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.negateCondition = this._negateCondition;
-    }
-    if (this._operator !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.operator = this._operator;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CdnFrontdoorRuleConditionsSslProtocolCondition | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._matchValues = undefined;
-      this._negateCondition = undefined;
-      this._operator = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._matchValues = value.matchValues;
-      this._negateCondition = value.negateCondition;
-      this._operator = value.operator;
-    }
-  }
-
-  // match_values - computed: false, optional: false, required: true
-  private _matchValues?: string[]; 
-  public get matchValues() {
-    return cdktn.Fn.tolist(this.getListAttribute('match_values'));
-  }
-  public set matchValues(value: string[]) {
-    this._matchValues = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get matchValuesInput() {
-    return this._matchValues;
-  }
-
-  // negate_condition - computed: false, optional: true, required: false
-  private _negateCondition?: boolean | cdktn.IResolvable; 
-  public get negateCondition() {
-    return this.getBooleanAttribute('negate_condition');
-  }
-  public set negateCondition(value: boolean | cdktn.IResolvable) {
-    this._negateCondition = value;
-  }
-  public resetNegateCondition() {
-    this._negateCondition = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get negateConditionInput() {
-    return this._negateCondition;
-  }
-
-  // operator - computed: false, optional: true, required: false
-  private _operator?: string; 
-  public get operator() {
-    return this.getStringAttribute('operator');
-  }
-  public set operator(value: string) {
-    this._operator = value;
-  }
-  public resetOperator() {
-    this._operator = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get operatorInput() {
-    return this._operator;
-  }
-}
-
-export class CdnFrontdoorRuleConditionsSslProtocolConditionList extends cdktn.ComplexList {
-  public internalValue? : CdnFrontdoorRuleConditionsSslProtocolCondition[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CdnFrontdoorRuleConditionsSslProtocolConditionOutputReference {
-    return new CdnFrontdoorRuleConditionsSslProtocolConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface CdnFrontdoorRuleConditionsUrlFileExtensionCondition {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#match_values CdnFrontdoorRule#match_values}
-  */
-  readonly matchValues: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#negate_condition CdnFrontdoorRule#negate_condition}
-  */
-  readonly negateCondition?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}
   */
   readonly transforms?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}
+  */
+  readonly values?: string[];
 }
 
-export function cdnFrontdoorRuleConditionsUrlFileExtensionConditionToTerraform(struct?: CdnFrontdoorRuleConditionsUrlFileExtensionCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsRequestFilenameToTerraform(struct?: CdnFrontdoorRuleConditionsRequestFilename | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    match_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValues),
-    negate_condition: cdktn.booleanToTerraform(struct!.negateCondition),
     operator: cdktn.stringToTerraform(struct!.operator),
     transforms: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.transforms),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function cdnFrontdoorRuleConditionsUrlFileExtensionConditionToHclTerraform(struct?: CdnFrontdoorRuleConditionsUrlFileExtensionCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsRequestFilenameToHclTerraform(struct?: CdnFrontdoorRuleConditionsRequestFilename | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    match_values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchValues),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    negate_condition: {
-      value: cdktn.booleanToHclTerraform(struct!.negateCondition),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
     operator: {
       value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
@@ -4555,13 +3219,19 @@ export function cdnFrontdoorRuleConditionsUrlFileExtensionConditionToHclTerrafor
       type: "set",
       storageClassType: "stringList",
     },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
   };
 
   // remove undefined attributes
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorRuleConditionsUrlFileExtensionConditionOutputReference extends cdktn.ComplexObject {
+export class CdnFrontdoorRuleConditionsRequestFilenameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -4575,20 +3245,12 @@ export class CdnFrontdoorRuleConditionsUrlFileExtensionConditionOutputReference 
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CdnFrontdoorRuleConditionsUrlFileExtensionCondition | cdktn.IResolvable | undefined {
+  public get internalValue(): CdnFrontdoorRuleConditionsRequestFilename | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._matchValues !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.matchValues = this._matchValues;
-    }
-    if (this._negateCondition !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.negateCondition = this._negateCondition;
-    }
     if (this._operator !== undefined) {
       hasAnyValues = true;
       internalValueResult.operator = this._operator;
@@ -4597,17 +3259,20 @@ export class CdnFrontdoorRuleConditionsUrlFileExtensionConditionOutputReference 
       hasAnyValues = true;
       internalValueResult.transforms = this._transforms;
     }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorRuleConditionsUrlFileExtensionCondition | cdktn.IResolvable | undefined) {
+  public set internalValue(value: CdnFrontdoorRuleConditionsRequestFilename | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._matchValues = undefined;
-      this._negateCondition = undefined;
       this._operator = undefined;
       this._transforms = undefined;
+      this._values = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -4616,40 +3281,10 @@ export class CdnFrontdoorRuleConditionsUrlFileExtensionConditionOutputReference 
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._matchValues = value.matchValues;
-      this._negateCondition = value.negateCondition;
       this._operator = value.operator;
       this._transforms = value.transforms;
+      this._values = value.values;
     }
-  }
-
-  // match_values - computed: false, optional: false, required: true
-  private _matchValues?: string[]; 
-  public get matchValues() {
-    return this.getListAttribute('match_values');
-  }
-  public set matchValues(value: string[]) {
-    this._matchValues = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get matchValuesInput() {
-    return this._matchValues;
-  }
-
-  // negate_condition - computed: false, optional: true, required: false
-  private _negateCondition?: boolean | cdktn.IResolvable; 
-  public get negateCondition() {
-    return this.getBooleanAttribute('negate_condition');
-  }
-  public set negateCondition(value: boolean | cdktn.IResolvable) {
-    this._negateCondition = value;
-  }
-  public resetNegateCondition() {
-    this._negateCondition = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get negateConditionInput() {
-    return this._negateCondition;
   }
 
   // operator - computed: false, optional: false, required: true
@@ -4680,10 +3315,26 @@ export class CdnFrontdoorRuleConditionsUrlFileExtensionConditionOutputReference 
   public get transformsInput() {
     return this._transforms;
   }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
 }
 
-export class CdnFrontdoorRuleConditionsUrlFileExtensionConditionList extends cdktn.ComplexList {
-  public internalValue? : CdnFrontdoorRuleConditionsUrlFileExtensionCondition[] | cdktn.IResolvable
+export class CdnFrontdoorRuleConditionsRequestFilenameList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorRuleConditionsRequestFilename[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -4697,60 +3348,54 @@ export class CdnFrontdoorRuleConditionsUrlFileExtensionConditionList extends cdk
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): CdnFrontdoorRuleConditionsUrlFileExtensionConditionOutputReference {
-    return new CdnFrontdoorRuleConditionsUrlFileExtensionConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): CdnFrontdoorRuleConditionsRequestFilenameOutputReference {
+    return new CdnFrontdoorRuleConditionsRequestFilenameOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface CdnFrontdoorRuleConditionsUrlFilenameCondition {
+export interface CdnFrontdoorRuleConditionsRequestHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#match_values CdnFrontdoorRule#match_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#name CdnFrontdoorRule#name}
   */
-  readonly matchValues?: string[];
+  readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#negate_condition CdnFrontdoorRule#negate_condition}
-  */
-  readonly negateCondition?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}
   */
   readonly transforms?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}
+  */
+  readonly values?: string[];
 }
 
-export function cdnFrontdoorRuleConditionsUrlFilenameConditionToTerraform(struct?: CdnFrontdoorRuleConditionsUrlFilenameCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsRequestHeaderToTerraform(struct?: CdnFrontdoorRuleConditionsRequestHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    match_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValues),
-    negate_condition: cdktn.booleanToTerraform(struct!.negateCondition),
+    name: cdktn.stringToTerraform(struct!.name),
     operator: cdktn.stringToTerraform(struct!.operator),
     transforms: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.transforms),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function cdnFrontdoorRuleConditionsUrlFilenameConditionToHclTerraform(struct?: CdnFrontdoorRuleConditionsUrlFilenameCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsRequestHeaderToHclTerraform(struct?: CdnFrontdoorRuleConditionsRequestHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    match_values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchValues),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    negate_condition: {
-      value: cdktn.booleanToHclTerraform(struct!.negateCondition),
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
-      storageClassType: "boolean",
+      storageClassType: "string",
     },
     operator: {
       value: cdktn.stringToHclTerraform(struct!.operator),
@@ -4764,13 +3409,19 @@ export function cdnFrontdoorRuleConditionsUrlFilenameConditionToHclTerraform(str
       type: "set",
       storageClassType: "stringList",
     },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
   };
 
   // remove undefined attributes
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorRuleConditionsUrlFilenameConditionOutputReference extends cdktn.ComplexObject {
+export class CdnFrontdoorRuleConditionsRequestHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -4784,19 +3435,15 @@ export class CdnFrontdoorRuleConditionsUrlFilenameConditionOutputReference exten
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CdnFrontdoorRuleConditionsUrlFilenameCondition | cdktn.IResolvable | undefined {
+  public get internalValue(): CdnFrontdoorRuleConditionsRequestHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._matchValues !== undefined) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
-      internalValueResult.matchValues = this._matchValues;
-    }
-    if (this._negateCondition !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.negateCondition = this._negateCondition;
+      internalValueResult.name = this._name;
     }
     if (this._operator !== undefined) {
       hasAnyValues = true;
@@ -4806,17 +3453,21 @@ export class CdnFrontdoorRuleConditionsUrlFilenameConditionOutputReference exten
       hasAnyValues = true;
       internalValueResult.transforms = this._transforms;
     }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorRuleConditionsUrlFilenameCondition | cdktn.IResolvable | undefined) {
+  public set internalValue(value: CdnFrontdoorRuleConditionsRequestHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._matchValues = undefined;
-      this._negateCondition = undefined;
+      this._name = undefined;
       this._operator = undefined;
       this._transforms = undefined;
+      this._values = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -4825,43 +3476,24 @@ export class CdnFrontdoorRuleConditionsUrlFilenameConditionOutputReference exten
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._matchValues = value.matchValues;
-      this._negateCondition = value.negateCondition;
+      this._name = value.name;
       this._operator = value.operator;
       this._transforms = value.transforms;
+      this._values = value.values;
     }
   }
 
-  // match_values - computed: false, optional: true, required: false
-  private _matchValues?: string[]; 
-  public get matchValues() {
-    return this.getListAttribute('match_values');
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
   }
-  public set matchValues(value: string[]) {
-    this._matchValues = value;
-  }
-  public resetMatchValues() {
-    this._matchValues = undefined;
+  public set name(value: string) {
+    this._name = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get matchValuesInput() {
-    return this._matchValues;
-  }
-
-  // negate_condition - computed: false, optional: true, required: false
-  private _negateCondition?: boolean | cdktn.IResolvable; 
-  public get negateCondition() {
-    return this.getBooleanAttribute('negate_condition');
-  }
-  public set negateCondition(value: boolean | cdktn.IResolvable) {
-    this._negateCondition = value;
-  }
-  public resetNegateCondition() {
-    this._negateCondition = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get negateConditionInput() {
-    return this._negateCondition;
+  public get nameInput() {
+    return this._name;
   }
 
   // operator - computed: false, optional: false, required: true
@@ -4892,10 +3524,26 @@ export class CdnFrontdoorRuleConditionsUrlFilenameConditionOutputReference exten
   public get transformsInput() {
     return this._transforms;
   }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
 }
 
-export class CdnFrontdoorRuleConditionsUrlFilenameConditionList extends cdktn.ComplexList {
-  public internalValue? : CdnFrontdoorRuleConditionsUrlFilenameCondition[] | cdktn.IResolvable
+export class CdnFrontdoorRuleConditionsRequestHeaderList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorRuleConditionsRequestHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -4909,69 +3557,47 @@ export class CdnFrontdoorRuleConditionsUrlFilenameConditionList extends cdktn.Co
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): CdnFrontdoorRuleConditionsUrlFilenameConditionOutputReference {
-    return new CdnFrontdoorRuleConditionsUrlFilenameConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): CdnFrontdoorRuleConditionsRequestHeaderOutputReference {
+    return new CdnFrontdoorRuleConditionsRequestHeaderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface CdnFrontdoorRuleConditionsUrlPathCondition {
+export interface CdnFrontdoorRuleConditionsRequestMethod {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#match_values CdnFrontdoorRule#match_values}
-  */
-  readonly matchValues?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#negate_condition CdnFrontdoorRule#negate_condition}
-  */
-  readonly negateCondition?: boolean | cdktn.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}
   */
-  readonly transforms?: string[];
+  readonly values: string[];
 }
 
-export function cdnFrontdoorRuleConditionsUrlPathConditionToTerraform(struct?: CdnFrontdoorRuleConditionsUrlPathCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsRequestMethodToTerraform(struct?: CdnFrontdoorRuleConditionsRequestMethod | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    match_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValues),
-    negate_condition: cdktn.booleanToTerraform(struct!.negateCondition),
     operator: cdktn.stringToTerraform(struct!.operator),
-    transforms: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.transforms),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function cdnFrontdoorRuleConditionsUrlPathConditionToHclTerraform(struct?: CdnFrontdoorRuleConditionsUrlPathCondition | cdktn.IResolvable): any {
+export function cdnFrontdoorRuleConditionsRequestMethodToHclTerraform(struct?: CdnFrontdoorRuleConditionsRequestMethod | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    match_values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchValues),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    negate_condition: {
-      value: cdktn.booleanToHclTerraform(struct!.negateCondition),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
     operator: {
       value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
-    transforms: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.transforms),
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -4982,7 +3608,7 @@ export function cdnFrontdoorRuleConditionsUrlPathConditionToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorRuleConditionsUrlPathConditionOutputReference extends cdktn.ComplexObject {
+export class CdnFrontdoorRuleConditionsRequestMethodOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktn.IResolvable;
 
@@ -4996,39 +3622,29 @@ export class CdnFrontdoorRuleConditionsUrlPathConditionOutputReference extends c
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CdnFrontdoorRuleConditionsUrlPathCondition | cdktn.IResolvable | undefined {
+  public get internalValue(): CdnFrontdoorRuleConditionsRequestMethod | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._matchValues !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.matchValues = this._matchValues;
-    }
-    if (this._negateCondition !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.negateCondition = this._negateCondition;
-    }
     if (this._operator !== undefined) {
       hasAnyValues = true;
       internalValueResult.operator = this._operator;
     }
-    if (this._transforms !== undefined) {
+    if (this._values !== undefined) {
       hasAnyValues = true;
-      internalValueResult.transforms = this._transforms;
+      internalValueResult.values = this._values;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorRuleConditionsUrlPathCondition | cdktn.IResolvable | undefined) {
+  public set internalValue(value: CdnFrontdoorRuleConditionsRequestMethod | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
-      this._matchValues = undefined;
-      this._negateCondition = undefined;
       this._operator = undefined;
-      this._transforms = undefined;
+      this._values = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -5037,43 +3653,169 @@ export class CdnFrontdoorRuleConditionsUrlPathConditionOutputReference extends c
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
-      this._matchValues = value.matchValues;
-      this._negateCondition = value.negateCondition;
       this._operator = value.operator;
-      this._transforms = value.transforms;
+      this._values = value.values;
     }
   }
 
-  // match_values - computed: false, optional: true, required: false
-  private _matchValues?: string[]; 
-  public get matchValues() {
-    return this.getListAttribute('match_values');
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
   }
-  public set matchValues(value: string[]) {
-    this._matchValues = value;
-  }
-  public resetMatchValues() {
-    this._matchValues = undefined;
+  public set operator(value: string) {
+    this._operator = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get matchValuesInput() {
-    return this._matchValues;
+  public get operatorInput() {
+    return this._operator;
   }
 
-  // negate_condition - computed: false, optional: true, required: false
-  private _negateCondition?: boolean | cdktn.IResolvable; 
-  public get negateCondition() {
-    return this.getBooleanAttribute('negate_condition');
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
   }
-  public set negateCondition(value: boolean | cdktn.IResolvable) {
-    this._negateCondition = value;
-  }
-  public resetNegateCondition() {
-    this._negateCondition = undefined;
+  public set values(value: string[]) {
+    this._values = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get negateConditionInput() {
-    return this._negateCondition;
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class CdnFrontdoorRuleConditionsRequestMethodList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorRuleConditionsRequestMethod[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CdnFrontdoorRuleConditionsRequestMethodOutputReference {
+    return new CdnFrontdoorRuleConditionsRequestMethodOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CdnFrontdoorRuleConditionsRequestPath {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
+  */
+  readonly operator: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}
+  */
+  readonly transforms?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}
+  */
+  readonly values?: string[];
+}
+
+export function cdnFrontdoorRuleConditionsRequestPathToTerraform(struct?: CdnFrontdoorRuleConditionsRequestPath | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    operator: cdktn.stringToTerraform(struct!.operator),
+    transforms: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.transforms),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function cdnFrontdoorRuleConditionsRequestPathToHclTerraform(struct?: CdnFrontdoorRuleConditionsRequestPath | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    operator: {
+      value: cdktn.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    transforms: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.transforms),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CdnFrontdoorRuleConditionsRequestPathOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CdnFrontdoorRuleConditionsRequestPath | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._transforms !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transforms = this._transforms;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CdnFrontdoorRuleConditionsRequestPath | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._operator = undefined;
+      this._transforms = undefined;
+      this._values = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._operator = value.operator;
+      this._transforms = value.transforms;
+      this._values = value.values;
+    }
   }
 
   // operator - computed: false, optional: false, required: true
@@ -5104,10 +3846,26 @@ export class CdnFrontdoorRuleConditionsUrlPathConditionOutputReference extends c
   public get transformsInput() {
     return this._transforms;
   }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
 }
 
-export class CdnFrontdoorRuleConditionsUrlPathConditionList extends cdktn.ComplexList {
-  public internalValue? : CdnFrontdoorRuleConditionsUrlPathCondition[] | cdktn.IResolvable
+export class CdnFrontdoorRuleConditionsRequestPathList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorRuleConditionsRequestPath[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -5121,125 +3879,879 @@ export class CdnFrontdoorRuleConditionsUrlPathConditionList extends cdktn.Comple
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): CdnFrontdoorRuleConditionsUrlPathConditionOutputReference {
-    return new CdnFrontdoorRuleConditionsUrlPathConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): CdnFrontdoorRuleConditionsRequestPathOutputReference {
+    return new CdnFrontdoorRuleConditionsRequestPathOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CdnFrontdoorRuleConditionsRequestScheme {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
+  */
+  readonly operator: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}
+  */
+  readonly values: string[];
+}
+
+export function cdnFrontdoorRuleConditionsRequestSchemeToTerraform(struct?: CdnFrontdoorRuleConditionsRequestScheme | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function cdnFrontdoorRuleConditionsRequestSchemeToHclTerraform(struct?: CdnFrontdoorRuleConditionsRequestScheme | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    operator: {
+      value: cdktn.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CdnFrontdoorRuleConditionsRequestSchemeOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CdnFrontdoorRuleConditionsRequestScheme | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CdnFrontdoorRuleConditionsRequestScheme | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._operator = undefined;
+      this._values = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._operator = value.operator;
+      this._values = value.values;
+    }
+  }
+
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class CdnFrontdoorRuleConditionsRequestSchemeList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorRuleConditionsRequestScheme[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CdnFrontdoorRuleConditionsRequestSchemeOutputReference {
+    return new CdnFrontdoorRuleConditionsRequestSchemeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CdnFrontdoorRuleConditionsRequestUrl {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
+  */
+  readonly operator: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}
+  */
+  readonly transforms?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}
+  */
+  readonly values?: string[];
+}
+
+export function cdnFrontdoorRuleConditionsRequestUrlToTerraform(struct?: CdnFrontdoorRuleConditionsRequestUrl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    operator: cdktn.stringToTerraform(struct!.operator),
+    transforms: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.transforms),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function cdnFrontdoorRuleConditionsRequestUrlToHclTerraform(struct?: CdnFrontdoorRuleConditionsRequestUrl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    operator: {
+      value: cdktn.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    transforms: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.transforms),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CdnFrontdoorRuleConditionsRequestUrlOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CdnFrontdoorRuleConditionsRequestUrl | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._transforms !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transforms = this._transforms;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CdnFrontdoorRuleConditionsRequestUrl | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._operator = undefined;
+      this._transforms = undefined;
+      this._values = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._operator = value.operator;
+      this._transforms = value.transforms;
+      this._values = value.values;
+    }
+  }
+
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
+  }
+
+  // transforms - computed: false, optional: true, required: false
+  private _transforms?: string[]; 
+  public get transforms() {
+    return cdktn.Fn.tolist(this.getListAttribute('transforms'));
+  }
+  public set transforms(value: string[]) {
+    this._transforms = value;
+  }
+  public resetTransforms() {
+    this._transforms = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transformsInput() {
+    return this._transforms;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class CdnFrontdoorRuleConditionsRequestUrlList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorRuleConditionsRequestUrl[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CdnFrontdoorRuleConditionsRequestUrlOutputReference {
+    return new CdnFrontdoorRuleConditionsRequestUrlOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CdnFrontdoorRuleConditionsServerPort {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
+  */
+  readonly operator: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}
+  */
+  readonly values?: string[];
+}
+
+export function cdnFrontdoorRuleConditionsServerPortToTerraform(struct?: CdnFrontdoorRuleConditionsServerPort | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function cdnFrontdoorRuleConditionsServerPortToHclTerraform(struct?: CdnFrontdoorRuleConditionsServerPort | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    operator: {
+      value: cdktn.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CdnFrontdoorRuleConditionsServerPortOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CdnFrontdoorRuleConditionsServerPort | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CdnFrontdoorRuleConditionsServerPort | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._operator = undefined;
+      this._values = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._operator = value.operator;
+      this._values = value.values;
+    }
+  }
+
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class CdnFrontdoorRuleConditionsServerPortList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorRuleConditionsServerPort[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CdnFrontdoorRuleConditionsServerPortOutputReference {
+    return new CdnFrontdoorRuleConditionsServerPortOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CdnFrontdoorRuleConditionsSocketAddress {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
+  */
+  readonly operator: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}
+  */
+  readonly values: string[];
+}
+
+export function cdnFrontdoorRuleConditionsSocketAddressToTerraform(struct?: CdnFrontdoorRuleConditionsSocketAddress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function cdnFrontdoorRuleConditionsSocketAddressToHclTerraform(struct?: CdnFrontdoorRuleConditionsSocketAddress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    operator: {
+      value: cdktn.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CdnFrontdoorRuleConditionsSocketAddressOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CdnFrontdoorRuleConditionsSocketAddress | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CdnFrontdoorRuleConditionsSocketAddress | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._operator = undefined;
+      this._values = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._operator = value.operator;
+      this._values = value.values;
+    }
+  }
+
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class CdnFrontdoorRuleConditionsSocketAddressList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorRuleConditionsSocketAddress[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CdnFrontdoorRuleConditionsSocketAddressOutputReference {
+    return new CdnFrontdoorRuleConditionsSocketAddressOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CdnFrontdoorRuleConditionsSslProtocol {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}
+  */
+  readonly operator: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}
+  */
+  readonly values: string[];
+}
+
+export function cdnFrontdoorRuleConditionsSslProtocolToTerraform(struct?: CdnFrontdoorRuleConditionsSslProtocol | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
+  }
+}
+
+
+export function cdnFrontdoorRuleConditionsSslProtocolToHclTerraform(struct?: CdnFrontdoorRuleConditionsSslProtocol | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    operator: {
+      value: cdktn.stringToHclTerraform(struct!.operator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CdnFrontdoorRuleConditionsSslProtocolOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CdnFrontdoorRuleConditionsSslProtocol | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CdnFrontdoorRuleConditionsSslProtocol | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._operator = undefined;
+      this._values = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._operator = value.operator;
+      this._values = value.values;
+    }
+  }
+
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return cdktn.Fn.tolist(this.getListAttribute('values'));
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class CdnFrontdoorRuleConditionsSslProtocolList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorRuleConditionsSslProtocol[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CdnFrontdoorRuleConditionsSslProtocolOutputReference {
+    return new CdnFrontdoorRuleConditionsSslProtocolOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface CdnFrontdoorRuleConditions {
   /**
-  * client_port_condition block
+  * client_port block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#client_port_condition CdnFrontdoorRule#client_port_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#client_port CdnFrontdoorRule#client_port}
   */
-  readonly clientPortCondition?: CdnFrontdoorRuleConditionsClientPortCondition[] | cdktn.IResolvable;
+  readonly clientPort?: CdnFrontdoorRuleConditionsClientPort[] | cdktn.IResolvable;
   /**
-  * cookies_condition block
+  * device_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#cookies_condition CdnFrontdoorRule#cookies_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#device_type CdnFrontdoorRule#device_type}
   */
-  readonly cookiesCondition?: CdnFrontdoorRuleConditionsCookiesCondition[] | cdktn.IResolvable;
+  readonly deviceType?: CdnFrontdoorRuleConditionsDeviceType[] | cdktn.IResolvable;
   /**
-  * host_name_condition block
+  * host_name block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#host_name_condition CdnFrontdoorRule#host_name_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#host_name CdnFrontdoorRule#host_name}
   */
-  readonly hostNameCondition?: CdnFrontdoorRuleConditionsHostNameCondition[] | cdktn.IResolvable;
+  readonly hostName?: CdnFrontdoorRuleConditionsHostName[] | cdktn.IResolvable;
   /**
-  * http_version_condition block
+  * http_version block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#http_version_condition CdnFrontdoorRule#http_version_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#http_version CdnFrontdoorRule#http_version}
   */
-  readonly httpVersionCondition?: CdnFrontdoorRuleConditionsHttpVersionCondition[] | cdktn.IResolvable;
+  readonly httpVersion?: CdnFrontdoorRuleConditionsHttpVersion[] | cdktn.IResolvable;
   /**
-  * is_device_condition block
+  * post_argument block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#is_device_condition CdnFrontdoorRule#is_device_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#post_argument CdnFrontdoorRule#post_argument}
   */
-  readonly isDeviceCondition?: CdnFrontdoorRuleConditionsIsDeviceCondition[] | cdktn.IResolvable;
+  readonly postArgument?: CdnFrontdoorRuleConditionsPostArgument[] | cdktn.IResolvable;
   /**
-  * post_args_condition block
+  * query_string block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#post_args_condition CdnFrontdoorRule#post_args_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#query_string CdnFrontdoorRule#query_string}
   */
-  readonly postArgsCondition?: CdnFrontdoorRuleConditionsPostArgsCondition[] | cdktn.IResolvable;
+  readonly queryString?: CdnFrontdoorRuleConditionsQueryString[] | cdktn.IResolvable;
   /**
-  * query_string_condition block
+  * remote_address block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#query_string_condition CdnFrontdoorRule#query_string_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#remote_address CdnFrontdoorRule#remote_address}
   */
-  readonly queryStringCondition?: CdnFrontdoorRuleConditionsQueryStringCondition[] | cdktn.IResolvable;
+  readonly remoteAddress?: CdnFrontdoorRuleConditionsRemoteAddress[] | cdktn.IResolvable;
   /**
-  * remote_address_condition block
+  * request_body block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#remote_address_condition CdnFrontdoorRule#remote_address_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#request_body CdnFrontdoorRule#request_body}
   */
-  readonly remoteAddressCondition?: CdnFrontdoorRuleConditionsRemoteAddressCondition[] | cdktn.IResolvable;
+  readonly requestBody?: CdnFrontdoorRuleConditionsRequestBody[] | cdktn.IResolvable;
   /**
-  * request_body_condition block
+  * request_cookies block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#request_body_condition CdnFrontdoorRule#request_body_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#request_cookies CdnFrontdoorRule#request_cookies}
   */
-  readonly requestBodyCondition?: CdnFrontdoorRuleConditionsRequestBodyCondition[] | cdktn.IResolvable;
+  readonly requestCookies?: CdnFrontdoorRuleConditionsRequestCookies[] | cdktn.IResolvable;
   /**
-  * request_header_condition block
+  * request_file_extension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#request_header_condition CdnFrontdoorRule#request_header_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#request_file_extension CdnFrontdoorRule#request_file_extension}
   */
-  readonly requestHeaderCondition?: CdnFrontdoorRuleConditionsRequestHeaderCondition[] | cdktn.IResolvable;
+  readonly requestFileExtension?: CdnFrontdoorRuleConditionsRequestFileExtension[] | cdktn.IResolvable;
   /**
-  * request_method_condition block
+  * request_filename block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#request_method_condition CdnFrontdoorRule#request_method_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#request_filename CdnFrontdoorRule#request_filename}
   */
-  readonly requestMethodCondition?: CdnFrontdoorRuleConditionsRequestMethodCondition[] | cdktn.IResolvable;
+  readonly requestFilename?: CdnFrontdoorRuleConditionsRequestFilename[] | cdktn.IResolvable;
   /**
-  * request_scheme_condition block
+  * request_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#request_scheme_condition CdnFrontdoorRule#request_scheme_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#request_header CdnFrontdoorRule#request_header}
   */
-  readonly requestSchemeCondition?: CdnFrontdoorRuleConditionsRequestSchemeCondition[] | cdktn.IResolvable;
+  readonly requestHeader?: CdnFrontdoorRuleConditionsRequestHeader[] | cdktn.IResolvable;
   /**
-  * request_uri_condition block
+  * request_method block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#request_uri_condition CdnFrontdoorRule#request_uri_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#request_method CdnFrontdoorRule#request_method}
   */
-  readonly requestUriCondition?: CdnFrontdoorRuleConditionsRequestUriCondition[] | cdktn.IResolvable;
+  readonly requestMethod?: CdnFrontdoorRuleConditionsRequestMethod[] | cdktn.IResolvable;
   /**
-  * server_port_condition block
+  * request_path block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#server_port_condition CdnFrontdoorRule#server_port_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#request_path CdnFrontdoorRule#request_path}
   */
-  readonly serverPortCondition?: CdnFrontdoorRuleConditionsServerPortCondition[] | cdktn.IResolvable;
+  readonly requestPath?: CdnFrontdoorRuleConditionsRequestPath[] | cdktn.IResolvable;
   /**
-  * socket_address_condition block
+  * request_scheme block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#socket_address_condition CdnFrontdoorRule#socket_address_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#request_scheme CdnFrontdoorRule#request_scheme}
   */
-  readonly socketAddressCondition?: CdnFrontdoorRuleConditionsSocketAddressCondition[] | cdktn.IResolvable;
+  readonly requestScheme?: CdnFrontdoorRuleConditionsRequestScheme[] | cdktn.IResolvable;
   /**
-  * ssl_protocol_condition block
+  * request_url block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#ssl_protocol_condition CdnFrontdoorRule#ssl_protocol_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#request_url CdnFrontdoorRule#request_url}
   */
-  readonly sslProtocolCondition?: CdnFrontdoorRuleConditionsSslProtocolCondition[] | cdktn.IResolvable;
+  readonly requestUrl?: CdnFrontdoorRuleConditionsRequestUrl[] | cdktn.IResolvable;
   /**
-  * url_file_extension_condition block
+  * server_port block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#url_file_extension_condition CdnFrontdoorRule#url_file_extension_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#server_port CdnFrontdoorRule#server_port}
   */
-  readonly urlFileExtensionCondition?: CdnFrontdoorRuleConditionsUrlFileExtensionCondition[] | cdktn.IResolvable;
+  readonly serverPort?: CdnFrontdoorRuleConditionsServerPort[] | cdktn.IResolvable;
   /**
-  * url_filename_condition block
+  * socket_address block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#url_filename_condition CdnFrontdoorRule#url_filename_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#socket_address CdnFrontdoorRule#socket_address}
   */
-  readonly urlFilenameCondition?: CdnFrontdoorRuleConditionsUrlFilenameCondition[] | cdktn.IResolvable;
+  readonly socketAddress?: CdnFrontdoorRuleConditionsSocketAddress[] | cdktn.IResolvable;
   /**
-  * url_path_condition block
+  * ssl_protocol block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#url_path_condition CdnFrontdoorRule#url_path_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#ssl_protocol CdnFrontdoorRule#ssl_protocol}
   */
-  readonly urlPathCondition?: CdnFrontdoorRuleConditionsUrlPathCondition[] | cdktn.IResolvable;
+  readonly sslProtocol?: CdnFrontdoorRuleConditionsSslProtocol[] | cdktn.IResolvable;
 }
 
 export function cdnFrontdoorRuleConditionsToTerraform(struct?: CdnFrontdoorRuleConditionsOutputReference | CdnFrontdoorRuleConditions): any {
@@ -5248,25 +4760,25 @@ export function cdnFrontdoorRuleConditionsToTerraform(struct?: CdnFrontdoorRuleC
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
-    client_port_condition: cdktn.listMapper(cdnFrontdoorRuleConditionsClientPortConditionToTerraform, true)(struct!.clientPortCondition),
-    cookies_condition: cdktn.listMapper(cdnFrontdoorRuleConditionsCookiesConditionToTerraform, true)(struct!.cookiesCondition),
-    host_name_condition: cdktn.listMapper(cdnFrontdoorRuleConditionsHostNameConditionToTerraform, true)(struct!.hostNameCondition),
-    http_version_condition: cdktn.listMapper(cdnFrontdoorRuleConditionsHttpVersionConditionToTerraform, true)(struct!.httpVersionCondition),
-    is_device_condition: cdktn.listMapper(cdnFrontdoorRuleConditionsIsDeviceConditionToTerraform, true)(struct!.isDeviceCondition),
-    post_args_condition: cdktn.listMapper(cdnFrontdoorRuleConditionsPostArgsConditionToTerraform, true)(struct!.postArgsCondition),
-    query_string_condition: cdktn.listMapper(cdnFrontdoorRuleConditionsQueryStringConditionToTerraform, true)(struct!.queryStringCondition),
-    remote_address_condition: cdktn.listMapper(cdnFrontdoorRuleConditionsRemoteAddressConditionToTerraform, true)(struct!.remoteAddressCondition),
-    request_body_condition: cdktn.listMapper(cdnFrontdoorRuleConditionsRequestBodyConditionToTerraform, true)(struct!.requestBodyCondition),
-    request_header_condition: cdktn.listMapper(cdnFrontdoorRuleConditionsRequestHeaderConditionToTerraform, true)(struct!.requestHeaderCondition),
-    request_method_condition: cdktn.listMapper(cdnFrontdoorRuleConditionsRequestMethodConditionToTerraform, true)(struct!.requestMethodCondition),
-    request_scheme_condition: cdktn.listMapper(cdnFrontdoorRuleConditionsRequestSchemeConditionToTerraform, true)(struct!.requestSchemeCondition),
-    request_uri_condition: cdktn.listMapper(cdnFrontdoorRuleConditionsRequestUriConditionToTerraform, true)(struct!.requestUriCondition),
-    server_port_condition: cdktn.listMapper(cdnFrontdoorRuleConditionsServerPortConditionToTerraform, true)(struct!.serverPortCondition),
-    socket_address_condition: cdktn.listMapper(cdnFrontdoorRuleConditionsSocketAddressConditionToTerraform, true)(struct!.socketAddressCondition),
-    ssl_protocol_condition: cdktn.listMapper(cdnFrontdoorRuleConditionsSslProtocolConditionToTerraform, true)(struct!.sslProtocolCondition),
-    url_file_extension_condition: cdktn.listMapper(cdnFrontdoorRuleConditionsUrlFileExtensionConditionToTerraform, true)(struct!.urlFileExtensionCondition),
-    url_filename_condition: cdktn.listMapper(cdnFrontdoorRuleConditionsUrlFilenameConditionToTerraform, true)(struct!.urlFilenameCondition),
-    url_path_condition: cdktn.listMapper(cdnFrontdoorRuleConditionsUrlPathConditionToTerraform, true)(struct!.urlPathCondition),
+    client_port: cdktn.listMapper(cdnFrontdoorRuleConditionsClientPortToTerraform, true)(struct!.clientPort),
+    device_type: cdktn.listMapper(cdnFrontdoorRuleConditionsDeviceTypeToTerraform, true)(struct!.deviceType),
+    host_name: cdktn.listMapper(cdnFrontdoorRuleConditionsHostNameToTerraform, true)(struct!.hostName),
+    http_version: cdktn.listMapper(cdnFrontdoorRuleConditionsHttpVersionToTerraform, true)(struct!.httpVersion),
+    post_argument: cdktn.listMapper(cdnFrontdoorRuleConditionsPostArgumentToTerraform, true)(struct!.postArgument),
+    query_string: cdktn.listMapper(cdnFrontdoorRuleConditionsQueryStringToTerraform, true)(struct!.queryString),
+    remote_address: cdktn.listMapper(cdnFrontdoorRuleConditionsRemoteAddressToTerraform, true)(struct!.remoteAddress),
+    request_body: cdktn.listMapper(cdnFrontdoorRuleConditionsRequestBodyToTerraform, true)(struct!.requestBody),
+    request_cookies: cdktn.listMapper(cdnFrontdoorRuleConditionsRequestCookiesToTerraform, true)(struct!.requestCookies),
+    request_file_extension: cdktn.listMapper(cdnFrontdoorRuleConditionsRequestFileExtensionToTerraform, true)(struct!.requestFileExtension),
+    request_filename: cdktn.listMapper(cdnFrontdoorRuleConditionsRequestFilenameToTerraform, true)(struct!.requestFilename),
+    request_header: cdktn.listMapper(cdnFrontdoorRuleConditionsRequestHeaderToTerraform, true)(struct!.requestHeader),
+    request_method: cdktn.listMapper(cdnFrontdoorRuleConditionsRequestMethodToTerraform, true)(struct!.requestMethod),
+    request_path: cdktn.listMapper(cdnFrontdoorRuleConditionsRequestPathToTerraform, true)(struct!.requestPath),
+    request_scheme: cdktn.listMapper(cdnFrontdoorRuleConditionsRequestSchemeToTerraform, true)(struct!.requestScheme),
+    request_url: cdktn.listMapper(cdnFrontdoorRuleConditionsRequestUrlToTerraform, true)(struct!.requestUrl),
+    server_port: cdktn.listMapper(cdnFrontdoorRuleConditionsServerPortToTerraform, true)(struct!.serverPort),
+    socket_address: cdktn.listMapper(cdnFrontdoorRuleConditionsSocketAddressToTerraform, true)(struct!.socketAddress),
+    ssl_protocol: cdktn.listMapper(cdnFrontdoorRuleConditionsSslProtocolToTerraform, true)(struct!.sslProtocol),
   }
 }
 
@@ -5277,119 +4789,119 @@ export function cdnFrontdoorRuleConditionsToHclTerraform(struct?: CdnFrontdoorRu
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
-    client_port_condition: {
-      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsClientPortConditionToHclTerraform, true)(struct!.clientPortCondition),
+    client_port: {
+      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsClientPortToHclTerraform, true)(struct!.clientPort),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleConditionsClientPortConditionList",
+      storageClassType: "CdnFrontdoorRuleConditionsClientPortList",
     },
-    cookies_condition: {
-      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsCookiesConditionToHclTerraform, true)(struct!.cookiesCondition),
+    device_type: {
+      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsDeviceTypeToHclTerraform, true)(struct!.deviceType),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleConditionsCookiesConditionList",
+      storageClassType: "CdnFrontdoorRuleConditionsDeviceTypeList",
     },
-    host_name_condition: {
-      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsHostNameConditionToHclTerraform, true)(struct!.hostNameCondition),
+    host_name: {
+      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsHostNameToHclTerraform, true)(struct!.hostName),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleConditionsHostNameConditionList",
+      storageClassType: "CdnFrontdoorRuleConditionsHostNameList",
     },
-    http_version_condition: {
-      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsHttpVersionConditionToHclTerraform, true)(struct!.httpVersionCondition),
+    http_version: {
+      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsHttpVersionToHclTerraform, true)(struct!.httpVersion),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleConditionsHttpVersionConditionList",
+      storageClassType: "CdnFrontdoorRuleConditionsHttpVersionList",
     },
-    is_device_condition: {
-      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsIsDeviceConditionToHclTerraform, true)(struct!.isDeviceCondition),
+    post_argument: {
+      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsPostArgumentToHclTerraform, true)(struct!.postArgument),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleConditionsIsDeviceConditionList",
+      storageClassType: "CdnFrontdoorRuleConditionsPostArgumentList",
     },
-    post_args_condition: {
-      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsPostArgsConditionToHclTerraform, true)(struct!.postArgsCondition),
+    query_string: {
+      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsQueryStringToHclTerraform, true)(struct!.queryString),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleConditionsPostArgsConditionList",
+      storageClassType: "CdnFrontdoorRuleConditionsQueryStringList",
     },
-    query_string_condition: {
-      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsQueryStringConditionToHclTerraform, true)(struct!.queryStringCondition),
+    remote_address: {
+      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsRemoteAddressToHclTerraform, true)(struct!.remoteAddress),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleConditionsQueryStringConditionList",
+      storageClassType: "CdnFrontdoorRuleConditionsRemoteAddressList",
     },
-    remote_address_condition: {
-      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsRemoteAddressConditionToHclTerraform, true)(struct!.remoteAddressCondition),
+    request_body: {
+      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsRequestBodyToHclTerraform, true)(struct!.requestBody),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleConditionsRemoteAddressConditionList",
+      storageClassType: "CdnFrontdoorRuleConditionsRequestBodyList",
     },
-    request_body_condition: {
-      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsRequestBodyConditionToHclTerraform, true)(struct!.requestBodyCondition),
+    request_cookies: {
+      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsRequestCookiesToHclTerraform, true)(struct!.requestCookies),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleConditionsRequestBodyConditionList",
+      storageClassType: "CdnFrontdoorRuleConditionsRequestCookiesList",
     },
-    request_header_condition: {
-      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsRequestHeaderConditionToHclTerraform, true)(struct!.requestHeaderCondition),
+    request_file_extension: {
+      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsRequestFileExtensionToHclTerraform, true)(struct!.requestFileExtension),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleConditionsRequestHeaderConditionList",
+      storageClassType: "CdnFrontdoorRuleConditionsRequestFileExtensionList",
     },
-    request_method_condition: {
-      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsRequestMethodConditionToHclTerraform, true)(struct!.requestMethodCondition),
+    request_filename: {
+      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsRequestFilenameToHclTerraform, true)(struct!.requestFilename),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleConditionsRequestMethodConditionList",
+      storageClassType: "CdnFrontdoorRuleConditionsRequestFilenameList",
     },
-    request_scheme_condition: {
-      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsRequestSchemeConditionToHclTerraform, true)(struct!.requestSchemeCondition),
+    request_header: {
+      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsRequestHeaderToHclTerraform, true)(struct!.requestHeader),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleConditionsRequestSchemeConditionList",
+      storageClassType: "CdnFrontdoorRuleConditionsRequestHeaderList",
     },
-    request_uri_condition: {
-      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsRequestUriConditionToHclTerraform, true)(struct!.requestUriCondition),
+    request_method: {
+      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsRequestMethodToHclTerraform, true)(struct!.requestMethod),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleConditionsRequestUriConditionList",
+      storageClassType: "CdnFrontdoorRuleConditionsRequestMethodList",
     },
-    server_port_condition: {
-      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsServerPortConditionToHclTerraform, true)(struct!.serverPortCondition),
+    request_path: {
+      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsRequestPathToHclTerraform, true)(struct!.requestPath),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleConditionsServerPortConditionList",
+      storageClassType: "CdnFrontdoorRuleConditionsRequestPathList",
     },
-    socket_address_condition: {
-      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsSocketAddressConditionToHclTerraform, true)(struct!.socketAddressCondition),
+    request_scheme: {
+      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsRequestSchemeToHclTerraform, true)(struct!.requestScheme),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleConditionsSocketAddressConditionList",
+      storageClassType: "CdnFrontdoorRuleConditionsRequestSchemeList",
     },
-    ssl_protocol_condition: {
-      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsSslProtocolConditionToHclTerraform, true)(struct!.sslProtocolCondition),
+    request_url: {
+      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsRequestUrlToHclTerraform, true)(struct!.requestUrl),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleConditionsSslProtocolConditionList",
+      storageClassType: "CdnFrontdoorRuleConditionsRequestUrlList",
     },
-    url_file_extension_condition: {
-      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsUrlFileExtensionConditionToHclTerraform, true)(struct!.urlFileExtensionCondition),
+    server_port: {
+      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsServerPortToHclTerraform, true)(struct!.serverPort),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleConditionsUrlFileExtensionConditionList",
+      storageClassType: "CdnFrontdoorRuleConditionsServerPortList",
     },
-    url_filename_condition: {
-      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsUrlFilenameConditionToHclTerraform, true)(struct!.urlFilenameCondition),
+    socket_address: {
+      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsSocketAddressToHclTerraform, true)(struct!.socketAddress),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleConditionsUrlFilenameConditionList",
+      storageClassType: "CdnFrontdoorRuleConditionsSocketAddressList",
     },
-    url_path_condition: {
-      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsUrlPathConditionToHclTerraform, true)(struct!.urlPathCondition),
+    ssl_protocol: {
+      value: cdktn.listMapperHcl(cdnFrontdoorRuleConditionsSslProtocolToHclTerraform, true)(struct!.sslProtocol),
       isBlock: true,
       type: "list",
-      storageClassType: "CdnFrontdoorRuleConditionsUrlPathConditionList",
+      storageClassType: "CdnFrontdoorRuleConditionsSslProtocolList",
     },
   };
 
@@ -5411,81 +4923,81 @@ export class CdnFrontdoorRuleConditionsOutputReference extends cdktn.ComplexObje
   public get internalValue(): CdnFrontdoorRuleConditions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._clientPortCondition?.internalValue !== undefined) {
+    if (this._clientPort?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.clientPortCondition = this._clientPortCondition?.internalValue;
+      internalValueResult.clientPort = this._clientPort?.internalValue;
     }
-    if (this._cookiesCondition?.internalValue !== undefined) {
+    if (this._deviceType?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.cookiesCondition = this._cookiesCondition?.internalValue;
+      internalValueResult.deviceType = this._deviceType?.internalValue;
     }
-    if (this._hostNameCondition?.internalValue !== undefined) {
+    if (this._hostName?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.hostNameCondition = this._hostNameCondition?.internalValue;
+      internalValueResult.hostName = this._hostName?.internalValue;
     }
-    if (this._httpVersionCondition?.internalValue !== undefined) {
+    if (this._httpVersion?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.httpVersionCondition = this._httpVersionCondition?.internalValue;
+      internalValueResult.httpVersion = this._httpVersion?.internalValue;
     }
-    if (this._isDeviceCondition?.internalValue !== undefined) {
+    if (this._postArgument?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.isDeviceCondition = this._isDeviceCondition?.internalValue;
+      internalValueResult.postArgument = this._postArgument?.internalValue;
     }
-    if (this._postArgsCondition?.internalValue !== undefined) {
+    if (this._queryString?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.postArgsCondition = this._postArgsCondition?.internalValue;
+      internalValueResult.queryString = this._queryString?.internalValue;
     }
-    if (this._queryStringCondition?.internalValue !== undefined) {
+    if (this._remoteAddress?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.queryStringCondition = this._queryStringCondition?.internalValue;
+      internalValueResult.remoteAddress = this._remoteAddress?.internalValue;
     }
-    if (this._remoteAddressCondition?.internalValue !== undefined) {
+    if (this._requestBody?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.remoteAddressCondition = this._remoteAddressCondition?.internalValue;
+      internalValueResult.requestBody = this._requestBody?.internalValue;
     }
-    if (this._requestBodyCondition?.internalValue !== undefined) {
+    if (this._requestCookies?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.requestBodyCondition = this._requestBodyCondition?.internalValue;
+      internalValueResult.requestCookies = this._requestCookies?.internalValue;
     }
-    if (this._requestHeaderCondition?.internalValue !== undefined) {
+    if (this._requestFileExtension?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.requestHeaderCondition = this._requestHeaderCondition?.internalValue;
+      internalValueResult.requestFileExtension = this._requestFileExtension?.internalValue;
     }
-    if (this._requestMethodCondition?.internalValue !== undefined) {
+    if (this._requestFilename?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.requestMethodCondition = this._requestMethodCondition?.internalValue;
+      internalValueResult.requestFilename = this._requestFilename?.internalValue;
     }
-    if (this._requestSchemeCondition?.internalValue !== undefined) {
+    if (this._requestHeader?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.requestSchemeCondition = this._requestSchemeCondition?.internalValue;
+      internalValueResult.requestHeader = this._requestHeader?.internalValue;
     }
-    if (this._requestUriCondition?.internalValue !== undefined) {
+    if (this._requestMethod?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.requestUriCondition = this._requestUriCondition?.internalValue;
+      internalValueResult.requestMethod = this._requestMethod?.internalValue;
     }
-    if (this._serverPortCondition?.internalValue !== undefined) {
+    if (this._requestPath?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.serverPortCondition = this._serverPortCondition?.internalValue;
+      internalValueResult.requestPath = this._requestPath?.internalValue;
     }
-    if (this._socketAddressCondition?.internalValue !== undefined) {
+    if (this._requestScheme?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.socketAddressCondition = this._socketAddressCondition?.internalValue;
+      internalValueResult.requestScheme = this._requestScheme?.internalValue;
     }
-    if (this._sslProtocolCondition?.internalValue !== undefined) {
+    if (this._requestUrl?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.sslProtocolCondition = this._sslProtocolCondition?.internalValue;
+      internalValueResult.requestUrl = this._requestUrl?.internalValue;
     }
-    if (this._urlFileExtensionCondition?.internalValue !== undefined) {
+    if (this._serverPort?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.urlFileExtensionCondition = this._urlFileExtensionCondition?.internalValue;
+      internalValueResult.serverPort = this._serverPort?.internalValue;
     }
-    if (this._urlFilenameCondition?.internalValue !== undefined) {
+    if (this._socketAddress?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.urlFilenameCondition = this._urlFilenameCondition?.internalValue;
+      internalValueResult.socketAddress = this._socketAddress?.internalValue;
     }
-    if (this._urlPathCondition?.internalValue !== undefined) {
+    if (this._sslProtocol?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.urlPathCondition = this._urlPathCondition?.internalValue;
+      internalValueResult.sslProtocol = this._sslProtocol?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -5493,369 +5005,369 @@ export class CdnFrontdoorRuleConditionsOutputReference extends cdktn.ComplexObje
   public set internalValue(value: CdnFrontdoorRuleConditions | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._clientPortCondition.internalValue = undefined;
-      this._cookiesCondition.internalValue = undefined;
-      this._hostNameCondition.internalValue = undefined;
-      this._httpVersionCondition.internalValue = undefined;
-      this._isDeviceCondition.internalValue = undefined;
-      this._postArgsCondition.internalValue = undefined;
-      this._queryStringCondition.internalValue = undefined;
-      this._remoteAddressCondition.internalValue = undefined;
-      this._requestBodyCondition.internalValue = undefined;
-      this._requestHeaderCondition.internalValue = undefined;
-      this._requestMethodCondition.internalValue = undefined;
-      this._requestSchemeCondition.internalValue = undefined;
-      this._requestUriCondition.internalValue = undefined;
-      this._serverPortCondition.internalValue = undefined;
-      this._socketAddressCondition.internalValue = undefined;
-      this._sslProtocolCondition.internalValue = undefined;
-      this._urlFileExtensionCondition.internalValue = undefined;
-      this._urlFilenameCondition.internalValue = undefined;
-      this._urlPathCondition.internalValue = undefined;
+      this._clientPort.internalValue = undefined;
+      this._deviceType.internalValue = undefined;
+      this._hostName.internalValue = undefined;
+      this._httpVersion.internalValue = undefined;
+      this._postArgument.internalValue = undefined;
+      this._queryString.internalValue = undefined;
+      this._remoteAddress.internalValue = undefined;
+      this._requestBody.internalValue = undefined;
+      this._requestCookies.internalValue = undefined;
+      this._requestFileExtension.internalValue = undefined;
+      this._requestFilename.internalValue = undefined;
+      this._requestHeader.internalValue = undefined;
+      this._requestMethod.internalValue = undefined;
+      this._requestPath.internalValue = undefined;
+      this._requestScheme.internalValue = undefined;
+      this._requestUrl.internalValue = undefined;
+      this._serverPort.internalValue = undefined;
+      this._socketAddress.internalValue = undefined;
+      this._sslProtocol.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._clientPortCondition.internalValue = value.clientPortCondition;
-      this._cookiesCondition.internalValue = value.cookiesCondition;
-      this._hostNameCondition.internalValue = value.hostNameCondition;
-      this._httpVersionCondition.internalValue = value.httpVersionCondition;
-      this._isDeviceCondition.internalValue = value.isDeviceCondition;
-      this._postArgsCondition.internalValue = value.postArgsCondition;
-      this._queryStringCondition.internalValue = value.queryStringCondition;
-      this._remoteAddressCondition.internalValue = value.remoteAddressCondition;
-      this._requestBodyCondition.internalValue = value.requestBodyCondition;
-      this._requestHeaderCondition.internalValue = value.requestHeaderCondition;
-      this._requestMethodCondition.internalValue = value.requestMethodCondition;
-      this._requestSchemeCondition.internalValue = value.requestSchemeCondition;
-      this._requestUriCondition.internalValue = value.requestUriCondition;
-      this._serverPortCondition.internalValue = value.serverPortCondition;
-      this._socketAddressCondition.internalValue = value.socketAddressCondition;
-      this._sslProtocolCondition.internalValue = value.sslProtocolCondition;
-      this._urlFileExtensionCondition.internalValue = value.urlFileExtensionCondition;
-      this._urlFilenameCondition.internalValue = value.urlFilenameCondition;
-      this._urlPathCondition.internalValue = value.urlPathCondition;
+      this._clientPort.internalValue = value.clientPort;
+      this._deviceType.internalValue = value.deviceType;
+      this._hostName.internalValue = value.hostName;
+      this._httpVersion.internalValue = value.httpVersion;
+      this._postArgument.internalValue = value.postArgument;
+      this._queryString.internalValue = value.queryString;
+      this._remoteAddress.internalValue = value.remoteAddress;
+      this._requestBody.internalValue = value.requestBody;
+      this._requestCookies.internalValue = value.requestCookies;
+      this._requestFileExtension.internalValue = value.requestFileExtension;
+      this._requestFilename.internalValue = value.requestFilename;
+      this._requestHeader.internalValue = value.requestHeader;
+      this._requestMethod.internalValue = value.requestMethod;
+      this._requestPath.internalValue = value.requestPath;
+      this._requestScheme.internalValue = value.requestScheme;
+      this._requestUrl.internalValue = value.requestUrl;
+      this._serverPort.internalValue = value.serverPort;
+      this._socketAddress.internalValue = value.socketAddress;
+      this._sslProtocol.internalValue = value.sslProtocol;
     }
   }
 
-  // client_port_condition - computed: false, optional: true, required: false
-  private _clientPortCondition = new CdnFrontdoorRuleConditionsClientPortConditionList(this, "client_port_condition", false);
-  public get clientPortCondition() {
-    return this._clientPortCondition;
+  // client_port - computed: false, optional: true, required: false
+  private _clientPort = new CdnFrontdoorRuleConditionsClientPortList(this, "client_port", false);
+  public get clientPort() {
+    return this._clientPort;
   }
-  public putClientPortCondition(value: CdnFrontdoorRuleConditionsClientPortCondition[] | cdktn.IResolvable) {
-    this._clientPortCondition.internalValue = value;
+  public putClientPort(value: CdnFrontdoorRuleConditionsClientPort[] | cdktn.IResolvable) {
+    this._clientPort.internalValue = value;
   }
-  public resetClientPortCondition() {
-    this._clientPortCondition.internalValue = undefined;
+  public resetClientPort() {
+    this._clientPort.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get clientPortConditionInput() {
-    return this._clientPortCondition.internalValue;
+  public get clientPortInput() {
+    return this._clientPort.internalValue;
   }
 
-  // cookies_condition - computed: false, optional: true, required: false
-  private _cookiesCondition = new CdnFrontdoorRuleConditionsCookiesConditionList(this, "cookies_condition", false);
-  public get cookiesCondition() {
-    return this._cookiesCondition;
+  // device_type - computed: false, optional: true, required: false
+  private _deviceType = new CdnFrontdoorRuleConditionsDeviceTypeList(this, "device_type", false);
+  public get deviceType() {
+    return this._deviceType;
   }
-  public putCookiesCondition(value: CdnFrontdoorRuleConditionsCookiesCondition[] | cdktn.IResolvable) {
-    this._cookiesCondition.internalValue = value;
+  public putDeviceType(value: CdnFrontdoorRuleConditionsDeviceType[] | cdktn.IResolvable) {
+    this._deviceType.internalValue = value;
   }
-  public resetCookiesCondition() {
-    this._cookiesCondition.internalValue = undefined;
+  public resetDeviceType() {
+    this._deviceType.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get cookiesConditionInput() {
-    return this._cookiesCondition.internalValue;
+  public get deviceTypeInput() {
+    return this._deviceType.internalValue;
   }
 
-  // host_name_condition - computed: false, optional: true, required: false
-  private _hostNameCondition = new CdnFrontdoorRuleConditionsHostNameConditionList(this, "host_name_condition", false);
-  public get hostNameCondition() {
-    return this._hostNameCondition;
+  // host_name - computed: false, optional: true, required: false
+  private _hostName = new CdnFrontdoorRuleConditionsHostNameList(this, "host_name", false);
+  public get hostName() {
+    return this._hostName;
   }
-  public putHostNameCondition(value: CdnFrontdoorRuleConditionsHostNameCondition[] | cdktn.IResolvable) {
-    this._hostNameCondition.internalValue = value;
+  public putHostName(value: CdnFrontdoorRuleConditionsHostName[] | cdktn.IResolvable) {
+    this._hostName.internalValue = value;
   }
-  public resetHostNameCondition() {
-    this._hostNameCondition.internalValue = undefined;
+  public resetHostName() {
+    this._hostName.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get hostNameConditionInput() {
-    return this._hostNameCondition.internalValue;
+  public get hostNameInput() {
+    return this._hostName.internalValue;
   }
 
-  // http_version_condition - computed: false, optional: true, required: false
-  private _httpVersionCondition = new CdnFrontdoorRuleConditionsHttpVersionConditionList(this, "http_version_condition", false);
-  public get httpVersionCondition() {
-    return this._httpVersionCondition;
+  // http_version - computed: false, optional: true, required: false
+  private _httpVersion = new CdnFrontdoorRuleConditionsHttpVersionList(this, "http_version", false);
+  public get httpVersion() {
+    return this._httpVersion;
   }
-  public putHttpVersionCondition(value: CdnFrontdoorRuleConditionsHttpVersionCondition[] | cdktn.IResolvable) {
-    this._httpVersionCondition.internalValue = value;
+  public putHttpVersion(value: CdnFrontdoorRuleConditionsHttpVersion[] | cdktn.IResolvable) {
+    this._httpVersion.internalValue = value;
   }
-  public resetHttpVersionCondition() {
-    this._httpVersionCondition.internalValue = undefined;
+  public resetHttpVersion() {
+    this._httpVersion.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get httpVersionConditionInput() {
-    return this._httpVersionCondition.internalValue;
+  public get httpVersionInput() {
+    return this._httpVersion.internalValue;
   }
 
-  // is_device_condition - computed: false, optional: true, required: false
-  private _isDeviceCondition = new CdnFrontdoorRuleConditionsIsDeviceConditionList(this, "is_device_condition", false);
-  public get isDeviceCondition() {
-    return this._isDeviceCondition;
+  // post_argument - computed: false, optional: true, required: false
+  private _postArgument = new CdnFrontdoorRuleConditionsPostArgumentList(this, "post_argument", false);
+  public get postArgument() {
+    return this._postArgument;
   }
-  public putIsDeviceCondition(value: CdnFrontdoorRuleConditionsIsDeviceCondition[] | cdktn.IResolvable) {
-    this._isDeviceCondition.internalValue = value;
+  public putPostArgument(value: CdnFrontdoorRuleConditionsPostArgument[] | cdktn.IResolvable) {
+    this._postArgument.internalValue = value;
   }
-  public resetIsDeviceCondition() {
-    this._isDeviceCondition.internalValue = undefined;
+  public resetPostArgument() {
+    this._postArgument.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get isDeviceConditionInput() {
-    return this._isDeviceCondition.internalValue;
+  public get postArgumentInput() {
+    return this._postArgument.internalValue;
   }
 
-  // post_args_condition - computed: false, optional: true, required: false
-  private _postArgsCondition = new CdnFrontdoorRuleConditionsPostArgsConditionList(this, "post_args_condition", false);
-  public get postArgsCondition() {
-    return this._postArgsCondition;
+  // query_string - computed: false, optional: true, required: false
+  private _queryString = new CdnFrontdoorRuleConditionsQueryStringList(this, "query_string", false);
+  public get queryString() {
+    return this._queryString;
   }
-  public putPostArgsCondition(value: CdnFrontdoorRuleConditionsPostArgsCondition[] | cdktn.IResolvable) {
-    this._postArgsCondition.internalValue = value;
+  public putQueryString(value: CdnFrontdoorRuleConditionsQueryString[] | cdktn.IResolvable) {
+    this._queryString.internalValue = value;
   }
-  public resetPostArgsCondition() {
-    this._postArgsCondition.internalValue = undefined;
+  public resetQueryString() {
+    this._queryString.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get postArgsConditionInput() {
-    return this._postArgsCondition.internalValue;
+  public get queryStringInput() {
+    return this._queryString.internalValue;
   }
 
-  // query_string_condition - computed: false, optional: true, required: false
-  private _queryStringCondition = new CdnFrontdoorRuleConditionsQueryStringConditionList(this, "query_string_condition", false);
-  public get queryStringCondition() {
-    return this._queryStringCondition;
+  // remote_address - computed: false, optional: true, required: false
+  private _remoteAddress = new CdnFrontdoorRuleConditionsRemoteAddressList(this, "remote_address", false);
+  public get remoteAddress() {
+    return this._remoteAddress;
   }
-  public putQueryStringCondition(value: CdnFrontdoorRuleConditionsQueryStringCondition[] | cdktn.IResolvable) {
-    this._queryStringCondition.internalValue = value;
+  public putRemoteAddress(value: CdnFrontdoorRuleConditionsRemoteAddress[] | cdktn.IResolvable) {
+    this._remoteAddress.internalValue = value;
   }
-  public resetQueryStringCondition() {
-    this._queryStringCondition.internalValue = undefined;
+  public resetRemoteAddress() {
+    this._remoteAddress.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get queryStringConditionInput() {
-    return this._queryStringCondition.internalValue;
+  public get remoteAddressInput() {
+    return this._remoteAddress.internalValue;
   }
 
-  // remote_address_condition - computed: false, optional: true, required: false
-  private _remoteAddressCondition = new CdnFrontdoorRuleConditionsRemoteAddressConditionList(this, "remote_address_condition", false);
-  public get remoteAddressCondition() {
-    return this._remoteAddressCondition;
+  // request_body - computed: false, optional: true, required: false
+  private _requestBody = new CdnFrontdoorRuleConditionsRequestBodyList(this, "request_body", false);
+  public get requestBody() {
+    return this._requestBody;
   }
-  public putRemoteAddressCondition(value: CdnFrontdoorRuleConditionsRemoteAddressCondition[] | cdktn.IResolvable) {
-    this._remoteAddressCondition.internalValue = value;
+  public putRequestBody(value: CdnFrontdoorRuleConditionsRequestBody[] | cdktn.IResolvable) {
+    this._requestBody.internalValue = value;
   }
-  public resetRemoteAddressCondition() {
-    this._remoteAddressCondition.internalValue = undefined;
+  public resetRequestBody() {
+    this._requestBody.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get remoteAddressConditionInput() {
-    return this._remoteAddressCondition.internalValue;
+  public get requestBodyInput() {
+    return this._requestBody.internalValue;
   }
 
-  // request_body_condition - computed: false, optional: true, required: false
-  private _requestBodyCondition = new CdnFrontdoorRuleConditionsRequestBodyConditionList(this, "request_body_condition", false);
-  public get requestBodyCondition() {
-    return this._requestBodyCondition;
+  // request_cookies - computed: false, optional: true, required: false
+  private _requestCookies = new CdnFrontdoorRuleConditionsRequestCookiesList(this, "request_cookies", false);
+  public get requestCookies() {
+    return this._requestCookies;
   }
-  public putRequestBodyCondition(value: CdnFrontdoorRuleConditionsRequestBodyCondition[] | cdktn.IResolvable) {
-    this._requestBodyCondition.internalValue = value;
+  public putRequestCookies(value: CdnFrontdoorRuleConditionsRequestCookies[] | cdktn.IResolvable) {
+    this._requestCookies.internalValue = value;
   }
-  public resetRequestBodyCondition() {
-    this._requestBodyCondition.internalValue = undefined;
+  public resetRequestCookies() {
+    this._requestCookies.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get requestBodyConditionInput() {
-    return this._requestBodyCondition.internalValue;
+  public get requestCookiesInput() {
+    return this._requestCookies.internalValue;
   }
 
-  // request_header_condition - computed: false, optional: true, required: false
-  private _requestHeaderCondition = new CdnFrontdoorRuleConditionsRequestHeaderConditionList(this, "request_header_condition", false);
-  public get requestHeaderCondition() {
-    return this._requestHeaderCondition;
+  // request_file_extension - computed: false, optional: true, required: false
+  private _requestFileExtension = new CdnFrontdoorRuleConditionsRequestFileExtensionList(this, "request_file_extension", false);
+  public get requestFileExtension() {
+    return this._requestFileExtension;
   }
-  public putRequestHeaderCondition(value: CdnFrontdoorRuleConditionsRequestHeaderCondition[] | cdktn.IResolvable) {
-    this._requestHeaderCondition.internalValue = value;
+  public putRequestFileExtension(value: CdnFrontdoorRuleConditionsRequestFileExtension[] | cdktn.IResolvable) {
+    this._requestFileExtension.internalValue = value;
   }
-  public resetRequestHeaderCondition() {
-    this._requestHeaderCondition.internalValue = undefined;
+  public resetRequestFileExtension() {
+    this._requestFileExtension.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get requestHeaderConditionInput() {
-    return this._requestHeaderCondition.internalValue;
+  public get requestFileExtensionInput() {
+    return this._requestFileExtension.internalValue;
   }
 
-  // request_method_condition - computed: false, optional: true, required: false
-  private _requestMethodCondition = new CdnFrontdoorRuleConditionsRequestMethodConditionList(this, "request_method_condition", false);
-  public get requestMethodCondition() {
-    return this._requestMethodCondition;
+  // request_filename - computed: false, optional: true, required: false
+  private _requestFilename = new CdnFrontdoorRuleConditionsRequestFilenameList(this, "request_filename", false);
+  public get requestFilename() {
+    return this._requestFilename;
   }
-  public putRequestMethodCondition(value: CdnFrontdoorRuleConditionsRequestMethodCondition[] | cdktn.IResolvable) {
-    this._requestMethodCondition.internalValue = value;
+  public putRequestFilename(value: CdnFrontdoorRuleConditionsRequestFilename[] | cdktn.IResolvable) {
+    this._requestFilename.internalValue = value;
   }
-  public resetRequestMethodCondition() {
-    this._requestMethodCondition.internalValue = undefined;
+  public resetRequestFilename() {
+    this._requestFilename.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get requestMethodConditionInput() {
-    return this._requestMethodCondition.internalValue;
+  public get requestFilenameInput() {
+    return this._requestFilename.internalValue;
   }
 
-  // request_scheme_condition - computed: false, optional: true, required: false
-  private _requestSchemeCondition = new CdnFrontdoorRuleConditionsRequestSchemeConditionList(this, "request_scheme_condition", false);
-  public get requestSchemeCondition() {
-    return this._requestSchemeCondition;
+  // request_header - computed: false, optional: true, required: false
+  private _requestHeader = new CdnFrontdoorRuleConditionsRequestHeaderList(this, "request_header", false);
+  public get requestHeader() {
+    return this._requestHeader;
   }
-  public putRequestSchemeCondition(value: CdnFrontdoorRuleConditionsRequestSchemeCondition[] | cdktn.IResolvable) {
-    this._requestSchemeCondition.internalValue = value;
+  public putRequestHeader(value: CdnFrontdoorRuleConditionsRequestHeader[] | cdktn.IResolvable) {
+    this._requestHeader.internalValue = value;
   }
-  public resetRequestSchemeCondition() {
-    this._requestSchemeCondition.internalValue = undefined;
+  public resetRequestHeader() {
+    this._requestHeader.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get requestSchemeConditionInput() {
-    return this._requestSchemeCondition.internalValue;
+  public get requestHeaderInput() {
+    return this._requestHeader.internalValue;
   }
 
-  // request_uri_condition - computed: false, optional: true, required: false
-  private _requestUriCondition = new CdnFrontdoorRuleConditionsRequestUriConditionList(this, "request_uri_condition", false);
-  public get requestUriCondition() {
-    return this._requestUriCondition;
+  // request_method - computed: false, optional: true, required: false
+  private _requestMethod = new CdnFrontdoorRuleConditionsRequestMethodList(this, "request_method", false);
+  public get requestMethod() {
+    return this._requestMethod;
   }
-  public putRequestUriCondition(value: CdnFrontdoorRuleConditionsRequestUriCondition[] | cdktn.IResolvable) {
-    this._requestUriCondition.internalValue = value;
+  public putRequestMethod(value: CdnFrontdoorRuleConditionsRequestMethod[] | cdktn.IResolvable) {
+    this._requestMethod.internalValue = value;
   }
-  public resetRequestUriCondition() {
-    this._requestUriCondition.internalValue = undefined;
+  public resetRequestMethod() {
+    this._requestMethod.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get requestUriConditionInput() {
-    return this._requestUriCondition.internalValue;
+  public get requestMethodInput() {
+    return this._requestMethod.internalValue;
   }
 
-  // server_port_condition - computed: false, optional: true, required: false
-  private _serverPortCondition = new CdnFrontdoorRuleConditionsServerPortConditionList(this, "server_port_condition", false);
-  public get serverPortCondition() {
-    return this._serverPortCondition;
+  // request_path - computed: false, optional: true, required: false
+  private _requestPath = new CdnFrontdoorRuleConditionsRequestPathList(this, "request_path", false);
+  public get requestPath() {
+    return this._requestPath;
   }
-  public putServerPortCondition(value: CdnFrontdoorRuleConditionsServerPortCondition[] | cdktn.IResolvable) {
-    this._serverPortCondition.internalValue = value;
+  public putRequestPath(value: CdnFrontdoorRuleConditionsRequestPath[] | cdktn.IResolvable) {
+    this._requestPath.internalValue = value;
   }
-  public resetServerPortCondition() {
-    this._serverPortCondition.internalValue = undefined;
+  public resetRequestPath() {
+    this._requestPath.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get serverPortConditionInput() {
-    return this._serverPortCondition.internalValue;
+  public get requestPathInput() {
+    return this._requestPath.internalValue;
   }
 
-  // socket_address_condition - computed: false, optional: true, required: false
-  private _socketAddressCondition = new CdnFrontdoorRuleConditionsSocketAddressConditionList(this, "socket_address_condition", false);
-  public get socketAddressCondition() {
-    return this._socketAddressCondition;
+  // request_scheme - computed: false, optional: true, required: false
+  private _requestScheme = new CdnFrontdoorRuleConditionsRequestSchemeList(this, "request_scheme", false);
+  public get requestScheme() {
+    return this._requestScheme;
   }
-  public putSocketAddressCondition(value: CdnFrontdoorRuleConditionsSocketAddressCondition[] | cdktn.IResolvable) {
-    this._socketAddressCondition.internalValue = value;
+  public putRequestScheme(value: CdnFrontdoorRuleConditionsRequestScheme[] | cdktn.IResolvable) {
+    this._requestScheme.internalValue = value;
   }
-  public resetSocketAddressCondition() {
-    this._socketAddressCondition.internalValue = undefined;
+  public resetRequestScheme() {
+    this._requestScheme.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get socketAddressConditionInput() {
-    return this._socketAddressCondition.internalValue;
+  public get requestSchemeInput() {
+    return this._requestScheme.internalValue;
   }
 
-  // ssl_protocol_condition - computed: false, optional: true, required: false
-  private _sslProtocolCondition = new CdnFrontdoorRuleConditionsSslProtocolConditionList(this, "ssl_protocol_condition", false);
-  public get sslProtocolCondition() {
-    return this._sslProtocolCondition;
+  // request_url - computed: false, optional: true, required: false
+  private _requestUrl = new CdnFrontdoorRuleConditionsRequestUrlList(this, "request_url", false);
+  public get requestUrl() {
+    return this._requestUrl;
   }
-  public putSslProtocolCondition(value: CdnFrontdoorRuleConditionsSslProtocolCondition[] | cdktn.IResolvable) {
-    this._sslProtocolCondition.internalValue = value;
+  public putRequestUrl(value: CdnFrontdoorRuleConditionsRequestUrl[] | cdktn.IResolvable) {
+    this._requestUrl.internalValue = value;
   }
-  public resetSslProtocolCondition() {
-    this._sslProtocolCondition.internalValue = undefined;
+  public resetRequestUrl() {
+    this._requestUrl.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get sslProtocolConditionInput() {
-    return this._sslProtocolCondition.internalValue;
+  public get requestUrlInput() {
+    return this._requestUrl.internalValue;
   }
 
-  // url_file_extension_condition - computed: false, optional: true, required: false
-  private _urlFileExtensionCondition = new CdnFrontdoorRuleConditionsUrlFileExtensionConditionList(this, "url_file_extension_condition", false);
-  public get urlFileExtensionCondition() {
-    return this._urlFileExtensionCondition;
+  // server_port - computed: false, optional: true, required: false
+  private _serverPort = new CdnFrontdoorRuleConditionsServerPortList(this, "server_port", false);
+  public get serverPort() {
+    return this._serverPort;
   }
-  public putUrlFileExtensionCondition(value: CdnFrontdoorRuleConditionsUrlFileExtensionCondition[] | cdktn.IResolvable) {
-    this._urlFileExtensionCondition.internalValue = value;
+  public putServerPort(value: CdnFrontdoorRuleConditionsServerPort[] | cdktn.IResolvable) {
+    this._serverPort.internalValue = value;
   }
-  public resetUrlFileExtensionCondition() {
-    this._urlFileExtensionCondition.internalValue = undefined;
+  public resetServerPort() {
+    this._serverPort.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get urlFileExtensionConditionInput() {
-    return this._urlFileExtensionCondition.internalValue;
+  public get serverPortInput() {
+    return this._serverPort.internalValue;
   }
 
-  // url_filename_condition - computed: false, optional: true, required: false
-  private _urlFilenameCondition = new CdnFrontdoorRuleConditionsUrlFilenameConditionList(this, "url_filename_condition", false);
-  public get urlFilenameCondition() {
-    return this._urlFilenameCondition;
+  // socket_address - computed: false, optional: true, required: false
+  private _socketAddress = new CdnFrontdoorRuleConditionsSocketAddressList(this, "socket_address", false);
+  public get socketAddress() {
+    return this._socketAddress;
   }
-  public putUrlFilenameCondition(value: CdnFrontdoorRuleConditionsUrlFilenameCondition[] | cdktn.IResolvable) {
-    this._urlFilenameCondition.internalValue = value;
+  public putSocketAddress(value: CdnFrontdoorRuleConditionsSocketAddress[] | cdktn.IResolvable) {
+    this._socketAddress.internalValue = value;
   }
-  public resetUrlFilenameCondition() {
-    this._urlFilenameCondition.internalValue = undefined;
+  public resetSocketAddress() {
+    this._socketAddress.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get urlFilenameConditionInput() {
-    return this._urlFilenameCondition.internalValue;
+  public get socketAddressInput() {
+    return this._socketAddress.internalValue;
   }
 
-  // url_path_condition - computed: false, optional: true, required: false
-  private _urlPathCondition = new CdnFrontdoorRuleConditionsUrlPathConditionList(this, "url_path_condition", false);
-  public get urlPathCondition() {
-    return this._urlPathCondition;
+  // ssl_protocol - computed: false, optional: true, required: false
+  private _sslProtocol = new CdnFrontdoorRuleConditionsSslProtocolList(this, "ssl_protocol", false);
+  public get sslProtocol() {
+    return this._sslProtocol;
   }
-  public putUrlPathCondition(value: CdnFrontdoorRuleConditionsUrlPathCondition[] | cdktn.IResolvable) {
-    this._urlPathCondition.internalValue = value;
+  public putSslProtocol(value: CdnFrontdoorRuleConditionsSslProtocol[] | cdktn.IResolvable) {
+    this._sslProtocol.internalValue = value;
   }
-  public resetUrlPathCondition() {
-    this._urlPathCondition.internalValue = undefined;
+  public resetSslProtocol() {
+    this._sslProtocol.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get urlPathConditionInput() {
-    return this._urlPathCondition.internalValue;
+  public get sslProtocolInput() {
+    return this._sslProtocol.internalValue;
   }
 }
 export interface CdnFrontdoorRuleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#create CdnFrontdoorRule#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#create CdnFrontdoorRule#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#delete CdnFrontdoorRule#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#delete CdnFrontdoorRule#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#read CdnFrontdoorRule#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#read CdnFrontdoorRule#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#update CdnFrontdoorRule#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#update CdnFrontdoorRule#update}
   */
   readonly update?: string;
 }
@@ -6036,7 +5548,7 @@ export class CdnFrontdoorRuleTimeoutsOutputReference extends cdktn.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule azurerm_cdn_frontdoor_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule azurerm_cdn_frontdoor_rule}
 */
 export class CdnFrontdoorRule extends cdktn.TerraformResource {
 
@@ -6052,7 +5564,7 @@ export class CdnFrontdoorRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CdnFrontdoorRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CdnFrontdoorRule to import
-  * @param importFromId The id of the existing CdnFrontdoorRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CdnFrontdoorRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CdnFrontdoorRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -6064,7 +5576,7 @@ export class CdnFrontdoorRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cdn_frontdoor_rule azurerm_cdn_frontdoor_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cdn_frontdoor_rule azurerm_cdn_frontdoor_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -6075,8 +5587,8 @@ export class CdnFrontdoorRule extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_cdn_frontdoor_rule',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.81.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -6086,7 +5598,7 @@ export class CdnFrontdoorRule extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._behaviorOnMatch = config.behaviorOnMatch;
+    this._behaviourOnMatch = config.behaviourOnMatch;
     this._cdnFrontdoorRuleSetId = config.cdnFrontdoorRuleSetId;
     this._id = config.id;
     this._name = config.name;
@@ -6100,20 +5612,20 @@ export class CdnFrontdoorRule extends cdktn.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // behavior_on_match - computed: false, optional: true, required: false
-  private _behaviorOnMatch?: string; 
-  public get behaviorOnMatch() {
-    return this.getStringAttribute('behavior_on_match');
+  // behaviour_on_match - computed: false, optional: true, required: false
+  private _behaviourOnMatch?: string; 
+  public get behaviourOnMatch() {
+    return this.getStringAttribute('behaviour_on_match');
   }
-  public set behaviorOnMatch(value: string) {
-    this._behaviorOnMatch = value;
+  public set behaviourOnMatch(value: string) {
+    this._behaviourOnMatch = value;
   }
-  public resetBehaviorOnMatch() {
-    this._behaviorOnMatch = undefined;
+  public resetBehaviourOnMatch() {
+    this._behaviourOnMatch = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get behaviorOnMatchInput() {
-    return this._behaviorOnMatch;
+  public get behaviourOnMatchInput() {
+    return this._behaviourOnMatch;
   }
 
   // cdn_frontdoor_rule_set_id - computed: false, optional: false, required: true
@@ -6227,7 +5739,7 @@ export class CdnFrontdoorRule extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      behavior_on_match: cdktn.stringToTerraform(this._behaviorOnMatch),
+      behaviour_on_match: cdktn.stringToTerraform(this._behaviourOnMatch),
       cdn_frontdoor_rule_set_id: cdktn.stringToTerraform(this._cdnFrontdoorRuleSetId),
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
@@ -6240,8 +5752,8 @@ export class CdnFrontdoorRule extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      behavior_on_match: {
-        value: cdktn.stringToHclTerraform(this._behaviorOnMatch),
+      behaviour_on_match: {
+        value: cdktn.stringToHclTerraform(this._behaviourOnMatch),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

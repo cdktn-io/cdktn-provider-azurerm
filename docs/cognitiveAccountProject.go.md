@@ -4,12 +4,12 @@
 
 ### CognitiveAccountProject <a name="CognitiveAccountProject" id="@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project azurerm_cognitive_account_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project azurerm_cognitive_account_project}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountproject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cognitiveaccountproject"
 
 cognitiveaccountproject.NewCognitiveAccountProject(scope Construct, id *string, config CognitiveAccountProjectConfig) CognitiveAccountProject
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountproject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cognitiveaccountproject"
 
 cognitiveaccountproject.CognitiveAccountProject_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountproject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cognitiveaccountproject"
 
 cognitiveaccountproject.CognitiveAccountProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ cognitiveaccountproject.CognitiveAccountProject_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountproject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cognitiveaccountproject"
 
 cognitiveaccountproject.CognitiveAccountProject_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ cognitiveaccountproject.CognitiveAccountProject_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountproject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cognitiveaccountproject"
 
 cognitiveaccountproject.CognitiveAccountProject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -550,7 +550,7 @@ The construct id used in the generated config for the CognitiveAccountProject to
 
 The id of the existing CognitiveAccountProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -970,7 +970,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountproject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cognitiveaccountproject"
 
 &cognitiveaccountproject.CognitiveAccountProjectConfig {
 	Connection: interface{},
@@ -981,14 +981,14 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccou
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	CognitiveAccountId: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cognitiveAccountProject.CognitiveAccountProjectIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.cognitiveAccountProject.CognitiveAccountProjectIdentity,
 	Location: *string,
 	Name: *string,
 	Description: *string,
 	DisplayName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cognitiveAccountProject.CognitiveAccountProjectTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.cognitiveAccountProject.CognitiveAccountProjectTimeouts,
 }
 ```
 
@@ -1003,14 +1003,14 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccou
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectConfig.property.cognitiveAccountId">CognitiveAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#cognitive_account_id CognitiveAccountProject#cognitive_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectConfig.property.cognitiveAccountId">CognitiveAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#cognitive_account_id CognitiveAccountProject#cognitive_account_id}. |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectIdentity">CognitiveAccountProjectIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#location CognitiveAccountProject#location}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#name CognitiveAccountProject#name}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#description CognitiveAccountProject#description}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#display_name CognitiveAccountProject#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#id CognitiveAccountProject#id}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#tags CognitiveAccountProject#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#location CognitiveAccountProject#location}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#name CognitiveAccountProject#name}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#description CognitiveAccountProject#description}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#display_name CognitiveAccountProject#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#id CognitiveAccountProject#id}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#tags CognitiveAccountProject#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectTimeouts">CognitiveAccountProjectTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1093,7 +1093,7 @@ CognitiveAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#cognitive_account_id CognitiveAccountProject#cognitive_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#cognitive_account_id CognitiveAccountProject#cognitive_account_id}.
 
 ---
 
@@ -1107,7 +1107,7 @@ Identity CognitiveAccountProjectIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#identity CognitiveAccountProject#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#identity CognitiveAccountProject#identity}
 
 ---
 
@@ -1119,7 +1119,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#location CognitiveAccountProject#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#location CognitiveAccountProject#location}.
 
 ---
 
@@ -1131,7 +1131,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#name CognitiveAccountProject#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#name CognitiveAccountProject#name}.
 
 ---
 
@@ -1143,7 +1143,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#description CognitiveAccountProject#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#description CognitiveAccountProject#description}.
 
 ---
 
@@ -1155,7 +1155,7 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#display_name CognitiveAccountProject#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#display_name CognitiveAccountProject#display_name}.
 
 ---
 
@@ -1167,7 +1167,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#id CognitiveAccountProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#id CognitiveAccountProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1182,7 +1182,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#tags CognitiveAccountProject#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#tags CognitiveAccountProject#tags}.
 
 ---
 
@@ -1196,7 +1196,7 @@ Timeouts CognitiveAccountProjectTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#timeouts CognitiveAccountProject#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#timeouts CognitiveAccountProject#timeouts}
 
 ---
 
@@ -1205,7 +1205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountproject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cognitiveaccountproject"
 
 &cognitiveaccountproject.CognitiveAccountProjectIdentity {
 	Type: *string,
@@ -1217,8 +1217,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#type CognitiveAccountProject#type}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#identity_ids CognitiveAccountProject#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#type CognitiveAccountProject#type}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#identity_ids CognitiveAccountProject#identity_ids}. |
 
 ---
 
@@ -1230,7 +1230,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#type CognitiveAccountProject#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#type CognitiveAccountProject#type}.
 
 ---
 
@@ -1242,7 +1242,7 @@ IdentityIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#identity_ids CognitiveAccountProject#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#identity_ids CognitiveAccountProject#identity_ids}.
 
 ---
 
@@ -1251,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountproject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cognitiveaccountproject"
 
 &cognitiveaccountproject.CognitiveAccountProjectTimeouts {
 	Create: *string,
@@ -1265,10 +1265,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#create CognitiveAccountProject#create}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#delete CognitiveAccountProject#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#read CognitiveAccountProject#read}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#update CognitiveAccountProject#update}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#create CognitiveAccountProject#create}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#delete CognitiveAccountProject#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#read CognitiveAccountProject#read}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#update CognitiveAccountProject#update}. |
 
 ---
 
@@ -1280,7 +1280,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#create CognitiveAccountProject#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#create CognitiveAccountProject#create}.
 
 ---
 
@@ -1292,7 +1292,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#delete CognitiveAccountProject#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#delete CognitiveAccountProject#delete}.
 
 ---
 
@@ -1304,7 +1304,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#read CognitiveAccountProject#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#read CognitiveAccountProject#read}.
 
 ---
 
@@ -1316,7 +1316,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_project#update CognitiveAccountProject#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_project#update CognitiveAccountProject#update}.
 
 ---
 
@@ -1327,7 +1327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountproject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cognitiveaccountproject"
 
 cognitiveaccountproject.NewCognitiveAccountProjectIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitiveAccountProjectIdentityOutputReference
 ```
@@ -1649,7 +1649,7 @@ func InternalValue() CognitiveAccountProjectIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveAccountProject.CognitiveAccountProjectTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountproject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cognitiveaccountproject"
 
 cognitiveaccountproject.NewCognitiveAccountProjectTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitiveAccountProjectTimeoutsOutputReference
 ```

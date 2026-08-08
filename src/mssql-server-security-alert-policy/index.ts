@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/mssql_server_security_alert_policy
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/mssql_server_security_alert_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,70 +13,70 @@ import * as cdktn from 'cdktn';
 
 export interface MssqlServerSecurityAlertPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/mssql_server_security_alert_policy#disabled_alerts MssqlServerSecurityAlertPolicy#disabled_alerts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/mssql_server_security_alert_policy#disabled_alerts MssqlServerSecurityAlertPolicy#disabled_alerts}
   */
   readonly disabledAlerts?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/mssql_server_security_alert_policy#email_account_admins MssqlServerSecurityAlertPolicy#email_account_admins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/mssql_server_security_alert_policy#email_account_admins_enabled MssqlServerSecurityAlertPolicy#email_account_admins_enabled}
   */
-  readonly emailAccountAdmins?: boolean | cdktn.IResolvable;
+  readonly emailAccountAdminsEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/mssql_server_security_alert_policy#email_addresses MssqlServerSecurityAlertPolicy#email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/mssql_server_security_alert_policy#email_addresses MssqlServerSecurityAlertPolicy#email_addresses}
   */
   readonly emailAddresses?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/mssql_server_security_alert_policy#id MssqlServerSecurityAlertPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/mssql_server_security_alert_policy#id MssqlServerSecurityAlertPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/mssql_server_security_alert_policy#resource_group_name MssqlServerSecurityAlertPolicy#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/mssql_server_security_alert_policy#resource_group_name MssqlServerSecurityAlertPolicy#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/mssql_server_security_alert_policy#retention_days MssqlServerSecurityAlertPolicy#retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/mssql_server_security_alert_policy#retention_days MssqlServerSecurityAlertPolicy#retention_days}
   */
   readonly retentionDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/mssql_server_security_alert_policy#server_name MssqlServerSecurityAlertPolicy#server_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/mssql_server_security_alert_policy#server_name MssqlServerSecurityAlertPolicy#server_name}
   */
   readonly serverName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/mssql_server_security_alert_policy#state MssqlServerSecurityAlertPolicy#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/mssql_server_security_alert_policy#state MssqlServerSecurityAlertPolicy#state}
   */
   readonly state: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/mssql_server_security_alert_policy#storage_account_access_key MssqlServerSecurityAlertPolicy#storage_account_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/mssql_server_security_alert_policy#storage_account_access_key MssqlServerSecurityAlertPolicy#storage_account_access_key}
   */
   readonly storageAccountAccessKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/mssql_server_security_alert_policy#storage_endpoint MssqlServerSecurityAlertPolicy#storage_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/mssql_server_security_alert_policy#storage_endpoint MssqlServerSecurityAlertPolicy#storage_endpoint}
   */
   readonly storageEndpoint?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/mssql_server_security_alert_policy#timeouts MssqlServerSecurityAlertPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/mssql_server_security_alert_policy#timeouts MssqlServerSecurityAlertPolicy#timeouts}
   */
   readonly timeouts?: MssqlServerSecurityAlertPolicyTimeouts;
 }
 export interface MssqlServerSecurityAlertPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/mssql_server_security_alert_policy#create MssqlServerSecurityAlertPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/mssql_server_security_alert_policy#create MssqlServerSecurityAlertPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/mssql_server_security_alert_policy#delete MssqlServerSecurityAlertPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/mssql_server_security_alert_policy#delete MssqlServerSecurityAlertPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/mssql_server_security_alert_policy#read MssqlServerSecurityAlertPolicy#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/mssql_server_security_alert_policy#read MssqlServerSecurityAlertPolicy#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/mssql_server_security_alert_policy#update MssqlServerSecurityAlertPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/mssql_server_security_alert_policy#update MssqlServerSecurityAlertPolicy#update}
   */
   readonly update?: string;
 }
@@ -257,7 +257,7 @@ export class MssqlServerSecurityAlertPolicyTimeoutsOutputReference extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/mssql_server_security_alert_policy azurerm_mssql_server_security_alert_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/mssql_server_security_alert_policy azurerm_mssql_server_security_alert_policy}
 */
 export class MssqlServerSecurityAlertPolicy extends cdktn.TerraformResource {
 
@@ -273,7 +273,7 @@ export class MssqlServerSecurityAlertPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MssqlServerSecurityAlertPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MssqlServerSecurityAlertPolicy to import
-  * @param importFromId The id of the existing MssqlServerSecurityAlertPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/mssql_server_security_alert_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MssqlServerSecurityAlertPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/mssql_server_security_alert_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MssqlServerSecurityAlertPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -285,7 +285,7 @@ export class MssqlServerSecurityAlertPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/mssql_server_security_alert_policy azurerm_mssql_server_security_alert_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/mssql_server_security_alert_policy azurerm_mssql_server_security_alert_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -296,8 +296,8 @@ export class MssqlServerSecurityAlertPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_mssql_server_security_alert_policy',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.81.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.0.1',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -308,7 +308,7 @@ export class MssqlServerSecurityAlertPolicy extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._disabledAlerts = config.disabledAlerts;
-    this._emailAccountAdmins = config.emailAccountAdmins;
+    this._emailAccountAdminsEnabled = config.emailAccountAdminsEnabled;
     this._emailAddresses = config.emailAddresses;
     this._id = config.id;
     this._resourceGroupName = config.resourceGroupName;
@@ -340,20 +340,20 @@ export class MssqlServerSecurityAlertPolicy extends cdktn.TerraformResource {
     return this._disabledAlerts;
   }
 
-  // email_account_admins - computed: false, optional: true, required: false
-  private _emailAccountAdmins?: boolean | cdktn.IResolvable; 
-  public get emailAccountAdmins() {
-    return this.getBooleanAttribute('email_account_admins');
+  // email_account_admins_enabled - computed: false, optional: true, required: false
+  private _emailAccountAdminsEnabled?: boolean | cdktn.IResolvable; 
+  public get emailAccountAdminsEnabled() {
+    return this.getBooleanAttribute('email_account_admins_enabled');
   }
-  public set emailAccountAdmins(value: boolean | cdktn.IResolvable) {
-    this._emailAccountAdmins = value;
+  public set emailAccountAdminsEnabled(value: boolean | cdktn.IResolvable) {
+    this._emailAccountAdminsEnabled = value;
   }
-  public resetEmailAccountAdmins() {
-    this._emailAccountAdmins = undefined;
+  public resetEmailAccountAdminsEnabled() {
+    this._emailAccountAdminsEnabled = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get emailAccountAdminsInput() {
-    return this._emailAccountAdmins;
+  public get emailAccountAdminsEnabledInput() {
+    return this._emailAccountAdminsEnabled;
   }
 
   // email_addresses - computed: false, optional: true, required: false
@@ -498,7 +498,7 @@ export class MssqlServerSecurityAlertPolicy extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       disabled_alerts: cdktn.listMapper(cdktn.stringToTerraform, false)(this._disabledAlerts),
-      email_account_admins: cdktn.booleanToTerraform(this._emailAccountAdmins),
+      email_account_admins_enabled: cdktn.booleanToTerraform(this._emailAccountAdminsEnabled),
       email_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._emailAddresses),
       id: cdktn.stringToTerraform(this._id),
       resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
@@ -519,8 +519,8 @@ export class MssqlServerSecurityAlertPolicy extends cdktn.TerraformResource {
         type: "set",
         storageClassType: "stringList",
       },
-      email_account_admins: {
-        value: cdktn.booleanToHclTerraform(this._emailAccountAdmins),
+      email_account_admins_enabled: {
+        value: cdktn.booleanToHclTerraform(this._emailAccountAdminsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
