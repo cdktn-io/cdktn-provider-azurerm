@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,66 +13,66 @@ import * as cdktn from 'cdktn';
 
 export interface StorageAccountQueuePropertiesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#id StorageAccountQueueProperties#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#id StorageAccountQueueProperties#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#storage_account_id StorageAccountQueueProperties#storage_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#storage_account_id StorageAccountQueueProperties#storage_account_id}
   */
   readonly storageAccountId: string;
   /**
   * cors_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#cors_rule StorageAccountQueueProperties#cors_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#cors_rule StorageAccountQueueProperties#cors_rule}
   */
   readonly corsRule?: StorageAccountQueuePropertiesCorsRule[] | cdktn.IResolvable;
   /**
   * hour_metrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#hour_metrics StorageAccountQueueProperties#hour_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#hour_metrics StorageAccountQueueProperties#hour_metrics}
   */
   readonly hourMetrics?: StorageAccountQueuePropertiesHourMetrics;
   /**
   * logging block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#logging StorageAccountQueueProperties#logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#logging StorageAccountQueueProperties#logging}
   */
   readonly logging?: StorageAccountQueuePropertiesLogging;
   /**
   * minute_metrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#minute_metrics StorageAccountQueueProperties#minute_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#minute_metrics StorageAccountQueueProperties#minute_metrics}
   */
   readonly minuteMetrics?: StorageAccountQueuePropertiesMinuteMetrics;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#timeouts StorageAccountQueueProperties#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#timeouts StorageAccountQueueProperties#timeouts}
   */
   readonly timeouts?: StorageAccountQueuePropertiesTimeouts;
 }
 export interface StorageAccountQueuePropertiesCorsRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#allowed_headers StorageAccountQueueProperties#allowed_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#allowed_headers StorageAccountQueueProperties#allowed_headers}
   */
   readonly allowedHeaders: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#allowed_methods StorageAccountQueueProperties#allowed_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#allowed_methods StorageAccountQueueProperties#allowed_methods}
   */
   readonly allowedMethods: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#allowed_origins StorageAccountQueueProperties#allowed_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#allowed_origins StorageAccountQueueProperties#allowed_origins}
   */
   readonly allowedOrigins: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#exposed_headers StorageAccountQueueProperties#exposed_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#exposed_headers StorageAccountQueueProperties#exposed_headers}
   */
   readonly exposedHeaders: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#max_age_in_seconds StorageAccountQueueProperties#max_age_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#max_age_in_seconds StorageAccountQueueProperties#max_age_in_seconds}
   */
   readonly maxAgeInSeconds: number;
 }
@@ -289,15 +289,15 @@ export class StorageAccountQueuePropertiesCorsRuleList extends cdktn.ComplexList
 }
 export interface StorageAccountQueuePropertiesHourMetrics {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#include_apis StorageAccountQueueProperties#include_apis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#include_apis StorageAccountQueueProperties#include_apis}
   */
   readonly includeApis?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#retention_policy_days StorageAccountQueueProperties#retention_policy_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#retention_policy_days StorageAccountQueueProperties#retention_policy_days}
   */
   readonly retentionPolicyDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#version StorageAccountQueueProperties#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#version StorageAccountQueueProperties#version}
   */
   readonly version: string;
 }
@@ -436,23 +436,23 @@ export class StorageAccountQueuePropertiesHourMetricsOutputReference extends cdk
 }
 export interface StorageAccountQueuePropertiesLogging {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#delete StorageAccountQueueProperties#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#delete StorageAccountQueueProperties#delete}
   */
   readonly delete: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#read StorageAccountQueueProperties#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#read StorageAccountQueueProperties#read}
   */
   readonly read: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#retention_policy_days StorageAccountQueueProperties#retention_policy_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#retention_policy_days StorageAccountQueueProperties#retention_policy_days}
   */
   readonly retentionPolicyDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#version StorageAccountQueueProperties#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#version StorageAccountQueueProperties#version}
   */
   readonly version: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#write StorageAccountQueueProperties#write}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#write StorageAccountQueueProperties#write}
   */
   readonly write: boolean | cdktn.IResolvable;
 }
@@ -640,15 +640,15 @@ export class StorageAccountQueuePropertiesLoggingOutputReference extends cdktn.C
 }
 export interface StorageAccountQueuePropertiesMinuteMetrics {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#include_apis StorageAccountQueueProperties#include_apis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#include_apis StorageAccountQueueProperties#include_apis}
   */
   readonly includeApis?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#retention_policy_days StorageAccountQueueProperties#retention_policy_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#retention_policy_days StorageAccountQueueProperties#retention_policy_days}
   */
   readonly retentionPolicyDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#version StorageAccountQueueProperties#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#version StorageAccountQueueProperties#version}
   */
   readonly version: string;
 }
@@ -787,19 +787,19 @@ export class StorageAccountQueuePropertiesMinuteMetricsOutputReference extends c
 }
 export interface StorageAccountQueuePropertiesTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#create StorageAccountQueueProperties#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#create StorageAccountQueueProperties#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#delete StorageAccountQueueProperties#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#delete StorageAccountQueueProperties#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#read StorageAccountQueueProperties#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#read StorageAccountQueueProperties#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#update StorageAccountQueueProperties#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#update StorageAccountQueueProperties#update}
   */
   readonly update?: string;
 }
@@ -980,7 +980,7 @@ export class StorageAccountQueuePropertiesTimeoutsOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties azurerm_storage_account_queue_properties}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties azurerm_storage_account_queue_properties}
 */
 export class StorageAccountQueueProperties extends cdktn.TerraformResource {
 
@@ -996,7 +996,7 @@ export class StorageAccountQueueProperties extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a StorageAccountQueueProperties resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageAccountQueueProperties to import
-  * @param importFromId The id of the existing StorageAccountQueueProperties that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageAccountQueueProperties that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageAccountQueueProperties to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1008,7 +1008,7 @@ export class StorageAccountQueueProperties extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_queue_properties azurerm_storage_account_queue_properties} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_account_queue_properties azurerm_storage_account_queue_properties} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1019,7 +1019,7 @@ export class StorageAccountQueueProperties extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_storage_account_queue_properties',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '5.0.1',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

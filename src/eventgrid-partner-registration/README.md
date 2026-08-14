@@ -1,3 +1,3 @@
 # `azurerm_eventgrid_partner_registration`
 
-Refer to the Terraform Registry for docs: [`azurerm_eventgrid_partner_registration`](https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_partner_registration).
+Refer to the Terraform Registry for docs: [`azurerm_eventgrid_partner_registration`](https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/eventgrid_partner_registration).

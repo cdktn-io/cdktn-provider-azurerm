@@ -1,3 +1,3 @@
 # `azurerm_storage_data_lake_gen2_path`
 
-Refer to the Terraform Registry for docs: [`azurerm_storage_data_lake_gen2_path`](https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_data_lake_gen2_path).
+Refer to the Terraform Registry for docs: [`azurerm_storage_data_lake_gen2_path`](https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/storage_data_lake_gen2_path).
