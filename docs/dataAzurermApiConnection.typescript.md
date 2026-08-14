@@ -4,7 +4,7 @@
 
 ### DataAzurermApiConnection <a name="DataAzurermApiConnection" id="@cdktn/provider-azurerm.dataAzurermApiConnection.DataAzurermApiConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/api_connection azurerm_api_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/api_connection azurerm_api_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiConnection.DataAzurermApiConnection.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermApiConnection t
 
 The id of the existing DataAzurermApiConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/api_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/api_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -751,9 +751,9 @@ const dataAzurermApiConnectionConfig: dataAzurermApiConnection.DataAzurermApiCon
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApiConnection.DataAzurermApiConnectionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApiConnection.DataAzurermApiConnectionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApiConnection.DataAzurermApiConnectionConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApiConnection.DataAzurermApiConnectionConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/api_connection#name DataAzurermApiConnection#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApiConnection.DataAzurermApiConnectionConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/api_connection#resource_group_name DataAzurermApiConnection#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApiConnection.DataAzurermApiConnectionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/api_connection#id DataAzurermApiConnection#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApiConnection.DataAzurermApiConnectionConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/api_connection#name DataAzurermApiConnection#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApiConnection.DataAzurermApiConnectionConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/api_connection#resource_group_name DataAzurermApiConnection#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApiConnection.DataAzurermApiConnectionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/api_connection#id DataAzurermApiConnection#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApiConnection.DataAzurermApiConnectionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApiConnection.DataAzurermApiConnectionTimeouts">DataAzurermApiConnectionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -836,7 +836,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/api_connection#name DataAzurermApiConnection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/api_connection#name DataAzurermApiConnection#name}.
 
 ---
 
@@ -848,7 +848,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/api_connection#resource_group_name DataAzurermApiConnection#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/api_connection#resource_group_name DataAzurermApiConnection#resource_group_name}.
 
 ---
 
@@ -860,7 +860,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/api_connection#id DataAzurermApiConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/api_connection#id DataAzurermApiConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -877,7 +877,7 @@ public readonly timeouts: DataAzurermApiConnectionTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/api_connection#timeouts DataAzurermApiConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/api_connection#timeouts DataAzurermApiConnection#timeouts}
 
 ---
 
@@ -895,7 +895,7 @@ const dataAzurermApiConnectionTimeouts: dataAzurermApiConnection.DataAzurermApiC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApiConnection.DataAzurermApiConnectionTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/api_connection#read DataAzurermApiConnection#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApiConnection.DataAzurermApiConnectionTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/api_connection#read DataAzurermApiConnection#read}. |
 
 ---
 
@@ -907,7 +907,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/api_connection#read DataAzurermApiConnection#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/api_connection#read DataAzurermApiConnection#read}.
 
 ---
 

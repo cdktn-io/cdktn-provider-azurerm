@@ -4,7 +4,7 @@
 
 ### ApiManagementRedisCache <a name="ApiManagementRedisCache" id="@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCache"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache azurerm_api_management_redis_cache}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache azurerm_api_management_redis_cache}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCache.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the ApiManagementRedisCache to
 
 The id of the existing ApiManagementRedisCache that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -929,13 +929,13 @@ const apiManagementRedisCacheConfig: apiManagementRedisCache.ApiManagementRedisC
 | <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheConfig.property.apiManagementId">apiManagementId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#api_management_id ApiManagementRedisCache#api_management_id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheConfig.property.connectionString">connectionString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#connection_string ApiManagementRedisCache#connection_string}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#name ApiManagementRedisCache#name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheConfig.property.cacheLocation">cacheLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#cache_location ApiManagementRedisCache#cache_location}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#description ApiManagementRedisCache#description}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#id ApiManagementRedisCache#id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheConfig.property.redisCacheId">redisCacheId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#redis_cache_id ApiManagementRedisCache#redis_cache_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheConfig.property.apiManagementId">apiManagementId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#api_management_id ApiManagementRedisCache#api_management_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheConfig.property.connectionString">connectionString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#connection_string ApiManagementRedisCache#connection_string}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#name ApiManagementRedisCache#name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheConfig.property.cacheLocation">cacheLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#cache_location ApiManagementRedisCache#cache_location}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#description ApiManagementRedisCache#description}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#id ApiManagementRedisCache#id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheConfig.property.redisCacheId">redisCacheId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#redis_cache_id ApiManagementRedisCache#redis_cache_id}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheTimeouts">ApiManagementRedisCacheTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1018,7 +1018,7 @@ public readonly apiManagementId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#api_management_id ApiManagementRedisCache#api_management_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#api_management_id ApiManagementRedisCache#api_management_id}.
 
 ---
 
@@ -1030,7 +1030,7 @@ public readonly connectionString: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#connection_string ApiManagementRedisCache#connection_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#connection_string ApiManagementRedisCache#connection_string}.
 
 ---
 
@@ -1042,7 +1042,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#name ApiManagementRedisCache#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#name ApiManagementRedisCache#name}.
 
 ---
 
@@ -1054,7 +1054,7 @@ public readonly cacheLocation: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#cache_location ApiManagementRedisCache#cache_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#cache_location ApiManagementRedisCache#cache_location}.
 
 ---
 
@@ -1066,7 +1066,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#description ApiManagementRedisCache#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#description ApiManagementRedisCache#description}.
 
 ---
 
@@ -1078,7 +1078,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#id ApiManagementRedisCache#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#id ApiManagementRedisCache#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1093,7 +1093,7 @@ public readonly redisCacheId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#redis_cache_id ApiManagementRedisCache#redis_cache_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#redis_cache_id ApiManagementRedisCache#redis_cache_id}.
 
 ---
 
@@ -1107,7 +1107,7 @@ public readonly timeouts: ApiManagementRedisCacheTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#timeouts ApiManagementRedisCache#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#timeouts ApiManagementRedisCache#timeouts}
 
 ---
 
@@ -1125,10 +1125,10 @@ const apiManagementRedisCacheTimeouts: apiManagementRedisCache.ApiManagementRedi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#create ApiManagementRedisCache#create}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#delete ApiManagementRedisCache#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#read ApiManagementRedisCache#read}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#update ApiManagementRedisCache#update}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#create ApiManagementRedisCache#create}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#delete ApiManagementRedisCache#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#read ApiManagementRedisCache#read}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementRedisCache.ApiManagementRedisCacheTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#update ApiManagementRedisCache#update}. |
 
 ---
 
@@ -1140,7 +1140,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#create ApiManagementRedisCache#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#create ApiManagementRedisCache#create}.
 
 ---
 
@@ -1152,7 +1152,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#delete ApiManagementRedisCache#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#delete ApiManagementRedisCache#delete}.
 
 ---
 
@@ -1164,7 +1164,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#read ApiManagementRedisCache#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#read ApiManagementRedisCache#read}.
 
 ---
 
@@ -1176,7 +1176,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_redis_cache#update ApiManagementRedisCache#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_redis_cache#update ApiManagementRedisCache#update}.
 
 ---
 

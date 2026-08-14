@@ -4,7 +4,7 @@
 
 ### RoleAssignment <a name="RoleAssignment" id="@cdktn/provider-azurerm.roleAssignment.RoleAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment azurerm_role_assignment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment azurerm_role_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleAssignment.RoleAssignment.Initializer"></a>
 
@@ -579,7 +579,7 @@ The construct id used in the generated config for the RoleAssignment to import.
 
 The id of the existing RoleAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1081,18 +1081,18 @@ const roleAssignmentConfig: roleAssignment.RoleAssignmentConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.principalId">principalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#principal_id RoleAssignment#principal_id}. |
-| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.scope">scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#scope RoleAssignment#scope}. |
-| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.condition">condition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#condition RoleAssignment#condition}. |
-| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.conditionVersion">conditionVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#condition_version RoleAssignment#condition_version}. |
-| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.delegatedManagedIdentityResourceId">delegatedManagedIdentityResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#delegated_managed_identity_resource_id RoleAssignment#delegated_managed_identity_resource_id}. |
-| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#description RoleAssignment#description}. |
-| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#id RoleAssignment#id}. |
-| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#name RoleAssignment#name}. |
-| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.principalType">principalType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#principal_type RoleAssignment#principal_type}. |
-| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.roleDefinitionId">roleDefinitionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#role_definition_id RoleAssignment#role_definition_id}. |
-| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.roleDefinitionName">roleDefinitionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#role_definition_name RoleAssignment#role_definition_name}. |
-| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.skipServicePrincipalAadCheck">skipServicePrincipalAadCheck</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#skip_service_principal_aad_check RoleAssignment#skip_service_principal_aad_check}. |
+| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.principalId">principalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#principal_id RoleAssignment#principal_id}. |
+| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.scope">scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#scope RoleAssignment#scope}. |
+| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.condition">condition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#condition RoleAssignment#condition}. |
+| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.conditionVersion">conditionVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#condition_version RoleAssignment#condition_version}. |
+| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.delegatedManagedIdentityResourceId">delegatedManagedIdentityResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#delegated_managed_identity_resource_id RoleAssignment#delegated_managed_identity_resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#description RoleAssignment#description}. |
+| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#id RoleAssignment#id}. |
+| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#name RoleAssignment#name}. |
+| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.principalType">principalType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#principal_type RoleAssignment#principal_type}. |
+| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.roleDefinitionId">roleDefinitionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#role_definition_id RoleAssignment#role_definition_id}. |
+| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.roleDefinitionName">roleDefinitionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#role_definition_name RoleAssignment#role_definition_name}. |
+| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.skipServicePrincipalAadCheck">skipServicePrincipalAadCheck</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#skip_service_principal_aad_check RoleAssignment#skip_service_principal_aad_check}. |
 | <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentTimeouts">RoleAssignmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1175,7 +1175,7 @@ public readonly principalId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#principal_id RoleAssignment#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#principal_id RoleAssignment#principal_id}.
 
 ---
 
@@ -1187,7 +1187,7 @@ public readonly scope: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#scope RoleAssignment#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#scope RoleAssignment#scope}.
 
 ---
 
@@ -1199,7 +1199,7 @@ public readonly condition: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#condition RoleAssignment#condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#condition RoleAssignment#condition}.
 
 ---
 
@@ -1211,7 +1211,7 @@ public readonly conditionVersion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#condition_version RoleAssignment#condition_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#condition_version RoleAssignment#condition_version}.
 
 ---
 
@@ -1223,7 +1223,7 @@ public readonly delegatedManagedIdentityResourceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#delegated_managed_identity_resource_id RoleAssignment#delegated_managed_identity_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#delegated_managed_identity_resource_id RoleAssignment#delegated_managed_identity_resource_id}.
 
 ---
 
@@ -1235,7 +1235,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#description RoleAssignment#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#description RoleAssignment#description}.
 
 ---
 
@@ -1247,7 +1247,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#id RoleAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#id RoleAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1262,7 +1262,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#name RoleAssignment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#name RoleAssignment#name}.
 
 ---
 
@@ -1274,7 +1274,7 @@ public readonly principalType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#principal_type RoleAssignment#principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#principal_type RoleAssignment#principal_type}.
 
 ---
 
@@ -1286,7 +1286,7 @@ public readonly roleDefinitionId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#role_definition_id RoleAssignment#role_definition_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#role_definition_id RoleAssignment#role_definition_id}.
 
 ---
 
@@ -1298,7 +1298,7 @@ public readonly roleDefinitionName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#role_definition_name RoleAssignment#role_definition_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#role_definition_name RoleAssignment#role_definition_name}.
 
 ---
 
@@ -1310,7 +1310,7 @@ public readonly skipServicePrincipalAadCheck: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#skip_service_principal_aad_check RoleAssignment#skip_service_principal_aad_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#skip_service_principal_aad_check RoleAssignment#skip_service_principal_aad_check}.
 
 ---
 
@@ -1324,7 +1324,7 @@ public readonly timeouts: RoleAssignmentTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#timeouts RoleAssignment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#timeouts RoleAssignment#timeouts}
 
 ---
 
@@ -1342,9 +1342,9 @@ const roleAssignmentTimeouts: roleAssignment.RoleAssignmentTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#create RoleAssignment#create}. |
-| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#delete RoleAssignment#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#read RoleAssignment#read}. |
+| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#create RoleAssignment#create}. |
+| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#delete RoleAssignment#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.roleAssignment.RoleAssignmentTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#read RoleAssignment#read}. |
 
 ---
 
@@ -1356,7 +1356,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#create RoleAssignment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#create RoleAssignment#create}.
 
 ---
 
@@ -1368,7 +1368,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#delete RoleAssignment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#delete RoleAssignment#delete}.
 
 ---
 
@@ -1380,7 +1380,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/role_assignment#read RoleAssignment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/role_assignment#read RoleAssignment#read}.
 
 ---
 

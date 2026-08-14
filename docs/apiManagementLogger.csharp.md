@@ -4,7 +4,7 @@
 
 ### ApiManagementLogger <a name="ApiManagementLogger" id="@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLogger"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger azurerm_api_management_logger}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger azurerm_api_management_logger}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLogger.Initializer"></a>
 
@@ -577,7 +577,7 @@ The construct id used in the generated config for the ApiManagementLogger to imp
 
 The id of the existing ApiManagementLogger that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1010,9 +1010,9 @@ new ApiManagementLoggerApplicationInsights {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerApplicationInsights.property.connectionString">ConnectionString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#connection_string ApiManagementLogger#connection_string}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerApplicationInsights.property.identityClientId">IdentityClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#identity_client_id ApiManagementLogger#identity_client_id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerApplicationInsights.property.instrumentationKey">InstrumentationKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#instrumentation_key ApiManagementLogger#instrumentation_key}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerApplicationInsights.property.connectionString">ConnectionString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#connection_string ApiManagementLogger#connection_string}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerApplicationInsights.property.identityClientId">IdentityClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#identity_client_id ApiManagementLogger#identity_client_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerApplicationInsights.property.instrumentationKey">InstrumentationKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#instrumentation_key ApiManagementLogger#instrumentation_key}. |
 
 ---
 
@@ -1024,7 +1024,7 @@ public string ConnectionString { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#connection_string ApiManagementLogger#connection_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#connection_string ApiManagementLogger#connection_string}.
 
 ---
 
@@ -1036,7 +1036,7 @@ public string IdentityClientId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#identity_client_id ApiManagementLogger#identity_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#identity_client_id ApiManagementLogger#identity_client_id}.
 
 ---
 
@@ -1048,7 +1048,7 @@ public string InstrumentationKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#instrumentation_key ApiManagementLogger#instrumentation_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#instrumentation_key ApiManagementLogger#instrumentation_key}.
 
 ---
 
@@ -1091,15 +1091,15 @@ new ApiManagementLoggerConfig {
 | <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerConfig.property.apiManagementName">ApiManagementName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#api_management_name ApiManagementLogger#api_management_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#name ApiManagementLogger#name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#resource_group_name ApiManagementLogger#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerConfig.property.apiManagementName">ApiManagementName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#api_management_name ApiManagementLogger#api_management_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#name ApiManagementLogger#name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#resource_group_name ApiManagementLogger#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerConfig.property.applicationInsights">ApplicationInsights</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerApplicationInsights">ApiManagementLoggerApplicationInsights</a></code> | application_insights block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerConfig.property.buffered">Buffered</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#buffered ApiManagementLogger#buffered}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#description ApiManagementLogger#description}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerConfig.property.buffered">Buffered</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#buffered ApiManagementLogger#buffered}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#description ApiManagementLogger#description}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerConfig.property.eventhub">Eventhub</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerEventhub">ApiManagementLoggerEventhub</a></code> | eventhub block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#id ApiManagementLogger#id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerConfig.property.resourceId">ResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#resource_id ApiManagementLogger#resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#id ApiManagementLogger#id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerConfig.property.resourceId">ResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#resource_id ApiManagementLogger#resource_id}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerTimeouts">ApiManagementLoggerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1182,7 +1182,7 @@ public string ApiManagementName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#api_management_name ApiManagementLogger#api_management_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#api_management_name ApiManagementLogger#api_management_name}.
 
 ---
 
@@ -1194,7 +1194,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#name ApiManagementLogger#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#name ApiManagementLogger#name}.
 
 ---
 
@@ -1206,7 +1206,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#resource_group_name ApiManagementLogger#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#resource_group_name ApiManagementLogger#resource_group_name}.
 
 ---
 
@@ -1220,7 +1220,7 @@ public ApiManagementLoggerApplicationInsights ApplicationInsights { get; set; }
 
 application_insights block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#application_insights ApiManagementLogger#application_insights}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#application_insights ApiManagementLogger#application_insights}
 
 ---
 
@@ -1232,7 +1232,7 @@ public bool|IResolvable Buffered { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#buffered ApiManagementLogger#buffered}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#buffered ApiManagementLogger#buffered}.
 
 ---
 
@@ -1244,7 +1244,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#description ApiManagementLogger#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#description ApiManagementLogger#description}.
 
 ---
 
@@ -1258,7 +1258,7 @@ public ApiManagementLoggerEventhub Eventhub { get; set; }
 
 eventhub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#eventhub ApiManagementLogger#eventhub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#eventhub ApiManagementLogger#eventhub}
 
 ---
 
@@ -1270,7 +1270,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#id ApiManagementLogger#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#id ApiManagementLogger#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1285,7 +1285,7 @@ public string ResourceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#resource_id ApiManagementLogger#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#resource_id ApiManagementLogger#resource_id}.
 
 ---
 
@@ -1299,7 +1299,7 @@ public ApiManagementLoggerTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#timeouts ApiManagementLogger#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#timeouts ApiManagementLogger#timeouts}
 
 ---
 
@@ -1322,10 +1322,10 @@ new ApiManagementLoggerEventhub {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerEventhub.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#name ApiManagementLogger#name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerEventhub.property.connectionString">ConnectionString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#connection_string ApiManagementLogger#connection_string}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerEventhub.property.endpointUri">EndpointUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#endpoint_uri ApiManagementLogger#endpoint_uri}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerEventhub.property.userAssignedIdentityClientId">UserAssignedIdentityClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#user_assigned_identity_client_id ApiManagementLogger#user_assigned_identity_client_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerEventhub.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#name ApiManagementLogger#name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerEventhub.property.connectionString">ConnectionString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#connection_string ApiManagementLogger#connection_string}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerEventhub.property.endpointUri">EndpointUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#endpoint_uri ApiManagementLogger#endpoint_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerEventhub.property.userAssignedIdentityClientId">UserAssignedIdentityClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#user_assigned_identity_client_id ApiManagementLogger#user_assigned_identity_client_id}. |
 
 ---
 
@@ -1337,7 +1337,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#name ApiManagementLogger#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#name ApiManagementLogger#name}.
 
 ---
 
@@ -1349,7 +1349,7 @@ public string ConnectionString { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#connection_string ApiManagementLogger#connection_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#connection_string ApiManagementLogger#connection_string}.
 
 ---
 
@@ -1361,7 +1361,7 @@ public string EndpointUri { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#endpoint_uri ApiManagementLogger#endpoint_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#endpoint_uri ApiManagementLogger#endpoint_uri}.
 
 ---
 
@@ -1373,7 +1373,7 @@ public string UserAssignedIdentityClientId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#user_assigned_identity_client_id ApiManagementLogger#user_assigned_identity_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#user_assigned_identity_client_id ApiManagementLogger#user_assigned_identity_client_id}.
 
 ---
 
@@ -1396,10 +1396,10 @@ new ApiManagementLoggerTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#create ApiManagementLogger#create}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#delete ApiManagementLogger#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#read ApiManagementLogger#read}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#update ApiManagementLogger#update}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#create ApiManagementLogger#create}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#delete ApiManagementLogger#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#read ApiManagementLogger#read}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementLogger.ApiManagementLoggerTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#update ApiManagementLogger#update}. |
 
 ---
 
@@ -1411,7 +1411,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#create ApiManagementLogger#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#create ApiManagementLogger#create}.
 
 ---
 
@@ -1423,7 +1423,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#delete ApiManagementLogger#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#delete ApiManagementLogger#delete}.
 
 ---
 
@@ -1435,7 +1435,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#read ApiManagementLogger#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#read ApiManagementLogger#read}.
 
 ---
 
@@ -1447,7 +1447,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_logger#update ApiManagementLogger#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/api_management_logger#update ApiManagementLogger#update}.
 
 ---
 

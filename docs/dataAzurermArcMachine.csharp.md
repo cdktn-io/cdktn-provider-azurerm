@@ -4,7 +4,7 @@
 
 ### DataAzurermArcMachine <a name="DataAzurermArcMachine" id="@cdktn/provider-azurerm.dataAzurermArcMachine.DataAzurermArcMachine"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/arc_machine azurerm_arc_machine}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/arc_machine azurerm_arc_machine}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermArcMachine.DataAzurermArcMachine.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermArcMachine to i
 
 The id of the existing DataAzurermArcMachine that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/arc_machine#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/arc_machine#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1057,9 +1057,9 @@ new DataAzurermArcMachineConfig {
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermArcMachine.DataAzurermArcMachineConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermArcMachine.DataAzurermArcMachineConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermArcMachine.DataAzurermArcMachineConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermArcMachine.DataAzurermArcMachineConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/arc_machine#name DataAzurermArcMachine#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermArcMachine.DataAzurermArcMachineConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/arc_machine#resource_group_name DataAzurermArcMachine#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermArcMachine.DataAzurermArcMachineConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/arc_machine#id DataAzurermArcMachine#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermArcMachine.DataAzurermArcMachineConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/arc_machine#name DataAzurermArcMachine#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermArcMachine.DataAzurermArcMachineConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/arc_machine#resource_group_name DataAzurermArcMachine#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermArcMachine.DataAzurermArcMachineConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/arc_machine#id DataAzurermArcMachine#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermArcMachine.DataAzurermArcMachineConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermArcMachine.DataAzurermArcMachineTimeouts">DataAzurermArcMachineTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1142,7 +1142,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/arc_machine#name DataAzurermArcMachine#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/arc_machine#name DataAzurermArcMachine#name}.
 
 ---
 
@@ -1154,7 +1154,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/arc_machine#resource_group_name DataAzurermArcMachine#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/arc_machine#resource_group_name DataAzurermArcMachine#resource_group_name}.
 
 ---
 
@@ -1166,7 +1166,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/arc_machine#id DataAzurermArcMachine#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/arc_machine#id DataAzurermArcMachine#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1183,7 +1183,7 @@ public DataAzurermArcMachineTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/arc_machine#timeouts DataAzurermArcMachine#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/arc_machine#timeouts DataAzurermArcMachine#timeouts}
 
 ---
 
@@ -1333,7 +1333,7 @@ new DataAzurermArcMachineTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermArcMachine.DataAzurermArcMachineTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/arc_machine#read DataAzurermArcMachine#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermArcMachine.DataAzurermArcMachineTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/arc_machine#read DataAzurermArcMachine#read}. |
 
 ---
 
@@ -1345,7 +1345,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/arc_machine#read DataAzurermArcMachine#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/arc_machine#read DataAzurermArcMachine#read}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ConfidentialLedger <a name="ConfidentialLedger" id="@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedger"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger azurerm_confidential_ledger}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger azurerm_confidential_ledger}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedger.Initializer"></a>
 
@@ -45,13 +45,13 @@ confidentialLedger.ConfidentialLedger(
 | <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedger.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedger.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedger.Initializer.parameter.azureadBasedServicePrincipal">azuread_based_service_principal</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerAzureadBasedServicePrincipal">ConfidentialLedgerAzureadBasedServicePrincipal</a>]</code> | azuread_based_service_principal block. |
-| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedger.Initializer.parameter.ledgerType">ledger_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#ledger_type ConfidentialLedger#ledger_type}. |
-| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedger.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#location ConfidentialLedger#location}. |
-| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedger.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#name ConfidentialLedger#name}. |
-| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedger.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#resource_group_name ConfidentialLedger#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedger.Initializer.parameter.ledgerType">ledger_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#ledger_type ConfidentialLedger#ledger_type}. |
+| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedger.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#location ConfidentialLedger#location}. |
+| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedger.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#name ConfidentialLedger#name}. |
+| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedger.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#resource_group_name ConfidentialLedger#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedger.Initializer.parameter.certificateBasedSecurityPrincipal">certificate_based_security_principal</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerCertificateBasedSecurityPrincipal">ConfidentialLedgerCertificateBasedSecurityPrincipal</a>]</code> | certificate_based_security_principal block. |
-| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedger.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#id ConfidentialLedger#id}. |
-| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedger.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#tags ConfidentialLedger#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedger.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#id ConfidentialLedger#id}. |
+| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedger.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#tags ConfidentialLedger#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedger.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerTimeouts">ConfidentialLedgerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 azuread_based_service_principal block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#azuread_based_service_principal ConfidentialLedger#azuread_based_service_principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#azuread_based_service_principal ConfidentialLedger#azuread_based_service_principal}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#ledger_type ConfidentialLedger#ledger_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#ledger_type ConfidentialLedger#ledger_type}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#location ConfidentialLedger#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#location ConfidentialLedger#location}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#name ConfidentialLedger#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#name ConfidentialLedger#name}.
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#resource_group_name ConfidentialLedger#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#resource_group_name ConfidentialLedger#resource_group_name}.
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 certificate_based_security_principal block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#certificate_based_security_principal ConfidentialLedger#certificate_based_security_principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#certificate_based_security_principal ConfidentialLedger#certificate_based_security_principal}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#id ConfidentialLedger#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#id ConfidentialLedger#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -183,7 +183,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#tags ConfidentialLedger#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#tags ConfidentialLedger#tags}.
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#timeouts ConfidentialLedger#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#timeouts ConfidentialLedger#timeouts}
 
 ---
 
@@ -626,7 +626,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#create ConfidentialLedger#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#create ConfidentialLedger#create}.
 
 ---
 
@@ -634,7 +634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#delete ConfidentialLedger#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#delete ConfidentialLedger#delete}.
 
 ---
 
@@ -642,7 +642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#read ConfidentialLedger#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#read ConfidentialLedger#read}.
 
 ---
 
@@ -650,7 +650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#update ConfidentialLedger#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#update ConfidentialLedger#update}.
 
 ---
 
@@ -792,7 +792,7 @@ The construct id used in the generated config for the ConfidentialLedger to impo
 
 The id of the existing ConfidentialLedger that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1225,9 +1225,9 @@ confidentialLedger.ConfidentialLedgerAzureadBasedServicePrincipal(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerAzureadBasedServicePrincipal.property.ledgerRoleName">ledger_role_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#ledger_role_name ConfidentialLedger#ledger_role_name}. |
-| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerAzureadBasedServicePrincipal.property.principalId">principal_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#principal_id ConfidentialLedger#principal_id}. |
-| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerAzureadBasedServicePrincipal.property.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#tenant_id ConfidentialLedger#tenant_id}. |
+| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerAzureadBasedServicePrincipal.property.ledgerRoleName">ledger_role_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#ledger_role_name ConfidentialLedger#ledger_role_name}. |
+| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerAzureadBasedServicePrincipal.property.principalId">principal_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#principal_id ConfidentialLedger#principal_id}. |
+| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerAzureadBasedServicePrincipal.property.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#tenant_id ConfidentialLedger#tenant_id}. |
 
 ---
 
@@ -1239,7 +1239,7 @@ ledger_role_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#ledger_role_name ConfidentialLedger#ledger_role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#ledger_role_name ConfidentialLedger#ledger_role_name}.
 
 ---
 
@@ -1251,7 +1251,7 @@ principal_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#principal_id ConfidentialLedger#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#principal_id ConfidentialLedger#principal_id}.
 
 ---
 
@@ -1263,7 +1263,7 @@ tenant_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#tenant_id ConfidentialLedger#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#tenant_id ConfidentialLedger#tenant_id}.
 
 ---
 
@@ -1284,8 +1284,8 @@ confidentialLedger.ConfidentialLedgerCertificateBasedSecurityPrincipal(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerCertificateBasedSecurityPrincipal.property.ledgerRoleName">ledger_role_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#ledger_role_name ConfidentialLedger#ledger_role_name}. |
-| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerCertificateBasedSecurityPrincipal.property.pemPublicKey">pem_public_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#pem_public_key ConfidentialLedger#pem_public_key}. |
+| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerCertificateBasedSecurityPrincipal.property.ledgerRoleName">ledger_role_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#ledger_role_name ConfidentialLedger#ledger_role_name}. |
+| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerCertificateBasedSecurityPrincipal.property.pemPublicKey">pem_public_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#pem_public_key ConfidentialLedger#pem_public_key}. |
 
 ---
 
@@ -1297,7 +1297,7 @@ ledger_role_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#ledger_role_name ConfidentialLedger#ledger_role_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#ledger_role_name ConfidentialLedger#ledger_role_name}.
 
 ---
 
@@ -1309,7 +1309,7 @@ pem_public_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#pem_public_key ConfidentialLedger#pem_public_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#pem_public_key ConfidentialLedger#pem_public_key}.
 
 ---
 
@@ -1352,13 +1352,13 @@ confidentialLedger.ConfidentialLedgerConfig(
 | <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerConfig.property.azureadBasedServicePrincipal">azuread_based_service_principal</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerAzureadBasedServicePrincipal">ConfidentialLedgerAzureadBasedServicePrincipal</a>]</code> | azuread_based_service_principal block. |
-| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerConfig.property.ledgerType">ledger_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#ledger_type ConfidentialLedger#ledger_type}. |
-| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#location ConfidentialLedger#location}. |
-| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#name ConfidentialLedger#name}. |
-| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#resource_group_name ConfidentialLedger#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerConfig.property.ledgerType">ledger_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#ledger_type ConfidentialLedger#ledger_type}. |
+| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#location ConfidentialLedger#location}. |
+| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#name ConfidentialLedger#name}. |
+| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#resource_group_name ConfidentialLedger#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerConfig.property.certificateBasedSecurityPrincipal">certificate_based_security_principal</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerCertificateBasedSecurityPrincipal">ConfidentialLedgerCertificateBasedSecurityPrincipal</a>]</code> | certificate_based_security_principal block. |
-| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#id ConfidentialLedger#id}. |
-| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#tags ConfidentialLedger#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#id ConfidentialLedger#id}. |
+| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#tags ConfidentialLedger#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerTimeouts">ConfidentialLedgerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1443,7 +1443,7 @@ azuread_based_service_principal: IResolvable | typing.List[ConfidentialLedgerAzu
 
 azuread_based_service_principal block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#azuread_based_service_principal ConfidentialLedger#azuread_based_service_principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#azuread_based_service_principal ConfidentialLedger#azuread_based_service_principal}
 
 ---
 
@@ -1455,7 +1455,7 @@ ledger_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#ledger_type ConfidentialLedger#ledger_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#ledger_type ConfidentialLedger#ledger_type}.
 
 ---
 
@@ -1467,7 +1467,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#location ConfidentialLedger#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#location ConfidentialLedger#location}.
 
 ---
 
@@ -1479,7 +1479,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#name ConfidentialLedger#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#name ConfidentialLedger#name}.
 
 ---
 
@@ -1491,7 +1491,7 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#resource_group_name ConfidentialLedger#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#resource_group_name ConfidentialLedger#resource_group_name}.
 
 ---
 
@@ -1505,7 +1505,7 @@ certificate_based_security_principal: IResolvable | typing.List[ConfidentialLedg
 
 certificate_based_security_principal block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#certificate_based_security_principal ConfidentialLedger#certificate_based_security_principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#certificate_based_security_principal ConfidentialLedger#certificate_based_security_principal}
 
 ---
 
@@ -1517,7 +1517,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#id ConfidentialLedger#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#id ConfidentialLedger#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1532,7 +1532,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#tags ConfidentialLedger#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#tags ConfidentialLedger#tags}.
 
 ---
 
@@ -1546,7 +1546,7 @@ timeouts: ConfidentialLedgerTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#timeouts ConfidentialLedger#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#timeouts ConfidentialLedger#timeouts}
 
 ---
 
@@ -1569,10 +1569,10 @@ confidentialLedger.ConfidentialLedgerTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#create ConfidentialLedger#create}. |
-| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#delete ConfidentialLedger#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#read ConfidentialLedger#read}. |
-| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#update ConfidentialLedger#update}. |
+| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#create ConfidentialLedger#create}. |
+| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#delete ConfidentialLedger#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#read ConfidentialLedger#read}. |
+| <code><a href="#@cdktn/provider-azurerm.confidentialLedger.ConfidentialLedgerTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#update ConfidentialLedger#update}. |
 
 ---
 
@@ -1584,7 +1584,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#create ConfidentialLedger#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#create ConfidentialLedger#create}.
 
 ---
 
@@ -1596,7 +1596,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#delete ConfidentialLedger#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#delete ConfidentialLedger#delete}.
 
 ---
 
@@ -1608,7 +1608,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#read ConfidentialLedger#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#read ConfidentialLedger#read}.
 
 ---
 
@@ -1620,7 +1620,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/confidential_ledger#update ConfidentialLedger#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/confidential_ledger#update ConfidentialLedger#update}.
 
 ---
 

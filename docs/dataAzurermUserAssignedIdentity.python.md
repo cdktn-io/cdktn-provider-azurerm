@@ -4,7 +4,7 @@
 
 ### DataAzurermUserAssignedIdentity <a name="DataAzurermUserAssignedIdentity" id="@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/user_assigned_identity azurerm_user_assigned_identity}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/user_assigned_identity azurerm_user_assigned_identity}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentity.Initializer"></a>
 
@@ -39,9 +39,9 @@ dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentity(
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentity.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentity.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentity.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentity.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/user_assigned_identity#name DataAzurermUserAssignedIdentity#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentity.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/user_assigned_identity#resource_group_name DataAzurermUserAssignedIdentity#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentity.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/user_assigned_identity#id DataAzurermUserAssignedIdentity#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentity.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/user_assigned_identity#name DataAzurermUserAssignedIdentity#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentity.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/user_assigned_identity#resource_group_name DataAzurermUserAssignedIdentity#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentity.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/user_assigned_identity#id DataAzurermUserAssignedIdentity#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentity.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentityTimeouts">DataAzurermUserAssignedIdentityTimeouts</a></code> | timeouts block. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/user_assigned_identity#name DataAzurermUserAssignedIdentity#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/user_assigned_identity#name DataAzurermUserAssignedIdentity#name}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/user_assigned_identity#resource_group_name DataAzurermUserAssignedIdentity#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/user_assigned_identity#resource_group_name DataAzurermUserAssignedIdentity#resource_group_name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/user_assigned_identity#id DataAzurermUserAssignedIdentity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/user_assigned_identity#id DataAzurermUserAssignedIdentity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +139,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/user_assigned_identity#timeouts DataAzurermUserAssignedIdentity#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/user_assigned_identity#timeouts DataAzurermUserAssignedIdentity#timeouts}
 
 ---
 
@@ -423,7 +423,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/user_assigned_identity#read DataAzurermUserAssignedIdentity#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/user_assigned_identity#read DataAzurermUserAssignedIdentity#read}.
 
 ---
 
@@ -553,7 +553,7 @@ The construct id used in the generated config for the DataAzurermUserAssignedIde
 
 The id of the existing DataAzurermUserAssignedIdentity that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/user_assigned_identity#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/user_assigned_identity#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -913,9 +913,9 @@ dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentityConfig(
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentityConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentityConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentityConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentityConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/user_assigned_identity#name DataAzurermUserAssignedIdentity#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentityConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/user_assigned_identity#resource_group_name DataAzurermUserAssignedIdentity#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentityConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/user_assigned_identity#id DataAzurermUserAssignedIdentity#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentityConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/user_assigned_identity#name DataAzurermUserAssignedIdentity#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentityConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/user_assigned_identity#resource_group_name DataAzurermUserAssignedIdentity#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentityConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/user_assigned_identity#id DataAzurermUserAssignedIdentity#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentityConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentityTimeouts">DataAzurermUserAssignedIdentityTimeouts</a></code> | timeouts block. |
 
 ---
@@ -998,7 +998,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/user_assigned_identity#name DataAzurermUserAssignedIdentity#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/user_assigned_identity#name DataAzurermUserAssignedIdentity#name}.
 
 ---
 
@@ -1010,7 +1010,7 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/user_assigned_identity#resource_group_name DataAzurermUserAssignedIdentity#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/user_assigned_identity#resource_group_name DataAzurermUserAssignedIdentity#resource_group_name}.
 
 ---
 
@@ -1022,7 +1022,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/user_assigned_identity#id DataAzurermUserAssignedIdentity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/user_assigned_identity#id DataAzurermUserAssignedIdentity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1039,7 +1039,7 @@ timeouts: DataAzurermUserAssignedIdentityTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/user_assigned_identity#timeouts DataAzurermUserAssignedIdentity#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/user_assigned_identity#timeouts DataAzurermUserAssignedIdentity#timeouts}
 
 ---
 
@@ -1059,7 +1059,7 @@ dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentityTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentityTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/user_assigned_identity#read DataAzurermUserAssignedIdentity#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermUserAssignedIdentity.DataAzurermUserAssignedIdentityTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/user_assigned_identity#read DataAzurermUserAssignedIdentity#read}. |
 
 ---
 
@@ -1071,7 +1071,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/user_assigned_identity#read DataAzurermUserAssignedIdentity#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/user_assigned_identity#read DataAzurermUserAssignedIdentity#read}.
 
 ---
 

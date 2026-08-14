@@ -4,7 +4,7 @@
 
 ### GraphServicesAccount <a name="GraphServicesAccount" id="@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/graph_services_account azurerm_graph_services_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/graph_services_account azurerm_graph_services_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccount.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the GraphServicesAccount to im
 
 The id of the existing GraphServicesAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/graph_services_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/graph_services_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -882,11 +882,11 @@ const graphServicesAccountConfig: graphServicesAccount.GraphServicesAccountConfi
 | <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountConfig.property.applicationId">applicationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/graph_services_account#application_id GraphServicesAccount#application_id}. |
-| <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/graph_services_account#name GraphServicesAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/graph_services_account#resource_group_name GraphServicesAccount#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/graph_services_account#id GraphServicesAccount#id}. |
-| <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/graph_services_account#tags GraphServicesAccount#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountConfig.property.applicationId">applicationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/graph_services_account#application_id GraphServicesAccount#application_id}. |
+| <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/graph_services_account#name GraphServicesAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/graph_services_account#resource_group_name GraphServicesAccount#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/graph_services_account#id GraphServicesAccount#id}. |
+| <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/graph_services_account#tags GraphServicesAccount#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountTimeouts">GraphServicesAccountTimeouts</a></code> | timeouts block. |
 
 ---
@@ -969,7 +969,7 @@ public readonly applicationId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/graph_services_account#application_id GraphServicesAccount#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/graph_services_account#application_id GraphServicesAccount#application_id}.
 
 ---
 
@@ -981,7 +981,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/graph_services_account#name GraphServicesAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/graph_services_account#name GraphServicesAccount#name}.
 
 ---
 
@@ -993,7 +993,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/graph_services_account#resource_group_name GraphServicesAccount#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/graph_services_account#resource_group_name GraphServicesAccount#resource_group_name}.
 
 ---
 
@@ -1005,7 +1005,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/graph_services_account#id GraphServicesAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/graph_services_account#id GraphServicesAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1020,7 +1020,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/graph_services_account#tags GraphServicesAccount#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/graph_services_account#tags GraphServicesAccount#tags}.
 
 ---
 
@@ -1034,7 +1034,7 @@ public readonly timeouts: GraphServicesAccountTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/graph_services_account#timeouts GraphServicesAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/graph_services_account#timeouts GraphServicesAccount#timeouts}
 
 ---
 
@@ -1052,10 +1052,10 @@ const graphServicesAccountTimeouts: graphServicesAccount.GraphServicesAccountTim
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/graph_services_account#create GraphServicesAccount#create}. |
-| <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/graph_services_account#delete GraphServicesAccount#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/graph_services_account#read GraphServicesAccount#read}. |
-| <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/graph_services_account#update GraphServicesAccount#update}. |
+| <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/graph_services_account#create GraphServicesAccount#create}. |
+| <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/graph_services_account#delete GraphServicesAccount#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/graph_services_account#read GraphServicesAccount#read}. |
+| <code><a href="#@cdktn/provider-azurerm.graphServicesAccount.GraphServicesAccountTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/graph_services_account#update GraphServicesAccount#update}. |
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/graph_services_account#create GraphServicesAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/graph_services_account#create GraphServicesAccount#create}.
 
 ---
 
@@ -1079,7 +1079,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/graph_services_account#delete GraphServicesAccount#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/graph_services_account#delete GraphServicesAccount#delete}.
 
 ---
 
@@ -1091,7 +1091,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/graph_services_account#read GraphServicesAccount#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/graph_services_account#read GraphServicesAccount#read}.
 
 ---
 
@@ -1103,7 +1103,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/graph_services_account#update GraphServicesAccount#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/graph_services_account#update GraphServicesAccount#update}.
 
 ---
 

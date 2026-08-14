@@ -4,7 +4,7 @@
 
 ### ChaosStudioTarget <a name="ChaosStudioTarget" id="@cdktn/provider-azurerm.chaosStudioTarget.ChaosStudioTarget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/chaos_studio_target azurerm_chaos_studio_target}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/chaos_studio_target azurerm_chaos_studio_target}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.chaosStudioTarget.ChaosStudioTarget.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ChaosStudioTarget to impor
 
 The id of the existing ChaosStudioTarget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/chaos_studio_target#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/chaos_studio_target#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -855,10 +855,10 @@ new ChaosStudioTargetConfig {
 | <code><a href="#@cdktn/provider-azurerm.chaosStudioTarget.ChaosStudioTargetConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.chaosStudioTarget.ChaosStudioTargetConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.chaosStudioTarget.ChaosStudioTargetConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioTarget.ChaosStudioTargetConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/chaos_studio_target#location ChaosStudioTarget#location}. |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioTarget.ChaosStudioTargetConfig.property.targetResourceId">TargetResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/chaos_studio_target#target_resource_id ChaosStudioTarget#target_resource_id}. |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioTarget.ChaosStudioTargetConfig.property.targetType">TargetType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/chaos_studio_target#target_type ChaosStudioTarget#target_type}. |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioTarget.ChaosStudioTargetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/chaos_studio_target#id ChaosStudioTarget#id}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioTarget.ChaosStudioTargetConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/chaos_studio_target#location ChaosStudioTarget#location}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioTarget.ChaosStudioTargetConfig.property.targetResourceId">TargetResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/chaos_studio_target#target_resource_id ChaosStudioTarget#target_resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioTarget.ChaosStudioTargetConfig.property.targetType">TargetType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/chaos_studio_target#target_type ChaosStudioTarget#target_type}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioTarget.ChaosStudioTargetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/chaos_studio_target#id ChaosStudioTarget#id}. |
 | <code><a href="#@cdktn/provider-azurerm.chaosStudioTarget.ChaosStudioTargetConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.chaosStudioTarget.ChaosStudioTargetTimeouts">ChaosStudioTargetTimeouts</a></code> | timeouts block. |
 
 ---
@@ -941,7 +941,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/chaos_studio_target#location ChaosStudioTarget#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/chaos_studio_target#location ChaosStudioTarget#location}.
 
 ---
 
@@ -953,7 +953,7 @@ public string TargetResourceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/chaos_studio_target#target_resource_id ChaosStudioTarget#target_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/chaos_studio_target#target_resource_id ChaosStudioTarget#target_resource_id}.
 
 ---
 
@@ -965,7 +965,7 @@ public string TargetType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/chaos_studio_target#target_type ChaosStudioTarget#target_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/chaos_studio_target#target_type ChaosStudioTarget#target_type}.
 
 ---
 
@@ -977,7 +977,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/chaos_studio_target#id ChaosStudioTarget#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/chaos_studio_target#id ChaosStudioTarget#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -994,7 +994,7 @@ public ChaosStudioTargetTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/chaos_studio_target#timeouts ChaosStudioTarget#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/chaos_studio_target#timeouts ChaosStudioTarget#timeouts}
 
 ---
 
@@ -1016,9 +1016,9 @@ new ChaosStudioTargetTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioTarget.ChaosStudioTargetTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/chaos_studio_target#create ChaosStudioTarget#create}. |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioTarget.ChaosStudioTargetTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/chaos_studio_target#delete ChaosStudioTarget#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioTarget.ChaosStudioTargetTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/chaos_studio_target#read ChaosStudioTarget#read}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioTarget.ChaosStudioTargetTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/chaos_studio_target#create ChaosStudioTarget#create}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioTarget.ChaosStudioTargetTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/chaos_studio_target#delete ChaosStudioTarget#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioTarget.ChaosStudioTargetTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/chaos_studio_target#read ChaosStudioTarget#read}. |
 
 ---
 
@@ -1030,7 +1030,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/chaos_studio_target#create ChaosStudioTarget#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/chaos_studio_target#create ChaosStudioTarget#create}.
 
 ---
 
@@ -1042,7 +1042,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/chaos_studio_target#delete ChaosStudioTarget#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/chaos_studio_target#delete ChaosStudioTarget#delete}.
 
 ---
 
@@ -1054,7 +1054,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/chaos_studio_target#read ChaosStudioTarget#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/chaos_studio_target#read ChaosStudioTarget#read}.
 
 ---
 

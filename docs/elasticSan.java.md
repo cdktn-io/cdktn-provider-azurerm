@@ -4,7 +4,7 @@
 
 ### ElasticSan <a name="ElasticSan" id="@cdktn/provider-azurerm.elasticSan.ElasticSan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san azurerm_elastic_san}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san azurerm_elastic_san}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer"></a>
 
@@ -43,16 +43,16 @@ ElasticSan.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer.parameter.baseSizeInTib">baseSizeInTib</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#base_size_in_tib ElasticSan#base_size_in_tib}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#location ElasticSan#location}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#name ElasticSan#name}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#resource_group_name ElasticSan#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer.parameter.baseSizeInTib">baseSizeInTib</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#base_size_in_tib ElasticSan#base_size_in_tib}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#location ElasticSan#location}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#name ElasticSan#name}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#resource_group_name ElasticSan#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer.parameter.sku">sku</a></code> | <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanSku">ElasticSanSku</a></code> | sku block. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer.parameter.extendedSizeInTib">extendedSizeInTib</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#extended_size_in_tib ElasticSan#extended_size_in_tib}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#id ElasticSan#id}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#tags ElasticSan#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer.parameter.extendedSizeInTib">extendedSizeInTib</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#extended_size_in_tib ElasticSan#extended_size_in_tib}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#id ElasticSan#id}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#tags ElasticSan#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanTimeouts">ElasticSanTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer.parameter.zones">zones</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#zones ElasticSan#zones}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSan.Initializer.parameter.zones">zones</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#zones ElasticSan#zones}. |
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#base_size_in_tib ElasticSan#base_size_in_tib}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#base_size_in_tib ElasticSan#base_size_in_tib}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#location ElasticSan#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#location ElasticSan#location}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#name ElasticSan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#name ElasticSan#name}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#resource_group_name ElasticSan#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#resource_group_name ElasticSan#resource_group_name}.
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 sku block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#sku ElasticSan#sku}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#sku ElasticSan#sku}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#extended_size_in_tib ElasticSan#extended_size_in_tib}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#extended_size_in_tib ElasticSan#extended_size_in_tib}.
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#id ElasticSan#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#id ElasticSan#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -181,7 +181,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#tags ElasticSan#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#tags ElasticSan#tags}.
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#timeouts ElasticSan#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#timeouts ElasticSan#timeouts}
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#zones ElasticSan#zones}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#zones ElasticSan#zones}.
 
 ---
 
@@ -709,7 +709,7 @@ The construct id used in the generated config for the ElasticSan to import.
 
 The id of the existing ElasticSan that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1218,16 +1218,16 @@ ElasticSanConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanConfig.property.baseSizeInTib">baseSizeInTib</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#base_size_in_tib ElasticSan#base_size_in_tib}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#location ElasticSan#location}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#name ElasticSan#name}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#resource_group_name ElasticSan#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanConfig.property.baseSizeInTib">baseSizeInTib</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#base_size_in_tib ElasticSan#base_size_in_tib}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#location ElasticSan#location}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#name ElasticSan#name}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#resource_group_name ElasticSan#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanConfig.property.sku">sku</a></code> | <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanSku">ElasticSanSku</a></code> | sku block. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanConfig.property.extendedSizeInTib">extendedSizeInTib</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#extended_size_in_tib ElasticSan#extended_size_in_tib}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#id ElasticSan#id}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#tags ElasticSan#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanConfig.property.extendedSizeInTib">extendedSizeInTib</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#extended_size_in_tib ElasticSan#extended_size_in_tib}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#id ElasticSan#id}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#tags ElasticSan#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanTimeouts">ElasticSanTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanConfig.property.zones">zones</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#zones ElasticSan#zones}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanConfig.property.zones">zones</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#zones ElasticSan#zones}. |
 
 ---
 
@@ -1309,7 +1309,7 @@ public java.lang.Number getBaseSizeInTib();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#base_size_in_tib ElasticSan#base_size_in_tib}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#base_size_in_tib ElasticSan#base_size_in_tib}.
 
 ---
 
@@ -1321,7 +1321,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#location ElasticSan#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#location ElasticSan#location}.
 
 ---
 
@@ -1333,7 +1333,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#name ElasticSan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#name ElasticSan#name}.
 
 ---
 
@@ -1345,7 +1345,7 @@ public java.lang.String getResourceGroupName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#resource_group_name ElasticSan#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#resource_group_name ElasticSan#resource_group_name}.
 
 ---
 
@@ -1359,7 +1359,7 @@ public ElasticSanSku getSku();
 
 sku block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#sku ElasticSan#sku}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#sku ElasticSan#sku}
 
 ---
 
@@ -1371,7 +1371,7 @@ public java.lang.Number getExtendedSizeInTib();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#extended_size_in_tib ElasticSan#extended_size_in_tib}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#extended_size_in_tib ElasticSan#extended_size_in_tib}.
 
 ---
 
@@ -1383,7 +1383,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#id ElasticSan#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#id ElasticSan#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1398,7 +1398,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#tags ElasticSan#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#tags ElasticSan#tags}.
 
 ---
 
@@ -1412,7 +1412,7 @@ public ElasticSanTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#timeouts ElasticSan#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#timeouts ElasticSan#timeouts}
 
 ---
 
@@ -1424,7 +1424,7 @@ public java.util.List<java.lang.String> getZones();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#zones ElasticSan#zones}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#zones ElasticSan#zones}.
 
 ---
 
@@ -1445,8 +1445,8 @@ ElasticSanSku.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanSku.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#name ElasticSan#name}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanSku.property.tier">tier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#tier ElasticSan#tier}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanSku.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#name ElasticSan#name}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanSku.property.tier">tier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#tier ElasticSan#tier}. |
 
 ---
 
@@ -1458,7 +1458,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#name ElasticSan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#name ElasticSan#name}.
 
 ---
 
@@ -1470,7 +1470,7 @@ public java.lang.String getTier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#tier ElasticSan#tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#tier ElasticSan#tier}.
 
 ---
 
@@ -1493,10 +1493,10 @@ ElasticSanTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#create ElasticSan#create}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#delete ElasticSan#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#read ElasticSan#read}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#update ElasticSan#update}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#create ElasticSan#create}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#delete ElasticSan#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#read ElasticSan#read}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSan.ElasticSanTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#update ElasticSan#update}. |
 
 ---
 
@@ -1508,7 +1508,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#create ElasticSan#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#create ElasticSan#create}.
 
 ---
 
@@ -1520,7 +1520,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#delete ElasticSan#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#delete ElasticSan#delete}.
 
 ---
 
@@ -1532,7 +1532,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#read ElasticSan#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#read ElasticSan#read}.
 
 ---
 
@@ -1544,7 +1544,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san#update ElasticSan#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/elastic_san#update ElasticSan#update}.
 
 ---
 
