@@ -4,7 +4,7 @@
 
 ### ResourcePolicyExemption <a name="ResourcePolicyExemption" id="@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption azurerm_resource_policy_exemption}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption azurerm_resource_policy_exemption}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer"></a>
 
@@ -44,16 +44,16 @@ ResourcePolicyExemption.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.exemptionCategory">exemptionCategory</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#exemption_category ResourcePolicyExemption#exemption_category}. |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#name ResourcePolicyExemption#name}. |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.policyAssignmentId">policyAssignmentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#policy_assignment_id ResourcePolicyExemption#policy_assignment_id}. |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.resourceId">resourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#resource_id ResourcePolicyExemption#resource_id}. |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#description ResourcePolicyExemption#description}. |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#display_name ResourcePolicyExemption#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.expiresOn">expiresOn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#expires_on ResourcePolicyExemption#expires_on}. |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#id ResourcePolicyExemption#id}. |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.metadata">metadata</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#metadata ResourcePolicyExemption#metadata}. |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.policyDefinitionReferenceIds">policyDefinitionReferenceIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#policy_definition_reference_ids ResourcePolicyExemption#policy_definition_reference_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.exemptionCategory">exemptionCategory</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#exemption_category ResourcePolicyExemption#exemption_category}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#name ResourcePolicyExemption#name}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.policyAssignmentId">policyAssignmentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#policy_assignment_id ResourcePolicyExemption#policy_assignment_id}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.resourceId">resourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#resource_id ResourcePolicyExemption#resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#description ResourcePolicyExemption#description}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#display_name ResourcePolicyExemption#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.expiresOn">expiresOn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#expires_on ResourcePolicyExemption#expires_on}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#id ResourcePolicyExemption#id}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.metadata">metadata</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#metadata ResourcePolicyExemption#metadata}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.policyDefinitionReferenceIds">policyDefinitionReferenceIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#policy_definition_reference_ids ResourcePolicyExemption#policy_definition_reference_ids}. |
 | <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionTimeouts">ResourcePolicyExemptionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#exemption_category ResourcePolicyExemption#exemption_category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#exemption_category ResourcePolicyExemption#exemption_category}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#name ResourcePolicyExemption#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#name ResourcePolicyExemption#name}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#policy_assignment_id ResourcePolicyExemption#policy_assignment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#policy_assignment_id ResourcePolicyExemption#policy_assignment_id}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#resource_id ResourcePolicyExemption#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#resource_id ResourcePolicyExemption#resource_id}.
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#description ResourcePolicyExemption#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#description ResourcePolicyExemption#description}.
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#display_name ResourcePolicyExemption#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#display_name ResourcePolicyExemption#display_name}.
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#expires_on ResourcePolicyExemption#expires_on}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#expires_on ResourcePolicyExemption#expires_on}.
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#id ResourcePolicyExemption#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#id ResourcePolicyExemption#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -189,7 +189,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#metadata ResourcePolicyExemption#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#metadata ResourcePolicyExemption#metadata}.
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#policy_definition_reference_ids ResourcePolicyExemption#policy_definition_reference_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#policy_definition_reference_ids ResourcePolicyExemption#policy_definition_reference_ids}.
 
 ---
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#timeouts ResourcePolicyExemption#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#timeouts ResourcePolicyExemption#timeouts}
 
 ---
 
@@ -718,7 +718,7 @@ The construct id used in the generated config for the ResourcePolicyExemption to
 
 The id of the existing ResourcePolicyExemption that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1195,16 +1195,16 @@ ResourcePolicyExemptionConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.exemptionCategory">exemptionCategory</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#exemption_category ResourcePolicyExemption#exemption_category}. |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#name ResourcePolicyExemption#name}. |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.policyAssignmentId">policyAssignmentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#policy_assignment_id ResourcePolicyExemption#policy_assignment_id}. |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.resourceId">resourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#resource_id ResourcePolicyExemption#resource_id}. |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#description ResourcePolicyExemption#description}. |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#display_name ResourcePolicyExemption#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.expiresOn">expiresOn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#expires_on ResourcePolicyExemption#expires_on}. |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#id ResourcePolicyExemption#id}. |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.metadata">metadata</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#metadata ResourcePolicyExemption#metadata}. |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.policyDefinitionReferenceIds">policyDefinitionReferenceIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#policy_definition_reference_ids ResourcePolicyExemption#policy_definition_reference_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.exemptionCategory">exemptionCategory</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#exemption_category ResourcePolicyExemption#exemption_category}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#name ResourcePolicyExemption#name}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.policyAssignmentId">policyAssignmentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#policy_assignment_id ResourcePolicyExemption#policy_assignment_id}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.resourceId">resourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#resource_id ResourcePolicyExemption#resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#description ResourcePolicyExemption#description}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#display_name ResourcePolicyExemption#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.expiresOn">expiresOn</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#expires_on ResourcePolicyExemption#expires_on}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#id ResourcePolicyExemption#id}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.metadata">metadata</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#metadata ResourcePolicyExemption#metadata}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.policyDefinitionReferenceIds">policyDefinitionReferenceIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#policy_definition_reference_ids ResourcePolicyExemption#policy_definition_reference_ids}. |
 | <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionTimeouts">ResourcePolicyExemptionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1287,7 +1287,7 @@ public java.lang.String getExemptionCategory();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#exemption_category ResourcePolicyExemption#exemption_category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#exemption_category ResourcePolicyExemption#exemption_category}.
 
 ---
 
@@ -1299,7 +1299,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#name ResourcePolicyExemption#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#name ResourcePolicyExemption#name}.
 
 ---
 
@@ -1311,7 +1311,7 @@ public java.lang.String getPolicyAssignmentId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#policy_assignment_id ResourcePolicyExemption#policy_assignment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#policy_assignment_id ResourcePolicyExemption#policy_assignment_id}.
 
 ---
 
@@ -1323,7 +1323,7 @@ public java.lang.String getResourceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#resource_id ResourcePolicyExemption#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#resource_id ResourcePolicyExemption#resource_id}.
 
 ---
 
@@ -1335,7 +1335,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#description ResourcePolicyExemption#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#description ResourcePolicyExemption#description}.
 
 ---
 
@@ -1347,7 +1347,7 @@ public java.lang.String getDisplayName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#display_name ResourcePolicyExemption#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#display_name ResourcePolicyExemption#display_name}.
 
 ---
 
@@ -1359,7 +1359,7 @@ public java.lang.String getExpiresOn();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#expires_on ResourcePolicyExemption#expires_on}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#expires_on ResourcePolicyExemption#expires_on}.
 
 ---
 
@@ -1371,7 +1371,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#id ResourcePolicyExemption#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#id ResourcePolicyExemption#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1386,7 +1386,7 @@ public java.lang.String getMetadata();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#metadata ResourcePolicyExemption#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#metadata ResourcePolicyExemption#metadata}.
 
 ---
 
@@ -1398,7 +1398,7 @@ public java.util.List<java.lang.String> getPolicyDefinitionReferenceIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#policy_definition_reference_ids ResourcePolicyExemption#policy_definition_reference_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#policy_definition_reference_ids ResourcePolicyExemption#policy_definition_reference_ids}.
 
 ---
 
@@ -1412,7 +1412,7 @@ public ResourcePolicyExemptionTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#timeouts ResourcePolicyExemption#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#timeouts ResourcePolicyExemption#timeouts}
 
 ---
 
@@ -1435,10 +1435,10 @@ ResourcePolicyExemptionTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#create ResourcePolicyExemption#create}. |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#delete ResourcePolicyExemption#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#read ResourcePolicyExemption#read}. |
-| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#update ResourcePolicyExemption#update}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#create ResourcePolicyExemption#create}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#delete ResourcePolicyExemption#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#read ResourcePolicyExemption#read}. |
+| <code><a href="#@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#update ResourcePolicyExemption#update}. |
 
 ---
 
@@ -1450,7 +1450,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#create ResourcePolicyExemption#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#create ResourcePolicyExemption#create}.
 
 ---
 
@@ -1462,7 +1462,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#delete ResourcePolicyExemption#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#delete ResourcePolicyExemption#delete}.
 
 ---
 
@@ -1474,7 +1474,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#read ResourcePolicyExemption#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#read ResourcePolicyExemption#read}.
 
 ---
 
@@ -1486,7 +1486,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/resource_policy_exemption#update ResourcePolicyExemption#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/resource_policy_exemption#update ResourcePolicyExemption#update}.
 
 ---
 

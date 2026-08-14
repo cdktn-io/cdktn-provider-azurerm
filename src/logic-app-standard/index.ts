@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,126 +13,126 @@ import * as cdktn from 'cdktn';
 
 export interface LogicAppStandardConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#app_service_plan_id LogicAppStandard#app_service_plan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#app_service_plan_id LogicAppStandard#app_service_plan_id}
   */
   readonly appServicePlanId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#app_settings LogicAppStandard#app_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#app_settings LogicAppStandard#app_settings}
   */
   readonly appSettings?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#bundle_version LogicAppStandard#bundle_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#bundle_version LogicAppStandard#bundle_version}
   */
   readonly bundleVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#client_affinity_enabled LogicAppStandard#client_affinity_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#client_affinity_enabled LogicAppStandard#client_affinity_enabled}
   */
   readonly clientAffinityEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#client_certificate_mode LogicAppStandard#client_certificate_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#client_certificate_mode LogicAppStandard#client_certificate_mode}
   */
   readonly clientCertificateMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#enabled LogicAppStandard#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#enabled LogicAppStandard#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#ftp_publish_basic_authentication_enabled LogicAppStandard#ftp_publish_basic_authentication_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#ftp_publish_basic_authentication_enabled LogicAppStandard#ftp_publish_basic_authentication_enabled}
   */
   readonly ftpPublishBasicAuthenticationEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#https_only LogicAppStandard#https_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#https_only LogicAppStandard#https_only}
   */
   readonly httpsOnly?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#id LogicAppStandard#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#id LogicAppStandard#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#key_vault_reference_identity_id LogicAppStandard#key_vault_reference_identity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#key_vault_reference_identity_id LogicAppStandard#key_vault_reference_identity_id}
   */
   readonly keyVaultReferenceIdentityId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#location LogicAppStandard#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#location LogicAppStandard#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#name LogicAppStandard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#name LogicAppStandard#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#public_network_access LogicAppStandard#public_network_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#public_network_access LogicAppStandard#public_network_access}
   */
   readonly publicNetworkAccess?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#resource_group_name LogicAppStandard#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#resource_group_name LogicAppStandard#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#scm_publish_basic_authentication_enabled LogicAppStandard#scm_publish_basic_authentication_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#scm_publish_basic_authentication_enabled LogicAppStandard#scm_publish_basic_authentication_enabled}
   */
   readonly scmPublishBasicAuthenticationEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#storage_account_access_key LogicAppStandard#storage_account_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#storage_account_access_key LogicAppStandard#storage_account_access_key}
   */
   readonly storageAccountAccessKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#storage_account_name LogicAppStandard#storage_account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#storage_account_name LogicAppStandard#storage_account_name}
   */
   readonly storageAccountName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#storage_account_share_name LogicAppStandard#storage_account_share_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#storage_account_share_name LogicAppStandard#storage_account_share_name}
   */
   readonly storageAccountShareName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#storage_key_vault_secret_id LogicAppStandard#storage_key_vault_secret_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#storage_key_vault_secret_id LogicAppStandard#storage_key_vault_secret_id}
   */
   readonly storageKeyVaultSecretId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#tags LogicAppStandard#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#tags LogicAppStandard#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#use_extension_bundle LogicAppStandard#use_extension_bundle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#use_extension_bundle LogicAppStandard#use_extension_bundle}
   */
   readonly useExtensionBundle?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#version LogicAppStandard#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#version LogicAppStandard#version}
   */
   readonly version?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#virtual_network_subnet_id LogicAppStandard#virtual_network_subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#virtual_network_subnet_id LogicAppStandard#virtual_network_subnet_id}
   */
   readonly virtualNetworkSubnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#vnet_content_share_enabled LogicAppStandard#vnet_content_share_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#vnet_content_share_enabled LogicAppStandard#vnet_content_share_enabled}
   */
   readonly vnetContentShareEnabled?: boolean | cdktn.IResolvable;
   /**
   * connection_string block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#connection_string LogicAppStandard#connection_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#connection_string LogicAppStandard#connection_string}
   */
   readonly connectionString?: LogicAppStandardConnectionString[] | cdktn.IResolvable;
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#identity LogicAppStandard#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#identity LogicAppStandard#identity}
   */
   readonly identity?: LogicAppStandardIdentity;
   /**
   * site_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#site_config LogicAppStandard#site_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#site_config LogicAppStandard#site_config}
   */
   readonly siteConfig?: LogicAppStandardSiteConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#timeouts LogicAppStandard#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#timeouts LogicAppStandard#timeouts}
   */
   readonly timeouts?: LogicAppStandardTimeouts;
 }
@@ -218,15 +218,15 @@ export class LogicAppStandardSiteCredentialList extends cdktn.ComplexList {
 }
 export interface LogicAppStandardConnectionString {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#name LogicAppStandard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#name LogicAppStandard#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#type LogicAppStandard#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#type LogicAppStandard#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#value LogicAppStandard#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#value LogicAppStandard#value}
   */
   readonly value: string;
 }
@@ -391,11 +391,11 @@ export class LogicAppStandardConnectionStringList extends cdktn.ComplexList {
 }
 export interface LogicAppStandardIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#identity_ids LogicAppStandard#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#identity_ids LogicAppStandard#identity_ids}
   */
   readonly identityIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#type LogicAppStandard#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#type LogicAppStandard#type}
   */
   readonly type: string;
 }
@@ -517,13 +517,13 @@ export interface LogicAppStandardSiteConfigCors {
   /**
   * Specifies a list of origins that should be allowed to make cross-origin calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#allowed_origins LogicAppStandard#allowed_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#allowed_origins LogicAppStandard#allowed_origins}
   */
   readonly allowedOrigins?: string[];
   /**
   * Are credentials allowed in CORS requests? Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#support_credentials LogicAppStandard#support_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#support_credentials LogicAppStandard#support_credentials}
   */
   readonly supportCredentials?: boolean | cdktn.IResolvable;
 }
@@ -636,19 +636,19 @@ export class LogicAppStandardSiteConfigCorsOutputReference extends cdktn.Complex
 }
 export interface LogicAppStandardSiteConfigIpRestrictionHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#x_azure_fdid LogicAppStandard#x_azure_fdid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#x_azure_fdid LogicAppStandard#x_azure_fdid}
   */
   readonly xAzureFdid?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#x_fd_health_probe LogicAppStandard#x_fd_health_probe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#x_fd_health_probe LogicAppStandard#x_fd_health_probe}
   */
   readonly xFdHealthProbe?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#x_forwarded_for LogicAppStandard#x_forwarded_for}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#x_forwarded_for LogicAppStandard#x_forwarded_for}
   */
   readonly xForwardedFor?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#x_forwarded_host LogicAppStandard#x_forwarded_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#x_forwarded_host LogicAppStandard#x_forwarded_host}
   */
   readonly xForwardedHost?: string[];
 }
@@ -853,47 +853,47 @@ export interface LogicAppStandardSiteConfigIpRestriction {
   /**
   * The action to take. Possible values are `Allow` or `Deny`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#action LogicAppStandard#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#action LogicAppStandard#action}
   */
   readonly action?: string;
   /**
   * The description of the IP restriction rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#description LogicAppStandard#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#description LogicAppStandard#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#headers LogicAppStandard#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#headers LogicAppStandard#headers}
   */
   readonly headers?: LogicAppStandardSiteConfigIpRestrictionHeaders[] | cdktn.IResolvable;
   /**
   * The CIDR notation of the IP or IP Range to match. For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#ip_address LogicAppStandard#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#ip_address LogicAppStandard#ip_address}
   */
   readonly ipAddress?: string;
   /**
   * The name which should be used for this `ip_restriction`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#name LogicAppStandard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#name LogicAppStandard#name}
   */
   readonly name?: string;
   /**
   * The priority value of this `ip_restriction`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#priority LogicAppStandard#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#priority LogicAppStandard#priority}
   */
   readonly priority?: number;
   /**
   * The Service Tag used for this IP Restriction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#service_tag LogicAppStandard#service_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#service_tag LogicAppStandard#service_tag}
   */
   readonly serviceTag?: string;
   /**
   * The Virtual Network Subnet ID used for this IP Restriction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#virtual_network_subnet_id LogicAppStandard#virtual_network_subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#virtual_network_subnet_id LogicAppStandard#virtual_network_subnet_id}
   */
   readonly virtualNetworkSubnetId?: string;
 }
@@ -1212,19 +1212,19 @@ export class LogicAppStandardSiteConfigIpRestrictionList extends cdktn.ComplexLi
 }
 export interface LogicAppStandardSiteConfigScmIpRestrictionHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#x_azure_fdid LogicAppStandard#x_azure_fdid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#x_azure_fdid LogicAppStandard#x_azure_fdid}
   */
   readonly xAzureFdid?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#x_fd_health_probe LogicAppStandard#x_fd_health_probe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#x_fd_health_probe LogicAppStandard#x_fd_health_probe}
   */
   readonly xFdHealthProbe?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#x_forwarded_for LogicAppStandard#x_forwarded_for}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#x_forwarded_for LogicAppStandard#x_forwarded_for}
   */
   readonly xForwardedFor?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#x_forwarded_host LogicAppStandard#x_forwarded_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#x_forwarded_host LogicAppStandard#x_forwarded_host}
   */
   readonly xForwardedHost?: string[];
 }
@@ -1429,47 +1429,47 @@ export interface LogicAppStandardSiteConfigScmIpRestriction {
   /**
   * The action to take. Possible values are `Allow` or `Deny`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#action LogicAppStandard#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#action LogicAppStandard#action}
   */
   readonly action?: string;
   /**
   * The description of the IP restriction rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#description LogicAppStandard#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#description LogicAppStandard#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#headers LogicAppStandard#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#headers LogicAppStandard#headers}
   */
   readonly headers?: LogicAppStandardSiteConfigScmIpRestrictionHeaders[] | cdktn.IResolvable;
   /**
   * The CIDR notation of the IP or IP Range to match. For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#ip_address LogicAppStandard#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#ip_address LogicAppStandard#ip_address}
   */
   readonly ipAddress?: string;
   /**
   * The name which should be used for this `ip_restriction`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#name LogicAppStandard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#name LogicAppStandard#name}
   */
   readonly name?: string;
   /**
   * The priority value of this `ip_restriction`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#priority LogicAppStandard#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#priority LogicAppStandard#priority}
   */
   readonly priority?: number;
   /**
   * The Service Tag used for this IP Restriction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#service_tag LogicAppStandard#service_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#service_tag LogicAppStandard#service_tag}
   */
   readonly serviceTag?: string;
   /**
   * The Virtual Network Subnet ID used for this IP Restriction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#virtual_network_subnet_id LogicAppStandard#virtual_network_subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#virtual_network_subnet_id LogicAppStandard#virtual_network_subnet_id}
   */
   readonly virtualNetworkSubnetId?: string;
 }
@@ -1788,97 +1788,97 @@ export class LogicAppStandardSiteConfigScmIpRestrictionList extends cdktn.Comple
 }
 export interface LogicAppStandardSiteConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#always_on LogicAppStandard#always_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#always_on LogicAppStandard#always_on}
   */
   readonly alwaysOn?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#app_scale_limit LogicAppStandard#app_scale_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#app_scale_limit LogicAppStandard#app_scale_limit}
   */
   readonly appScaleLimit?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#dotnet_framework_version LogicAppStandard#dotnet_framework_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#dotnet_framework_version LogicAppStandard#dotnet_framework_version}
   */
   readonly dotnetFrameworkVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#elastic_instance_minimum LogicAppStandard#elastic_instance_minimum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#elastic_instance_minimum LogicAppStandard#elastic_instance_minimum}
   */
   readonly elasticInstanceMinimum?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#ftps_state LogicAppStandard#ftps_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#ftps_state LogicAppStandard#ftps_state}
   */
   readonly ftpsState?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#health_check_path LogicAppStandard#health_check_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#health_check_path LogicAppStandard#health_check_path}
   */
   readonly healthCheckPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#http2_enabled LogicAppStandard#http2_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#http2_enabled LogicAppStandard#http2_enabled}
   */
   readonly http2Enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#ip_restriction_default_action LogicAppStandard#ip_restriction_default_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#ip_restriction_default_action LogicAppStandard#ip_restriction_default_action}
   */
   readonly ipRestrictionDefaultAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#linux_fx_version LogicAppStandard#linux_fx_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#linux_fx_version LogicAppStandard#linux_fx_version}
   */
   readonly linuxFxVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#min_tls_version LogicAppStandard#min_tls_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#min_tls_version LogicAppStandard#min_tls_version}
   */
   readonly minTlsVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#pre_warmed_instance_count LogicAppStandard#pre_warmed_instance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#pre_warmed_instance_count LogicAppStandard#pre_warmed_instance_count}
   */
   readonly preWarmedInstanceCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#runtime_scale_monitoring_enabled LogicAppStandard#runtime_scale_monitoring_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#runtime_scale_monitoring_enabled LogicAppStandard#runtime_scale_monitoring_enabled}
   */
   readonly runtimeScaleMonitoringEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#scm_ip_restriction_default_action LogicAppStandard#scm_ip_restriction_default_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#scm_ip_restriction_default_action LogicAppStandard#scm_ip_restriction_default_action}
   */
   readonly scmIpRestrictionDefaultAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#scm_min_tls_version LogicAppStandard#scm_min_tls_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#scm_min_tls_version LogicAppStandard#scm_min_tls_version}
   */
   readonly scmMinTlsVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#scm_type LogicAppStandard#scm_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#scm_type LogicAppStandard#scm_type}
   */
   readonly scmType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#scm_use_main_ip_restriction LogicAppStandard#scm_use_main_ip_restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#scm_use_main_ip_restriction LogicAppStandard#scm_use_main_ip_restriction}
   */
   readonly scmUseMainIpRestriction?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#use_32_bit_worker_process LogicAppStandard#use_32_bit_worker_process}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#use_32_bit_worker_process LogicAppStandard#use_32_bit_worker_process}
   */
   readonly use32BitWorkerProcess?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#vnet_route_all_enabled LogicAppStandard#vnet_route_all_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#vnet_route_all_enabled LogicAppStandard#vnet_route_all_enabled}
   */
   readonly vnetRouteAllEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#websockets_enabled LogicAppStandard#websockets_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#websockets_enabled LogicAppStandard#websockets_enabled}
   */
   readonly websocketsEnabled?: boolean | cdktn.IResolvable;
   /**
   * cors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#cors LogicAppStandard#cors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#cors LogicAppStandard#cors}
   */
   readonly cors?: LogicAppStandardSiteConfigCors;
   /**
   * ip_restriction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#ip_restriction LogicAppStandard#ip_restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#ip_restriction LogicAppStandard#ip_restriction}
   */
   readonly ipRestriction?: LogicAppStandardSiteConfigIpRestriction[] | cdktn.IResolvable;
   /**
   * scm_ip_restriction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#scm_ip_restriction LogicAppStandard#scm_ip_restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#scm_ip_restriction LogicAppStandard#scm_ip_restriction}
   */
   readonly scmIpRestriction?: LogicAppStandardSiteConfigScmIpRestriction[] | cdktn.IResolvable;
 }
@@ -2576,19 +2576,19 @@ export class LogicAppStandardSiteConfigOutputReference extends cdktn.ComplexObje
 }
 export interface LogicAppStandardTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#create LogicAppStandard#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#create LogicAppStandard#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#delete LogicAppStandard#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#delete LogicAppStandard#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#read LogicAppStandard#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#read LogicAppStandard#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#update LogicAppStandard#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#update LogicAppStandard#update}
   */
   readonly update?: string;
 }
@@ -2769,7 +2769,7 @@ export class LogicAppStandardTimeoutsOutputReference extends cdktn.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard azurerm_logic_app_standard}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard azurerm_logic_app_standard}
 */
 export class LogicAppStandard extends cdktn.TerraformResource {
 
@@ -2785,7 +2785,7 @@ export class LogicAppStandard extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a LogicAppStandard resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogicAppStandard to import
-  * @param importFromId The id of the existing LogicAppStandard that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogicAppStandard that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogicAppStandard to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2797,7 +2797,7 @@ export class LogicAppStandard extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/logic_app_standard azurerm_logic_app_standard} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/logic_app_standard azurerm_logic_app_standard} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2808,7 +2808,7 @@ export class LogicAppStandard extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_logic_app_standard',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '5.0.1',
+        providerVersion: '5.1.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

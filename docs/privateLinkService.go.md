@@ -4,7 +4,7 @@
 
 ### PrivateLinkService <a name="PrivateLinkService" id="@cdktn/provider-azurerm.privateLinkService.PrivateLinkService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service azurerm_private_link_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service azurerm_private_link_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.privateLinkService.PrivateLinkService.Initializer"></a>
 
@@ -578,7 +578,7 @@ The construct id used in the generated config for the PrivateLinkService to impo
 
 The id of the existing PrivateLinkService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1112,19 +1112,19 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/privatelinkser
 | <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#location PrivateLinkService#location}. |
-| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#name PrivateLinkService#name}. |
+| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#location PrivateLinkService#location}. |
+| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#name PrivateLinkService#name}. |
 | <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.natIpConfiguration">NatIpConfiguration</a></code> | <code>interface{}</code> | nat_ip_configuration block. |
-| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#resource_group_name PrivateLinkService#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.autoApprovalSubscriptionIds">AutoApprovalSubscriptionIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#auto_approval_subscription_ids PrivateLinkService#auto_approval_subscription_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.destinationIpAddress">DestinationIpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#destination_ip_address PrivateLinkService#destination_ip_address}. |
-| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.fqdns">Fqdns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#fqdns PrivateLinkService#fqdns}. |
-| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#id PrivateLinkService#id}. |
-| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.loadBalancerFrontendIpConfigurationIds">LoadBalancerFrontendIpConfigurationIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#load_balancer_frontend_ip_configuration_ids PrivateLinkService#load_balancer_frontend_ip_configuration_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.proxyProtocolEnabled">ProxyProtocolEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#proxy_protocol_enabled PrivateLinkService#proxy_protocol_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#tags PrivateLinkService#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#resource_group_name PrivateLinkService#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.autoApprovalSubscriptionIds">AutoApprovalSubscriptionIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#auto_approval_subscription_ids PrivateLinkService#auto_approval_subscription_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.destinationIpAddress">DestinationIpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#destination_ip_address PrivateLinkService#destination_ip_address}. |
+| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.fqdns">Fqdns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#fqdns PrivateLinkService#fqdns}. |
+| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#id PrivateLinkService#id}. |
+| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.loadBalancerFrontendIpConfigurationIds">LoadBalancerFrontendIpConfigurationIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#load_balancer_frontend_ip_configuration_ids PrivateLinkService#load_balancer_frontend_ip_configuration_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.proxyProtocolEnabled">ProxyProtocolEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#proxy_protocol_enabled PrivateLinkService#proxy_protocol_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#tags PrivateLinkService#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceTimeouts">PrivateLinkServiceTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.visibilitySubscriptionIds">VisibilitySubscriptionIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#visibility_subscription_ids PrivateLinkService#visibility_subscription_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceConfig.property.visibilitySubscriptionIds">VisibilitySubscriptionIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#visibility_subscription_ids PrivateLinkService#visibility_subscription_ids}. |
 
 ---
 
@@ -1206,7 +1206,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#location PrivateLinkService#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#location PrivateLinkService#location}.
 
 ---
 
@@ -1218,7 +1218,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#name PrivateLinkService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#name PrivateLinkService#name}.
 
 ---
 
@@ -1232,7 +1232,7 @@ NatIpConfiguration interface{}
 
 nat_ip_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#nat_ip_configuration PrivateLinkService#nat_ip_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#nat_ip_configuration PrivateLinkService#nat_ip_configuration}
 
 ---
 
@@ -1244,7 +1244,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#resource_group_name PrivateLinkService#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#resource_group_name PrivateLinkService#resource_group_name}.
 
 ---
 
@@ -1256,7 +1256,7 @@ AutoApprovalSubscriptionIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#auto_approval_subscription_ids PrivateLinkService#auto_approval_subscription_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#auto_approval_subscription_ids PrivateLinkService#auto_approval_subscription_ids}.
 
 ---
 
@@ -1268,7 +1268,7 @@ DestinationIpAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#destination_ip_address PrivateLinkService#destination_ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#destination_ip_address PrivateLinkService#destination_ip_address}.
 
 ---
 
@@ -1280,7 +1280,7 @@ Fqdns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#fqdns PrivateLinkService#fqdns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#fqdns PrivateLinkService#fqdns}.
 
 ---
 
@@ -1292,7 +1292,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#id PrivateLinkService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#id PrivateLinkService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1307,7 +1307,7 @@ LoadBalancerFrontendIpConfigurationIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#load_balancer_frontend_ip_configuration_ids PrivateLinkService#load_balancer_frontend_ip_configuration_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#load_balancer_frontend_ip_configuration_ids PrivateLinkService#load_balancer_frontend_ip_configuration_ids}.
 
 ---
 
@@ -1319,7 +1319,7 @@ ProxyProtocolEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#proxy_protocol_enabled PrivateLinkService#proxy_protocol_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#proxy_protocol_enabled PrivateLinkService#proxy_protocol_enabled}.
 
 ---
 
@@ -1331,7 +1331,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#tags PrivateLinkService#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#tags PrivateLinkService#tags}.
 
 ---
 
@@ -1345,7 +1345,7 @@ Timeouts PrivateLinkServiceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#timeouts PrivateLinkService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#timeouts PrivateLinkService#timeouts}
 
 ---
 
@@ -1357,7 +1357,7 @@ VisibilitySubscriptionIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#visibility_subscription_ids PrivateLinkService#visibility_subscription_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#visibility_subscription_ids PrivateLinkService#visibility_subscription_ids}.
 
 ---
 
@@ -1381,11 +1381,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/privatelinkser
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceNatIpConfiguration.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#name PrivateLinkService#name}. |
-| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceNatIpConfiguration.property.primary">Primary</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#primary PrivateLinkService#primary}. |
-| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceNatIpConfiguration.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#subnet_id PrivateLinkService#subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceNatIpConfiguration.property.privateIpAddress">PrivateIpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#private_ip_address PrivateLinkService#private_ip_address}. |
-| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceNatIpConfiguration.property.privateIpAddressVersion">PrivateIpAddressVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#private_ip_address_version PrivateLinkService#private_ip_address_version}. |
+| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceNatIpConfiguration.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#name PrivateLinkService#name}. |
+| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceNatIpConfiguration.property.primary">Primary</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#primary PrivateLinkService#primary}. |
+| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceNatIpConfiguration.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#subnet_id PrivateLinkService#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceNatIpConfiguration.property.privateIpAddress">PrivateIpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#private_ip_address PrivateLinkService#private_ip_address}. |
+| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceNatIpConfiguration.property.privateIpAddressVersion">PrivateIpAddressVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#private_ip_address_version PrivateLinkService#private_ip_address_version}. |
 
 ---
 
@@ -1397,7 +1397,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#name PrivateLinkService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#name PrivateLinkService#name}.
 
 ---
 
@@ -1409,7 +1409,7 @@ Primary interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#primary PrivateLinkService#primary}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#primary PrivateLinkService#primary}.
 
 ---
 
@@ -1421,7 +1421,7 @@ SubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#subnet_id PrivateLinkService#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#subnet_id PrivateLinkService#subnet_id}.
 
 ---
 
@@ -1433,7 +1433,7 @@ PrivateIpAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#private_ip_address PrivateLinkService#private_ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#private_ip_address PrivateLinkService#private_ip_address}.
 
 ---
 
@@ -1445,7 +1445,7 @@ PrivateIpAddressVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#private_ip_address_version PrivateLinkService#private_ip_address_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#private_ip_address_version PrivateLinkService#private_ip_address_version}.
 
 ---
 
@@ -1468,10 +1468,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/privatelinkser
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#create PrivateLinkService#create}. |
-| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#delete PrivateLinkService#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#read PrivateLinkService#read}. |
-| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#update PrivateLinkService#update}. |
+| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#create PrivateLinkService#create}. |
+| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#delete PrivateLinkService#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#read PrivateLinkService#read}. |
+| <code><a href="#@cdktn/provider-azurerm.privateLinkService.PrivateLinkServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#update PrivateLinkService#update}. |
 
 ---
 
@@ -1483,7 +1483,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#create PrivateLinkService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#create PrivateLinkService#create}.
 
 ---
 
@@ -1495,7 +1495,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#delete PrivateLinkService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#delete PrivateLinkService#delete}.
 
 ---
 
@@ -1507,7 +1507,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#read PrivateLinkService#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#read PrivateLinkService#read}.
 
 ---
 
@@ -1519,7 +1519,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_link_service#update PrivateLinkService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/private_link_service#update PrivateLinkService#update}.
 
 ---
 

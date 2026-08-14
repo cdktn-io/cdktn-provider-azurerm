@@ -4,7 +4,7 @@
 
 ### AutomanageConfiguration <a name="AutomanageConfiguration" id="@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration azurerm_automanage_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration azurerm_automanage_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfiguration.Initializer"></a>
 
@@ -625,7 +625,7 @@ The construct id used in the generated config for the AutomanageConfiguration to
 
 The id of the existing AutomanageConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1172,11 +1172,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automanageconf
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAntimalware.property.exclusions">Exclusions</a></code> | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAntimalwareExclusions">AutomanageConfigurationAntimalwareExclusions</a></code> | exclusions block. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAntimalware.property.realTimeProtectionEnabled">RealTimeProtectionEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#real_time_protection_enabled AutomanageConfiguration#real_time_protection_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAntimalware.property.scheduledScanDay">ScheduledScanDay</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#scheduled_scan_day AutomanageConfiguration#scheduled_scan_day}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAntimalware.property.scheduledScanEnabled">ScheduledScanEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#scheduled_scan_enabled AutomanageConfiguration#scheduled_scan_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAntimalware.property.scheduledScanTimeInMinutes">ScheduledScanTimeInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#scheduled_scan_time_in_minutes AutomanageConfiguration#scheduled_scan_time_in_minutes}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAntimalware.property.scheduledScanType">ScheduledScanType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#scheduled_scan_type AutomanageConfiguration#scheduled_scan_type}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAntimalware.property.realTimeProtectionEnabled">RealTimeProtectionEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#real_time_protection_enabled AutomanageConfiguration#real_time_protection_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAntimalware.property.scheduledScanDay">ScheduledScanDay</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#scheduled_scan_day AutomanageConfiguration#scheduled_scan_day}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAntimalware.property.scheduledScanEnabled">ScheduledScanEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#scheduled_scan_enabled AutomanageConfiguration#scheduled_scan_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAntimalware.property.scheduledScanTimeInMinutes">ScheduledScanTimeInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#scheduled_scan_time_in_minutes AutomanageConfiguration#scheduled_scan_time_in_minutes}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAntimalware.property.scheduledScanType">ScheduledScanType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#scheduled_scan_type AutomanageConfiguration#scheduled_scan_type}. |
 
 ---
 
@@ -1190,7 +1190,7 @@ Exclusions AutomanageConfigurationAntimalwareExclusions
 
 exclusions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#exclusions AutomanageConfiguration#exclusions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#exclusions AutomanageConfiguration#exclusions}
 
 ---
 
@@ -1202,7 +1202,7 @@ RealTimeProtectionEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#real_time_protection_enabled AutomanageConfiguration#real_time_protection_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#real_time_protection_enabled AutomanageConfiguration#real_time_protection_enabled}.
 
 ---
 
@@ -1214,7 +1214,7 @@ ScheduledScanDay *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#scheduled_scan_day AutomanageConfiguration#scheduled_scan_day}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#scheduled_scan_day AutomanageConfiguration#scheduled_scan_day}.
 
 ---
 
@@ -1226,7 +1226,7 @@ ScheduledScanEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#scheduled_scan_enabled AutomanageConfiguration#scheduled_scan_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#scheduled_scan_enabled AutomanageConfiguration#scheduled_scan_enabled}.
 
 ---
 
@@ -1238,7 +1238,7 @@ ScheduledScanTimeInMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#scheduled_scan_time_in_minutes AutomanageConfiguration#scheduled_scan_time_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#scheduled_scan_time_in_minutes AutomanageConfiguration#scheduled_scan_time_in_minutes}.
 
 ---
 
@@ -1250,7 +1250,7 @@ ScheduledScanType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#scheduled_scan_type AutomanageConfiguration#scheduled_scan_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#scheduled_scan_type AutomanageConfiguration#scheduled_scan_type}.
 
 ---
 
@@ -1272,9 +1272,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automanageconf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAntimalwareExclusions.property.extensions">Extensions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#extensions AutomanageConfiguration#extensions}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAntimalwareExclusions.property.paths">Paths</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#paths AutomanageConfiguration#paths}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAntimalwareExclusions.property.processes">Processes</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#processes AutomanageConfiguration#processes}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAntimalwareExclusions.property.extensions">Extensions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#extensions AutomanageConfiguration#extensions}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAntimalwareExclusions.property.paths">Paths</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#paths AutomanageConfiguration#paths}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAntimalwareExclusions.property.processes">Processes</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#processes AutomanageConfiguration#processes}. |
 
 ---
 
@@ -1286,7 +1286,7 @@ Extensions *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#extensions AutomanageConfiguration#extensions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#extensions AutomanageConfiguration#extensions}.
 
 ---
 
@@ -1298,7 +1298,7 @@ Paths *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#paths AutomanageConfiguration#paths}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#paths AutomanageConfiguration#paths}.
 
 ---
 
@@ -1310,7 +1310,7 @@ Processes *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#processes AutomanageConfiguration#processes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#processes AutomanageConfiguration#processes}.
 
 ---
 
@@ -1330,7 +1330,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automanageconf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAzureSecurityBaseline.property.assignmentType">AssignmentType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#assignment_type AutomanageConfiguration#assignment_type}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAzureSecurityBaseline.property.assignmentType">AssignmentType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#assignment_type AutomanageConfiguration#assignment_type}. |
 
 ---
 
@@ -1342,7 +1342,7 @@ AssignmentType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#assignment_type AutomanageConfiguration#assignment_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#assignment_type AutomanageConfiguration#assignment_type}.
 
 ---
 
@@ -1366,11 +1366,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automanageconf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackup.property.instantRpRetentionRangeInDays">InstantRpRetentionRangeInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#instant_rp_retention_range_in_days AutomanageConfiguration#instant_rp_retention_range_in_days}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackup.property.policyName">PolicyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#policy_name AutomanageConfiguration#policy_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackup.property.instantRpRetentionRangeInDays">InstantRpRetentionRangeInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#instant_rp_retention_range_in_days AutomanageConfiguration#instant_rp_retention_range_in_days}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackup.property.policyName">PolicyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#policy_name AutomanageConfiguration#policy_name}. |
 | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackup.property.retentionPolicy">RetentionPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicy">AutomanageConfigurationBackupRetentionPolicy</a></code> | retention_policy block. |
 | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackup.property.schedulePolicy">SchedulePolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupSchedulePolicy">AutomanageConfigurationBackupSchedulePolicy</a></code> | schedule_policy block. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackup.property.timeZone">TimeZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#time_zone AutomanageConfiguration#time_zone}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackup.property.timeZone">TimeZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#time_zone AutomanageConfiguration#time_zone}. |
 
 ---
 
@@ -1382,7 +1382,7 @@ InstantRpRetentionRangeInDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#instant_rp_retention_range_in_days AutomanageConfiguration#instant_rp_retention_range_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#instant_rp_retention_range_in_days AutomanageConfiguration#instant_rp_retention_range_in_days}.
 
 ---
 
@@ -1394,7 +1394,7 @@ PolicyName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#policy_name AutomanageConfiguration#policy_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#policy_name AutomanageConfiguration#policy_name}.
 
 ---
 
@@ -1408,7 +1408,7 @@ RetentionPolicy AutomanageConfigurationBackupRetentionPolicy
 
 retention_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#retention_policy AutomanageConfiguration#retention_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#retention_policy AutomanageConfiguration#retention_policy}
 
 ---
 
@@ -1422,7 +1422,7 @@ SchedulePolicy AutomanageConfigurationBackupSchedulePolicy
 
 schedule_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#schedule_policy AutomanageConfiguration#schedule_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#schedule_policy AutomanageConfiguration#schedule_policy}
 
 ---
 
@@ -1434,7 +1434,7 @@ TimeZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#time_zone AutomanageConfiguration#time_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#time_zone AutomanageConfiguration#time_zone}.
 
 ---
 
@@ -1457,7 +1457,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automanageconf
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicy.property.dailySchedule">DailySchedule</a></code> | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicyDailySchedule">AutomanageConfigurationBackupRetentionPolicyDailySchedule</a></code> | daily_schedule block. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicy.property.retentionPolicyType">RetentionPolicyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#retention_policy_type AutomanageConfiguration#retention_policy_type}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicy.property.retentionPolicyType">RetentionPolicyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#retention_policy_type AutomanageConfiguration#retention_policy_type}. |
 | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicy.property.weeklySchedule">WeeklySchedule</a></code> | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicyWeeklySchedule">AutomanageConfigurationBackupRetentionPolicyWeeklySchedule</a></code> | weekly_schedule block. |
 
 ---
@@ -1472,7 +1472,7 @@ DailySchedule AutomanageConfigurationBackupRetentionPolicyDailySchedule
 
 daily_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#daily_schedule AutomanageConfiguration#daily_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#daily_schedule AutomanageConfiguration#daily_schedule}
 
 ---
 
@@ -1484,7 +1484,7 @@ RetentionPolicyType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#retention_policy_type AutomanageConfiguration#retention_policy_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#retention_policy_type AutomanageConfiguration#retention_policy_type}.
 
 ---
 
@@ -1498,7 +1498,7 @@ WeeklySchedule AutomanageConfigurationBackupRetentionPolicyWeeklySchedule
 
 weekly_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#weekly_schedule AutomanageConfiguration#weekly_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#weekly_schedule AutomanageConfiguration#weekly_schedule}
 
 ---
 
@@ -1520,7 +1520,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automanageconf
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicyDailySchedule.property.retentionDuration">RetentionDuration</a></code> | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicyDailyScheduleRetentionDuration">AutomanageConfigurationBackupRetentionPolicyDailyScheduleRetentionDuration</a></code> | retention_duration block. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicyDailySchedule.property.retentionTimes">RetentionTimes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#retention_times AutomanageConfiguration#retention_times}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicyDailySchedule.property.retentionTimes">RetentionTimes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#retention_times AutomanageConfiguration#retention_times}. |
 
 ---
 
@@ -1534,7 +1534,7 @@ RetentionDuration AutomanageConfigurationBackupRetentionPolicyDailyScheduleReten
 
 retention_duration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#retention_duration AutomanageConfiguration#retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#retention_duration AutomanageConfiguration#retention_duration}
 
 ---
 
@@ -1546,7 +1546,7 @@ RetentionTimes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#retention_times AutomanageConfiguration#retention_times}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#retention_times AutomanageConfiguration#retention_times}.
 
 ---
 
@@ -1567,8 +1567,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automanageconf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicyDailyScheduleRetentionDuration.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#count AutomanageConfiguration#count}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicyDailyScheduleRetentionDuration.property.durationType">DurationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#duration_type AutomanageConfiguration#duration_type}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicyDailyScheduleRetentionDuration.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#count AutomanageConfiguration#count}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicyDailyScheduleRetentionDuration.property.durationType">DurationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#duration_type AutomanageConfiguration#duration_type}. |
 
 ---
 
@@ -1580,7 +1580,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#count AutomanageConfiguration#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#count AutomanageConfiguration#count}.
 
 ---
 
@@ -1592,7 +1592,7 @@ DurationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#duration_type AutomanageConfiguration#duration_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#duration_type AutomanageConfiguration#duration_type}.
 
 ---
 
@@ -1614,7 +1614,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automanageconf
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicyWeeklySchedule.property.retentionDuration">RetentionDuration</a></code> | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicyWeeklyScheduleRetentionDuration">AutomanageConfigurationBackupRetentionPolicyWeeklyScheduleRetentionDuration</a></code> | retention_duration block. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicyWeeklySchedule.property.retentionTimes">RetentionTimes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#retention_times AutomanageConfiguration#retention_times}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicyWeeklySchedule.property.retentionTimes">RetentionTimes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#retention_times AutomanageConfiguration#retention_times}. |
 
 ---
 
@@ -1628,7 +1628,7 @@ RetentionDuration AutomanageConfigurationBackupRetentionPolicyWeeklyScheduleRete
 
 retention_duration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#retention_duration AutomanageConfiguration#retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#retention_duration AutomanageConfiguration#retention_duration}
 
 ---
 
@@ -1640,7 +1640,7 @@ RetentionTimes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#retention_times AutomanageConfiguration#retention_times}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#retention_times AutomanageConfiguration#retention_times}.
 
 ---
 
@@ -1661,8 +1661,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automanageconf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicyWeeklyScheduleRetentionDuration.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#count AutomanageConfiguration#count}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicyWeeklyScheduleRetentionDuration.property.durationType">DurationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#duration_type AutomanageConfiguration#duration_type}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicyWeeklyScheduleRetentionDuration.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#count AutomanageConfiguration#count}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupRetentionPolicyWeeklyScheduleRetentionDuration.property.durationType">DurationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#duration_type AutomanageConfiguration#duration_type}. |
 
 ---
 
@@ -1674,7 +1674,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#count AutomanageConfiguration#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#count AutomanageConfiguration#count}.
 
 ---
 
@@ -1686,7 +1686,7 @@ DurationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#duration_type AutomanageConfiguration#duration_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#duration_type AutomanageConfiguration#duration_type}.
 
 ---
 
@@ -1709,10 +1709,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automanageconf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupSchedulePolicy.property.schedulePolicyType">SchedulePolicyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#schedule_policy_type AutomanageConfiguration#schedule_policy_type}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupSchedulePolicy.property.scheduleRunDays">ScheduleRunDays</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#schedule_run_days AutomanageConfiguration#schedule_run_days}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupSchedulePolicy.property.scheduleRunFrequency">ScheduleRunFrequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#schedule_run_frequency AutomanageConfiguration#schedule_run_frequency}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupSchedulePolicy.property.scheduleRunTimes">ScheduleRunTimes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#schedule_run_times AutomanageConfiguration#schedule_run_times}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupSchedulePolicy.property.schedulePolicyType">SchedulePolicyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#schedule_policy_type AutomanageConfiguration#schedule_policy_type}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupSchedulePolicy.property.scheduleRunDays">ScheduleRunDays</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#schedule_run_days AutomanageConfiguration#schedule_run_days}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupSchedulePolicy.property.scheduleRunFrequency">ScheduleRunFrequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#schedule_run_frequency AutomanageConfiguration#schedule_run_frequency}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackupSchedulePolicy.property.scheduleRunTimes">ScheduleRunTimes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#schedule_run_times AutomanageConfiguration#schedule_run_times}. |
 
 ---
 
@@ -1724,7 +1724,7 @@ SchedulePolicyType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#schedule_policy_type AutomanageConfiguration#schedule_policy_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#schedule_policy_type AutomanageConfiguration#schedule_policy_type}.
 
 ---
 
@@ -1736,7 +1736,7 @@ ScheduleRunDays *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#schedule_run_days AutomanageConfiguration#schedule_run_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#schedule_run_days AutomanageConfiguration#schedule_run_days}.
 
 ---
 
@@ -1748,7 +1748,7 @@ ScheduleRunFrequency *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#schedule_run_frequency AutomanageConfiguration#schedule_run_frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#schedule_run_frequency AutomanageConfiguration#schedule_run_frequency}.
 
 ---
 
@@ -1760,7 +1760,7 @@ ScheduleRunTimes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#schedule_run_times AutomanageConfiguration#schedule_run_times}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#schedule_run_times AutomanageConfiguration#schedule_run_times}.
 
 ---
 
@@ -1808,20 +1808,20 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automanageconf
 | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#location AutomanageConfiguration#location}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#name AutomanageConfiguration#name}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#resource_group_name AutomanageConfiguration#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#location AutomanageConfiguration#location}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#name AutomanageConfiguration#name}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#resource_group_name AutomanageConfiguration#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.antimalware">Antimalware</a></code> | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAntimalware">AutomanageConfigurationAntimalware</a></code> | antimalware block. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.automationAccountEnabled">AutomationAccountEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#automation_account_enabled AutomanageConfiguration#automation_account_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.automationAccountEnabled">AutomationAccountEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#automation_account_enabled AutomanageConfiguration#automation_account_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.azureSecurityBaseline">AzureSecurityBaseline</a></code> | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationAzureSecurityBaseline">AutomanageConfigurationAzureSecurityBaseline</a></code> | azure_security_baseline block. |
 | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.backup">Backup</a></code> | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationBackup">AutomanageConfigurationBackup</a></code> | backup block. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.bootDiagnosticsEnabled">BootDiagnosticsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#boot_diagnostics_enabled AutomanageConfiguration#boot_diagnostics_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.defenderForCloudEnabled">DefenderForCloudEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#defender_for_cloud_enabled AutomanageConfiguration#defender_for_cloud_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.guestConfigurationEnabled">GuestConfigurationEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#guest_configuration_enabled AutomanageConfiguration#guest_configuration_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#id AutomanageConfiguration#id}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.logAnalyticsEnabled">LogAnalyticsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#log_analytics_enabled AutomanageConfiguration#log_analytics_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.statusChangeAlertEnabled">StatusChangeAlertEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#status_change_alert_enabled AutomanageConfiguration#status_change_alert_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#tags AutomanageConfiguration#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.bootDiagnosticsEnabled">BootDiagnosticsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#boot_diagnostics_enabled AutomanageConfiguration#boot_diagnostics_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.defenderForCloudEnabled">DefenderForCloudEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#defender_for_cloud_enabled AutomanageConfiguration#defender_for_cloud_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.guestConfigurationEnabled">GuestConfigurationEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#guest_configuration_enabled AutomanageConfiguration#guest_configuration_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#id AutomanageConfiguration#id}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.logAnalyticsEnabled">LogAnalyticsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#log_analytics_enabled AutomanageConfiguration#log_analytics_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.statusChangeAlertEnabled">StatusChangeAlertEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#status_change_alert_enabled AutomanageConfiguration#status_change_alert_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#tags AutomanageConfiguration#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationTimeouts">AutomanageConfigurationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1904,7 +1904,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#location AutomanageConfiguration#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#location AutomanageConfiguration#location}.
 
 ---
 
@@ -1916,7 +1916,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#name AutomanageConfiguration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#name AutomanageConfiguration#name}.
 
 ---
 
@@ -1928,7 +1928,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#resource_group_name AutomanageConfiguration#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#resource_group_name AutomanageConfiguration#resource_group_name}.
 
 ---
 
@@ -1942,7 +1942,7 @@ Antimalware AutomanageConfigurationAntimalware
 
 antimalware block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#antimalware AutomanageConfiguration#antimalware}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#antimalware AutomanageConfiguration#antimalware}
 
 ---
 
@@ -1954,7 +1954,7 @@ AutomationAccountEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#automation_account_enabled AutomanageConfiguration#automation_account_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#automation_account_enabled AutomanageConfiguration#automation_account_enabled}.
 
 ---
 
@@ -1968,7 +1968,7 @@ AzureSecurityBaseline AutomanageConfigurationAzureSecurityBaseline
 
 azure_security_baseline block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#azure_security_baseline AutomanageConfiguration#azure_security_baseline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#azure_security_baseline AutomanageConfiguration#azure_security_baseline}
 
 ---
 
@@ -1982,7 +1982,7 @@ Backup AutomanageConfigurationBackup
 
 backup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#backup AutomanageConfiguration#backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#backup AutomanageConfiguration#backup}
 
 ---
 
@@ -1994,7 +1994,7 @@ BootDiagnosticsEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#boot_diagnostics_enabled AutomanageConfiguration#boot_diagnostics_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#boot_diagnostics_enabled AutomanageConfiguration#boot_diagnostics_enabled}.
 
 ---
 
@@ -2006,7 +2006,7 @@ DefenderForCloudEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#defender_for_cloud_enabled AutomanageConfiguration#defender_for_cloud_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#defender_for_cloud_enabled AutomanageConfiguration#defender_for_cloud_enabled}.
 
 ---
 
@@ -2018,7 +2018,7 @@ GuestConfigurationEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#guest_configuration_enabled AutomanageConfiguration#guest_configuration_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#guest_configuration_enabled AutomanageConfiguration#guest_configuration_enabled}.
 
 ---
 
@@ -2030,7 +2030,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#id AutomanageConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#id AutomanageConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2045,7 +2045,7 @@ LogAnalyticsEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#log_analytics_enabled AutomanageConfiguration#log_analytics_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#log_analytics_enabled AutomanageConfiguration#log_analytics_enabled}.
 
 ---
 
@@ -2057,7 +2057,7 @@ StatusChangeAlertEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#status_change_alert_enabled AutomanageConfiguration#status_change_alert_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#status_change_alert_enabled AutomanageConfiguration#status_change_alert_enabled}.
 
 ---
 
@@ -2069,7 +2069,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#tags AutomanageConfiguration#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#tags AutomanageConfiguration#tags}.
 
 ---
 
@@ -2083,7 +2083,7 @@ Timeouts AutomanageConfigurationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#timeouts AutomanageConfiguration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#timeouts AutomanageConfiguration#timeouts}
 
 ---
 
@@ -2106,10 +2106,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automanageconf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#create AutomanageConfiguration#create}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#delete AutomanageConfiguration#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#read AutomanageConfiguration#read}. |
-| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#update AutomanageConfiguration#update}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#create AutomanageConfiguration#create}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#delete AutomanageConfiguration#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#read AutomanageConfiguration#read}. |
+| <code><a href="#@cdktn/provider-azurerm.automanageConfiguration.AutomanageConfigurationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#update AutomanageConfiguration#update}. |
 
 ---
 
@@ -2121,7 +2121,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#create AutomanageConfiguration#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#create AutomanageConfiguration#create}.
 
 ---
 
@@ -2133,7 +2133,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#delete AutomanageConfiguration#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#delete AutomanageConfiguration#delete}.
 
 ---
 
@@ -2145,7 +2145,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#read AutomanageConfiguration#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#read AutomanageConfiguration#read}.
 
 ---
 
@@ -2157,7 +2157,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automanage_configuration#update AutomanageConfiguration#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automanage_configuration#update AutomanageConfiguration#update}.
 
 ---
 

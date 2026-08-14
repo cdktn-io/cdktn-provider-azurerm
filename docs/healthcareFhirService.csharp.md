@@ -4,7 +4,7 @@
 
 ### HealthcareFhirService <a name="HealthcareFhirService" id="@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service azurerm_healthcare_fhir_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service azurerm_healthcare_fhir_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirService.Initializer"></a>
 
@@ -624,7 +624,7 @@ The construct id used in the generated config for the HealthcareFhirService to i
 
 The id of the existing HealthcareFhirService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1178,9 +1178,9 @@ new HealthcareFhirServiceAuthentication {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceAuthentication.property.audience">Audience</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#audience HealthcareFhirService#audience}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceAuthentication.property.authority">Authority</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#authority HealthcareFhirService#authority}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceAuthentication.property.smartProxyEnabled">SmartProxyEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#smart_proxy_enabled HealthcareFhirService#smart_proxy_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceAuthentication.property.audience">Audience</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#audience HealthcareFhirService#audience}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceAuthentication.property.authority">Authority</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#authority HealthcareFhirService#authority}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceAuthentication.property.smartProxyEnabled">SmartProxyEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#smart_proxy_enabled HealthcareFhirService#smart_proxy_enabled}. |
 
 ---
 
@@ -1192,7 +1192,7 @@ public string Audience { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#audience HealthcareFhirService#audience}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#audience HealthcareFhirService#audience}.
 
 ---
 
@@ -1204,7 +1204,7 @@ public string Authority { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#authority HealthcareFhirService#authority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#authority HealthcareFhirService#authority}.
 
 ---
 
@@ -1216,7 +1216,7 @@ public bool|IResolvable SmartProxyEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#smart_proxy_enabled HealthcareFhirService#smart_proxy_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#smart_proxy_enabled HealthcareFhirService#smart_proxy_enabled}.
 
 ---
 
@@ -1265,19 +1265,19 @@ new HealthcareFhirServiceConfig {
 | <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.authentication">Authentication</a></code> | <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceAuthentication">HealthcareFhirServiceAuthentication</a></code> | authentication block. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#location HealthcareFhirService#location}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#name HealthcareFhirService#name}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#resource_group_name HealthcareFhirService#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#workspace_id HealthcareFhirService#workspace_id}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.accessPolicyObjectIds">AccessPolicyObjectIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#access_policy_object_ids HealthcareFhirService#access_policy_object_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.configurationExportStorageAccountName">ConfigurationExportStorageAccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#configuration_export_storage_account_name HealthcareFhirService#configuration_export_storage_account_name}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.containerRegistryLoginServerUrl">ContainerRegistryLoginServerUrl</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#container_registry_login_server_url HealthcareFhirService#container_registry_login_server_url}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#location HealthcareFhirService#location}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#name HealthcareFhirService#name}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#resource_group_name HealthcareFhirService#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#workspace_id HealthcareFhirService#workspace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.accessPolicyObjectIds">AccessPolicyObjectIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#access_policy_object_ids HealthcareFhirService#access_policy_object_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.configurationExportStorageAccountName">ConfigurationExportStorageAccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#configuration_export_storage_account_name HealthcareFhirService#configuration_export_storage_account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.containerRegistryLoginServerUrl">ContainerRegistryLoginServerUrl</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#container_registry_login_server_url HealthcareFhirService#container_registry_login_server_url}. |
 | <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.cors">Cors</a></code> | <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceCors">HealthcareFhirServiceCors</a></code> | cors block. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#id HealthcareFhirService#id}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#id HealthcareFhirService#id}. |
 | <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceIdentity">HealthcareFhirServiceIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.kind">Kind</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#kind HealthcareFhirService#kind}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.kind">Kind</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#kind HealthcareFhirService#kind}. |
 | <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.ociArtifact">OciArtifact</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceOciArtifact">HealthcareFhirServiceOciArtifact</a>[]</code> | oci_artifact block. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#tags HealthcareFhirService#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#tags HealthcareFhirService#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceTimeouts">HealthcareFhirServiceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1362,7 +1362,7 @@ public HealthcareFhirServiceAuthentication Authentication { get; set; }
 
 authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#authentication HealthcareFhirService#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#authentication HealthcareFhirService#authentication}
 
 ---
 
@@ -1374,7 +1374,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#location HealthcareFhirService#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#location HealthcareFhirService#location}.
 
 ---
 
@@ -1386,7 +1386,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#name HealthcareFhirService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#name HealthcareFhirService#name}.
 
 ---
 
@@ -1398,7 +1398,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#resource_group_name HealthcareFhirService#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#resource_group_name HealthcareFhirService#resource_group_name}.
 
 ---
 
@@ -1410,7 +1410,7 @@ public string WorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#workspace_id HealthcareFhirService#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#workspace_id HealthcareFhirService#workspace_id}.
 
 ---
 
@@ -1422,7 +1422,7 @@ public string[] AccessPolicyObjectIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#access_policy_object_ids HealthcareFhirService#access_policy_object_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#access_policy_object_ids HealthcareFhirService#access_policy_object_ids}.
 
 ---
 
@@ -1434,7 +1434,7 @@ public string ConfigurationExportStorageAccountName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#configuration_export_storage_account_name HealthcareFhirService#configuration_export_storage_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#configuration_export_storage_account_name HealthcareFhirService#configuration_export_storage_account_name}.
 
 ---
 
@@ -1446,7 +1446,7 @@ public string[] ContainerRegistryLoginServerUrl { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#container_registry_login_server_url HealthcareFhirService#container_registry_login_server_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#container_registry_login_server_url HealthcareFhirService#container_registry_login_server_url}.
 
 ---
 
@@ -1460,7 +1460,7 @@ public HealthcareFhirServiceCors Cors { get; set; }
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#cors HealthcareFhirService#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#cors HealthcareFhirService#cors}
 
 ---
 
@@ -1472,7 +1472,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#id HealthcareFhirService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#id HealthcareFhirService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1489,7 +1489,7 @@ public HealthcareFhirServiceIdentity Identity { get; set; }
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#identity HealthcareFhirService#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#identity HealthcareFhirService#identity}
 
 ---
 
@@ -1501,7 +1501,7 @@ public string Kind { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#kind HealthcareFhirService#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#kind HealthcareFhirService#kind}.
 
 ---
 
@@ -1515,7 +1515,7 @@ public IResolvable|HealthcareFhirServiceOciArtifact[] OciArtifact { get; set; }
 
 oci_artifact block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#oci_artifact HealthcareFhirService#oci_artifact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#oci_artifact HealthcareFhirService#oci_artifact}
 
 ---
 
@@ -1527,7 +1527,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#tags HealthcareFhirService#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#tags HealthcareFhirService#tags}.
 
 ---
 
@@ -1541,7 +1541,7 @@ public HealthcareFhirServiceTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#timeouts HealthcareFhirService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#timeouts HealthcareFhirService#timeouts}
 
 ---
 
@@ -1565,11 +1565,11 @@ new HealthcareFhirServiceCors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceCors.property.allowedHeaders">AllowedHeaders</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#allowed_headers HealthcareFhirService#allowed_headers}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceCors.property.allowedMethods">AllowedMethods</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#allowed_methods HealthcareFhirService#allowed_methods}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceCors.property.allowedOrigins">AllowedOrigins</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#allowed_origins HealthcareFhirService#allowed_origins}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceCors.property.credentialsAllowed">CredentialsAllowed</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#credentials_allowed HealthcareFhirService#credentials_allowed}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceCors.property.maxAgeInSeconds">MaxAgeInSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#max_age_in_seconds HealthcareFhirService#max_age_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceCors.property.allowedHeaders">AllowedHeaders</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#allowed_headers HealthcareFhirService#allowed_headers}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceCors.property.allowedMethods">AllowedMethods</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#allowed_methods HealthcareFhirService#allowed_methods}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceCors.property.allowedOrigins">AllowedOrigins</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#allowed_origins HealthcareFhirService#allowed_origins}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceCors.property.credentialsAllowed">CredentialsAllowed</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#credentials_allowed HealthcareFhirService#credentials_allowed}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceCors.property.maxAgeInSeconds">MaxAgeInSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#max_age_in_seconds HealthcareFhirService#max_age_in_seconds}. |
 
 ---
 
@@ -1581,7 +1581,7 @@ public string[] AllowedHeaders { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#allowed_headers HealthcareFhirService#allowed_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#allowed_headers HealthcareFhirService#allowed_headers}.
 
 ---
 
@@ -1593,7 +1593,7 @@ public string[] AllowedMethods { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#allowed_methods HealthcareFhirService#allowed_methods}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#allowed_methods HealthcareFhirService#allowed_methods}.
 
 ---
 
@@ -1605,7 +1605,7 @@ public string[] AllowedOrigins { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#allowed_origins HealthcareFhirService#allowed_origins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#allowed_origins HealthcareFhirService#allowed_origins}.
 
 ---
 
@@ -1617,7 +1617,7 @@ public bool|IResolvable CredentialsAllowed { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#credentials_allowed HealthcareFhirService#credentials_allowed}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#credentials_allowed HealthcareFhirService#credentials_allowed}.
 
 ---
 
@@ -1629,7 +1629,7 @@ public double MaxAgeInSeconds { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#max_age_in_seconds HealthcareFhirService#max_age_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#max_age_in_seconds HealthcareFhirService#max_age_in_seconds}.
 
 ---
 
@@ -1650,8 +1650,8 @@ new HealthcareFhirServiceIdentity {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#type HealthcareFhirService#type}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#identity_ids HealthcareFhirService#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#type HealthcareFhirService#type}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#identity_ids HealthcareFhirService#identity_ids}. |
 
 ---
 
@@ -1663,7 +1663,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#type HealthcareFhirService#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#type HealthcareFhirService#type}.
 
 ---
 
@@ -1675,7 +1675,7 @@ public string[] IdentityIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#identity_ids HealthcareFhirService#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#identity_ids HealthcareFhirService#identity_ids}.
 
 ---
 
@@ -1697,9 +1697,9 @@ new HealthcareFhirServiceOciArtifact {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceOciArtifact.property.loginServer">LoginServer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#login_server HealthcareFhirService#login_server}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceOciArtifact.property.digest">Digest</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#digest HealthcareFhirService#digest}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceOciArtifact.property.imageName">ImageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#image_name HealthcareFhirService#image_name}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceOciArtifact.property.loginServer">LoginServer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#login_server HealthcareFhirService#login_server}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceOciArtifact.property.digest">Digest</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#digest HealthcareFhirService#digest}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceOciArtifact.property.imageName">ImageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#image_name HealthcareFhirService#image_name}. |
 
 ---
 
@@ -1711,7 +1711,7 @@ public string LoginServer { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#login_server HealthcareFhirService#login_server}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#login_server HealthcareFhirService#login_server}.
 
 ---
 
@@ -1723,7 +1723,7 @@ public string Digest { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#digest HealthcareFhirService#digest}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#digest HealthcareFhirService#digest}.
 
 ---
 
@@ -1735,7 +1735,7 @@ public string ImageName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#image_name HealthcareFhirService#image_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#image_name HealthcareFhirService#image_name}.
 
 ---
 
@@ -1758,10 +1758,10 @@ new HealthcareFhirServiceTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#create HealthcareFhirService#create}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#delete HealthcareFhirService#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#read HealthcareFhirService#read}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#update HealthcareFhirService#update}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#create HealthcareFhirService#create}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#delete HealthcareFhirService#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#read HealthcareFhirService#read}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareFhirService.HealthcareFhirServiceTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#update HealthcareFhirService#update}. |
 
 ---
 
@@ -1773,7 +1773,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#create HealthcareFhirService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#create HealthcareFhirService#create}.
 
 ---
 
@@ -1785,7 +1785,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#delete HealthcareFhirService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#delete HealthcareFhirService#delete}.
 
 ---
 
@@ -1797,7 +1797,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#read HealthcareFhirService#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#read HealthcareFhirService#read}.
 
 ---
 
@@ -1809,7 +1809,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_fhir_service#update HealthcareFhirService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/healthcare_fhir_service#update HealthcareFhirService#update}.
 
 ---
 

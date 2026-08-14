@@ -4,7 +4,7 @@
 
 ### AutomationConnectionServicePrincipal <a name="AutomationConnectionServicePrincipal" id="@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal azurerm_automation_connection_service_principal}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal azurerm_automation_connection_service_principal}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer"></a>
 
@@ -43,15 +43,15 @@ AutomationConnectionServicePrincipal.Builder.create(Construct scope, java.lang.S
 | <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.applicationId">applicationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#application_id AutomationConnectionServicePrincipal#application_id}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.automationAccountName">automationAccountName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#automation_account_name AutomationConnectionServicePrincipal#automation_account_name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.certificateThumbprint">certificateThumbprint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#certificate_thumbprint AutomationConnectionServicePrincipal#certificate_thumbprint}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#name AutomationConnectionServicePrincipal#name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#resource_group_name AutomationConnectionServicePrincipal#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.subscriptionId">subscriptionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#subscription_id AutomationConnectionServicePrincipal#subscription_id}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#tenant_id AutomationConnectionServicePrincipal#tenant_id}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#description AutomationConnectionServicePrincipal#description}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#id AutomationConnectionServicePrincipal#id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.applicationId">applicationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#application_id AutomationConnectionServicePrincipal#application_id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.automationAccountName">automationAccountName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#automation_account_name AutomationConnectionServicePrincipal#automation_account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.certificateThumbprint">certificateThumbprint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#certificate_thumbprint AutomationConnectionServicePrincipal#certificate_thumbprint}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#name AutomationConnectionServicePrincipal#name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#resource_group_name AutomationConnectionServicePrincipal#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.subscriptionId">subscriptionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#subscription_id AutomationConnectionServicePrincipal#subscription_id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#tenant_id AutomationConnectionServicePrincipal#tenant_id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#description AutomationConnectionServicePrincipal#description}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#id AutomationConnectionServicePrincipal#id}. |
 | <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipal.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalTimeouts">AutomationConnectionServicePrincipalTimeouts</a></code> | timeouts block. |
 
 ---
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#application_id AutomationConnectionServicePrincipal#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#application_id AutomationConnectionServicePrincipal#application_id}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#automation_account_name AutomationConnectionServicePrincipal#automation_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#automation_account_name AutomationConnectionServicePrincipal#automation_account_name}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#certificate_thumbprint AutomationConnectionServicePrincipal#certificate_thumbprint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#certificate_thumbprint AutomationConnectionServicePrincipal#certificate_thumbprint}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#name AutomationConnectionServicePrincipal#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#name AutomationConnectionServicePrincipal#name}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#resource_group_name AutomationConnectionServicePrincipal#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#resource_group_name AutomationConnectionServicePrincipal#resource_group_name}.
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#subscription_id AutomationConnectionServicePrincipal#subscription_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#subscription_id AutomationConnectionServicePrincipal#subscription_id}.
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#tenant_id AutomationConnectionServicePrincipal#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#tenant_id AutomationConnectionServicePrincipal#tenant_id}.
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#description AutomationConnectionServicePrincipal#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#description AutomationConnectionServicePrincipal#description}.
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#id AutomationConnectionServicePrincipal#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#id AutomationConnectionServicePrincipal#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -197,7 +197,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#timeouts AutomationConnectionServicePrincipal#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#timeouts AutomationConnectionServicePrincipal#timeouts}
 
 ---
 
@@ -680,7 +680,7 @@ The construct id used in the generated config for the AutomationConnectionServic
 
 The id of the existing AutomationConnectionServicePrincipal that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1134,15 +1134,15 @@ AutomationConnectionServicePrincipalConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.applicationId">applicationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#application_id AutomationConnectionServicePrincipal#application_id}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.automationAccountName">automationAccountName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#automation_account_name AutomationConnectionServicePrincipal#automation_account_name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.certificateThumbprint">certificateThumbprint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#certificate_thumbprint AutomationConnectionServicePrincipal#certificate_thumbprint}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#name AutomationConnectionServicePrincipal#name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#resource_group_name AutomationConnectionServicePrincipal#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.subscriptionId">subscriptionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#subscription_id AutomationConnectionServicePrincipal#subscription_id}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#tenant_id AutomationConnectionServicePrincipal#tenant_id}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#description AutomationConnectionServicePrincipal#description}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#id AutomationConnectionServicePrincipal#id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.applicationId">applicationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#application_id AutomationConnectionServicePrincipal#application_id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.automationAccountName">automationAccountName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#automation_account_name AutomationConnectionServicePrincipal#automation_account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.certificateThumbprint">certificateThumbprint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#certificate_thumbprint AutomationConnectionServicePrincipal#certificate_thumbprint}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#name AutomationConnectionServicePrincipal#name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#resource_group_name AutomationConnectionServicePrincipal#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.subscriptionId">subscriptionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#subscription_id AutomationConnectionServicePrincipal#subscription_id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#tenant_id AutomationConnectionServicePrincipal#tenant_id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#description AutomationConnectionServicePrincipal#description}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#id AutomationConnectionServicePrincipal#id}. |
 | <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalTimeouts">AutomationConnectionServicePrincipalTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1225,7 +1225,7 @@ public java.lang.String getApplicationId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#application_id AutomationConnectionServicePrincipal#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#application_id AutomationConnectionServicePrincipal#application_id}.
 
 ---
 
@@ -1237,7 +1237,7 @@ public java.lang.String getAutomationAccountName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#automation_account_name AutomationConnectionServicePrincipal#automation_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#automation_account_name AutomationConnectionServicePrincipal#automation_account_name}.
 
 ---
 
@@ -1249,7 +1249,7 @@ public java.lang.String getCertificateThumbprint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#certificate_thumbprint AutomationConnectionServicePrincipal#certificate_thumbprint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#certificate_thumbprint AutomationConnectionServicePrincipal#certificate_thumbprint}.
 
 ---
 
@@ -1261,7 +1261,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#name AutomationConnectionServicePrincipal#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#name AutomationConnectionServicePrincipal#name}.
 
 ---
 
@@ -1273,7 +1273,7 @@ public java.lang.String getResourceGroupName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#resource_group_name AutomationConnectionServicePrincipal#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#resource_group_name AutomationConnectionServicePrincipal#resource_group_name}.
 
 ---
 
@@ -1285,7 +1285,7 @@ public java.lang.String getSubscriptionId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#subscription_id AutomationConnectionServicePrincipal#subscription_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#subscription_id AutomationConnectionServicePrincipal#subscription_id}.
 
 ---
 
@@ -1297,7 +1297,7 @@ public java.lang.String getTenantId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#tenant_id AutomationConnectionServicePrincipal#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#tenant_id AutomationConnectionServicePrincipal#tenant_id}.
 
 ---
 
@@ -1309,7 +1309,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#description AutomationConnectionServicePrincipal#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#description AutomationConnectionServicePrincipal#description}.
 
 ---
 
@@ -1321,7 +1321,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#id AutomationConnectionServicePrincipal#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#id AutomationConnectionServicePrincipal#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1338,7 +1338,7 @@ public AutomationConnectionServicePrincipalTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#timeouts AutomationConnectionServicePrincipal#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#timeouts AutomationConnectionServicePrincipal#timeouts}
 
 ---
 
@@ -1361,10 +1361,10 @@ AutomationConnectionServicePrincipalTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#create AutomationConnectionServicePrincipal#create}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#delete AutomationConnectionServicePrincipal#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#read AutomationConnectionServicePrincipal#read}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#update AutomationConnectionServicePrincipal#update}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#create AutomationConnectionServicePrincipal#create}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#delete AutomationConnectionServicePrincipal#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#read AutomationConnectionServicePrincipal#read}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionServicePrincipal.AutomationConnectionServicePrincipalTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#update AutomationConnectionServicePrincipal#update}. |
 
 ---
 
@@ -1376,7 +1376,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#create AutomationConnectionServicePrincipal#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#create AutomationConnectionServicePrincipal#create}.
 
 ---
 
@@ -1388,7 +1388,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#delete AutomationConnectionServicePrincipal#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#delete AutomationConnectionServicePrincipal#delete}.
 
 ---
 
@@ -1400,7 +1400,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#read AutomationConnectionServicePrincipal#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#read AutomationConnectionServicePrincipal#read}.
 
 ---
 
@@ -1412,7 +1412,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_connection_service_principal#update AutomationConnectionServicePrincipal#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_connection_service_principal#update AutomationConnectionServicePrincipal#update}.
 
 ---
 

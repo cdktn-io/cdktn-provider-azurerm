@@ -4,7 +4,7 @@
 
 ### DataAzurermOracleDbServers <a name="DataAzurermOracleDbServers" id="@cdktn/provider-azurerm.dataAzurermOracleDbServers.DataAzurermOracleDbServers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/oracle_db_servers azurerm_oracle_db_servers}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/oracle_db_servers azurerm_oracle_db_servers}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleDbServers.DataAzurermOracleDbServers.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermOracleDbServers
 
 The id of the existing DataAzurermOracleDbServers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/oracle_db_servers#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/oracle_db_servers#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -719,9 +719,9 @@ new DataAzurermOracleDbServersConfig {
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleDbServers.DataAzurermOracleDbServersConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleDbServers.DataAzurermOracleDbServersConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleDbServers.DataAzurermOracleDbServersConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleDbServers.DataAzurermOracleDbServersConfig.property.cloudExadataInfrastructureName">CloudExadataInfrastructureName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/oracle_db_servers#cloud_exadata_infrastructure_name DataAzurermOracleDbServers#cloud_exadata_infrastructure_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleDbServers.DataAzurermOracleDbServersConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/oracle_db_servers#resource_group_name DataAzurermOracleDbServers#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleDbServers.DataAzurermOracleDbServersConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/oracle_db_servers#id DataAzurermOracleDbServers#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleDbServers.DataAzurermOracleDbServersConfig.property.cloudExadataInfrastructureName">CloudExadataInfrastructureName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/oracle_db_servers#cloud_exadata_infrastructure_name DataAzurermOracleDbServers#cloud_exadata_infrastructure_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleDbServers.DataAzurermOracleDbServersConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/oracle_db_servers#resource_group_name DataAzurermOracleDbServers#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleDbServers.DataAzurermOracleDbServersConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/oracle_db_servers#id DataAzurermOracleDbServers#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleDbServers.DataAzurermOracleDbServersConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleDbServers.DataAzurermOracleDbServersTimeouts">DataAzurermOracleDbServersTimeouts</a></code> | timeouts block. |
 
 ---
@@ -804,7 +804,7 @@ public string CloudExadataInfrastructureName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/oracle_db_servers#cloud_exadata_infrastructure_name DataAzurermOracleDbServers#cloud_exadata_infrastructure_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/oracle_db_servers#cloud_exadata_infrastructure_name DataAzurermOracleDbServers#cloud_exadata_infrastructure_name}.
 
 ---
 
@@ -816,7 +816,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/oracle_db_servers#resource_group_name DataAzurermOracleDbServers#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/oracle_db_servers#resource_group_name DataAzurermOracleDbServers#resource_group_name}.
 
 ---
 
@@ -828,7 +828,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/oracle_db_servers#id DataAzurermOracleDbServers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/oracle_db_servers#id DataAzurermOracleDbServers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -845,7 +845,7 @@ public DataAzurermOracleDbServersTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/oracle_db_servers#timeouts DataAzurermOracleDbServers#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/oracle_db_servers#timeouts DataAzurermOracleDbServers#timeouts}
 
 ---
 
@@ -878,7 +878,7 @@ new DataAzurermOracleDbServersTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleDbServers.DataAzurermOracleDbServersTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/oracle_db_servers#read DataAzurermOracleDbServers#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleDbServers.DataAzurermOracleDbServersTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/oracle_db_servers#read DataAzurermOracleDbServers#read}. |
 
 ---
 
@@ -890,7 +890,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/oracle_db_servers#read DataAzurermOracleDbServers#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/oracle_db_servers#read DataAzurermOracleDbServers#read}.
 
 ---
 

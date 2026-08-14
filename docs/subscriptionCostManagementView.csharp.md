@@ -4,7 +4,7 @@
 
 ### SubscriptionCostManagementView <a name="SubscriptionCostManagementView" id="@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementView"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view azurerm_subscription_cost_management_view}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view azurerm_subscription_cost_management_view}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementView.Initializer"></a>
 
@@ -569,7 +569,7 @@ The construct id used in the generated config for the SubscriptionCostManagement
 
 The id of the existing SubscriptionCostManagementView that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1069,15 +1069,15 @@ new SubscriptionCostManagementViewConfig {
 | <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.accumulated">Accumulated</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#accumulated SubscriptionCostManagementView#accumulated}. |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.chartType">ChartType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#chart_type SubscriptionCostManagementView#chart_type}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.accumulated">Accumulated</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#accumulated SubscriptionCostManagementView#accumulated}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.chartType">ChartType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#chart_type SubscriptionCostManagementView#chart_type}. |
 | <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.dataset">Dataset</a></code> | <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewDataset">SubscriptionCostManagementViewDataset</a></code> | dataset block. |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#display_name SubscriptionCostManagementView#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}. |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.reportType">ReportType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#report_type SubscriptionCostManagementView#report_type}. |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.subscriptionId">SubscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#subscription_id SubscriptionCostManagementView#subscription_id}. |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.timeframe">Timeframe</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#timeframe SubscriptionCostManagementView#timeframe}. |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#id SubscriptionCostManagementView#id}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#display_name SubscriptionCostManagementView#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.reportType">ReportType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#report_type SubscriptionCostManagementView#report_type}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.subscriptionId">SubscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#subscription_id SubscriptionCostManagementView#subscription_id}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.timeframe">Timeframe</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#timeframe SubscriptionCostManagementView#timeframe}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#id SubscriptionCostManagementView#id}. |
 | <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.kpi">Kpi</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewKpi">SubscriptionCostManagementViewKpi</a>[]</code> | kpi block. |
 | <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.pivot">Pivot</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewPivot">SubscriptionCostManagementViewPivot</a>[]</code> | pivot block. |
 | <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewTimeouts">SubscriptionCostManagementViewTimeouts</a></code> | timeouts block. |
@@ -1162,7 +1162,7 @@ public bool|IResolvable Accumulated { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#accumulated SubscriptionCostManagementView#accumulated}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#accumulated SubscriptionCostManagementView#accumulated}.
 
 ---
 
@@ -1174,7 +1174,7 @@ public string ChartType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#chart_type SubscriptionCostManagementView#chart_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#chart_type SubscriptionCostManagementView#chart_type}.
 
 ---
 
@@ -1188,7 +1188,7 @@ public SubscriptionCostManagementViewDataset Dataset { get; set; }
 
 dataset block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#dataset SubscriptionCostManagementView#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#dataset SubscriptionCostManagementView#dataset}
 
 ---
 
@@ -1200,7 +1200,7 @@ public string DisplayName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#display_name SubscriptionCostManagementView#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#display_name SubscriptionCostManagementView#display_name}.
 
 ---
 
@@ -1212,7 +1212,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}.
 
 ---
 
@@ -1224,7 +1224,7 @@ public string ReportType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#report_type SubscriptionCostManagementView#report_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#report_type SubscriptionCostManagementView#report_type}.
 
 ---
 
@@ -1236,7 +1236,7 @@ public string SubscriptionId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#subscription_id SubscriptionCostManagementView#subscription_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#subscription_id SubscriptionCostManagementView#subscription_id}.
 
 ---
 
@@ -1248,7 +1248,7 @@ public string Timeframe { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#timeframe SubscriptionCostManagementView#timeframe}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#timeframe SubscriptionCostManagementView#timeframe}.
 
 ---
 
@@ -1260,7 +1260,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#id SubscriptionCostManagementView#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#id SubscriptionCostManagementView#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1277,7 +1277,7 @@ public IResolvable|SubscriptionCostManagementViewKpi[] Kpi { get; set; }
 
 kpi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#kpi SubscriptionCostManagementView#kpi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#kpi SubscriptionCostManagementView#kpi}
 
 ---
 
@@ -1291,7 +1291,7 @@ public IResolvable|SubscriptionCostManagementViewPivot[] Pivot { get; set; }
 
 pivot block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#pivot SubscriptionCostManagementView#pivot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#pivot SubscriptionCostManagementView#pivot}
 
 ---
 
@@ -1305,7 +1305,7 @@ public SubscriptionCostManagementViewTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#timeouts SubscriptionCostManagementView#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#timeouts SubscriptionCostManagementView#timeouts}
 
 ---
 
@@ -1329,7 +1329,7 @@ new SubscriptionCostManagementViewDataset {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewDataset.property.aggregation">Aggregation</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewDatasetAggregation">SubscriptionCostManagementViewDatasetAggregation</a>[]</code> | aggregation block. |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewDataset.property.granularity">Granularity</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#granularity SubscriptionCostManagementView#granularity}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewDataset.property.granularity">Granularity</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#granularity SubscriptionCostManagementView#granularity}. |
 | <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewDataset.property.grouping">Grouping</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewDatasetGrouping">SubscriptionCostManagementViewDatasetGrouping</a>[]</code> | grouping block. |
 | <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewDataset.property.sorting">Sorting</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewDatasetSorting">SubscriptionCostManagementViewDatasetSorting</a>[]</code> | sorting block. |
 
@@ -1345,7 +1345,7 @@ public IResolvable|SubscriptionCostManagementViewDatasetAggregation[] Aggregatio
 
 aggregation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#aggregation SubscriptionCostManagementView#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#aggregation SubscriptionCostManagementView#aggregation}
 
 ---
 
@@ -1357,7 +1357,7 @@ public string Granularity { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#granularity SubscriptionCostManagementView#granularity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#granularity SubscriptionCostManagementView#granularity}.
 
 ---
 
@@ -1371,7 +1371,7 @@ public IResolvable|SubscriptionCostManagementViewDatasetGrouping[] Grouping { ge
 
 grouping block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#grouping SubscriptionCostManagementView#grouping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#grouping SubscriptionCostManagementView#grouping}
 
 ---
 
@@ -1385,7 +1385,7 @@ public IResolvable|SubscriptionCostManagementViewDatasetSorting[] Sorting { get;
 
 sorting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#sorting SubscriptionCostManagementView#sorting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#sorting SubscriptionCostManagementView#sorting}
 
 ---
 
@@ -1406,8 +1406,8 @@ new SubscriptionCostManagementViewDatasetAggregation {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewDatasetAggregation.property.columnName">ColumnName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#column_name SubscriptionCostManagementView#column_name}. |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewDatasetAggregation.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewDatasetAggregation.property.columnName">ColumnName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#column_name SubscriptionCostManagementView#column_name}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewDatasetAggregation.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}. |
 
 ---
 
@@ -1419,7 +1419,7 @@ public string ColumnName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#column_name SubscriptionCostManagementView#column_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#column_name SubscriptionCostManagementView#column_name}.
 
 ---
 
@@ -1431,7 +1431,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}.
 
 ---
 
@@ -1452,8 +1452,8 @@ new SubscriptionCostManagementViewDatasetGrouping {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewDatasetGrouping.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}. |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewDatasetGrouping.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#type SubscriptionCostManagementView#type}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewDatasetGrouping.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewDatasetGrouping.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#type SubscriptionCostManagementView#type}. |
 
 ---
 
@@ -1465,7 +1465,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}.
 
 ---
 
@@ -1477,7 +1477,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#type SubscriptionCostManagementView#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#type SubscriptionCostManagementView#type}.
 
 ---
 
@@ -1498,8 +1498,8 @@ new SubscriptionCostManagementViewDatasetSorting {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewDatasetSorting.property.direction">Direction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#direction SubscriptionCostManagementView#direction}. |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewDatasetSorting.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewDatasetSorting.property.direction">Direction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#direction SubscriptionCostManagementView#direction}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewDatasetSorting.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}. |
 
 ---
 
@@ -1511,7 +1511,7 @@ public string Direction { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#direction SubscriptionCostManagementView#direction}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#direction SubscriptionCostManagementView#direction}.
 
 ---
 
@@ -1523,7 +1523,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}.
 
 ---
 
@@ -1543,7 +1543,7 @@ new SubscriptionCostManagementViewKpi {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewKpi.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#type SubscriptionCostManagementView#type}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewKpi.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#type SubscriptionCostManagementView#type}. |
 
 ---
 
@@ -1555,7 +1555,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#type SubscriptionCostManagementView#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#type SubscriptionCostManagementView#type}.
 
 ---
 
@@ -1576,8 +1576,8 @@ new SubscriptionCostManagementViewPivot {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewPivot.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}. |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewPivot.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#type SubscriptionCostManagementView#type}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewPivot.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewPivot.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#type SubscriptionCostManagementView#type}. |
 
 ---
 
@@ -1589,7 +1589,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}.
 
 ---
 
@@ -1601,7 +1601,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#type SubscriptionCostManagementView#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#type SubscriptionCostManagementView#type}.
 
 ---
 
@@ -1624,10 +1624,10 @@ new SubscriptionCostManagementViewTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#create SubscriptionCostManagementView#create}. |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#delete SubscriptionCostManagementView#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#read SubscriptionCostManagementView#read}. |
-| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#update SubscriptionCostManagementView#update}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#create SubscriptionCostManagementView#create}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#delete SubscriptionCostManagementView#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#read SubscriptionCostManagementView#read}. |
+| <code><a href="#@cdktn/provider-azurerm.subscriptionCostManagementView.SubscriptionCostManagementViewTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#update SubscriptionCostManagementView#update}. |
 
 ---
 
@@ -1639,7 +1639,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#create SubscriptionCostManagementView#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#create SubscriptionCostManagementView#create}.
 
 ---
 
@@ -1651,7 +1651,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#delete SubscriptionCostManagementView#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#delete SubscriptionCostManagementView#delete}.
 
 ---
 
@@ -1663,7 +1663,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#read SubscriptionCostManagementView#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#read SubscriptionCostManagementView#read}.
 
 ---
 
@@ -1675,7 +1675,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/subscription_cost_management_view#update SubscriptionCostManagementView#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/subscription_cost_management_view#update SubscriptionCostManagementView#update}.
 
 ---
 

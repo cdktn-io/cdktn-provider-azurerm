@@ -4,7 +4,7 @@
 
 ### DevCenterCatalog <a name="DevCenterCatalog" id="@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog azurerm_dev_center_catalog}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog azurerm_dev_center_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalog.Initializer"></a>
 
@@ -556,7 +556,7 @@ The construct id used in the generated config for the DevCenterCatalog to import
 
 The id of the existing DevCenterCatalog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -919,10 +919,10 @@ const devCenterCatalogCatalogAdogit: devCenterCatalog.DevCenterCatalogCatalogAdo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogAdogit.property.branch">branch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#branch DevCenterCatalog#branch}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogAdogit.property.keyVaultKeyUrl">keyVaultKeyUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#key_vault_key_url DevCenterCatalog#key_vault_key_url}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogAdogit.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#path DevCenterCatalog#path}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogAdogit.property.uri">uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#uri DevCenterCatalog#uri}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogAdogit.property.branch">branch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#branch DevCenterCatalog#branch}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogAdogit.property.keyVaultKeyUrl">keyVaultKeyUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#key_vault_key_url DevCenterCatalog#key_vault_key_url}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogAdogit.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#path DevCenterCatalog#path}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogAdogit.property.uri">uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#uri DevCenterCatalog#uri}. |
 
 ---
 
@@ -934,7 +934,7 @@ public readonly branch: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#branch DevCenterCatalog#branch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#branch DevCenterCatalog#branch}.
 
 ---
 
@@ -946,7 +946,7 @@ public readonly keyVaultKeyUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#key_vault_key_url DevCenterCatalog#key_vault_key_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#key_vault_key_url DevCenterCatalog#key_vault_key_url}.
 
 ---
 
@@ -958,7 +958,7 @@ public readonly path: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#path DevCenterCatalog#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#path DevCenterCatalog#path}.
 
 ---
 
@@ -970,7 +970,7 @@ public readonly uri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#uri DevCenterCatalog#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#uri DevCenterCatalog#uri}.
 
 ---
 
@@ -988,10 +988,10 @@ const devCenterCatalogCatalogGithub: devCenterCatalog.DevCenterCatalogCatalogGit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogGithub.property.branch">branch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#branch DevCenterCatalog#branch}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogGithub.property.keyVaultKeyUrl">keyVaultKeyUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#key_vault_key_url DevCenterCatalog#key_vault_key_url}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogGithub.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#path DevCenterCatalog#path}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogGithub.property.uri">uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#uri DevCenterCatalog#uri}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogGithub.property.branch">branch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#branch DevCenterCatalog#branch}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogGithub.property.keyVaultKeyUrl">keyVaultKeyUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#key_vault_key_url DevCenterCatalog#key_vault_key_url}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogGithub.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#path DevCenterCatalog#path}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogGithub.property.uri">uri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#uri DevCenterCatalog#uri}. |
 
 ---
 
@@ -1003,7 +1003,7 @@ public readonly branch: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#branch DevCenterCatalog#branch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#branch DevCenterCatalog#branch}.
 
 ---
 
@@ -1015,7 +1015,7 @@ public readonly keyVaultKeyUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#key_vault_key_url DevCenterCatalog#key_vault_key_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#key_vault_key_url DevCenterCatalog#key_vault_key_url}.
 
 ---
 
@@ -1027,7 +1027,7 @@ public readonly path: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#path DevCenterCatalog#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#path DevCenterCatalog#path}.
 
 ---
 
@@ -1039,7 +1039,7 @@ public readonly uri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#uri DevCenterCatalog#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#uri DevCenterCatalog#uri}.
 
 ---
 
@@ -1064,12 +1064,12 @@ const devCenterCatalogConfig: devCenterCatalog.DevCenterCatalogConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogConfig.property.devCenterId">devCenterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#dev_center_id DevCenterCatalog#dev_center_id}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#name DevCenterCatalog#name}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#resource_group_name DevCenterCatalog#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogConfig.property.devCenterId">devCenterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#dev_center_id DevCenterCatalog#dev_center_id}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#name DevCenterCatalog#name}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#resource_group_name DevCenterCatalog#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogConfig.property.catalogAdogit">catalogAdogit</a></code> | <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogAdogit">DevCenterCatalogCatalogAdogit</a></code> | catalog_adogit block. |
 | <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogConfig.property.catalogGithub">catalogGithub</a></code> | <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogGithub">DevCenterCatalogCatalogGithub</a></code> | catalog_github block. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#id DevCenterCatalog#id}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#id DevCenterCatalog#id}. |
 | <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogTimeouts">DevCenterCatalogTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1152,7 +1152,7 @@ public readonly devCenterId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#dev_center_id DevCenterCatalog#dev_center_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#dev_center_id DevCenterCatalog#dev_center_id}.
 
 ---
 
@@ -1164,7 +1164,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#name DevCenterCatalog#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#name DevCenterCatalog#name}.
 
 ---
 
@@ -1176,7 +1176,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#resource_group_name DevCenterCatalog#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#resource_group_name DevCenterCatalog#resource_group_name}.
 
 ---
 
@@ -1190,7 +1190,7 @@ public readonly catalogAdogit: DevCenterCatalogCatalogAdogit;
 
 catalog_adogit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#catalog_adogit DevCenterCatalog#catalog_adogit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#catalog_adogit DevCenterCatalog#catalog_adogit}
 
 ---
 
@@ -1204,7 +1204,7 @@ public readonly catalogGithub: DevCenterCatalogCatalogGithub;
 
 catalog_github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#catalog_github DevCenterCatalog#catalog_github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#catalog_github DevCenterCatalog#catalog_github}
 
 ---
 
@@ -1216,7 +1216,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#id DevCenterCatalog#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#id DevCenterCatalog#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1233,7 +1233,7 @@ public readonly timeouts: DevCenterCatalogTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#timeouts DevCenterCatalog#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#timeouts DevCenterCatalog#timeouts}
 
 ---
 
@@ -1251,10 +1251,10 @@ const devCenterCatalogTimeouts: devCenterCatalog.DevCenterCatalogTimeouts = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#create DevCenterCatalog#create}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#delete DevCenterCatalog#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#read DevCenterCatalog#read}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#update DevCenterCatalog#update}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#create DevCenterCatalog#create}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#delete DevCenterCatalog#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#read DevCenterCatalog#read}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#update DevCenterCatalog#update}. |
 
 ---
 
@@ -1266,7 +1266,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#create DevCenterCatalog#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#create DevCenterCatalog#create}.
 
 ---
 
@@ -1278,7 +1278,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#delete DevCenterCatalog#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#delete DevCenterCatalog#delete}.
 
 ---
 
@@ -1290,7 +1290,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#read DevCenterCatalog#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#read DevCenterCatalog#read}.
 
 ---
 
@@ -1302,7 +1302,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/dev_center_catalog#update DevCenterCatalog#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/dev_center_catalog#update DevCenterCatalog#update}.
 
 ---
 

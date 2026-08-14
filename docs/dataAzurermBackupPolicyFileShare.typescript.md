@@ -4,7 +4,7 @@
 
 ### DataAzurermBackupPolicyFileShare <a name="DataAzurermBackupPolicyFileShare" id="@cdktn/provider-azurerm.dataAzurermBackupPolicyFileShare.DataAzurermBackupPolicyFileShare"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/backup_policy_file_share azurerm_backup_policy_file_share}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/backup_policy_file_share azurerm_backup_policy_file_share}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermBackupPolicyFileShare.DataAzurermBackupPolicyFileShare.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermBackupPolicyFil
 
 The id of the existing DataAzurermBackupPolicyFileShare that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/backup_policy_file_share#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/backup_policy_file_share#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -718,10 +718,10 @@ const dataAzurermBackupPolicyFileShareConfig: dataAzurermBackupPolicyFileShare.D
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermBackupPolicyFileShare.DataAzurermBackupPolicyFileShareConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermBackupPolicyFileShare.DataAzurermBackupPolicyFileShareConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermBackupPolicyFileShare.DataAzurermBackupPolicyFileShareConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermBackupPolicyFileShare.DataAzurermBackupPolicyFileShareConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/backup_policy_file_share#name DataAzurermBackupPolicyFileShare#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermBackupPolicyFileShare.DataAzurermBackupPolicyFileShareConfig.property.recoveryVaultName">recoveryVaultName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/backup_policy_file_share#recovery_vault_name DataAzurermBackupPolicyFileShare#recovery_vault_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermBackupPolicyFileShare.DataAzurermBackupPolicyFileShareConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/backup_policy_file_share#resource_group_name DataAzurermBackupPolicyFileShare#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermBackupPolicyFileShare.DataAzurermBackupPolicyFileShareConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/backup_policy_file_share#id DataAzurermBackupPolicyFileShare#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermBackupPolicyFileShare.DataAzurermBackupPolicyFileShareConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/backup_policy_file_share#name DataAzurermBackupPolicyFileShare#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermBackupPolicyFileShare.DataAzurermBackupPolicyFileShareConfig.property.recoveryVaultName">recoveryVaultName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/backup_policy_file_share#recovery_vault_name DataAzurermBackupPolicyFileShare#recovery_vault_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermBackupPolicyFileShare.DataAzurermBackupPolicyFileShareConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/backup_policy_file_share#resource_group_name DataAzurermBackupPolicyFileShare#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermBackupPolicyFileShare.DataAzurermBackupPolicyFileShareConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/backup_policy_file_share#id DataAzurermBackupPolicyFileShare#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermBackupPolicyFileShare.DataAzurermBackupPolicyFileShareConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermBackupPolicyFileShare.DataAzurermBackupPolicyFileShareTimeouts">DataAzurermBackupPolicyFileShareTimeouts</a></code> | timeouts block. |
 
 ---
@@ -804,7 +804,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/backup_policy_file_share#name DataAzurermBackupPolicyFileShare#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/backup_policy_file_share#name DataAzurermBackupPolicyFileShare#name}.
 
 ---
 
@@ -816,7 +816,7 @@ public readonly recoveryVaultName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/backup_policy_file_share#recovery_vault_name DataAzurermBackupPolicyFileShare#recovery_vault_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/backup_policy_file_share#recovery_vault_name DataAzurermBackupPolicyFileShare#recovery_vault_name}.
 
 ---
 
@@ -828,7 +828,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/backup_policy_file_share#resource_group_name DataAzurermBackupPolicyFileShare#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/backup_policy_file_share#resource_group_name DataAzurermBackupPolicyFileShare#resource_group_name}.
 
 ---
 
@@ -840,7 +840,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/backup_policy_file_share#id DataAzurermBackupPolicyFileShare#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/backup_policy_file_share#id DataAzurermBackupPolicyFileShare#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -857,7 +857,7 @@ public readonly timeouts: DataAzurermBackupPolicyFileShareTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/backup_policy_file_share#timeouts DataAzurermBackupPolicyFileShare#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/backup_policy_file_share#timeouts DataAzurermBackupPolicyFileShare#timeouts}
 
 ---
 
@@ -875,7 +875,7 @@ const dataAzurermBackupPolicyFileShareTimeouts: dataAzurermBackupPolicyFileShare
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermBackupPolicyFileShare.DataAzurermBackupPolicyFileShareTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/backup_policy_file_share#read DataAzurermBackupPolicyFileShare#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermBackupPolicyFileShare.DataAzurermBackupPolicyFileShareTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/backup_policy_file_share#read DataAzurermBackupPolicyFileShare#read}. |
 
 ---
 
@@ -887,7 +887,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/backup_policy_file_share#read DataAzurermBackupPolicyFileShare#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/backup_policy_file_share#read DataAzurermBackupPolicyFileShare#read}.
 
 ---
 

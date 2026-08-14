@@ -4,7 +4,7 @@
 
 ### GalleryApplication <a name="GalleryApplication" id="@cdktn/provider-azurerm.galleryApplication.GalleryApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application azurerm_gallery_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application azurerm_gallery_application}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.galleryApplication.GalleryApplication.Initializer"></a>
 
@@ -558,7 +558,7 @@ The construct id used in the generated config for the GalleryApplication to impo
 
 The id of the existing GalleryApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1058,17 +1058,17 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/galleryapplica
 | <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.galleryId">GalleryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#gallery_id GalleryApplication#gallery_id}. |
-| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#location GalleryApplication#location}. |
-| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#name GalleryApplication#name}. |
-| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.supportedOsType">SupportedOsType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#supported_os_type GalleryApplication#supported_os_type}. |
-| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#description GalleryApplication#description}. |
-| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.endOfLifeDate">EndOfLifeDate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#end_of_life_date GalleryApplication#end_of_life_date}. |
-| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.eula">Eula</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#eula GalleryApplication#eula}. |
-| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#id GalleryApplication#id}. |
-| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.privacyStatementUri">PrivacyStatementUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#privacy_statement_uri GalleryApplication#privacy_statement_uri}. |
-| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.releaseNoteUri">ReleaseNoteUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#release_note_uri GalleryApplication#release_note_uri}. |
-| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#tags GalleryApplication#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.galleryId">GalleryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#gallery_id GalleryApplication#gallery_id}. |
+| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#location GalleryApplication#location}. |
+| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#name GalleryApplication#name}. |
+| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.supportedOsType">SupportedOsType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#supported_os_type GalleryApplication#supported_os_type}. |
+| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#description GalleryApplication#description}. |
+| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.endOfLifeDate">EndOfLifeDate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#end_of_life_date GalleryApplication#end_of_life_date}. |
+| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.eula">Eula</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#eula GalleryApplication#eula}. |
+| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#id GalleryApplication#id}. |
+| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.privacyStatementUri">PrivacyStatementUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#privacy_statement_uri GalleryApplication#privacy_statement_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.releaseNoteUri">ReleaseNoteUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#release_note_uri GalleryApplication#release_note_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#tags GalleryApplication#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationTimeouts">GalleryApplicationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1151,7 +1151,7 @@ GalleryId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#gallery_id GalleryApplication#gallery_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#gallery_id GalleryApplication#gallery_id}.
 
 ---
 
@@ -1163,7 +1163,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#location GalleryApplication#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#location GalleryApplication#location}.
 
 ---
 
@@ -1175,7 +1175,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#name GalleryApplication#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#name GalleryApplication#name}.
 
 ---
 
@@ -1187,7 +1187,7 @@ SupportedOsType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#supported_os_type GalleryApplication#supported_os_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#supported_os_type GalleryApplication#supported_os_type}.
 
 ---
 
@@ -1199,7 +1199,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#description GalleryApplication#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#description GalleryApplication#description}.
 
 ---
 
@@ -1211,7 +1211,7 @@ EndOfLifeDate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#end_of_life_date GalleryApplication#end_of_life_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#end_of_life_date GalleryApplication#end_of_life_date}.
 
 ---
 
@@ -1223,7 +1223,7 @@ Eula *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#eula GalleryApplication#eula}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#eula GalleryApplication#eula}.
 
 ---
 
@@ -1235,7 +1235,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#id GalleryApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#id GalleryApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1250,7 +1250,7 @@ PrivacyStatementUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#privacy_statement_uri GalleryApplication#privacy_statement_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#privacy_statement_uri GalleryApplication#privacy_statement_uri}.
 
 ---
 
@@ -1262,7 +1262,7 @@ ReleaseNoteUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#release_note_uri GalleryApplication#release_note_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#release_note_uri GalleryApplication#release_note_uri}.
 
 ---
 
@@ -1274,7 +1274,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#tags GalleryApplication#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#tags GalleryApplication#tags}.
 
 ---
 
@@ -1288,7 +1288,7 @@ Timeouts GalleryApplicationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#timeouts GalleryApplication#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#timeouts GalleryApplication#timeouts}
 
 ---
 
@@ -1311,10 +1311,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/galleryapplica
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#create GalleryApplication#create}. |
-| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#delete GalleryApplication#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#read GalleryApplication#read}. |
-| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#update GalleryApplication#update}. |
+| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#create GalleryApplication#create}. |
+| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#delete GalleryApplication#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#read GalleryApplication#read}. |
+| <code><a href="#@cdktn/provider-azurerm.galleryApplication.GalleryApplicationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#update GalleryApplication#update}. |
 
 ---
 
@@ -1326,7 +1326,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#create GalleryApplication#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#create GalleryApplication#create}.
 
 ---
 
@@ -1338,7 +1338,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#delete GalleryApplication#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#delete GalleryApplication#delete}.
 
 ---
 
@@ -1350,7 +1350,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#read GalleryApplication#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#read GalleryApplication#read}.
 
 ---
 
@@ -1362,7 +1362,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/gallery_application#update GalleryApplication#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/gallery_application#update GalleryApplication#update}.
 
 ---
 

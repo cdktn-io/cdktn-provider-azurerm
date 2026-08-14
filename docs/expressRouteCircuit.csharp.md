@@ -4,7 +4,7 @@
 
 ### ExpressRouteCircuit <a name="ExpressRouteCircuit" id="@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuit"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit azurerm_express_route_circuit}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit azurerm_express_route_circuit}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuit.Initializer"></a>
 
@@ -592,7 +592,7 @@ The construct id used in the generated config for the ExpressRouteCircuit to imp
 
 The id of the existing ExpressRouteCircuit that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1183,20 +1183,20 @@ new ExpressRouteCircuitConfig {
 | <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#location ExpressRouteCircuit#location}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#name ExpressRouteCircuit#name}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#resource_group_name ExpressRouteCircuit#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#location ExpressRouteCircuit#location}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#name ExpressRouteCircuit#name}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#resource_group_name ExpressRouteCircuit#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.sku">Sku</a></code> | <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitSku">ExpressRouteCircuitSku</a></code> | sku block. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.allowClassicOperations">AllowClassicOperations</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#allow_classic_operations ExpressRouteCircuit#allow_classic_operations}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.authorizationKey">AuthorizationKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#authorization_key ExpressRouteCircuit#authorization_key}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.bandwidthInGbps">BandwidthInGbps</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#bandwidth_in_gbps ExpressRouteCircuit#bandwidth_in_gbps}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.bandwidthInMbps">BandwidthInMbps</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#bandwidth_in_mbps ExpressRouteCircuit#bandwidth_in_mbps}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.expressRoutePortId">ExpressRoutePortId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#express_route_port_id ExpressRouteCircuit#express_route_port_id}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#id ExpressRouteCircuit#id}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.peeringLocation">PeeringLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#peering_location ExpressRouteCircuit#peering_location}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.rateLimitingEnabled">RateLimitingEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#rate_limiting_enabled ExpressRouteCircuit#rate_limiting_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.serviceProviderName">ServiceProviderName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#service_provider_name ExpressRouteCircuit#service_provider_name}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#tags ExpressRouteCircuit#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.allowClassicOperations">AllowClassicOperations</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#allow_classic_operations ExpressRouteCircuit#allow_classic_operations}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.authorizationKey">AuthorizationKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#authorization_key ExpressRouteCircuit#authorization_key}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.bandwidthInGbps">BandwidthInGbps</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#bandwidth_in_gbps ExpressRouteCircuit#bandwidth_in_gbps}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.bandwidthInMbps">BandwidthInMbps</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#bandwidth_in_mbps ExpressRouteCircuit#bandwidth_in_mbps}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.expressRoutePortId">ExpressRoutePortId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#express_route_port_id ExpressRouteCircuit#express_route_port_id}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#id ExpressRouteCircuit#id}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.peeringLocation">PeeringLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#peering_location ExpressRouteCircuit#peering_location}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.rateLimitingEnabled">RateLimitingEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#rate_limiting_enabled ExpressRouteCircuit#rate_limiting_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.serviceProviderName">ServiceProviderName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#service_provider_name ExpressRouteCircuit#service_provider_name}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#tags ExpressRouteCircuit#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitTimeouts">ExpressRouteCircuitTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1279,7 +1279,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#location ExpressRouteCircuit#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#location ExpressRouteCircuit#location}.
 
 ---
 
@@ -1291,7 +1291,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#name ExpressRouteCircuit#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#name ExpressRouteCircuit#name}.
 
 ---
 
@@ -1303,7 +1303,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#resource_group_name ExpressRouteCircuit#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#resource_group_name ExpressRouteCircuit#resource_group_name}.
 
 ---
 
@@ -1317,7 +1317,7 @@ public ExpressRouteCircuitSku Sku { get; set; }
 
 sku block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#sku ExpressRouteCircuit#sku}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#sku ExpressRouteCircuit#sku}
 
 ---
 
@@ -1329,7 +1329,7 @@ public bool|IResolvable AllowClassicOperations { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#allow_classic_operations ExpressRouteCircuit#allow_classic_operations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#allow_classic_operations ExpressRouteCircuit#allow_classic_operations}.
 
 ---
 
@@ -1341,7 +1341,7 @@ public string AuthorizationKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#authorization_key ExpressRouteCircuit#authorization_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#authorization_key ExpressRouteCircuit#authorization_key}.
 
 ---
 
@@ -1353,7 +1353,7 @@ public double BandwidthInGbps { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#bandwidth_in_gbps ExpressRouteCircuit#bandwidth_in_gbps}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#bandwidth_in_gbps ExpressRouteCircuit#bandwidth_in_gbps}.
 
 ---
 
@@ -1365,7 +1365,7 @@ public double BandwidthInMbps { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#bandwidth_in_mbps ExpressRouteCircuit#bandwidth_in_mbps}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#bandwidth_in_mbps ExpressRouteCircuit#bandwidth_in_mbps}.
 
 ---
 
@@ -1377,7 +1377,7 @@ public string ExpressRoutePortId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#express_route_port_id ExpressRouteCircuit#express_route_port_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#express_route_port_id ExpressRouteCircuit#express_route_port_id}.
 
 ---
 
@@ -1389,7 +1389,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#id ExpressRouteCircuit#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#id ExpressRouteCircuit#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1404,7 +1404,7 @@ public string PeeringLocation { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#peering_location ExpressRouteCircuit#peering_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#peering_location ExpressRouteCircuit#peering_location}.
 
 ---
 
@@ -1416,7 +1416,7 @@ public bool|IResolvable RateLimitingEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#rate_limiting_enabled ExpressRouteCircuit#rate_limiting_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#rate_limiting_enabled ExpressRouteCircuit#rate_limiting_enabled}.
 
 ---
 
@@ -1428,7 +1428,7 @@ public string ServiceProviderName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#service_provider_name ExpressRouteCircuit#service_provider_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#service_provider_name ExpressRouteCircuit#service_provider_name}.
 
 ---
 
@@ -1440,7 +1440,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#tags ExpressRouteCircuit#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#tags ExpressRouteCircuit#tags}.
 
 ---
 
@@ -1454,7 +1454,7 @@ public ExpressRouteCircuitTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#timeouts ExpressRouteCircuit#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#timeouts ExpressRouteCircuit#timeouts}
 
 ---
 
@@ -1475,8 +1475,8 @@ new ExpressRouteCircuitSku {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitSku.property.family">Family</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#family ExpressRouteCircuit#family}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitSku.property.tier">Tier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#tier ExpressRouteCircuit#tier}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitSku.property.family">Family</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#family ExpressRouteCircuit#family}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitSku.property.tier">Tier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#tier ExpressRouteCircuit#tier}. |
 
 ---
 
@@ -1488,7 +1488,7 @@ public string Family { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#family ExpressRouteCircuit#family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#family ExpressRouteCircuit#family}.
 
 ---
 
@@ -1500,7 +1500,7 @@ public string Tier { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#tier ExpressRouteCircuit#tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#tier ExpressRouteCircuit#tier}.
 
 ---
 
@@ -1523,10 +1523,10 @@ new ExpressRouteCircuitTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#create ExpressRouteCircuit#create}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#delete ExpressRouteCircuit#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#read ExpressRouteCircuit#read}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#update ExpressRouteCircuit#update}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#create ExpressRouteCircuit#create}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#delete ExpressRouteCircuit#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#read ExpressRouteCircuit#read}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteCircuit.ExpressRouteCircuitTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#update ExpressRouteCircuit#update}. |
 
 ---
 
@@ -1538,7 +1538,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#create ExpressRouteCircuit#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#create ExpressRouteCircuit#create}.
 
 ---
 
@@ -1550,7 +1550,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#delete ExpressRouteCircuit#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#delete ExpressRouteCircuit#delete}.
 
 ---
 
@@ -1562,7 +1562,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#read ExpressRouteCircuit#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#read ExpressRouteCircuit#read}.
 
 ---
 
@@ -1574,7 +1574,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_circuit#update ExpressRouteCircuit#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/express_route_circuit#update ExpressRouteCircuit#update}.
 
 ---
 

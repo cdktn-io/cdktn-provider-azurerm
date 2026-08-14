@@ -4,7 +4,7 @@
 
 ### CustomProvider <a name="CustomProvider" id="@cdktn/provider-azurerm.customProvider.CustomProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider azurerm_custom_provider}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider azurerm_custom_provider}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.customProvider.CustomProvider.Initializer"></a>
 
@@ -583,7 +583,7 @@ The construct id used in the generated config for the CustomProvider to import.
 
 The id of the existing CustomProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -993,8 +993,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/customprovider
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderAction.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#endpoint CustomProvider#endpoint}. |
-| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderAction.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#name CustomProvider#name}. |
+| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderAction.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#endpoint CustomProvider#endpoint}. |
+| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderAction.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#name CustomProvider#name}. |
 
 ---
 
@@ -1006,7 +1006,7 @@ Endpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#endpoint CustomProvider#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#endpoint CustomProvider#endpoint}.
 
 ---
 
@@ -1018,7 +1018,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#name CustomProvider#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#name CustomProvider#name}.
 
 ---
 
@@ -1060,13 +1060,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/customprovider
 | <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#location CustomProvider#location}. |
-| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#name CustomProvider#name}. |
-| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#resource_group_name CustomProvider#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#location CustomProvider#location}. |
+| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#name CustomProvider#name}. |
+| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#resource_group_name CustomProvider#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderConfig.property.action">Action</a></code> | <code>interface{}</code> | action block. |
-| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#id CustomProvider#id}. |
+| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#id CustomProvider#id}. |
 | <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderConfig.property.resourceType">ResourceType</a></code> | <code>interface{}</code> | resource_type block. |
-| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#tags CustomProvider#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#tags CustomProvider#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderTimeouts">CustomProviderTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderConfig.property.validation">Validation</a></code> | <code>interface{}</code> | validation block. |
 
@@ -1150,7 +1150,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#location CustomProvider#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#location CustomProvider#location}.
 
 ---
 
@@ -1162,7 +1162,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#name CustomProvider#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#name CustomProvider#name}.
 
 ---
 
@@ -1174,7 +1174,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#resource_group_name CustomProvider#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#resource_group_name CustomProvider#resource_group_name}.
 
 ---
 
@@ -1188,7 +1188,7 @@ Action interface{}
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#action CustomProvider#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#action CustomProvider#action}
 
 ---
 
@@ -1200,7 +1200,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#id CustomProvider#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#id CustomProvider#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1217,7 +1217,7 @@ ResourceType interface{}
 
 resource_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#resource_type CustomProvider#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#resource_type CustomProvider#resource_type}
 
 ---
 
@@ -1229,7 +1229,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#tags CustomProvider#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#tags CustomProvider#tags}.
 
 ---
 
@@ -1243,7 +1243,7 @@ Timeouts CustomProviderTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#timeouts CustomProvider#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#timeouts CustomProvider#timeouts}
 
 ---
 
@@ -1257,7 +1257,7 @@ Validation interface{}
 
 validation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#validation CustomProvider#validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#validation CustomProvider#validation}
 
 ---
 
@@ -1279,9 +1279,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/customprovider
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderResourceType.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#endpoint CustomProvider#endpoint}. |
-| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderResourceType.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#name CustomProvider#name}. |
-| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderResourceType.property.routingType">RoutingType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#routing_type CustomProvider#routing_type}. |
+| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderResourceType.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#endpoint CustomProvider#endpoint}. |
+| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderResourceType.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#name CustomProvider#name}. |
+| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderResourceType.property.routingType">RoutingType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#routing_type CustomProvider#routing_type}. |
 
 ---
 
@@ -1293,7 +1293,7 @@ Endpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#endpoint CustomProvider#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#endpoint CustomProvider#endpoint}.
 
 ---
 
@@ -1305,7 +1305,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#name CustomProvider#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#name CustomProvider#name}.
 
 ---
 
@@ -1317,7 +1317,7 @@ RoutingType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#routing_type CustomProvider#routing_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#routing_type CustomProvider#routing_type}.
 
 ---
 
@@ -1340,10 +1340,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/customprovider
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#create CustomProvider#create}. |
-| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#delete CustomProvider#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#read CustomProvider#read}. |
-| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#update CustomProvider#update}. |
+| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#create CustomProvider#create}. |
+| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#delete CustomProvider#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#read CustomProvider#read}. |
+| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#update CustomProvider#update}. |
 
 ---
 
@@ -1355,7 +1355,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#create CustomProvider#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#create CustomProvider#create}.
 
 ---
 
@@ -1367,7 +1367,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#delete CustomProvider#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#delete CustomProvider#delete}.
 
 ---
 
@@ -1379,7 +1379,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#read CustomProvider#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#read CustomProvider#read}.
 
 ---
 
@@ -1391,7 +1391,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#update CustomProvider#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#update CustomProvider#update}.
 
 ---
 
@@ -1411,7 +1411,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/customprovider
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderValidation.property.specification">Specification</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#specification CustomProvider#specification}. |
+| <code><a href="#@cdktn/provider-azurerm.customProvider.CustomProviderValidation.property.specification">Specification</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#specification CustomProvider#specification}. |
 
 ---
 
@@ -1423,7 +1423,7 @@ Specification *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_provider#specification CustomProvider#specification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/custom_provider#specification CustomProvider#specification}.
 
 ---
 

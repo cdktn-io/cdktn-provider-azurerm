@@ -4,7 +4,7 @@
 
 ### IothubDps <a name="IothubDps" id="@cdktn/provider-azurerm.iothubDps.IothubDps"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps azurerm_iothub_dps}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps azurerm_iothub_dps}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iothubDps.IothubDps.Initializer"></a>
 
@@ -597,7 +597,7 @@ The construct id used in the generated config for the IothubDps to import.
 
 The id of the existing IothubDps that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1110,17 +1110,17 @@ const iothubDpsConfig: iothubDps.IothubDpsConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#location IothubDps#location}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#name IothubDps#name}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#resource_group_name IothubDps#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#location IothubDps#location}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#name IothubDps#name}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#resource_group_name IothubDps#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.sku">sku</a></code> | <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsSku">IothubDpsSku</a></code> | sku block. |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.allocationPolicy">allocationPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#allocation_policy IothubDps#allocation_policy}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.dataResidencyEnabled">dataResidencyEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#data_residency_enabled IothubDps#data_residency_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#id IothubDps#id}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.allocationPolicy">allocationPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#allocation_policy IothubDps#allocation_policy}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.dataResidencyEnabled">dataResidencyEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#data_residency_enabled IothubDps#data_residency_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#id IothubDps#id}. |
 | <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.ipFilterRule">ipFilterRule</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsIpFilterRule">IothubDpsIpFilterRule</a>[]</code> | ip_filter_rule block. |
 | <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.linkedHub">linkedHub</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsLinkedHub">IothubDpsLinkedHub</a>[]</code> | linked_hub block. |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#public_network_access_enabled IothubDps#public_network_access_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#tags IothubDps#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#public_network_access_enabled IothubDps#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#tags IothubDps#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsTimeouts">IothubDpsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1203,7 +1203,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#location IothubDps#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#location IothubDps#location}.
 
 ---
 
@@ -1215,7 +1215,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#name IothubDps#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#name IothubDps#name}.
 
 ---
 
@@ -1227,7 +1227,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#resource_group_name IothubDps#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#resource_group_name IothubDps#resource_group_name}.
 
 ---
 
@@ -1241,7 +1241,7 @@ public readonly sku: IothubDpsSku;
 
 sku block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#sku IothubDps#sku}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#sku IothubDps#sku}
 
 ---
 
@@ -1253,7 +1253,7 @@ public readonly allocationPolicy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#allocation_policy IothubDps#allocation_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#allocation_policy IothubDps#allocation_policy}.
 
 ---
 
@@ -1265,7 +1265,7 @@ public readonly dataResidencyEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#data_residency_enabled IothubDps#data_residency_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#data_residency_enabled IothubDps#data_residency_enabled}.
 
 ---
 
@@ -1277,7 +1277,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#id IothubDps#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#id IothubDps#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1294,7 +1294,7 @@ public readonly ipFilterRule: IResolvable | IothubDpsIpFilterRule[];
 
 ip_filter_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#ip_filter_rule IothubDps#ip_filter_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#ip_filter_rule IothubDps#ip_filter_rule}
 
 ---
 
@@ -1308,7 +1308,7 @@ public readonly linkedHub: IResolvable | IothubDpsLinkedHub[];
 
 linked_hub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#linked_hub IothubDps#linked_hub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#linked_hub IothubDps#linked_hub}
 
 ---
 
@@ -1320,7 +1320,7 @@ public readonly publicNetworkAccessEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#public_network_access_enabled IothubDps#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#public_network_access_enabled IothubDps#public_network_access_enabled}.
 
 ---
 
@@ -1332,7 +1332,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#tags IothubDps#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#tags IothubDps#tags}.
 
 ---
 
@@ -1346,7 +1346,7 @@ public readonly timeouts: IothubDpsTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#timeouts IothubDps#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#timeouts IothubDps#timeouts}
 
 ---
 
@@ -1364,10 +1364,10 @@ const iothubDpsIpFilterRule: iothubDps.IothubDpsIpFilterRule = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsIpFilterRule.property.action">action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#action IothubDps#action}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsIpFilterRule.property.ipMask">ipMask</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#ip_mask IothubDps#ip_mask}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsIpFilterRule.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#name IothubDps#name}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsIpFilterRule.property.target">target</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#target IothubDps#target}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsIpFilterRule.property.action">action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#action IothubDps#action}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsIpFilterRule.property.ipMask">ipMask</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#ip_mask IothubDps#ip_mask}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsIpFilterRule.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#name IothubDps#name}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsIpFilterRule.property.target">target</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#target IothubDps#target}. |
 
 ---
 
@@ -1379,7 +1379,7 @@ public readonly action: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#action IothubDps#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#action IothubDps#action}.
 
 ---
 
@@ -1391,7 +1391,7 @@ public readonly ipMask: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#ip_mask IothubDps#ip_mask}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#ip_mask IothubDps#ip_mask}.
 
 ---
 
@@ -1403,7 +1403,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#name IothubDps#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#name IothubDps#name}.
 
 ---
 
@@ -1415,7 +1415,7 @@ public readonly target: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#target IothubDps#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#target IothubDps#target}.
 
 ---
 
@@ -1433,10 +1433,10 @@ const iothubDpsLinkedHub: iothubDps.IothubDpsLinkedHub = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsLinkedHub.property.connectionString">connectionString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#connection_string IothubDps#connection_string}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsLinkedHub.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#location IothubDps#location}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsLinkedHub.property.allocationWeight">allocationWeight</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#allocation_weight IothubDps#allocation_weight}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsLinkedHub.property.applyAllocationPolicy">applyAllocationPolicy</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#apply_allocation_policy IothubDps#apply_allocation_policy}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsLinkedHub.property.connectionString">connectionString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#connection_string IothubDps#connection_string}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsLinkedHub.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#location IothubDps#location}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsLinkedHub.property.allocationWeight">allocationWeight</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#allocation_weight IothubDps#allocation_weight}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsLinkedHub.property.applyAllocationPolicy">applyAllocationPolicy</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#apply_allocation_policy IothubDps#apply_allocation_policy}. |
 
 ---
 
@@ -1448,7 +1448,7 @@ public readonly connectionString: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#connection_string IothubDps#connection_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#connection_string IothubDps#connection_string}.
 
 ---
 
@@ -1460,7 +1460,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#location IothubDps#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#location IothubDps#location}.
 
 ---
 
@@ -1472,7 +1472,7 @@ public readonly allocationWeight: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#allocation_weight IothubDps#allocation_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#allocation_weight IothubDps#allocation_weight}.
 
 ---
 
@@ -1484,7 +1484,7 @@ public readonly applyAllocationPolicy: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#apply_allocation_policy IothubDps#apply_allocation_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#apply_allocation_policy IothubDps#apply_allocation_policy}.
 
 ---
 
@@ -1502,8 +1502,8 @@ const iothubDpsSku: iothubDps.IothubDpsSku = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsSku.property.capacity">capacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#capacity IothubDps#capacity}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsSku.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#name IothubDps#name}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsSku.property.capacity">capacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#capacity IothubDps#capacity}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsSku.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#name IothubDps#name}. |
 
 ---
 
@@ -1515,7 +1515,7 @@ public readonly capacity: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#capacity IothubDps#capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#capacity IothubDps#capacity}.
 
 ---
 
@@ -1527,7 +1527,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#name IothubDps#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#name IothubDps#name}.
 
 ---
 
@@ -1545,10 +1545,10 @@ const iothubDpsTimeouts: iothubDps.IothubDpsTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#create IothubDps#create}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#delete IothubDps#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#read IothubDps#read}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#update IothubDps#update}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#create IothubDps#create}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#delete IothubDps#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#read IothubDps#read}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubDps.IothubDpsTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#update IothubDps#update}. |
 
 ---
 
@@ -1560,7 +1560,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#create IothubDps#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#create IothubDps#create}.
 
 ---
 
@@ -1572,7 +1572,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#delete IothubDps#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#delete IothubDps#delete}.
 
 ---
 
@@ -1584,7 +1584,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#read IothubDps#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#read IothubDps#read}.
 
 ---
 
@@ -1596,7 +1596,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_dps#update IothubDps#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_dps#update IothubDps#update}.
 
 ---
 

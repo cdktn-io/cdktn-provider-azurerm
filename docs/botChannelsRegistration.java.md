@@ -4,7 +4,7 @@
 
 ### BotChannelsRegistration <a name="BotChannelsRegistration" id="@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration azurerm_bot_channels_registration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration azurerm_bot_channels_registration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer"></a>
 
@@ -54,26 +54,26 @@ BotChannelsRegistration.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#location BotChannelsRegistration#location}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.microsoftAppId">microsoftAppId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#microsoft_app_id BotChannelsRegistration#microsoft_app_id}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.microsoftAppType">microsoftAppType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#microsoft_app_type BotChannelsRegistration#microsoft_app_type}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#name BotChannelsRegistration#name}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#resource_group_name BotChannelsRegistration#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.sku">sku</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#sku BotChannelsRegistration#sku}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.cmkKeyVaultUrl">cmkKeyVaultUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#cmk_key_vault_url BotChannelsRegistration#cmk_key_vault_url}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#description BotChannelsRegistration#description}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.developerAppInsightsApiKey">developerAppInsightsApiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#developer_app_insights_api_key BotChannelsRegistration#developer_app_insights_api_key}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.developerAppInsightsApplicationId">developerAppInsightsApplicationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#developer_app_insights_application_id BotChannelsRegistration#developer_app_insights_application_id}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.developerAppInsightsKey">developerAppInsightsKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#developer_app_insights_key BotChannelsRegistration#developer_app_insights_key}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#display_name BotChannelsRegistration#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#endpoint BotChannelsRegistration#endpoint}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.iconUrl">iconUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#icon_url BotChannelsRegistration#icon_url}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#id BotChannelsRegistration#id}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.microsoftAppTenantId">microsoftAppTenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#microsoft_app_tenant_id BotChannelsRegistration#microsoft_app_tenant_id}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.microsoftAppUserAssignedIdentityId">microsoftAppUserAssignedIdentityId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#microsoft_app_user_assigned_identity_id BotChannelsRegistration#microsoft_app_user_assigned_identity_id}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#public_network_access_enabled BotChannelsRegistration#public_network_access_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.streamingEndpointEnabled">streamingEndpointEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#streaming_endpoint_enabled BotChannelsRegistration#streaming_endpoint_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#tags BotChannelsRegistration#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#location BotChannelsRegistration#location}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.microsoftAppId">microsoftAppId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#microsoft_app_id BotChannelsRegistration#microsoft_app_id}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.microsoftAppType">microsoftAppType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#microsoft_app_type BotChannelsRegistration#microsoft_app_type}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#name BotChannelsRegistration#name}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#resource_group_name BotChannelsRegistration#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.sku">sku</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#sku BotChannelsRegistration#sku}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.cmkKeyVaultUrl">cmkKeyVaultUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#cmk_key_vault_url BotChannelsRegistration#cmk_key_vault_url}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#description BotChannelsRegistration#description}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.developerAppInsightsApiKey">developerAppInsightsApiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#developer_app_insights_api_key BotChannelsRegistration#developer_app_insights_api_key}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.developerAppInsightsApplicationId">developerAppInsightsApplicationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#developer_app_insights_application_id BotChannelsRegistration#developer_app_insights_application_id}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.developerAppInsightsKey">developerAppInsightsKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#developer_app_insights_key BotChannelsRegistration#developer_app_insights_key}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#display_name BotChannelsRegistration#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#endpoint BotChannelsRegistration#endpoint}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.iconUrl">iconUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#icon_url BotChannelsRegistration#icon_url}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#id BotChannelsRegistration#id}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.microsoftAppTenantId">microsoftAppTenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#microsoft_app_tenant_id BotChannelsRegistration#microsoft_app_tenant_id}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.microsoftAppUserAssignedIdentityId">microsoftAppUserAssignedIdentityId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#microsoft_app_user_assigned_identity_id BotChannelsRegistration#microsoft_app_user_assigned_identity_id}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#public_network_access_enabled BotChannelsRegistration#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.streamingEndpointEnabled">streamingEndpointEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#streaming_endpoint_enabled BotChannelsRegistration#streaming_endpoint_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#tags BotChannelsRegistration#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationTimeouts">BotChannelsRegistrationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -142,7 +142,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#location BotChannelsRegistration#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#location BotChannelsRegistration#location}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#microsoft_app_id BotChannelsRegistration#microsoft_app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#microsoft_app_id BotChannelsRegistration#microsoft_app_id}.
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#microsoft_app_type BotChannelsRegistration#microsoft_app_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#microsoft_app_type BotChannelsRegistration#microsoft_app_type}.
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#name BotChannelsRegistration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#name BotChannelsRegistration#name}.
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#resource_group_name BotChannelsRegistration#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#resource_group_name BotChannelsRegistration#resource_group_name}.
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#sku BotChannelsRegistration#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#sku BotChannelsRegistration#sku}.
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#cmk_key_vault_url BotChannelsRegistration#cmk_key_vault_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#cmk_key_vault_url BotChannelsRegistration#cmk_key_vault_url}.
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#description BotChannelsRegistration#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#description BotChannelsRegistration#description}.
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#developer_app_insights_api_key BotChannelsRegistration#developer_app_insights_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#developer_app_insights_api_key BotChannelsRegistration#developer_app_insights_api_key}.
 
 ---
 
@@ -214,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#developer_app_insights_application_id BotChannelsRegistration#developer_app_insights_application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#developer_app_insights_application_id BotChannelsRegistration#developer_app_insights_application_id}.
 
 ---
 
@@ -222,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#developer_app_insights_key BotChannelsRegistration#developer_app_insights_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#developer_app_insights_key BotChannelsRegistration#developer_app_insights_key}.
 
 ---
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#display_name BotChannelsRegistration#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#display_name BotChannelsRegistration#display_name}.
 
 ---
 
@@ -238,7 +238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#endpoint BotChannelsRegistration#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#endpoint BotChannelsRegistration#endpoint}.
 
 ---
 
@@ -246,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#icon_url BotChannelsRegistration#icon_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#icon_url BotChannelsRegistration#icon_url}.
 
 ---
 
@@ -254,7 +254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#id BotChannelsRegistration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#id BotChannelsRegistration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -265,7 +265,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#microsoft_app_tenant_id BotChannelsRegistration#microsoft_app_tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#microsoft_app_tenant_id BotChannelsRegistration#microsoft_app_tenant_id}.
 
 ---
 
@@ -273,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#microsoft_app_user_assigned_identity_id BotChannelsRegistration#microsoft_app_user_assigned_identity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#microsoft_app_user_assigned_identity_id BotChannelsRegistration#microsoft_app_user_assigned_identity_id}.
 
 ---
 
@@ -281,7 +281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#public_network_access_enabled BotChannelsRegistration#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#public_network_access_enabled BotChannelsRegistration#public_network_access_enabled}.
 
 ---
 
@@ -289,7 +289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#streaming_endpoint_enabled BotChannelsRegistration#streaming_endpoint_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#streaming_endpoint_enabled BotChannelsRegistration#streaming_endpoint_enabled}.
 
 ---
 
@@ -297,7 +297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#tags BotChannelsRegistration#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#tags BotChannelsRegistration#tags}.
 
 ---
 
@@ -307,7 +307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#timeouts BotChannelsRegistration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#timeouts BotChannelsRegistration#timeouts}
 
 ---
 
@@ -874,7 +874,7 @@ The construct id used in the generated config for the BotChannelsRegistration to
 
 The id of the existing BotChannelsRegistration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1581,26 +1581,26 @@ BotChannelsRegistrationConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#location BotChannelsRegistration#location}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.microsoftAppId">microsoftAppId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#microsoft_app_id BotChannelsRegistration#microsoft_app_id}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.microsoftAppType">microsoftAppType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#microsoft_app_type BotChannelsRegistration#microsoft_app_type}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#name BotChannelsRegistration#name}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#resource_group_name BotChannelsRegistration#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.sku">sku</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#sku BotChannelsRegistration#sku}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.cmkKeyVaultUrl">cmkKeyVaultUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#cmk_key_vault_url BotChannelsRegistration#cmk_key_vault_url}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#description BotChannelsRegistration#description}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.developerAppInsightsApiKey">developerAppInsightsApiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#developer_app_insights_api_key BotChannelsRegistration#developer_app_insights_api_key}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.developerAppInsightsApplicationId">developerAppInsightsApplicationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#developer_app_insights_application_id BotChannelsRegistration#developer_app_insights_application_id}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.developerAppInsightsKey">developerAppInsightsKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#developer_app_insights_key BotChannelsRegistration#developer_app_insights_key}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#display_name BotChannelsRegistration#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#endpoint BotChannelsRegistration#endpoint}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.iconUrl">iconUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#icon_url BotChannelsRegistration#icon_url}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#id BotChannelsRegistration#id}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.microsoftAppTenantId">microsoftAppTenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#microsoft_app_tenant_id BotChannelsRegistration#microsoft_app_tenant_id}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.microsoftAppUserAssignedIdentityId">microsoftAppUserAssignedIdentityId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#microsoft_app_user_assigned_identity_id BotChannelsRegistration#microsoft_app_user_assigned_identity_id}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#public_network_access_enabled BotChannelsRegistration#public_network_access_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.streamingEndpointEnabled">streamingEndpointEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#streaming_endpoint_enabled BotChannelsRegistration#streaming_endpoint_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#tags BotChannelsRegistration#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#location BotChannelsRegistration#location}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.microsoftAppId">microsoftAppId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#microsoft_app_id BotChannelsRegistration#microsoft_app_id}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.microsoftAppType">microsoftAppType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#microsoft_app_type BotChannelsRegistration#microsoft_app_type}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#name BotChannelsRegistration#name}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#resource_group_name BotChannelsRegistration#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.sku">sku</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#sku BotChannelsRegistration#sku}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.cmkKeyVaultUrl">cmkKeyVaultUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#cmk_key_vault_url BotChannelsRegistration#cmk_key_vault_url}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#description BotChannelsRegistration#description}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.developerAppInsightsApiKey">developerAppInsightsApiKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#developer_app_insights_api_key BotChannelsRegistration#developer_app_insights_api_key}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.developerAppInsightsApplicationId">developerAppInsightsApplicationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#developer_app_insights_application_id BotChannelsRegistration#developer_app_insights_application_id}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.developerAppInsightsKey">developerAppInsightsKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#developer_app_insights_key BotChannelsRegistration#developer_app_insights_key}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#display_name BotChannelsRegistration#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#endpoint BotChannelsRegistration#endpoint}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.iconUrl">iconUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#icon_url BotChannelsRegistration#icon_url}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#id BotChannelsRegistration#id}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.microsoftAppTenantId">microsoftAppTenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#microsoft_app_tenant_id BotChannelsRegistration#microsoft_app_tenant_id}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.microsoftAppUserAssignedIdentityId">microsoftAppUserAssignedIdentityId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#microsoft_app_user_assigned_identity_id BotChannelsRegistration#microsoft_app_user_assigned_identity_id}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#public_network_access_enabled BotChannelsRegistration#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.streamingEndpointEnabled">streamingEndpointEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#streaming_endpoint_enabled BotChannelsRegistration#streaming_endpoint_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#tags BotChannelsRegistration#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationTimeouts">BotChannelsRegistrationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1683,7 +1683,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#location BotChannelsRegistration#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#location BotChannelsRegistration#location}.
 
 ---
 
@@ -1695,7 +1695,7 @@ public java.lang.String getMicrosoftAppId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#microsoft_app_id BotChannelsRegistration#microsoft_app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#microsoft_app_id BotChannelsRegistration#microsoft_app_id}.
 
 ---
 
@@ -1707,7 +1707,7 @@ public java.lang.String getMicrosoftAppType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#microsoft_app_type BotChannelsRegistration#microsoft_app_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#microsoft_app_type BotChannelsRegistration#microsoft_app_type}.
 
 ---
 
@@ -1719,7 +1719,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#name BotChannelsRegistration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#name BotChannelsRegistration#name}.
 
 ---
 
@@ -1731,7 +1731,7 @@ public java.lang.String getResourceGroupName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#resource_group_name BotChannelsRegistration#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#resource_group_name BotChannelsRegistration#resource_group_name}.
 
 ---
 
@@ -1743,7 +1743,7 @@ public java.lang.String getSku();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#sku BotChannelsRegistration#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#sku BotChannelsRegistration#sku}.
 
 ---
 
@@ -1755,7 +1755,7 @@ public java.lang.String getCmkKeyVaultUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#cmk_key_vault_url BotChannelsRegistration#cmk_key_vault_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#cmk_key_vault_url BotChannelsRegistration#cmk_key_vault_url}.
 
 ---
 
@@ -1767,7 +1767,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#description BotChannelsRegistration#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#description BotChannelsRegistration#description}.
 
 ---
 
@@ -1779,7 +1779,7 @@ public java.lang.String getDeveloperAppInsightsApiKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#developer_app_insights_api_key BotChannelsRegistration#developer_app_insights_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#developer_app_insights_api_key BotChannelsRegistration#developer_app_insights_api_key}.
 
 ---
 
@@ -1791,7 +1791,7 @@ public java.lang.String getDeveloperAppInsightsApplicationId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#developer_app_insights_application_id BotChannelsRegistration#developer_app_insights_application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#developer_app_insights_application_id BotChannelsRegistration#developer_app_insights_application_id}.
 
 ---
 
@@ -1803,7 +1803,7 @@ public java.lang.String getDeveloperAppInsightsKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#developer_app_insights_key BotChannelsRegistration#developer_app_insights_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#developer_app_insights_key BotChannelsRegistration#developer_app_insights_key}.
 
 ---
 
@@ -1815,7 +1815,7 @@ public java.lang.String getDisplayName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#display_name BotChannelsRegistration#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#display_name BotChannelsRegistration#display_name}.
 
 ---
 
@@ -1827,7 +1827,7 @@ public java.lang.String getEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#endpoint BotChannelsRegistration#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#endpoint BotChannelsRegistration#endpoint}.
 
 ---
 
@@ -1839,7 +1839,7 @@ public java.lang.String getIconUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#icon_url BotChannelsRegistration#icon_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#icon_url BotChannelsRegistration#icon_url}.
 
 ---
 
@@ -1851,7 +1851,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#id BotChannelsRegistration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#id BotChannelsRegistration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1866,7 +1866,7 @@ public java.lang.String getMicrosoftAppTenantId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#microsoft_app_tenant_id BotChannelsRegistration#microsoft_app_tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#microsoft_app_tenant_id BotChannelsRegistration#microsoft_app_tenant_id}.
 
 ---
 
@@ -1878,7 +1878,7 @@ public java.lang.String getMicrosoftAppUserAssignedIdentityId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#microsoft_app_user_assigned_identity_id BotChannelsRegistration#microsoft_app_user_assigned_identity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#microsoft_app_user_assigned_identity_id BotChannelsRegistration#microsoft_app_user_assigned_identity_id}.
 
 ---
 
@@ -1890,7 +1890,7 @@ public java.lang.Boolean|IResolvable getPublicNetworkAccessEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#public_network_access_enabled BotChannelsRegistration#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#public_network_access_enabled BotChannelsRegistration#public_network_access_enabled}.
 
 ---
 
@@ -1902,7 +1902,7 @@ public java.lang.Boolean|IResolvable getStreamingEndpointEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#streaming_endpoint_enabled BotChannelsRegistration#streaming_endpoint_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#streaming_endpoint_enabled BotChannelsRegistration#streaming_endpoint_enabled}.
 
 ---
 
@@ -1914,7 +1914,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#tags BotChannelsRegistration#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#tags BotChannelsRegistration#tags}.
 
 ---
 
@@ -1928,7 +1928,7 @@ public BotChannelsRegistrationTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#timeouts BotChannelsRegistration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#timeouts BotChannelsRegistration#timeouts}
 
 ---
 
@@ -1951,10 +1951,10 @@ BotChannelsRegistrationTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#create BotChannelsRegistration#create}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#delete BotChannelsRegistration#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#read BotChannelsRegistration#read}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#update BotChannelsRegistration#update}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#create BotChannelsRegistration#create}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#delete BotChannelsRegistration#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#read BotChannelsRegistration#read}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#update BotChannelsRegistration#update}. |
 
 ---
 
@@ -1966,7 +1966,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#create BotChannelsRegistration#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#create BotChannelsRegistration#create}.
 
 ---
 
@@ -1978,7 +1978,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#delete BotChannelsRegistration#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#delete BotChannelsRegistration#delete}.
 
 ---
 
@@ -1990,7 +1990,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#read BotChannelsRegistration#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#read BotChannelsRegistration#read}.
 
 ---
 
@@ -2002,7 +2002,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/bot_channels_registration#update BotChannelsRegistration#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bot_channels_registration#update BotChannelsRegistration#update}.
 
 ---
 

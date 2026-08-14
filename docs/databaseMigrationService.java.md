@@ -4,7 +4,7 @@
 
 ### DatabaseMigrationService <a name="DatabaseMigrationService" id="@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service azurerm_database_migration_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service azurerm_database_migration_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationService.Initializer"></a>
 
@@ -41,13 +41,13 @@ DatabaseMigrationService.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationService.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationService.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationService.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationService.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#location DatabaseMigrationService#location}. |
-| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationService.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#name DatabaseMigrationService#name}. |
-| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationService.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#resource_group_name DatabaseMigrationService#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationService.Initializer.parameter.skuName">skuName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#sku_name DatabaseMigrationService#sku_name}. |
-| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationService.Initializer.parameter.subnetId">subnetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#subnet_id DatabaseMigrationService#subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationService.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#id DatabaseMigrationService#id}. |
-| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationService.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#tags DatabaseMigrationService#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationService.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#location DatabaseMigrationService#location}. |
+| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationService.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#name DatabaseMigrationService#name}. |
+| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationService.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#resource_group_name DatabaseMigrationService#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationService.Initializer.parameter.skuName">skuName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#sku_name DatabaseMigrationService#sku_name}. |
+| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationService.Initializer.parameter.subnetId">subnetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#subnet_id DatabaseMigrationService#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationService.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#id DatabaseMigrationService#id}. |
+| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationService.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#tags DatabaseMigrationService#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationService.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceTimeouts">DatabaseMigrationServiceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#location DatabaseMigrationService#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#location DatabaseMigrationService#location}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#name DatabaseMigrationService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#name DatabaseMigrationService#name}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#resource_group_name DatabaseMigrationService#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#resource_group_name DatabaseMigrationService#resource_group_name}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#sku_name DatabaseMigrationService#sku_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#sku_name DatabaseMigrationService#sku_name}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#subnet_id DatabaseMigrationService#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#subnet_id DatabaseMigrationService#subnet_id}.
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#id DatabaseMigrationService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#id DatabaseMigrationService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#tags DatabaseMigrationService#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#tags DatabaseMigrationService#tags}.
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#timeouts DatabaseMigrationService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#timeouts DatabaseMigrationService#timeouts}
 
 ---
 
@@ -660,7 +660,7 @@ The construct id used in the generated config for the DatabaseMigrationService t
 
 The id of the existing DatabaseMigrationService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1068,13 +1068,13 @@ DatabaseMigrationServiceConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#location DatabaseMigrationService#location}. |
-| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#name DatabaseMigrationService#name}. |
-| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#resource_group_name DatabaseMigrationService#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceConfig.property.skuName">skuName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#sku_name DatabaseMigrationService#sku_name}. |
-| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceConfig.property.subnetId">subnetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#subnet_id DatabaseMigrationService#subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#id DatabaseMigrationService#id}. |
-| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#tags DatabaseMigrationService#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#location DatabaseMigrationService#location}. |
+| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#name DatabaseMigrationService#name}. |
+| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#resource_group_name DatabaseMigrationService#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceConfig.property.skuName">skuName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#sku_name DatabaseMigrationService#sku_name}. |
+| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceConfig.property.subnetId">subnetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#subnet_id DatabaseMigrationService#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#id DatabaseMigrationService#id}. |
+| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#tags DatabaseMigrationService#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceTimeouts">DatabaseMigrationServiceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1157,7 +1157,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#location DatabaseMigrationService#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#location DatabaseMigrationService#location}.
 
 ---
 
@@ -1169,7 +1169,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#name DatabaseMigrationService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#name DatabaseMigrationService#name}.
 
 ---
 
@@ -1181,7 +1181,7 @@ public java.lang.String getResourceGroupName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#resource_group_name DatabaseMigrationService#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#resource_group_name DatabaseMigrationService#resource_group_name}.
 
 ---
 
@@ -1193,7 +1193,7 @@ public java.lang.String getSkuName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#sku_name DatabaseMigrationService#sku_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#sku_name DatabaseMigrationService#sku_name}.
 
 ---
 
@@ -1205,7 +1205,7 @@ public java.lang.String getSubnetId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#subnet_id DatabaseMigrationService#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#subnet_id DatabaseMigrationService#subnet_id}.
 
 ---
 
@@ -1217,7 +1217,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#id DatabaseMigrationService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#id DatabaseMigrationService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1232,7 +1232,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#tags DatabaseMigrationService#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#tags DatabaseMigrationService#tags}.
 
 ---
 
@@ -1246,7 +1246,7 @@ public DatabaseMigrationServiceTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#timeouts DatabaseMigrationService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#timeouts DatabaseMigrationService#timeouts}
 
 ---
 
@@ -1269,10 +1269,10 @@ DatabaseMigrationServiceTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#create DatabaseMigrationService#create}. |
-| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#delete DatabaseMigrationService#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#read DatabaseMigrationService#read}. |
-| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#update DatabaseMigrationService#update}. |
+| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#create DatabaseMigrationService#create}. |
+| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#delete DatabaseMigrationService#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#read DatabaseMigrationService#read}. |
+| <code><a href="#@cdktn/provider-azurerm.databaseMigrationService.DatabaseMigrationServiceTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#update DatabaseMigrationService#update}. |
 
 ---
 
@@ -1284,7 +1284,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#create DatabaseMigrationService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#create DatabaseMigrationService#create}.
 
 ---
 
@@ -1296,7 +1296,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#delete DatabaseMigrationService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#delete DatabaseMigrationService#delete}.
 
 ---
 
@@ -1308,7 +1308,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#read DatabaseMigrationService#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#read DatabaseMigrationService#read}.
 
 ---
 
@@ -1320,7 +1320,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/database_migration_service#update DatabaseMigrationService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/database_migration_service#update DatabaseMigrationService#update}.
 
 ---
 

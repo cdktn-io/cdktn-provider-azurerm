@@ -4,7 +4,7 @@
 
 ### SiteRecoveryProtectionContainer <a name="SiteRecoveryProtectionContainer" id="@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/site_recovery_protection_container azurerm_site_recovery_protection_container}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/site_recovery_protection_container azurerm_site_recovery_protection_container}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainer.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the SiteRecoveryProtectionCont
 
 The id of the existing SiteRecoveryProtectionContainer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/site_recovery_protection_container#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/site_recovery_protection_container#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -878,11 +878,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/siterecoverypr
 | <code><a href="#@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainerConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/site_recovery_protection_container#name SiteRecoveryProtectionContainer#name}. |
-| <code><a href="#@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainerConfig.property.recoveryFabricName">RecoveryFabricName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/site_recovery_protection_container#recovery_fabric_name SiteRecoveryProtectionContainer#recovery_fabric_name}. |
-| <code><a href="#@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainerConfig.property.recoveryVaultName">RecoveryVaultName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/site_recovery_protection_container#recovery_vault_name SiteRecoveryProtectionContainer#recovery_vault_name}. |
-| <code><a href="#@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainerConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/site_recovery_protection_container#resource_group_name SiteRecoveryProtectionContainer#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/site_recovery_protection_container#id SiteRecoveryProtectionContainer#id}. |
+| <code><a href="#@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/site_recovery_protection_container#name SiteRecoveryProtectionContainer#name}. |
+| <code><a href="#@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainerConfig.property.recoveryFabricName">RecoveryFabricName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/site_recovery_protection_container#recovery_fabric_name SiteRecoveryProtectionContainer#recovery_fabric_name}. |
+| <code><a href="#@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainerConfig.property.recoveryVaultName">RecoveryVaultName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/site_recovery_protection_container#recovery_vault_name SiteRecoveryProtectionContainer#recovery_vault_name}. |
+| <code><a href="#@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainerConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/site_recovery_protection_container#resource_group_name SiteRecoveryProtectionContainer#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/site_recovery_protection_container#id SiteRecoveryProtectionContainer#id}. |
 | <code><a href="#@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainerConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainerTimeouts">SiteRecoveryProtectionContainerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -965,7 +965,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/site_recovery_protection_container#name SiteRecoveryProtectionContainer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/site_recovery_protection_container#name SiteRecoveryProtectionContainer#name}.
 
 ---
 
@@ -977,7 +977,7 @@ RecoveryFabricName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/site_recovery_protection_container#recovery_fabric_name SiteRecoveryProtectionContainer#recovery_fabric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/site_recovery_protection_container#recovery_fabric_name SiteRecoveryProtectionContainer#recovery_fabric_name}.
 
 ---
 
@@ -989,7 +989,7 @@ RecoveryVaultName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/site_recovery_protection_container#recovery_vault_name SiteRecoveryProtectionContainer#recovery_vault_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/site_recovery_protection_container#recovery_vault_name SiteRecoveryProtectionContainer#recovery_vault_name}.
 
 ---
 
@@ -1001,7 +1001,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/site_recovery_protection_container#resource_group_name SiteRecoveryProtectionContainer#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/site_recovery_protection_container#resource_group_name SiteRecoveryProtectionContainer#resource_group_name}.
 
 ---
 
@@ -1013,7 +1013,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/site_recovery_protection_container#id SiteRecoveryProtectionContainer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/site_recovery_protection_container#id SiteRecoveryProtectionContainer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1030,7 +1030,7 @@ Timeouts SiteRecoveryProtectionContainerTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/site_recovery_protection_container#timeouts SiteRecoveryProtectionContainer#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/site_recovery_protection_container#timeouts SiteRecoveryProtectionContainer#timeouts}
 
 ---
 
@@ -1052,9 +1052,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/siterecoverypr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/site_recovery_protection_container#create SiteRecoveryProtectionContainer#create}. |
-| <code><a href="#@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/site_recovery_protection_container#delete SiteRecoveryProtectionContainer#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainerTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/site_recovery_protection_container#read SiteRecoveryProtectionContainer#read}. |
+| <code><a href="#@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/site_recovery_protection_container#create SiteRecoveryProtectionContainer#create}. |
+| <code><a href="#@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/site_recovery_protection_container#delete SiteRecoveryProtectionContainer#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.siteRecoveryProtectionContainer.SiteRecoveryProtectionContainerTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/site_recovery_protection_container#read SiteRecoveryProtectionContainer#read}. |
 
 ---
 
@@ -1066,7 +1066,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/site_recovery_protection_container#create SiteRecoveryProtectionContainer#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/site_recovery_protection_container#create SiteRecoveryProtectionContainer#create}.
 
 ---
 
@@ -1078,7 +1078,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/site_recovery_protection_container#delete SiteRecoveryProtectionContainer#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/site_recovery_protection_container#delete SiteRecoveryProtectionContainer#delete}.
 
 ---
 
@@ -1090,7 +1090,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/site_recovery_protection_container#read SiteRecoveryProtectionContainer#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/site_recovery_protection_container#read SiteRecoveryProtectionContainer#read}.
 
 ---
 

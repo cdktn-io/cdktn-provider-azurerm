@@ -4,7 +4,7 @@
 
 ### IothubEndpointServicebusQueue <a name="IothubEndpointServicebusQueue" id="@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue azurerm_iothub_endpoint_servicebus_queue}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue azurerm_iothub_endpoint_servicebus_queue}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueue.Initializer"></a>
 
@@ -558,7 +558,7 @@ The construct id used in the generated config for the IothubEndpointServicebusQu
 
 The id of the existing IothubEndpointServicebusQueue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1035,16 +1035,16 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/iothubendpoint
 | <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.iothubId">IothubId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#iothub_id IothubEndpointServicebusQueue#iothub_id}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#name IothubEndpointServicebusQueue#name}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#resource_group_name IothubEndpointServicebusQueue#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.authenticationType">AuthenticationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#authentication_type IothubEndpointServicebusQueue#authentication_type}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.connectionString">ConnectionString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#connection_string IothubEndpointServicebusQueue#connection_string}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.endpointUri">EndpointUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#endpoint_uri IothubEndpointServicebusQueue#endpoint_uri}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.entityPath">EntityPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#entity_path IothubEndpointServicebusQueue#entity_path}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#id IothubEndpointServicebusQueue#id}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.identityId">IdentityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#identity_id IothubEndpointServicebusQueue#identity_id}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.subscriptionId">SubscriptionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#subscription_id IothubEndpointServicebusQueue#subscription_id}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.iothubId">IothubId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#iothub_id IothubEndpointServicebusQueue#iothub_id}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#name IothubEndpointServicebusQueue#name}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#resource_group_name IothubEndpointServicebusQueue#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.authenticationType">AuthenticationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#authentication_type IothubEndpointServicebusQueue#authentication_type}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.connectionString">ConnectionString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#connection_string IothubEndpointServicebusQueue#connection_string}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.endpointUri">EndpointUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#endpoint_uri IothubEndpointServicebusQueue#endpoint_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.entityPath">EntityPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#entity_path IothubEndpointServicebusQueue#entity_path}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#id IothubEndpointServicebusQueue#id}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.identityId">IdentityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#identity_id IothubEndpointServicebusQueue#identity_id}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.subscriptionId">SubscriptionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#subscription_id IothubEndpointServicebusQueue#subscription_id}. |
 | <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueTimeouts">IothubEndpointServicebusQueueTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1127,7 +1127,7 @@ IothubId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#iothub_id IothubEndpointServicebusQueue#iothub_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#iothub_id IothubEndpointServicebusQueue#iothub_id}.
 
 ---
 
@@ -1139,7 +1139,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#name IothubEndpointServicebusQueue#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#name IothubEndpointServicebusQueue#name}.
 
 ---
 
@@ -1151,7 +1151,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#resource_group_name IothubEndpointServicebusQueue#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#resource_group_name IothubEndpointServicebusQueue#resource_group_name}.
 
 ---
 
@@ -1163,7 +1163,7 @@ AuthenticationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#authentication_type IothubEndpointServicebusQueue#authentication_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#authentication_type IothubEndpointServicebusQueue#authentication_type}.
 
 ---
 
@@ -1175,7 +1175,7 @@ ConnectionString *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#connection_string IothubEndpointServicebusQueue#connection_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#connection_string IothubEndpointServicebusQueue#connection_string}.
 
 ---
 
@@ -1187,7 +1187,7 @@ EndpointUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#endpoint_uri IothubEndpointServicebusQueue#endpoint_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#endpoint_uri IothubEndpointServicebusQueue#endpoint_uri}.
 
 ---
 
@@ -1199,7 +1199,7 @@ EntityPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#entity_path IothubEndpointServicebusQueue#entity_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#entity_path IothubEndpointServicebusQueue#entity_path}.
 
 ---
 
@@ -1211,7 +1211,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#id IothubEndpointServicebusQueue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#id IothubEndpointServicebusQueue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1226,7 +1226,7 @@ IdentityId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#identity_id IothubEndpointServicebusQueue#identity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#identity_id IothubEndpointServicebusQueue#identity_id}.
 
 ---
 
@@ -1238,7 +1238,7 @@ SubscriptionId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#subscription_id IothubEndpointServicebusQueue#subscription_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#subscription_id IothubEndpointServicebusQueue#subscription_id}.
 
 ---
 
@@ -1252,7 +1252,7 @@ Timeouts IothubEndpointServicebusQueueTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#timeouts IothubEndpointServicebusQueue#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#timeouts IothubEndpointServicebusQueue#timeouts}
 
 ---
 
@@ -1275,10 +1275,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/iothubendpoint
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#create IothubEndpointServicebusQueue#create}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#delete IothubEndpointServicebusQueue#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#read IothubEndpointServicebusQueue#read}. |
-| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#update IothubEndpointServicebusQueue#update}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#create IothubEndpointServicebusQueue#create}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#delete IothubEndpointServicebusQueue#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#read IothubEndpointServicebusQueue#read}. |
+| <code><a href="#@cdktn/provider-azurerm.iothubEndpointServicebusQueue.IothubEndpointServicebusQueueTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#update IothubEndpointServicebusQueue#update}. |
 
 ---
 
@@ -1290,7 +1290,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#create IothubEndpointServicebusQueue#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#create IothubEndpointServicebusQueue#create}.
 
 ---
 
@@ -1302,7 +1302,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#delete IothubEndpointServicebusQueue#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#delete IothubEndpointServicebusQueue#delete}.
 
 ---
 
@@ -1314,7 +1314,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#read IothubEndpointServicebusQueue#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#read IothubEndpointServicebusQueue#read}.
 
 ---
 
@@ -1326,7 +1326,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iothub_endpoint_servicebus_queue#update IothubEndpointServicebusQueue#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/iothub_endpoint_servicebus_queue#update IothubEndpointServicebusQueue#update}.
 
 ---
 

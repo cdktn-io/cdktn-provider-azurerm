@@ -4,7 +4,7 @@
 
 ### NginxApiKey <a name="NginxApiKey" id="@cdktn/provider-azurerm.nginxApiKey.NginxApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key azurerm_nginx_api_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key azurerm_nginx_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.nginxApiKey.NginxApiKey.Initializer"></a>
 
@@ -39,11 +39,11 @@ NginxApiKey.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKey.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKey.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKey.Initializer.parameter.endDateTime">endDateTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#end_date_time NginxApiKey#end_date_time}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKey.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#name NginxApiKey#name}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKey.Initializer.parameter.nginxDeploymentId">nginxDeploymentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#nginx_deployment_id NginxApiKey#nginx_deployment_id}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKey.Initializer.parameter.secretText">secretText</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#secret_text NginxApiKey#secret_text}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#id NginxApiKey#id}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKey.Initializer.parameter.endDateTime">endDateTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#end_date_time NginxApiKey#end_date_time}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKey.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#name NginxApiKey#name}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKey.Initializer.parameter.nginxDeploymentId">nginxDeploymentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#nginx_deployment_id NginxApiKey#nginx_deployment_id}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKey.Initializer.parameter.secretText">secretText</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#secret_text NginxApiKey#secret_text}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#id NginxApiKey#id}. |
 | <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKey.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyTimeouts">NginxApiKeyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#end_date_time NginxApiKey#end_date_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#end_date_time NginxApiKey#end_date_time}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#name NginxApiKey#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#name NginxApiKey#name}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#nginx_deployment_id NginxApiKey#nginx_deployment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#nginx_deployment_id NginxApiKey#nginx_deployment_id}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#secret_text NginxApiKey#secret_text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#secret_text NginxApiKey#secret_text}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#id NginxApiKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#id NginxApiKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +157,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#timeouts NginxApiKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#timeouts NginxApiKey#timeouts}
 
 ---
 
@@ -633,7 +633,7 @@ The construct id used in the generated config for the NginxApiKey to import.
 
 The id of the existing NginxApiKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1006,11 +1006,11 @@ NginxApiKeyConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyConfig.property.endDateTime">endDateTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#end_date_time NginxApiKey#end_date_time}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#name NginxApiKey#name}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyConfig.property.nginxDeploymentId">nginxDeploymentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#nginx_deployment_id NginxApiKey#nginx_deployment_id}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyConfig.property.secretText">secretText</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#secret_text NginxApiKey#secret_text}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#id NginxApiKey#id}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyConfig.property.endDateTime">endDateTime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#end_date_time NginxApiKey#end_date_time}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#name NginxApiKey#name}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyConfig.property.nginxDeploymentId">nginxDeploymentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#nginx_deployment_id NginxApiKey#nginx_deployment_id}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyConfig.property.secretText">secretText</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#secret_text NginxApiKey#secret_text}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#id NginxApiKey#id}. |
 | <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyTimeouts">NginxApiKeyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1093,7 +1093,7 @@ public java.lang.String getEndDateTime();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#end_date_time NginxApiKey#end_date_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#end_date_time NginxApiKey#end_date_time}.
 
 ---
 
@@ -1105,7 +1105,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#name NginxApiKey#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#name NginxApiKey#name}.
 
 ---
 
@@ -1117,7 +1117,7 @@ public java.lang.String getNginxDeploymentId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#nginx_deployment_id NginxApiKey#nginx_deployment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#nginx_deployment_id NginxApiKey#nginx_deployment_id}.
 
 ---
 
@@ -1129,7 +1129,7 @@ public java.lang.String getSecretText();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#secret_text NginxApiKey#secret_text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#secret_text NginxApiKey#secret_text}.
 
 ---
 
@@ -1141,7 +1141,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#id NginxApiKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#id NginxApiKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1158,7 +1158,7 @@ public NginxApiKeyTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#timeouts NginxApiKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#timeouts NginxApiKey#timeouts}
 
 ---
 
@@ -1181,10 +1181,10 @@ NginxApiKeyTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#create NginxApiKey#create}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#delete NginxApiKey#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#read NginxApiKey#read}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#update NginxApiKey#update}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#create NginxApiKey#create}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#delete NginxApiKey#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#read NginxApiKey#read}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#update NginxApiKey#update}. |
 
 ---
 
@@ -1196,7 +1196,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#create NginxApiKey#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#create NginxApiKey#create}.
 
 ---
 
@@ -1208,7 +1208,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#delete NginxApiKey#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#delete NginxApiKey#delete}.
 
 ---
 
@@ -1220,7 +1220,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#read NginxApiKey#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#read NginxApiKey#read}.
 
 ---
 
@@ -1232,7 +1232,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_api_key#update NginxApiKey#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/nginx_api_key#update NginxApiKey#update}.
 
 ---
 
