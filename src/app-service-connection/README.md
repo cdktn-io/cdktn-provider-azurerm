@@ -1,3 +1,3 @@
 # `azurerm_app_service_connection`
 
-Refer to the Terraform Registry for docs: [`azurerm_app_service_connection`](https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/app_service_connection).
+Refer to the Terraform Registry for docs: [`azurerm_app_service_connection`](https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/app_service_connection).

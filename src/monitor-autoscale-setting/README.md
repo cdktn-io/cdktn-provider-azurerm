@@ -1,3 +1,3 @@
 # `azurerm_monitor_autoscale_setting`
 
-Refer to the Terraform Registry for docs: [`azurerm_monitor_autoscale_setting`](https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_autoscale_setting).
+Refer to the Terraform Registry for docs: [`azurerm_monitor_autoscale_setting`](https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_autoscale_setting).

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,80 +13,92 @@ import * as cdktn from 'cdktn';
 
 export interface RedhatOpenshiftClusterConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#id RedhatOpenshiftCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#id RedhatOpenshiftCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#location RedhatOpenshiftCluster#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#location RedhatOpenshiftCluster#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#name RedhatOpenshiftCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#name RedhatOpenshiftCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#resource_group_name RedhatOpenshiftCluster#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#resource_group_name RedhatOpenshiftCluster#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#tags RedhatOpenshiftCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#tags RedhatOpenshiftCluster#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * api_server_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#api_server_profile RedhatOpenshiftCluster#api_server_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#api_server_profile RedhatOpenshiftCluster#api_server_profile}
   */
   readonly apiServerProfile: RedhatOpenshiftClusterApiServerProfile;
   /**
   * cluster_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#cluster_profile RedhatOpenshiftCluster#cluster_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#cluster_profile RedhatOpenshiftCluster#cluster_profile}
   */
   readonly clusterProfile: RedhatOpenshiftClusterClusterProfile;
   /**
+  * identity block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#identity RedhatOpenshiftCluster#identity}
+  */
+  readonly identity?: RedhatOpenshiftClusterIdentity;
+  /**
   * ingress_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#ingress_profile RedhatOpenshiftCluster#ingress_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#ingress_profile RedhatOpenshiftCluster#ingress_profile}
   */
   readonly ingressProfile: RedhatOpenshiftClusterIngressProfile;
   /**
   * main_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#main_profile RedhatOpenshiftCluster#main_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#main_profile RedhatOpenshiftCluster#main_profile}
   */
   readonly mainProfile: RedhatOpenshiftClusterMainProfile;
   /**
   * network_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#network_profile RedhatOpenshiftCluster#network_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#network_profile RedhatOpenshiftCluster#network_profile}
   */
   readonly networkProfile: RedhatOpenshiftClusterNetworkProfile;
   /**
+  * platform_workload_identity_profile block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#platform_workload_identity_profile RedhatOpenshiftCluster#platform_workload_identity_profile}
+  */
+  readonly platformWorkloadIdentityProfile?: RedhatOpenshiftClusterPlatformWorkloadIdentityProfile;
+  /**
   * service_principal block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#service_principal RedhatOpenshiftCluster#service_principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#service_principal RedhatOpenshiftCluster#service_principal}
   */
-  readonly servicePrincipal: RedhatOpenshiftClusterServicePrincipal;
+  readonly servicePrincipal?: RedhatOpenshiftClusterServicePrincipal;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#timeouts RedhatOpenshiftCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#timeouts RedhatOpenshiftCluster#timeouts}
   */
   readonly timeouts?: RedhatOpenshiftClusterTimeouts;
   /**
   * worker_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#worker_profile RedhatOpenshiftCluster#worker_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#worker_profile RedhatOpenshiftCluster#worker_profile}
   */
   readonly workerProfile: RedhatOpenshiftClusterWorkerProfile;
 }
 export interface RedhatOpenshiftClusterApiServerProfile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#visibility RedhatOpenshiftCluster#visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#visibility RedhatOpenshiftCluster#visibility}
   */
   readonly visibility: string;
 }
@@ -177,23 +189,23 @@ export class RedhatOpenshiftClusterApiServerProfileOutputReference extends cdktn
 }
 export interface RedhatOpenshiftClusterClusterProfile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#domain RedhatOpenshiftCluster#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#domain RedhatOpenshiftCluster#domain}
   */
   readonly domain: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#fips_enabled RedhatOpenshiftCluster#fips_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#fips_enabled RedhatOpenshiftCluster#fips_enabled}
   */
   readonly fipsEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#managed_resource_group_name RedhatOpenshiftCluster#managed_resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#managed_resource_group_name RedhatOpenshiftCluster#managed_resource_group_name}
   */
   readonly managedResourceGroupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#pull_secret RedhatOpenshiftCluster#pull_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#pull_secret RedhatOpenshiftCluster#pull_secret}
   */
   readonly pullSecret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#version RedhatOpenshiftCluster#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#version RedhatOpenshiftCluster#version}
   */
   readonly version: string;
 }
@@ -390,9 +402,120 @@ export class RedhatOpenshiftClusterClusterProfileOutputReference extends cdktn.C
     return this._version;
   }
 }
+export interface RedhatOpenshiftClusterIdentity {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#identity_ids RedhatOpenshiftCluster#identity_ids}
+  */
+  readonly identityIds: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#type RedhatOpenshiftCluster#type}
+  */
+  readonly type: string;
+}
+
+export function redhatOpenshiftClusterIdentityToTerraform(struct?: RedhatOpenshiftClusterIdentityOutputReference | RedhatOpenshiftClusterIdentity): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
+  }
+}
+
+
+export function redhatOpenshiftClusterIdentityToHclTerraform(struct?: RedhatOpenshiftClusterIdentityOutputReference | RedhatOpenshiftClusterIdentity): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    identity_ids: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    type: {
+      value: cdktn.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class RedhatOpenshiftClusterIdentityOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): RedhatOpenshiftClusterIdentity | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._identityIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identityIds = this._identityIds;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RedhatOpenshiftClusterIdentity | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._identityIds = undefined;
+      this._type = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._identityIds = value.identityIds;
+      this._type = value.type;
+    }
+  }
+
+  // identity_ids - computed: false, optional: false, required: true
+  private _identityIds?: string[]; 
+  public get identityIds() {
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
+  }
+  public set identityIds(value: string[]) {
+    this._identityIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityIdsInput() {
+    return this._identityIds;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
 export interface RedhatOpenshiftClusterIngressProfile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#visibility RedhatOpenshiftCluster#visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#visibility RedhatOpenshiftCluster#visibility}
   */
   readonly visibility: string;
 }
@@ -483,19 +606,19 @@ export class RedhatOpenshiftClusterIngressProfileOutputReference extends cdktn.C
 }
 export interface RedhatOpenshiftClusterMainProfile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#disk_encryption_set_id RedhatOpenshiftCluster#disk_encryption_set_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#disk_encryption_set_id RedhatOpenshiftCluster#disk_encryption_set_id}
   */
   readonly diskEncryptionSetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#encryption_at_host_enabled RedhatOpenshiftCluster#encryption_at_host_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#encryption_at_host_enabled RedhatOpenshiftCluster#encryption_at_host_enabled}
   */
   readonly encryptionAtHostEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#subnet_id RedhatOpenshiftCluster#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#subnet_id RedhatOpenshiftCluster#subnet_id}
   */
   readonly subnetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#vm_size RedhatOpenshiftCluster#vm_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#vm_size RedhatOpenshiftCluster#vm_size}
   */
   readonly vmSize: string;
 }
@@ -658,23 +781,115 @@ export class RedhatOpenshiftClusterMainProfileOutputReference extends cdktn.Comp
     return this._vmSize;
   }
 }
+export interface RedhatOpenshiftClusterNetworkProfileLoadBalancerProfile {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#managed_outbound_ip_count RedhatOpenshiftCluster#managed_outbound_ip_count}
+  */
+  readonly managedOutboundIpCount: number;
+}
+
+export function redhatOpenshiftClusterNetworkProfileLoadBalancerProfileToTerraform(struct?: RedhatOpenshiftClusterNetworkProfileLoadBalancerProfileOutputReference | RedhatOpenshiftClusterNetworkProfileLoadBalancerProfile): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    managed_outbound_ip_count: cdktn.numberToTerraform(struct!.managedOutboundIpCount),
+  }
+}
+
+
+export function redhatOpenshiftClusterNetworkProfileLoadBalancerProfileToHclTerraform(struct?: RedhatOpenshiftClusterNetworkProfileLoadBalancerProfileOutputReference | RedhatOpenshiftClusterNetworkProfileLoadBalancerProfile): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    managed_outbound_ip_count: {
+      value: cdktn.numberToHclTerraform(struct!.managedOutboundIpCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class RedhatOpenshiftClusterNetworkProfileLoadBalancerProfileOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): RedhatOpenshiftClusterNetworkProfileLoadBalancerProfile | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._managedOutboundIpCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.managedOutboundIpCount = this._managedOutboundIpCount;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RedhatOpenshiftClusterNetworkProfileLoadBalancerProfile | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._managedOutboundIpCount = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._managedOutboundIpCount = value.managedOutboundIpCount;
+    }
+  }
+
+  // effective_outbound_ips - computed: true, optional: false, required: false
+  public get effectiveOutboundIps() {
+    return this.getListAttribute('effective_outbound_ips');
+  }
+
+  // managed_outbound_ip_count - computed: false, optional: false, required: true
+  private _managedOutboundIpCount?: number; 
+  public get managedOutboundIpCount() {
+    return this.getNumberAttribute('managed_outbound_ip_count');
+  }
+  public set managedOutboundIpCount(value: number) {
+    this._managedOutboundIpCount = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedOutboundIpCountInput() {
+    return this._managedOutboundIpCount;
+  }
+}
 export interface RedhatOpenshiftClusterNetworkProfile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#outbound_type RedhatOpenshiftCluster#outbound_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#outbound_type RedhatOpenshiftCluster#outbound_type}
   */
   readonly outboundType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#pod_cidr RedhatOpenshiftCluster#pod_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#pod_cidr RedhatOpenshiftCluster#pod_cidr}
   */
   readonly podCidr: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#preconfigured_network_security_group_enabled RedhatOpenshiftCluster#preconfigured_network_security_group_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#preconfigured_network_security_group_enabled RedhatOpenshiftCluster#preconfigured_network_security_group_enabled}
   */
   readonly preconfiguredNetworkSecurityGroupEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#service_cidr RedhatOpenshiftCluster#service_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#service_cidr RedhatOpenshiftCluster#service_cidr}
   */
   readonly serviceCidr: string;
+  /**
+  * load_balancer_profile block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#load_balancer_profile RedhatOpenshiftCluster#load_balancer_profile}
+  */
+  readonly loadBalancerProfile?: RedhatOpenshiftClusterNetworkProfileLoadBalancerProfile;
 }
 
 export function redhatOpenshiftClusterNetworkProfileToTerraform(struct?: RedhatOpenshiftClusterNetworkProfileOutputReference | RedhatOpenshiftClusterNetworkProfile): any {
@@ -687,6 +902,7 @@ export function redhatOpenshiftClusterNetworkProfileToTerraform(struct?: RedhatO
     pod_cidr: cdktn.stringToTerraform(struct!.podCidr),
     preconfigured_network_security_group_enabled: cdktn.booleanToTerraform(struct!.preconfiguredNetworkSecurityGroupEnabled),
     service_cidr: cdktn.stringToTerraform(struct!.serviceCidr),
+    load_balancer_profile: redhatOpenshiftClusterNetworkProfileLoadBalancerProfileToTerraform(struct!.loadBalancerProfile),
   }
 }
 
@@ -720,6 +936,12 @@ export function redhatOpenshiftClusterNetworkProfileToHclTerraform(struct?: Redh
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    load_balancer_profile: {
+      value: redhatOpenshiftClusterNetworkProfileLoadBalancerProfileToHclTerraform(struct!.loadBalancerProfile),
+      isBlock: true,
+      type: "list",
+      storageClassType: "RedhatOpenshiftClusterNetworkProfileLoadBalancerProfileList",
     },
   };
 
@@ -757,6 +979,10 @@ export class RedhatOpenshiftClusterNetworkProfileOutputReference extends cdktn.C
       hasAnyValues = true;
       internalValueResult.serviceCidr = this._serviceCidr;
     }
+    if (this._loadBalancerProfile?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.loadBalancerProfile = this._loadBalancerProfile?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -767,6 +993,7 @@ export class RedhatOpenshiftClusterNetworkProfileOutputReference extends cdktn.C
       this._podCidr = undefined;
       this._preconfiguredNetworkSecurityGroupEnabled = undefined;
       this._serviceCidr = undefined;
+      this._loadBalancerProfile.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -774,6 +1001,7 @@ export class RedhatOpenshiftClusterNetworkProfileOutputReference extends cdktn.C
       this._podCidr = value.podCidr;
       this._preconfiguredNetworkSecurityGroupEnabled = value.preconfiguredNetworkSecurityGroupEnabled;
       this._serviceCidr = value.serviceCidr;
+      this._loadBalancerProfile.internalValue = value.loadBalancerProfile;
     }
   }
 
@@ -834,14 +1062,299 @@ export class RedhatOpenshiftClusterNetworkProfileOutputReference extends cdktn.C
   public get serviceCidrInput() {
     return this._serviceCidr;
   }
+
+  // load_balancer_profile - computed: false, optional: true, required: false
+  private _loadBalancerProfile = new RedhatOpenshiftClusterNetworkProfileLoadBalancerProfileOutputReference(this, "load_balancer_profile");
+  public get loadBalancerProfile() {
+    return this._loadBalancerProfile;
+  }
+  public putLoadBalancerProfile(value: RedhatOpenshiftClusterNetworkProfileLoadBalancerProfile) {
+    this._loadBalancerProfile.internalValue = value;
+  }
+  public resetLoadBalancerProfile() {
+    this._loadBalancerProfile.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadBalancerProfileInput() {
+    return this._loadBalancerProfile.internalValue;
+  }
+}
+export interface RedhatOpenshiftClusterPlatformWorkloadIdentityProfilePlatformWorkloadIdentity {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#identity_id RedhatOpenshiftCluster#identity_id}
+  */
+  readonly identityId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#name RedhatOpenshiftCluster#name}
+  */
+  readonly name: string;
+}
+
+export function redhatOpenshiftClusterPlatformWorkloadIdentityProfilePlatformWorkloadIdentityToTerraform(struct?: RedhatOpenshiftClusterPlatformWorkloadIdentityProfilePlatformWorkloadIdentity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    identity_id: cdktn.stringToTerraform(struct!.identityId),
+    name: cdktn.stringToTerraform(struct!.name),
+  }
+}
+
+
+export function redhatOpenshiftClusterPlatformWorkloadIdentityProfilePlatformWorkloadIdentityToHclTerraform(struct?: RedhatOpenshiftClusterPlatformWorkloadIdentityProfilePlatformWorkloadIdentity | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    identity_id: {
+      value: cdktn.stringToHclTerraform(struct!.identityId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class RedhatOpenshiftClusterPlatformWorkloadIdentityProfilePlatformWorkloadIdentityOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): RedhatOpenshiftClusterPlatformWorkloadIdentityProfilePlatformWorkloadIdentity | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._identityId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identityId = this._identityId;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RedhatOpenshiftClusterPlatformWorkloadIdentityProfilePlatformWorkloadIdentity | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._identityId = undefined;
+      this._name = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._identityId = value.identityId;
+      this._name = value.name;
+    }
+  }
+
+  // client_id - computed: true, optional: false, required: false
+  public get clientId() {
+    return this.getStringAttribute('client_id');
+  }
+
+  // identity_id - computed: false, optional: false, required: true
+  private _identityId?: string; 
+  public get identityId() {
+    return this.getStringAttribute('identity_id');
+  }
+  public set identityId(value: string) {
+    this._identityId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityIdInput() {
+    return this._identityId;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // object_id - computed: true, optional: false, required: false
+  public get objectId() {
+    return this.getStringAttribute('object_id');
+  }
+}
+
+export class RedhatOpenshiftClusterPlatformWorkloadIdentityProfilePlatformWorkloadIdentityList extends cdktn.ComplexList {
+  public internalValue? : RedhatOpenshiftClusterPlatformWorkloadIdentityProfilePlatformWorkloadIdentity[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): RedhatOpenshiftClusterPlatformWorkloadIdentityProfilePlatformWorkloadIdentityOutputReference {
+    return new RedhatOpenshiftClusterPlatformWorkloadIdentityProfilePlatformWorkloadIdentityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface RedhatOpenshiftClusterPlatformWorkloadIdentityProfile {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#upgradeable_to RedhatOpenshiftCluster#upgradeable_to}
+  */
+  readonly upgradeableTo?: string;
+  /**
+  * platform_workload_identity block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#platform_workload_identity RedhatOpenshiftCluster#platform_workload_identity}
+  */
+  readonly platformWorkloadIdentity: RedhatOpenshiftClusterPlatformWorkloadIdentityProfilePlatformWorkloadIdentity[] | cdktn.IResolvable;
+}
+
+export function redhatOpenshiftClusterPlatformWorkloadIdentityProfileToTerraform(struct?: RedhatOpenshiftClusterPlatformWorkloadIdentityProfileOutputReference | RedhatOpenshiftClusterPlatformWorkloadIdentityProfile): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    upgradeable_to: cdktn.stringToTerraform(struct!.upgradeableTo),
+    platform_workload_identity: cdktn.listMapper(redhatOpenshiftClusterPlatformWorkloadIdentityProfilePlatformWorkloadIdentityToTerraform, true)(struct!.platformWorkloadIdentity),
+  }
+}
+
+
+export function redhatOpenshiftClusterPlatformWorkloadIdentityProfileToHclTerraform(struct?: RedhatOpenshiftClusterPlatformWorkloadIdentityProfileOutputReference | RedhatOpenshiftClusterPlatformWorkloadIdentityProfile): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    upgradeable_to: {
+      value: cdktn.stringToHclTerraform(struct!.upgradeableTo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    platform_workload_identity: {
+      value: cdktn.listMapperHcl(redhatOpenshiftClusterPlatformWorkloadIdentityProfilePlatformWorkloadIdentityToHclTerraform, true)(struct!.platformWorkloadIdentity),
+      isBlock: true,
+      type: "set",
+      storageClassType: "RedhatOpenshiftClusterPlatformWorkloadIdentityProfilePlatformWorkloadIdentityList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class RedhatOpenshiftClusterPlatformWorkloadIdentityProfileOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): RedhatOpenshiftClusterPlatformWorkloadIdentityProfile | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._upgradeableTo !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.upgradeableTo = this._upgradeableTo;
+    }
+    if (this._platformWorkloadIdentity?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.platformWorkloadIdentity = this._platformWorkloadIdentity?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RedhatOpenshiftClusterPlatformWorkloadIdentityProfile | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._upgradeableTo = undefined;
+      this._platformWorkloadIdentity.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._upgradeableTo = value.upgradeableTo;
+      this._platformWorkloadIdentity.internalValue = value.platformWorkloadIdentity;
+    }
+  }
+
+  // upgradeable_to - computed: false, optional: true, required: false
+  private _upgradeableTo?: string; 
+  public get upgradeableTo() {
+    return this.getStringAttribute('upgradeable_to');
+  }
+  public set upgradeableTo(value: string) {
+    this._upgradeableTo = value;
+  }
+  public resetUpgradeableTo() {
+    this._upgradeableTo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get upgradeableToInput() {
+    return this._upgradeableTo;
+  }
+
+  // platform_workload_identity - computed: false, optional: false, required: true
+  private _platformWorkloadIdentity = new RedhatOpenshiftClusterPlatformWorkloadIdentityProfilePlatformWorkloadIdentityList(this, "platform_workload_identity", true);
+  public get platformWorkloadIdentity() {
+    return this._platformWorkloadIdentity;
+  }
+  public putPlatformWorkloadIdentity(value: RedhatOpenshiftClusterPlatformWorkloadIdentityProfilePlatformWorkloadIdentity[] | cdktn.IResolvable) {
+    this._platformWorkloadIdentity.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get platformWorkloadIdentityInput() {
+    return this._platformWorkloadIdentity.internalValue;
+  }
 }
 export interface RedhatOpenshiftClusterServicePrincipal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#client_id RedhatOpenshiftCluster#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#client_id RedhatOpenshiftCluster#client_id}
   */
   readonly clientId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#client_secret RedhatOpenshiftCluster#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#client_secret RedhatOpenshiftCluster#client_secret}
   */
   readonly clientSecret: string;
 }
@@ -948,19 +1461,19 @@ export class RedhatOpenshiftClusterServicePrincipalOutputReference extends cdktn
 }
 export interface RedhatOpenshiftClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#create RedhatOpenshiftCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#create RedhatOpenshiftCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#delete RedhatOpenshiftCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#delete RedhatOpenshiftCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#read RedhatOpenshiftCluster#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#read RedhatOpenshiftCluster#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#update RedhatOpenshiftCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#update RedhatOpenshiftCluster#update}
   */
   readonly update?: string;
 }
@@ -1141,27 +1654,27 @@ export class RedhatOpenshiftClusterTimeoutsOutputReference extends cdktn.Complex
 }
 export interface RedhatOpenshiftClusterWorkerProfile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#disk_encryption_set_id RedhatOpenshiftCluster#disk_encryption_set_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#disk_encryption_set_id RedhatOpenshiftCluster#disk_encryption_set_id}
   */
   readonly diskEncryptionSetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#disk_size_gb RedhatOpenshiftCluster#disk_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#disk_size_gb RedhatOpenshiftCluster#disk_size_gb}
   */
   readonly diskSizeGb: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#encryption_at_host_enabled RedhatOpenshiftCluster#encryption_at_host_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#encryption_at_host_enabled RedhatOpenshiftCluster#encryption_at_host_enabled}
   */
   readonly encryptionAtHostEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#node_count RedhatOpenshiftCluster#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#node_count RedhatOpenshiftCluster#node_count}
   */
   readonly nodeCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#subnet_id RedhatOpenshiftCluster#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#subnet_id RedhatOpenshiftCluster#subnet_id}
   */
   readonly subnetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#vm_size RedhatOpenshiftCluster#vm_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#vm_size RedhatOpenshiftCluster#vm_size}
   */
   readonly vmSize: string;
 }
@@ -1378,7 +1891,7 @@ export class RedhatOpenshiftClusterWorkerProfileOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster azurerm_redhat_openshift_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster azurerm_redhat_openshift_cluster}
 */
 export class RedhatOpenshiftCluster extends cdktn.TerraformResource {
 
@@ -1394,7 +1907,7 @@ export class RedhatOpenshiftCluster extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a RedhatOpenshiftCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedhatOpenshiftCluster to import
-  * @param importFromId The id of the existing RedhatOpenshiftCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RedhatOpenshiftCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedhatOpenshiftCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1406,7 +1919,7 @@ export class RedhatOpenshiftCluster extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/redhat_openshift_cluster azurerm_redhat_openshift_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/redhat_openshift_cluster azurerm_redhat_openshift_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1417,7 +1930,7 @@ export class RedhatOpenshiftCluster extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_redhat_openshift_cluster',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '5.1.0',
+        providerVersion: '5.2.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1435,9 +1948,11 @@ export class RedhatOpenshiftCluster extends cdktn.TerraformResource {
     this._tags = config.tags;
     this._apiServerProfile.internalValue = config.apiServerProfile;
     this._clusterProfile.internalValue = config.clusterProfile;
+    this._identity.internalValue = config.identity;
     this._ingressProfile.internalValue = config.ingressProfile;
     this._mainProfile.internalValue = config.mainProfile;
     this._networkProfile.internalValue = config.networkProfile;
+    this._platformWorkloadIdentityProfile.internalValue = config.platformWorkloadIdentityProfile;
     this._servicePrincipal.internalValue = config.servicePrincipal;
     this._timeouts.internalValue = config.timeouts;
     this._workerProfile.internalValue = config.workerProfile;
@@ -1549,6 +2064,22 @@ export class RedhatOpenshiftCluster extends cdktn.TerraformResource {
     return this._clusterProfile.internalValue;
   }
 
+  // identity - computed: false, optional: true, required: false
+  private _identity = new RedhatOpenshiftClusterIdentityOutputReference(this, "identity");
+  public get identity() {
+    return this._identity;
+  }
+  public putIdentity(value: RedhatOpenshiftClusterIdentity) {
+    this._identity.internalValue = value;
+  }
+  public resetIdentity() {
+    this._identity.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityInput() {
+    return this._identity.internalValue;
+  }
+
   // ingress_profile - computed: false, optional: false, required: true
   private _ingressProfile = new RedhatOpenshiftClusterIngressProfileOutputReference(this, "ingress_profile");
   public get ingressProfile() {
@@ -1588,13 +2119,32 @@ export class RedhatOpenshiftCluster extends cdktn.TerraformResource {
     return this._networkProfile.internalValue;
   }
 
-  // service_principal - computed: false, optional: false, required: true
+  // platform_workload_identity_profile - computed: false, optional: true, required: false
+  private _platformWorkloadIdentityProfile = new RedhatOpenshiftClusterPlatformWorkloadIdentityProfileOutputReference(this, "platform_workload_identity_profile");
+  public get platformWorkloadIdentityProfile() {
+    return this._platformWorkloadIdentityProfile;
+  }
+  public putPlatformWorkloadIdentityProfile(value: RedhatOpenshiftClusterPlatformWorkloadIdentityProfile) {
+    this._platformWorkloadIdentityProfile.internalValue = value;
+  }
+  public resetPlatformWorkloadIdentityProfile() {
+    this._platformWorkloadIdentityProfile.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get platformWorkloadIdentityProfileInput() {
+    return this._platformWorkloadIdentityProfile.internalValue;
+  }
+
+  // service_principal - computed: false, optional: true, required: false
   private _servicePrincipal = new RedhatOpenshiftClusterServicePrincipalOutputReference(this, "service_principal");
   public get servicePrincipal() {
     return this._servicePrincipal;
   }
   public putServicePrincipal(value: RedhatOpenshiftClusterServicePrincipal) {
     this._servicePrincipal.internalValue = value;
+  }
+  public resetServicePrincipal() {
+    this._servicePrincipal.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get servicePrincipalInput() {
@@ -1643,9 +2193,11 @@ export class RedhatOpenshiftCluster extends cdktn.TerraformResource {
       tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       api_server_profile: redhatOpenshiftClusterApiServerProfileToTerraform(this._apiServerProfile.internalValue),
       cluster_profile: redhatOpenshiftClusterClusterProfileToTerraform(this._clusterProfile.internalValue),
+      identity: redhatOpenshiftClusterIdentityToTerraform(this._identity.internalValue),
       ingress_profile: redhatOpenshiftClusterIngressProfileToTerraform(this._ingressProfile.internalValue),
       main_profile: redhatOpenshiftClusterMainProfileToTerraform(this._mainProfile.internalValue),
       network_profile: redhatOpenshiftClusterNetworkProfileToTerraform(this._networkProfile.internalValue),
+      platform_workload_identity_profile: redhatOpenshiftClusterPlatformWorkloadIdentityProfileToTerraform(this._platformWorkloadIdentityProfile.internalValue),
       service_principal: redhatOpenshiftClusterServicePrincipalToTerraform(this._servicePrincipal.internalValue),
       timeouts: redhatOpenshiftClusterTimeoutsToTerraform(this._timeouts.internalValue),
       worker_profile: redhatOpenshiftClusterWorkerProfileToTerraform(this._workerProfile.internalValue),
@@ -1696,6 +2248,12 @@ export class RedhatOpenshiftCluster extends cdktn.TerraformResource {
         type: "list",
         storageClassType: "RedhatOpenshiftClusterClusterProfileList",
       },
+      identity: {
+        value: redhatOpenshiftClusterIdentityToHclTerraform(this._identity.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RedhatOpenshiftClusterIdentityList",
+      },
       ingress_profile: {
         value: redhatOpenshiftClusterIngressProfileToHclTerraform(this._ingressProfile.internalValue),
         isBlock: true,
@@ -1713,6 +2271,12 @@ export class RedhatOpenshiftCluster extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "RedhatOpenshiftClusterNetworkProfileList",
+      },
+      platform_workload_identity_profile: {
+        value: redhatOpenshiftClusterPlatformWorkloadIdentityProfileToHclTerraform(this._platformWorkloadIdentityProfile.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RedhatOpenshiftClusterPlatformWorkloadIdentityProfileList",
       },
       service_principal: {
         value: redhatOpenshiftClusterServicePrincipalToHclTerraform(this._servicePrincipal.internalValue),
