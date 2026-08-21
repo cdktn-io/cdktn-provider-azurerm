@@ -1,3 +1,3 @@
 # `azurerm_cognitive_account_project`
 
-Refer to the Terraform Registry for docs: [`azurerm_cognitive_account_project`](https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/cognitive_account_project).
+Refer to the Terraform Registry for docs: [`azurerm_cognitive_account_project`](https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/cognitive_account_project).

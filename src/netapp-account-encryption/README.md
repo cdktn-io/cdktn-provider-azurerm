@@ -1,3 +1,3 @@
 # `azurerm_netapp_account_encryption`
 
-Refer to the Terraform Registry for docs: [`azurerm_netapp_account_encryption`](https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/netapp_account_encryption).
+Refer to the Terraform Registry for docs: [`azurerm_netapp_account_encryption`](https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/netapp_account_encryption).
