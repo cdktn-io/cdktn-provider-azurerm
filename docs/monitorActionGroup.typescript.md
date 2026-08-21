@@ -4,7 +4,7 @@
 
 ### MonitorActionGroup <a name="MonitorActionGroup" id="@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group azurerm_monitor_action_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group azurerm_monitor_action_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroup.Initializer"></a>
 
@@ -757,7 +757,7 @@ The construct id used in the generated config for the MonitorActionGroup to impo
 
 The id of the existing MonitorActionGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1384,9 +1384,9 @@ const monitorActionGroupArmRoleReceiver: monitorActionGroup.MonitorActionGroupAr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupArmRoleReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupArmRoleReceiver.property.roleId">roleId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#role_id MonitorActionGroup#role_id}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupArmRoleReceiver.property.useCommonAlertSchema">useCommonAlertSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupArmRoleReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupArmRoleReceiver.property.roleId">roleId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#role_id MonitorActionGroup#role_id}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupArmRoleReceiver.property.useCommonAlertSchema">useCommonAlertSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}. |
 
 ---
 
@@ -1398,7 +1398,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
 
 ---
 
@@ -1410,7 +1410,7 @@ public readonly roleId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#role_id MonitorActionGroup#role_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#role_id MonitorActionGroup#role_id}.
 
 ---
 
@@ -1422,7 +1422,7 @@ public readonly useCommonAlertSchema: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}.
 
 ---
 
@@ -1440,13 +1440,13 @@ const monitorActionGroupAutomationRunbookReceiver: monitorActionGroup.MonitorAct
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAutomationRunbookReceiver.property.automationAccountId">automationAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#automation_account_id MonitorActionGroup#automation_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAutomationRunbookReceiver.property.isGlobalRunbook">isGlobalRunbook</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#is_global_runbook MonitorActionGroup#is_global_runbook}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAutomationRunbookReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAutomationRunbookReceiver.property.runbookName">runbookName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#runbook_name MonitorActionGroup#runbook_name}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAutomationRunbookReceiver.property.serviceUri">serviceUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#service_uri MonitorActionGroup#service_uri}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAutomationRunbookReceiver.property.webhookResourceId">webhookResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#webhook_resource_id MonitorActionGroup#webhook_resource_id}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAutomationRunbookReceiver.property.useCommonAlertSchema">useCommonAlertSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAutomationRunbookReceiver.property.automationAccountId">automationAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#automation_account_id MonitorActionGroup#automation_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAutomationRunbookReceiver.property.isGlobalRunbook">isGlobalRunbook</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#is_global_runbook MonitorActionGroup#is_global_runbook}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAutomationRunbookReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAutomationRunbookReceiver.property.runbookName">runbookName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#runbook_name MonitorActionGroup#runbook_name}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAutomationRunbookReceiver.property.serviceUri">serviceUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#service_uri MonitorActionGroup#service_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAutomationRunbookReceiver.property.webhookResourceId">webhookResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#webhook_resource_id MonitorActionGroup#webhook_resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAutomationRunbookReceiver.property.useCommonAlertSchema">useCommonAlertSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}. |
 
 ---
 
@@ -1458,7 +1458,7 @@ public readonly automationAccountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#automation_account_id MonitorActionGroup#automation_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#automation_account_id MonitorActionGroup#automation_account_id}.
 
 ---
 
@@ -1470,7 +1470,7 @@ public readonly isGlobalRunbook: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#is_global_runbook MonitorActionGroup#is_global_runbook}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#is_global_runbook MonitorActionGroup#is_global_runbook}.
 
 ---
 
@@ -1482,7 +1482,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
 
 ---
 
@@ -1494,7 +1494,7 @@ public readonly runbookName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#runbook_name MonitorActionGroup#runbook_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#runbook_name MonitorActionGroup#runbook_name}.
 
 ---
 
@@ -1506,7 +1506,7 @@ public readonly serviceUri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#service_uri MonitorActionGroup#service_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#service_uri MonitorActionGroup#service_uri}.
 
 ---
 
@@ -1518,7 +1518,7 @@ public readonly webhookResourceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#webhook_resource_id MonitorActionGroup#webhook_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#webhook_resource_id MonitorActionGroup#webhook_resource_id}.
 
 ---
 
@@ -1530,7 +1530,7 @@ public readonly useCommonAlertSchema: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}.
 
 ---
 
@@ -1548,8 +1548,8 @@ const monitorActionGroupAzureAppPushReceiver: monitorActionGroup.MonitorActionGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAzureAppPushReceiver.property.emailAddress">emailAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#email_address MonitorActionGroup#email_address}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAzureAppPushReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAzureAppPushReceiver.property.emailAddress">emailAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#email_address MonitorActionGroup#email_address}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAzureAppPushReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
 
 ---
 
@@ -1561,7 +1561,7 @@ public readonly emailAddress: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#email_address MonitorActionGroup#email_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#email_address MonitorActionGroup#email_address}.
 
 ---
 
@@ -1573,7 +1573,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
 
 ---
 
@@ -1591,11 +1591,11 @@ const monitorActionGroupAzureFunctionReceiver: monitorActionGroup.MonitorActionG
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAzureFunctionReceiver.property.functionAppResourceId">functionAppResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#function_app_resource_id MonitorActionGroup#function_app_resource_id}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAzureFunctionReceiver.property.functionName">functionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#function_name MonitorActionGroup#function_name}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAzureFunctionReceiver.property.httpTriggerUrl">httpTriggerUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#http_trigger_url MonitorActionGroup#http_trigger_url}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAzureFunctionReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAzureFunctionReceiver.property.useCommonAlertSchema">useCommonAlertSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAzureFunctionReceiver.property.functionAppResourceId">functionAppResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#function_app_resource_id MonitorActionGroup#function_app_resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAzureFunctionReceiver.property.functionName">functionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#function_name MonitorActionGroup#function_name}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAzureFunctionReceiver.property.httpTriggerUrl">httpTriggerUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#http_trigger_url MonitorActionGroup#http_trigger_url}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAzureFunctionReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAzureFunctionReceiver.property.useCommonAlertSchema">useCommonAlertSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}. |
 
 ---
 
@@ -1607,7 +1607,7 @@ public readonly functionAppResourceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#function_app_resource_id MonitorActionGroup#function_app_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#function_app_resource_id MonitorActionGroup#function_app_resource_id}.
 
 ---
 
@@ -1619,7 +1619,7 @@ public readonly functionName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#function_name MonitorActionGroup#function_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#function_name MonitorActionGroup#function_name}.
 
 ---
 
@@ -1631,7 +1631,7 @@ public readonly httpTriggerUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#http_trigger_url MonitorActionGroup#http_trigger_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#http_trigger_url MonitorActionGroup#http_trigger_url}.
 
 ---
 
@@ -1643,7 +1643,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
 
 ---
 
@@ -1655,7 +1655,7 @@ public readonly useCommonAlertSchema: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}.
 
 ---
 
@@ -1680,22 +1680,22 @@ const monitorActionGroupConfig: monitorActionGroup.MonitorActionGroupConfig = { 
 | <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#resource_group_name MonitorActionGroup#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.shortName">shortName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#short_name MonitorActionGroup#short_name}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#resource_group_name MonitorActionGroup#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.shortName">shortName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#short_name MonitorActionGroup#short_name}. |
 | <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.armRoleReceiver">armRoleReceiver</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupArmRoleReceiver">MonitorActionGroupArmRoleReceiver</a>[]</code> | arm_role_receiver block. |
 | <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.automationRunbookReceiver">automationRunbookReceiver</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAutomationRunbookReceiver">MonitorActionGroupAutomationRunbookReceiver</a>[]</code> | automation_runbook_receiver block. |
 | <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.azureAppPushReceiver">azureAppPushReceiver</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAzureAppPushReceiver">MonitorActionGroupAzureAppPushReceiver</a>[]</code> | azure_app_push_receiver block. |
 | <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.azureFunctionReceiver">azureFunctionReceiver</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupAzureFunctionReceiver">MonitorActionGroupAzureFunctionReceiver</a>[]</code> | azure_function_receiver block. |
 | <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.emailReceiver">emailReceiver</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupEmailReceiver">MonitorActionGroupEmailReceiver</a>[]</code> | email_receiver block. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#enabled MonitorActionGroup#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#enabled MonitorActionGroup#enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.eventHubReceiver">eventHubReceiver</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupEventHubReceiver">MonitorActionGroupEventHubReceiver</a>[]</code> | event_hub_receiver block. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#id MonitorActionGroup#id}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#id MonitorActionGroup#id}. |
 | <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.itsmReceiver">itsmReceiver</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupItsmReceiver">MonitorActionGroupItsmReceiver</a>[]</code> | itsm_receiver block. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#location MonitorActionGroup#location}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#location MonitorActionGroup#location}. |
 | <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.logicAppReceiver">logicAppReceiver</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupLogicAppReceiver">MonitorActionGroupLogicAppReceiver</a>[]</code> | logic_app_receiver block. |
 | <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.smsReceiver">smsReceiver</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupSmsReceiver">MonitorActionGroupSmsReceiver</a>[]</code> | sms_receiver block. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#tags MonitorActionGroup#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#tags MonitorActionGroup#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupTimeouts">MonitorActionGroupTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.voiceReceiver">voiceReceiver</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupVoiceReceiver">MonitorActionGroupVoiceReceiver</a>[]</code> | voice_receiver block. |
 | <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupConfig.property.webhookReceiver">webhookReceiver</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupWebhookReceiver">MonitorActionGroupWebhookReceiver</a>[]</code> | webhook_receiver block. |
@@ -1780,7 +1780,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
 
 ---
 
@@ -1792,7 +1792,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#resource_group_name MonitorActionGroup#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#resource_group_name MonitorActionGroup#resource_group_name}.
 
 ---
 
@@ -1804,7 +1804,7 @@ public readonly shortName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#short_name MonitorActionGroup#short_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#short_name MonitorActionGroup#short_name}.
 
 ---
 
@@ -1818,7 +1818,7 @@ public readonly armRoleReceiver: IResolvable | MonitorActionGroupArmRoleReceiver
 
 arm_role_receiver block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#arm_role_receiver MonitorActionGroup#arm_role_receiver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#arm_role_receiver MonitorActionGroup#arm_role_receiver}
 
 ---
 
@@ -1832,7 +1832,7 @@ public readonly automationRunbookReceiver: IResolvable | MonitorActionGroupAutom
 
 automation_runbook_receiver block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#automation_runbook_receiver MonitorActionGroup#automation_runbook_receiver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#automation_runbook_receiver MonitorActionGroup#automation_runbook_receiver}
 
 ---
 
@@ -1846,7 +1846,7 @@ public readonly azureAppPushReceiver: IResolvable | MonitorActionGroupAzureAppPu
 
 azure_app_push_receiver block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#azure_app_push_receiver MonitorActionGroup#azure_app_push_receiver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#azure_app_push_receiver MonitorActionGroup#azure_app_push_receiver}
 
 ---
 
@@ -1860,7 +1860,7 @@ public readonly azureFunctionReceiver: IResolvable | MonitorActionGroupAzureFunc
 
 azure_function_receiver block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#azure_function_receiver MonitorActionGroup#azure_function_receiver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#azure_function_receiver MonitorActionGroup#azure_function_receiver}
 
 ---
 
@@ -1874,7 +1874,7 @@ public readonly emailReceiver: IResolvable | MonitorActionGroupEmailReceiver[];
 
 email_receiver block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#email_receiver MonitorActionGroup#email_receiver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#email_receiver MonitorActionGroup#email_receiver}
 
 ---
 
@@ -1886,7 +1886,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#enabled MonitorActionGroup#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#enabled MonitorActionGroup#enabled}.
 
 ---
 
@@ -1900,7 +1900,7 @@ public readonly eventHubReceiver: IResolvable | MonitorActionGroupEventHubReceiv
 
 event_hub_receiver block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#event_hub_receiver MonitorActionGroup#event_hub_receiver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#event_hub_receiver MonitorActionGroup#event_hub_receiver}
 
 ---
 
@@ -1912,7 +1912,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#id MonitorActionGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#id MonitorActionGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1929,7 +1929,7 @@ public readonly itsmReceiver: IResolvable | MonitorActionGroupItsmReceiver[];
 
 itsm_receiver block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#itsm_receiver MonitorActionGroup#itsm_receiver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#itsm_receiver MonitorActionGroup#itsm_receiver}
 
 ---
 
@@ -1941,7 +1941,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#location MonitorActionGroup#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#location MonitorActionGroup#location}.
 
 ---
 
@@ -1955,7 +1955,7 @@ public readonly logicAppReceiver: IResolvable | MonitorActionGroupLogicAppReceiv
 
 logic_app_receiver block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#logic_app_receiver MonitorActionGroup#logic_app_receiver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#logic_app_receiver MonitorActionGroup#logic_app_receiver}
 
 ---
 
@@ -1969,7 +1969,7 @@ public readonly smsReceiver: IResolvable | MonitorActionGroupSmsReceiver[];
 
 sms_receiver block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#sms_receiver MonitorActionGroup#sms_receiver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#sms_receiver MonitorActionGroup#sms_receiver}
 
 ---
 
@@ -1981,7 +1981,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#tags MonitorActionGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#tags MonitorActionGroup#tags}.
 
 ---
 
@@ -1995,7 +1995,7 @@ public readonly timeouts: MonitorActionGroupTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#timeouts MonitorActionGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#timeouts MonitorActionGroup#timeouts}
 
 ---
 
@@ -2009,7 +2009,7 @@ public readonly voiceReceiver: IResolvable | MonitorActionGroupVoiceReceiver[];
 
 voice_receiver block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#voice_receiver MonitorActionGroup#voice_receiver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#voice_receiver MonitorActionGroup#voice_receiver}
 
 ---
 
@@ -2023,7 +2023,7 @@ public readonly webhookReceiver: IResolvable | MonitorActionGroupWebhookReceiver
 
 webhook_receiver block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#webhook_receiver MonitorActionGroup#webhook_receiver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#webhook_receiver MonitorActionGroup#webhook_receiver}
 
 ---
 
@@ -2041,9 +2041,9 @@ const monitorActionGroupEmailReceiver: monitorActionGroup.MonitorActionGroupEmai
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupEmailReceiver.property.emailAddress">emailAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#email_address MonitorActionGroup#email_address}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupEmailReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupEmailReceiver.property.useCommonAlertSchema">useCommonAlertSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupEmailReceiver.property.emailAddress">emailAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#email_address MonitorActionGroup#email_address}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupEmailReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupEmailReceiver.property.useCommonAlertSchema">useCommonAlertSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}. |
 
 ---
 
@@ -2055,7 +2055,7 @@ public readonly emailAddress: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#email_address MonitorActionGroup#email_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#email_address MonitorActionGroup#email_address}.
 
 ---
 
@@ -2067,7 +2067,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
 
 ---
 
@@ -2079,7 +2079,7 @@ public readonly useCommonAlertSchema: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}.
 
 ---
 
@@ -2097,12 +2097,12 @@ const monitorActionGroupEventHubReceiver: monitorActionGroup.MonitorActionGroupE
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupEventHubReceiver.property.eventHubName">eventHubName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#event_hub_name MonitorActionGroup#event_hub_name}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupEventHubReceiver.property.eventHubNamespace">eventHubNamespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#event_hub_namespace MonitorActionGroup#event_hub_namespace}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupEventHubReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupEventHubReceiver.property.subscriptionId">subscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#subscription_id MonitorActionGroup#subscription_id}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupEventHubReceiver.property.tenantId">tenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#tenant_id MonitorActionGroup#tenant_id}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupEventHubReceiver.property.useCommonAlertSchema">useCommonAlertSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupEventHubReceiver.property.eventHubName">eventHubName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#event_hub_name MonitorActionGroup#event_hub_name}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupEventHubReceiver.property.eventHubNamespace">eventHubNamespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#event_hub_namespace MonitorActionGroup#event_hub_namespace}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupEventHubReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupEventHubReceiver.property.subscriptionId">subscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#subscription_id MonitorActionGroup#subscription_id}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupEventHubReceiver.property.tenantId">tenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#tenant_id MonitorActionGroup#tenant_id}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupEventHubReceiver.property.useCommonAlertSchema">useCommonAlertSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}. |
 
 ---
 
@@ -2114,7 +2114,7 @@ public readonly eventHubName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#event_hub_name MonitorActionGroup#event_hub_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#event_hub_name MonitorActionGroup#event_hub_name}.
 
 ---
 
@@ -2126,7 +2126,7 @@ public readonly eventHubNamespace: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#event_hub_namespace MonitorActionGroup#event_hub_namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#event_hub_namespace MonitorActionGroup#event_hub_namespace}.
 
 ---
 
@@ -2138,7 +2138,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
 
 ---
 
@@ -2150,7 +2150,7 @@ public readonly subscriptionId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#subscription_id MonitorActionGroup#subscription_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#subscription_id MonitorActionGroup#subscription_id}.
 
 ---
 
@@ -2162,7 +2162,7 @@ public readonly tenantId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#tenant_id MonitorActionGroup#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#tenant_id MonitorActionGroup#tenant_id}.
 
 ---
 
@@ -2174,7 +2174,7 @@ public readonly useCommonAlertSchema: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}.
 
 ---
 
@@ -2192,11 +2192,11 @@ const monitorActionGroupItsmReceiver: monitorActionGroup.MonitorActionGroupItsmR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupItsmReceiver.property.connectionId">connectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#connection_id MonitorActionGroup#connection_id}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupItsmReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupItsmReceiver.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#region MonitorActionGroup#region}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupItsmReceiver.property.ticketConfiguration">ticketConfiguration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#ticket_configuration MonitorActionGroup#ticket_configuration}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupItsmReceiver.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#workspace_id MonitorActionGroup#workspace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupItsmReceiver.property.connectionId">connectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#connection_id MonitorActionGroup#connection_id}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupItsmReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupItsmReceiver.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#region MonitorActionGroup#region}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupItsmReceiver.property.ticketConfiguration">ticketConfiguration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#ticket_configuration MonitorActionGroup#ticket_configuration}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupItsmReceiver.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#workspace_id MonitorActionGroup#workspace_id}. |
 
 ---
 
@@ -2208,7 +2208,7 @@ public readonly connectionId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#connection_id MonitorActionGroup#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#connection_id MonitorActionGroup#connection_id}.
 
 ---
 
@@ -2220,7 +2220,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
 
 ---
 
@@ -2232,7 +2232,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#region MonitorActionGroup#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#region MonitorActionGroup#region}.
 
 ---
 
@@ -2244,7 +2244,7 @@ public readonly ticketConfiguration: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#ticket_configuration MonitorActionGroup#ticket_configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#ticket_configuration MonitorActionGroup#ticket_configuration}.
 
 ---
 
@@ -2256,7 +2256,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#workspace_id MonitorActionGroup#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#workspace_id MonitorActionGroup#workspace_id}.
 
 ---
 
@@ -2274,10 +2274,10 @@ const monitorActionGroupLogicAppReceiver: monitorActionGroup.MonitorActionGroupL
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupLogicAppReceiver.property.callbackUrl">callbackUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#callback_url MonitorActionGroup#callback_url}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupLogicAppReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupLogicAppReceiver.property.resourceId">resourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#resource_id MonitorActionGroup#resource_id}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupLogicAppReceiver.property.useCommonAlertSchema">useCommonAlertSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupLogicAppReceiver.property.callbackUrl">callbackUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#callback_url MonitorActionGroup#callback_url}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupLogicAppReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupLogicAppReceiver.property.resourceId">resourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#resource_id MonitorActionGroup#resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupLogicAppReceiver.property.useCommonAlertSchema">useCommonAlertSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}. |
 
 ---
 
@@ -2289,7 +2289,7 @@ public readonly callbackUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#callback_url MonitorActionGroup#callback_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#callback_url MonitorActionGroup#callback_url}.
 
 ---
 
@@ -2301,7 +2301,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
 
 ---
 
@@ -2313,7 +2313,7 @@ public readonly resourceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#resource_id MonitorActionGroup#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#resource_id MonitorActionGroup#resource_id}.
 
 ---
 
@@ -2325,7 +2325,7 @@ public readonly useCommonAlertSchema: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}.
 
 ---
 
@@ -2343,9 +2343,9 @@ const monitorActionGroupSmsReceiver: monitorActionGroup.MonitorActionGroupSmsRec
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupSmsReceiver.property.countryCode">countryCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#country_code MonitorActionGroup#country_code}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupSmsReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupSmsReceiver.property.phoneNumber">phoneNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#phone_number MonitorActionGroup#phone_number}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupSmsReceiver.property.countryCode">countryCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#country_code MonitorActionGroup#country_code}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupSmsReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupSmsReceiver.property.phoneNumber">phoneNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#phone_number MonitorActionGroup#phone_number}. |
 
 ---
 
@@ -2357,7 +2357,7 @@ public readonly countryCode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#country_code MonitorActionGroup#country_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#country_code MonitorActionGroup#country_code}.
 
 ---
 
@@ -2369,7 +2369,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
 
 ---
 
@@ -2381,7 +2381,7 @@ public readonly phoneNumber: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#phone_number MonitorActionGroup#phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#phone_number MonitorActionGroup#phone_number}.
 
 ---
 
@@ -2399,10 +2399,10 @@ const monitorActionGroupTimeouts: monitorActionGroup.MonitorActionGroupTimeouts 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#create MonitorActionGroup#create}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#delete MonitorActionGroup#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#read MonitorActionGroup#read}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#update MonitorActionGroup#update}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#create MonitorActionGroup#create}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#delete MonitorActionGroup#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#read MonitorActionGroup#read}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#update MonitorActionGroup#update}. |
 
 ---
 
@@ -2414,7 +2414,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#create MonitorActionGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#create MonitorActionGroup#create}.
 
 ---
 
@@ -2426,7 +2426,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#delete MonitorActionGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#delete MonitorActionGroup#delete}.
 
 ---
 
@@ -2438,7 +2438,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#read MonitorActionGroup#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#read MonitorActionGroup#read}.
 
 ---
 
@@ -2450,7 +2450,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#update MonitorActionGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#update MonitorActionGroup#update}.
 
 ---
 
@@ -2468,9 +2468,9 @@ const monitorActionGroupVoiceReceiver: monitorActionGroup.MonitorActionGroupVoic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupVoiceReceiver.property.countryCode">countryCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#country_code MonitorActionGroup#country_code}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupVoiceReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupVoiceReceiver.property.phoneNumber">phoneNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#phone_number MonitorActionGroup#phone_number}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupVoiceReceiver.property.countryCode">countryCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#country_code MonitorActionGroup#country_code}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupVoiceReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupVoiceReceiver.property.phoneNumber">phoneNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#phone_number MonitorActionGroup#phone_number}. |
 
 ---
 
@@ -2482,7 +2482,7 @@ public readonly countryCode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#country_code MonitorActionGroup#country_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#country_code MonitorActionGroup#country_code}.
 
 ---
 
@@ -2494,7 +2494,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
 
 ---
 
@@ -2506,7 +2506,7 @@ public readonly phoneNumber: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#phone_number MonitorActionGroup#phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#phone_number MonitorActionGroup#phone_number}.
 
 ---
 
@@ -2524,10 +2524,10 @@ const monitorActionGroupWebhookReceiver: monitorActionGroup.MonitorActionGroupWe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupWebhookReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupWebhookReceiver.property.serviceUri">serviceUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#service_uri MonitorActionGroup#service_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupWebhookReceiver.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupWebhookReceiver.property.serviceUri">serviceUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#service_uri MonitorActionGroup#service_uri}. |
 | <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupWebhookReceiver.property.aadAuth">aadAuth</a></code> | <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupWebhookReceiverAadAuth">MonitorActionGroupWebhookReceiverAadAuth</a></code> | aad_auth block. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupWebhookReceiver.property.useCommonAlertSchema">useCommonAlertSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupWebhookReceiver.property.useCommonAlertSchema">useCommonAlertSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}. |
 
 ---
 
@@ -2539,7 +2539,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#name MonitorActionGroup#name}.
 
 ---
 
@@ -2551,7 +2551,7 @@ public readonly serviceUri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#service_uri MonitorActionGroup#service_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#service_uri MonitorActionGroup#service_uri}.
 
 ---
 
@@ -2565,7 +2565,7 @@ public readonly aadAuth: MonitorActionGroupWebhookReceiverAadAuth;
 
 aad_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#aad_auth MonitorActionGroup#aad_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#aad_auth MonitorActionGroup#aad_auth}
 
 ---
 
@@ -2577,7 +2577,7 @@ public readonly useCommonAlertSchema: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#use_common_alert_schema MonitorActionGroup#use_common_alert_schema}.
 
 ---
 
@@ -2595,9 +2595,9 @@ const monitorActionGroupWebhookReceiverAadAuth: monitorActionGroup.MonitorAction
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupWebhookReceiverAadAuth.property.objectId">objectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#object_id MonitorActionGroup#object_id}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupWebhookReceiverAadAuth.property.identifierUri">identifierUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#identifier_uri MonitorActionGroup#identifier_uri}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupWebhookReceiverAadAuth.property.tenantId">tenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#tenant_id MonitorActionGroup#tenant_id}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupWebhookReceiverAadAuth.property.objectId">objectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#object_id MonitorActionGroup#object_id}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupWebhookReceiverAadAuth.property.identifierUri">identifierUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#identifier_uri MonitorActionGroup#identifier_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActionGroup.MonitorActionGroupWebhookReceiverAadAuth.property.tenantId">tenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#tenant_id MonitorActionGroup#tenant_id}. |
 
 ---
 
@@ -2609,7 +2609,7 @@ public readonly objectId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#object_id MonitorActionGroup#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#object_id MonitorActionGroup#object_id}.
 
 ---
 
@@ -2621,7 +2621,7 @@ public readonly identifierUri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#identifier_uri MonitorActionGroup#identifier_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#identifier_uri MonitorActionGroup#identifier_uri}.
 
 ---
 
@@ -2633,7 +2633,7 @@ public readonly tenantId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/monitor_action_group#tenant_id MonitorActionGroup#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/monitor_action_group#tenant_id MonitorActionGroup#tenant_id}.
 
 ---
 

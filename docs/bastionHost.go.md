@@ -4,7 +4,7 @@
 
 ### BastionHost <a name="BastionHost" id="@cdktn/provider-azurerm.bastionHost.BastionHost"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host azurerm_bastion_host}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host azurerm_bastion_host}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.bastionHost.BastionHost.Initializer"></a>
 
@@ -620,7 +620,7 @@ The construct id used in the generated config for the BastionHost to import.
 
 The id of the existing BastionHost that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1280,24 +1280,24 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/bastionhost"
 | <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#location BastionHost#location}. |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#name BastionHost#name}. |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#resource_group_name BastionHost#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.copyPasteEnabled">CopyPasteEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#copy_paste_enabled BastionHost#copy_paste_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.fileCopyEnabled">FileCopyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#file_copy_enabled BastionHost#file_copy_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#id BastionHost#id}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#location BastionHost#location}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#name BastionHost#name}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#resource_group_name BastionHost#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.copyPasteEnabled">CopyPasteEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#copy_paste_enabled BastionHost#copy_paste_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.fileCopyEnabled">FileCopyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#file_copy_enabled BastionHost#file_copy_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#id BastionHost#id}. |
 | <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.ipConfiguration">IpConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostIpConfiguration">BastionHostIpConfiguration</a></code> | ip_configuration block. |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.ipConnectEnabled">IpConnectEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#ip_connect_enabled BastionHost#ip_connect_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.kerberosEnabled">KerberosEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#kerberos_enabled BastionHost#kerberos_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.scaleUnits">ScaleUnits</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#scale_units BastionHost#scale_units}. |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.sessionRecordingEnabled">SessionRecordingEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#session_recording_enabled BastionHost#session_recording_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.shareableLinkEnabled">ShareableLinkEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#shareable_link_enabled BastionHost#shareable_link_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.sku">Sku</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#sku BastionHost#sku}. |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#tags BastionHost#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.ipConnectEnabled">IpConnectEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#ip_connect_enabled BastionHost#ip_connect_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.kerberosEnabled">KerberosEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#kerberos_enabled BastionHost#kerberos_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.scaleUnits">ScaleUnits</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#scale_units BastionHost#scale_units}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.sessionRecordingEnabled">SessionRecordingEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#session_recording_enabled BastionHost#session_recording_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.shareableLinkEnabled">ShareableLinkEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#shareable_link_enabled BastionHost#shareable_link_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.sku">Sku</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#sku BastionHost#sku}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#tags BastionHost#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostTimeouts">BastionHostTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.tunnelingEnabled">TunnelingEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#tunneling_enabled BastionHost#tunneling_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.virtualNetworkId">VirtualNetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#virtual_network_id BastionHost#virtual_network_id}. |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.zones">Zones</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#zones BastionHost#zones}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.tunnelingEnabled">TunnelingEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#tunneling_enabled BastionHost#tunneling_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.virtualNetworkId">VirtualNetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#virtual_network_id BastionHost#virtual_network_id}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostConfig.property.zones">Zones</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#zones BastionHost#zones}. |
 
 ---
 
@@ -1379,7 +1379,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#location BastionHost#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#location BastionHost#location}.
 
 ---
 
@@ -1391,7 +1391,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#name BastionHost#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#name BastionHost#name}.
 
 ---
 
@@ -1403,7 +1403,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#resource_group_name BastionHost#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#resource_group_name BastionHost#resource_group_name}.
 
 ---
 
@@ -1415,7 +1415,7 @@ CopyPasteEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#copy_paste_enabled BastionHost#copy_paste_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#copy_paste_enabled BastionHost#copy_paste_enabled}.
 
 ---
 
@@ -1427,7 +1427,7 @@ FileCopyEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#file_copy_enabled BastionHost#file_copy_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#file_copy_enabled BastionHost#file_copy_enabled}.
 
 ---
 
@@ -1439,7 +1439,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#id BastionHost#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#id BastionHost#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1456,7 +1456,7 @@ IpConfiguration BastionHostIpConfiguration
 
 ip_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#ip_configuration BastionHost#ip_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#ip_configuration BastionHost#ip_configuration}
 
 ---
 
@@ -1468,7 +1468,7 @@ IpConnectEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#ip_connect_enabled BastionHost#ip_connect_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#ip_connect_enabled BastionHost#ip_connect_enabled}.
 
 ---
 
@@ -1480,7 +1480,7 @@ KerberosEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#kerberos_enabled BastionHost#kerberos_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#kerberos_enabled BastionHost#kerberos_enabled}.
 
 ---
 
@@ -1492,7 +1492,7 @@ ScaleUnits *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#scale_units BastionHost#scale_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#scale_units BastionHost#scale_units}.
 
 ---
 
@@ -1504,7 +1504,7 @@ SessionRecordingEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#session_recording_enabled BastionHost#session_recording_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#session_recording_enabled BastionHost#session_recording_enabled}.
 
 ---
 
@@ -1516,7 +1516,7 @@ ShareableLinkEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#shareable_link_enabled BastionHost#shareable_link_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#shareable_link_enabled BastionHost#shareable_link_enabled}.
 
 ---
 
@@ -1528,7 +1528,7 @@ Sku *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#sku BastionHost#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#sku BastionHost#sku}.
 
 ---
 
@@ -1540,7 +1540,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#tags BastionHost#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#tags BastionHost#tags}.
 
 ---
 
@@ -1554,7 +1554,7 @@ Timeouts BastionHostTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#timeouts BastionHost#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#timeouts BastionHost#timeouts}
 
 ---
 
@@ -1566,7 +1566,7 @@ TunnelingEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#tunneling_enabled BastionHost#tunneling_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#tunneling_enabled BastionHost#tunneling_enabled}.
 
 ---
 
@@ -1578,7 +1578,7 @@ VirtualNetworkId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#virtual_network_id BastionHost#virtual_network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#virtual_network_id BastionHost#virtual_network_id}.
 
 ---
 
@@ -1590,7 +1590,7 @@ Zones *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#zones BastionHost#zones}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#zones BastionHost#zones}.
 
 ---
 
@@ -1612,9 +1612,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/bastionhost"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostIpConfiguration.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#name BastionHost#name}. |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostIpConfiguration.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#subnet_id BastionHost#subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostIpConfiguration.property.publicIpAddressId">PublicIpAddressId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#public_ip_address_id BastionHost#public_ip_address_id}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostIpConfiguration.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#name BastionHost#name}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostIpConfiguration.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#subnet_id BastionHost#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostIpConfiguration.property.publicIpAddressId">PublicIpAddressId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#public_ip_address_id BastionHost#public_ip_address_id}. |
 
 ---
 
@@ -1626,7 +1626,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#name BastionHost#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#name BastionHost#name}.
 
 ---
 
@@ -1638,7 +1638,7 @@ SubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#subnet_id BastionHost#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#subnet_id BastionHost#subnet_id}.
 
 ---
 
@@ -1650,7 +1650,7 @@ PublicIpAddressId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#public_ip_address_id BastionHost#public_ip_address_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#public_ip_address_id BastionHost#public_ip_address_id}.
 
 ---
 
@@ -1673,10 +1673,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/bastionhost"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#create BastionHost#create}. |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#delete BastionHost#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#read BastionHost#read}. |
-| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#update BastionHost#update}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#create BastionHost#create}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#delete BastionHost#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#read BastionHost#read}. |
+| <code><a href="#@cdktn/provider-azurerm.bastionHost.BastionHostTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#update BastionHost#update}. |
 
 ---
 
@@ -1688,7 +1688,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#create BastionHost#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#create BastionHost#create}.
 
 ---
 
@@ -1700,7 +1700,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#delete BastionHost#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#delete BastionHost#delete}.
 
 ---
 
@@ -1712,7 +1712,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#read BastionHost#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#read BastionHost#read}.
 
 ---
 
@@ -1724,7 +1724,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/bastion_host#update BastionHost#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/bastion_host#update BastionHost#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### NetworkSecurityPerimeterProfile <a name="NetworkSecurityPerimeterProfile" id="@cdktn/provider-azurerm.networkSecurityPerimeterProfile.NetworkSecurityPerimeterProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/network_security_perimeter_profile azurerm_network_security_perimeter_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/network_security_perimeter_profile azurerm_network_security_perimeter_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkSecurityPerimeterProfile.NetworkSecurityPerimeterProfile.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the NetworkSecurityPerimeterPr
 
 The id of the existing NetworkSecurityPerimeterProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/network_security_perimeter_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/network_security_perimeter_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -820,9 +820,9 @@ const networkSecurityPerimeterProfileConfig: networkSecurityPerimeterProfile.Net
 | <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeterProfile.NetworkSecurityPerimeterProfileConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeterProfile.NetworkSecurityPerimeterProfileConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeterProfile.NetworkSecurityPerimeterProfileConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeterProfile.NetworkSecurityPerimeterProfileConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/network_security_perimeter_profile#name NetworkSecurityPerimeterProfile#name}. |
-| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeterProfile.NetworkSecurityPerimeterProfileConfig.property.networkSecurityPerimeterId">networkSecurityPerimeterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/network_security_perimeter_profile#network_security_perimeter_id NetworkSecurityPerimeterProfile#network_security_perimeter_id}. |
-| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeterProfile.NetworkSecurityPerimeterProfileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/network_security_perimeter_profile#id NetworkSecurityPerimeterProfile#id}. |
+| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeterProfile.NetworkSecurityPerimeterProfileConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/network_security_perimeter_profile#name NetworkSecurityPerimeterProfile#name}. |
+| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeterProfile.NetworkSecurityPerimeterProfileConfig.property.networkSecurityPerimeterId">networkSecurityPerimeterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/network_security_perimeter_profile#network_security_perimeter_id NetworkSecurityPerimeterProfile#network_security_perimeter_id}. |
+| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeterProfile.NetworkSecurityPerimeterProfileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/network_security_perimeter_profile#id NetworkSecurityPerimeterProfile#id}. |
 | <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeterProfile.NetworkSecurityPerimeterProfileConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeterProfile.NetworkSecurityPerimeterProfileTimeouts">NetworkSecurityPerimeterProfileTimeouts</a></code> | timeouts block. |
 
 ---
@@ -905,7 +905,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/network_security_perimeter_profile#name NetworkSecurityPerimeterProfile#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/network_security_perimeter_profile#name NetworkSecurityPerimeterProfile#name}.
 
 ---
 
@@ -917,7 +917,7 @@ public readonly networkSecurityPerimeterId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/network_security_perimeter_profile#network_security_perimeter_id NetworkSecurityPerimeterProfile#network_security_perimeter_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/network_security_perimeter_profile#network_security_perimeter_id NetworkSecurityPerimeterProfile#network_security_perimeter_id}.
 
 ---
 
@@ -929,7 +929,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/network_security_perimeter_profile#id NetworkSecurityPerimeterProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/network_security_perimeter_profile#id NetworkSecurityPerimeterProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -946,7 +946,7 @@ public readonly timeouts: NetworkSecurityPerimeterProfileTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/network_security_perimeter_profile#timeouts NetworkSecurityPerimeterProfile#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/network_security_perimeter_profile#timeouts NetworkSecurityPerimeterProfile#timeouts}
 
 ---
 
@@ -964,9 +964,9 @@ const networkSecurityPerimeterProfileTimeouts: networkSecurityPerimeterProfile.N
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeterProfile.NetworkSecurityPerimeterProfileTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/network_security_perimeter_profile#create NetworkSecurityPerimeterProfile#create}. |
-| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeterProfile.NetworkSecurityPerimeterProfileTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/network_security_perimeter_profile#delete NetworkSecurityPerimeterProfile#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeterProfile.NetworkSecurityPerimeterProfileTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/network_security_perimeter_profile#read NetworkSecurityPerimeterProfile#read}. |
+| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeterProfile.NetworkSecurityPerimeterProfileTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/network_security_perimeter_profile#create NetworkSecurityPerimeterProfile#create}. |
+| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeterProfile.NetworkSecurityPerimeterProfileTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/network_security_perimeter_profile#delete NetworkSecurityPerimeterProfile#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeterProfile.NetworkSecurityPerimeterProfileTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/network_security_perimeter_profile#read NetworkSecurityPerimeterProfile#read}. |
 
 ---
 
@@ -978,7 +978,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/network_security_perimeter_profile#create NetworkSecurityPerimeterProfile#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/network_security_perimeter_profile#create NetworkSecurityPerimeterProfile#create}.
 
 ---
 
@@ -990,7 +990,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/network_security_perimeter_profile#delete NetworkSecurityPerimeterProfile#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/network_security_perimeter_profile#delete NetworkSecurityPerimeterProfile#delete}.
 
 ---
 
@@ -1002,7 +1002,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/network_security_perimeter_profile#read NetworkSecurityPerimeterProfile#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/network_security_perimeter_profile#read NetworkSecurityPerimeterProfile#read}.
 
 ---
 

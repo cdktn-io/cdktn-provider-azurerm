@@ -4,7 +4,7 @@
 
 ### WebPubsubSocketio <a name="WebPubsubSocketio" id="@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketio"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio azurerm_web_pubsub_socketio}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio azurerm_web_pubsub_socketio}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketio.Initializer"></a>
 
@@ -619,7 +619,7 @@ The construct id used in the generated config for the WebPubsubSocketio to impor
 
 The id of the existing WebPubsubSocketio that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1322,23 +1322,23 @@ new WebPubsubSocketioConfig {
 | <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#location WebPubsubSocketio#location}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#name WebPubsubSocketio#name}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#resource_group_name WebPubsubSocketio#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#location WebPubsubSocketio#location}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#name WebPubsubSocketio#name}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#resource_group_name WebPubsubSocketio#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.sku">Sku</a></code> | <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioSku">WebPubsubSocketioSku</a></code> | sku block. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.aadAuthEnabled">AadAuthEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#aad_auth_enabled WebPubsubSocketio#aad_auth_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#id WebPubsubSocketio#id}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.aadAuthEnabled">AadAuthEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#aad_auth_enabled WebPubsubSocketio#aad_auth_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#id WebPubsubSocketio#id}. |
 | <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioIdentity">WebPubsubSocketioIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.liveTraceConnectivityLogsEnabled">LiveTraceConnectivityLogsEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#live_trace_connectivity_logs_enabled WebPubsubSocketio#live_trace_connectivity_logs_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.liveTraceEnabled">LiveTraceEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#live_trace_enabled WebPubsubSocketio#live_trace_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.liveTraceHttpRequestLogsEnabled">LiveTraceHttpRequestLogsEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#live_trace_http_request_logs_enabled WebPubsubSocketio#live_trace_http_request_logs_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.liveTraceMessagingLogsEnabled">LiveTraceMessagingLogsEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#live_trace_messaging_logs_enabled WebPubsubSocketio#live_trace_messaging_logs_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.localAuthEnabled">LocalAuthEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#local_auth_enabled WebPubsubSocketio#local_auth_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.publicNetworkAccess">PublicNetworkAccess</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#public_network_access WebPubsubSocketio#public_network_access}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.serviceMode">ServiceMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#service_mode WebPubsubSocketio#service_mode}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#tags WebPubsubSocketio#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.liveTraceConnectivityLogsEnabled">LiveTraceConnectivityLogsEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#live_trace_connectivity_logs_enabled WebPubsubSocketio#live_trace_connectivity_logs_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.liveTraceEnabled">LiveTraceEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#live_trace_enabled WebPubsubSocketio#live_trace_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.liveTraceHttpRequestLogsEnabled">LiveTraceHttpRequestLogsEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#live_trace_http_request_logs_enabled WebPubsubSocketio#live_trace_http_request_logs_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.liveTraceMessagingLogsEnabled">LiveTraceMessagingLogsEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#live_trace_messaging_logs_enabled WebPubsubSocketio#live_trace_messaging_logs_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.localAuthEnabled">LocalAuthEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#local_auth_enabled WebPubsubSocketio#local_auth_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.publicNetworkAccess">PublicNetworkAccess</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#public_network_access WebPubsubSocketio#public_network_access}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.serviceMode">ServiceMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#service_mode WebPubsubSocketio#service_mode}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#tags WebPubsubSocketio#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioTimeouts">WebPubsubSocketioTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.tlsClientCertEnabled">TlsClientCertEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#tls_client_cert_enabled WebPubsubSocketio#tls_client_cert_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioConfig.property.tlsClientCertEnabled">TlsClientCertEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#tls_client_cert_enabled WebPubsubSocketio#tls_client_cert_enabled}. |
 
 ---
 
@@ -1420,7 +1420,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#location WebPubsubSocketio#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#location WebPubsubSocketio#location}.
 
 ---
 
@@ -1432,7 +1432,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#name WebPubsubSocketio#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#name WebPubsubSocketio#name}.
 
 ---
 
@@ -1444,7 +1444,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#resource_group_name WebPubsubSocketio#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#resource_group_name WebPubsubSocketio#resource_group_name}.
 
 ---
 
@@ -1458,7 +1458,7 @@ public WebPubsubSocketioSku Sku { get; set; }
 
 sku block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#sku WebPubsubSocketio#sku}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#sku WebPubsubSocketio#sku}
 
 ---
 
@@ -1470,7 +1470,7 @@ public bool|IResolvable AadAuthEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#aad_auth_enabled WebPubsubSocketio#aad_auth_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#aad_auth_enabled WebPubsubSocketio#aad_auth_enabled}.
 
 ---
 
@@ -1482,7 +1482,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#id WebPubsubSocketio#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#id WebPubsubSocketio#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1499,7 +1499,7 @@ public WebPubsubSocketioIdentity Identity { get; set; }
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#identity WebPubsubSocketio#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#identity WebPubsubSocketio#identity}
 
 ---
 
@@ -1511,7 +1511,7 @@ public bool|IResolvable LiveTraceConnectivityLogsEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#live_trace_connectivity_logs_enabled WebPubsubSocketio#live_trace_connectivity_logs_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#live_trace_connectivity_logs_enabled WebPubsubSocketio#live_trace_connectivity_logs_enabled}.
 
 ---
 
@@ -1523,7 +1523,7 @@ public bool|IResolvable LiveTraceEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#live_trace_enabled WebPubsubSocketio#live_trace_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#live_trace_enabled WebPubsubSocketio#live_trace_enabled}.
 
 ---
 
@@ -1535,7 +1535,7 @@ public bool|IResolvable LiveTraceHttpRequestLogsEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#live_trace_http_request_logs_enabled WebPubsubSocketio#live_trace_http_request_logs_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#live_trace_http_request_logs_enabled WebPubsubSocketio#live_trace_http_request_logs_enabled}.
 
 ---
 
@@ -1547,7 +1547,7 @@ public bool|IResolvable LiveTraceMessagingLogsEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#live_trace_messaging_logs_enabled WebPubsubSocketio#live_trace_messaging_logs_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#live_trace_messaging_logs_enabled WebPubsubSocketio#live_trace_messaging_logs_enabled}.
 
 ---
 
@@ -1559,7 +1559,7 @@ public bool|IResolvable LocalAuthEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#local_auth_enabled WebPubsubSocketio#local_auth_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#local_auth_enabled WebPubsubSocketio#local_auth_enabled}.
 
 ---
 
@@ -1571,7 +1571,7 @@ public string PublicNetworkAccess { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#public_network_access WebPubsubSocketio#public_network_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#public_network_access WebPubsubSocketio#public_network_access}.
 
 ---
 
@@ -1583,7 +1583,7 @@ public string ServiceMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#service_mode WebPubsubSocketio#service_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#service_mode WebPubsubSocketio#service_mode}.
 
 ---
 
@@ -1595,7 +1595,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#tags WebPubsubSocketio#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#tags WebPubsubSocketio#tags}.
 
 ---
 
@@ -1609,7 +1609,7 @@ public WebPubsubSocketioTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#timeouts WebPubsubSocketio#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#timeouts WebPubsubSocketio#timeouts}
 
 ---
 
@@ -1621,7 +1621,7 @@ public bool|IResolvable TlsClientCertEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#tls_client_cert_enabled WebPubsubSocketio#tls_client_cert_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#tls_client_cert_enabled WebPubsubSocketio#tls_client_cert_enabled}.
 
 ---
 
@@ -1642,8 +1642,8 @@ new WebPubsubSocketioIdentity {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#type WebPubsubSocketio#type}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#identity_ids WebPubsubSocketio#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#type WebPubsubSocketio#type}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#identity_ids WebPubsubSocketio#identity_ids}. |
 
 ---
 
@@ -1655,7 +1655,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#type WebPubsubSocketio#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#type WebPubsubSocketio#type}.
 
 ---
 
@@ -1667,7 +1667,7 @@ public string[] IdentityIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#identity_ids WebPubsubSocketio#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#identity_ids WebPubsubSocketio#identity_ids}.
 
 ---
 
@@ -1688,8 +1688,8 @@ new WebPubsubSocketioSku {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioSku.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#name WebPubsubSocketio#name}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioSku.property.capacity">Capacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#capacity WebPubsubSocketio#capacity}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioSku.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#name WebPubsubSocketio#name}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioSku.property.capacity">Capacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#capacity WebPubsubSocketio#capacity}. |
 
 ---
 
@@ -1701,7 +1701,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#name WebPubsubSocketio#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#name WebPubsubSocketio#name}.
 
 ---
 
@@ -1713,7 +1713,7 @@ public double Capacity { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#capacity WebPubsubSocketio#capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#capacity WebPubsubSocketio#capacity}.
 
 ---
 
@@ -1736,10 +1736,10 @@ new WebPubsubSocketioTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#create WebPubsubSocketio#create}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#delete WebPubsubSocketio#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#read WebPubsubSocketio#read}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#update WebPubsubSocketio#update}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#create WebPubsubSocketio#create}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#delete WebPubsubSocketio#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#read WebPubsubSocketio#read}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubSocketio.WebPubsubSocketioTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#update WebPubsubSocketio#update}. |
 
 ---
 
@@ -1751,7 +1751,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#create WebPubsubSocketio#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#create WebPubsubSocketio#create}.
 
 ---
 
@@ -1763,7 +1763,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#delete WebPubsubSocketio#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#delete WebPubsubSocketio#delete}.
 
 ---
 
@@ -1775,7 +1775,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#read WebPubsubSocketio#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#read WebPubsubSocketio#read}.
 
 ---
 
@@ -1787,7 +1787,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/web_pubsub_socketio#update WebPubsubSocketio#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/web_pubsub_socketio#update WebPubsubSocketio#update}.
 
 ---
 

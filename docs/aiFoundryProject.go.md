@@ -4,7 +4,7 @@
 
 ### AiFoundryProject <a name="AiFoundryProject" id="@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project azurerm_ai_foundry_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project azurerm_ai_foundry_project}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProject.Initializer"></a>
 
@@ -571,7 +571,7 @@ The construct id used in the generated config for the AiFoundryProject to import
 
 The id of the existing AiFoundryProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1059,16 +1059,16 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/aifoundryproje
 | <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.aiServicesHubId">AiServicesHubId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#ai_services_hub_id AiFoundryProject#ai_services_hub_id}. |
-| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#location AiFoundryProject#location}. |
-| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#name AiFoundryProject#name}. |
-| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#description AiFoundryProject#description}. |
-| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.friendlyName">FriendlyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#friendly_name AiFoundryProject#friendly_name}. |
-| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.highBusinessImpactEnabled">HighBusinessImpactEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#high_business_impact_enabled AiFoundryProject#high_business_impact_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#id AiFoundryProject#id}. |
+| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.aiServicesHubId">AiServicesHubId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#ai_services_hub_id AiFoundryProject#ai_services_hub_id}. |
+| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#location AiFoundryProject#location}. |
+| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#name AiFoundryProject#name}. |
+| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#description AiFoundryProject#description}. |
+| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.friendlyName">FriendlyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#friendly_name AiFoundryProject#friendly_name}. |
+| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.highBusinessImpactEnabled">HighBusinessImpactEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#high_business_impact_enabled AiFoundryProject#high_business_impact_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#id AiFoundryProject#id}. |
 | <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectIdentity">AiFoundryProjectIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.primaryUserAssignedIdentity">PrimaryUserAssignedIdentity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#primary_user_assigned_identity AiFoundryProject#primary_user_assigned_identity}. |
-| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#tags AiFoundryProject#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.primaryUserAssignedIdentity">PrimaryUserAssignedIdentity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#primary_user_assigned_identity AiFoundryProject#primary_user_assigned_identity}. |
+| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#tags AiFoundryProject#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectTimeouts">AiFoundryProjectTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1151,7 +1151,7 @@ AiServicesHubId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#ai_services_hub_id AiFoundryProject#ai_services_hub_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#ai_services_hub_id AiFoundryProject#ai_services_hub_id}.
 
 ---
 
@@ -1163,7 +1163,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#location AiFoundryProject#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#location AiFoundryProject#location}.
 
 ---
 
@@ -1175,7 +1175,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#name AiFoundryProject#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#name AiFoundryProject#name}.
 
 ---
 
@@ -1187,7 +1187,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#description AiFoundryProject#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#description AiFoundryProject#description}.
 
 ---
 
@@ -1199,7 +1199,7 @@ FriendlyName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#friendly_name AiFoundryProject#friendly_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#friendly_name AiFoundryProject#friendly_name}.
 
 ---
 
@@ -1211,7 +1211,7 @@ HighBusinessImpactEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#high_business_impact_enabled AiFoundryProject#high_business_impact_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#high_business_impact_enabled AiFoundryProject#high_business_impact_enabled}.
 
 ---
 
@@ -1223,7 +1223,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#id AiFoundryProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#id AiFoundryProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1240,7 +1240,7 @@ Identity AiFoundryProjectIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#identity AiFoundryProject#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#identity AiFoundryProject#identity}
 
 ---
 
@@ -1252,7 +1252,7 @@ PrimaryUserAssignedIdentity *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#primary_user_assigned_identity AiFoundryProject#primary_user_assigned_identity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#primary_user_assigned_identity AiFoundryProject#primary_user_assigned_identity}.
 
 ---
 
@@ -1264,7 +1264,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#tags AiFoundryProject#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#tags AiFoundryProject#tags}.
 
 ---
 
@@ -1278,7 +1278,7 @@ Timeouts AiFoundryProjectTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#timeouts AiFoundryProject#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#timeouts AiFoundryProject#timeouts}
 
 ---
 
@@ -1299,8 +1299,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/aifoundryproje
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#type AiFoundryProject#type}. |
-| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#identity_ids AiFoundryProject#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#type AiFoundryProject#type}. |
+| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#identity_ids AiFoundryProject#identity_ids}. |
 
 ---
 
@@ -1312,7 +1312,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#type AiFoundryProject#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#type AiFoundryProject#type}.
 
 ---
 
@@ -1324,7 +1324,7 @@ IdentityIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#identity_ids AiFoundryProject#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#identity_ids AiFoundryProject#identity_ids}.
 
 ---
 
@@ -1347,10 +1347,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/aifoundryproje
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#create AiFoundryProject#create}. |
-| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#delete AiFoundryProject#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#read AiFoundryProject#read}. |
-| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#update AiFoundryProject#update}. |
+| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#create AiFoundryProject#create}. |
+| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#delete AiFoundryProject#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#read AiFoundryProject#read}. |
+| <code><a href="#@cdktn/provider-azurerm.aiFoundryProject.AiFoundryProjectTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#update AiFoundryProject#update}. |
 
 ---
 
@@ -1362,7 +1362,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#create AiFoundryProject#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#create AiFoundryProject#create}.
 
 ---
 
@@ -1374,7 +1374,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#delete AiFoundryProject#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#delete AiFoundryProject#delete}.
 
 ---
 
@@ -1386,7 +1386,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#read AiFoundryProject#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#read AiFoundryProject#read}.
 
 ---
 
@@ -1398,7 +1398,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/ai_foundry_project#update AiFoundryProject#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/ai_foundry_project#update AiFoundryProject#update}.
 
 ---
 

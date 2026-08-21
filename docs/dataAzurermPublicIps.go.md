@@ -4,7 +4,7 @@
 
 ### DataAzurermPublicIps <a name="DataAzurermPublicIps" id="@cdktn/provider-azurerm.dataAzurermPublicIps.DataAzurermPublicIps"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/public_ips azurerm_public_ips}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/public_ips azurerm_public_ips}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPublicIps.DataAzurermPublicIps.Initializer"></a>
 
@@ -435,7 +435,7 @@ The construct id used in the generated config for the DataAzurermPublicIps to im
 
 The id of the existing DataAzurermPublicIps that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/public_ips#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/public_ips#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -786,11 +786,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermpub
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIps.DataAzurermPublicIpsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIps.DataAzurermPublicIpsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIps.DataAzurermPublicIpsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIps.DataAzurermPublicIpsConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/public_ips#resource_group_name DataAzurermPublicIps#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIps.DataAzurermPublicIpsConfig.property.allocationType">AllocationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/public_ips#allocation_type DataAzurermPublicIps#allocation_type}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIps.DataAzurermPublicIpsConfig.property.attachmentStatus">AttachmentStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/public_ips#attachment_status DataAzurermPublicIps#attachment_status}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIps.DataAzurermPublicIpsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/public_ips#id DataAzurermPublicIps#id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIps.DataAzurermPublicIpsConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/public_ips#name_prefix DataAzurermPublicIps#name_prefix}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIps.DataAzurermPublicIpsConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/public_ips#resource_group_name DataAzurermPublicIps#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIps.DataAzurermPublicIpsConfig.property.allocationType">AllocationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/public_ips#allocation_type DataAzurermPublicIps#allocation_type}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIps.DataAzurermPublicIpsConfig.property.attachmentStatus">AttachmentStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/public_ips#attachment_status DataAzurermPublicIps#attachment_status}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIps.DataAzurermPublicIpsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/public_ips#id DataAzurermPublicIps#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIps.DataAzurermPublicIpsConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/public_ips#name_prefix DataAzurermPublicIps#name_prefix}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIps.DataAzurermPublicIpsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIps.DataAzurermPublicIpsTimeouts">DataAzurermPublicIpsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -873,7 +873,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/public_ips#resource_group_name DataAzurermPublicIps#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/public_ips#resource_group_name DataAzurermPublicIps#resource_group_name}.
 
 ---
 
@@ -885,7 +885,7 @@ AllocationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/public_ips#allocation_type DataAzurermPublicIps#allocation_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/public_ips#allocation_type DataAzurermPublicIps#allocation_type}.
 
 ---
 
@@ -897,7 +897,7 @@ AttachmentStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/public_ips#attachment_status DataAzurermPublicIps#attachment_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/public_ips#attachment_status DataAzurermPublicIps#attachment_status}.
 
 ---
 
@@ -909,7 +909,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/public_ips#id DataAzurermPublicIps#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/public_ips#id DataAzurermPublicIps#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -924,7 +924,7 @@ NamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/public_ips#name_prefix DataAzurermPublicIps#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/public_ips#name_prefix DataAzurermPublicIps#name_prefix}.
 
 ---
 
@@ -938,7 +938,7 @@ Timeouts DataAzurermPublicIpsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/public_ips#timeouts DataAzurermPublicIps#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/public_ips#timeouts DataAzurermPublicIps#timeouts}
 
 ---
 
@@ -971,7 +971,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermpub
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIps.DataAzurermPublicIpsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/public_ips#read DataAzurermPublicIps#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIps.DataAzurermPublicIpsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/public_ips#read DataAzurermPublicIps#read}. |
 
 ---
 
@@ -983,7 +983,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/public_ips#read DataAzurermPublicIps#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/public_ips#read DataAzurermPublicIps#read}.
 
 ---
 

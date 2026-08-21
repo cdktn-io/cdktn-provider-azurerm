@@ -4,7 +4,7 @@
 
 ### KeyVaultCertificate <a name="KeyVaultCertificate" id="@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate azurerm_key_vault_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate azurerm_key_vault_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificate.Initializer"></a>
 
@@ -563,7 +563,7 @@ The construct id used in the generated config for the KeyVaultCertificate to imp
 
 The id of the existing KeyVaultCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1039,8 +1039,8 @@ new KeyVaultCertificateCertificate {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificate.property.contents">Contents</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#contents KeyVaultCertificate#contents}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificate.property.password">Password</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#password KeyVaultCertificate#password}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificate.property.contents">Contents</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#contents KeyVaultCertificate#contents}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificate.property.password">Password</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#password KeyVaultCertificate#password}. |
 
 ---
 
@@ -1052,7 +1052,7 @@ public string Contents { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#contents KeyVaultCertificate#contents}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#contents KeyVaultCertificate#contents}.
 
 ---
 
@@ -1064,7 +1064,7 @@ public string Password { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#password KeyVaultCertificate#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#password KeyVaultCertificate#password}.
 
 ---
 
@@ -1119,7 +1119,7 @@ public KeyVaultCertificateCertificatePolicyIssuerParameters IssuerParameters { g
 
 issuer_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#issuer_parameters KeyVaultCertificate#issuer_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#issuer_parameters KeyVaultCertificate#issuer_parameters}
 
 ---
 
@@ -1133,7 +1133,7 @@ public KeyVaultCertificateCertificatePolicyKeyProperties KeyProperties { get; se
 
 key_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#key_properties KeyVaultCertificate#key_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#key_properties KeyVaultCertificate#key_properties}
 
 ---
 
@@ -1147,7 +1147,7 @@ public KeyVaultCertificateCertificatePolicySecretProperties SecretProperties { g
 
 secret_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#secret_properties KeyVaultCertificate#secret_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#secret_properties KeyVaultCertificate#secret_properties}
 
 ---
 
@@ -1161,7 +1161,7 @@ public IResolvable|KeyVaultCertificateCertificatePolicyLifetimeAction[] Lifetime
 
 lifetime_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#lifetime_action KeyVaultCertificate#lifetime_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#lifetime_action KeyVaultCertificate#lifetime_action}
 
 ---
 
@@ -1175,7 +1175,7 @@ public KeyVaultCertificateCertificatePolicyX509CertificateProperties X509Certifi
 
 x509_certificate_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#x509_certificate_properties KeyVaultCertificate#x509_certificate_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#x509_certificate_properties KeyVaultCertificate#x509_certificate_properties}
 
 ---
 
@@ -1195,7 +1195,7 @@ new KeyVaultCertificateCertificatePolicyIssuerParameters {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyIssuerParameters.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#name KeyVaultCertificate#name}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyIssuerParameters.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#name KeyVaultCertificate#name}. |
 
 ---
 
@@ -1207,7 +1207,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#name KeyVaultCertificate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#name KeyVaultCertificate#name}.
 
 ---
 
@@ -1231,11 +1231,11 @@ new KeyVaultCertificateCertificatePolicyKeyProperties {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyKeyProperties.property.exportable">Exportable</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#exportable KeyVaultCertificate#exportable}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyKeyProperties.property.keyType">KeyType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#key_type KeyVaultCertificate#key_type}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyKeyProperties.property.reuseKey">ReuseKey</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#reuse_key KeyVaultCertificate#reuse_key}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyKeyProperties.property.curve">Curve</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#curve KeyVaultCertificate#curve}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyKeyProperties.property.keySize">KeySize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#key_size KeyVaultCertificate#key_size}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyKeyProperties.property.exportable">Exportable</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#exportable KeyVaultCertificate#exportable}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyKeyProperties.property.keyType">KeyType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#key_type KeyVaultCertificate#key_type}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyKeyProperties.property.reuseKey">ReuseKey</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#reuse_key KeyVaultCertificate#reuse_key}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyKeyProperties.property.curve">Curve</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#curve KeyVaultCertificate#curve}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyKeyProperties.property.keySize">KeySize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#key_size KeyVaultCertificate#key_size}. |
 
 ---
 
@@ -1247,7 +1247,7 @@ public bool|IResolvable Exportable { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#exportable KeyVaultCertificate#exportable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#exportable KeyVaultCertificate#exportable}.
 
 ---
 
@@ -1259,7 +1259,7 @@ public string KeyType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#key_type KeyVaultCertificate#key_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#key_type KeyVaultCertificate#key_type}.
 
 ---
 
@@ -1271,7 +1271,7 @@ public bool|IResolvable ReuseKey { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#reuse_key KeyVaultCertificate#reuse_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#reuse_key KeyVaultCertificate#reuse_key}.
 
 ---
 
@@ -1283,7 +1283,7 @@ public string Curve { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#curve KeyVaultCertificate#curve}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#curve KeyVaultCertificate#curve}.
 
 ---
 
@@ -1295,7 +1295,7 @@ public double KeySize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#key_size KeyVaultCertificate#key_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#key_size KeyVaultCertificate#key_size}.
 
 ---
 
@@ -1331,7 +1331,7 @@ public KeyVaultCertificateCertificatePolicyLifetimeActionAction Action { get; se
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#action KeyVaultCertificate#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#action KeyVaultCertificate#action}
 
 ---
 
@@ -1345,7 +1345,7 @@ public KeyVaultCertificateCertificatePolicyLifetimeActionTrigger Trigger { get; 
 
 trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#trigger KeyVaultCertificate#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#trigger KeyVaultCertificate#trigger}
 
 ---
 
@@ -1365,7 +1365,7 @@ new KeyVaultCertificateCertificatePolicyLifetimeActionAction {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyLifetimeActionAction.property.actionType">ActionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#action_type KeyVaultCertificate#action_type}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyLifetimeActionAction.property.actionType">ActionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#action_type KeyVaultCertificate#action_type}. |
 
 ---
 
@@ -1377,7 +1377,7 @@ public string ActionType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#action_type KeyVaultCertificate#action_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#action_type KeyVaultCertificate#action_type}.
 
 ---
 
@@ -1398,8 +1398,8 @@ new KeyVaultCertificateCertificatePolicyLifetimeActionTrigger {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyLifetimeActionTrigger.property.daysBeforeExpiry">DaysBeforeExpiry</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#days_before_expiry KeyVaultCertificate#days_before_expiry}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyLifetimeActionTrigger.property.lifetimePercentage">LifetimePercentage</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#lifetime_percentage KeyVaultCertificate#lifetime_percentage}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyLifetimeActionTrigger.property.daysBeforeExpiry">DaysBeforeExpiry</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#days_before_expiry KeyVaultCertificate#days_before_expiry}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyLifetimeActionTrigger.property.lifetimePercentage">LifetimePercentage</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#lifetime_percentage KeyVaultCertificate#lifetime_percentage}. |
 
 ---
 
@@ -1411,7 +1411,7 @@ public double DaysBeforeExpiry { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#days_before_expiry KeyVaultCertificate#days_before_expiry}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#days_before_expiry KeyVaultCertificate#days_before_expiry}.
 
 ---
 
@@ -1423,7 +1423,7 @@ public double LifetimePercentage { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#lifetime_percentage KeyVaultCertificate#lifetime_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#lifetime_percentage KeyVaultCertificate#lifetime_percentage}.
 
 ---
 
@@ -1443,7 +1443,7 @@ new KeyVaultCertificateCertificatePolicySecretProperties {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicySecretProperties.property.contentType">ContentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#content_type KeyVaultCertificate#content_type}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicySecretProperties.property.contentType">ContentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#content_type KeyVaultCertificate#content_type}. |
 
 ---
 
@@ -1455,7 +1455,7 @@ public string ContentType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#content_type KeyVaultCertificate#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#content_type KeyVaultCertificate#content_type}.
 
 ---
 
@@ -1479,10 +1479,10 @@ new KeyVaultCertificateCertificatePolicyX509CertificateProperties {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyX509CertificateProperties.property.keyUsage">KeyUsage</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#key_usage KeyVaultCertificate#key_usage}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyX509CertificateProperties.property.subject">Subject</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#subject KeyVaultCertificate#subject}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyX509CertificateProperties.property.validityInMonths">ValidityInMonths</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#validity_in_months KeyVaultCertificate#validity_in_months}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyX509CertificateProperties.property.extendedKeyUsage">ExtendedKeyUsage</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#extended_key_usage KeyVaultCertificate#extended_key_usage}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyX509CertificateProperties.property.keyUsage">KeyUsage</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#key_usage KeyVaultCertificate#key_usage}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyX509CertificateProperties.property.subject">Subject</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#subject KeyVaultCertificate#subject}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyX509CertificateProperties.property.validityInMonths">ValidityInMonths</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#validity_in_months KeyVaultCertificate#validity_in_months}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyX509CertificateProperties.property.extendedKeyUsage">ExtendedKeyUsage</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#extended_key_usage KeyVaultCertificate#extended_key_usage}. |
 | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyX509CertificateProperties.property.subjectAlternativeNames">SubjectAlternativeNames</a></code> | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyX509CertificatePropertiesSubjectAlternativeNames">KeyVaultCertificateCertificatePolicyX509CertificatePropertiesSubjectAlternativeNames</a></code> | subject_alternative_names block. |
 
 ---
@@ -1495,7 +1495,7 @@ public string[] KeyUsage { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#key_usage KeyVaultCertificate#key_usage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#key_usage KeyVaultCertificate#key_usage}.
 
 ---
 
@@ -1507,7 +1507,7 @@ public string Subject { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#subject KeyVaultCertificate#subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#subject KeyVaultCertificate#subject}.
 
 ---
 
@@ -1519,7 +1519,7 @@ public double ValidityInMonths { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#validity_in_months KeyVaultCertificate#validity_in_months}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#validity_in_months KeyVaultCertificate#validity_in_months}.
 
 ---
 
@@ -1531,7 +1531,7 @@ public string[] ExtendedKeyUsage { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#extended_key_usage KeyVaultCertificate#extended_key_usage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#extended_key_usage KeyVaultCertificate#extended_key_usage}.
 
 ---
 
@@ -1545,7 +1545,7 @@ public KeyVaultCertificateCertificatePolicyX509CertificatePropertiesSubjectAlter
 
 subject_alternative_names block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#subject_alternative_names KeyVaultCertificate#subject_alternative_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#subject_alternative_names KeyVaultCertificate#subject_alternative_names}
 
 ---
 
@@ -1567,9 +1567,9 @@ new KeyVaultCertificateCertificatePolicyX509CertificatePropertiesSubjectAlternat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyX509CertificatePropertiesSubjectAlternativeNames.property.dnsNames">DnsNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#dns_names KeyVaultCertificate#dns_names}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyX509CertificatePropertiesSubjectAlternativeNames.property.emails">Emails</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#emails KeyVaultCertificate#emails}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyX509CertificatePropertiesSubjectAlternativeNames.property.upns">Upns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#upns KeyVaultCertificate#upns}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyX509CertificatePropertiesSubjectAlternativeNames.property.dnsNames">DnsNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#dns_names KeyVaultCertificate#dns_names}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyX509CertificatePropertiesSubjectAlternativeNames.property.emails">Emails</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#emails KeyVaultCertificate#emails}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicyX509CertificatePropertiesSubjectAlternativeNames.property.upns">Upns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#upns KeyVaultCertificate#upns}. |
 
 ---
 
@@ -1581,7 +1581,7 @@ public string[] DnsNames { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#dns_names KeyVaultCertificate#dns_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#dns_names KeyVaultCertificate#dns_names}.
 
 ---
 
@@ -1593,7 +1593,7 @@ public string[] Emails { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#emails KeyVaultCertificate#emails}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#emails KeyVaultCertificate#emails}.
 
 ---
 
@@ -1605,7 +1605,7 @@ public string[] Upns { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#upns KeyVaultCertificate#upns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#upns KeyVaultCertificate#upns}.
 
 ---
 
@@ -1645,12 +1645,12 @@ new KeyVaultCertificateConfig {
 | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateConfig.property.keyVaultId">KeyVaultId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#key_vault_id KeyVaultCertificate#key_vault_id}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#name KeyVaultCertificate#name}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateConfig.property.keyVaultId">KeyVaultId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#key_vault_id KeyVaultCertificate#key_vault_id}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#name KeyVaultCertificate#name}. |
 | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateConfig.property.certificate">Certificate</a></code> | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificate">KeyVaultCertificateCertificate</a></code> | certificate block. |
 | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateConfig.property.certificatePolicy">CertificatePolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateCertificatePolicy">KeyVaultCertificateCertificatePolicy</a></code> | certificate_policy block. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#id KeyVaultCertificate#id}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#tags KeyVaultCertificate#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#id KeyVaultCertificate#id}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#tags KeyVaultCertificate#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateTimeouts">KeyVaultCertificateTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1733,7 +1733,7 @@ public string KeyVaultId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#key_vault_id KeyVaultCertificate#key_vault_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#key_vault_id KeyVaultCertificate#key_vault_id}.
 
 ---
 
@@ -1745,7 +1745,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#name KeyVaultCertificate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#name KeyVaultCertificate#name}.
 
 ---
 
@@ -1759,7 +1759,7 @@ public KeyVaultCertificateCertificate Certificate { get; set; }
 
 certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#certificate KeyVaultCertificate#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#certificate KeyVaultCertificate#certificate}
 
 ---
 
@@ -1773,7 +1773,7 @@ public KeyVaultCertificateCertificatePolicy CertificatePolicy { get; set; }
 
 certificate_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#certificate_policy KeyVaultCertificate#certificate_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#certificate_policy KeyVaultCertificate#certificate_policy}
 
 ---
 
@@ -1785,7 +1785,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#id KeyVaultCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#id KeyVaultCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1800,7 +1800,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#tags KeyVaultCertificate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#tags KeyVaultCertificate#tags}.
 
 ---
 
@@ -1814,7 +1814,7 @@ public KeyVaultCertificateTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#timeouts KeyVaultCertificate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#timeouts KeyVaultCertificate#timeouts}
 
 ---
 
@@ -1837,10 +1837,10 @@ new KeyVaultCertificateTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#create KeyVaultCertificate#create}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#delete KeyVaultCertificate#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#read KeyVaultCertificate#read}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#update KeyVaultCertificate#update}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#create KeyVaultCertificate#create}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#delete KeyVaultCertificate#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#read KeyVaultCertificate#read}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificate.KeyVaultCertificateTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#update KeyVaultCertificate#update}. |
 
 ---
 
@@ -1852,7 +1852,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#create KeyVaultCertificate#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#create KeyVaultCertificate#create}.
 
 ---
 
@@ -1864,7 +1864,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#delete KeyVaultCertificate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#delete KeyVaultCertificate#delete}.
 
 ---
 
@@ -1876,7 +1876,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#read KeyVaultCertificate#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#read KeyVaultCertificate#read}.
 
 ---
 
@@ -1888,7 +1888,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/key_vault_certificate#update KeyVaultCertificate#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/key_vault_certificate#update KeyVaultCertificate#update}.
 
 ---
 

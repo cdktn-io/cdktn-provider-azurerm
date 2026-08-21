@@ -4,7 +4,7 @@
 
 ### DataAzurermDevCenterGallery <a name="DataAzurermDevCenterGallery" id="@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGallery"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/dev_center_gallery azurerm_dev_center_gallery}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/dev_center_gallery azurerm_dev_center_gallery}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGallery.Initializer"></a>
 
@@ -39,9 +39,9 @@ dataAzurermDevCenterGallery.DataAzurermDevCenterGallery(
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGallery.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGallery.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGallery.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGallery.Initializer.parameter.devCenterId">dev_center_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/dev_center_gallery#dev_center_id DataAzurermDevCenterGallery#dev_center_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGallery.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/dev_center_gallery#name DataAzurermDevCenterGallery#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGallery.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/dev_center_gallery#id DataAzurermDevCenterGallery#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGallery.Initializer.parameter.devCenterId">dev_center_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/dev_center_gallery#dev_center_id DataAzurermDevCenterGallery#dev_center_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGallery.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/dev_center_gallery#name DataAzurermDevCenterGallery#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGallery.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/dev_center_gallery#id DataAzurermDevCenterGallery#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGallery.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGalleryTimeouts">DataAzurermDevCenterGalleryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/dev_center_gallery#dev_center_id DataAzurermDevCenterGallery#dev_center_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/dev_center_gallery#dev_center_id DataAzurermDevCenterGallery#dev_center_id}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/dev_center_gallery#name DataAzurermDevCenterGallery#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/dev_center_gallery#name DataAzurermDevCenterGallery#name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/dev_center_gallery#id DataAzurermDevCenterGallery#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/dev_center_gallery#id DataAzurermDevCenterGallery#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +139,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/dev_center_gallery#timeouts DataAzurermDevCenterGallery#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/dev_center_gallery#timeouts DataAzurermDevCenterGallery#timeouts}
 
 ---
 
@@ -423,7 +423,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/dev_center_gallery#read DataAzurermDevCenterGallery#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/dev_center_gallery#read DataAzurermDevCenterGallery#read}.
 
 ---
 
@@ -553,7 +553,7 @@ The construct id used in the generated config for the DataAzurermDevCenterGaller
 
 The id of the existing DataAzurermDevCenterGallery that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/dev_center_gallery#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/dev_center_gallery#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -858,9 +858,9 @@ dataAzurermDevCenterGallery.DataAzurermDevCenterGalleryConfig(
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGalleryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGalleryConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGalleryConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGalleryConfig.property.devCenterId">dev_center_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/dev_center_gallery#dev_center_id DataAzurermDevCenterGallery#dev_center_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGalleryConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/dev_center_gallery#name DataAzurermDevCenterGallery#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGalleryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/dev_center_gallery#id DataAzurermDevCenterGallery#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGalleryConfig.property.devCenterId">dev_center_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/dev_center_gallery#dev_center_id DataAzurermDevCenterGallery#dev_center_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGalleryConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/dev_center_gallery#name DataAzurermDevCenterGallery#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGalleryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/dev_center_gallery#id DataAzurermDevCenterGallery#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGalleryConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGalleryTimeouts">DataAzurermDevCenterGalleryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -943,7 +943,7 @@ dev_center_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/dev_center_gallery#dev_center_id DataAzurermDevCenterGallery#dev_center_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/dev_center_gallery#dev_center_id DataAzurermDevCenterGallery#dev_center_id}.
 
 ---
 
@@ -955,7 +955,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/dev_center_gallery#name DataAzurermDevCenterGallery#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/dev_center_gallery#name DataAzurermDevCenterGallery#name}.
 
 ---
 
@@ -967,7 +967,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/dev_center_gallery#id DataAzurermDevCenterGallery#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/dev_center_gallery#id DataAzurermDevCenterGallery#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -984,7 +984,7 @@ timeouts: DataAzurermDevCenterGalleryTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/dev_center_gallery#timeouts DataAzurermDevCenterGallery#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/dev_center_gallery#timeouts DataAzurermDevCenterGallery#timeouts}
 
 ---
 
@@ -1004,7 +1004,7 @@ dataAzurermDevCenterGallery.DataAzurermDevCenterGalleryTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGalleryTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/dev_center_gallery#read DataAzurermDevCenterGallery#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenterGallery.DataAzurermDevCenterGalleryTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/dev_center_gallery#read DataAzurermDevCenterGallery#read}. |
 
 ---
 
@@ -1016,7 +1016,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/dev_center_gallery#read DataAzurermDevCenterGallery#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/dev_center_gallery#read DataAzurermDevCenterGallery#read}.
 
 ---
 

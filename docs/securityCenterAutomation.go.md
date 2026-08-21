@@ -4,7 +4,7 @@
 
 ### SecurityCenterAutomation <a name="SecurityCenterAutomation" id="@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation azurerm_security_center_automation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation azurerm_security_center_automation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomation.Initializer"></a>
 
@@ -563,7 +563,7 @@ The construct id used in the generated config for the SecurityCenterAutomation t
 
 The id of the existing SecurityCenterAutomation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1019,10 +1019,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/securitycenter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationAction.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#resource_id SecurityCenterAutomation#resource_id}. |
-| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationAction.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#type SecurityCenterAutomation#type}. |
-| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationAction.property.connectionString">ConnectionString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#connection_string SecurityCenterAutomation#connection_string}. |
-| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationAction.property.triggerUrl">TriggerUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#trigger_url SecurityCenterAutomation#trigger_url}. |
+| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationAction.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#resource_id SecurityCenterAutomation#resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationAction.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#type SecurityCenterAutomation#type}. |
+| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationAction.property.connectionString">ConnectionString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#connection_string SecurityCenterAutomation#connection_string}. |
+| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationAction.property.triggerUrl">TriggerUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#trigger_url SecurityCenterAutomation#trigger_url}. |
 
 ---
 
@@ -1034,7 +1034,7 @@ ResourceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#resource_id SecurityCenterAutomation#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#resource_id SecurityCenterAutomation#resource_id}.
 
 ---
 
@@ -1046,7 +1046,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#type SecurityCenterAutomation#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#type SecurityCenterAutomation#type}.
 
 ---
 
@@ -1058,7 +1058,7 @@ ConnectionString *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#connection_string SecurityCenterAutomation#connection_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#connection_string SecurityCenterAutomation#connection_string}.
 
 ---
 
@@ -1070,7 +1070,7 @@ TriggerUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#trigger_url SecurityCenterAutomation#trigger_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#trigger_url SecurityCenterAutomation#trigger_url}.
 
 ---
 
@@ -1115,15 +1115,15 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/securitycenter
 | <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationConfig.property.action">Action</a></code> | <code>interface{}</code> | action block. |
-| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#location SecurityCenterAutomation#location}. |
-| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#name SecurityCenterAutomation#name}. |
-| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#resource_group_name SecurityCenterAutomation#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationConfig.property.scopes">Scopes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#scopes SecurityCenterAutomation#scopes}. |
+| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#location SecurityCenterAutomation#location}. |
+| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#name SecurityCenterAutomation#name}. |
+| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#resource_group_name SecurityCenterAutomation#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationConfig.property.scopes">Scopes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#scopes SecurityCenterAutomation#scopes}. |
 | <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationConfig.property.source">Source</a></code> | <code>interface{}</code> | source block. |
-| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#description SecurityCenterAutomation#description}. |
-| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#enabled SecurityCenterAutomation#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#id SecurityCenterAutomation#id}. |
-| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#tags SecurityCenterAutomation#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#description SecurityCenterAutomation#description}. |
+| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#enabled SecurityCenterAutomation#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#id SecurityCenterAutomation#id}. |
+| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#tags SecurityCenterAutomation#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationTimeouts">SecurityCenterAutomationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1208,7 +1208,7 @@ Action interface{}
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#action SecurityCenterAutomation#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#action SecurityCenterAutomation#action}
 
 ---
 
@@ -1220,7 +1220,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#location SecurityCenterAutomation#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#location SecurityCenterAutomation#location}.
 
 ---
 
@@ -1232,7 +1232,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#name SecurityCenterAutomation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#name SecurityCenterAutomation#name}.
 
 ---
 
@@ -1244,7 +1244,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#resource_group_name SecurityCenterAutomation#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#resource_group_name SecurityCenterAutomation#resource_group_name}.
 
 ---
 
@@ -1256,7 +1256,7 @@ Scopes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#scopes SecurityCenterAutomation#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#scopes SecurityCenterAutomation#scopes}.
 
 ---
 
@@ -1270,7 +1270,7 @@ Source interface{}
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#source SecurityCenterAutomation#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#source SecurityCenterAutomation#source}
 
 ---
 
@@ -1282,7 +1282,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#description SecurityCenterAutomation#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#description SecurityCenterAutomation#description}.
 
 ---
 
@@ -1294,7 +1294,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#enabled SecurityCenterAutomation#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#enabled SecurityCenterAutomation#enabled}.
 
 ---
 
@@ -1306,7 +1306,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#id SecurityCenterAutomation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#id SecurityCenterAutomation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1321,7 +1321,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#tags SecurityCenterAutomation#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#tags SecurityCenterAutomation#tags}.
 
 ---
 
@@ -1335,7 +1335,7 @@ Timeouts SecurityCenterAutomationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#timeouts SecurityCenterAutomation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#timeouts SecurityCenterAutomation#timeouts}
 
 ---
 
@@ -1356,7 +1356,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/securitycenter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationSource.property.eventSource">EventSource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#event_source SecurityCenterAutomation#event_source}. |
+| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationSource.property.eventSource">EventSource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#event_source SecurityCenterAutomation#event_source}. |
 | <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationSource.property.ruleSet">RuleSet</a></code> | <code>interface{}</code> | rule_set block. |
 
 ---
@@ -1369,7 +1369,7 @@ EventSource *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#event_source SecurityCenterAutomation#event_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#event_source SecurityCenterAutomation#event_source}.
 
 ---
 
@@ -1383,7 +1383,7 @@ RuleSet interface{}
 
 rule_set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#rule_set SecurityCenterAutomation#rule_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#rule_set SecurityCenterAutomation#rule_set}
 
 ---
 
@@ -1417,7 +1417,7 @@ Rule interface{}
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#rule SecurityCenterAutomation#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#rule SecurityCenterAutomation#rule}
 
 ---
 
@@ -1440,10 +1440,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/securitycenter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationSourceRuleSetRule.property.expectedValue">ExpectedValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#expected_value SecurityCenterAutomation#expected_value}. |
-| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationSourceRuleSetRule.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#operator SecurityCenterAutomation#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationSourceRuleSetRule.property.propertyPath">PropertyPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#property_path SecurityCenterAutomation#property_path}. |
-| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationSourceRuleSetRule.property.propertyType">PropertyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#property_type SecurityCenterAutomation#property_type}. |
+| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationSourceRuleSetRule.property.expectedValue">ExpectedValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#expected_value SecurityCenterAutomation#expected_value}. |
+| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationSourceRuleSetRule.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#operator SecurityCenterAutomation#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationSourceRuleSetRule.property.propertyPath">PropertyPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#property_path SecurityCenterAutomation#property_path}. |
+| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationSourceRuleSetRule.property.propertyType">PropertyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#property_type SecurityCenterAutomation#property_type}. |
 
 ---
 
@@ -1455,7 +1455,7 @@ ExpectedValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#expected_value SecurityCenterAutomation#expected_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#expected_value SecurityCenterAutomation#expected_value}.
 
 ---
 
@@ -1467,7 +1467,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#operator SecurityCenterAutomation#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#operator SecurityCenterAutomation#operator}.
 
 ---
 
@@ -1479,7 +1479,7 @@ PropertyPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#property_path SecurityCenterAutomation#property_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#property_path SecurityCenterAutomation#property_path}.
 
 ---
 
@@ -1491,7 +1491,7 @@ PropertyType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#property_type SecurityCenterAutomation#property_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#property_type SecurityCenterAutomation#property_type}.
 
 ---
 
@@ -1514,10 +1514,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/securitycenter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#create SecurityCenterAutomation#create}. |
-| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#delete SecurityCenterAutomation#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#read SecurityCenterAutomation#read}. |
-| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#update SecurityCenterAutomation#update}. |
+| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#create SecurityCenterAutomation#create}. |
+| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#delete SecurityCenterAutomation#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#read SecurityCenterAutomation#read}. |
+| <code><a href="#@cdktn/provider-azurerm.securityCenterAutomation.SecurityCenterAutomationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#update SecurityCenterAutomation#update}. |
 
 ---
 
@@ -1529,7 +1529,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#create SecurityCenterAutomation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#create SecurityCenterAutomation#create}.
 
 ---
 
@@ -1541,7 +1541,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#delete SecurityCenterAutomation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#delete SecurityCenterAutomation#delete}.
 
 ---
 
@@ -1553,7 +1553,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#read SecurityCenterAutomation#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#read SecurityCenterAutomation#read}.
 
 ---
 
@@ -1565,7 +1565,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/security_center_automation#update SecurityCenterAutomation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/security_center_automation#update SecurityCenterAutomation#update}.
 
 ---
 

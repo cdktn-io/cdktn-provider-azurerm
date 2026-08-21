@@ -4,7 +4,7 @@
 
 ### AutomationWatcher <a name="AutomationWatcher" id="@cdktn/provider-azurerm.automationWatcher.AutomationWatcher"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher azurerm_automation_watcher}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher azurerm_automation_watcher}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationWatcher.AutomationWatcher.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the AutomationWatcher to impor
 
 The id of the existing AutomationWatcher that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1055,17 +1055,17 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automationwatc
 | <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.automationAccountId">AutomationAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#automation_account_id AutomationWatcher#automation_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.executionFrequencyInSeconds">ExecutionFrequencyInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#execution_frequency_in_seconds AutomationWatcher#execution_frequency_in_seconds}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#location AutomationWatcher#location}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#name AutomationWatcher#name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.scriptName">ScriptName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#script_name AutomationWatcher#script_name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.scriptRunOn">ScriptRunOn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#script_run_on AutomationWatcher#script_run_on}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#description AutomationWatcher#description}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.etag">Etag</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#etag AutomationWatcher#etag}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#id AutomationWatcher#id}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.scriptParameters">ScriptParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#script_parameters AutomationWatcher#script_parameters}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#tags AutomationWatcher#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.automationAccountId">AutomationAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#automation_account_id AutomationWatcher#automation_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.executionFrequencyInSeconds">ExecutionFrequencyInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#execution_frequency_in_seconds AutomationWatcher#execution_frequency_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#location AutomationWatcher#location}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#name AutomationWatcher#name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.scriptName">ScriptName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#script_name AutomationWatcher#script_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.scriptRunOn">ScriptRunOn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#script_run_on AutomationWatcher#script_run_on}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#description AutomationWatcher#description}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.etag">Etag</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#etag AutomationWatcher#etag}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#id AutomationWatcher#id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.scriptParameters">ScriptParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#script_parameters AutomationWatcher#script_parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#tags AutomationWatcher#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherTimeouts">AutomationWatcherTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1148,7 +1148,7 @@ AutomationAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#automation_account_id AutomationWatcher#automation_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#automation_account_id AutomationWatcher#automation_account_id}.
 
 ---
 
@@ -1160,7 +1160,7 @@ ExecutionFrequencyInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#execution_frequency_in_seconds AutomationWatcher#execution_frequency_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#execution_frequency_in_seconds AutomationWatcher#execution_frequency_in_seconds}.
 
 ---
 
@@ -1172,7 +1172,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#location AutomationWatcher#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#location AutomationWatcher#location}.
 
 ---
 
@@ -1184,7 +1184,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#name AutomationWatcher#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#name AutomationWatcher#name}.
 
 ---
 
@@ -1196,7 +1196,7 @@ ScriptName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#script_name AutomationWatcher#script_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#script_name AutomationWatcher#script_name}.
 
 ---
 
@@ -1208,7 +1208,7 @@ ScriptRunOn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#script_run_on AutomationWatcher#script_run_on}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#script_run_on AutomationWatcher#script_run_on}.
 
 ---
 
@@ -1220,7 +1220,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#description AutomationWatcher#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#description AutomationWatcher#description}.
 
 ---
 
@@ -1232,7 +1232,7 @@ Etag *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#etag AutomationWatcher#etag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#etag AutomationWatcher#etag}.
 
 ---
 
@@ -1244,7 +1244,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#id AutomationWatcher#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#id AutomationWatcher#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1259,7 +1259,7 @@ ScriptParameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#script_parameters AutomationWatcher#script_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#script_parameters AutomationWatcher#script_parameters}.
 
 ---
 
@@ -1271,7 +1271,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#tags AutomationWatcher#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#tags AutomationWatcher#tags}.
 
 ---
 
@@ -1285,7 +1285,7 @@ Timeouts AutomationWatcherTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#timeouts AutomationWatcher#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#timeouts AutomationWatcher#timeouts}
 
 ---
 
@@ -1308,10 +1308,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automationwatc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#create AutomationWatcher#create}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#delete AutomationWatcher#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#read AutomationWatcher#read}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#update AutomationWatcher#update}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#create AutomationWatcher#create}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#delete AutomationWatcher#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#read AutomationWatcher#read}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWatcher.AutomationWatcherTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#update AutomationWatcher#update}. |
 
 ---
 
@@ -1323,7 +1323,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#create AutomationWatcher#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#create AutomationWatcher#create}.
 
 ---
 
@@ -1335,7 +1335,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#delete AutomationWatcher#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#delete AutomationWatcher#delete}.
 
 ---
 
@@ -1347,7 +1347,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#read AutomationWatcher#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#read AutomationWatcher#read}.
 
 ---
 
@@ -1359,7 +1359,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_watcher#update AutomationWatcher#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_watcher#update AutomationWatcher#update}.
 
 ---
 

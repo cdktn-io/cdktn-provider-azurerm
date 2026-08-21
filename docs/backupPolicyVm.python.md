@@ -4,7 +4,7 @@
 
 ### BackupPolicyVm <a name="BackupPolicyVm" id="@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm azurerm_backup_policy_vm}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm azurerm_backup_policy_vm}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer"></a>
 
@@ -52,21 +52,21 @@ backupPolicyVm.BackupPolicyVm(
 | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.backup">backup</a></code> | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmBackup">BackupPolicyVmBackup</a></code> | backup block. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#name BackupPolicyVm#name}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.recoveryVaultName">recovery_vault_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#recovery_vault_name BackupPolicyVm#recovery_vault_name}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#resource_group_name BackupPolicyVm#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.consistencyType">consistency_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#consistency_type BackupPolicyVm#consistency_type}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#id BackupPolicyVm#id}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#name BackupPolicyVm#name}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.recoveryVaultName">recovery_vault_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#recovery_vault_name BackupPolicyVm#recovery_vault_name}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#resource_group_name BackupPolicyVm#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.consistencyType">consistency_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#consistency_type BackupPolicyVm#consistency_type}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#id BackupPolicyVm#id}. |
 | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.instantRestoreResourceGroup">instant_restore_resource_group</a></code> | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmInstantRestoreResourceGroup">BackupPolicyVmInstantRestoreResourceGroup</a></code> | instant_restore_resource_group block. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.instantRestoreRetentionDays">instant_restore_retention_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#instant_restore_retention_days BackupPolicyVm#instant_restore_retention_days}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.policyType">policy_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#policy_type BackupPolicyVm#policy_type}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.instantRestoreRetentionDays">instant_restore_retention_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#instant_restore_retention_days BackupPolicyVm#instant_restore_retention_days}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.policyType">policy_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#policy_type BackupPolicyVm#policy_type}. |
 | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.retentionDaily">retention_daily</a></code> | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionDaily">BackupPolicyVmRetentionDaily</a></code> | retention_daily block. |
 | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.retentionMonthly">retention_monthly</a></code> | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionMonthly">BackupPolicyVmRetentionMonthly</a></code> | retention_monthly block. |
 | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.retentionWeekly">retention_weekly</a></code> | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionWeekly">BackupPolicyVmRetentionWeekly</a></code> | retention_weekly block. |
 | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.retentionYearly">retention_yearly</a></code> | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionYearly">BackupPolicyVmRetentionYearly</a></code> | retention_yearly block. |
 | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.tieringPolicy">tiering_policy</a></code> | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmTieringPolicy">BackupPolicyVmTieringPolicy</a></code> | tiering_policy block. |
 | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmTimeouts">BackupPolicyVmTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.timezone">timezone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#timezone BackupPolicyVm#timezone}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVm.Initializer.parameter.timezone">timezone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#timezone BackupPolicyVm#timezone}. |
 
 ---
 
@@ -136,7 +136,7 @@ Must be unique amongst siblings in the same scope
 
 backup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#backup BackupPolicyVm#backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#backup BackupPolicyVm#backup}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#name BackupPolicyVm#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#name BackupPolicyVm#name}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#recovery_vault_name BackupPolicyVm#recovery_vault_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#recovery_vault_name BackupPolicyVm#recovery_vault_name}.
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#resource_group_name BackupPolicyVm#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#resource_group_name BackupPolicyVm#resource_group_name}.
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#consistency_type BackupPolicyVm#consistency_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#consistency_type BackupPolicyVm#consistency_type}.
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#id BackupPolicyVm#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#id BackupPolicyVm#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -189,7 +189,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 instant_restore_resource_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#instant_restore_resource_group BackupPolicyVm#instant_restore_resource_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#instant_restore_resource_group BackupPolicyVm#instant_restore_resource_group}
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#instant_restore_retention_days BackupPolicyVm#instant_restore_retention_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#instant_restore_retention_days BackupPolicyVm#instant_restore_retention_days}.
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#policy_type BackupPolicyVm#policy_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#policy_type BackupPolicyVm#policy_type}.
 
 ---
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 retention_daily block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#retention_daily BackupPolicyVm#retention_daily}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#retention_daily BackupPolicyVm#retention_daily}
 
 ---
 
@@ -225,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 retention_monthly block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#retention_monthly BackupPolicyVm#retention_monthly}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#retention_monthly BackupPolicyVm#retention_monthly}
 
 ---
 
@@ -235,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 retention_weekly block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#retention_weekly BackupPolicyVm#retention_weekly}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#retention_weekly BackupPolicyVm#retention_weekly}
 
 ---
 
@@ -245,7 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 retention_yearly block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#retention_yearly BackupPolicyVm#retention_yearly}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#retention_yearly BackupPolicyVm#retention_yearly}
 
 ---
 
@@ -255,7 +255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 tiering_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#tiering_policy BackupPolicyVm#tiering_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#tiering_policy BackupPolicyVm#tiering_policy}
 
 ---
 
@@ -265,7 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#timeouts BackupPolicyVm#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#timeouts BackupPolicyVm#timeouts}
 
 ---
 
@@ -273,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#timezone BackupPolicyVm#timezone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#timezone BackupPolicyVm#timezone}.
 
 ---
 
@@ -692,7 +692,7 @@ def put_backup(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#frequency BackupPolicyVm#frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#frequency BackupPolicyVm#frequency}.
 
 ---
 
@@ -700,7 +700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#time BackupPolicyVm#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#time BackupPolicyVm#time}.
 
 ---
 
@@ -708,7 +708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#hour_duration BackupPolicyVm#hour_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#hour_duration BackupPolicyVm#hour_duration}.
 
 ---
 
@@ -716,7 +716,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#hour_interval BackupPolicyVm#hour_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#hour_interval BackupPolicyVm#hour_interval}.
 
 ---
 
@@ -724,7 +724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}.
 
 ---
 
@@ -741,7 +741,7 @@ def put_instant_restore_resource_group(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#prefix BackupPolicyVm#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#prefix BackupPolicyVm#prefix}.
 
 ---
 
@@ -749,7 +749,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#suffix BackupPolicyVm#suffix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#suffix BackupPolicyVm#suffix}.
 
 ---
 
@@ -765,7 +765,7 @@ def put_retention_daily(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}.
 
 ---
 
@@ -785,7 +785,7 @@ def put_retention_monthly(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}.
 
 ---
 
@@ -793,7 +793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[typing.Union[int, float]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#days BackupPolicyVm#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#days BackupPolicyVm#days}.
 
 ---
 
@@ -801,7 +801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#include_last_days BackupPolicyVm#include_last_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#include_last_days BackupPolicyVm#include_last_days}.
 
 ---
 
@@ -809,7 +809,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}.
 
 ---
 
@@ -817,7 +817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#weeks BackupPolicyVm#weeks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#weeks BackupPolicyVm#weeks}.
 
 ---
 
@@ -834,7 +834,7 @@ def put_retention_weekly(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}.
 
 ---
 
@@ -842,7 +842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}.
 
 ---
 
@@ -863,7 +863,7 @@ def put_retention_yearly(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}.
 
 ---
 
@@ -871,7 +871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#months BackupPolicyVm#months}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#months BackupPolicyVm#months}.
 
 ---
 
@@ -879,7 +879,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[typing.Union[int, float]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#days BackupPolicyVm#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#days BackupPolicyVm#days}.
 
 ---
 
@@ -887,7 +887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#include_last_days BackupPolicyVm#include_last_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#include_last_days BackupPolicyVm#include_last_days}.
 
 ---
 
@@ -895,7 +895,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}.
 
 ---
 
@@ -903,7 +903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#weeks BackupPolicyVm#weeks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#weeks BackupPolicyVm#weeks}.
 
 ---
 
@@ -921,7 +921,7 @@ def put_tiering_policy(
 
 archived_restore_point block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#archived_restore_point BackupPolicyVm#archived_restore_point}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#archived_restore_point BackupPolicyVm#archived_restore_point}
 
 ---
 
@@ -940,7 +940,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#create BackupPolicyVm#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#create BackupPolicyVm#create}.
 
 ---
 
@@ -948,7 +948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#delete BackupPolicyVm#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#delete BackupPolicyVm#delete}.
 
 ---
 
@@ -956,7 +956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#read BackupPolicyVm#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#read BackupPolicyVm#read}.
 
 ---
 
@@ -964,7 +964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#update BackupPolicyVm#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#update BackupPolicyVm#update}.
 
 ---
 
@@ -1154,7 +1154,7 @@ The construct id used in the generated config for the BackupPolicyVm to import.
 
 The id of the existing BackupPolicyVm that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1721,11 +1721,11 @@ backupPolicyVm.BackupPolicyVmBackup(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmBackup.property.frequency">frequency</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#frequency BackupPolicyVm#frequency}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmBackup.property.time">time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#time BackupPolicyVm#time}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmBackup.property.hourDuration">hour_duration</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#hour_duration BackupPolicyVm#hour_duration}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmBackup.property.hourInterval">hour_interval</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#hour_interval BackupPolicyVm#hour_interval}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmBackup.property.weekdays">weekdays</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmBackup.property.frequency">frequency</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#frequency BackupPolicyVm#frequency}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmBackup.property.time">time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#time BackupPolicyVm#time}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmBackup.property.hourDuration">hour_duration</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#hour_duration BackupPolicyVm#hour_duration}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmBackup.property.hourInterval">hour_interval</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#hour_interval BackupPolicyVm#hour_interval}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmBackup.property.weekdays">weekdays</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}. |
 
 ---
 
@@ -1737,7 +1737,7 @@ frequency: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#frequency BackupPolicyVm#frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#frequency BackupPolicyVm#frequency}.
 
 ---
 
@@ -1749,7 +1749,7 @@ time: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#time BackupPolicyVm#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#time BackupPolicyVm#time}.
 
 ---
 
@@ -1761,7 +1761,7 @@ hour_duration: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#hour_duration BackupPolicyVm#hour_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#hour_duration BackupPolicyVm#hour_duration}.
 
 ---
 
@@ -1773,7 +1773,7 @@ hour_interval: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#hour_interval BackupPolicyVm#hour_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#hour_interval BackupPolicyVm#hour_interval}.
 
 ---
 
@@ -1785,7 +1785,7 @@ weekdays: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}.
 
 ---
 
@@ -1835,21 +1835,21 @@ backupPolicyVm.BackupPolicyVmConfig(
 | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.backup">backup</a></code> | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmBackup">BackupPolicyVmBackup</a></code> | backup block. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#name BackupPolicyVm#name}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.recoveryVaultName">recovery_vault_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#recovery_vault_name BackupPolicyVm#recovery_vault_name}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#resource_group_name BackupPolicyVm#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.consistencyType">consistency_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#consistency_type BackupPolicyVm#consistency_type}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#id BackupPolicyVm#id}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#name BackupPolicyVm#name}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.recoveryVaultName">recovery_vault_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#recovery_vault_name BackupPolicyVm#recovery_vault_name}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#resource_group_name BackupPolicyVm#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.consistencyType">consistency_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#consistency_type BackupPolicyVm#consistency_type}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#id BackupPolicyVm#id}. |
 | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.instantRestoreResourceGroup">instant_restore_resource_group</a></code> | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmInstantRestoreResourceGroup">BackupPolicyVmInstantRestoreResourceGroup</a></code> | instant_restore_resource_group block. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.instantRestoreRetentionDays">instant_restore_retention_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#instant_restore_retention_days BackupPolicyVm#instant_restore_retention_days}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.policyType">policy_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#policy_type BackupPolicyVm#policy_type}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.instantRestoreRetentionDays">instant_restore_retention_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#instant_restore_retention_days BackupPolicyVm#instant_restore_retention_days}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.policyType">policy_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#policy_type BackupPolicyVm#policy_type}. |
 | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.retentionDaily">retention_daily</a></code> | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionDaily">BackupPolicyVmRetentionDaily</a></code> | retention_daily block. |
 | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.retentionMonthly">retention_monthly</a></code> | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionMonthly">BackupPolicyVmRetentionMonthly</a></code> | retention_monthly block. |
 | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.retentionWeekly">retention_weekly</a></code> | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionWeekly">BackupPolicyVmRetentionWeekly</a></code> | retention_weekly block. |
 | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.retentionYearly">retention_yearly</a></code> | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionYearly">BackupPolicyVmRetentionYearly</a></code> | retention_yearly block. |
 | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.tieringPolicy">tiering_policy</a></code> | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmTieringPolicy">BackupPolicyVmTieringPolicy</a></code> | tiering_policy block. |
 | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmTimeouts">BackupPolicyVmTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.timezone">timezone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#timezone BackupPolicyVm#timezone}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmConfig.property.timezone">timezone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#timezone BackupPolicyVm#timezone}. |
 
 ---
 
@@ -1933,7 +1933,7 @@ backup: BackupPolicyVmBackup
 
 backup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#backup BackupPolicyVm#backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#backup BackupPolicyVm#backup}
 
 ---
 
@@ -1945,7 +1945,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#name BackupPolicyVm#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#name BackupPolicyVm#name}.
 
 ---
 
@@ -1957,7 +1957,7 @@ recovery_vault_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#recovery_vault_name BackupPolicyVm#recovery_vault_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#recovery_vault_name BackupPolicyVm#recovery_vault_name}.
 
 ---
 
@@ -1969,7 +1969,7 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#resource_group_name BackupPolicyVm#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#resource_group_name BackupPolicyVm#resource_group_name}.
 
 ---
 
@@ -1981,7 +1981,7 @@ consistency_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#consistency_type BackupPolicyVm#consistency_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#consistency_type BackupPolicyVm#consistency_type}.
 
 ---
 
@@ -1993,7 +1993,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#id BackupPolicyVm#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#id BackupPolicyVm#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2010,7 +2010,7 @@ instant_restore_resource_group: BackupPolicyVmInstantRestoreResourceGroup
 
 instant_restore_resource_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#instant_restore_resource_group BackupPolicyVm#instant_restore_resource_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#instant_restore_resource_group BackupPolicyVm#instant_restore_resource_group}
 
 ---
 
@@ -2022,7 +2022,7 @@ instant_restore_retention_days: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#instant_restore_retention_days BackupPolicyVm#instant_restore_retention_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#instant_restore_retention_days BackupPolicyVm#instant_restore_retention_days}.
 
 ---
 
@@ -2034,7 +2034,7 @@ policy_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#policy_type BackupPolicyVm#policy_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#policy_type BackupPolicyVm#policy_type}.
 
 ---
 
@@ -2048,7 +2048,7 @@ retention_daily: BackupPolicyVmRetentionDaily
 
 retention_daily block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#retention_daily BackupPolicyVm#retention_daily}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#retention_daily BackupPolicyVm#retention_daily}
 
 ---
 
@@ -2062,7 +2062,7 @@ retention_monthly: BackupPolicyVmRetentionMonthly
 
 retention_monthly block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#retention_monthly BackupPolicyVm#retention_monthly}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#retention_monthly BackupPolicyVm#retention_monthly}
 
 ---
 
@@ -2076,7 +2076,7 @@ retention_weekly: BackupPolicyVmRetentionWeekly
 
 retention_weekly block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#retention_weekly BackupPolicyVm#retention_weekly}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#retention_weekly BackupPolicyVm#retention_weekly}
 
 ---
 
@@ -2090,7 +2090,7 @@ retention_yearly: BackupPolicyVmRetentionYearly
 
 retention_yearly block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#retention_yearly BackupPolicyVm#retention_yearly}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#retention_yearly BackupPolicyVm#retention_yearly}
 
 ---
 
@@ -2104,7 +2104,7 @@ tiering_policy: BackupPolicyVmTieringPolicy
 
 tiering_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#tiering_policy BackupPolicyVm#tiering_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#tiering_policy BackupPolicyVm#tiering_policy}
 
 ---
 
@@ -2118,7 +2118,7 @@ timeouts: BackupPolicyVmTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#timeouts BackupPolicyVm#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#timeouts BackupPolicyVm#timeouts}
 
 ---
 
@@ -2130,7 +2130,7 @@ timezone: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#timezone BackupPolicyVm#timezone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#timezone BackupPolicyVm#timezone}.
 
 ---
 
@@ -2151,8 +2151,8 @@ backupPolicyVm.BackupPolicyVmInstantRestoreResourceGroup(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmInstantRestoreResourceGroup.property.prefix">prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#prefix BackupPolicyVm#prefix}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmInstantRestoreResourceGroup.property.suffix">suffix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#suffix BackupPolicyVm#suffix}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmInstantRestoreResourceGroup.property.prefix">prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#prefix BackupPolicyVm#prefix}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmInstantRestoreResourceGroup.property.suffix">suffix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#suffix BackupPolicyVm#suffix}. |
 
 ---
 
@@ -2164,7 +2164,7 @@ prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#prefix BackupPolicyVm#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#prefix BackupPolicyVm#prefix}.
 
 ---
 
@@ -2176,7 +2176,7 @@ suffix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#suffix BackupPolicyVm#suffix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#suffix BackupPolicyVm#suffix}.
 
 ---
 
@@ -2196,7 +2196,7 @@ backupPolicyVm.BackupPolicyVmRetentionDaily(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionDaily.property.count">count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionDaily.property.count">count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}. |
 
 ---
 
@@ -2208,7 +2208,7 @@ count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}.
 
 ---
 
@@ -2232,11 +2232,11 @@ backupPolicyVm.BackupPolicyVmRetentionMonthly(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionMonthly.property.count">count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionMonthly.property.days">days</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#days BackupPolicyVm#days}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionMonthly.property.includeLastDays">include_last_days</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#include_last_days BackupPolicyVm#include_last_days}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionMonthly.property.weekdays">weekdays</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionMonthly.property.weeks">weeks</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#weeks BackupPolicyVm#weeks}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionMonthly.property.count">count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionMonthly.property.days">days</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#days BackupPolicyVm#days}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionMonthly.property.includeLastDays">include_last_days</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#include_last_days BackupPolicyVm#include_last_days}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionMonthly.property.weekdays">weekdays</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionMonthly.property.weeks">weeks</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#weeks BackupPolicyVm#weeks}. |
 
 ---
 
@@ -2248,7 +2248,7 @@ count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}.
 
 ---
 
@@ -2260,7 +2260,7 @@ days: typing.List[typing.Union[int, float]]
 
 - *Type:* typing.List[typing.Union[int, float]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#days BackupPolicyVm#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#days BackupPolicyVm#days}.
 
 ---
 
@@ -2272,7 +2272,7 @@ include_last_days: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#include_last_days BackupPolicyVm#include_last_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#include_last_days BackupPolicyVm#include_last_days}.
 
 ---
 
@@ -2284,7 +2284,7 @@ weekdays: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}.
 
 ---
 
@@ -2296,7 +2296,7 @@ weeks: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#weeks BackupPolicyVm#weeks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#weeks BackupPolicyVm#weeks}.
 
 ---
 
@@ -2317,8 +2317,8 @@ backupPolicyVm.BackupPolicyVmRetentionWeekly(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionWeekly.property.count">count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionWeekly.property.weekdays">weekdays</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionWeekly.property.count">count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionWeekly.property.weekdays">weekdays</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}. |
 
 ---
 
@@ -2330,7 +2330,7 @@ count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}.
 
 ---
 
@@ -2342,7 +2342,7 @@ weekdays: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}.
 
 ---
 
@@ -2367,12 +2367,12 @@ backupPolicyVm.BackupPolicyVmRetentionYearly(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionYearly.property.count">count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionYearly.property.months">months</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#months BackupPolicyVm#months}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionYearly.property.days">days</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#days BackupPolicyVm#days}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionYearly.property.includeLastDays">include_last_days</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#include_last_days BackupPolicyVm#include_last_days}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionYearly.property.weekdays">weekdays</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionYearly.property.weeks">weeks</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#weeks BackupPolicyVm#weeks}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionYearly.property.count">count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionYearly.property.months">months</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#months BackupPolicyVm#months}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionYearly.property.days">days</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#days BackupPolicyVm#days}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionYearly.property.includeLastDays">include_last_days</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#include_last_days BackupPolicyVm#include_last_days}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionYearly.property.weekdays">weekdays</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmRetentionYearly.property.weeks">weeks</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#weeks BackupPolicyVm#weeks}. |
 
 ---
 
@@ -2384,7 +2384,7 @@ count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#count BackupPolicyVm#count}.
 
 ---
 
@@ -2396,7 +2396,7 @@ months: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#months BackupPolicyVm#months}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#months BackupPolicyVm#months}.
 
 ---
 
@@ -2408,7 +2408,7 @@ days: typing.List[typing.Union[int, float]]
 
 - *Type:* typing.List[typing.Union[int, float]]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#days BackupPolicyVm#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#days BackupPolicyVm#days}.
 
 ---
 
@@ -2420,7 +2420,7 @@ include_last_days: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#include_last_days BackupPolicyVm#include_last_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#include_last_days BackupPolicyVm#include_last_days}.
 
 ---
 
@@ -2432,7 +2432,7 @@ weekdays: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#weekdays BackupPolicyVm#weekdays}.
 
 ---
 
@@ -2444,7 +2444,7 @@ weeks: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#weeks BackupPolicyVm#weeks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#weeks BackupPolicyVm#weeks}.
 
 ---
 
@@ -2478,7 +2478,7 @@ archived_restore_point: BackupPolicyVmTieringPolicyArchivedRestorePoint
 
 archived_restore_point block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#archived_restore_point BackupPolicyVm#archived_restore_point}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#archived_restore_point BackupPolicyVm#archived_restore_point}
 
 ---
 
@@ -2500,9 +2500,9 @@ backupPolicyVm.BackupPolicyVmTieringPolicyArchivedRestorePoint(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmTieringPolicyArchivedRestorePoint.property.mode">mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#mode BackupPolicyVm#mode}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmTieringPolicyArchivedRestorePoint.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#duration BackupPolicyVm#duration}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmTieringPolicyArchivedRestorePoint.property.durationType">duration_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#duration_type BackupPolicyVm#duration_type}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmTieringPolicyArchivedRestorePoint.property.mode">mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#mode BackupPolicyVm#mode}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmTieringPolicyArchivedRestorePoint.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#duration BackupPolicyVm#duration}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmTieringPolicyArchivedRestorePoint.property.durationType">duration_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#duration_type BackupPolicyVm#duration_type}. |
 
 ---
 
@@ -2514,7 +2514,7 @@ mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#mode BackupPolicyVm#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#mode BackupPolicyVm#mode}.
 
 ---
 
@@ -2526,7 +2526,7 @@ duration: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#duration BackupPolicyVm#duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#duration BackupPolicyVm#duration}.
 
 ---
 
@@ -2538,7 +2538,7 @@ duration_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#duration_type BackupPolicyVm#duration_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#duration_type BackupPolicyVm#duration_type}.
 
 ---
 
@@ -2561,10 +2561,10 @@ backupPolicyVm.BackupPolicyVmTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#create BackupPolicyVm#create}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#delete BackupPolicyVm#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#read BackupPolicyVm#read}. |
-| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#update BackupPolicyVm#update}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#create BackupPolicyVm#create}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#delete BackupPolicyVm#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#read BackupPolicyVm#read}. |
+| <code><a href="#@cdktn/provider-azurerm.backupPolicyVm.BackupPolicyVmTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#update BackupPolicyVm#update}. |
 
 ---
 
@@ -2576,7 +2576,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#create BackupPolicyVm#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#create BackupPolicyVm#create}.
 
 ---
 
@@ -2588,7 +2588,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#delete BackupPolicyVm#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#delete BackupPolicyVm#delete}.
 
 ---
 
@@ -2600,7 +2600,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#read BackupPolicyVm#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#read BackupPolicyVm#read}.
 
 ---
 
@@ -2612,7 +2612,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#update BackupPolicyVm#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#update BackupPolicyVm#update}.
 
 ---
 
@@ -5405,7 +5405,7 @@ def put_archived_restore_point(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#mode BackupPolicyVm#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#mode BackupPolicyVm#mode}.
 
 ---
 
@@ -5413,7 +5413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#duration BackupPolicyVm#duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#duration BackupPolicyVm#duration}.
 
 ---
 
@@ -5421,7 +5421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/backup_policy_vm#duration_type BackupPolicyVm#duration_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/backup_policy_vm#duration_type BackupPolicyVm#duration_type}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAzurermPlatformImage <a name="DataAzurermPlatformImage" id="@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/platform_image azurerm_platform_image}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/platform_image azurerm_platform_image}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImage.Initializer"></a>
 
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataAzurermPlatformImage t
 
 The id of the existing DataAzurermPlatformImage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/platform_image#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/platform_image#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -784,13 +784,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermpla
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/platform_image#location DataAzurermPlatformImage#location}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageConfig.property.offer">Offer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/platform_image#offer DataAzurermPlatformImage#offer}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageConfig.property.publisher">Publisher</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/platform_image#publisher DataAzurermPlatformImage#publisher}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageConfig.property.sku">Sku</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/platform_image#sku DataAzurermPlatformImage#sku}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/platform_image#id DataAzurermPlatformImage#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/platform_image#location DataAzurermPlatformImage#location}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageConfig.property.offer">Offer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/platform_image#offer DataAzurermPlatformImage#offer}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageConfig.property.publisher">Publisher</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/platform_image#publisher DataAzurermPlatformImage#publisher}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageConfig.property.sku">Sku</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/platform_image#sku DataAzurermPlatformImage#sku}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/platform_image#id DataAzurermPlatformImage#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageTimeouts">DataAzurermPlatformImageTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/platform_image#version DataAzurermPlatformImage#version}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/platform_image#version DataAzurermPlatformImage#version}. |
 
 ---
 
@@ -872,7 +872,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/platform_image#location DataAzurermPlatformImage#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/platform_image#location DataAzurermPlatformImage#location}.
 
 ---
 
@@ -884,7 +884,7 @@ Offer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/platform_image#offer DataAzurermPlatformImage#offer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/platform_image#offer DataAzurermPlatformImage#offer}.
 
 ---
 
@@ -896,7 +896,7 @@ Publisher *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/platform_image#publisher DataAzurermPlatformImage#publisher}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/platform_image#publisher DataAzurermPlatformImage#publisher}.
 
 ---
 
@@ -908,7 +908,7 @@ Sku *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/platform_image#sku DataAzurermPlatformImage#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/platform_image#sku DataAzurermPlatformImage#sku}.
 
 ---
 
@@ -920,7 +920,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/platform_image#id DataAzurermPlatformImage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/platform_image#id DataAzurermPlatformImage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -937,7 +937,7 @@ Timeouts DataAzurermPlatformImageTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/platform_image#timeouts DataAzurermPlatformImage#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/platform_image#timeouts DataAzurermPlatformImage#timeouts}
 
 ---
 
@@ -949,7 +949,7 @@ Version *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/platform_image#version DataAzurermPlatformImage#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/platform_image#version DataAzurermPlatformImage#version}.
 
 ---
 
@@ -969,7 +969,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermpla
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/platform_image#read DataAzurermPlatformImage#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/platform_image#read DataAzurermPlatformImage#read}. |
 
 ---
 
@@ -981,7 +981,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/data-sources/platform_image#read DataAzurermPlatformImage#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/platform_image#read DataAzurermPlatformImage#read}.
 
 ---
 

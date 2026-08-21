@@ -4,7 +4,7 @@
 
 ### AutomationWebhook <a name="AutomationWebhook" id="@cdktn/provider-azurerm.automationWebhook.AutomationWebhook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook azurerm_automation_webhook}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook azurerm_automation_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationWebhook.AutomationWebhook.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the AutomationWebhook to impor
 
 The id of the existing AutomationWebhook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1021,17 +1021,17 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automationwebh
 | <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.automationAccountName">AutomationAccountName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#automation_account_name AutomationWebhook#automation_account_name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.expiryTime">ExpiryTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#expiry_time AutomationWebhook#expiry_time}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#name AutomationWebhook#name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#resource_group_name AutomationWebhook#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.runbookName">RunbookName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#runbook_name AutomationWebhook#runbook_name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#enabled AutomationWebhook#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#id AutomationWebhook#id}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#parameters AutomationWebhook#parameters}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.runOnWorkerGroup">RunOnWorkerGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#run_on_worker_group AutomationWebhook#run_on_worker_group}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.automationAccountName">AutomationAccountName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#automation_account_name AutomationWebhook#automation_account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.expiryTime">ExpiryTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#expiry_time AutomationWebhook#expiry_time}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#name AutomationWebhook#name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#resource_group_name AutomationWebhook#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.runbookName">RunbookName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#runbook_name AutomationWebhook#runbook_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#enabled AutomationWebhook#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#id AutomationWebhook#id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#parameters AutomationWebhook#parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.runOnWorkerGroup">RunOnWorkerGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#run_on_worker_group AutomationWebhook#run_on_worker_group}. |
 | <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookTimeouts">AutomationWebhookTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#uri AutomationWebhook#uri}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookConfig.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#uri AutomationWebhook#uri}. |
 
 ---
 
@@ -1113,7 +1113,7 @@ AutomationAccountName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#automation_account_name AutomationWebhook#automation_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#automation_account_name AutomationWebhook#automation_account_name}.
 
 ---
 
@@ -1125,7 +1125,7 @@ ExpiryTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#expiry_time AutomationWebhook#expiry_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#expiry_time AutomationWebhook#expiry_time}.
 
 ---
 
@@ -1137,7 +1137,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#name AutomationWebhook#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#name AutomationWebhook#name}.
 
 ---
 
@@ -1149,7 +1149,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#resource_group_name AutomationWebhook#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#resource_group_name AutomationWebhook#resource_group_name}.
 
 ---
 
@@ -1161,7 +1161,7 @@ RunbookName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#runbook_name AutomationWebhook#runbook_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#runbook_name AutomationWebhook#runbook_name}.
 
 ---
 
@@ -1173,7 +1173,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#enabled AutomationWebhook#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#enabled AutomationWebhook#enabled}.
 
 ---
 
@@ -1185,7 +1185,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#id AutomationWebhook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#id AutomationWebhook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1200,7 +1200,7 @@ Parameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#parameters AutomationWebhook#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#parameters AutomationWebhook#parameters}.
 
 ---
 
@@ -1212,7 +1212,7 @@ RunOnWorkerGroup *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#run_on_worker_group AutomationWebhook#run_on_worker_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#run_on_worker_group AutomationWebhook#run_on_worker_group}.
 
 ---
 
@@ -1226,7 +1226,7 @@ Timeouts AutomationWebhookTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#timeouts AutomationWebhook#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#timeouts AutomationWebhook#timeouts}
 
 ---
 
@@ -1238,7 +1238,7 @@ Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#uri AutomationWebhook#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#uri AutomationWebhook#uri}.
 
 ---
 
@@ -1261,10 +1261,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automationwebh
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#create AutomationWebhook#create}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#delete AutomationWebhook#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#read AutomationWebhook#read}. |
-| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#update AutomationWebhook#update}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#create AutomationWebhook#create}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#delete AutomationWebhook#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#read AutomationWebhook#read}. |
+| <code><a href="#@cdktn/provider-azurerm.automationWebhook.AutomationWebhookTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#update AutomationWebhook#update}. |
 
 ---
 
@@ -1276,7 +1276,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#create AutomationWebhook#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#create AutomationWebhook#create}.
 
 ---
 
@@ -1288,7 +1288,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#delete AutomationWebhook#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#delete AutomationWebhook#delete}.
 
 ---
 
@@ -1300,7 +1300,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#read AutomationWebhook#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#read AutomationWebhook#read}.
 
 ---
 
@@ -1312,7 +1312,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/automation_webhook#update AutomationWebhook#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_webhook#update AutomationWebhook#update}.
 
 ---
 

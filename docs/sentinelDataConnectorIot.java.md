@@ -4,7 +4,7 @@
 
 ### SentinelDataConnectorIot <a name="SentinelDataConnectorIot" id="@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot azurerm_sentinel_data_connector_iot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot azurerm_sentinel_data_connector_iot}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIot.Initializer"></a>
 
@@ -38,10 +38,10 @@ SentinelDataConnectorIot.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIot.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIot.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIot.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIot.Initializer.parameter.logAnalyticsWorkspaceId">logAnalyticsWorkspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#log_analytics_workspace_id SentinelDataConnectorIot#log_analytics_workspace_id}. |
-| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIot.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#name SentinelDataConnectorIot#name}. |
-| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIot.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#id SentinelDataConnectorIot#id}. |
-| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIot.Initializer.parameter.subscriptionId">subscriptionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#subscription_id SentinelDataConnectorIot#subscription_id}. |
+| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIot.Initializer.parameter.logAnalyticsWorkspaceId">logAnalyticsWorkspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#log_analytics_workspace_id SentinelDataConnectorIot#log_analytics_workspace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIot.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#name SentinelDataConnectorIot#name}. |
+| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIot.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#id SentinelDataConnectorIot#id}. |
+| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIot.Initializer.parameter.subscriptionId">subscriptionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#subscription_id SentinelDataConnectorIot#subscription_id}. |
 | <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIot.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIotTimeouts">SentinelDataConnectorIotTimeouts</a></code> | timeouts block. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#log_analytics_workspace_id SentinelDataConnectorIot#log_analytics_workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#log_analytics_workspace_id SentinelDataConnectorIot#log_analytics_workspace_id}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#name SentinelDataConnectorIot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#name SentinelDataConnectorIot#name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#id SentinelDataConnectorIot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#id SentinelDataConnectorIot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#subscription_id SentinelDataConnectorIot#subscription_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#subscription_id SentinelDataConnectorIot#subscription_id}.
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#timeouts SentinelDataConnectorIot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#timeouts SentinelDataConnectorIot#timeouts}
 
 ---
 
@@ -630,7 +630,7 @@ The construct id used in the generated config for the SentinelDataConnectorIot t
 
 The id of the existing SentinelDataConnectorIot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -969,10 +969,10 @@ SentinelDataConnectorIotConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIotConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIotConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIotConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIotConfig.property.logAnalyticsWorkspaceId">logAnalyticsWorkspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#log_analytics_workspace_id SentinelDataConnectorIot#log_analytics_workspace_id}. |
-| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIotConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#name SentinelDataConnectorIot#name}. |
-| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIotConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#id SentinelDataConnectorIot#id}. |
-| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIotConfig.property.subscriptionId">subscriptionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#subscription_id SentinelDataConnectorIot#subscription_id}. |
+| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIotConfig.property.logAnalyticsWorkspaceId">logAnalyticsWorkspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#log_analytics_workspace_id SentinelDataConnectorIot#log_analytics_workspace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIotConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#name SentinelDataConnectorIot#name}. |
+| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIotConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#id SentinelDataConnectorIot#id}. |
+| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIotConfig.property.subscriptionId">subscriptionId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#subscription_id SentinelDataConnectorIot#subscription_id}. |
 | <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIotConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIotTimeouts">SentinelDataConnectorIotTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1055,7 +1055,7 @@ public java.lang.String getLogAnalyticsWorkspaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#log_analytics_workspace_id SentinelDataConnectorIot#log_analytics_workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#log_analytics_workspace_id SentinelDataConnectorIot#log_analytics_workspace_id}.
 
 ---
 
@@ -1067,7 +1067,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#name SentinelDataConnectorIot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#name SentinelDataConnectorIot#name}.
 
 ---
 
@@ -1079,7 +1079,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#id SentinelDataConnectorIot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#id SentinelDataConnectorIot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1094,7 +1094,7 @@ public java.lang.String getSubscriptionId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#subscription_id SentinelDataConnectorIot#subscription_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#subscription_id SentinelDataConnectorIot#subscription_id}.
 
 ---
 
@@ -1108,7 +1108,7 @@ public SentinelDataConnectorIotTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#timeouts SentinelDataConnectorIot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#timeouts SentinelDataConnectorIot#timeouts}
 
 ---
 
@@ -1130,9 +1130,9 @@ SentinelDataConnectorIotTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIotTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#create SentinelDataConnectorIot#create}. |
-| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIotTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#delete SentinelDataConnectorIot#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIotTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#read SentinelDataConnectorIot#read}. |
+| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIotTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#create SentinelDataConnectorIot#create}. |
+| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIotTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#delete SentinelDataConnectorIot#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.sentinelDataConnectorIot.SentinelDataConnectorIotTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#read SentinelDataConnectorIot#read}. |
 
 ---
 
@@ -1144,7 +1144,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#create SentinelDataConnectorIot#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#create SentinelDataConnectorIot#create}.
 
 ---
 
@@ -1156,7 +1156,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#delete SentinelDataConnectorIot#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#delete SentinelDataConnectorIot#delete}.
 
 ---
 
@@ -1168,7 +1168,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.1.0/docs/resources/sentinel_data_connector_iot#read SentinelDataConnectorIot#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/sentinel_data_connector_iot#read SentinelDataConnectorIot#read}.
 
 ---
 
