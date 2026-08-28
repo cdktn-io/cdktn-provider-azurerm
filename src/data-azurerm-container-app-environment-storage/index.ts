@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/container_app_environment_storage
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/container_app_environment_storage
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataAzurermContainerAppEnvironmentStorageConfig extends cdktn.T
   /**
   * The ID of the Container App Environment to which this storage belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/container_app_environment_storage#container_app_environment_id DataAzurermContainerAppEnvironmentStorage#container_app_environment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/container_app_environment_storage#container_app_environment_id DataAzurermContainerAppEnvironmentStorage#container_app_environment_id}
   */
   readonly containerAppEnvironmentId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/container_app_environment_storage#id DataAzurermContainerAppEnvironmentStorage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/container_app_environment_storage#id DataAzurermContainerAppEnvironmentStorage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +28,19 @@ export interface DataAzurermContainerAppEnvironmentStorageConfig extends cdktn.T
   /**
   * The name for this Container App Environment Storage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/container_app_environment_storage#name DataAzurermContainerAppEnvironmentStorage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/container_app_environment_storage#name DataAzurermContainerAppEnvironmentStorage#name}
   */
   readonly name: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/container_app_environment_storage#timeouts DataAzurermContainerAppEnvironmentStorage#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/container_app_environment_storage#timeouts DataAzurermContainerAppEnvironmentStorage#timeouts}
   */
   readonly timeouts?: DataAzurermContainerAppEnvironmentStorageTimeouts;
 }
 export interface DataAzurermContainerAppEnvironmentStorageTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/container_app_environment_storage#read DataAzurermContainerAppEnvironmentStorage#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/container_app_environment_storage#read DataAzurermContainerAppEnvironmentStorage#read}
   */
   readonly read?: string;
 }
@@ -134,7 +134,7 @@ export class DataAzurermContainerAppEnvironmentStorageTimeoutsOutputReference ex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/container_app_environment_storage azurerm_container_app_environment_storage}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/container_app_environment_storage azurerm_container_app_environment_storage}
 */
 export class DataAzurermContainerAppEnvironmentStorage extends cdktn.TerraformDataSource {
 
@@ -150,7 +150,7 @@ export class DataAzurermContainerAppEnvironmentStorage extends cdktn.TerraformDa
   * Generates CDKTN code for importing a DataAzurermContainerAppEnvironmentStorage resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermContainerAppEnvironmentStorage to import
-  * @param importFromId The id of the existing DataAzurermContainerAppEnvironmentStorage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/container_app_environment_storage#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermContainerAppEnvironmentStorage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/container_app_environment_storage#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermContainerAppEnvironmentStorage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -162,7 +162,7 @@ export class DataAzurermContainerAppEnvironmentStorage extends cdktn.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/container_app_environment_storage azurerm_container_app_environment_storage} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/container_app_environment_storage azurerm_container_app_environment_storage} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -173,7 +173,7 @@ export class DataAzurermContainerAppEnvironmentStorage extends cdktn.TerraformDa
       terraformResourceType: 'azurerm_container_app_environment_storage',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '5.2.0',
+        providerVersion: '5.3.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

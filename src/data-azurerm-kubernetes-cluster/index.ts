@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/kubernetes_cluster
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/kubernetes_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermKubernetesClusterConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/kubernetes_cluster#id DataAzurermKubernetesCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/kubernetes_cluster#id DataAzurermKubernetesCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/kubernetes_cluster#name DataAzurermKubernetesCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/kubernetes_cluster#name DataAzurermKubernetesCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/kubernetes_cluster#resource_group_name DataAzurermKubernetesCluster#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/kubernetes_cluster#resource_group_name DataAzurermKubernetesCluster#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/kubernetes_cluster#timeouts DataAzurermKubernetesCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/kubernetes_cluster#timeouts DataAzurermKubernetesCluster#timeouts}
   */
   readonly timeouts?: DataAzurermKubernetesClusterTimeouts;
 }
@@ -1841,6 +1841,11 @@ export class DataAzurermKubernetesClusterOmsAgentOutputReference extends cdktn.C
   public get omsAgentIdentity() {
     return this._omsAgentIdentity;
   }
+
+  // retina_flow_logs_enabled - computed: true, optional: false, required: false
+  public get retinaFlowLogsEnabled() {
+    return this.getBooleanAttribute('retina_flow_logs_enabled');
+  }
 }
 
 export class DataAzurermKubernetesClusterOmsAgentList extends cdktn.ComplexList {
@@ -2294,7 +2299,7 @@ export class DataAzurermKubernetesClusterWindowsProfileList extends cdktn.Comple
 }
 export interface DataAzurermKubernetesClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/kubernetes_cluster#read DataAzurermKubernetesCluster#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/kubernetes_cluster#read DataAzurermKubernetesCluster#read}
   */
   readonly read?: string;
 }
@@ -2388,7 +2393,7 @@ export class DataAzurermKubernetesClusterTimeoutsOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/kubernetes_cluster azurerm_kubernetes_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/kubernetes_cluster azurerm_kubernetes_cluster}
 */
 export class DataAzurermKubernetesCluster extends cdktn.TerraformDataSource {
 
@@ -2404,7 +2409,7 @@ export class DataAzurermKubernetesCluster extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermKubernetesCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermKubernetesCluster to import
-  * @param importFromId The id of the existing DataAzurermKubernetesCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermKubernetesCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermKubernetesCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2416,7 +2421,7 @@ export class DataAzurermKubernetesCluster extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/kubernetes_cluster azurerm_kubernetes_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/kubernetes_cluster azurerm_kubernetes_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2427,7 +2432,7 @@ export class DataAzurermKubernetesCluster extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_kubernetes_cluster',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '5.2.0',
+        providerVersion: '5.3.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -740,6 +740,7 @@ Object.defineProperty(exports, 'paloAltoNextGenerationFirewallVirtualNetworkStra
 Object.defineProperty(exports, 'paloAltoVirtualNetworkAppliance', { get: function () { return require('./palo-alto-virtual-network-appliance'); } });
 Object.defineProperty(exports, 'pimActiveRoleAssignment', { get: function () { return require('./pim-active-role-assignment'); } });
 Object.defineProperty(exports, 'pimEligibleRoleAssignment', { get: function () { return require('./pim-eligible-role-assignment'); } });
+Object.defineProperty(exports, 'playwrightWorkspace', { get: function () { return require('./playwright-workspace'); } });
 Object.defineProperty(exports, 'pointToSiteVpnGateway', { get: function () { return require('./point-to-site-vpn-gateway'); } });
 Object.defineProperty(exports, 'policyDefinition', { get: function () { return require('./policy-definition'); } });
 Object.defineProperty(exports, 'policySetDefinition', { get: function () { return require('./policy-set-definition'); } });
@@ -1381,6 +1382,7 @@ Object.defineProperty(exports, 'dataAzurermOracleResourceAnchor', { get: functio
 Object.defineProperty(exports, 'dataAzurermOrchestratedVirtualMachineScaleSet', { get: function () { return require('./data-azurerm-orchestrated-virtual-machine-scale-set'); } });
 Object.defineProperty(exports, 'dataAzurermPaloAltoLocalRulestack', { get: function () { return require('./data-azurerm-palo-alto-local-rulestack'); } });
 Object.defineProperty(exports, 'dataAzurermPlatformImage', { get: function () { return require('./data-azurerm-platform-image'); } });
+Object.defineProperty(exports, 'dataAzurermPlaywrightWorkspace', { get: function () { return require('./data-azurerm-playwright-workspace'); } });
 Object.defineProperty(exports, 'dataAzurermPolicyAssignment', { get: function () { return require('./data-azurerm-policy-assignment'); } });
 Object.defineProperty(exports, 'dataAzurermPolicyDefinition', { get: function () { return require('./data-azurerm-policy-definition'); } });
 Object.defineProperty(exports, 'dataAzurermPolicyDefinitionBuiltIn', { get: function () { return require('./data-azurerm-policy-definition-built-in'); } });

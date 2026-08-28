@@ -1,3 +1,3 @@
 # `azurerm_management_group_policy_set_definition`
 
-Refer to the Terraform Registry for docs: [`azurerm_management_group_policy_set_definition`](https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/management_group_policy_set_definition).
+Refer to the Terraform Registry for docs: [`azurerm_management_group_policy_set_definition`](https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/management_group_policy_set_definition).

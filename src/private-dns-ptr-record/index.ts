@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/private_dns_ptr_record
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/private_dns_ptr_record
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +13,54 @@ import * as cdktn from 'cdktn';
 
 export interface PrivateDnsPtrRecordConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/private_dns_ptr_record#id PrivateDnsPtrRecord#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/private_dns_ptr_record#id PrivateDnsPtrRecord#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/private_dns_ptr_record#name PrivateDnsPtrRecord#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/private_dns_ptr_record#name PrivateDnsPtrRecord#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/private_dns_ptr_record#private_dns_zone_id PrivateDnsPtrRecord#private_dns_zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/private_dns_ptr_record#private_dns_zone_id PrivateDnsPtrRecord#private_dns_zone_id}
   */
   readonly privateDnsZoneId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/private_dns_ptr_record#records PrivateDnsPtrRecord#records}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/private_dns_ptr_record#records PrivateDnsPtrRecord#records}
   */
   readonly records: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/private_dns_ptr_record#tags PrivateDnsPtrRecord#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/private_dns_ptr_record#tags PrivateDnsPtrRecord#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/private_dns_ptr_record#ttl PrivateDnsPtrRecord#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/private_dns_ptr_record#ttl PrivateDnsPtrRecord#ttl}
   */
   readonly ttl: number;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/private_dns_ptr_record#timeouts PrivateDnsPtrRecord#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/private_dns_ptr_record#timeouts PrivateDnsPtrRecord#timeouts}
   */
   readonly timeouts?: PrivateDnsPtrRecordTimeouts;
 }
 export interface PrivateDnsPtrRecordTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/private_dns_ptr_record#create PrivateDnsPtrRecord#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/private_dns_ptr_record#create PrivateDnsPtrRecord#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/private_dns_ptr_record#delete PrivateDnsPtrRecord#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/private_dns_ptr_record#delete PrivateDnsPtrRecord#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/private_dns_ptr_record#read PrivateDnsPtrRecord#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/private_dns_ptr_record#read PrivateDnsPtrRecord#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/private_dns_ptr_record#update PrivateDnsPtrRecord#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/private_dns_ptr_record#update PrivateDnsPtrRecord#update}
   */
   readonly update?: string;
 }
@@ -241,7 +241,7 @@ export class PrivateDnsPtrRecordTimeoutsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/private_dns_ptr_record azurerm_private_dns_ptr_record}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/private_dns_ptr_record azurerm_private_dns_ptr_record}
 */
 export class PrivateDnsPtrRecord extends cdktn.TerraformResource {
 
@@ -257,7 +257,7 @@ export class PrivateDnsPtrRecord extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PrivateDnsPtrRecord resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PrivateDnsPtrRecord to import
-  * @param importFromId The id of the existing PrivateDnsPtrRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/private_dns_ptr_record#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PrivateDnsPtrRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/private_dns_ptr_record#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PrivateDnsPtrRecord to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -269,7 +269,7 @@ export class PrivateDnsPtrRecord extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/private_dns_ptr_record azurerm_private_dns_ptr_record} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/private_dns_ptr_record azurerm_private_dns_ptr_record} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -280,7 +280,7 @@ export class PrivateDnsPtrRecord extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_private_dns_ptr_record',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '5.2.0',
+        providerVersion: '5.3.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
