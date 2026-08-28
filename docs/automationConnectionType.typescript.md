@@ -4,7 +4,7 @@
 
 ### AutomationConnectionType <a name="AutomationConnectionType" id="@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type azurerm_automation_connection_type}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type azurerm_automation_connection_type}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionType.Initializer"></a>
 
@@ -536,7 +536,7 @@ The construct id used in the generated config for the AutomationConnectionType t
 
 The id of the existing AutomationConnectionType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -906,12 +906,12 @@ const automationConnectionTypeConfig: automationConnectionType.AutomationConnect
 | <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeConfig.property.automationAccountName">automationAccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#automation_account_name AutomationConnectionType#automation_account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeConfig.property.automationAccountName">automationAccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#automation_account_name AutomationConnectionType#automation_account_name}. |
 | <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeConfig.property.field">field</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeField">AutomationConnectionTypeField</a>[]</code> | field block. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#name AutomationConnectionType#name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#resource_group_name AutomationConnectionType#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#id AutomationConnectionType#id}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeConfig.property.isGlobal">isGlobal</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#is_global AutomationConnectionType#is_global}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#name AutomationConnectionType#name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#resource_group_name AutomationConnectionType#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#id AutomationConnectionType#id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeConfig.property.isGlobal">isGlobal</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#is_global AutomationConnectionType#is_global}. |
 | <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeTimeouts">AutomationConnectionTypeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -994,7 +994,7 @@ public readonly automationAccountName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#automation_account_name AutomationConnectionType#automation_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#automation_account_name AutomationConnectionType#automation_account_name}.
 
 ---
 
@@ -1008,7 +1008,7 @@ public readonly field: IResolvable | AutomationConnectionTypeField[];
 
 field block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#field AutomationConnectionType#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#field AutomationConnectionType#field}
 
 ---
 
@@ -1020,7 +1020,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#name AutomationConnectionType#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#name AutomationConnectionType#name}.
 
 ---
 
@@ -1032,7 +1032,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#resource_group_name AutomationConnectionType#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#resource_group_name AutomationConnectionType#resource_group_name}.
 
 ---
 
@@ -1044,7 +1044,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#id AutomationConnectionType#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#id AutomationConnectionType#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1059,7 +1059,7 @@ public readonly isGlobal: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#is_global AutomationConnectionType#is_global}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#is_global AutomationConnectionType#is_global}.
 
 ---
 
@@ -1073,7 +1073,7 @@ public readonly timeouts: AutomationConnectionTypeTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#timeouts AutomationConnectionType#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#timeouts AutomationConnectionType#timeouts}
 
 ---
 
@@ -1091,10 +1091,10 @@ const automationConnectionTypeField: automationConnectionType.AutomationConnecti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeField.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#name AutomationConnectionType#name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeField.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#type AutomationConnectionType#type}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeField.property.isEncrypted">isEncrypted</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#is_encrypted AutomationConnectionType#is_encrypted}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeField.property.isOptional">isOptional</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#is_optional AutomationConnectionType#is_optional}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeField.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#name AutomationConnectionType#name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeField.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#type AutomationConnectionType#type}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeField.property.isEncrypted">isEncrypted</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#is_encrypted AutomationConnectionType#is_encrypted}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeField.property.isOptional">isOptional</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#is_optional AutomationConnectionType#is_optional}. |
 
 ---
 
@@ -1106,7 +1106,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#name AutomationConnectionType#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#name AutomationConnectionType#name}.
 
 ---
 
@@ -1118,7 +1118,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#type AutomationConnectionType#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#type AutomationConnectionType#type}.
 
 ---
 
@@ -1130,7 +1130,7 @@ public readonly isEncrypted: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#is_encrypted AutomationConnectionType#is_encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#is_encrypted AutomationConnectionType#is_encrypted}.
 
 ---
 
@@ -1142,7 +1142,7 @@ public readonly isOptional: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#is_optional AutomationConnectionType#is_optional}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#is_optional AutomationConnectionType#is_optional}.
 
 ---
 
@@ -1160,9 +1160,9 @@ const automationConnectionTypeTimeouts: automationConnectionType.AutomationConne
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#create AutomationConnectionType#create}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#delete AutomationConnectionType#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#read AutomationConnectionType#read}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#create AutomationConnectionType#create}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#delete AutomationConnectionType#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.automationConnectionType.AutomationConnectionTypeTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#read AutomationConnectionType#read}. |
 
 ---
 
@@ -1174,7 +1174,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#create AutomationConnectionType#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#create AutomationConnectionType#create}.
 
 ---
 
@@ -1186,7 +1186,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#delete AutomationConnectionType#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#delete AutomationConnectionType#delete}.
 
 ---
 
@@ -1198,7 +1198,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/automation_connection_type#read AutomationConnectionType#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_connection_type#read AutomationConnectionType#read}.
 
 ---
 

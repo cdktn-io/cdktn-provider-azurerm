@@ -4,7 +4,7 @@
 
 ### BatchApplication <a name="BatchApplication" id="@cdktn/provider-azurerm.batchApplication.BatchApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application azurerm_batch_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application azurerm_batch_application}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.batchApplication.BatchApplication.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the BatchApplication to import
 
 The id of the existing BatchApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -945,13 +945,13 @@ new BatchApplicationConfig {
 | <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationConfig.property.accountName">AccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#account_name BatchApplication#account_name}. |
-| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#name BatchApplication#name}. |
-| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#resource_group_name BatchApplication#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationConfig.property.allowUpdates">AllowUpdates</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#allow_updates BatchApplication#allow_updates}. |
-| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationConfig.property.defaultVersion">DefaultVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#default_version BatchApplication#default_version}. |
-| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#display_name BatchApplication#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#id BatchApplication#id}. |
+| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationConfig.property.accountName">AccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#account_name BatchApplication#account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#name BatchApplication#name}. |
+| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#resource_group_name BatchApplication#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationConfig.property.allowUpdates">AllowUpdates</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#allow_updates BatchApplication#allow_updates}. |
+| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationConfig.property.defaultVersion">DefaultVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#default_version BatchApplication#default_version}. |
+| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#display_name BatchApplication#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#id BatchApplication#id}. |
 | <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationTimeouts">BatchApplicationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1034,7 +1034,7 @@ public string AccountName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#account_name BatchApplication#account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#account_name BatchApplication#account_name}.
 
 ---
 
@@ -1046,7 +1046,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#name BatchApplication#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#name BatchApplication#name}.
 
 ---
 
@@ -1058,7 +1058,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#resource_group_name BatchApplication#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#resource_group_name BatchApplication#resource_group_name}.
 
 ---
 
@@ -1070,7 +1070,7 @@ public bool|IResolvable AllowUpdates { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#allow_updates BatchApplication#allow_updates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#allow_updates BatchApplication#allow_updates}.
 
 ---
 
@@ -1082,7 +1082,7 @@ public string DefaultVersion { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#default_version BatchApplication#default_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#default_version BatchApplication#default_version}.
 
 ---
 
@@ -1094,7 +1094,7 @@ public string DisplayName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#display_name BatchApplication#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#display_name BatchApplication#display_name}.
 
 ---
 
@@ -1106,7 +1106,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#id BatchApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#id BatchApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1123,7 +1123,7 @@ public BatchApplicationTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#timeouts BatchApplication#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#timeouts BatchApplication#timeouts}
 
 ---
 
@@ -1146,10 +1146,10 @@ new BatchApplicationTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#create BatchApplication#create}. |
-| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#delete BatchApplication#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#read BatchApplication#read}. |
-| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#update BatchApplication#update}. |
+| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#create BatchApplication#create}. |
+| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#delete BatchApplication#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#read BatchApplication#read}. |
+| <code><a href="#@cdktn/provider-azurerm.batchApplication.BatchApplicationTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#update BatchApplication#update}. |
 
 ---
 
@@ -1161,7 +1161,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#create BatchApplication#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#create BatchApplication#create}.
 
 ---
 
@@ -1173,7 +1173,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#delete BatchApplication#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#delete BatchApplication#delete}.
 
 ---
 
@@ -1185,7 +1185,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#read BatchApplication#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#read BatchApplication#read}.
 
 ---
 
@@ -1197,7 +1197,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/batch_application#update BatchApplication#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/batch_application#update BatchApplication#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### VmwareCluster <a name="VmwareCluster" id="@cdktn/provider-azurerm.vmwareCluster.VmwareCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/vmware_cluster azurerm_vmware_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/vmware_cluster azurerm_vmware_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vmwareCluster.VmwareCluster.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the VmwareCluster to import.
 
 The id of the existing VmwareCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/vmware_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/vmware_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -886,11 +886,11 @@ const vmwareClusterConfig: vmwareCluster.VmwareClusterConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterConfig.property.clusterNodeCount">clusterNodeCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/vmware_cluster#cluster_node_count VmwareCluster#cluster_node_count}. |
-| <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/vmware_cluster#name VmwareCluster#name}. |
-| <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterConfig.property.skuName">skuName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/vmware_cluster#sku_name VmwareCluster#sku_name}. |
-| <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterConfig.property.vmwareCloudId">vmwareCloudId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/vmware_cluster#vmware_cloud_id VmwareCluster#vmware_cloud_id}. |
-| <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/vmware_cluster#id VmwareCluster#id}. |
+| <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterConfig.property.clusterNodeCount">clusterNodeCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/vmware_cluster#cluster_node_count VmwareCluster#cluster_node_count}. |
+| <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/vmware_cluster#name VmwareCluster#name}. |
+| <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterConfig.property.skuName">skuName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/vmware_cluster#sku_name VmwareCluster#sku_name}. |
+| <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterConfig.property.vmwareCloudId">vmwareCloudId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/vmware_cluster#vmware_cloud_id VmwareCluster#vmware_cloud_id}. |
+| <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/vmware_cluster#id VmwareCluster#id}. |
 | <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterTimeouts">VmwareClusterTimeouts</a></code> | timeouts block. |
 
 ---
@@ -973,7 +973,7 @@ public readonly clusterNodeCount: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/vmware_cluster#cluster_node_count VmwareCluster#cluster_node_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/vmware_cluster#cluster_node_count VmwareCluster#cluster_node_count}.
 
 ---
 
@@ -985,7 +985,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/vmware_cluster#name VmwareCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/vmware_cluster#name VmwareCluster#name}.
 
 ---
 
@@ -997,7 +997,7 @@ public readonly skuName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/vmware_cluster#sku_name VmwareCluster#sku_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/vmware_cluster#sku_name VmwareCluster#sku_name}.
 
 ---
 
@@ -1009,7 +1009,7 @@ public readonly vmwareCloudId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/vmware_cluster#vmware_cloud_id VmwareCluster#vmware_cloud_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/vmware_cluster#vmware_cloud_id VmwareCluster#vmware_cloud_id}.
 
 ---
 
@@ -1021,7 +1021,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/vmware_cluster#id VmwareCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/vmware_cluster#id VmwareCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1038,7 +1038,7 @@ public readonly timeouts: VmwareClusterTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/vmware_cluster#timeouts VmwareCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/vmware_cluster#timeouts VmwareCluster#timeouts}
 
 ---
 
@@ -1056,10 +1056,10 @@ const vmwareClusterTimeouts: vmwareCluster.VmwareClusterTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/vmware_cluster#create VmwareCluster#create}. |
-| <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/vmware_cluster#delete VmwareCluster#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/vmware_cluster#read VmwareCluster#read}. |
-| <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/vmware_cluster#update VmwareCluster#update}. |
+| <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/vmware_cluster#create VmwareCluster#create}. |
+| <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/vmware_cluster#delete VmwareCluster#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/vmware_cluster#read VmwareCluster#read}. |
+| <code><a href="#@cdktn/provider-azurerm.vmwareCluster.VmwareClusterTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/vmware_cluster#update VmwareCluster#update}. |
 
 ---
 
@@ -1071,7 +1071,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/vmware_cluster#create VmwareCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/vmware_cluster#create VmwareCluster#create}.
 
 ---
 
@@ -1083,7 +1083,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/vmware_cluster#delete VmwareCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/vmware_cluster#delete VmwareCluster#delete}.
 
 ---
 
@@ -1095,7 +1095,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/vmware_cluster#read VmwareCluster#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/vmware_cluster#read VmwareCluster#read}.
 
 ---
 
@@ -1107,7 +1107,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/vmware_cluster#update VmwareCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/vmware_cluster#update VmwareCluster#update}.
 
 ---
 

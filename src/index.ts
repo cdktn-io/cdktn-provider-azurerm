@@ -740,6 +740,7 @@ export * as paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager from 
 export * as paloAltoVirtualNetworkAppliance from './palo-alto-virtual-network-appliance/index';
 export * as pimActiveRoleAssignment from './pim-active-role-assignment/index';
 export * as pimEligibleRoleAssignment from './pim-eligible-role-assignment/index';
+export * as playwrightWorkspace from './playwright-workspace/index';
 export * as pointToSiteVpnGateway from './point-to-site-vpn-gateway/index';
 export * as policyDefinition from './policy-definition/index';
 export * as policySetDefinition from './policy-set-definition/index';
@@ -1381,6 +1382,7 @@ export * as dataAzurermOracleResourceAnchor from './data-azurerm-oracle-resource
 export * as dataAzurermOrchestratedVirtualMachineScaleSet from './data-azurerm-orchestrated-virtual-machine-scale-set/index';
 export * as dataAzurermPaloAltoLocalRulestack from './data-azurerm-palo-alto-local-rulestack/index';
 export * as dataAzurermPlatformImage from './data-azurerm-platform-image/index';
+export * as dataAzurermPlaywrightWorkspace from './data-azurerm-playwright-workspace/index';
 export * as dataAzurermPolicyAssignment from './data-azurerm-policy-assignment/index';
 export * as dataAzurermPolicyDefinition from './data-azurerm-policy-definition/index';
 export * as dataAzurermPolicyDefinitionBuiltIn from './data-azurerm-policy-definition-built-in/index';
