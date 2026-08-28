@@ -4,7 +4,7 @@
 
 ### ArcMachine <a name="ArcMachine" id="@cdktn/provider-azurerm.arcMachine.ArcMachine"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine azurerm_arc_machine}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine azurerm_arc_machine}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.arcMachine.ArcMachine.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the ArcMachine to import.
 
 The id of the existing ArcMachine that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -935,13 +935,13 @@ const arcMachineConfig: arcMachine.ArcMachineConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineConfig.property.kind">kind</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#kind ArcMachine#kind}. |
-| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#location ArcMachine#location}. |
-| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#name ArcMachine#name}. |
-| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#resource_group_name ArcMachine#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#id ArcMachine#id}. |
+| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineConfig.property.kind">kind</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#kind ArcMachine#kind}. |
+| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#location ArcMachine#location}. |
+| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#name ArcMachine#name}. |
+| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#resource_group_name ArcMachine#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#id ArcMachine#id}. |
 | <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineIdentity">ArcMachineIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#tags ArcMachine#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#tags ArcMachine#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineTimeouts">ArcMachineTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1024,7 +1024,7 @@ public readonly kind: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#kind ArcMachine#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#kind ArcMachine#kind}.
 
 ---
 
@@ -1036,7 +1036,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#location ArcMachine#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#location ArcMachine#location}.
 
 ---
 
@@ -1048,7 +1048,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#name ArcMachine#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#name ArcMachine#name}.
 
 ---
 
@@ -1060,7 +1060,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#resource_group_name ArcMachine#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#resource_group_name ArcMachine#resource_group_name}.
 
 ---
 
@@ -1072,7 +1072,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#id ArcMachine#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#id ArcMachine#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1089,7 +1089,7 @@ public readonly identity: ArcMachineIdentity;
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#identity ArcMachine#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#identity ArcMachine#identity}
 
 ---
 
@@ -1101,7 +1101,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#tags ArcMachine#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#tags ArcMachine#tags}.
 
 ---
 
@@ -1115,7 +1115,7 @@ public readonly timeouts: ArcMachineTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#timeouts ArcMachine#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#timeouts ArcMachine#timeouts}
 
 ---
 
@@ -1133,7 +1133,7 @@ const arcMachineIdentity: arcMachine.ArcMachineIdentity = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#type ArcMachine#type}. |
+| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#type ArcMachine#type}. |
 
 ---
 
@@ -1145,7 +1145,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#type ArcMachine#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#type ArcMachine#type}.
 
 ---
 
@@ -1163,10 +1163,10 @@ const arcMachineTimeouts: arcMachine.ArcMachineTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#create ArcMachine#create}. |
-| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#delete ArcMachine#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#read ArcMachine#read}. |
-| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#update ArcMachine#update}. |
+| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#create ArcMachine#create}. |
+| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#delete ArcMachine#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#read ArcMachine#read}. |
+| <code><a href="#@cdktn/provider-azurerm.arcMachine.ArcMachineTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#update ArcMachine#update}. |
 
 ---
 
@@ -1178,7 +1178,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#create ArcMachine#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#create ArcMachine#create}.
 
 ---
 
@@ -1190,7 +1190,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#delete ArcMachine#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#delete ArcMachine#delete}.
 
 ---
 
@@ -1202,7 +1202,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#read ArcMachine#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#read ArcMachine#read}.
 
 ---
 
@@ -1214,7 +1214,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/arc_machine#update ArcMachine#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/arc_machine#update ArcMachine#update}.
 
 ---
 

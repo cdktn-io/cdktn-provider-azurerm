@@ -4,7 +4,7 @@
 
 ### EventgridDomainTopic <a name="EventgridDomainTopic" id="@cdktn/provider-azurerm.eventgridDomainTopic.EventgridDomainTopic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_domain_topic azurerm_eventgrid_domain_topic}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_domain_topic azurerm_eventgrid_domain_topic}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridDomainTopic.EventgridDomainTopic.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the EventgridDomainTopic to im
 
 The id of the existing EventgridDomainTopic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_domain_topic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_domain_topic#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -842,10 +842,10 @@ const eventgridDomainTopicConfig: eventgridDomainTopic.EventgridDomainTopicConfi
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomainTopic.EventgridDomainTopicConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomainTopic.EventgridDomainTopicConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomainTopic.EventgridDomainTopicConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomainTopic.EventgridDomainTopicConfig.property.domainName">domainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_domain_topic#domain_name EventgridDomainTopic#domain_name}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomainTopic.EventgridDomainTopicConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_domain_topic#name EventgridDomainTopic#name}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomainTopic.EventgridDomainTopicConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_domain_topic#resource_group_name EventgridDomainTopic#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomainTopic.EventgridDomainTopicConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_domain_topic#id EventgridDomainTopic#id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomainTopic.EventgridDomainTopicConfig.property.domainName">domainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_domain_topic#domain_name EventgridDomainTopic#domain_name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomainTopic.EventgridDomainTopicConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_domain_topic#name EventgridDomainTopic#name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomainTopic.EventgridDomainTopicConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_domain_topic#resource_group_name EventgridDomainTopic#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomainTopic.EventgridDomainTopicConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_domain_topic#id EventgridDomainTopic#id}. |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomainTopic.EventgridDomainTopicConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridDomainTopic.EventgridDomainTopicTimeouts">EventgridDomainTopicTimeouts</a></code> | timeouts block. |
 
 ---
@@ -928,7 +928,7 @@ public readonly domainName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_domain_topic#domain_name EventgridDomainTopic#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_domain_topic#domain_name EventgridDomainTopic#domain_name}.
 
 ---
 
@@ -940,7 +940,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_domain_topic#name EventgridDomainTopic#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_domain_topic#name EventgridDomainTopic#name}.
 
 ---
 
@@ -952,7 +952,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_domain_topic#resource_group_name EventgridDomainTopic#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_domain_topic#resource_group_name EventgridDomainTopic#resource_group_name}.
 
 ---
 
@@ -964,7 +964,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_domain_topic#id EventgridDomainTopic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_domain_topic#id EventgridDomainTopic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -981,7 +981,7 @@ public readonly timeouts: EventgridDomainTopicTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_domain_topic#timeouts EventgridDomainTopic#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_domain_topic#timeouts EventgridDomainTopic#timeouts}
 
 ---
 
@@ -999,9 +999,9 @@ const eventgridDomainTopicTimeouts: eventgridDomainTopic.EventgridDomainTopicTim
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomainTopic.EventgridDomainTopicTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_domain_topic#create EventgridDomainTopic#create}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomainTopic.EventgridDomainTopicTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_domain_topic#delete EventgridDomainTopic#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomainTopic.EventgridDomainTopicTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_domain_topic#read EventgridDomainTopic#read}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomainTopic.EventgridDomainTopicTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_domain_topic#create EventgridDomainTopic#create}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomainTopic.EventgridDomainTopicTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_domain_topic#delete EventgridDomainTopic#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomainTopic.EventgridDomainTopicTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_domain_topic#read EventgridDomainTopic#read}. |
 
 ---
 
@@ -1013,7 +1013,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_domain_topic#create EventgridDomainTopic#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_domain_topic#create EventgridDomainTopic#create}.
 
 ---
 
@@ -1025,7 +1025,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_domain_topic#delete EventgridDomainTopic#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_domain_topic#delete EventgridDomainTopic#delete}.
 
 ---
 
@@ -1037,7 +1037,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_domain_topic#read EventgridDomainTopic#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_domain_topic#read EventgridDomainTopic#read}.
 
 ---
 

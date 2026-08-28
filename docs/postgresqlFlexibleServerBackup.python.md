@@ -4,7 +4,7 @@
 
 ### PostgresqlFlexibleServerBackup <a name="PostgresqlFlexibleServerBackup" id="@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup azurerm_postgresql_flexible_server_backup}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup azurerm_postgresql_flexible_server_backup}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackup.Initializer"></a>
 
@@ -39,9 +39,9 @@ postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackup(
 | <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackup.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackup.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackup.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackup.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#name PostgresqlFlexibleServerBackup#name}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackup.Initializer.parameter.serverId">server_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#server_id PostgresqlFlexibleServerBackup#server_id}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#id PostgresqlFlexibleServerBackup#id}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackup.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#name PostgresqlFlexibleServerBackup#name}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackup.Initializer.parameter.serverId">server_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#server_id PostgresqlFlexibleServerBackup#server_id}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#id PostgresqlFlexibleServerBackup#id}. |
 | <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackup.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupTimeouts">PostgresqlFlexibleServerBackupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#name PostgresqlFlexibleServerBackup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#name PostgresqlFlexibleServerBackup#name}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#server_id PostgresqlFlexibleServerBackup#server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#server_id PostgresqlFlexibleServerBackup#server_id}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#id PostgresqlFlexibleServerBackup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#id PostgresqlFlexibleServerBackup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +139,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#timeouts PostgresqlFlexibleServerBackup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#timeouts PostgresqlFlexibleServerBackup#timeouts}
 
 ---
 
@@ -539,7 +539,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#create PostgresqlFlexibleServerBackup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#create PostgresqlFlexibleServerBackup#create}.
 
 ---
 
@@ -547,7 +547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#delete PostgresqlFlexibleServerBackup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#delete PostgresqlFlexibleServerBackup#delete}.
 
 ---
 
@@ -555,7 +555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#read PostgresqlFlexibleServerBackup#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#read PostgresqlFlexibleServerBackup#read}.
 
 ---
 
@@ -685,7 +685,7 @@ The construct id used in the generated config for the PostgresqlFlexibleServerBa
 
 The id of the existing PostgresqlFlexibleServerBackup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1012,9 +1012,9 @@ postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupConfig(
 | <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#name PostgresqlFlexibleServerBackup#name}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupConfig.property.serverId">server_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#server_id PostgresqlFlexibleServerBackup#server_id}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#id PostgresqlFlexibleServerBackup#id}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#name PostgresqlFlexibleServerBackup#name}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupConfig.property.serverId">server_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#server_id PostgresqlFlexibleServerBackup#server_id}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#id PostgresqlFlexibleServerBackup#id}. |
 | <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupTimeouts">PostgresqlFlexibleServerBackupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1097,7 +1097,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#name PostgresqlFlexibleServerBackup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#name PostgresqlFlexibleServerBackup#name}.
 
 ---
 
@@ -1109,7 +1109,7 @@ server_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#server_id PostgresqlFlexibleServerBackup#server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#server_id PostgresqlFlexibleServerBackup#server_id}.
 
 ---
 
@@ -1121,7 +1121,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#id PostgresqlFlexibleServerBackup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#id PostgresqlFlexibleServerBackup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1138,7 +1138,7 @@ timeouts: PostgresqlFlexibleServerBackupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#timeouts PostgresqlFlexibleServerBackup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#timeouts PostgresqlFlexibleServerBackup#timeouts}
 
 ---
 
@@ -1160,9 +1160,9 @@ postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#create PostgresqlFlexibleServerBackup#create}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#delete PostgresqlFlexibleServerBackup#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#read PostgresqlFlexibleServerBackup#read}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#create PostgresqlFlexibleServerBackup#create}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#delete PostgresqlFlexibleServerBackup#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#read PostgresqlFlexibleServerBackup#read}. |
 
 ---
 
@@ -1174,7 +1174,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#create PostgresqlFlexibleServerBackup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#create PostgresqlFlexibleServerBackup#create}.
 
 ---
 
@@ -1186,7 +1186,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#delete PostgresqlFlexibleServerBackup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#delete PostgresqlFlexibleServerBackup#delete}.
 
 ---
 
@@ -1198,7 +1198,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/postgresql_flexible_server_backup#read PostgresqlFlexibleServerBackup#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/postgresql_flexible_server_backup#read PostgresqlFlexibleServerBackup#read}.
 
 ---
 

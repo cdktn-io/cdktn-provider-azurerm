@@ -4,7 +4,7 @@
 
 ### DataAzurermManagementGroup <a name="DataAzurermManagementGroup" id="@cdktn/provider-azurerm.dataAzurermManagementGroup.DataAzurermManagementGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/management_group azurerm_management_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/management_group azurerm_management_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermManagementGroup.DataAzurermManagementGroup.Initializer"></a>
 
@@ -428,7 +428,7 @@ The construct id used in the generated config for the DataAzurermManagementGroup
 
 The id of the existing DataAzurermManagementGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/management_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/management_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -788,9 +788,9 @@ new DataAzurermManagementGroupConfig {
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermManagementGroup.DataAzurermManagementGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermManagementGroup.DataAzurermManagementGroupConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermManagementGroup.DataAzurermManagementGroupConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagementGroup.DataAzurermManagementGroupConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/management_group#display_name DataAzurermManagementGroup#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagementGroup.DataAzurermManagementGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/management_group#id DataAzurermManagementGroup#id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagementGroup.DataAzurermManagementGroupConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/management_group#name DataAzurermManagementGroup#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagementGroup.DataAzurermManagementGroupConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/management_group#display_name DataAzurermManagementGroup#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagementGroup.DataAzurermManagementGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/management_group#id DataAzurermManagementGroup#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagementGroup.DataAzurermManagementGroupConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/management_group#name DataAzurermManagementGroup#name}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermManagementGroup.DataAzurermManagementGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermManagementGroup.DataAzurermManagementGroupTimeouts">DataAzurermManagementGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -873,7 +873,7 @@ public string DisplayName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/management_group#display_name DataAzurermManagementGroup#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/management_group#display_name DataAzurermManagementGroup#display_name}.
 
 ---
 
@@ -885,7 +885,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/management_group#id DataAzurermManagementGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/management_group#id DataAzurermManagementGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -900,7 +900,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/management_group#name DataAzurermManagementGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/management_group#name DataAzurermManagementGroup#name}.
 
 ---
 
@@ -914,7 +914,7 @@ public DataAzurermManagementGroupTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/management_group#timeouts DataAzurermManagementGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/management_group#timeouts DataAzurermManagementGroup#timeouts}
 
 ---
 
@@ -934,7 +934,7 @@ new DataAzurermManagementGroupTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagementGroup.DataAzurermManagementGroupTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/management_group#read DataAzurermManagementGroup#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagementGroup.DataAzurermManagementGroupTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/management_group#read DataAzurermManagementGroup#read}. |
 
 ---
 
@@ -946,7 +946,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/data-sources/management_group#read DataAzurermManagementGroup#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/management_group#read DataAzurermManagementGroup#read}.
 
 ---
 

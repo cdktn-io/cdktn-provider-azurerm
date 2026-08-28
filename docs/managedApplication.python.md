@@ -4,7 +4,7 @@
 
 ### ManagedApplication <a name="ManagedApplication" id="@cdktn/provider-azurerm.managedApplication.ManagedApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application azurerm_managed_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application azurerm_managed_application}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer"></a>
 
@@ -28,6 +28,7 @@ managedApplication.ManagedApplication(
   resource_group_name: str,
   application_definition_id: str = None,
   id: str = None,
+  identity: ManagedApplicationIdentity = None,
   parameter_values: str = None,
   plan: ManagedApplicationPlan = None,
   tags: typing.Mapping[str] = None,
@@ -46,16 +47,17 @@ managedApplication.ManagedApplication(
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.kind">kind</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#kind ManagedApplication#kind}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#location ManagedApplication#location}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.managedResourceGroupName">managed_resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#managed_resource_group_name ManagedApplication#managed_resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#name ManagedApplication#name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#resource_group_name ManagedApplication#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.applicationDefinitionId">application_definition_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#application_definition_id ManagedApplication#application_definition_id}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#id ManagedApplication#id}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.parameterValues">parameter_values</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#parameter_values ManagedApplication#parameter_values}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.kind">kind</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#kind ManagedApplication#kind}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#location ManagedApplication#location}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.managedResourceGroupName">managed_resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#managed_resource_group_name ManagedApplication#managed_resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#name ManagedApplication#name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#resource_group_name ManagedApplication#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.applicationDefinitionId">application_definition_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#application_definition_id ManagedApplication#application_definition_id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#id ManagedApplication#id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentity">ManagedApplicationIdentity</a></code> | identity block. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.parameterValues">parameter_values</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#parameter_values ManagedApplication#parameter_values}. |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.plan">plan</a></code> | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationPlan">ManagedApplicationPlan</a></code> | plan block. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#tags ManagedApplication#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#tags ManagedApplication#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationTimeouts">ManagedApplicationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -124,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#kind ManagedApplication#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#kind ManagedApplication#kind}.
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#location ManagedApplication#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#location ManagedApplication#location}.
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#managed_resource_group_name ManagedApplication#managed_resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#managed_resource_group_name ManagedApplication#managed_resource_group_name}.
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#name ManagedApplication#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#name ManagedApplication#name}.
 
 ---
 
@@ -156,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#resource_group_name ManagedApplication#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#resource_group_name ManagedApplication#resource_group_name}.
 
 ---
 
@@ -164,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#application_definition_id ManagedApplication#application_definition_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#application_definition_id ManagedApplication#application_definition_id}.
 
 ---
 
@@ -172,10 +174,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#id ManagedApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#id ManagedApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `identity`<sup>Optional</sup> <a name="identity" id="@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer.parameter.identity"></a>
+
+- *Type:* <a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentity">ManagedApplicationIdentity</a>
+
+identity block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#identity ManagedApplication#identity}
 
 ---
 
@@ -183,7 +195,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#parameter_values ManagedApplication#parameter_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#parameter_values ManagedApplication#parameter_values}.
 
 ---
 
@@ -193,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 plan block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#plan ManagedApplication#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#plan ManagedApplication#plan}
 
 ---
 
@@ -201,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#tags ManagedApplication#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#tags ManagedApplication#tags}.
 
 ---
 
@@ -211,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#timeouts ManagedApplication#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#timeouts ManagedApplication#timeouts}
 
 ---
 
@@ -243,10 +255,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.putIdentity">put_identity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.putPlan">put_plan</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.resetApplicationDefinitionId">reset_application_definition_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.resetIdentity">reset_identity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.resetParameterValues">reset_parameter_values</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.resetPlan">reset_plan</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.resetTags">reset_tags</a></code> | *No description.* |
@@ -602,6 +616,31 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_identity` <a name="put_identity" id="@cdktn/provider-azurerm.managedApplication.ManagedApplication.putIdentity"></a>
+
+```python
+def put_identity(
+  type: str,
+  identity_ids: typing.List[str] = None
+) -> None
+```
+
+###### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-azurerm.managedApplication.ManagedApplication.putIdentity.parameter.type"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#type ManagedApplication#type}.
+
+---
+
+###### `identity_ids`<sup>Optional</sup> <a name="identity_ids" id="@cdktn/provider-azurerm.managedApplication.ManagedApplication.putIdentity.parameter.identityIds"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#identity_ids ManagedApplication#identity_ids}.
+
+---
+
 ##### `put_plan` <a name="put_plan" id="@cdktn/provider-azurerm.managedApplication.ManagedApplication.putPlan"></a>
 
 ```python
@@ -618,7 +657,7 @@ def put_plan(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#name ManagedApplication#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#name ManagedApplication#name}.
 
 ---
 
@@ -626,7 +665,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#product ManagedApplication#product}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#product ManagedApplication#product}.
 
 ---
 
@@ -634,7 +673,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#publisher ManagedApplication#publisher}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#publisher ManagedApplication#publisher}.
 
 ---
 
@@ -642,7 +681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#version ManagedApplication#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#version ManagedApplication#version}.
 
 ---
 
@@ -650,7 +689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#promotion_code ManagedApplication#promotion_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#promotion_code ManagedApplication#promotion_code}.
 
 ---
 
@@ -669,7 +708,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#create ManagedApplication#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#create ManagedApplication#create}.
 
 ---
 
@@ -677,7 +716,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#delete ManagedApplication#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#delete ManagedApplication#delete}.
 
 ---
 
@@ -685,7 +724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#read ManagedApplication#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#read ManagedApplication#read}.
 
 ---
 
@@ -693,7 +732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#update ManagedApplication#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#update ManagedApplication#update}.
 
 ---
 
@@ -707,6 +746,12 @@ def reset_application_definition_id() -> None
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_identity` <a name="reset_identity" id="@cdktn/provider-azurerm.managedApplication.ManagedApplication.resetIdentity"></a>
+
+```python
+def reset_identity() -> None
 ```
 
 ##### `reset_parameter_values` <a name="reset_parameter_values" id="@cdktn/provider-azurerm.managedApplication.ManagedApplication.resetParameterValues"></a>
@@ -847,7 +892,7 @@ The construct id used in the generated config for the ManagedApplication to impo
 
 The id of the existing ManagedApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -877,10 +922,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference">ManagedApplicationIdentityOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.property.outputs">outputs</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.property.plan">plan</a></code> | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationPlanOutputReference">ManagedApplicationPlanOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationTimeoutsOutputReference">ManagedApplicationTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.property.applicationDefinitionIdInput">application_definition_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.property.identityInput">identity_input</a></code> | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentity">ManagedApplicationIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.property.kindInput">kind_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplication.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
@@ -1045,6 +1092,16 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `identity`<sup>Required</sup> <a name="identity" id="@cdktn/provider-azurerm.managedApplication.ManagedApplication.property.identity"></a>
+
+```python
+identity: ManagedApplicationIdentityOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference">ManagedApplicationIdentityOutputReference</a>
+
+---
+
 ##### `outputs`<sup>Required</sup> <a name="outputs" id="@cdktn/provider-azurerm.managedApplication.ManagedApplication.property.outputs"></a>
 
 ```python
@@ -1082,6 +1139,16 @@ application_definition_id_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `identity_input`<sup>Optional</sup> <a name="identity_input" id="@cdktn/provider-azurerm.managedApplication.ManagedApplication.property.identityInput"></a>
+
+```python
+identity_input: ManagedApplicationIdentity
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentity">ManagedApplicationIdentity</a>
 
 ---
 
@@ -1317,6 +1384,7 @@ managedApplication.ManagedApplicationConfig(
   resource_group_name: str,
   application_definition_id: str = None,
   id: str = None,
+  identity: ManagedApplicationIdentity = None,
   parameter_values: str = None,
   plan: ManagedApplicationPlan = None,
   tags: typing.Mapping[str] = None,
@@ -1335,16 +1403,17 @@ managedApplication.ManagedApplicationConfig(
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.kind">kind</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#kind ManagedApplication#kind}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#location ManagedApplication#location}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.managedResourceGroupName">managed_resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#managed_resource_group_name ManagedApplication#managed_resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#name ManagedApplication#name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#resource_group_name ManagedApplication#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.applicationDefinitionId">application_definition_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#application_definition_id ManagedApplication#application_definition_id}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#id ManagedApplication#id}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.parameterValues">parameter_values</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#parameter_values ManagedApplication#parameter_values}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.kind">kind</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#kind ManagedApplication#kind}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#location ManagedApplication#location}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.managedResourceGroupName">managed_resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#managed_resource_group_name ManagedApplication#managed_resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#name ManagedApplication#name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#resource_group_name ManagedApplication#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.applicationDefinitionId">application_definition_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#application_definition_id ManagedApplication#application_definition_id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#id ManagedApplication#id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentity">ManagedApplicationIdentity</a></code> | identity block. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.parameterValues">parameter_values</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#parameter_values ManagedApplication#parameter_values}. |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.plan">plan</a></code> | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationPlan">ManagedApplicationPlan</a></code> | plan block. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#tags ManagedApplication#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#tags ManagedApplication#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationTimeouts">ManagedApplicationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1427,7 +1496,7 @@ kind: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#kind ManagedApplication#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#kind ManagedApplication#kind}.
 
 ---
 
@@ -1439,7 +1508,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#location ManagedApplication#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#location ManagedApplication#location}.
 
 ---
 
@@ -1451,7 +1520,7 @@ managed_resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#managed_resource_group_name ManagedApplication#managed_resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#managed_resource_group_name ManagedApplication#managed_resource_group_name}.
 
 ---
 
@@ -1463,7 +1532,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#name ManagedApplication#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#name ManagedApplication#name}.
 
 ---
 
@@ -1475,7 +1544,7 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#resource_group_name ManagedApplication#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#resource_group_name ManagedApplication#resource_group_name}.
 
 ---
 
@@ -1487,7 +1556,7 @@ application_definition_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#application_definition_id ManagedApplication#application_definition_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#application_definition_id ManagedApplication#application_definition_id}.
 
 ---
 
@@ -1499,10 +1568,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#id ManagedApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#id ManagedApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `identity`<sup>Optional</sup> <a name="identity" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.property.identity"></a>
+
+```python
+identity: ManagedApplicationIdentity
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentity">ManagedApplicationIdentity</a>
+
+identity block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#identity ManagedApplication#identity}
 
 ---
 
@@ -1514,7 +1597,7 @@ parameter_values: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#parameter_values ManagedApplication#parameter_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#parameter_values ManagedApplication#parameter_values}.
 
 ---
 
@@ -1528,7 +1611,7 @@ plan: ManagedApplicationPlan
 
 plan block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#plan ManagedApplication#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#plan ManagedApplication#plan}
 
 ---
 
@@ -1540,7 +1623,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#tags ManagedApplication#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#tags ManagedApplication#tags}.
 
 ---
 
@@ -1554,7 +1637,53 @@ timeouts: ManagedApplicationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#timeouts ManagedApplication#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#timeouts ManagedApplication#timeouts}
+
+---
+
+### ManagedApplicationIdentity <a name="ManagedApplicationIdentity" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentity"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentity.Initializer"></a>
+
+```python
+from cdktn_provider_azurerm import managed_application
+
+managedApplication.ManagedApplicationIdentity(
+  type: str,
+  identity_ids: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentity.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#type ManagedApplication#type}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentity.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#identity_ids ManagedApplication#identity_ids}. |
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentity.property.type"></a>
+
+```python
+type: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#type ManagedApplication#type}.
+
+---
+
+##### `identity_ids`<sup>Optional</sup> <a name="identity_ids" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentity.property.identityIds"></a>
+
+```python
+identity_ids: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#identity_ids ManagedApplication#identity_ids}.
 
 ---
 
@@ -1578,11 +1707,11 @@ managedApplication.ManagedApplicationPlan(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationPlan.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#name ManagedApplication#name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationPlan.property.product">product</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#product ManagedApplication#product}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationPlan.property.publisher">publisher</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#publisher ManagedApplication#publisher}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationPlan.property.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#version ManagedApplication#version}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationPlan.property.promotionCode">promotion_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#promotion_code ManagedApplication#promotion_code}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationPlan.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#name ManagedApplication#name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationPlan.property.product">product</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#product ManagedApplication#product}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationPlan.property.publisher">publisher</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#publisher ManagedApplication#publisher}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationPlan.property.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#version ManagedApplication#version}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationPlan.property.promotionCode">promotion_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#promotion_code ManagedApplication#promotion_code}. |
 
 ---
 
@@ -1594,7 +1723,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#name ManagedApplication#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#name ManagedApplication#name}.
 
 ---
 
@@ -1606,7 +1735,7 @@ product: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#product ManagedApplication#product}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#product ManagedApplication#product}.
 
 ---
 
@@ -1618,7 +1747,7 @@ publisher: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#publisher ManagedApplication#publisher}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#publisher ManagedApplication#publisher}.
 
 ---
 
@@ -1630,7 +1759,7 @@ version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#version ManagedApplication#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#version ManagedApplication#version}.
 
 ---
 
@@ -1642,7 +1771,7 @@ promotion_code: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#promotion_code ManagedApplication#promotion_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#promotion_code ManagedApplication#promotion_code}.
 
 ---
 
@@ -1665,10 +1794,10 @@ managedApplication.ManagedApplicationTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#create ManagedApplication#create}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#delete ManagedApplication#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#read ManagedApplication#read}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#update ManagedApplication#update}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#create ManagedApplication#create}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#delete ManagedApplication#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#read ManagedApplication#read}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#update ManagedApplication#update}. |
 
 ---
 
@@ -1680,7 +1809,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#create ManagedApplication#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#create ManagedApplication#create}.
 
 ---
 
@@ -1692,7 +1821,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#delete ManagedApplication#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#delete ManagedApplication#delete}.
 
 ---
 
@@ -1704,7 +1833,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#read ManagedApplication#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#read ManagedApplication#read}.
 
 ---
 
@@ -1716,11 +1845,358 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/managed_application#update ManagedApplication#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_application#update ManagedApplication#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### ManagedApplicationIdentityOutputReference <a name="ManagedApplicationIdentityOutputReference" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_azurerm import managed_application
+
+managedApplication.ManagedApplicationIdentityOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.resetIdentityIds">reset_identity_ids</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_identity_ids` <a name="reset_identity_ids" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.resetIdentityIds"></a>
+
+```python
+def reset_identity_ids() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.property.principalId">principal_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.property.tenantId">tenant_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.property.identityIdsInput">identity_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentity">ManagedApplicationIdentity</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `principal_id`<sup>Required</sup> <a name="principal_id" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.property.principalId"></a>
+
+```python
+principal_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `tenant_id`<sup>Required</sup> <a name="tenant_id" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.property.tenantId"></a>
+
+```python
+tenant_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `identity_ids_input`<sup>Optional</sup> <a name="identity_ids_input" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.property.identityIdsInput"></a>
+
+```python
+identity_ids_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.property.typeInput"></a>
+
+```python
+type_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `identity_ids`<sup>Required</sup> <a name="identity_ids" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.property.identityIds"></a>
+
+```python
+identity_ids: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.property.type"></a>
+
+```python
+type: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentityOutputReference.property.internalValue"></a>
+
+```python
+internal_value: ManagedApplicationIdentity
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.managedApplication.ManagedApplicationIdentity">ManagedApplicationIdentity</a>
+
+---
+
 
 ### ManagedApplicationPlanOutputReference <a name="ManagedApplicationPlanOutputReference" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationPlanOutputReference"></a>
 

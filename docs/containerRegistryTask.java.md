@@ -4,7 +4,7 @@
 
 ### ContainerRegistryTask <a name="ContainerRegistryTask" id="@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task azurerm_container_registry_task}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task azurerm_container_registry_task}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer"></a>
 
@@ -53,24 +53,24 @@ ContainerRegistryTask.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.containerRegistryId">containerRegistryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#container_registry_id ContainerRegistryTask#container_registry_id}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.agentPoolName">agentPoolName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#agent_pool_name ContainerRegistryTask#agent_pool_name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.containerRegistryId">containerRegistryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#container_registry_id ContainerRegistryTask#container_registry_id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.agentPoolName">agentPoolName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#agent_pool_name ContainerRegistryTask#agent_pool_name}. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.agentSetting">agentSetting</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskAgentSetting">ContainerRegistryTaskAgentSetting</a></code> | agent_setting block. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.baseImageTrigger">baseImageTrigger</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskBaseImageTrigger">ContainerRegistryTaskBaseImageTrigger</a></code> | base_image_trigger block. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.dockerStep">dockerStep</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskDockerStep">ContainerRegistryTaskDockerStep</a></code> | docker_step block. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.encodedStep">encodedStep</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskEncodedStep">ContainerRegistryTaskEncodedStep</a></code> | encoded_step block. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.fileStep">fileStep</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskFileStep">ContainerRegistryTaskFileStep</a></code> | file_step block. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#id ContainerRegistryTask#id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#id ContainerRegistryTask#id}. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskIdentity">ContainerRegistryTaskIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.isSystemTask">isSystemTask</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#is_system_task ContainerRegistryTask#is_system_task}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.logTemplate">logTemplate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#log_template ContainerRegistryTask#log_template}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.isSystemTask">isSystemTask</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#is_system_task ContainerRegistryTask#is_system_task}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.logTemplate">logTemplate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#log_template ContainerRegistryTask#log_template}. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.platform">platform</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskPlatform">ContainerRegistryTaskPlatform</a></code> | platform block. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.registryCredential">registryCredential</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskRegistryCredential">ContainerRegistryTaskRegistryCredential</a></code> | registry_credential block. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.sourceTrigger">sourceTrigger</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTrigger">ContainerRegistryTaskSourceTrigger</a>></code> | source_trigger block. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#tags ContainerRegistryTask#tags}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.timeoutInSeconds">timeoutInSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#timeout_in_seconds ContainerRegistryTask#timeout_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#tags ContainerRegistryTask#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.timeoutInSeconds">timeoutInSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#timeout_in_seconds ContainerRegistryTask#timeout_in_seconds}. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskTimeouts">ContainerRegistryTaskTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTask.Initializer.parameter.timerTrigger">timerTrigger</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskTimerTrigger">ContainerRegistryTaskTimerTrigger</a>></code> | timer_trigger block. |
 
@@ -140,7 +140,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#container_registry_id ContainerRegistryTask#container_registry_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#container_registry_id ContainerRegistryTask#container_registry_id}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}.
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#agent_pool_name ContainerRegistryTask#agent_pool_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#agent_pool_name ContainerRegistryTask#agent_pool_name}.
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 agent_setting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#agent_setting ContainerRegistryTask#agent_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#agent_setting ContainerRegistryTask#agent_setting}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 base_image_trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#base_image_trigger ContainerRegistryTask#base_image_trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#base_image_trigger ContainerRegistryTask#base_image_trigger}
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 docker_step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#docker_step ContainerRegistryTask#docker_step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#docker_step ContainerRegistryTask#docker_step}
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}.
 
 ---
 
@@ -204,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 encoded_step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#encoded_step ContainerRegistryTask#encoded_step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#encoded_step ContainerRegistryTask#encoded_step}
 
 ---
 
@@ -214,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 file_step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#file_step ContainerRegistryTask#file_step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#file_step ContainerRegistryTask#file_step}
 
 ---
 
@@ -222,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#id ContainerRegistryTask#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#id ContainerRegistryTask#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -235,7 +235,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#identity ContainerRegistryTask#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#identity ContainerRegistryTask#identity}
 
 ---
 
@@ -243,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#is_system_task ContainerRegistryTask#is_system_task}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#is_system_task ContainerRegistryTask#is_system_task}.
 
 ---
 
@@ -251,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#log_template ContainerRegistryTask#log_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#log_template ContainerRegistryTask#log_template}.
 
 ---
 
@@ -261,7 +261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 platform block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#platform ContainerRegistryTask#platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#platform ContainerRegistryTask#platform}
 
 ---
 
@@ -271,7 +271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 registry_credential block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#registry_credential ContainerRegistryTask#registry_credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#registry_credential ContainerRegistryTask#registry_credential}
 
 ---
 
@@ -281,7 +281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 source_trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#source_trigger ContainerRegistryTask#source_trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#source_trigger ContainerRegistryTask#source_trigger}
 
 ---
 
@@ -289,7 +289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#tags ContainerRegistryTask#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#tags ContainerRegistryTask#tags}.
 
 ---
 
@@ -297,7 +297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#timeout_in_seconds ContainerRegistryTask#timeout_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#timeout_in_seconds ContainerRegistryTask#timeout_in_seconds}.
 
 ---
 
@@ -307,7 +307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#timeouts ContainerRegistryTask#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#timeouts ContainerRegistryTask#timeouts}
 
 ---
 
@@ -317,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timer_trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#timer_trigger ContainerRegistryTask#timer_trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#timer_trigger ContainerRegistryTask#timer_trigger}
 
 ---
 
@@ -1035,7 +1035,7 @@ The construct id used in the generated config for the ContainerRegistryTask to i
 
 The id of the existing ContainerRegistryTask that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1686,7 +1686,7 @@ ContainerRegistryTaskAgentSetting.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskAgentSetting.property.cpu">cpu</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#cpu ContainerRegistryTask#cpu}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskAgentSetting.property.cpu">cpu</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#cpu ContainerRegistryTask#cpu}. |
 
 ---
 
@@ -1698,7 +1698,7 @@ public java.lang.Number getCpu();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#cpu ContainerRegistryTask#cpu}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#cpu ContainerRegistryTask#cpu}.
 
 ---
 
@@ -1722,11 +1722,11 @@ ContainerRegistryTaskBaseImageTrigger.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskBaseImageTrigger.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskBaseImageTrigger.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#type ContainerRegistryTask#type}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskBaseImageTrigger.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskBaseImageTrigger.property.updateTriggerEndpoint">updateTriggerEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#update_trigger_endpoint ContainerRegistryTask#update_trigger_endpoint}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskBaseImageTrigger.property.updateTriggerPayloadType">updateTriggerPayloadType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#update_trigger_payload_type ContainerRegistryTask#update_trigger_payload_type}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskBaseImageTrigger.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskBaseImageTrigger.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#type ContainerRegistryTask#type}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskBaseImageTrigger.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskBaseImageTrigger.property.updateTriggerEndpoint">updateTriggerEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#update_trigger_endpoint ContainerRegistryTask#update_trigger_endpoint}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskBaseImageTrigger.property.updateTriggerPayloadType">updateTriggerPayloadType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#update_trigger_payload_type ContainerRegistryTask#update_trigger_payload_type}. |
 
 ---
 
@@ -1738,7 +1738,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}.
 
 ---
 
@@ -1750,7 +1750,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#type ContainerRegistryTask#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#type ContainerRegistryTask#type}.
 
 ---
 
@@ -1762,7 +1762,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}.
 
 ---
 
@@ -1774,7 +1774,7 @@ public java.lang.String getUpdateTriggerEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#update_trigger_endpoint ContainerRegistryTask#update_trigger_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#update_trigger_endpoint ContainerRegistryTask#update_trigger_endpoint}.
 
 ---
 
@@ -1786,7 +1786,7 @@ public java.lang.String getUpdateTriggerPayloadType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#update_trigger_payload_type ContainerRegistryTask#update_trigger_payload_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#update_trigger_payload_type ContainerRegistryTask#update_trigger_payload_type}.
 
 ---
 
@@ -1839,24 +1839,24 @@ ContainerRegistryTaskConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.containerRegistryId">containerRegistryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#container_registry_id ContainerRegistryTask#container_registry_id}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.agentPoolName">agentPoolName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#agent_pool_name ContainerRegistryTask#agent_pool_name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.containerRegistryId">containerRegistryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#container_registry_id ContainerRegistryTask#container_registry_id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.agentPoolName">agentPoolName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#agent_pool_name ContainerRegistryTask#agent_pool_name}. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.agentSetting">agentSetting</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskAgentSetting">ContainerRegistryTaskAgentSetting</a></code> | agent_setting block. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.baseImageTrigger">baseImageTrigger</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskBaseImageTrigger">ContainerRegistryTaskBaseImageTrigger</a></code> | base_image_trigger block. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.dockerStep">dockerStep</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskDockerStep">ContainerRegistryTaskDockerStep</a></code> | docker_step block. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.encodedStep">encodedStep</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskEncodedStep">ContainerRegistryTaskEncodedStep</a></code> | encoded_step block. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.fileStep">fileStep</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskFileStep">ContainerRegistryTaskFileStep</a></code> | file_step block. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#id ContainerRegistryTask#id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#id ContainerRegistryTask#id}. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskIdentity">ContainerRegistryTaskIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.isSystemTask">isSystemTask</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#is_system_task ContainerRegistryTask#is_system_task}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.logTemplate">logTemplate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#log_template ContainerRegistryTask#log_template}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.isSystemTask">isSystemTask</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#is_system_task ContainerRegistryTask#is_system_task}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.logTemplate">logTemplate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#log_template ContainerRegistryTask#log_template}. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.platform">platform</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskPlatform">ContainerRegistryTaskPlatform</a></code> | platform block. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.registryCredential">registryCredential</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskRegistryCredential">ContainerRegistryTaskRegistryCredential</a></code> | registry_credential block. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.sourceTrigger">sourceTrigger</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTrigger">ContainerRegistryTaskSourceTrigger</a>></code> | source_trigger block. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#tags ContainerRegistryTask#tags}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.timeoutInSeconds">timeoutInSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#timeout_in_seconds ContainerRegistryTask#timeout_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#tags ContainerRegistryTask#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.timeoutInSeconds">timeoutInSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#timeout_in_seconds ContainerRegistryTask#timeout_in_seconds}. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskTimeouts">ContainerRegistryTaskTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskConfig.property.timerTrigger">timerTrigger</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskTimerTrigger">ContainerRegistryTaskTimerTrigger</a>></code> | timer_trigger block. |
 
@@ -1940,7 +1940,7 @@ public java.lang.String getContainerRegistryId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#container_registry_id ContainerRegistryTask#container_registry_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#container_registry_id ContainerRegistryTask#container_registry_id}.
 
 ---
 
@@ -1952,7 +1952,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}.
 
 ---
 
@@ -1964,7 +1964,7 @@ public java.lang.String getAgentPoolName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#agent_pool_name ContainerRegistryTask#agent_pool_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#agent_pool_name ContainerRegistryTask#agent_pool_name}.
 
 ---
 
@@ -1978,7 +1978,7 @@ public ContainerRegistryTaskAgentSetting getAgentSetting();
 
 agent_setting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#agent_setting ContainerRegistryTask#agent_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#agent_setting ContainerRegistryTask#agent_setting}
 
 ---
 
@@ -1992,7 +1992,7 @@ public ContainerRegistryTaskBaseImageTrigger getBaseImageTrigger();
 
 base_image_trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#base_image_trigger ContainerRegistryTask#base_image_trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#base_image_trigger ContainerRegistryTask#base_image_trigger}
 
 ---
 
@@ -2006,7 +2006,7 @@ public ContainerRegistryTaskDockerStep getDockerStep();
 
 docker_step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#docker_step ContainerRegistryTask#docker_step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#docker_step ContainerRegistryTask#docker_step}
 
 ---
 
@@ -2018,7 +2018,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}.
 
 ---
 
@@ -2032,7 +2032,7 @@ public ContainerRegistryTaskEncodedStep getEncodedStep();
 
 encoded_step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#encoded_step ContainerRegistryTask#encoded_step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#encoded_step ContainerRegistryTask#encoded_step}
 
 ---
 
@@ -2046,7 +2046,7 @@ public ContainerRegistryTaskFileStep getFileStep();
 
 file_step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#file_step ContainerRegistryTask#file_step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#file_step ContainerRegistryTask#file_step}
 
 ---
 
@@ -2058,7 +2058,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#id ContainerRegistryTask#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#id ContainerRegistryTask#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2075,7 +2075,7 @@ public ContainerRegistryTaskIdentity getIdentity();
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#identity ContainerRegistryTask#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#identity ContainerRegistryTask#identity}
 
 ---
 
@@ -2087,7 +2087,7 @@ public java.lang.Boolean|IResolvable getIsSystemTask();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#is_system_task ContainerRegistryTask#is_system_task}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#is_system_task ContainerRegistryTask#is_system_task}.
 
 ---
 
@@ -2099,7 +2099,7 @@ public java.lang.String getLogTemplate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#log_template ContainerRegistryTask#log_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#log_template ContainerRegistryTask#log_template}.
 
 ---
 
@@ -2113,7 +2113,7 @@ public ContainerRegistryTaskPlatform getPlatform();
 
 platform block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#platform ContainerRegistryTask#platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#platform ContainerRegistryTask#platform}
 
 ---
 
@@ -2127,7 +2127,7 @@ public ContainerRegistryTaskRegistryCredential getRegistryCredential();
 
 registry_credential block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#registry_credential ContainerRegistryTask#registry_credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#registry_credential ContainerRegistryTask#registry_credential}
 
 ---
 
@@ -2141,7 +2141,7 @@ public IResolvable|java.util.List<ContainerRegistryTaskSourceTrigger> getSourceT
 
 source_trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#source_trigger ContainerRegistryTask#source_trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#source_trigger ContainerRegistryTask#source_trigger}
 
 ---
 
@@ -2153,7 +2153,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#tags ContainerRegistryTask#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#tags ContainerRegistryTask#tags}.
 
 ---
 
@@ -2165,7 +2165,7 @@ public java.lang.Number getTimeoutInSeconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#timeout_in_seconds ContainerRegistryTask#timeout_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#timeout_in_seconds ContainerRegistryTask#timeout_in_seconds}.
 
 ---
 
@@ -2179,7 +2179,7 @@ public ContainerRegistryTaskTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#timeouts ContainerRegistryTask#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#timeouts ContainerRegistryTask#timeouts}
 
 ---
 
@@ -2193,7 +2193,7 @@ public IResolvable|java.util.List<ContainerRegistryTaskTimerTrigger> getTimerTri
 
 timer_trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#timer_trigger ContainerRegistryTask#timer_trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#timer_trigger ContainerRegistryTask#timer_trigger}
 
 ---
 
@@ -2221,15 +2221,15 @@ ContainerRegistryTaskDockerStep.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskDockerStep.property.contextAccessToken">contextAccessToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#context_access_token ContainerRegistryTask#context_access_token}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskDockerStep.property.contextPath">contextPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#context_path ContainerRegistryTask#context_path}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskDockerStep.property.dockerfilePath">dockerfilePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#dockerfile_path ContainerRegistryTask#dockerfile_path}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskDockerStep.property.arguments">arguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#arguments ContainerRegistryTask#arguments}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskDockerStep.property.cacheEnabled">cacheEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#cache_enabled ContainerRegistryTask#cache_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskDockerStep.property.imageNames">imageNames</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#image_names ContainerRegistryTask#image_names}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskDockerStep.property.pushEnabled">pushEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#push_enabled ContainerRegistryTask#push_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskDockerStep.property.secretArguments">secretArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#secret_arguments ContainerRegistryTask#secret_arguments}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskDockerStep.property.target">target</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#target ContainerRegistryTask#target}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskDockerStep.property.contextAccessToken">contextAccessToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#context_access_token ContainerRegistryTask#context_access_token}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskDockerStep.property.contextPath">contextPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#context_path ContainerRegistryTask#context_path}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskDockerStep.property.dockerfilePath">dockerfilePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#dockerfile_path ContainerRegistryTask#dockerfile_path}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskDockerStep.property.arguments">arguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#arguments ContainerRegistryTask#arguments}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskDockerStep.property.cacheEnabled">cacheEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#cache_enabled ContainerRegistryTask#cache_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskDockerStep.property.imageNames">imageNames</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#image_names ContainerRegistryTask#image_names}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskDockerStep.property.pushEnabled">pushEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#push_enabled ContainerRegistryTask#push_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskDockerStep.property.secretArguments">secretArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#secret_arguments ContainerRegistryTask#secret_arguments}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskDockerStep.property.target">target</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#target ContainerRegistryTask#target}. |
 
 ---
 
@@ -2241,7 +2241,7 @@ public java.lang.String getContextAccessToken();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#context_access_token ContainerRegistryTask#context_access_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#context_access_token ContainerRegistryTask#context_access_token}.
 
 ---
 
@@ -2253,7 +2253,7 @@ public java.lang.String getContextPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#context_path ContainerRegistryTask#context_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#context_path ContainerRegistryTask#context_path}.
 
 ---
 
@@ -2265,7 +2265,7 @@ public java.lang.String getDockerfilePath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#dockerfile_path ContainerRegistryTask#dockerfile_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#dockerfile_path ContainerRegistryTask#dockerfile_path}.
 
 ---
 
@@ -2277,7 +2277,7 @@ public java.util.Map<java.lang.String, java.lang.String> getArguments();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#arguments ContainerRegistryTask#arguments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#arguments ContainerRegistryTask#arguments}.
 
 ---
 
@@ -2289,7 +2289,7 @@ public java.lang.Boolean|IResolvable getCacheEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#cache_enabled ContainerRegistryTask#cache_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#cache_enabled ContainerRegistryTask#cache_enabled}.
 
 ---
 
@@ -2301,7 +2301,7 @@ public java.util.List<java.lang.String> getImageNames();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#image_names ContainerRegistryTask#image_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#image_names ContainerRegistryTask#image_names}.
 
 ---
 
@@ -2313,7 +2313,7 @@ public java.lang.Boolean|IResolvable getPushEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#push_enabled ContainerRegistryTask#push_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#push_enabled ContainerRegistryTask#push_enabled}.
 
 ---
 
@@ -2325,7 +2325,7 @@ public java.util.Map<java.lang.String, java.lang.String> getSecretArguments();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#secret_arguments ContainerRegistryTask#secret_arguments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#secret_arguments ContainerRegistryTask#secret_arguments}.
 
 ---
 
@@ -2337,7 +2337,7 @@ public java.lang.String getTarget();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#target ContainerRegistryTask#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#target ContainerRegistryTask#target}.
 
 ---
 
@@ -2362,12 +2362,12 @@ ContainerRegistryTaskEncodedStep.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskEncodedStep.property.taskContent">taskContent</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#task_content ContainerRegistryTask#task_content}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskEncodedStep.property.contextAccessToken">contextAccessToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#context_access_token ContainerRegistryTask#context_access_token}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskEncodedStep.property.contextPath">contextPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#context_path ContainerRegistryTask#context_path}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskEncodedStep.property.secretValues">secretValues</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#secret_values ContainerRegistryTask#secret_values}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskEncodedStep.property.valueContent">valueContent</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#value_content ContainerRegistryTask#value_content}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskEncodedStep.property.values">values</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#values ContainerRegistryTask#values}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskEncodedStep.property.taskContent">taskContent</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#task_content ContainerRegistryTask#task_content}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskEncodedStep.property.contextAccessToken">contextAccessToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#context_access_token ContainerRegistryTask#context_access_token}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskEncodedStep.property.contextPath">contextPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#context_path ContainerRegistryTask#context_path}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskEncodedStep.property.secretValues">secretValues</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#secret_values ContainerRegistryTask#secret_values}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskEncodedStep.property.valueContent">valueContent</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#value_content ContainerRegistryTask#value_content}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskEncodedStep.property.values">values</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#values ContainerRegistryTask#values}. |
 
 ---
 
@@ -2379,7 +2379,7 @@ public java.lang.String getTaskContent();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#task_content ContainerRegistryTask#task_content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#task_content ContainerRegistryTask#task_content}.
 
 ---
 
@@ -2391,7 +2391,7 @@ public java.lang.String getContextAccessToken();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#context_access_token ContainerRegistryTask#context_access_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#context_access_token ContainerRegistryTask#context_access_token}.
 
 ---
 
@@ -2403,7 +2403,7 @@ public java.lang.String getContextPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#context_path ContainerRegistryTask#context_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#context_path ContainerRegistryTask#context_path}.
 
 ---
 
@@ -2415,7 +2415,7 @@ public java.util.Map<java.lang.String, java.lang.String> getSecretValues();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#secret_values ContainerRegistryTask#secret_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#secret_values ContainerRegistryTask#secret_values}.
 
 ---
 
@@ -2427,7 +2427,7 @@ public java.lang.String getValueContent();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#value_content ContainerRegistryTask#value_content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#value_content ContainerRegistryTask#value_content}.
 
 ---
 
@@ -2439,7 +2439,7 @@ public java.util.Map<java.lang.String, java.lang.String> getValues();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#values ContainerRegistryTask#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#values ContainerRegistryTask#values}.
 
 ---
 
@@ -2464,12 +2464,12 @@ ContainerRegistryTaskFileStep.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskFileStep.property.taskFilePath">taskFilePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#task_file_path ContainerRegistryTask#task_file_path}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskFileStep.property.contextAccessToken">contextAccessToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#context_access_token ContainerRegistryTask#context_access_token}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskFileStep.property.contextPath">contextPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#context_path ContainerRegistryTask#context_path}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskFileStep.property.secretValues">secretValues</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#secret_values ContainerRegistryTask#secret_values}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskFileStep.property.valueFilePath">valueFilePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#value_file_path ContainerRegistryTask#value_file_path}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskFileStep.property.values">values</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#values ContainerRegistryTask#values}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskFileStep.property.taskFilePath">taskFilePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#task_file_path ContainerRegistryTask#task_file_path}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskFileStep.property.contextAccessToken">contextAccessToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#context_access_token ContainerRegistryTask#context_access_token}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskFileStep.property.contextPath">contextPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#context_path ContainerRegistryTask#context_path}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskFileStep.property.secretValues">secretValues</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#secret_values ContainerRegistryTask#secret_values}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskFileStep.property.valueFilePath">valueFilePath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#value_file_path ContainerRegistryTask#value_file_path}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskFileStep.property.values">values</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#values ContainerRegistryTask#values}. |
 
 ---
 
@@ -2481,7 +2481,7 @@ public java.lang.String getTaskFilePath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#task_file_path ContainerRegistryTask#task_file_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#task_file_path ContainerRegistryTask#task_file_path}.
 
 ---
 
@@ -2493,7 +2493,7 @@ public java.lang.String getContextAccessToken();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#context_access_token ContainerRegistryTask#context_access_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#context_access_token ContainerRegistryTask#context_access_token}.
 
 ---
 
@@ -2505,7 +2505,7 @@ public java.lang.String getContextPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#context_path ContainerRegistryTask#context_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#context_path ContainerRegistryTask#context_path}.
 
 ---
 
@@ -2517,7 +2517,7 @@ public java.util.Map<java.lang.String, java.lang.String> getSecretValues();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#secret_values ContainerRegistryTask#secret_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#secret_values ContainerRegistryTask#secret_values}.
 
 ---
 
@@ -2529,7 +2529,7 @@ public java.lang.String getValueFilePath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#value_file_path ContainerRegistryTask#value_file_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#value_file_path ContainerRegistryTask#value_file_path}.
 
 ---
 
@@ -2541,7 +2541,7 @@ public java.util.Map<java.lang.String, java.lang.String> getValues();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#values ContainerRegistryTask#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#values ContainerRegistryTask#values}.
 
 ---
 
@@ -2562,8 +2562,8 @@ ContainerRegistryTaskIdentity.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskIdentity.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#type ContainerRegistryTask#type}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskIdentity.property.identityIds">identityIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#identity_ids ContainerRegistryTask#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskIdentity.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#type ContainerRegistryTask#type}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskIdentity.property.identityIds">identityIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#identity_ids ContainerRegistryTask#identity_ids}. |
 
 ---
 
@@ -2575,7 +2575,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#type ContainerRegistryTask#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#type ContainerRegistryTask#type}.
 
 ---
 
@@ -2587,7 +2587,7 @@ public java.util.List<java.lang.String> getIdentityIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#identity_ids ContainerRegistryTask#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#identity_ids ContainerRegistryTask#identity_ids}.
 
 ---
 
@@ -2609,9 +2609,9 @@ ContainerRegistryTaskPlatform.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskPlatform.property.os">os</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#os ContainerRegistryTask#os}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskPlatform.property.architecture">architecture</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#architecture ContainerRegistryTask#architecture}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskPlatform.property.variant">variant</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#variant ContainerRegistryTask#variant}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskPlatform.property.os">os</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#os ContainerRegistryTask#os}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskPlatform.property.architecture">architecture</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#architecture ContainerRegistryTask#architecture}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskPlatform.property.variant">variant</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#variant ContainerRegistryTask#variant}. |
 
 ---
 
@@ -2623,7 +2623,7 @@ public java.lang.String getOs();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#os ContainerRegistryTask#os}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#os ContainerRegistryTask#os}.
 
 ---
 
@@ -2635,7 +2635,7 @@ public java.lang.String getArchitecture();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#architecture ContainerRegistryTask#architecture}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#architecture ContainerRegistryTask#architecture}.
 
 ---
 
@@ -2647,7 +2647,7 @@ public java.lang.String getVariant();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#variant ContainerRegistryTask#variant}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#variant ContainerRegistryTask#variant}.
 
 ---
 
@@ -2683,7 +2683,7 @@ public IResolvable|java.util.List<ContainerRegistryTaskRegistryCredentialCustom>
 
 custom block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#custom ContainerRegistryTask#custom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#custom ContainerRegistryTask#custom}
 
 ---
 
@@ -2697,7 +2697,7 @@ public ContainerRegistryTaskRegistryCredentialSource getSource();
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#source ContainerRegistryTask#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#source ContainerRegistryTask#source}
 
 ---
 
@@ -2720,10 +2720,10 @@ ContainerRegistryTaskRegistryCredentialCustom.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskRegistryCredentialCustom.property.loginServer">loginServer</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#login_server ContainerRegistryTask#login_server}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskRegistryCredentialCustom.property.identity">identity</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#identity ContainerRegistryTask#identity}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskRegistryCredentialCustom.property.password">password</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#password ContainerRegistryTask#password}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskRegistryCredentialCustom.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#username ContainerRegistryTask#username}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskRegistryCredentialCustom.property.loginServer">loginServer</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#login_server ContainerRegistryTask#login_server}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskRegistryCredentialCustom.property.identity">identity</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#identity ContainerRegistryTask#identity}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskRegistryCredentialCustom.property.password">password</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#password ContainerRegistryTask#password}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskRegistryCredentialCustom.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#username ContainerRegistryTask#username}. |
 
 ---
 
@@ -2735,7 +2735,7 @@ public java.lang.String getLoginServer();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#login_server ContainerRegistryTask#login_server}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#login_server ContainerRegistryTask#login_server}.
 
 ---
 
@@ -2747,7 +2747,7 @@ public java.lang.String getIdentity();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#identity ContainerRegistryTask#identity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#identity ContainerRegistryTask#identity}.
 
 ---
 
@@ -2759,7 +2759,7 @@ public java.lang.String getPassword();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#password ContainerRegistryTask#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#password ContainerRegistryTask#password}.
 
 ---
 
@@ -2771,7 +2771,7 @@ public java.lang.String getUsername();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#username ContainerRegistryTask#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#username ContainerRegistryTask#username}.
 
 ---
 
@@ -2791,7 +2791,7 @@ ContainerRegistryTaskRegistryCredentialSource.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskRegistryCredentialSource.property.loginMode">loginMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#login_mode ContainerRegistryTask#login_mode}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskRegistryCredentialSource.property.loginMode">loginMode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#login_mode ContainerRegistryTask#login_mode}. |
 
 ---
 
@@ -2803,7 +2803,7 @@ public java.lang.String getLoginMode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#login_mode ContainerRegistryTask#login_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#login_mode ContainerRegistryTask#login_mode}.
 
 ---
 
@@ -2829,13 +2829,13 @@ ContainerRegistryTaskSourceTrigger.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTrigger.property.events">events</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#events ContainerRegistryTask#events}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTrigger.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTrigger.property.repositoryUrl">repositoryUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#repository_url ContainerRegistryTask#repository_url}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTrigger.property.sourceType">sourceType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#source_type ContainerRegistryTask#source_type}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTrigger.property.events">events</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#events ContainerRegistryTask#events}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTrigger.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTrigger.property.repositoryUrl">repositoryUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#repository_url ContainerRegistryTask#repository_url}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTrigger.property.sourceType">sourceType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#source_type ContainerRegistryTask#source_type}. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTrigger.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTriggerAuthentication">ContainerRegistryTaskSourceTriggerAuthentication</a></code> | authentication block. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTrigger.property.branch">branch</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#branch ContainerRegistryTask#branch}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTrigger.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTrigger.property.branch">branch</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#branch ContainerRegistryTask#branch}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTrigger.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}. |
 
 ---
 
@@ -2847,7 +2847,7 @@ public java.util.List<java.lang.String> getEvents();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#events ContainerRegistryTask#events}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#events ContainerRegistryTask#events}.
 
 ---
 
@@ -2859,7 +2859,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}.
 
 ---
 
@@ -2871,7 +2871,7 @@ public java.lang.String getRepositoryUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#repository_url ContainerRegistryTask#repository_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#repository_url ContainerRegistryTask#repository_url}.
 
 ---
 
@@ -2883,7 +2883,7 @@ public java.lang.String getSourceType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#source_type ContainerRegistryTask#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#source_type ContainerRegistryTask#source_type}.
 
 ---
 
@@ -2897,7 +2897,7 @@ public ContainerRegistryTaskSourceTriggerAuthentication getAuthentication();
 
 authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#authentication ContainerRegistryTask#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#authentication ContainerRegistryTask#authentication}
 
 ---
 
@@ -2909,7 +2909,7 @@ public java.lang.String getBranch();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#branch ContainerRegistryTask#branch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#branch ContainerRegistryTask#branch}.
 
 ---
 
@@ -2921,7 +2921,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}.
 
 ---
 
@@ -2945,11 +2945,11 @@ ContainerRegistryTaskSourceTriggerAuthentication.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTriggerAuthentication.property.token">token</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#token ContainerRegistryTask#token}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTriggerAuthentication.property.tokenType">tokenType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#token_type ContainerRegistryTask#token_type}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTriggerAuthentication.property.expireInSeconds">expireInSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#expire_in_seconds ContainerRegistryTask#expire_in_seconds}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTriggerAuthentication.property.refreshToken">refreshToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#refresh_token ContainerRegistryTask#refresh_token}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTriggerAuthentication.property.scope">scope</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#scope ContainerRegistryTask#scope}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTriggerAuthentication.property.token">token</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#token ContainerRegistryTask#token}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTriggerAuthentication.property.tokenType">tokenType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#token_type ContainerRegistryTask#token_type}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTriggerAuthentication.property.expireInSeconds">expireInSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#expire_in_seconds ContainerRegistryTask#expire_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTriggerAuthentication.property.refreshToken">refreshToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#refresh_token ContainerRegistryTask#refresh_token}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskSourceTriggerAuthentication.property.scope">scope</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#scope ContainerRegistryTask#scope}. |
 
 ---
 
@@ -2961,7 +2961,7 @@ public java.lang.String getToken();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#token ContainerRegistryTask#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#token ContainerRegistryTask#token}.
 
 ---
 
@@ -2973,7 +2973,7 @@ public java.lang.String getTokenType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#token_type ContainerRegistryTask#token_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#token_type ContainerRegistryTask#token_type}.
 
 ---
 
@@ -2985,7 +2985,7 @@ public java.lang.Number getExpireInSeconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#expire_in_seconds ContainerRegistryTask#expire_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#expire_in_seconds ContainerRegistryTask#expire_in_seconds}.
 
 ---
 
@@ -2997,7 +2997,7 @@ public java.lang.String getRefreshToken();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#refresh_token ContainerRegistryTask#refresh_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#refresh_token ContainerRegistryTask#refresh_token}.
 
 ---
 
@@ -3009,7 +3009,7 @@ public java.lang.String getScope();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#scope ContainerRegistryTask#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#scope ContainerRegistryTask#scope}.
 
 ---
 
@@ -3032,10 +3032,10 @@ ContainerRegistryTaskTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#create ContainerRegistryTask#create}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#delete ContainerRegistryTask#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#read ContainerRegistryTask#read}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#update ContainerRegistryTask#update}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#create ContainerRegistryTask#create}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#delete ContainerRegistryTask#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#read ContainerRegistryTask#read}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#update ContainerRegistryTask#update}. |
 
 ---
 
@@ -3047,7 +3047,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#create ContainerRegistryTask#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#create ContainerRegistryTask#create}.
 
 ---
 
@@ -3059,7 +3059,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#delete ContainerRegistryTask#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#delete ContainerRegistryTask#delete}.
 
 ---
 
@@ -3071,7 +3071,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#read ContainerRegistryTask#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#read ContainerRegistryTask#read}.
 
 ---
 
@@ -3083,7 +3083,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#update ContainerRegistryTask#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#update ContainerRegistryTask#update}.
 
 ---
 
@@ -3105,9 +3105,9 @@ ContainerRegistryTaskTimerTrigger.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskTimerTrigger.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskTimerTrigger.property.schedule">schedule</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#schedule ContainerRegistryTask#schedule}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskTimerTrigger.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskTimerTrigger.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskTimerTrigger.property.schedule">schedule</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#schedule ContainerRegistryTask#schedule}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryTask.ContainerRegistryTaskTimerTrigger.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}. |
 
 ---
 
@@ -3119,7 +3119,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}.
 
 ---
 
@@ -3131,7 +3131,7 @@ public java.lang.String getSchedule();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#schedule ContainerRegistryTask#schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#schedule ContainerRegistryTask#schedule}.
 
 ---
 
@@ -3143,7 +3143,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}.
 
 ---
 

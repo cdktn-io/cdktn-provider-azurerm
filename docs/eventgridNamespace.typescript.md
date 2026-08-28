@@ -4,7 +4,7 @@
 
 ### EventgridNamespace <a name="EventgridNamespace" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace azurerm_eventgrid_namespace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace azurerm_eventgrid_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer"></a>
 
@@ -604,7 +604,7 @@ The construct id used in the generated config for the EventgridNamespace to impo
 
 The id of the existing EventgridNamespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1084,16 +1084,16 @@ const eventgridNamespaceConfig: eventgridNamespace.EventgridNamespaceConfig = { 
 | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#location EventgridNamespace#location}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#name EventgridNamespace#name}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#resource_group_name EventgridNamespace#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.capacity">capacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#capacity EventgridNamespace#capacity}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#id EventgridNamespace#id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#location EventgridNamespace#location}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#name EventgridNamespace#name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#resource_group_name EventgridNamespace#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.capacity">capacity</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#capacity EventgridNamespace#capacity}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#id EventgridNamespace#id}. |
 | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity">EventgridNamespaceIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.inboundIpRule">inboundIpRule</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule">EventgridNamespaceInboundIpRule</a>[]</code> | inbound_ip_rule block. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.publicNetworkAccess">publicNetworkAccess</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#public_network_access EventgridNamespace#public_network_access}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.sku">sku</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#sku EventgridNamespace#sku}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#tags EventgridNamespace#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.publicNetworkAccess">publicNetworkAccess</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#public_network_access EventgridNamespace#public_network_access}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.sku">sku</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#sku EventgridNamespace#sku}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#tags EventgridNamespace#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts">EventgridNamespaceTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.property.topicSpacesConfiguration">topicSpacesConfiguration</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration">EventgridNamespaceTopicSpacesConfiguration</a>[]</code> | topic_spaces_configuration block. |
 
@@ -1177,7 +1177,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#location EventgridNamespace#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#location EventgridNamespace#location}.
 
 ---
 
@@ -1189,7 +1189,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#name EventgridNamespace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#name EventgridNamespace#name}.
 
 ---
 
@@ -1201,7 +1201,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#resource_group_name EventgridNamespace#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#resource_group_name EventgridNamespace#resource_group_name}.
 
 ---
 
@@ -1213,7 +1213,7 @@ public readonly capacity: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#capacity EventgridNamespace#capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#capacity EventgridNamespace#capacity}.
 
 ---
 
@@ -1225,7 +1225,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#id EventgridNamespace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#id EventgridNamespace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1242,7 +1242,7 @@ public readonly identity: EventgridNamespaceIdentity;
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#identity EventgridNamespace#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#identity EventgridNamespace#identity}
 
 ---
 
@@ -1256,7 +1256,7 @@ public readonly inboundIpRule: IResolvable | EventgridNamespaceInboundIpRule[];
 
 inbound_ip_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#inbound_ip_rule EventgridNamespace#inbound_ip_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#inbound_ip_rule EventgridNamespace#inbound_ip_rule}
 
 ---
 
@@ -1268,7 +1268,7 @@ public readonly publicNetworkAccess: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#public_network_access EventgridNamespace#public_network_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#public_network_access EventgridNamespace#public_network_access}.
 
 ---
 
@@ -1280,7 +1280,7 @@ public readonly sku: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#sku EventgridNamespace#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#sku EventgridNamespace#sku}.
 
 ---
 
@@ -1292,7 +1292,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#tags EventgridNamespace#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#tags EventgridNamespace#tags}.
 
 ---
 
@@ -1306,7 +1306,7 @@ public readonly timeouts: EventgridNamespaceTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#timeouts EventgridNamespace#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#timeouts EventgridNamespace#timeouts}
 
 ---
 
@@ -1320,7 +1320,7 @@ public readonly topicSpacesConfiguration: IResolvable | EventgridNamespaceTopicS
 
 topic_spaces_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#topic_spaces_configuration EventgridNamespace#topic_spaces_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#topic_spaces_configuration EventgridNamespace#topic_spaces_configuration}
 
 ---
 
@@ -1338,8 +1338,8 @@ const eventgridNamespaceIdentity: eventgridNamespace.EventgridNamespaceIdentity 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#type EventgridNamespace#type}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity.property.identityIds">identityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#identity_ids EventgridNamespace#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#type EventgridNamespace#type}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity.property.identityIds">identityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#identity_ids EventgridNamespace#identity_ids}. |
 
 ---
 
@@ -1351,7 +1351,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#type EventgridNamespace#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#type EventgridNamespace#type}.
 
 ---
 
@@ -1363,7 +1363,7 @@ public readonly identityIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#identity_ids EventgridNamespace#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#identity_ids EventgridNamespace#identity_ids}.
 
 ---
 
@@ -1381,8 +1381,8 @@ const eventgridNamespaceInboundIpRule: eventgridNamespace.EventgridNamespaceInbo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule.property.ipMask">ipMask</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#ip_mask EventgridNamespace#ip_mask}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule.property.action">action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#action EventgridNamespace#action}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule.property.ipMask">ipMask</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#ip_mask EventgridNamespace#ip_mask}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule.property.action">action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#action EventgridNamespace#action}. |
 
 ---
 
@@ -1394,7 +1394,7 @@ public readonly ipMask: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#ip_mask EventgridNamespace#ip_mask}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#ip_mask EventgridNamespace#ip_mask}.
 
 ---
 
@@ -1406,7 +1406,7 @@ public readonly action: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#action EventgridNamespace#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#action EventgridNamespace#action}.
 
 ---
 
@@ -1424,10 +1424,10 @@ const eventgridNamespaceTimeouts: eventgridNamespace.EventgridNamespaceTimeouts 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#create EventgridNamespace#create}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#delete EventgridNamespace#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#read EventgridNamespace#read}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#update EventgridNamespace#update}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#create EventgridNamespace#create}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#delete EventgridNamespace#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#read EventgridNamespace#read}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#update EventgridNamespace#update}. |
 
 ---
 
@@ -1439,7 +1439,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#create EventgridNamespace#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#create EventgridNamespace#create}.
 
 ---
 
@@ -1451,7 +1451,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#delete EventgridNamespace#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#delete EventgridNamespace#delete}.
 
 ---
 
@@ -1463,7 +1463,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#read EventgridNamespace#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#read EventgridNamespace#read}.
 
 ---
 
@@ -1475,7 +1475,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#update EventgridNamespace#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#update EventgridNamespace#update}.
 
 ---
 
@@ -1493,11 +1493,11 @@ const eventgridNamespaceTopicSpacesConfiguration: eventgridNamespace.EventgridNa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.alternativeAuthenticationNameSource">alternativeAuthenticationNameSource</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#alternative_authentication_name_source EventgridNamespace#alternative_authentication_name_source}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.alternativeAuthenticationNameSource">alternativeAuthenticationNameSource</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#alternative_authentication_name_source EventgridNamespace#alternative_authentication_name_source}. |
 | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.dynamicRoutingEnrichment">dynamicRoutingEnrichment</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment</a>[]</code> | dynamic_routing_enrichment block. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.maximumClientSessionsPerAuthenticationName">maximumClientSessionsPerAuthenticationName</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#maximum_client_sessions_per_authentication_name EventgridNamespace#maximum_client_sessions_per_authentication_name}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.maximumSessionExpiryInHours">maximumSessionExpiryInHours</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#maximum_session_expiry_in_hours EventgridNamespace#maximum_session_expiry_in_hours}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.routeTopicId">routeTopicId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#route_topic_id EventgridNamespace#route_topic_id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.maximumClientSessionsPerAuthenticationName">maximumClientSessionsPerAuthenticationName</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#maximum_client_sessions_per_authentication_name EventgridNamespace#maximum_client_sessions_per_authentication_name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.maximumSessionExpiryInHours">maximumSessionExpiryInHours</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#maximum_session_expiry_in_hours EventgridNamespace#maximum_session_expiry_in_hours}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.routeTopicId">routeTopicId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#route_topic_id EventgridNamespace#route_topic_id}. |
 | <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.property.staticRoutingEnrichment">staticRoutingEnrichment</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment">EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment</a>[]</code> | static_routing_enrichment block. |
 
 ---
@@ -1510,7 +1510,7 @@ public readonly alternativeAuthenticationNameSource: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#alternative_authentication_name_source EventgridNamespace#alternative_authentication_name_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#alternative_authentication_name_source EventgridNamespace#alternative_authentication_name_source}.
 
 ---
 
@@ -1524,7 +1524,7 @@ public readonly dynamicRoutingEnrichment: IResolvable | EventgridNamespaceTopicS
 
 dynamic_routing_enrichment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#dynamic_routing_enrichment EventgridNamespace#dynamic_routing_enrichment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#dynamic_routing_enrichment EventgridNamespace#dynamic_routing_enrichment}
 
 ---
 
@@ -1536,7 +1536,7 @@ public readonly maximumClientSessionsPerAuthenticationName: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#maximum_client_sessions_per_authentication_name EventgridNamespace#maximum_client_sessions_per_authentication_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#maximum_client_sessions_per_authentication_name EventgridNamespace#maximum_client_sessions_per_authentication_name}.
 
 ---
 
@@ -1548,7 +1548,7 @@ public readonly maximumSessionExpiryInHours: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#maximum_session_expiry_in_hours EventgridNamespace#maximum_session_expiry_in_hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#maximum_session_expiry_in_hours EventgridNamespace#maximum_session_expiry_in_hours}.
 
 ---
 
@@ -1560,7 +1560,7 @@ public readonly routeTopicId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#route_topic_id EventgridNamespace#route_topic_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#route_topic_id EventgridNamespace#route_topic_id}.
 
 ---
 
@@ -1574,7 +1574,7 @@ public readonly staticRoutingEnrichment: IResolvable | EventgridNamespaceTopicSp
 
 static_routing_enrichment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#static_routing_enrichment EventgridNamespace#static_routing_enrichment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#static_routing_enrichment EventgridNamespace#static_routing_enrichment}
 
 ---
 
@@ -1592,8 +1592,8 @@ const eventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment: eventg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#key EventgridNamespace#key}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#value EventgridNamespace#value}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#key EventgridNamespace#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#value EventgridNamespace#value}. |
 
 ---
 
@@ -1605,7 +1605,7 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#key EventgridNamespace#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#key EventgridNamespace#key}.
 
 ---
 
@@ -1617,7 +1617,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#value EventgridNamespace#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#value EventgridNamespace#value}.
 
 ---
 
@@ -1635,8 +1635,8 @@ const eventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment: eventgr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#key EventgridNamespace#key}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#value EventgridNamespace#value}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#key EventgridNamespace#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#value EventgridNamespace#value}. |
 
 ---
 
@@ -1648,7 +1648,7 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#key EventgridNamespace#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#key EventgridNamespace#key}.
 
 ---
 
@@ -1660,7 +1660,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/eventgrid_namespace#value EventgridNamespace#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/eventgrid_namespace#value EventgridNamespace#value}.
 
 ---
 

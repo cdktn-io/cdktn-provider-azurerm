@@ -4,7 +4,7 @@
 
 ### MaintenanceConfiguration <a name="MaintenanceConfiguration" id="@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfiguration.Initializer"></a>
 
@@ -584,7 +584,7 @@ The construct id used in the generated config for the MaintenanceConfiguration t
 
 The id of the existing MaintenanceConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1084,17 +1084,17 @@ new MaintenanceConfigurationConfig {
 | <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#location MaintenanceConfiguration#location}. |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#name MaintenanceConfiguration#name}. |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#resource_group_name MaintenanceConfiguration#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.scope">Scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#scope MaintenanceConfiguration#scope}. |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#id MaintenanceConfiguration#id}. |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.inGuestUserPatchMode">InGuestUserPatchMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#in_guest_user_patch_mode MaintenanceConfiguration#in_guest_user_patch_mode}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#location MaintenanceConfiguration#location}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#name MaintenanceConfiguration#name}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#resource_group_name MaintenanceConfiguration#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.scope">Scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#scope MaintenanceConfiguration#scope}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#id MaintenanceConfiguration#id}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.inGuestUserPatchMode">InGuestUserPatchMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#in_guest_user_patch_mode MaintenanceConfiguration#in_guest_user_patch_mode}. |
 | <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.installPatches">InstallPatches</a></code> | <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationInstallPatches">MaintenanceConfigurationInstallPatches</a></code> | install_patches block. |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.properties">Properties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#properties MaintenanceConfiguration#properties}. |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#tags MaintenanceConfiguration#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.properties">Properties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#properties MaintenanceConfiguration#properties}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#tags MaintenanceConfiguration#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationTimeouts">MaintenanceConfigurationTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.visibility">Visibility</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#visibility MaintenanceConfiguration#visibility}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.visibility">Visibility</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#visibility MaintenanceConfiguration#visibility}. |
 | <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationConfig.property.window">Window</a></code> | <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationWindow">MaintenanceConfigurationWindow</a></code> | window block. |
 
 ---
@@ -1177,7 +1177,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#location MaintenanceConfiguration#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#location MaintenanceConfiguration#location}.
 
 ---
 
@@ -1189,7 +1189,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#name MaintenanceConfiguration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#name MaintenanceConfiguration#name}.
 
 ---
 
@@ -1201,7 +1201,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#resource_group_name MaintenanceConfiguration#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#resource_group_name MaintenanceConfiguration#resource_group_name}.
 
 ---
 
@@ -1213,7 +1213,7 @@ public string Scope { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#scope MaintenanceConfiguration#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#scope MaintenanceConfiguration#scope}.
 
 ---
 
@@ -1225,7 +1225,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#id MaintenanceConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#id MaintenanceConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1240,7 +1240,7 @@ public string InGuestUserPatchMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#in_guest_user_patch_mode MaintenanceConfiguration#in_guest_user_patch_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#in_guest_user_patch_mode MaintenanceConfiguration#in_guest_user_patch_mode}.
 
 ---
 
@@ -1254,7 +1254,7 @@ public MaintenanceConfigurationInstallPatches InstallPatches { get; set; }
 
 install_patches block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#install_patches MaintenanceConfiguration#install_patches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#install_patches MaintenanceConfiguration#install_patches}
 
 ---
 
@@ -1266,7 +1266,7 @@ public System.Collections.Generic.IDictionary<string, string> Properties { get; 
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#properties MaintenanceConfiguration#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#properties MaintenanceConfiguration#properties}.
 
 ---
 
@@ -1278,7 +1278,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#tags MaintenanceConfiguration#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#tags MaintenanceConfiguration#tags}.
 
 ---
 
@@ -1292,7 +1292,7 @@ public MaintenanceConfigurationTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#timeouts MaintenanceConfiguration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#timeouts MaintenanceConfiguration#timeouts}
 
 ---
 
@@ -1304,7 +1304,7 @@ public string Visibility { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#visibility MaintenanceConfiguration#visibility}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#visibility MaintenanceConfiguration#visibility}.
 
 ---
 
@@ -1318,7 +1318,7 @@ public MaintenanceConfigurationWindow Window { get; set; }
 
 window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#window MaintenanceConfiguration#window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#window MaintenanceConfiguration#window}
 
 ---
 
@@ -1341,7 +1341,7 @@ new MaintenanceConfigurationInstallPatches {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationInstallPatches.property.linux">Linux</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationInstallPatchesLinux">MaintenanceConfigurationInstallPatchesLinux</a>[]</code> | linux block. |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationInstallPatches.property.reboot">Reboot</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#reboot MaintenanceConfiguration#reboot}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationInstallPatches.property.reboot">Reboot</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#reboot MaintenanceConfiguration#reboot}. |
 | <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationInstallPatches.property.windows">Windows</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationInstallPatchesWindows">MaintenanceConfigurationInstallPatchesWindows</a>[]</code> | windows block. |
 
 ---
@@ -1356,7 +1356,7 @@ public IResolvable|MaintenanceConfigurationInstallPatchesLinux[] Linux { get; se
 
 linux block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#linux MaintenanceConfiguration#linux}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#linux MaintenanceConfiguration#linux}
 
 ---
 
@@ -1368,7 +1368,7 @@ public string Reboot { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#reboot MaintenanceConfiguration#reboot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#reboot MaintenanceConfiguration#reboot}.
 
 ---
 
@@ -1382,7 +1382,7 @@ public IResolvable|MaintenanceConfigurationInstallPatchesWindows[] Windows { get
 
 windows block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#windows MaintenanceConfiguration#windows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#windows MaintenanceConfiguration#windows}
 
 ---
 
@@ -1404,9 +1404,9 @@ new MaintenanceConfigurationInstallPatchesLinux {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationInstallPatchesLinux.property.classificationsToInclude">ClassificationsToInclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#classifications_to_include MaintenanceConfiguration#classifications_to_include}. |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationInstallPatchesLinux.property.packageNamesMaskToExclude">PackageNamesMaskToExclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#package_names_mask_to_exclude MaintenanceConfiguration#package_names_mask_to_exclude}. |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationInstallPatchesLinux.property.packageNamesMaskToInclude">PackageNamesMaskToInclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#package_names_mask_to_include MaintenanceConfiguration#package_names_mask_to_include}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationInstallPatchesLinux.property.classificationsToInclude">ClassificationsToInclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#classifications_to_include MaintenanceConfiguration#classifications_to_include}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationInstallPatchesLinux.property.packageNamesMaskToExclude">PackageNamesMaskToExclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#package_names_mask_to_exclude MaintenanceConfiguration#package_names_mask_to_exclude}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationInstallPatchesLinux.property.packageNamesMaskToInclude">PackageNamesMaskToInclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#package_names_mask_to_include MaintenanceConfiguration#package_names_mask_to_include}. |
 
 ---
 
@@ -1418,7 +1418,7 @@ public string[] ClassificationsToInclude { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#classifications_to_include MaintenanceConfiguration#classifications_to_include}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#classifications_to_include MaintenanceConfiguration#classifications_to_include}.
 
 ---
 
@@ -1430,7 +1430,7 @@ public string[] PackageNamesMaskToExclude { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#package_names_mask_to_exclude MaintenanceConfiguration#package_names_mask_to_exclude}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#package_names_mask_to_exclude MaintenanceConfiguration#package_names_mask_to_exclude}.
 
 ---
 
@@ -1442,7 +1442,7 @@ public string[] PackageNamesMaskToInclude { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#package_names_mask_to_include MaintenanceConfiguration#package_names_mask_to_include}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#package_names_mask_to_include MaintenanceConfiguration#package_names_mask_to_include}.
 
 ---
 
@@ -1464,9 +1464,9 @@ new MaintenanceConfigurationInstallPatchesWindows {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationInstallPatchesWindows.property.classificationsToInclude">ClassificationsToInclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#classifications_to_include MaintenanceConfiguration#classifications_to_include}. |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationInstallPatchesWindows.property.kbNumbersToExclude">KbNumbersToExclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#kb_numbers_to_exclude MaintenanceConfiguration#kb_numbers_to_exclude}. |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationInstallPatchesWindows.property.kbNumbersToInclude">KbNumbersToInclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#kb_numbers_to_include MaintenanceConfiguration#kb_numbers_to_include}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationInstallPatchesWindows.property.classificationsToInclude">ClassificationsToInclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#classifications_to_include MaintenanceConfiguration#classifications_to_include}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationInstallPatchesWindows.property.kbNumbersToExclude">KbNumbersToExclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#kb_numbers_to_exclude MaintenanceConfiguration#kb_numbers_to_exclude}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationInstallPatchesWindows.property.kbNumbersToInclude">KbNumbersToInclude</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#kb_numbers_to_include MaintenanceConfiguration#kb_numbers_to_include}. |
 
 ---
 
@@ -1478,7 +1478,7 @@ public string[] ClassificationsToInclude { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#classifications_to_include MaintenanceConfiguration#classifications_to_include}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#classifications_to_include MaintenanceConfiguration#classifications_to_include}.
 
 ---
 
@@ -1490,7 +1490,7 @@ public string[] KbNumbersToExclude { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#kb_numbers_to_exclude MaintenanceConfiguration#kb_numbers_to_exclude}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#kb_numbers_to_exclude MaintenanceConfiguration#kb_numbers_to_exclude}.
 
 ---
 
@@ -1502,7 +1502,7 @@ public string[] KbNumbersToInclude { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#kb_numbers_to_include MaintenanceConfiguration#kb_numbers_to_include}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#kb_numbers_to_include MaintenanceConfiguration#kb_numbers_to_include}.
 
 ---
 
@@ -1525,10 +1525,10 @@ new MaintenanceConfigurationTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#create MaintenanceConfiguration#create}. |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#delete MaintenanceConfiguration#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#read MaintenanceConfiguration#read}. |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#update MaintenanceConfiguration#update}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#create MaintenanceConfiguration#create}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#delete MaintenanceConfiguration#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#read MaintenanceConfiguration#read}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#update MaintenanceConfiguration#update}. |
 
 ---
 
@@ -1540,7 +1540,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#create MaintenanceConfiguration#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#create MaintenanceConfiguration#create}.
 
 ---
 
@@ -1552,7 +1552,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#delete MaintenanceConfiguration#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#delete MaintenanceConfiguration#delete}.
 
 ---
 
@@ -1564,7 +1564,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#read MaintenanceConfiguration#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#read MaintenanceConfiguration#read}.
 
 ---
 
@@ -1576,7 +1576,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#update MaintenanceConfiguration#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#update MaintenanceConfiguration#update}.
 
 ---
 
@@ -1600,11 +1600,11 @@ new MaintenanceConfigurationWindow {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationWindow.property.startDateTime">StartDateTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#start_date_time MaintenanceConfiguration#start_date_time}. |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationWindow.property.timeZone">TimeZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#time_zone MaintenanceConfiguration#time_zone}. |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationWindow.property.duration">Duration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#duration MaintenanceConfiguration#duration}. |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationWindow.property.expirationDateTime">ExpirationDateTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#expiration_date_time MaintenanceConfiguration#expiration_date_time}. |
-| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationWindow.property.recurEvery">RecurEvery</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#recur_every MaintenanceConfiguration#recur_every}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationWindow.property.startDateTime">StartDateTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#start_date_time MaintenanceConfiguration#start_date_time}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationWindow.property.timeZone">TimeZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#time_zone MaintenanceConfiguration#time_zone}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationWindow.property.duration">Duration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#duration MaintenanceConfiguration#duration}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationWindow.property.expirationDateTime">ExpirationDateTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#expiration_date_time MaintenanceConfiguration#expiration_date_time}. |
+| <code><a href="#@cdktn/provider-azurerm.maintenanceConfiguration.MaintenanceConfigurationWindow.property.recurEvery">RecurEvery</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#recur_every MaintenanceConfiguration#recur_every}. |
 
 ---
 
@@ -1616,7 +1616,7 @@ public string StartDateTime { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#start_date_time MaintenanceConfiguration#start_date_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#start_date_time MaintenanceConfiguration#start_date_time}.
 
 ---
 
@@ -1628,7 +1628,7 @@ public string TimeZone { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#time_zone MaintenanceConfiguration#time_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#time_zone MaintenanceConfiguration#time_zone}.
 
 ---
 
@@ -1640,7 +1640,7 @@ public string Duration { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#duration MaintenanceConfiguration#duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#duration MaintenanceConfiguration#duration}.
 
 ---
 
@@ -1652,7 +1652,7 @@ public string ExpirationDateTime { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#expiration_date_time MaintenanceConfiguration#expiration_date_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#expiration_date_time MaintenanceConfiguration#expiration_date_time}.
 
 ---
 
@@ -1664,7 +1664,7 @@ public string RecurEvery { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.2.0/docs/resources/maintenance_configuration#recur_every MaintenanceConfiguration#recur_every}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/maintenance_configuration#recur_every MaintenanceConfiguration#recur_every}.
 
 ---
 
