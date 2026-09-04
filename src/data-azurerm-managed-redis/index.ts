@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/managed_redis
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/managed_redis
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermManagedRedisConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/managed_redis#id DataAzurermManagedRedis#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/managed_redis#id DataAzurermManagedRedis#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/managed_redis#name DataAzurermManagedRedis#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/managed_redis#name DataAzurermManagedRedis#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/managed_redis#resource_group_name DataAzurermManagedRedis#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/managed_redis#resource_group_name DataAzurermManagedRedis#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/managed_redis#timeouts DataAzurermManagedRedis#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/managed_redis#timeouts DataAzurermManagedRedis#timeouts}
   */
   readonly timeouts?: DataAzurermManagedRedisTimeouts;
 }
@@ -427,7 +427,7 @@ export class DataAzurermManagedRedisIdentityList extends cdktn.ComplexList {
 }
 export interface DataAzurermManagedRedisTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/managed_redis#read DataAzurermManagedRedis#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/managed_redis#read DataAzurermManagedRedis#read}
   */
   readonly read?: string;
 }
@@ -521,7 +521,7 @@ export class DataAzurermManagedRedisTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/managed_redis azurerm_managed_redis}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/managed_redis azurerm_managed_redis}
 */
 export class DataAzurermManagedRedis extends cdktn.TerraformDataSource {
 
@@ -537,7 +537,7 @@ export class DataAzurermManagedRedis extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermManagedRedis resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermManagedRedis to import
-  * @param importFromId The id of the existing DataAzurermManagedRedis that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/managed_redis#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermManagedRedis that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/managed_redis#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermManagedRedis to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -549,7 +549,7 @@ export class DataAzurermManagedRedis extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/managed_redis azurerm_managed_redis} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/managed_redis azurerm_managed_redis} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -560,7 +560,7 @@ export class DataAzurermManagedRedis extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_managed_redis',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_account
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +13,106 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermAutomationAccountConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_account#id DataAzurermAutomationAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_account#id DataAzurermAutomationAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_account#name DataAzurermAutomationAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_account#name DataAzurermAutomationAccount#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_account#resource_group_name DataAzurermAutomationAccount#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_account#resource_group_name DataAzurermAutomationAccount#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_account#timeouts DataAzurermAutomationAccount#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_account#timeouts DataAzurermAutomationAccount#timeouts}
   */
   readonly timeouts?: DataAzurermAutomationAccountTimeouts;
+}
+export interface DataAzurermAutomationAccountEncryption {
+}
+
+export function dataAzurermAutomationAccountEncryptionToTerraform(struct?: DataAzurermAutomationAccountEncryption): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataAzurermAutomationAccountEncryptionToHclTerraform(struct?: DataAzurermAutomationAccountEncryption): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAzurermAutomationAccountEncryptionOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAzurermAutomationAccountEncryption | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzurermAutomationAccountEncryption | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // key_vault_key_id - computed: true, optional: false, required: false
+  public get keyVaultKeyId() {
+    return this.getStringAttribute('key_vault_key_id');
+  }
+
+  // user_assigned_identity_id - computed: true, optional: false, required: false
+  public get userAssignedIdentityId() {
+    return this.getStringAttribute('user_assigned_identity_id');
+  }
+}
+
+export class DataAzurermAutomationAccountEncryptionList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAzurermAutomationAccountEncryptionOutputReference {
+    return new DataAzurermAutomationAccountEncryptionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataAzurermAutomationAccountIdentity {
 }
@@ -206,7 +286,7 @@ export class DataAzurermAutomationAccountPrivateEndpointConnectionList extends c
 }
 export interface DataAzurermAutomationAccountTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_account#read DataAzurermAutomationAccount#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_account#read DataAzurermAutomationAccount#read}
   */
   readonly read?: string;
 }
@@ -300,7 +380,7 @@ export class DataAzurermAutomationAccountTimeoutsOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_account azurerm_automation_account}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_account azurerm_automation_account}
 */
 export class DataAzurermAutomationAccount extends cdktn.TerraformDataSource {
 
@@ -316,7 +396,7 @@ export class DataAzurermAutomationAccount extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermAutomationAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermAutomationAccount to import
-  * @param importFromId The id of the existing DataAzurermAutomationAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermAutomationAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermAutomationAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -328,7 +408,7 @@ export class DataAzurermAutomationAccount extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_account azurerm_automation_account} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_account azurerm_automation_account} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -339,7 +419,7 @@ export class DataAzurermAutomationAccount extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_automation_account',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -359,6 +439,27 @@ export class DataAzurermAutomationAccount extends cdktn.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // dsc_primary_access_key - computed: true, optional: false, required: false
+  public get dscPrimaryAccessKey() {
+    return this.getStringAttribute('dsc_primary_access_key');
+  }
+
+  // dsc_secondary_access_key - computed: true, optional: false, required: false
+  public get dscSecondaryAccessKey() {
+    return this.getStringAttribute('dsc_secondary_access_key');
+  }
+
+  // dsc_server_endpoint - computed: true, optional: false, required: false
+  public get dscServerEndpoint() {
+    return this.getStringAttribute('dsc_server_endpoint');
+  }
+
+  // encryption - computed: true, optional: false, required: false
+  private _encryption = new DataAzurermAutomationAccountEncryptionList(this, "encryption", false);
+  public get encryption() {
+    return this._encryption;
+  }
 
   // endpoint - computed: true, optional: false, required: false
   public get endpoint() {
@@ -392,6 +493,16 @@ export class DataAzurermAutomationAccount extends cdktn.TerraformDataSource {
     return this._identity;
   }
 
+  // local_authentication_enabled - computed: true, optional: false, required: false
+  public get localAuthenticationEnabled() {
+    return this.getBooleanAttribute('local_authentication_enabled');
+  }
+
+  // location - computed: true, optional: false, required: false
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -416,6 +527,11 @@ export class DataAzurermAutomationAccount extends cdktn.TerraformDataSource {
     return this._privateEndpointConnection;
   }
 
+  // public_network_access_enabled - computed: true, optional: false, required: false
+  public get publicNetworkAccessEnabled() {
+    return this.getBooleanAttribute('public_network_access_enabled');
+  }
+
   // resource_group_name - computed: false, optional: false, required: true
   private _resourceGroupName?: string; 
   public get resourceGroupName() {
@@ -432,6 +548,17 @@ export class DataAzurermAutomationAccount extends cdktn.TerraformDataSource {
   // secondary_key - computed: true, optional: false, required: false
   public get secondaryKey() {
     return this.getStringAttribute('secondary_key');
+  }
+
+  // sku_name - computed: true, optional: false, required: false
+  public get skuName() {
+    return this.getStringAttribute('sku_name');
+  }
+
+  // tags - computed: true, optional: false, required: false
+  private _tags = new cdktn.StringMap(this, "tags");
+  public get tags() {
+    return this._tags;
   }
 
   // timeouts - computed: false, optional: true, required: false

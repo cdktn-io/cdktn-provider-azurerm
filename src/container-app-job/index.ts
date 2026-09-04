@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,100 +13,100 @@ import * as cdktn from 'cdktn';
 
 export interface ContainerAppJobConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#container_app_environment_id ContainerAppJob#container_app_environment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#container_app_environment_id ContainerAppJob#container_app_environment_id}
   */
   readonly containerAppEnvironmentId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#id ContainerAppJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#id ContainerAppJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#location ContainerAppJob#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#location ContainerAppJob#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#name ContainerAppJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#name ContainerAppJob#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#replica_retry_limit ContainerAppJob#replica_retry_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#replica_retry_limit ContainerAppJob#replica_retry_limit}
   */
   readonly replicaRetryLimit?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#replica_timeout_in_seconds ContainerAppJob#replica_timeout_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#replica_timeout_in_seconds ContainerAppJob#replica_timeout_in_seconds}
   */
   readonly replicaTimeoutInSeconds: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#resource_group_name ContainerAppJob#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#resource_group_name ContainerAppJob#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#tags ContainerAppJob#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#tags ContainerAppJob#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#workload_profile_name ContainerAppJob#workload_profile_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#workload_profile_name ContainerAppJob#workload_profile_name}
   */
   readonly workloadProfileName?: string;
   /**
   * event_trigger_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#event_trigger_config ContainerAppJob#event_trigger_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#event_trigger_config ContainerAppJob#event_trigger_config}
   */
   readonly eventTriggerConfig?: ContainerAppJobEventTriggerConfig;
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#identity ContainerAppJob#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#identity ContainerAppJob#identity}
   */
   readonly identity?: ContainerAppJobIdentity;
   /**
   * manual_trigger_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#manual_trigger_config ContainerAppJob#manual_trigger_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#manual_trigger_config ContainerAppJob#manual_trigger_config}
   */
   readonly manualTriggerConfig?: ContainerAppJobManualTriggerConfig;
   /**
   * registry block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#registry ContainerAppJob#registry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#registry ContainerAppJob#registry}
   */
   readonly registry?: ContainerAppJobRegistry[] | cdktn.IResolvable;
   /**
   * schedule_trigger_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#schedule_trigger_config ContainerAppJob#schedule_trigger_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#schedule_trigger_config ContainerAppJob#schedule_trigger_config}
   */
   readonly scheduleTriggerConfig?: ContainerAppJobScheduleTriggerConfig;
   /**
   * secret block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#secret ContainerAppJob#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#secret ContainerAppJob#secret}
   */
   readonly secret?: ContainerAppJobSecret[] | cdktn.IResolvable;
   /**
   * template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#template ContainerAppJob#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#template ContainerAppJob#template}
   */
   readonly template: ContainerAppJobTemplate;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#timeouts ContainerAppJob#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#timeouts ContainerAppJob#timeouts}
   */
   readonly timeouts?: ContainerAppJobTimeouts;
 }
 export interface ContainerAppJobEventTriggerConfigScaleRulesAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#secret_name ContainerAppJob#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#secret_name ContainerAppJob#secret_name}
   */
   readonly secretName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#trigger_parameter ContainerAppJob#trigger_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#trigger_parameter ContainerAppJob#trigger_parameter}
   */
   readonly triggerParameter: string;
 }
@@ -245,27 +245,27 @@ export class ContainerAppJobEventTriggerConfigScaleRulesAuthenticationList exten
 }
 export interface ContainerAppJobEventTriggerConfigScaleRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#custom_rule_type ContainerAppJob#custom_rule_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#custom_rule_type ContainerAppJob#custom_rule_type}
   */
   readonly customRuleType: string;
   /**
   * ID of the System or User Managed Identity used to execute scale rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#identity_id ContainerAppJob#identity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#identity_id ContainerAppJob#identity_id}
   */
   readonly identityId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#metadata ContainerAppJob#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#metadata ContainerAppJob#metadata}
   */
   readonly metadata: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#name ContainerAppJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#name ContainerAppJob#name}
   */
   readonly name: string;
   /**
   * authentication block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#authentication ContainerAppJob#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#authentication ContainerAppJob#authentication}
   */
   readonly authentication?: ContainerAppJobEventTriggerConfigScaleRulesAuthentication[] | cdktn.IResolvable;
 }
@@ -488,21 +488,21 @@ export class ContainerAppJobEventTriggerConfigScaleRulesList extends cdktn.Compl
 }
 export interface ContainerAppJobEventTriggerConfigScale {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#max_executions ContainerAppJob#max_executions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#max_executions ContainerAppJob#max_executions}
   */
   readonly maxExecutions?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#min_executions ContainerAppJob#min_executions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#min_executions ContainerAppJob#min_executions}
   */
   readonly minExecutions?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#polling_interval_in_seconds ContainerAppJob#polling_interval_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#polling_interval_in_seconds ContainerAppJob#polling_interval_in_seconds}
   */
   readonly pollingIntervalInSeconds?: number;
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#rules ContainerAppJob#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#rules ContainerAppJob#rules}
   */
   readonly rules?: ContainerAppJobEventTriggerConfigScaleRules[] | cdktn.IResolvable;
 }
@@ -705,17 +705,17 @@ export class ContainerAppJobEventTriggerConfigScaleList extends cdktn.ComplexLis
 }
 export interface ContainerAppJobEventTriggerConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}
   */
   readonly parallelism?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}
   */
   readonly replicaCompletionCount?: number;
   /**
   * scale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#scale ContainerAppJob#scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#scale ContainerAppJob#scale}
   */
   readonly scale?: ContainerAppJobEventTriggerConfigScale[] | cdktn.IResolvable;
 }
@@ -857,11 +857,11 @@ export class ContainerAppJobEventTriggerConfigOutputReference extends cdktn.Comp
 }
 export interface ContainerAppJobIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#identity_ids ContainerAppJob#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#identity_ids ContainerAppJob#identity_ids}
   */
   readonly identityIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#type ContainerAppJob#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#type ContainerAppJob#type}
   */
   readonly type: string;
 }
@@ -981,11 +981,11 @@ export class ContainerAppJobIdentityOutputReference extends cdktn.ComplexObject 
 }
 export interface ContainerAppJobManualTriggerConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}
   */
   readonly parallelism?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}
   */
   readonly replicaCompletionCount?: number;
 }
@@ -1100,25 +1100,25 @@ export interface ContainerAppJobRegistry {
   /**
   * ID of the System or User Managed Identity used to pull images from the Container Registry
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#identity ContainerAppJob#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#identity ContainerAppJob#identity}
   */
   readonly identity?: string;
   /**
   * The name of the Secret Reference containing the password value for this user on the Container Registry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#password_secret_name ContainerAppJob#password_secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#password_secret_name ContainerAppJob#password_secret_name}
   */
   readonly passwordSecretName?: string;
   /**
   * The hostname for the Container Registry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#server ContainerAppJob#server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#server ContainerAppJob#server}
   */
   readonly server: string;
   /**
   * The username to use for this Container Registry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#username ContainerAppJob#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#username ContainerAppJob#username}
   */
   readonly username?: string;
 }
@@ -1318,15 +1318,15 @@ export class ContainerAppJobRegistryList extends cdktn.ComplexList {
 }
 export interface ContainerAppJobScheduleTriggerConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#cron_expression ContainerAppJob#cron_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#cron_expression ContainerAppJob#cron_expression}
   */
   readonly cronExpression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}
   */
   readonly parallelism?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}
   */
   readonly replicaCompletionCount?: number;
 }
@@ -1467,25 +1467,25 @@ export interface ContainerAppJobSecret {
   /**
   * The identity to use for accessing key vault reference.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#identity ContainerAppJob#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#identity ContainerAppJob#identity}
   */
   readonly identity?: string;
   /**
   * The Key Vault Secret ID. Could be either one of `id` or `versionless_id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#key_vault_secret_id ContainerAppJob#key_vault_secret_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#key_vault_secret_id ContainerAppJob#key_vault_secret_id}
   */
   readonly keyVaultSecretId?: string;
   /**
   * The secret name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#name ContainerAppJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#name ContainerAppJob#name}
   */
   readonly name: string;
   /**
   * The value for this secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#value ContainerAppJob#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#value ContainerAppJob#value}
   */
   readonly value?: string;
 }
@@ -1687,19 +1687,19 @@ export interface ContainerAppJobTemplateContainerEnv {
   /**
   * The name of the environment variable for the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#name ContainerAppJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#name ContainerAppJob#name}
   */
   readonly name: string;
   /**
   * The name of the secret that contains the value for this environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#secret_name ContainerAppJob#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#secret_name ContainerAppJob#secret_name}
   */
   readonly secretName?: string;
   /**
   * The value for this environment variable. **NOTE:** This value is ignored if `secret_name` is used
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#value ContainerAppJob#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#value ContainerAppJob#value}
   */
   readonly value?: string;
 }
@@ -1872,13 +1872,13 @@ export interface ContainerAppJobTemplateContainerLivenessProbeHeader {
   /**
   * The HTTP Header Name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#name ContainerAppJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#name ContainerAppJob#name}
   */
   readonly name: string;
   /**
   * The HTTP Header value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#value ContainerAppJob#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#value ContainerAppJob#value}
   */
   readonly value: string;
 }
@@ -2019,55 +2019,55 @@ export interface ContainerAppJobTemplateContainerLivenessProbe {
   /**
   * The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `30`. Defaults to `3`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#failure_count_threshold ContainerAppJob#failure_count_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#failure_count_threshold ContainerAppJob#failure_count_threshold}
   */
   readonly failureCountThreshold?: number;
   /**
   * The probe hostname. Defaults to the pod IP address. Setting a value for `Host` in `headers` can be used to override this for `http` and `https` type probes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#host ContainerAppJob#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#host ContainerAppJob#host}
   */
   readonly host?: string;
   /**
   * The number of seconds elapsed after the container has started before the probe is initiated. Possible values are between `0` and `60`. Defaults to `1` seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#initial_delay ContainerAppJob#initial_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#initial_delay ContainerAppJob#initial_delay}
   */
   readonly initialDelay?: number;
   /**
   * How often, in seconds, the probe should run. Possible values are between `1` and `240`. Defaults to `10`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#interval_seconds ContainerAppJob#interval_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#interval_seconds ContainerAppJob#interval_seconds}
   */
   readonly intervalSeconds?: number;
   /**
   * The URI to use with the `host` for http type probes. Not valid for `TCP` type probes. Defaults to `/`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#path ContainerAppJob#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#path ContainerAppJob#path}
   */
   readonly path?: string;
   /**
   * The port number on which to connect. Possible values are between `1` and `65535`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#port ContainerAppJob#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#port ContainerAppJob#port}
   */
   readonly port: number;
   /**
   * Time in seconds after which the probe times out. Possible values are between `1` an `240`. Defaults to `1`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#timeout ContainerAppJob#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#timeout ContainerAppJob#timeout}
   */
   readonly timeout?: number;
   /**
   * Type of probe. Possible values are `TCP`, `HTTP`, and `HTTPS`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#transport ContainerAppJob#transport}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#transport ContainerAppJob#transport}
   */
   readonly transport: string;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#header ContainerAppJob#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#header ContainerAppJob#header}
   */
   readonly header?: ContainerAppJobTemplateContainerLivenessProbeHeader[] | cdktn.IResolvable;
 }
@@ -2411,13 +2411,13 @@ export interface ContainerAppJobTemplateContainerReadinessProbeHeader {
   /**
   * The HTTP Header Name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#name ContainerAppJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#name ContainerAppJob#name}
   */
   readonly name: string;
   /**
   * The HTTP Header value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#value ContainerAppJob#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#value ContainerAppJob#value}
   */
   readonly value: string;
 }
@@ -2558,61 +2558,61 @@ export interface ContainerAppJobTemplateContainerReadinessProbe {
   /**
   * The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `48`. Defaults to `3`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#failure_count_threshold ContainerAppJob#failure_count_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#failure_count_threshold ContainerAppJob#failure_count_threshold}
   */
   readonly failureCountThreshold?: number;
   /**
   * The probe hostname. Defaults to the pod IP address. Setting a value for `Host` in `headers` can be used to override this for `http` and `https` type probes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#host ContainerAppJob#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#host ContainerAppJob#host}
   */
   readonly host?: string;
   /**
   * The number of seconds elapsed after the container has started before the probe is initiated. Possible values are between `0` and `60`. Defaults to `0` seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#initial_delay ContainerAppJob#initial_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#initial_delay ContainerAppJob#initial_delay}
   */
   readonly initialDelay?: number;
   /**
   * How often, in seconds, the probe should run. Possible values are between `1` and `240`. Defaults to `10`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#interval_seconds ContainerAppJob#interval_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#interval_seconds ContainerAppJob#interval_seconds}
   */
   readonly intervalSeconds?: number;
   /**
   * The URI to use for http type probes. Not valid for `TCP` type probes. Defaults to `/`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#path ContainerAppJob#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#path ContainerAppJob#path}
   */
   readonly path?: string;
   /**
   * The port number on which to connect. Possible values are between `1` and `65535`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#port ContainerAppJob#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#port ContainerAppJob#port}
   */
   readonly port: number;
   /**
   * The number of consecutive successful responses required to consider this probe as successful. Possible values are between `1` and `10`. Defaults to `3`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#success_count_threshold ContainerAppJob#success_count_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#success_count_threshold ContainerAppJob#success_count_threshold}
   */
   readonly successCountThreshold?: number;
   /**
   * Time in seconds after which the probe times out. Possible values are between `1` an `240`. Defaults to `1`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#timeout ContainerAppJob#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#timeout ContainerAppJob#timeout}
   */
   readonly timeout?: number;
   /**
   * Type of probe. Possible values are `TCP`, `HTTP`, and `HTTPS`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#transport ContainerAppJob#transport}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#transport ContainerAppJob#transport}
   */
   readonly transport: string;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#header ContainerAppJob#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#header ContainerAppJob#header}
   */
   readonly header?: ContainerAppJobTemplateContainerReadinessProbeHeader[] | cdktn.IResolvable;
 }
@@ -2985,13 +2985,13 @@ export interface ContainerAppJobTemplateContainerStartupProbeHeader {
   /**
   * The HTTP Header Name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#name ContainerAppJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#name ContainerAppJob#name}
   */
   readonly name: string;
   /**
   * The HTTP Header value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#value ContainerAppJob#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#value ContainerAppJob#value}
   */
   readonly value: string;
 }
@@ -3132,55 +3132,55 @@ export interface ContainerAppJobTemplateContainerStartupProbe {
   /**
   * The number of consecutive failures required to consider this probe as failed. Possible values are between `1` and `240`. Defaults to `3`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#failure_count_threshold ContainerAppJob#failure_count_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#failure_count_threshold ContainerAppJob#failure_count_threshold}
   */
   readonly failureCountThreshold?: number;
   /**
   * The probe hostname. Defaults to the pod IP address. Setting a value for `Host` in `headers` can be used to override this for `http` and `https` type probes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#host ContainerAppJob#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#host ContainerAppJob#host}
   */
   readonly host?: string;
   /**
   * The number of seconds elapsed after the container has started before the probe is initiated. Possible values are between `0` and `60`. Defaults to `0` seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#initial_delay ContainerAppJob#initial_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#initial_delay ContainerAppJob#initial_delay}
   */
   readonly initialDelay?: number;
   /**
   * How often, in seconds, the probe should run. Possible values are between `1` and `240`. Defaults to `10`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#interval_seconds ContainerAppJob#interval_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#interval_seconds ContainerAppJob#interval_seconds}
   */
   readonly intervalSeconds?: number;
   /**
   * The URI to use with the `host` for http type probes. Not valid for `TCP` type probes. Defaults to `/`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#path ContainerAppJob#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#path ContainerAppJob#path}
   */
   readonly path?: string;
   /**
   * The port number on which to connect. Possible values are between `1` and `65535`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#port ContainerAppJob#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#port ContainerAppJob#port}
   */
   readonly port: number;
   /**
   * Time in seconds after which the probe times out. Possible values are between `1` an `240`. Defaults to `1`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#timeout ContainerAppJob#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#timeout ContainerAppJob#timeout}
   */
   readonly timeout?: number;
   /**
   * Type of probe. Possible values are `TCP`, `HTTP`, and `HTTPS`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#transport ContainerAppJob#transport}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#transport ContainerAppJob#transport}
   */
   readonly transport: string;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#header ContainerAppJob#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#header ContainerAppJob#header}
   */
   readonly header?: ContainerAppJobTemplateContainerStartupProbeHeader[] | cdktn.IResolvable;
 }
@@ -3524,19 +3524,19 @@ export interface ContainerAppJobTemplateContainerVolumeMounts {
   /**
   * The name of the Volume to be mounted in the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#name ContainerAppJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#name ContainerAppJob#name}
   */
   readonly name: string;
   /**
   * The path in the container at which to mount this volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#path ContainerAppJob#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#path ContainerAppJob#path}
   */
   readonly path: string;
   /**
   * The sub path of the volume to be mounted in the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#sub_path ContainerAppJob#sub_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#sub_path ContainerAppJob#sub_path}
   */
   readonly subPath?: string;
 }
@@ -3706,67 +3706,67 @@ export interface ContainerAppJobTemplateContainer {
   /**
   * A list of args to pass to the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#args ContainerAppJob#args}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#args ContainerAppJob#args}
   */
   readonly args?: string[];
   /**
   * A command to pass to the container to override the default. This is provided as a list of command line elements without spaces.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#command ContainerAppJob#command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#command ContainerAppJob#command}
   */
   readonly command?: string[];
   /**
   * The amount of vCPU to allocate to the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#cpu ContainerAppJob#cpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#cpu ContainerAppJob#cpu}
   */
   readonly cpu: number;
   /**
   * The image to use to create the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#image ContainerAppJob#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#image ContainerAppJob#image}
   */
   readonly image: string;
   /**
   * The amount of memory to allocate to the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#memory ContainerAppJob#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#memory ContainerAppJob#memory}
   */
   readonly memory: string;
   /**
   * The name of the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#name ContainerAppJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#name ContainerAppJob#name}
   */
   readonly name: string;
   /**
   * env block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#env ContainerAppJob#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#env ContainerAppJob#env}
   */
   readonly env?: ContainerAppJobTemplateContainerEnv[] | cdktn.IResolvable;
   /**
   * liveness_probe block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#liveness_probe ContainerAppJob#liveness_probe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#liveness_probe ContainerAppJob#liveness_probe}
   */
   readonly livenessProbe?: ContainerAppJobTemplateContainerLivenessProbe[] | cdktn.IResolvable;
   /**
   * readiness_probe block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#readiness_probe ContainerAppJob#readiness_probe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#readiness_probe ContainerAppJob#readiness_probe}
   */
   readonly readinessProbe?: ContainerAppJobTemplateContainerReadinessProbe[] | cdktn.IResolvable;
   /**
   * startup_probe block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#startup_probe ContainerAppJob#startup_probe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#startup_probe ContainerAppJob#startup_probe}
   */
   readonly startupProbe?: ContainerAppJobTemplateContainerStartupProbe[] | cdktn.IResolvable;
   /**
   * volume_mounts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#volume_mounts ContainerAppJob#volume_mounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#volume_mounts ContainerAppJob#volume_mounts}
   */
   readonly volumeMounts?: ContainerAppJobTemplateContainerVolumeMounts[] | cdktn.IResolvable;
 }
@@ -4167,19 +4167,19 @@ export interface ContainerAppJobTemplateInitContainerEnv {
   /**
   * The name of the environment variable for the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#name ContainerAppJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#name ContainerAppJob#name}
   */
   readonly name: string;
   /**
   * The name of the secret that contains the value for this environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#secret_name ContainerAppJob#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#secret_name ContainerAppJob#secret_name}
   */
   readonly secretName?: string;
   /**
   * The value for this environment variable. **NOTE:** This value is ignored if `secret_name` is used
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#value ContainerAppJob#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#value ContainerAppJob#value}
   */
   readonly value?: string;
 }
@@ -4352,19 +4352,19 @@ export interface ContainerAppJobTemplateInitContainerVolumeMounts {
   /**
   * The name of the Volume to be mounted in the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#name ContainerAppJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#name ContainerAppJob#name}
   */
   readonly name: string;
   /**
   * The path in the container at which to mount this volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#path ContainerAppJob#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#path ContainerAppJob#path}
   */
   readonly path: string;
   /**
   * The sub path of the volume to be mounted in the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#sub_path ContainerAppJob#sub_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#sub_path ContainerAppJob#sub_path}
   */
   readonly subPath?: string;
 }
@@ -4534,49 +4534,49 @@ export interface ContainerAppJobTemplateInitContainer {
   /**
   * A list of args to pass to the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#args ContainerAppJob#args}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#args ContainerAppJob#args}
   */
   readonly args?: string[];
   /**
   * A command to pass to the container to override the default. This is provided as a list of command line elements without spaces.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#command ContainerAppJob#command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#command ContainerAppJob#command}
   */
   readonly command?: string[];
   /**
   * The amount of vCPU to allocate to the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#cpu ContainerAppJob#cpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#cpu ContainerAppJob#cpu}
   */
   readonly cpu?: number;
   /**
   * The image to use to create the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#image ContainerAppJob#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#image ContainerAppJob#image}
   */
   readonly image: string;
   /**
   * The amount of memory to allocate to the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#memory ContainerAppJob#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#memory ContainerAppJob#memory}
   */
   readonly memory?: string;
   /**
   * The name of the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#name ContainerAppJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#name ContainerAppJob#name}
   */
   readonly name: string;
   /**
   * env block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#env ContainerAppJob#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#env ContainerAppJob#env}
   */
   readonly env?: ContainerAppJobTemplateInitContainerEnv[] | cdktn.IResolvable;
   /**
   * volume_mounts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#volume_mounts ContainerAppJob#volume_mounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#volume_mounts ContainerAppJob#volume_mounts}
   */
   readonly volumeMounts?: ContainerAppJobTemplateInitContainerVolumeMounts[] | cdktn.IResolvable;
 }
@@ -4896,25 +4896,25 @@ export interface ContainerAppJobTemplateVolume {
   /**
   * Mount options used while mounting the AzureFile. Must be a comma-separated string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#mount_options ContainerAppJob#mount_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#mount_options ContainerAppJob#mount_options}
   */
   readonly mountOptions?: string;
   /**
   * The name of the volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#name ContainerAppJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#name ContainerAppJob#name}
   */
   readonly name: string;
   /**
   * The name of the `AzureFile` storage. Required when `storage_type` is `AzureFile`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#storage_name ContainerAppJob#storage_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#storage_name ContainerAppJob#storage_name}
   */
   readonly storageName?: string;
   /**
   * The type of storage volume. Possible values include `AzureFile` and `EmptyDir`. Defaults to `EmptyDir`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#storage_type ContainerAppJob#storage_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#storage_type ContainerAppJob#storage_type}
   */
   readonly storageType?: string;
 }
@@ -5116,19 +5116,19 @@ export interface ContainerAppJobTemplate {
   /**
   * container block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#container ContainerAppJob#container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#container ContainerAppJob#container}
   */
   readonly container: ContainerAppJobTemplateContainer[] | cdktn.IResolvable;
   /**
   * init_container block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#init_container ContainerAppJob#init_container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#init_container ContainerAppJob#init_container}
   */
   readonly initContainer?: ContainerAppJobTemplateInitContainer[] | cdktn.IResolvable;
   /**
   * volume block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#volume ContainerAppJob#volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#volume ContainerAppJob#volume}
   */
   readonly volume?: ContainerAppJobTemplateVolume[] | cdktn.IResolvable;
 }
@@ -5267,19 +5267,19 @@ export class ContainerAppJobTemplateOutputReference extends cdktn.ComplexObject 
 }
 export interface ContainerAppJobTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#create ContainerAppJob#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#create ContainerAppJob#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#delete ContainerAppJob#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#delete ContainerAppJob#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#read ContainerAppJob#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#read ContainerAppJob#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#update ContainerAppJob#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#update ContainerAppJob#update}
   */
   readonly update?: string;
 }
@@ -5460,7 +5460,7 @@ export class ContainerAppJobTimeoutsOutputReference extends cdktn.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job azurerm_container_app_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job azurerm_container_app_job}
 */
 export class ContainerAppJob extends cdktn.TerraformResource {
 
@@ -5476,7 +5476,7 @@ export class ContainerAppJob extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ContainerAppJob resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ContainerAppJob to import
-  * @param importFromId The id of the existing ContainerAppJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ContainerAppJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ContainerAppJob to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -5488,7 +5488,7 @@ export class ContainerAppJob extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_job azurerm_container_app_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_job azurerm_container_app_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -5499,7 +5499,7 @@ export class ContainerAppJob extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_container_app_job',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

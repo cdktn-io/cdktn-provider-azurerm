@@ -1,3 +1,3 @@
 # `azurerm_dynatrace_monitor`
 
-Refer to the Terraform Registry for docs: [`azurerm_dynatrace_monitor`](https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/dynatrace_monitor).
+Refer to the Terraform Registry for docs: [`azurerm_dynatrace_monitor`](https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/dynatrace_monitor).
