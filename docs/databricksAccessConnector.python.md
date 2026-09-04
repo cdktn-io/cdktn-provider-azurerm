@@ -4,7 +4,7 @@
 
 ### DatabricksAccessConnector <a name="DatabricksAccessConnector" id="@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnector"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector azurerm_databricks_access_connector}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector azurerm_databricks_access_connector}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnector.Initializer"></a>
 
@@ -42,12 +42,12 @@ databricksAccessConnector.DatabricksAccessConnector(
 | <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnector.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnector.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnector.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnector.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#location DatabricksAccessConnector#location}. |
-| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnector.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#name DatabricksAccessConnector#name}. |
-| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnector.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#resource_group_name DatabricksAccessConnector#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnector.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#id DatabricksAccessConnector#id}. |
+| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnector.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#location DatabricksAccessConnector#location}. |
+| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnector.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#name DatabricksAccessConnector#name}. |
+| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnector.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#resource_group_name DatabricksAccessConnector#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnector.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#id DatabricksAccessConnector#id}. |
 | <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnector.Initializer.parameter.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorIdentity">DatabricksAccessConnectorIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnector.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#tags DatabricksAccessConnector#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnector.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#tags DatabricksAccessConnector#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnector.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorTimeouts">DatabricksAccessConnectorTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#location DatabricksAccessConnector#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#location DatabricksAccessConnector#location}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#name DatabricksAccessConnector#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#name DatabricksAccessConnector#name}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#resource_group_name DatabricksAccessConnector#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#resource_group_name DatabricksAccessConnector#resource_group_name}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#id DatabricksAccessConnector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#id DatabricksAccessConnector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -153,7 +153,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#identity DatabricksAccessConnector#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#identity DatabricksAccessConnector#identity}
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#tags DatabricksAccessConnector#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#tags DatabricksAccessConnector#tags}.
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#timeouts DatabricksAccessConnector#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#timeouts DatabricksAccessConnector#timeouts}
 
 ---
 
@@ -573,7 +573,7 @@ def put_identity(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#type DatabricksAccessConnector#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#type DatabricksAccessConnector#type}.
 
 ---
 
@@ -581,7 +581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#identity_ids DatabricksAccessConnector#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#identity_ids DatabricksAccessConnector#identity_ids}.
 
 ---
 
@@ -600,7 +600,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#create DatabricksAccessConnector#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#create DatabricksAccessConnector#create}.
 
 ---
 
@@ -608,7 +608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#delete DatabricksAccessConnector#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#delete DatabricksAccessConnector#delete}.
 
 ---
 
@@ -616,7 +616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#read DatabricksAccessConnector#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#read DatabricksAccessConnector#read}.
 
 ---
 
@@ -624,7 +624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#update DatabricksAccessConnector#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#update DatabricksAccessConnector#update}.
 
 ---
 
@@ -766,7 +766,7 @@ The construct id used in the generated config for the DatabricksAccessConnector 
 
 The id of the existing DatabricksAccessConnector that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1151,12 +1151,12 @@ databricksAccessConnector.DatabricksAccessConnectorConfig(
 | <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#location DatabricksAccessConnector#location}. |
-| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#name DatabricksAccessConnector#name}. |
-| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#resource_group_name DatabricksAccessConnector#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#id DatabricksAccessConnector#id}. |
+| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#location DatabricksAccessConnector#location}. |
+| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#name DatabricksAccessConnector#name}. |
+| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#resource_group_name DatabricksAccessConnector#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#id DatabricksAccessConnector#id}. |
 | <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorIdentity">DatabricksAccessConnectorIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#tags DatabricksAccessConnector#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#tags DatabricksAccessConnector#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorTimeouts">DatabricksAccessConnectorTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1239,7 +1239,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#location DatabricksAccessConnector#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#location DatabricksAccessConnector#location}.
 
 ---
 
@@ -1251,7 +1251,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#name DatabricksAccessConnector#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#name DatabricksAccessConnector#name}.
 
 ---
 
@@ -1263,7 +1263,7 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#resource_group_name DatabricksAccessConnector#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#resource_group_name DatabricksAccessConnector#resource_group_name}.
 
 ---
 
@@ -1275,7 +1275,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#id DatabricksAccessConnector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#id DatabricksAccessConnector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1292,7 +1292,7 @@ identity: DatabricksAccessConnectorIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#identity DatabricksAccessConnector#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#identity DatabricksAccessConnector#identity}
 
 ---
 
@@ -1304,7 +1304,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#tags DatabricksAccessConnector#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#tags DatabricksAccessConnector#tags}.
 
 ---
 
@@ -1318,7 +1318,7 @@ timeouts: DatabricksAccessConnectorTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#timeouts DatabricksAccessConnector#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#timeouts DatabricksAccessConnector#timeouts}
 
 ---
 
@@ -1339,8 +1339,8 @@ databricksAccessConnector.DatabricksAccessConnectorIdentity(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorIdentity.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#type DatabricksAccessConnector#type}. |
-| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorIdentity.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#identity_ids DatabricksAccessConnector#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorIdentity.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#type DatabricksAccessConnector#type}. |
+| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorIdentity.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#identity_ids DatabricksAccessConnector#identity_ids}. |
 
 ---
 
@@ -1352,7 +1352,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#type DatabricksAccessConnector#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#type DatabricksAccessConnector#type}.
 
 ---
 
@@ -1364,7 +1364,7 @@ identity_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#identity_ids DatabricksAccessConnector#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#identity_ids DatabricksAccessConnector#identity_ids}.
 
 ---
 
@@ -1387,10 +1387,10 @@ databricksAccessConnector.DatabricksAccessConnectorTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#create DatabricksAccessConnector#create}. |
-| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#delete DatabricksAccessConnector#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#read DatabricksAccessConnector#read}. |
-| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#update DatabricksAccessConnector#update}. |
+| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#create DatabricksAccessConnector#create}. |
+| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#delete DatabricksAccessConnector#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#read DatabricksAccessConnector#read}. |
+| <code><a href="#@cdktn/provider-azurerm.databricksAccessConnector.DatabricksAccessConnectorTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#update DatabricksAccessConnector#update}. |
 
 ---
 
@@ -1402,7 +1402,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#create DatabricksAccessConnector#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#create DatabricksAccessConnector#create}.
 
 ---
 
@@ -1414,7 +1414,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#delete DatabricksAccessConnector#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#delete DatabricksAccessConnector#delete}.
 
 ---
 
@@ -1426,7 +1426,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#read DatabricksAccessConnector#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#read DatabricksAccessConnector#read}.
 
 ---
 
@@ -1438,7 +1438,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/databricks_access_connector#update DatabricksAccessConnector#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/databricks_access_connector#update DatabricksAccessConnector#update}.
 
 ---
 

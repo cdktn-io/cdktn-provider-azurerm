@@ -4,7 +4,7 @@
 
 ### Frontdoor <a name="Frontdoor" id="@cdktn/provider-azurerm.frontdoor.Frontdoor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor azurerm_frontdoor}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor azurerm_frontdoor}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoor.Frontdoor.Initializer"></a>
 
@@ -622,7 +622,7 @@ The construct id used in the generated config for the Frontdoor to import.
 
 The id of the existing Frontdoor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1211,9 +1211,9 @@ new FrontdoorBackendPool {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPool.property.backend">Backend</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolBackend">FrontdoorBackendPoolBackend</a>[]</code> | backend block. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPool.property.healthProbeName">HealthProbeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#health_probe_name Frontdoor#health_probe_name}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPool.property.loadBalancingName">LoadBalancingName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#load_balancing_name Frontdoor#load_balancing_name}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPool.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#name Frontdoor#name}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPool.property.healthProbeName">HealthProbeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#health_probe_name Frontdoor#health_probe_name}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPool.property.loadBalancingName">LoadBalancingName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#load_balancing_name Frontdoor#load_balancing_name}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPool.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#name Frontdoor#name}. |
 
 ---
 
@@ -1227,7 +1227,7 @@ public IResolvable|FrontdoorBackendPoolBackend[] Backend { get; set; }
 
 backend block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#backend Frontdoor#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#backend Frontdoor#backend}
 
 ---
 
@@ -1239,7 +1239,7 @@ public string HealthProbeName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#health_probe_name Frontdoor#health_probe_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#health_probe_name Frontdoor#health_probe_name}.
 
 ---
 
@@ -1251,7 +1251,7 @@ public string LoadBalancingName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#load_balancing_name Frontdoor#load_balancing_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#load_balancing_name Frontdoor#load_balancing_name}.
 
 ---
 
@@ -1263,7 +1263,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#name Frontdoor#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#name Frontdoor#name}.
 
 ---
 
@@ -1289,13 +1289,13 @@ new FrontdoorBackendPoolBackend {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolBackend.property.address">Address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#address Frontdoor#address}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolBackend.property.hostHeader">HostHeader</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#host_header Frontdoor#host_header}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolBackend.property.httpPort">HttpPort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#http_port Frontdoor#http_port}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolBackend.property.httpsPort">HttpsPort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#https_port Frontdoor#https_port}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolBackend.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#enabled Frontdoor#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolBackend.property.priority">Priority</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#priority Frontdoor#priority}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolBackend.property.weight">Weight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#weight Frontdoor#weight}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolBackend.property.address">Address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#address Frontdoor#address}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolBackend.property.hostHeader">HostHeader</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#host_header Frontdoor#host_header}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolBackend.property.httpPort">HttpPort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#http_port Frontdoor#http_port}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolBackend.property.httpsPort">HttpsPort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#https_port Frontdoor#https_port}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolBackend.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#enabled Frontdoor#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolBackend.property.priority">Priority</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#priority Frontdoor#priority}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolBackend.property.weight">Weight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#weight Frontdoor#weight}. |
 
 ---
 
@@ -1307,7 +1307,7 @@ public string Address { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#address Frontdoor#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#address Frontdoor#address}.
 
 ---
 
@@ -1319,7 +1319,7 @@ public string HostHeader { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#host_header Frontdoor#host_header}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#host_header Frontdoor#host_header}.
 
 ---
 
@@ -1331,7 +1331,7 @@ public double HttpPort { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#http_port Frontdoor#http_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#http_port Frontdoor#http_port}.
 
 ---
 
@@ -1343,7 +1343,7 @@ public double HttpsPort { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#https_port Frontdoor#https_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#https_port Frontdoor#https_port}.
 
 ---
 
@@ -1355,7 +1355,7 @@ public bool|IResolvable Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#enabled Frontdoor#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#enabled Frontdoor#enabled}.
 
 ---
 
@@ -1367,7 +1367,7 @@ public double Priority { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#priority Frontdoor#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#priority Frontdoor#priority}.
 
 ---
 
@@ -1379,7 +1379,7 @@ public double Weight { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#weight Frontdoor#weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#weight Frontdoor#weight}.
 
 ---
 
@@ -1404,12 +1404,12 @@ new FrontdoorBackendPoolHealthProbe {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolHealthProbe.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#name Frontdoor#name}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolHealthProbe.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#enabled Frontdoor#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolHealthProbe.property.intervalInSeconds">IntervalInSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#interval_in_seconds Frontdoor#interval_in_seconds}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolHealthProbe.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#path Frontdoor#path}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolHealthProbe.property.probeMethod">ProbeMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#probe_method Frontdoor#probe_method}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolHealthProbe.property.protocol">Protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#protocol Frontdoor#protocol}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolHealthProbe.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#name Frontdoor#name}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolHealthProbe.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#enabled Frontdoor#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolHealthProbe.property.intervalInSeconds">IntervalInSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#interval_in_seconds Frontdoor#interval_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolHealthProbe.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#path Frontdoor#path}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolHealthProbe.property.probeMethod">ProbeMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#probe_method Frontdoor#probe_method}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolHealthProbe.property.protocol">Protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#protocol Frontdoor#protocol}. |
 
 ---
 
@@ -1421,7 +1421,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#name Frontdoor#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#name Frontdoor#name}.
 
 ---
 
@@ -1433,7 +1433,7 @@ public bool|IResolvable Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#enabled Frontdoor#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#enabled Frontdoor#enabled}.
 
 ---
 
@@ -1445,7 +1445,7 @@ public double IntervalInSeconds { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#interval_in_seconds Frontdoor#interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#interval_in_seconds Frontdoor#interval_in_seconds}.
 
 ---
 
@@ -1457,7 +1457,7 @@ public string Path { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#path Frontdoor#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#path Frontdoor#path}.
 
 ---
 
@@ -1469,7 +1469,7 @@ public string ProbeMethod { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#probe_method Frontdoor#probe_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#probe_method Frontdoor#probe_method}.
 
 ---
 
@@ -1481,7 +1481,7 @@ public string Protocol { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#protocol Frontdoor#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#protocol Frontdoor#protocol}.
 
 ---
 
@@ -1504,10 +1504,10 @@ new FrontdoorBackendPoolLoadBalancing {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolLoadBalancing.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#name Frontdoor#name}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolLoadBalancing.property.additionalLatencyMilliseconds">AdditionalLatencyMilliseconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#additional_latency_milliseconds Frontdoor#additional_latency_milliseconds}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolLoadBalancing.property.sampleSize">SampleSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#sample_size Frontdoor#sample_size}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolLoadBalancing.property.successfulSamplesRequired">SuccessfulSamplesRequired</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#successful_samples_required Frontdoor#successful_samples_required}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolLoadBalancing.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#name Frontdoor#name}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolLoadBalancing.property.additionalLatencyMilliseconds">AdditionalLatencyMilliseconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#additional_latency_milliseconds Frontdoor#additional_latency_milliseconds}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolLoadBalancing.property.sampleSize">SampleSize</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#sample_size Frontdoor#sample_size}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolLoadBalancing.property.successfulSamplesRequired">SuccessfulSamplesRequired</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#successful_samples_required Frontdoor#successful_samples_required}. |
 
 ---
 
@@ -1519,7 +1519,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#name Frontdoor#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#name Frontdoor#name}.
 
 ---
 
@@ -1531,7 +1531,7 @@ public double AdditionalLatencyMilliseconds { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#additional_latency_milliseconds Frontdoor#additional_latency_milliseconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#additional_latency_milliseconds Frontdoor#additional_latency_milliseconds}.
 
 ---
 
@@ -1543,7 +1543,7 @@ public double SampleSize { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#sample_size Frontdoor#sample_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#sample_size Frontdoor#sample_size}.
 
 ---
 
@@ -1555,7 +1555,7 @@ public double SuccessfulSamplesRequired { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#successful_samples_required Frontdoor#successful_samples_required}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#successful_samples_required Frontdoor#successful_samples_required}.
 
 ---
 
@@ -1576,8 +1576,8 @@ new FrontdoorBackendPoolSettings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolSettings.property.enforceBackendPoolsCertificateNameCheck">EnforceBackendPoolsCertificateNameCheck</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#enforce_backend_pools_certificate_name_check Frontdoor#enforce_backend_pools_certificate_name_check}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolSettings.property.backendPoolsSendReceiveTimeoutSeconds">BackendPoolsSendReceiveTimeoutSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#backend_pools_send_receive_timeout_seconds Frontdoor#backend_pools_send_receive_timeout_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolSettings.property.enforceBackendPoolsCertificateNameCheck">EnforceBackendPoolsCertificateNameCheck</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#enforce_backend_pools_certificate_name_check Frontdoor#enforce_backend_pools_certificate_name_check}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolSettings.property.backendPoolsSendReceiveTimeoutSeconds">BackendPoolsSendReceiveTimeoutSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#backend_pools_send_receive_timeout_seconds Frontdoor#backend_pools_send_receive_timeout_seconds}. |
 
 ---
 
@@ -1589,7 +1589,7 @@ public bool|IResolvable EnforceBackendPoolsCertificateNameCheck { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#enforce_backend_pools_certificate_name_check Frontdoor#enforce_backend_pools_certificate_name_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#enforce_backend_pools_certificate_name_check Frontdoor#enforce_backend_pools_certificate_name_check}.
 
 ---
 
@@ -1601,7 +1601,7 @@ public double BackendPoolsSendReceiveTimeoutSeconds { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#backend_pools_send_receive_timeout_seconds Frontdoor#backend_pools_send_receive_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#backend_pools_send_receive_timeout_seconds Frontdoor#backend_pools_send_receive_timeout_seconds}.
 
 ---
 
@@ -1651,14 +1651,14 @@ new FrontdoorConfig {
 | <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorConfig.property.backendPoolHealthProbe">BackendPoolHealthProbe</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolHealthProbe">FrontdoorBackendPoolHealthProbe</a>[]</code> | backend_pool_health_probe block. |
 | <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorConfig.property.backendPoolLoadBalancing">BackendPoolLoadBalancing</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolLoadBalancing">FrontdoorBackendPoolLoadBalancing</a>[]</code> | backend_pool_load_balancing block. |
 | <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorConfig.property.frontendEndpoint">FrontendEndpoint</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorFrontendEndpoint">FrontdoorFrontendEndpoint</a>[]</code> | frontend_endpoint block. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#name Frontdoor#name}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#resource_group_name Frontdoor#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#name Frontdoor#name}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#resource_group_name Frontdoor#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorConfig.property.routingRule">RoutingRule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRule">FrontdoorRoutingRule</a>[]</code> | routing_rule block. |
 | <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorConfig.property.backendPoolSettings">BackendPoolSettings</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolSettings">FrontdoorBackendPoolSettings</a>[]</code> | backend_pool_settings block. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorConfig.property.friendlyName">FriendlyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#friendly_name Frontdoor#friendly_name}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#id Frontdoor#id}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorConfig.property.loadBalancerEnabled">LoadBalancerEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#load_balancer_enabled Frontdoor#load_balancer_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#tags Frontdoor#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorConfig.property.friendlyName">FriendlyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#friendly_name Frontdoor#friendly_name}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#id Frontdoor#id}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorConfig.property.loadBalancerEnabled">LoadBalancerEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#load_balancer_enabled Frontdoor#load_balancer_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#tags Frontdoor#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorTimeouts">FrontdoorTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1743,7 +1743,7 @@ public IResolvable|FrontdoorBackendPool[] BackendPool { get; set; }
 
 backend_pool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#backend_pool Frontdoor#backend_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#backend_pool Frontdoor#backend_pool}
 
 ---
 
@@ -1757,7 +1757,7 @@ public IResolvable|FrontdoorBackendPoolHealthProbe[] BackendPoolHealthProbe { ge
 
 backend_pool_health_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#backend_pool_health_probe Frontdoor#backend_pool_health_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#backend_pool_health_probe Frontdoor#backend_pool_health_probe}
 
 ---
 
@@ -1771,7 +1771,7 @@ public IResolvable|FrontdoorBackendPoolLoadBalancing[] BackendPoolLoadBalancing 
 
 backend_pool_load_balancing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#backend_pool_load_balancing Frontdoor#backend_pool_load_balancing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#backend_pool_load_balancing Frontdoor#backend_pool_load_balancing}
 
 ---
 
@@ -1785,7 +1785,7 @@ public IResolvable|FrontdoorFrontendEndpoint[] FrontendEndpoint { get; set; }
 
 frontend_endpoint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#frontend_endpoint Frontdoor#frontend_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#frontend_endpoint Frontdoor#frontend_endpoint}
 
 ---
 
@@ -1797,7 +1797,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#name Frontdoor#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#name Frontdoor#name}.
 
 ---
 
@@ -1809,7 +1809,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#resource_group_name Frontdoor#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#resource_group_name Frontdoor#resource_group_name}.
 
 ---
 
@@ -1823,7 +1823,7 @@ public IResolvable|FrontdoorRoutingRule[] RoutingRule { get; set; }
 
 routing_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#routing_rule Frontdoor#routing_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#routing_rule Frontdoor#routing_rule}
 
 ---
 
@@ -1837,7 +1837,7 @@ public IResolvable|FrontdoorBackendPoolSettings[] BackendPoolSettings { get; set
 
 backend_pool_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#backend_pool_settings Frontdoor#backend_pool_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#backend_pool_settings Frontdoor#backend_pool_settings}
 
 ---
 
@@ -1849,7 +1849,7 @@ public string FriendlyName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#friendly_name Frontdoor#friendly_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#friendly_name Frontdoor#friendly_name}.
 
 ---
 
@@ -1861,7 +1861,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#id Frontdoor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#id Frontdoor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1876,7 +1876,7 @@ public bool|IResolvable LoadBalancerEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#load_balancer_enabled Frontdoor#load_balancer_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#load_balancer_enabled Frontdoor#load_balancer_enabled}.
 
 ---
 
@@ -1888,7 +1888,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#tags Frontdoor#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#tags Frontdoor#tags}.
 
 ---
 
@@ -1902,7 +1902,7 @@ public FrontdoorTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#timeouts Frontdoor#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#timeouts Frontdoor#timeouts}
 
 ---
 
@@ -1939,11 +1939,11 @@ new FrontdoorFrontendEndpoint {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorFrontendEndpoint.property.hostName">HostName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#host_name Frontdoor#host_name}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorFrontendEndpoint.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#name Frontdoor#name}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorFrontendEndpoint.property.sessionAffinityEnabled">SessionAffinityEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#session_affinity_enabled Frontdoor#session_affinity_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorFrontendEndpoint.property.sessionAffinityTtlSeconds">SessionAffinityTtlSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#session_affinity_ttl_seconds Frontdoor#session_affinity_ttl_seconds}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorFrontendEndpoint.property.webApplicationFirewallPolicyLinkId">WebApplicationFirewallPolicyLinkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#web_application_firewall_policy_link_id Frontdoor#web_application_firewall_policy_link_id}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorFrontendEndpoint.property.hostName">HostName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#host_name Frontdoor#host_name}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorFrontendEndpoint.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#name Frontdoor#name}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorFrontendEndpoint.property.sessionAffinityEnabled">SessionAffinityEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#session_affinity_enabled Frontdoor#session_affinity_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorFrontendEndpoint.property.sessionAffinityTtlSeconds">SessionAffinityTtlSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#session_affinity_ttl_seconds Frontdoor#session_affinity_ttl_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorFrontendEndpoint.property.webApplicationFirewallPolicyLinkId">WebApplicationFirewallPolicyLinkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#web_application_firewall_policy_link_id Frontdoor#web_application_firewall_policy_link_id}. |
 
 ---
 
@@ -1955,7 +1955,7 @@ public string HostName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#host_name Frontdoor#host_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#host_name Frontdoor#host_name}.
 
 ---
 
@@ -1967,7 +1967,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#name Frontdoor#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#name Frontdoor#name}.
 
 ---
 
@@ -1979,7 +1979,7 @@ public bool|IResolvable SessionAffinityEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#session_affinity_enabled Frontdoor#session_affinity_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#session_affinity_enabled Frontdoor#session_affinity_enabled}.
 
 ---
 
@@ -1991,7 +1991,7 @@ public double SessionAffinityTtlSeconds { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#session_affinity_ttl_seconds Frontdoor#session_affinity_ttl_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#session_affinity_ttl_seconds Frontdoor#session_affinity_ttl_seconds}.
 
 ---
 
@@ -2003,7 +2003,7 @@ public string WebApplicationFirewallPolicyLinkId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#web_application_firewall_policy_link_id Frontdoor#web_application_firewall_policy_link_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#web_application_firewall_policy_link_id Frontdoor#web_application_firewall_policy_link_id}.
 
 ---
 
@@ -2029,11 +2029,11 @@ new FrontdoorRoutingRule {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRule.property.acceptedProtocols">AcceptedProtocols</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#accepted_protocols Frontdoor#accepted_protocols}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRule.property.frontendEndpoints">FrontendEndpoints</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#frontend_endpoints Frontdoor#frontend_endpoints}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRule.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#name Frontdoor#name}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRule.property.patternsToMatch">PatternsToMatch</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#patterns_to_match Frontdoor#patterns_to_match}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRule.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#enabled Frontdoor#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRule.property.acceptedProtocols">AcceptedProtocols</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#accepted_protocols Frontdoor#accepted_protocols}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRule.property.frontendEndpoints">FrontendEndpoints</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#frontend_endpoints Frontdoor#frontend_endpoints}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRule.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#name Frontdoor#name}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRule.property.patternsToMatch">PatternsToMatch</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#patterns_to_match Frontdoor#patterns_to_match}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRule.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#enabled Frontdoor#enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRule.property.forwardingConfiguration">ForwardingConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleForwardingConfiguration">FrontdoorRoutingRuleForwardingConfiguration</a></code> | forwarding_configuration block. |
 | <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRule.property.redirectConfiguration">RedirectConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleRedirectConfiguration">FrontdoorRoutingRuleRedirectConfiguration</a></code> | redirect_configuration block. |
 
@@ -2047,7 +2047,7 @@ public string[] AcceptedProtocols { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#accepted_protocols Frontdoor#accepted_protocols}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#accepted_protocols Frontdoor#accepted_protocols}.
 
 ---
 
@@ -2059,7 +2059,7 @@ public string[] FrontendEndpoints { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#frontend_endpoints Frontdoor#frontend_endpoints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#frontend_endpoints Frontdoor#frontend_endpoints}.
 
 ---
 
@@ -2071,7 +2071,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#name Frontdoor#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#name Frontdoor#name}.
 
 ---
 
@@ -2083,7 +2083,7 @@ public string[] PatternsToMatch { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#patterns_to_match Frontdoor#patterns_to_match}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#patterns_to_match Frontdoor#patterns_to_match}.
 
 ---
 
@@ -2095,7 +2095,7 @@ public bool|IResolvable Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#enabled Frontdoor#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#enabled Frontdoor#enabled}.
 
 ---
 
@@ -2109,7 +2109,7 @@ public FrontdoorRoutingRuleForwardingConfiguration ForwardingConfiguration { get
 
 forwarding_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#forwarding_configuration Frontdoor#forwarding_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#forwarding_configuration Frontdoor#forwarding_configuration}
 
 ---
 
@@ -2123,7 +2123,7 @@ public FrontdoorRoutingRuleRedirectConfiguration RedirectConfiguration { get; se
 
 redirect_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#redirect_configuration Frontdoor#redirect_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#redirect_configuration Frontdoor#redirect_configuration}
 
 ---
 
@@ -2150,14 +2150,14 @@ new FrontdoorRoutingRuleForwardingConfiguration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleForwardingConfiguration.property.backendPoolName">BackendPoolName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#backend_pool_name Frontdoor#backend_pool_name}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleForwardingConfiguration.property.cacheDuration">CacheDuration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#cache_duration Frontdoor#cache_duration}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleForwardingConfiguration.property.cacheEnabled">CacheEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#cache_enabled Frontdoor#cache_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleForwardingConfiguration.property.cacheQueryParameters">CacheQueryParameters</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#cache_query_parameters Frontdoor#cache_query_parameters}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleForwardingConfiguration.property.cacheQueryParameterStripDirective">CacheQueryParameterStripDirective</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#cache_query_parameter_strip_directive Frontdoor#cache_query_parameter_strip_directive}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleForwardingConfiguration.property.cacheUseDynamicCompression">CacheUseDynamicCompression</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#cache_use_dynamic_compression Frontdoor#cache_use_dynamic_compression}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleForwardingConfiguration.property.customForwardingPath">CustomForwardingPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#custom_forwarding_path Frontdoor#custom_forwarding_path}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleForwardingConfiguration.property.forwardingProtocol">ForwardingProtocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#forwarding_protocol Frontdoor#forwarding_protocol}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleForwardingConfiguration.property.backendPoolName">BackendPoolName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#backend_pool_name Frontdoor#backend_pool_name}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleForwardingConfiguration.property.cacheDuration">CacheDuration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#cache_duration Frontdoor#cache_duration}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleForwardingConfiguration.property.cacheEnabled">CacheEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#cache_enabled Frontdoor#cache_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleForwardingConfiguration.property.cacheQueryParameters">CacheQueryParameters</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#cache_query_parameters Frontdoor#cache_query_parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleForwardingConfiguration.property.cacheQueryParameterStripDirective">CacheQueryParameterStripDirective</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#cache_query_parameter_strip_directive Frontdoor#cache_query_parameter_strip_directive}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleForwardingConfiguration.property.cacheUseDynamicCompression">CacheUseDynamicCompression</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#cache_use_dynamic_compression Frontdoor#cache_use_dynamic_compression}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleForwardingConfiguration.property.customForwardingPath">CustomForwardingPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#custom_forwarding_path Frontdoor#custom_forwarding_path}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleForwardingConfiguration.property.forwardingProtocol">ForwardingProtocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#forwarding_protocol Frontdoor#forwarding_protocol}. |
 
 ---
 
@@ -2169,7 +2169,7 @@ public string BackendPoolName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#backend_pool_name Frontdoor#backend_pool_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#backend_pool_name Frontdoor#backend_pool_name}.
 
 ---
 
@@ -2181,7 +2181,7 @@ public string CacheDuration { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#cache_duration Frontdoor#cache_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#cache_duration Frontdoor#cache_duration}.
 
 ---
 
@@ -2193,7 +2193,7 @@ public bool|IResolvable CacheEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#cache_enabled Frontdoor#cache_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#cache_enabled Frontdoor#cache_enabled}.
 
 ---
 
@@ -2205,7 +2205,7 @@ public string[] CacheQueryParameters { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#cache_query_parameters Frontdoor#cache_query_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#cache_query_parameters Frontdoor#cache_query_parameters}.
 
 ---
 
@@ -2217,7 +2217,7 @@ public string CacheQueryParameterStripDirective { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#cache_query_parameter_strip_directive Frontdoor#cache_query_parameter_strip_directive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#cache_query_parameter_strip_directive Frontdoor#cache_query_parameter_strip_directive}.
 
 ---
 
@@ -2229,7 +2229,7 @@ public bool|IResolvable CacheUseDynamicCompression { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#cache_use_dynamic_compression Frontdoor#cache_use_dynamic_compression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#cache_use_dynamic_compression Frontdoor#cache_use_dynamic_compression}.
 
 ---
 
@@ -2241,7 +2241,7 @@ public string CustomForwardingPath { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#custom_forwarding_path Frontdoor#custom_forwarding_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#custom_forwarding_path Frontdoor#custom_forwarding_path}.
 
 ---
 
@@ -2253,7 +2253,7 @@ public string ForwardingProtocol { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#forwarding_protocol Frontdoor#forwarding_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#forwarding_protocol Frontdoor#forwarding_protocol}.
 
 ---
 
@@ -2278,12 +2278,12 @@ new FrontdoorRoutingRuleRedirectConfiguration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleRedirectConfiguration.property.redirectProtocol">RedirectProtocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#redirect_protocol Frontdoor#redirect_protocol}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleRedirectConfiguration.property.redirectType">RedirectType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#redirect_type Frontdoor#redirect_type}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleRedirectConfiguration.property.customFragment">CustomFragment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#custom_fragment Frontdoor#custom_fragment}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleRedirectConfiguration.property.customHost">CustomHost</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#custom_host Frontdoor#custom_host}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleRedirectConfiguration.property.customPath">CustomPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#custom_path Frontdoor#custom_path}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleRedirectConfiguration.property.customQueryString">CustomQueryString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#custom_query_string Frontdoor#custom_query_string}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleRedirectConfiguration.property.redirectProtocol">RedirectProtocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#redirect_protocol Frontdoor#redirect_protocol}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleRedirectConfiguration.property.redirectType">RedirectType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#redirect_type Frontdoor#redirect_type}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleRedirectConfiguration.property.customFragment">CustomFragment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#custom_fragment Frontdoor#custom_fragment}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleRedirectConfiguration.property.customHost">CustomHost</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#custom_host Frontdoor#custom_host}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleRedirectConfiguration.property.customPath">CustomPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#custom_path Frontdoor#custom_path}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleRedirectConfiguration.property.customQueryString">CustomQueryString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#custom_query_string Frontdoor#custom_query_string}. |
 
 ---
 
@@ -2295,7 +2295,7 @@ public string RedirectProtocol { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#redirect_protocol Frontdoor#redirect_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#redirect_protocol Frontdoor#redirect_protocol}.
 
 ---
 
@@ -2307,7 +2307,7 @@ public string RedirectType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#redirect_type Frontdoor#redirect_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#redirect_type Frontdoor#redirect_type}.
 
 ---
 
@@ -2319,7 +2319,7 @@ public string CustomFragment { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#custom_fragment Frontdoor#custom_fragment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#custom_fragment Frontdoor#custom_fragment}.
 
 ---
 
@@ -2331,7 +2331,7 @@ public string CustomHost { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#custom_host Frontdoor#custom_host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#custom_host Frontdoor#custom_host}.
 
 ---
 
@@ -2343,7 +2343,7 @@ public string CustomPath { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#custom_path Frontdoor#custom_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#custom_path Frontdoor#custom_path}.
 
 ---
 
@@ -2355,7 +2355,7 @@ public string CustomQueryString { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#custom_query_string Frontdoor#custom_query_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#custom_query_string Frontdoor#custom_query_string}.
 
 ---
 
@@ -2378,10 +2378,10 @@ new FrontdoorTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#create Frontdoor#create}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#delete Frontdoor#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#read Frontdoor#read}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#update Frontdoor#update}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#create Frontdoor#create}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#delete Frontdoor#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#read Frontdoor#read}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoor.FrontdoorTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#update Frontdoor#update}. |
 
 ---
 
@@ -2393,7 +2393,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#create Frontdoor#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#create Frontdoor#create}.
 
 ---
 
@@ -2405,7 +2405,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#delete Frontdoor#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#delete Frontdoor#delete}.
 
 ---
 
@@ -2417,7 +2417,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#read Frontdoor#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#read Frontdoor#read}.
 
 ---
 
@@ -2429,7 +2429,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/frontdoor#update Frontdoor#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/frontdoor#update Frontdoor#update}.
 
 ---
 

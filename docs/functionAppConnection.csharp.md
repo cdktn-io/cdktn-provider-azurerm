@@ -4,7 +4,7 @@
 
 ### FunctionAppConnection <a name="FunctionAppConnection" id="@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection azurerm_function_app_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection azurerm_function_app_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnection.Initializer"></a>
 
@@ -563,7 +563,7 @@ The construct id used in the generated config for the FunctionAppConnection to i
 
 The id of the existing FunctionAppConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -978,13 +978,13 @@ new FunctionAppConnectionAuthentication {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionAuthentication.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#type FunctionAppConnection#type}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionAuthentication.property.certificate">Certificate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#certificate FunctionAppConnection#certificate}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionAuthentication.property.clientId">ClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#client_id FunctionAppConnection#client_id}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionAuthentication.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#name FunctionAppConnection#name}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionAuthentication.property.principalId">PrincipalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#principal_id FunctionAppConnection#principal_id}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionAuthentication.property.secret">Secret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#secret FunctionAppConnection#secret}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionAuthentication.property.subscriptionId">SubscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#subscription_id FunctionAppConnection#subscription_id}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionAuthentication.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#type FunctionAppConnection#type}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionAuthentication.property.certificate">Certificate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#certificate FunctionAppConnection#certificate}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionAuthentication.property.clientId">ClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#client_id FunctionAppConnection#client_id}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionAuthentication.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#name FunctionAppConnection#name}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionAuthentication.property.principalId">PrincipalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#principal_id FunctionAppConnection#principal_id}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionAuthentication.property.secret">Secret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#secret FunctionAppConnection#secret}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionAuthentication.property.subscriptionId">SubscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#subscription_id FunctionAppConnection#subscription_id}. |
 
 ---
 
@@ -996,7 +996,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#type FunctionAppConnection#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#type FunctionAppConnection#type}.
 
 ---
 
@@ -1008,7 +1008,7 @@ public string Certificate { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#certificate FunctionAppConnection#certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#certificate FunctionAppConnection#certificate}.
 
 ---
 
@@ -1020,7 +1020,7 @@ public string ClientId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#client_id FunctionAppConnection#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#client_id FunctionAppConnection#client_id}.
 
 ---
 
@@ -1032,7 +1032,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#name FunctionAppConnection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#name FunctionAppConnection#name}.
 
 ---
 
@@ -1044,7 +1044,7 @@ public string PrincipalId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#principal_id FunctionAppConnection#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#principal_id FunctionAppConnection#principal_id}.
 
 ---
 
@@ -1056,7 +1056,7 @@ public string Secret { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#secret FunctionAppConnection#secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#secret FunctionAppConnection#secret}.
 
 ---
 
@@ -1068,7 +1068,7 @@ public string SubscriptionId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#subscription_id FunctionAppConnection#subscription_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#subscription_id FunctionAppConnection#subscription_id}.
 
 ---
 
@@ -1111,14 +1111,14 @@ new FunctionAppConnectionConfig {
 | <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionConfig.property.authentication">Authentication</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionAuthentication">FunctionAppConnectionAuthentication</a></code> | authentication block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionConfig.property.functionAppId">FunctionAppId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#function_app_id FunctionAppConnection#function_app_id}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#name FunctionAppConnection#name}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionConfig.property.targetResourceId">TargetResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#target_resource_id FunctionAppConnection#target_resource_id}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionConfig.property.clientType">ClientType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#client_type FunctionAppConnection#client_type}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#id FunctionAppConnection#id}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionConfig.property.functionAppId">FunctionAppId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#function_app_id FunctionAppConnection#function_app_id}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#name FunctionAppConnection#name}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionConfig.property.targetResourceId">TargetResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#target_resource_id FunctionAppConnection#target_resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionConfig.property.clientType">ClientType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#client_type FunctionAppConnection#client_type}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#id FunctionAppConnection#id}. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionConfig.property.secretStore">SecretStore</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionSecretStore">FunctionAppConnectionSecretStore</a></code> | secret_store block. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionTimeouts">FunctionAppConnectionTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionConfig.property.vnetSolution">VnetSolution</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#vnet_solution FunctionAppConnection#vnet_solution}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionConfig.property.vnetSolution">VnetSolution</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#vnet_solution FunctionAppConnection#vnet_solution}. |
 
 ---
 
@@ -1202,7 +1202,7 @@ public FunctionAppConnectionAuthentication Authentication { get; set; }
 
 authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#authentication FunctionAppConnection#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#authentication FunctionAppConnection#authentication}
 
 ---
 
@@ -1214,7 +1214,7 @@ public string FunctionAppId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#function_app_id FunctionAppConnection#function_app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#function_app_id FunctionAppConnection#function_app_id}.
 
 ---
 
@@ -1226,7 +1226,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#name FunctionAppConnection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#name FunctionAppConnection#name}.
 
 ---
 
@@ -1238,7 +1238,7 @@ public string TargetResourceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#target_resource_id FunctionAppConnection#target_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#target_resource_id FunctionAppConnection#target_resource_id}.
 
 ---
 
@@ -1250,7 +1250,7 @@ public string ClientType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#client_type FunctionAppConnection#client_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#client_type FunctionAppConnection#client_type}.
 
 ---
 
@@ -1262,7 +1262,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#id FunctionAppConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#id FunctionAppConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1279,7 +1279,7 @@ public FunctionAppConnectionSecretStore SecretStore { get; set; }
 
 secret_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#secret_store FunctionAppConnection#secret_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#secret_store FunctionAppConnection#secret_store}
 
 ---
 
@@ -1293,7 +1293,7 @@ public FunctionAppConnectionTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#timeouts FunctionAppConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#timeouts FunctionAppConnection#timeouts}
 
 ---
 
@@ -1305,7 +1305,7 @@ public string VnetSolution { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#vnet_solution FunctionAppConnection#vnet_solution}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#vnet_solution FunctionAppConnection#vnet_solution}.
 
 ---
 
@@ -1325,7 +1325,7 @@ new FunctionAppConnectionSecretStore {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionSecretStore.property.keyVaultId">KeyVaultId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#key_vault_id FunctionAppConnection#key_vault_id}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionSecretStore.property.keyVaultId">KeyVaultId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#key_vault_id FunctionAppConnection#key_vault_id}. |
 
 ---
 
@@ -1337,7 +1337,7 @@ public string KeyVaultId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#key_vault_id FunctionAppConnection#key_vault_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#key_vault_id FunctionAppConnection#key_vault_id}.
 
 ---
 
@@ -1360,10 +1360,10 @@ new FunctionAppConnectionTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#create FunctionAppConnection#create}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#delete FunctionAppConnection#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#read FunctionAppConnection#read}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#update FunctionAppConnection#update}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#create FunctionAppConnection#create}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#delete FunctionAppConnection#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#read FunctionAppConnection#read}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppConnection.FunctionAppConnectionTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#update FunctionAppConnection#update}. |
 
 ---
 
@@ -1375,7 +1375,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#create FunctionAppConnection#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#create FunctionAppConnection#create}.
 
 ---
 
@@ -1387,7 +1387,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#delete FunctionAppConnection#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#delete FunctionAppConnection#delete}.
 
 ---
 
@@ -1399,7 +1399,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#read FunctionAppConnection#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#read FunctionAppConnection#read}.
 
 ---
 
@@ -1411,7 +1411,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/function_app_connection#update FunctionAppConnection#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/function_app_connection#update FunctionAppConnection#update}.
 
 ---
 

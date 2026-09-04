@@ -4,7 +4,7 @@
 
 ### StorageShareFile <a name="StorageShareFile" id="@cdktn/provider-azurerm.storageShareFile.StorageShareFile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file azurerm_storage_share_file}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file azurerm_storage_share_file}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageShareFile.StorageShareFile.Initializer"></a>
 
@@ -572,7 +572,7 @@ The construct id used in the generated config for the StorageShareFile to import
 
 The id of the existing StorageShareFile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1063,17 +1063,17 @@ const storageShareFileConfig: storageShareFile.StorageShareFileConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#name StorageShareFile#name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.storageShareUrl">storageShareUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#storage_share_url StorageShareFile#storage_share_url}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.contentDisposition">contentDisposition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#content_disposition StorageShareFile#content_disposition}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.contentEncoding">contentEncoding</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#content_encoding StorageShareFile#content_encoding}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.contentMd5">contentMd5</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#content_md5 StorageShareFile#content_md5}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#content_type StorageShareFile#content_type}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#id StorageShareFile#id}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.metadata">metadata</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#metadata StorageShareFile#metadata}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#path StorageShareFile#path}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.source">source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#source StorageShareFile#source}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.sourceContent">sourceContent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#source_content StorageShareFile#source_content}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#name StorageShareFile#name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.storageShareUrl">storageShareUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#storage_share_url StorageShareFile#storage_share_url}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.contentDisposition">contentDisposition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#content_disposition StorageShareFile#content_disposition}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.contentEncoding">contentEncoding</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#content_encoding StorageShareFile#content_encoding}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.contentMd5">contentMd5</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#content_md5 StorageShareFile#content_md5}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#content_type StorageShareFile#content_type}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#id StorageShareFile#id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.metadata">metadata</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#metadata StorageShareFile#metadata}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#path StorageShareFile#path}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.source">source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#source StorageShareFile#source}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.sourceContent">sourceContent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#source_content StorageShareFile#source_content}. |
 | <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileTimeouts">StorageShareFileTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1156,7 +1156,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#name StorageShareFile#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#name StorageShareFile#name}.
 
 ---
 
@@ -1168,7 +1168,7 @@ public readonly storageShareUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#storage_share_url StorageShareFile#storage_share_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#storage_share_url StorageShareFile#storage_share_url}.
 
 ---
 
@@ -1180,7 +1180,7 @@ public readonly contentDisposition: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#content_disposition StorageShareFile#content_disposition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#content_disposition StorageShareFile#content_disposition}.
 
 ---
 
@@ -1192,7 +1192,7 @@ public readonly contentEncoding: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#content_encoding StorageShareFile#content_encoding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#content_encoding StorageShareFile#content_encoding}.
 
 ---
 
@@ -1204,7 +1204,7 @@ public readonly contentMd5: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#content_md5 StorageShareFile#content_md5}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#content_md5 StorageShareFile#content_md5}.
 
 ---
 
@@ -1216,7 +1216,7 @@ public readonly contentType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#content_type StorageShareFile#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#content_type StorageShareFile#content_type}.
 
 ---
 
@@ -1228,7 +1228,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#id StorageShareFile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#id StorageShareFile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1243,7 +1243,7 @@ public readonly metadata: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#metadata StorageShareFile#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#metadata StorageShareFile#metadata}.
 
 ---
 
@@ -1255,7 +1255,7 @@ public readonly path: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#path StorageShareFile#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#path StorageShareFile#path}.
 
 ---
 
@@ -1267,7 +1267,7 @@ public readonly source: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#source StorageShareFile#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#source StorageShareFile#source}.
 
 ---
 
@@ -1279,7 +1279,7 @@ public readonly sourceContent: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#source_content StorageShareFile#source_content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#source_content StorageShareFile#source_content}.
 
 ---
 
@@ -1293,7 +1293,7 @@ public readonly timeouts: StorageShareFileTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#timeouts StorageShareFile#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#timeouts StorageShareFile#timeouts}
 
 ---
 
@@ -1311,10 +1311,10 @@ const storageShareFileTimeouts: storageShareFile.StorageShareFileTimeouts = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#create StorageShareFile#create}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#delete StorageShareFile#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#read StorageShareFile#read}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#update StorageShareFile#update}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#create StorageShareFile#create}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#delete StorageShareFile#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#read StorageShareFile#read}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShareFile.StorageShareFileTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#update StorageShareFile#update}. |
 
 ---
 
@@ -1326,7 +1326,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#create StorageShareFile#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#create StorageShareFile#create}.
 
 ---
 
@@ -1338,7 +1338,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#delete StorageShareFile#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#delete StorageShareFile#delete}.
 
 ---
 
@@ -1350,7 +1350,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#read StorageShareFile#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#read StorageShareFile#read}.
 
 ---
 
@@ -1362,7 +1362,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/storage_share_file#update StorageShareFile#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/storage_share_file#update StorageShareFile#update}.
 
 ---
 

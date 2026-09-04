@@ -4,7 +4,7 @@
 
 ### DevCenterAttachedNetwork <a name="DevCenterAttachedNetwork" id="@cdktn/provider-azurerm.devCenterAttachedNetwork.DevCenterAttachedNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/dev_center_attached_network azurerm_dev_center_attached_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/dev_center_attached_network azurerm_dev_center_attached_network}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devCenterAttachedNetwork.DevCenterAttachedNetwork.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the DevCenterAttachedNetwork t
 
 The id of the existing DevCenterAttachedNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/dev_center_attached_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/dev_center_attached_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -842,10 +842,10 @@ const devCenterAttachedNetworkConfig: devCenterAttachedNetwork.DevCenterAttached
 | <code><a href="#@cdktn/provider-azurerm.devCenterAttachedNetwork.DevCenterAttachedNetworkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.devCenterAttachedNetwork.DevCenterAttachedNetworkConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.devCenterAttachedNetwork.DevCenterAttachedNetworkConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.devCenterAttachedNetwork.DevCenterAttachedNetworkConfig.property.devCenterId">devCenterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/dev_center_attached_network#dev_center_id DevCenterAttachedNetwork#dev_center_id}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterAttachedNetwork.DevCenterAttachedNetworkConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/dev_center_attached_network#name DevCenterAttachedNetwork#name}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterAttachedNetwork.DevCenterAttachedNetworkConfig.property.networkConnectionId">networkConnectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/dev_center_attached_network#network_connection_id DevCenterAttachedNetwork#network_connection_id}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterAttachedNetwork.DevCenterAttachedNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/dev_center_attached_network#id DevCenterAttachedNetwork#id}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterAttachedNetwork.DevCenterAttachedNetworkConfig.property.devCenterId">devCenterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/dev_center_attached_network#dev_center_id DevCenterAttachedNetwork#dev_center_id}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterAttachedNetwork.DevCenterAttachedNetworkConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/dev_center_attached_network#name DevCenterAttachedNetwork#name}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterAttachedNetwork.DevCenterAttachedNetworkConfig.property.networkConnectionId">networkConnectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/dev_center_attached_network#network_connection_id DevCenterAttachedNetwork#network_connection_id}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterAttachedNetwork.DevCenterAttachedNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/dev_center_attached_network#id DevCenterAttachedNetwork#id}. |
 | <code><a href="#@cdktn/provider-azurerm.devCenterAttachedNetwork.DevCenterAttachedNetworkConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.devCenterAttachedNetwork.DevCenterAttachedNetworkTimeouts">DevCenterAttachedNetworkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -928,7 +928,7 @@ public readonly devCenterId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/dev_center_attached_network#dev_center_id DevCenterAttachedNetwork#dev_center_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/dev_center_attached_network#dev_center_id DevCenterAttachedNetwork#dev_center_id}.
 
 ---
 
@@ -940,7 +940,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/dev_center_attached_network#name DevCenterAttachedNetwork#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/dev_center_attached_network#name DevCenterAttachedNetwork#name}.
 
 ---
 
@@ -952,7 +952,7 @@ public readonly networkConnectionId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/dev_center_attached_network#network_connection_id DevCenterAttachedNetwork#network_connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/dev_center_attached_network#network_connection_id DevCenterAttachedNetwork#network_connection_id}.
 
 ---
 
@@ -964,7 +964,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/dev_center_attached_network#id DevCenterAttachedNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/dev_center_attached_network#id DevCenterAttachedNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -981,7 +981,7 @@ public readonly timeouts: DevCenterAttachedNetworkTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/dev_center_attached_network#timeouts DevCenterAttachedNetwork#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/dev_center_attached_network#timeouts DevCenterAttachedNetwork#timeouts}
 
 ---
 
@@ -999,9 +999,9 @@ const devCenterAttachedNetworkTimeouts: devCenterAttachedNetwork.DevCenterAttach
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.devCenterAttachedNetwork.DevCenterAttachedNetworkTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/dev_center_attached_network#create DevCenterAttachedNetwork#create}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterAttachedNetwork.DevCenterAttachedNetworkTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/dev_center_attached_network#delete DevCenterAttachedNetwork#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterAttachedNetwork.DevCenterAttachedNetworkTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/dev_center_attached_network#read DevCenterAttachedNetwork#read}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterAttachedNetwork.DevCenterAttachedNetworkTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/dev_center_attached_network#create DevCenterAttachedNetwork#create}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterAttachedNetwork.DevCenterAttachedNetworkTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/dev_center_attached_network#delete DevCenterAttachedNetwork#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterAttachedNetwork.DevCenterAttachedNetworkTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/dev_center_attached_network#read DevCenterAttachedNetwork#read}. |
 
 ---
 
@@ -1013,7 +1013,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/dev_center_attached_network#create DevCenterAttachedNetwork#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/dev_center_attached_network#create DevCenterAttachedNetwork#create}.
 
 ---
 
@@ -1025,7 +1025,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/dev_center_attached_network#delete DevCenterAttachedNetwork#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/dev_center_attached_network#delete DevCenterAttachedNetwork#delete}.
 
 ---
 
@@ -1037,7 +1037,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/dev_center_attached_network#read DevCenterAttachedNetwork#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/dev_center_attached_network#read DevCenterAttachedNetwork#read}.
 
 ---
 

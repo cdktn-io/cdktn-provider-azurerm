@@ -4,7 +4,7 @@
 
 ### DataAzurermStorageTable <a name="DataAzurermStorageTable" id="@cdktn/provider-azurerm.dataAzurermStorageTable.DataAzurermStorageTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/storage_table azurerm_storage_table}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/storage_table azurerm_storage_table}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageTable.DataAzurermStorageTable.Initializer"></a>
 
@@ -407,7 +407,7 @@ The construct id used in the generated config for the DataAzurermStorageTable to
 
 The id of the existing DataAzurermStorageTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/storage_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/storage_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -737,8 +737,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsto
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageTable.DataAzurermStorageTableConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageTable.DataAzurermStorageTableConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageTable.DataAzurermStorageTableConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageTable.DataAzurermStorageTableConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/storage_table#name DataAzurermStorageTable#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageTable.DataAzurermStorageTableConfig.property.storageAccountId">StorageAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/storage_table#storage_account_id DataAzurermStorageTable#storage_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageTable.DataAzurermStorageTableConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/storage_table#name DataAzurermStorageTable#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageTable.DataAzurermStorageTableConfig.property.storageAccountId">StorageAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/storage_table#storage_account_id DataAzurermStorageTable#storage_account_id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageTable.DataAzurermStorageTableConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageTable.DataAzurermStorageTableTimeouts">DataAzurermStorageTableTimeouts</a></code> | timeouts block. |
 
 ---
@@ -821,7 +821,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/storage_table#name DataAzurermStorageTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/storage_table#name DataAzurermStorageTable#name}.
 
 ---
 
@@ -833,7 +833,7 @@ StorageAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/storage_table#storage_account_id DataAzurermStorageTable#storage_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/storage_table#storage_account_id DataAzurermStorageTable#storage_account_id}.
 
 ---
 
@@ -847,7 +847,7 @@ Timeouts DataAzurermStorageTableTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/storage_table#timeouts DataAzurermStorageTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/storage_table#timeouts DataAzurermStorageTable#timeouts}
 
 ---
 
@@ -867,7 +867,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsto
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageTable.DataAzurermStorageTableTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/storage_table#read DataAzurermStorageTable#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageTable.DataAzurermStorageTableTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/storage_table#read DataAzurermStorageTable#read}. |
 
 ---
 
@@ -879,7 +879,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/storage_table#read DataAzurermStorageTable#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/storage_table#read DataAzurermStorageTable#read}.
 
 ---
 

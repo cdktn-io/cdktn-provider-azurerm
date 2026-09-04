@@ -4,7 +4,7 @@
 
 ### AutomationRuntimeEnvironment <a name="AutomationRuntimeEnvironment" id="@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment azurerm_automation_runtime_environment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment azurerm_automation_runtime_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironment.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the AutomationRuntimeEnvironme
 
 The id of the existing AutomationRuntimeEnvironment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -973,15 +973,15 @@ const automationRuntimeEnvironmentConfig: automationRuntimeEnvironment.Automatio
 | <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.automationAccountId">automationAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#automation_account_id AutomationRuntimeEnvironment#automation_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#location AutomationRuntimeEnvironment#location}. |
-| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#name AutomationRuntimeEnvironment#name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.runtimeLanguage">runtimeLanguage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#runtime_language AutomationRuntimeEnvironment#runtime_language}. |
-| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.runtimeVersion">runtimeVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#runtime_version AutomationRuntimeEnvironment#runtime_version}. |
-| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#description AutomationRuntimeEnvironment#description}. |
-| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#id AutomationRuntimeEnvironment#id}. |
-| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.runtimeDefaultPackages">runtimeDefaultPackages</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#runtime_default_packages AutomationRuntimeEnvironment#runtime_default_packages}. |
-| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#tags AutomationRuntimeEnvironment#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.automationAccountId">automationAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#automation_account_id AutomationRuntimeEnvironment#automation_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#location AutomationRuntimeEnvironment#location}. |
+| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#name AutomationRuntimeEnvironment#name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.runtimeLanguage">runtimeLanguage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#runtime_language AutomationRuntimeEnvironment#runtime_language}. |
+| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.runtimeVersion">runtimeVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#runtime_version AutomationRuntimeEnvironment#runtime_version}. |
+| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#description AutomationRuntimeEnvironment#description}. |
+| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#id AutomationRuntimeEnvironment#id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.runtimeDefaultPackages">runtimeDefaultPackages</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#runtime_default_packages AutomationRuntimeEnvironment#runtime_default_packages}. |
+| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#tags AutomationRuntimeEnvironment#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentTimeouts">AutomationRuntimeEnvironmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1064,7 +1064,7 @@ public readonly automationAccountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#automation_account_id AutomationRuntimeEnvironment#automation_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#automation_account_id AutomationRuntimeEnvironment#automation_account_id}.
 
 ---
 
@@ -1076,7 +1076,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#location AutomationRuntimeEnvironment#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#location AutomationRuntimeEnvironment#location}.
 
 ---
 
@@ -1088,7 +1088,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#name AutomationRuntimeEnvironment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#name AutomationRuntimeEnvironment#name}.
 
 ---
 
@@ -1100,7 +1100,7 @@ public readonly runtimeLanguage: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#runtime_language AutomationRuntimeEnvironment#runtime_language}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#runtime_language AutomationRuntimeEnvironment#runtime_language}.
 
 ---
 
@@ -1112,7 +1112,7 @@ public readonly runtimeVersion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#runtime_version AutomationRuntimeEnvironment#runtime_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#runtime_version AutomationRuntimeEnvironment#runtime_version}.
 
 ---
 
@@ -1124,7 +1124,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#description AutomationRuntimeEnvironment#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#description AutomationRuntimeEnvironment#description}.
 
 ---
 
@@ -1136,7 +1136,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#id AutomationRuntimeEnvironment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#id AutomationRuntimeEnvironment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1151,7 +1151,7 @@ public readonly runtimeDefaultPackages: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#runtime_default_packages AutomationRuntimeEnvironment#runtime_default_packages}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#runtime_default_packages AutomationRuntimeEnvironment#runtime_default_packages}.
 
 ---
 
@@ -1163,7 +1163,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#tags AutomationRuntimeEnvironment#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#tags AutomationRuntimeEnvironment#tags}.
 
 ---
 
@@ -1177,7 +1177,7 @@ public readonly timeouts: AutomationRuntimeEnvironmentTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#timeouts AutomationRuntimeEnvironment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#timeouts AutomationRuntimeEnvironment#timeouts}
 
 ---
 
@@ -1195,10 +1195,10 @@ const automationRuntimeEnvironmentTimeouts: automationRuntimeEnvironment.Automat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#create AutomationRuntimeEnvironment#create}. |
-| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#delete AutomationRuntimeEnvironment#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#read AutomationRuntimeEnvironment#read}. |
-| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#update AutomationRuntimeEnvironment#update}. |
+| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#create AutomationRuntimeEnvironment#create}. |
+| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#delete AutomationRuntimeEnvironment#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#read AutomationRuntimeEnvironment#read}. |
+| <code><a href="#@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#update AutomationRuntimeEnvironment#update}. |
 
 ---
 
@@ -1210,7 +1210,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#create AutomationRuntimeEnvironment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#create AutomationRuntimeEnvironment#create}.
 
 ---
 
@@ -1222,7 +1222,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#delete AutomationRuntimeEnvironment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#delete AutomationRuntimeEnvironment#delete}.
 
 ---
 
@@ -1234,7 +1234,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#read AutomationRuntimeEnvironment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#read AutomationRuntimeEnvironment#read}.
 
 ---
 
@@ -1246,7 +1246,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/automation_runtime_environment#update AutomationRuntimeEnvironment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/automation_runtime_environment#update AutomationRuntimeEnvironment#update}.
 
 ---
 
