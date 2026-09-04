@@ -4,7 +4,7 @@
 
 ### DataAzurermAutomationAccount <a name="DataAzurermAutomationAccount" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_account azurerm_automation_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_account azurerm_automation_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermAutomationAccou
 
 The id of the existing DataAzurermAutomationAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -442,12 +442,21 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.forEach">ForEach</a></code> | <code>Io.Cdktn.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.dscPrimaryAccessKey">DscPrimaryAccessKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.dscSecondaryAccessKey">DscSecondaryAccessKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.dscServerEndpoint">DscServerEndpoint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.encryption">Encryption</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList">DataAzurermAutomationAccountEncryptionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.endpoint">Endpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.hybridServiceUrl">HybridServiceUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountIdentityList">DataAzurermAutomationAccountIdentityList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.localAuthenticationEnabled">LocalAuthenticationEnabled</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.location">Location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.primaryKey">PrimaryKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.privateEndpointConnection">PrivateEndpointConnection</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountPrivateEndpointConnectionList">DataAzurermAutomationAccountPrivateEndpointConnectionList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.publicNetworkAccessEnabled">PublicNetworkAccessEnabled</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.secondaryKey">SecondaryKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.skuName">SkuName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.tags">Tags</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountTimeoutsOutputReference">DataAzurermAutomationAccountTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
@@ -581,6 +590,46 @@ public TerraformProvider Provider { get; }
 
 ---
 
+##### `DscPrimaryAccessKey`<sup>Required</sup> <a name="DscPrimaryAccessKey" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.dscPrimaryAccessKey"></a>
+
+```csharp
+public string DscPrimaryAccessKey { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DscSecondaryAccessKey`<sup>Required</sup> <a name="DscSecondaryAccessKey" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.dscSecondaryAccessKey"></a>
+
+```csharp
+public string DscSecondaryAccessKey { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DscServerEndpoint`<sup>Required</sup> <a name="DscServerEndpoint" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.dscServerEndpoint"></a>
+
+```csharp
+public string DscServerEndpoint { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Encryption`<sup>Required</sup> <a name="Encryption" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.encryption"></a>
+
+```csharp
+public DataAzurermAutomationAccountEncryptionList Encryption { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList">DataAzurermAutomationAccountEncryptionList</a>
+
+---
+
 ##### `Endpoint`<sup>Required</sup> <a name="Endpoint" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.endpoint"></a>
 
 ```csharp
@@ -611,6 +660,26 @@ public DataAzurermAutomationAccountIdentityList Identity { get; }
 
 ---
 
+##### `LocalAuthenticationEnabled`<sup>Required</sup> <a name="LocalAuthenticationEnabled" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.localAuthenticationEnabled"></a>
+
+```csharp
+public IResolvable LocalAuthenticationEnabled { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable
+
+---
+
+##### `Location`<sup>Required</sup> <a name="Location" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.location"></a>
+
+```csharp
+public string Location { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `PrimaryKey`<sup>Required</sup> <a name="PrimaryKey" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.primaryKey"></a>
 
 ```csharp
@@ -631,6 +700,16 @@ public DataAzurermAutomationAccountPrivateEndpointConnectionList PrivateEndpoint
 
 ---
 
+##### `PublicNetworkAccessEnabled`<sup>Required</sup> <a name="PublicNetworkAccessEnabled" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.publicNetworkAccessEnabled"></a>
+
+```csharp
+public IResolvable PublicNetworkAccessEnabled { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable
+
+---
+
 ##### `SecondaryKey`<sup>Required</sup> <a name="SecondaryKey" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.secondaryKey"></a>
 
 ```csharp
@@ -638,6 +717,26 @@ public string SecondaryKey { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `SkuName`<sup>Required</sup> <a name="SkuName" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.skuName"></a>
+
+```csharp
+public string SkuName { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccount.property.tags"></a>
+
+```csharp
+public StringMap Tags { get; }
+```
+
+- *Type:* Io.Cdktn.StringMap
 
 ---
 
@@ -774,9 +873,9 @@ new DataAzurermAutomationAccountConfig {
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_account#name DataAzurermAutomationAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_account#resource_group_name DataAzurermAutomationAccount#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_account#id DataAzurermAutomationAccount#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_account#name DataAzurermAutomationAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_account#resource_group_name DataAzurermAutomationAccount#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_account#id DataAzurermAutomationAccount#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountTimeouts">DataAzurermAutomationAccountTimeouts</a></code> | timeouts block. |
 
 ---
@@ -859,7 +958,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_account#name DataAzurermAutomationAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_account#name DataAzurermAutomationAccount#name}.
 
 ---
 
@@ -871,7 +970,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_account#resource_group_name DataAzurermAutomationAccount#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_account#resource_group_name DataAzurermAutomationAccount#resource_group_name}.
 
 ---
 
@@ -883,7 +982,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_account#id DataAzurermAutomationAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_account#id DataAzurermAutomationAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -900,9 +999,22 @@ public DataAzurermAutomationAccountTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_account#timeouts DataAzurermAutomationAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_account#timeouts DataAzurermAutomationAccount#timeouts}
 
 ---
+
+### DataAzurermAutomationAccountEncryption <a name="DataAzurermAutomationAccountEncryption" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryption"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryption.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Azurerm;
+
+new DataAzurermAutomationAccountEncryption {
+
+};
+```
+
 
 ### DataAzurermAutomationAccountIdentity <a name="DataAzurermAutomationAccountIdentity" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountIdentity"></a>
 
@@ -946,7 +1058,7 @@ new DataAzurermAutomationAccountTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_account#read DataAzurermAutomationAccount#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_account#read DataAzurermAutomationAccount#read}. |
 
 ---
 
@@ -958,11 +1070,449 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_account#read DataAzurermAutomationAccount#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_account#read DataAzurermAutomationAccount#read}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### DataAzurermAutomationAccountEncryptionList <a name="DataAzurermAutomationAccountEncryptionList" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Azurerm;
+
+new DataAzurermAutomationAccountEncryptionList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.get"></a>
+
+```csharp
+private DataAzurermAutomationAccountEncryptionOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+
+### DataAzurermAutomationAccountEncryptionOutputReference <a name="DataAzurermAutomationAccountEncryptionOutputReference" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Azurerm;
+
+new DataAzurermAutomationAccountEncryptionOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.property.keyVaultKeyId">KeyVaultKeyId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.property.userAssignedIdentityId">UserAssignedIdentityId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryption">DataAzurermAutomationAccountEncryption</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyVaultKeyId`<sup>Required</sup> <a name="KeyVaultKeyId" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.property.keyVaultKeyId"></a>
+
+```csharp
+public string KeyVaultKeyId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `UserAssignedIdentityId`<sup>Required</sup> <a name="UserAssignedIdentityId" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.property.userAssignedIdentityId"></a>
+
+```csharp
+public string UserAssignedIdentityId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryptionOutputReference.property.internalValue"></a>
+
+```csharp
+public DataAzurermAutomationAccountEncryption InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountEncryption">DataAzurermAutomationAccountEncryption</a>
+
+---
+
 
 ### DataAzurermAutomationAccountIdentityList <a name="DataAzurermAutomationAccountIdentityList" id="@cdktn/provider-azurerm.dataAzurermAutomationAccount.DataAzurermAutomationAccountIdentityList"></a>
 

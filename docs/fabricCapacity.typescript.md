@@ -4,7 +4,7 @@
 
 ### FabricCapacity <a name="FabricCapacity" id="@cdktn/provider-azurerm.fabricCapacity.FabricCapacity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity azurerm_fabric_capacity}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity azurerm_fabric_capacity}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.fabricCapacity.FabricCapacity.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the FabricCapacity to import.
 
 The id of the existing FabricCapacity that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -935,13 +935,13 @@ const fabricCapacityConfig: fabricCapacity.FabricCapacityConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#location FabricCapacity#location}. |
-| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#name FabricCapacity#name}. |
-| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#resource_group_name FabricCapacity#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#location FabricCapacity#location}. |
+| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#name FabricCapacity#name}. |
+| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#resource_group_name FabricCapacity#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityConfig.property.sku">sku</a></code> | <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacitySku">FabricCapacitySku</a></code> | sku block. |
-| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityConfig.property.administrationMembers">administrationMembers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#administration_members FabricCapacity#administration_members}. |
-| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#id FabricCapacity#id}. |
-| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#tags FabricCapacity#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityConfig.property.administrationMembers">administrationMembers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#administration_members FabricCapacity#administration_members}. |
+| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#id FabricCapacity#id}. |
+| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#tags FabricCapacity#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityTimeouts">FabricCapacityTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1024,7 +1024,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#location FabricCapacity#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#location FabricCapacity#location}.
 
 ---
 
@@ -1036,7 +1036,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#name FabricCapacity#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#name FabricCapacity#name}.
 
 ---
 
@@ -1048,7 +1048,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#resource_group_name FabricCapacity#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#resource_group_name FabricCapacity#resource_group_name}.
 
 ---
 
@@ -1062,7 +1062,7 @@ public readonly sku: FabricCapacitySku;
 
 sku block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#sku FabricCapacity#sku}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#sku FabricCapacity#sku}
 
 ---
 
@@ -1074,7 +1074,7 @@ public readonly administrationMembers: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#administration_members FabricCapacity#administration_members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#administration_members FabricCapacity#administration_members}.
 
 ---
 
@@ -1086,7 +1086,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#id FabricCapacity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#id FabricCapacity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1101,7 +1101,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#tags FabricCapacity#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#tags FabricCapacity#tags}.
 
 ---
 
@@ -1115,7 +1115,7 @@ public readonly timeouts: FabricCapacityTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#timeouts FabricCapacity#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#timeouts FabricCapacity#timeouts}
 
 ---
 
@@ -1133,8 +1133,8 @@ const fabricCapacitySku: fabricCapacity.FabricCapacitySku = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacitySku.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#name FabricCapacity#name}. |
-| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacitySku.property.tier">tier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#tier FabricCapacity#tier}. |
+| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacitySku.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#name FabricCapacity#name}. |
+| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacitySku.property.tier">tier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#tier FabricCapacity#tier}. |
 
 ---
 
@@ -1146,7 +1146,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#name FabricCapacity#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#name FabricCapacity#name}.
 
 ---
 
@@ -1158,7 +1158,7 @@ public readonly tier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#tier FabricCapacity#tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#tier FabricCapacity#tier}.
 
 ---
 
@@ -1176,10 +1176,10 @@ const fabricCapacityTimeouts: fabricCapacity.FabricCapacityTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#create FabricCapacity#create}. |
-| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#delete FabricCapacity#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#read FabricCapacity#read}. |
-| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#update FabricCapacity#update}. |
+| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#create FabricCapacity#create}. |
+| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#delete FabricCapacity#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#read FabricCapacity#read}. |
+| <code><a href="#@cdktn/provider-azurerm.fabricCapacity.FabricCapacityTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#update FabricCapacity#update}. |
 
 ---
 
@@ -1191,7 +1191,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#create FabricCapacity#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#create FabricCapacity#create}.
 
 ---
 
@@ -1203,7 +1203,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#delete FabricCapacity#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#delete FabricCapacity#delete}.
 
 ---
 
@@ -1215,7 +1215,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#read FabricCapacity#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#read FabricCapacity#read}.
 
 ---
 
@@ -1227,7 +1227,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/fabric_capacity#update FabricCapacity#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/fabric_capacity#update FabricCapacity#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ApplicationInsightsApiKey <a name="ApplicationInsightsApiKey" id="@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/application_insights_api_key azurerm_application_insights_api_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/application_insights_api_key azurerm_application_insights_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKey.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the ApplicationInsightsApiKey 
 
 The id of the existing ApplicationInsightsApiKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/application_insights_api_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/application_insights_api_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -889,12 +889,12 @@ const applicationInsightsApiKeyConfig: applicationInsightsApiKey.ApplicationInsi
 | <code><a href="#@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKeyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKeyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKeyConfig.property.applicationInsightsId">applicationInsightsId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/application_insights_api_key#application_insights_id ApplicationInsightsApiKey#application_insights_id}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKeyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/application_insights_api_key#name ApplicationInsightsApiKey#name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/application_insights_api_key#id ApplicationInsightsApiKey#id}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKeyConfig.property.readPermissions">readPermissions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/application_insights_api_key#read_permissions ApplicationInsightsApiKey#read_permissions}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKeyConfig.property.applicationInsightsId">applicationInsightsId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/application_insights_api_key#application_insights_id ApplicationInsightsApiKey#application_insights_id}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKeyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/application_insights_api_key#name ApplicationInsightsApiKey#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/application_insights_api_key#id ApplicationInsightsApiKey#id}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKeyConfig.property.readPermissions">readPermissions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/application_insights_api_key#read_permissions ApplicationInsightsApiKey#read_permissions}. |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKeyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKeyTimeouts">ApplicationInsightsApiKeyTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKeyConfig.property.writePermissions">writePermissions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/application_insights_api_key#write_permissions ApplicationInsightsApiKey#write_permissions}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKeyConfig.property.writePermissions">writePermissions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/application_insights_api_key#write_permissions ApplicationInsightsApiKey#write_permissions}. |
 
 ---
 
@@ -976,7 +976,7 @@ public readonly applicationInsightsId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/application_insights_api_key#application_insights_id ApplicationInsightsApiKey#application_insights_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/application_insights_api_key#application_insights_id ApplicationInsightsApiKey#application_insights_id}.
 
 ---
 
@@ -988,7 +988,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/application_insights_api_key#name ApplicationInsightsApiKey#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/application_insights_api_key#name ApplicationInsightsApiKey#name}.
 
 ---
 
@@ -1000,7 +1000,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/application_insights_api_key#id ApplicationInsightsApiKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/application_insights_api_key#id ApplicationInsightsApiKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1015,7 +1015,7 @@ public readonly readPermissions: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/application_insights_api_key#read_permissions ApplicationInsightsApiKey#read_permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/application_insights_api_key#read_permissions ApplicationInsightsApiKey#read_permissions}.
 
 ---
 
@@ -1029,7 +1029,7 @@ public readonly timeouts: ApplicationInsightsApiKeyTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/application_insights_api_key#timeouts ApplicationInsightsApiKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/application_insights_api_key#timeouts ApplicationInsightsApiKey#timeouts}
 
 ---
 
@@ -1041,7 +1041,7 @@ public readonly writePermissions: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/application_insights_api_key#write_permissions ApplicationInsightsApiKey#write_permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/application_insights_api_key#write_permissions ApplicationInsightsApiKey#write_permissions}.
 
 ---
 
@@ -1059,9 +1059,9 @@ const applicationInsightsApiKeyTimeouts: applicationInsightsApiKey.ApplicationIn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKeyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/application_insights_api_key#create ApplicationInsightsApiKey#create}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKeyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/application_insights_api_key#delete ApplicationInsightsApiKey#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKeyTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/application_insights_api_key#read ApplicationInsightsApiKey#read}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKeyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/application_insights_api_key#create ApplicationInsightsApiKey#create}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKeyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/application_insights_api_key#delete ApplicationInsightsApiKey#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsightsApiKey.ApplicationInsightsApiKeyTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/application_insights_api_key#read ApplicationInsightsApiKey#read}. |
 
 ---
 
@@ -1073,7 +1073,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/application_insights_api_key#create ApplicationInsightsApiKey#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/application_insights_api_key#create ApplicationInsightsApiKey#create}.
 
 ---
 
@@ -1085,7 +1085,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/application_insights_api_key#delete ApplicationInsightsApiKey#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/application_insights_api_key#delete ApplicationInsightsApiKey#delete}.
 
 ---
 
@@ -1097,7 +1097,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/application_insights_api_key#read ApplicationInsightsApiKey#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/application_insights_api_key#read ApplicationInsightsApiKey#read}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ApiManagementApiTag <a name="ApiManagementApiTag" id="@cdktn/provider-azurerm.apiManagementApiTag.ApiManagementApiTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_api_tag azurerm_api_management_api_tag}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_api_tag azurerm_api_management_api_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementApiTag.ApiManagementApiTag.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ApiManagementApiTag to imp
 
 The id of the existing ApiManagementApiTag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_api_tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_api_tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -820,9 +820,9 @@ const apiManagementApiTagConfig: apiManagementApiTag.ApiManagementApiTagConfig =
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiTag.ApiManagementApiTagConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiTag.ApiManagementApiTagConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiTag.ApiManagementApiTagConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiTag.ApiManagementApiTagConfig.property.apiId">apiId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_api_tag#api_id ApiManagementApiTag#api_id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiTag.ApiManagementApiTagConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_api_tag#name ApiManagementApiTag#name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiTag.ApiManagementApiTagConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_api_tag#id ApiManagementApiTag#id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiTag.ApiManagementApiTagConfig.property.apiId">apiId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_api_tag#api_id ApiManagementApiTag#api_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiTag.ApiManagementApiTagConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_api_tag#name ApiManagementApiTag#name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiTag.ApiManagementApiTagConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_api_tag#id ApiManagementApiTag#id}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiTag.ApiManagementApiTagConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiTag.ApiManagementApiTagTimeouts">ApiManagementApiTagTimeouts</a></code> | timeouts block. |
 
 ---
@@ -905,7 +905,7 @@ public readonly apiId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_api_tag#api_id ApiManagementApiTag#api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_api_tag#api_id ApiManagementApiTag#api_id}.
 
 ---
 
@@ -917,7 +917,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_api_tag#name ApiManagementApiTag#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_api_tag#name ApiManagementApiTag#name}.
 
 ---
 
@@ -929,7 +929,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_api_tag#id ApiManagementApiTag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_api_tag#id ApiManagementApiTag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -946,7 +946,7 @@ public readonly timeouts: ApiManagementApiTagTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_api_tag#timeouts ApiManagementApiTag#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_api_tag#timeouts ApiManagementApiTag#timeouts}
 
 ---
 
@@ -964,9 +964,9 @@ const apiManagementApiTagTimeouts: apiManagementApiTag.ApiManagementApiTagTimeou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiTag.ApiManagementApiTagTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_api_tag#create ApiManagementApiTag#create}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiTag.ApiManagementApiTagTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_api_tag#delete ApiManagementApiTag#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiTag.ApiManagementApiTagTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_api_tag#read ApiManagementApiTag#read}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiTag.ApiManagementApiTagTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_api_tag#create ApiManagementApiTag#create}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiTag.ApiManagementApiTagTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_api_tag#delete ApiManagementApiTag#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiTag.ApiManagementApiTagTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_api_tag#read ApiManagementApiTag#read}. |
 
 ---
 
@@ -978,7 +978,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_api_tag#create ApiManagementApiTag#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_api_tag#create ApiManagementApiTag#create}.
 
 ---
 
@@ -990,7 +990,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_api_tag#delete ApiManagementApiTag#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_api_tag#delete ApiManagementApiTag#delete}.
 
 ---
 
@@ -1002,7 +1002,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_api_tag#read ApiManagementApiTag#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_api_tag#read ApiManagementApiTag#read}.
 
 ---
 

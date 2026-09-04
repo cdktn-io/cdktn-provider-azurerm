@@ -4,7 +4,7 @@
 
 ### ApiManagementPolicyFragment <a name="ApiManagementPolicyFragment" id="@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment azurerm_api_management_policy_fragment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment azurerm_api_management_policy_fragment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragment.Initializer"></a>
 
@@ -40,12 +40,12 @@ ApiManagementPolicyFragment.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragment.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragment.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragment.Initializer.parameter.apiManagementId">apiManagementId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#api_management_id ApiManagementPolicyFragment#api_management_id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragment.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#name ApiManagementPolicyFragment#name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragment.Initializer.parameter.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#value ApiManagementPolicyFragment#value}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragment.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#description ApiManagementPolicyFragment#description}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragment.Initializer.parameter.format">format</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#format ApiManagementPolicyFragment#format}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#id ApiManagementPolicyFragment#id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragment.Initializer.parameter.apiManagementId">apiManagementId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#api_management_id ApiManagementPolicyFragment#api_management_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragment.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#name ApiManagementPolicyFragment#name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragment.Initializer.parameter.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#value ApiManagementPolicyFragment#value}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragment.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#description ApiManagementPolicyFragment#description}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragment.Initializer.parameter.format">format</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#format ApiManagementPolicyFragment#format}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#id ApiManagementPolicyFragment#id}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragment.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentTimeouts">ApiManagementPolicyFragmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#api_management_id ApiManagementPolicyFragment#api_management_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#api_management_id ApiManagementPolicyFragment#api_management_id}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#name ApiManagementPolicyFragment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#name ApiManagementPolicyFragment#name}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#value ApiManagementPolicyFragment#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#value ApiManagementPolicyFragment#value}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#description ApiManagementPolicyFragment#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#description ApiManagementPolicyFragment#description}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#format ApiManagementPolicyFragment#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#format ApiManagementPolicyFragment#format}.
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#id ApiManagementPolicyFragment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#id ApiManagementPolicyFragment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#timeouts ApiManagementPolicyFragment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#timeouts ApiManagementPolicyFragment#timeouts}
 
 ---
 
@@ -657,7 +657,7 @@ The construct id used in the generated config for the ApiManagementPolicyFragmen
 
 The id of the existing ApiManagementPolicyFragment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1042,12 +1042,12 @@ ApiManagementPolicyFragmentConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentConfig.property.apiManagementId">apiManagementId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#api_management_id ApiManagementPolicyFragment#api_management_id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#name ApiManagementPolicyFragment#name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentConfig.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#value ApiManagementPolicyFragment#value}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#description ApiManagementPolicyFragment#description}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentConfig.property.format">format</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#format ApiManagementPolicyFragment#format}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#id ApiManagementPolicyFragment#id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentConfig.property.apiManagementId">apiManagementId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#api_management_id ApiManagementPolicyFragment#api_management_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#name ApiManagementPolicyFragment#name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentConfig.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#value ApiManagementPolicyFragment#value}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#description ApiManagementPolicyFragment#description}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentConfig.property.format">format</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#format ApiManagementPolicyFragment#format}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#id ApiManagementPolicyFragment#id}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentTimeouts">ApiManagementPolicyFragmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1130,7 +1130,7 @@ public java.lang.String getApiManagementId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#api_management_id ApiManagementPolicyFragment#api_management_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#api_management_id ApiManagementPolicyFragment#api_management_id}.
 
 ---
 
@@ -1142,7 +1142,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#name ApiManagementPolicyFragment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#name ApiManagementPolicyFragment#name}.
 
 ---
 
@@ -1154,7 +1154,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#value ApiManagementPolicyFragment#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#value ApiManagementPolicyFragment#value}.
 
 ---
 
@@ -1166,7 +1166,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#description ApiManagementPolicyFragment#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#description ApiManagementPolicyFragment#description}.
 
 ---
 
@@ -1178,7 +1178,7 @@ public java.lang.String getFormat();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#format ApiManagementPolicyFragment#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#format ApiManagementPolicyFragment#format}.
 
 ---
 
@@ -1190,7 +1190,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#id ApiManagementPolicyFragment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#id ApiManagementPolicyFragment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1207,7 +1207,7 @@ public ApiManagementPolicyFragmentTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#timeouts ApiManagementPolicyFragment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#timeouts ApiManagementPolicyFragment#timeouts}
 
 ---
 
@@ -1230,10 +1230,10 @@ ApiManagementPolicyFragmentTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#create ApiManagementPolicyFragment#create}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#delete ApiManagementPolicyFragment#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#read ApiManagementPolicyFragment#read}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#update ApiManagementPolicyFragment#update}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#create ApiManagementPolicyFragment#create}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#delete ApiManagementPolicyFragment#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#read ApiManagementPolicyFragment#read}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementPolicyFragment.ApiManagementPolicyFragmentTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#update ApiManagementPolicyFragment#update}. |
 
 ---
 
@@ -1245,7 +1245,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#create ApiManagementPolicyFragment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#create ApiManagementPolicyFragment#create}.
 
 ---
 
@@ -1257,7 +1257,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#delete ApiManagementPolicyFragment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#delete ApiManagementPolicyFragment#delete}.
 
 ---
 
@@ -1269,7 +1269,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#read ApiManagementPolicyFragment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#read ApiManagementPolicyFragment#read}.
 
 ---
 
@@ -1281,7 +1281,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/api_management_policy_fragment#update ApiManagementPolicyFragment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/api_management_policy_fragment#update ApiManagementPolicyFragment#update}.
 
 ---
 

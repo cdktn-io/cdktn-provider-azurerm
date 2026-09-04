@@ -4,7 +4,7 @@
 
 ### DataAzurermPlaywrightWorkspace <a name="DataAzurermPlaywrightWorkspace" id="@cdktn/provider-azurerm.dataAzurermPlaywrightWorkspace.DataAzurermPlaywrightWorkspace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/playwright_workspace azurerm_playwright_workspace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/playwright_workspace azurerm_playwright_workspace}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPlaywrightWorkspace.DataAzurermPlaywrightWorkspace.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermPlaywrightWorks
 
 The id of the existing DataAzurermPlaywrightWorkspace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/playwright_workspace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/playwright_workspace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -752,9 +752,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermpla
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPlaywrightWorkspace.DataAzurermPlaywrightWorkspaceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPlaywrightWorkspace.DataAzurermPlaywrightWorkspaceConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPlaywrightWorkspace.DataAzurermPlaywrightWorkspaceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlaywrightWorkspace.DataAzurermPlaywrightWorkspaceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/playwright_workspace#name DataAzurermPlaywrightWorkspace#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlaywrightWorkspace.DataAzurermPlaywrightWorkspaceConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/playwright_workspace#resource_group_name DataAzurermPlaywrightWorkspace#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlaywrightWorkspace.DataAzurermPlaywrightWorkspaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/playwright_workspace#id DataAzurermPlaywrightWorkspace#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlaywrightWorkspace.DataAzurermPlaywrightWorkspaceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/playwright_workspace#name DataAzurermPlaywrightWorkspace#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlaywrightWorkspace.DataAzurermPlaywrightWorkspaceConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/playwright_workspace#resource_group_name DataAzurermPlaywrightWorkspace#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlaywrightWorkspace.DataAzurermPlaywrightWorkspaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/playwright_workspace#id DataAzurermPlaywrightWorkspace#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPlaywrightWorkspace.DataAzurermPlaywrightWorkspaceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermPlaywrightWorkspace.DataAzurermPlaywrightWorkspaceTimeouts">DataAzurermPlaywrightWorkspaceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -837,7 +837,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/playwright_workspace#name DataAzurermPlaywrightWorkspace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/playwright_workspace#name DataAzurermPlaywrightWorkspace#name}.
 
 ---
 
@@ -849,7 +849,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/playwright_workspace#resource_group_name DataAzurermPlaywrightWorkspace#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/playwright_workspace#resource_group_name DataAzurermPlaywrightWorkspace#resource_group_name}.
 
 ---
 
@@ -861,7 +861,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/playwright_workspace#id DataAzurermPlaywrightWorkspace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/playwright_workspace#id DataAzurermPlaywrightWorkspace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -878,7 +878,7 @@ Timeouts DataAzurermPlaywrightWorkspaceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/playwright_workspace#timeouts DataAzurermPlaywrightWorkspace#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/playwright_workspace#timeouts DataAzurermPlaywrightWorkspace#timeouts}
 
 ---
 
@@ -898,7 +898,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermpla
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlaywrightWorkspace.DataAzurermPlaywrightWorkspaceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/playwright_workspace#read DataAzurermPlaywrightWorkspace#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPlaywrightWorkspace.DataAzurermPlaywrightWorkspaceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/playwright_workspace#read DataAzurermPlaywrightWorkspace#read}. |
 
 ---
 
@@ -910,7 +910,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/playwright_workspace#read DataAzurermPlaywrightWorkspace#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/playwright_workspace#read DataAzurermPlaywrightWorkspace#read}.
 
 ---
 

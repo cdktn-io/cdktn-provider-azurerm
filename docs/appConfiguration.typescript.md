@@ -4,7 +4,7 @@
 
 ### AppConfiguration <a name="AppConfiguration" id="@cdktn/provider-azurerm.appConfiguration.AppConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration azurerm_app_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration azurerm_app_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appConfiguration.AppConfiguration.Initializer"></a>
 
@@ -632,7 +632,7 @@ The construct id used in the generated config for the AppConfiguration to import
 
 The id of the existing AppConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1255,21 +1255,21 @@ const appConfigurationConfig: appConfiguration.AppConfigurationConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#location AppConfiguration#location}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#name AppConfiguration#name}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#resource_group_name AppConfiguration#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.dataPlaneProxyAuthenticationMode">dataPlaneProxyAuthenticationMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#data_plane_proxy_authentication_mode AppConfiguration#data_plane_proxy_authentication_mode}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.dataPlaneProxyPrivateLinkDelegationEnabled">dataPlaneProxyPrivateLinkDelegationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#data_plane_proxy_private_link_delegation_enabled AppConfiguration#data_plane_proxy_private_link_delegation_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#location AppConfiguration#location}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#name AppConfiguration#name}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#resource_group_name AppConfiguration#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.dataPlaneProxyAuthenticationMode">dataPlaneProxyAuthenticationMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#data_plane_proxy_authentication_mode AppConfiguration#data_plane_proxy_authentication_mode}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.dataPlaneProxyPrivateLinkDelegationEnabled">dataPlaneProxyPrivateLinkDelegationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#data_plane_proxy_private_link_delegation_enabled AppConfiguration#data_plane_proxy_private_link_delegation_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.encryption">encryption</a></code> | <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationEncryption">AppConfigurationEncryption</a></code> | encryption block. |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#id AppConfiguration#id}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#id AppConfiguration#id}. |
 | <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationIdentity">AppConfigurationIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.localAuthEnabled">localAuthEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#local_auth_enabled AppConfiguration#local_auth_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.publicNetworkAccess">publicNetworkAccess</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#public_network_access AppConfiguration#public_network_access}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.purgeProtectionEnabled">purgeProtectionEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#purge_protection_enabled AppConfiguration#purge_protection_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.localAuthEnabled">localAuthEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#local_auth_enabled AppConfiguration#local_auth_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.publicNetworkAccess">publicNetworkAccess</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#public_network_access AppConfiguration#public_network_access}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.purgeProtectionEnabled">purgeProtectionEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#purge_protection_enabled AppConfiguration#purge_protection_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.replica">replica</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationReplica">AppConfigurationReplica</a>[]</code> | replica block. |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.sku">sku</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#sku AppConfiguration#sku}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.softDeleteRetentionDays">softDeleteRetentionDays</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#soft_delete_retention_days AppConfiguration#soft_delete_retention_days}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#tags AppConfiguration#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.sku">sku</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#sku AppConfiguration#sku}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.softDeleteRetentionDays">softDeleteRetentionDays</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#soft_delete_retention_days AppConfiguration#soft_delete_retention_days}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#tags AppConfiguration#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationTimeouts">AppConfigurationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1352,7 +1352,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#location AppConfiguration#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#location AppConfiguration#location}.
 
 ---
 
@@ -1364,7 +1364,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#name AppConfiguration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#name AppConfiguration#name}.
 
 ---
 
@@ -1376,7 +1376,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#resource_group_name AppConfiguration#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#resource_group_name AppConfiguration#resource_group_name}.
 
 ---
 
@@ -1388,7 +1388,7 @@ public readonly dataPlaneProxyAuthenticationMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#data_plane_proxy_authentication_mode AppConfiguration#data_plane_proxy_authentication_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#data_plane_proxy_authentication_mode AppConfiguration#data_plane_proxy_authentication_mode}.
 
 ---
 
@@ -1400,7 +1400,7 @@ public readonly dataPlaneProxyPrivateLinkDelegationEnabled: boolean | IResolvabl
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#data_plane_proxy_private_link_delegation_enabled AppConfiguration#data_plane_proxy_private_link_delegation_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#data_plane_proxy_private_link_delegation_enabled AppConfiguration#data_plane_proxy_private_link_delegation_enabled}.
 
 ---
 
@@ -1414,7 +1414,7 @@ public readonly encryption: AppConfigurationEncryption;
 
 encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#encryption AppConfiguration#encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#encryption AppConfiguration#encryption}
 
 ---
 
@@ -1426,7 +1426,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#id AppConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#id AppConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1443,7 +1443,7 @@ public readonly identity: AppConfigurationIdentity;
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#identity AppConfiguration#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#identity AppConfiguration#identity}
 
 ---
 
@@ -1455,7 +1455,7 @@ public readonly localAuthEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#local_auth_enabled AppConfiguration#local_auth_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#local_auth_enabled AppConfiguration#local_auth_enabled}.
 
 ---
 
@@ -1467,7 +1467,7 @@ public readonly publicNetworkAccess: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#public_network_access AppConfiguration#public_network_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#public_network_access AppConfiguration#public_network_access}.
 
 ---
 
@@ -1479,7 +1479,7 @@ public readonly purgeProtectionEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#purge_protection_enabled AppConfiguration#purge_protection_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#purge_protection_enabled AppConfiguration#purge_protection_enabled}.
 
 ---
 
@@ -1493,7 +1493,7 @@ public readonly replica: IResolvable | AppConfigurationReplica[];
 
 replica block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#replica AppConfiguration#replica}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#replica AppConfiguration#replica}
 
 ---
 
@@ -1505,7 +1505,7 @@ public readonly sku: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#sku AppConfiguration#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#sku AppConfiguration#sku}.
 
 ---
 
@@ -1517,7 +1517,7 @@ public readonly softDeleteRetentionDays: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#soft_delete_retention_days AppConfiguration#soft_delete_retention_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#soft_delete_retention_days AppConfiguration#soft_delete_retention_days}.
 
 ---
 
@@ -1529,7 +1529,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#tags AppConfiguration#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#tags AppConfiguration#tags}.
 
 ---
 
@@ -1543,7 +1543,7 @@ public readonly timeouts: AppConfigurationTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#timeouts AppConfiguration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#timeouts AppConfiguration#timeouts}
 
 ---
 
@@ -1561,8 +1561,8 @@ const appConfigurationEncryption: appConfiguration.AppConfigurationEncryption = 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationEncryption.property.identityClientId">identityClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#identity_client_id AppConfiguration#identity_client_id}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationEncryption.property.keyVaultKeyIdentifier">keyVaultKeyIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#key_vault_key_identifier AppConfiguration#key_vault_key_identifier}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationEncryption.property.identityClientId">identityClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#identity_client_id AppConfiguration#identity_client_id}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationEncryption.property.keyVaultKeyIdentifier">keyVaultKeyIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#key_vault_key_identifier AppConfiguration#key_vault_key_identifier}. |
 
 ---
 
@@ -1574,7 +1574,7 @@ public readonly identityClientId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#identity_client_id AppConfiguration#identity_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#identity_client_id AppConfiguration#identity_client_id}.
 
 ---
 
@@ -1586,7 +1586,7 @@ public readonly keyVaultKeyIdentifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#key_vault_key_identifier AppConfiguration#key_vault_key_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#key_vault_key_identifier AppConfiguration#key_vault_key_identifier}.
 
 ---
 
@@ -1604,8 +1604,8 @@ const appConfigurationIdentity: appConfiguration.AppConfigurationIdentity = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#type AppConfiguration#type}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationIdentity.property.identityIds">identityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#identity_ids AppConfiguration#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#type AppConfiguration#type}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationIdentity.property.identityIds">identityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#identity_ids AppConfiguration#identity_ids}. |
 
 ---
 
@@ -1617,7 +1617,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#type AppConfiguration#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#type AppConfiguration#type}.
 
 ---
 
@@ -1629,7 +1629,7 @@ public readonly identityIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#identity_ids AppConfiguration#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#identity_ids AppConfiguration#identity_ids}.
 
 ---
 
@@ -1669,8 +1669,8 @@ const appConfigurationReplica: appConfiguration.AppConfigurationReplica = { ... 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationReplica.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#location AppConfiguration#location}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationReplica.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#name AppConfiguration#name}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationReplica.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#location AppConfiguration#location}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationReplica.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#name AppConfiguration#name}. |
 
 ---
 
@@ -1682,7 +1682,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#location AppConfiguration#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#location AppConfiguration#location}.
 
 ---
 
@@ -1694,7 +1694,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#name AppConfiguration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#name AppConfiguration#name}.
 
 ---
 
@@ -1734,10 +1734,10 @@ const appConfigurationTimeouts: appConfiguration.AppConfigurationTimeouts = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#create AppConfiguration#create}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#delete AppConfiguration#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#read AppConfiguration#read}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#update AppConfiguration#update}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#create AppConfiguration#create}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#delete AppConfiguration#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#read AppConfiguration#read}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfiguration.AppConfigurationTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#update AppConfiguration#update}. |
 
 ---
 
@@ -1749,7 +1749,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#create AppConfiguration#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#create AppConfiguration#create}.
 
 ---
 
@@ -1761,7 +1761,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#delete AppConfiguration#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#delete AppConfiguration#delete}.
 
 ---
 
@@ -1773,7 +1773,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#read AppConfiguration#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#read AppConfiguration#read}.
 
 ---
 
@@ -1785,7 +1785,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/app_configuration#update AppConfiguration#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/app_configuration#update AppConfiguration#update}.
 
 ---
 

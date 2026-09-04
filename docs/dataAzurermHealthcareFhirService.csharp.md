@@ -4,7 +4,7 @@
 
 ### DataAzurermHealthcareFhirService <a name="DataAzurermHealthcareFhirService" id="@cdktn/provider-azurerm.dataAzurermHealthcareFhirService.DataAzurermHealthcareFhirService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_fhir_service azurerm_healthcare_fhir_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_fhir_service azurerm_healthcare_fhir_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermHealthcareFhirService.DataAzurermHealthcareFhirService.Initializer"></a>
 
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataAzurermHealthcareFhirS
 
 The id of the existing DataAzurermHealthcareFhirService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_fhir_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_fhir_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -839,10 +839,10 @@ new DataAzurermHealthcareFhirServiceConfig {
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareFhirService.DataAzurermHealthcareFhirServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareFhirService.DataAzurermHealthcareFhirServiceConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareFhirService.DataAzurermHealthcareFhirServiceConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareFhirService.DataAzurermHealthcareFhirServiceConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_fhir_service#name DataAzurermHealthcareFhirService#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareFhirService.DataAzurermHealthcareFhirServiceConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_fhir_service#workspace_id DataAzurermHealthcareFhirService#workspace_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareFhirService.DataAzurermHealthcareFhirServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_fhir_service#id DataAzurermHealthcareFhirService#id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareFhirService.DataAzurermHealthcareFhirServiceConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_fhir_service#tags DataAzurermHealthcareFhirService#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareFhirService.DataAzurermHealthcareFhirServiceConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_fhir_service#name DataAzurermHealthcareFhirService#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareFhirService.DataAzurermHealthcareFhirServiceConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_fhir_service#workspace_id DataAzurermHealthcareFhirService#workspace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareFhirService.DataAzurermHealthcareFhirServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_fhir_service#id DataAzurermHealthcareFhirService#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareFhirService.DataAzurermHealthcareFhirServiceConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_fhir_service#tags DataAzurermHealthcareFhirService#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareFhirService.DataAzurermHealthcareFhirServiceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareFhirService.DataAzurermHealthcareFhirServiceTimeouts">DataAzurermHealthcareFhirServiceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -925,7 +925,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_fhir_service#name DataAzurermHealthcareFhirService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_fhir_service#name DataAzurermHealthcareFhirService#name}.
 
 ---
 
@@ -937,7 +937,7 @@ public string WorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_fhir_service#workspace_id DataAzurermHealthcareFhirService#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_fhir_service#workspace_id DataAzurermHealthcareFhirService#workspace_id}.
 
 ---
 
@@ -949,7 +949,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_fhir_service#id DataAzurermHealthcareFhirService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_fhir_service#id DataAzurermHealthcareFhirService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -964,7 +964,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_fhir_service#tags DataAzurermHealthcareFhirService#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_fhir_service#tags DataAzurermHealthcareFhirService#tags}.
 
 ---
 
@@ -978,7 +978,7 @@ public DataAzurermHealthcareFhirServiceTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_fhir_service#timeouts DataAzurermHealthcareFhirService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_fhir_service#timeouts DataAzurermHealthcareFhirService#timeouts}
 
 ---
 
@@ -1024,7 +1024,7 @@ new DataAzurermHealthcareFhirServiceTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareFhirService.DataAzurermHealthcareFhirServiceTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_fhir_service#read DataAzurermHealthcareFhirService#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareFhirService.DataAzurermHealthcareFhirServiceTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_fhir_service#read DataAzurermHealthcareFhirService#read}. |
 
 ---
 
@@ -1036,7 +1036,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_fhir_service#read DataAzurermHealthcareFhirService#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_fhir_service#read DataAzurermHealthcareFhirService#read}.
 
 ---
 

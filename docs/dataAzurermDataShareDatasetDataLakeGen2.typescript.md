@@ -4,7 +4,7 @@
 
 ### DataAzurermDataShareDatasetDataLakeGen2 <a name="DataAzurermDataShareDatasetDataLakeGen2" id="@cdktn/provider-azurerm.dataAzurermDataShareDatasetDataLakeGen2.DataAzurermDataShareDatasetDataLakeGen2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_dataset_data_lake_gen2 azurerm_data_share_dataset_data_lake_gen2}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_dataset_data_lake_gen2 azurerm_data_share_dataset_data_lake_gen2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDataShareDatasetDataLakeGen2.DataAzurermDataShareDatasetDataLakeGen2.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermDataShareDatase
 
 The id of the existing DataAzurermDataShareDatasetDataLakeGen2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_dataset_data_lake_gen2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_dataset_data_lake_gen2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -751,9 +751,9 @@ const dataAzurermDataShareDatasetDataLakeGen2Config: dataAzurermDataShareDataset
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareDatasetDataLakeGen2.DataAzurermDataShareDatasetDataLakeGen2Config.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareDatasetDataLakeGen2.DataAzurermDataShareDatasetDataLakeGen2Config.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareDatasetDataLakeGen2.DataAzurermDataShareDatasetDataLakeGen2Config.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareDatasetDataLakeGen2.DataAzurermDataShareDatasetDataLakeGen2Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_dataset_data_lake_gen2#name DataAzurermDataShareDatasetDataLakeGen2#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareDatasetDataLakeGen2.DataAzurermDataShareDatasetDataLakeGen2Config.property.shareId">shareId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_dataset_data_lake_gen2#share_id DataAzurermDataShareDatasetDataLakeGen2#share_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareDatasetDataLakeGen2.DataAzurermDataShareDatasetDataLakeGen2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_dataset_data_lake_gen2#id DataAzurermDataShareDatasetDataLakeGen2#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareDatasetDataLakeGen2.DataAzurermDataShareDatasetDataLakeGen2Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_dataset_data_lake_gen2#name DataAzurermDataShareDatasetDataLakeGen2#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareDatasetDataLakeGen2.DataAzurermDataShareDatasetDataLakeGen2Config.property.shareId">shareId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_dataset_data_lake_gen2#share_id DataAzurermDataShareDatasetDataLakeGen2#share_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareDatasetDataLakeGen2.DataAzurermDataShareDatasetDataLakeGen2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_dataset_data_lake_gen2#id DataAzurermDataShareDatasetDataLakeGen2#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareDatasetDataLakeGen2.DataAzurermDataShareDatasetDataLakeGen2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareDatasetDataLakeGen2.DataAzurermDataShareDatasetDataLakeGen2Timeouts">DataAzurermDataShareDatasetDataLakeGen2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -836,7 +836,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_dataset_data_lake_gen2#name DataAzurermDataShareDatasetDataLakeGen2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_dataset_data_lake_gen2#name DataAzurermDataShareDatasetDataLakeGen2#name}.
 
 ---
 
@@ -848,7 +848,7 @@ public readonly shareId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_dataset_data_lake_gen2#share_id DataAzurermDataShareDatasetDataLakeGen2#share_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_dataset_data_lake_gen2#share_id DataAzurermDataShareDatasetDataLakeGen2#share_id}.
 
 ---
 
@@ -860,7 +860,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_dataset_data_lake_gen2#id DataAzurermDataShareDatasetDataLakeGen2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_dataset_data_lake_gen2#id DataAzurermDataShareDatasetDataLakeGen2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -877,7 +877,7 @@ public readonly timeouts: DataAzurermDataShareDatasetDataLakeGen2Timeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_dataset_data_lake_gen2#timeouts DataAzurermDataShareDatasetDataLakeGen2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_dataset_data_lake_gen2#timeouts DataAzurermDataShareDatasetDataLakeGen2#timeouts}
 
 ---
 
@@ -895,7 +895,7 @@ const dataAzurermDataShareDatasetDataLakeGen2Timeouts: dataAzurermDataShareDatas
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareDatasetDataLakeGen2.DataAzurermDataShareDatasetDataLakeGen2Timeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_dataset_data_lake_gen2#read DataAzurermDataShareDatasetDataLakeGen2#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareDatasetDataLakeGen2.DataAzurermDataShareDatasetDataLakeGen2Timeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_dataset_data_lake_gen2#read DataAzurermDataShareDatasetDataLakeGen2#read}. |
 
 ---
 
@@ -907,7 +907,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_dataset_data_lake_gen2#read DataAzurermDataShareDatasetDataLakeGen2#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_dataset_data_lake_gen2#read DataAzurermDataShareDatasetDataLakeGen2#read}.
 
 ---
 

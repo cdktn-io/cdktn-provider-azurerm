@@ -4,7 +4,7 @@
 
 ### DataAzurermDataShareAccount <a name="DataAzurermDataShareAccount" id="@cdktn/provider-azurerm.dataAzurermDataShareAccount.DataAzurermDataShareAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_account azurerm_data_share_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_account azurerm_data_share_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDataShareAccount.DataAzurermDataShareAccount.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermDataShareAccoun
 
 The id of the existing DataAzurermDataShareAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -718,9 +718,9 @@ const dataAzurermDataShareAccountConfig: dataAzurermDataShareAccount.DataAzurerm
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareAccount.DataAzurermDataShareAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareAccount.DataAzurermDataShareAccountConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareAccount.DataAzurermDataShareAccountConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareAccount.DataAzurermDataShareAccountConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_account#name DataAzurermDataShareAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareAccount.DataAzurermDataShareAccountConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_account#resource_group_name DataAzurermDataShareAccount#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareAccount.DataAzurermDataShareAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_account#id DataAzurermDataShareAccount#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareAccount.DataAzurermDataShareAccountConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_account#name DataAzurermDataShareAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareAccount.DataAzurermDataShareAccountConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_account#resource_group_name DataAzurermDataShareAccount#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareAccount.DataAzurermDataShareAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_account#id DataAzurermDataShareAccount#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareAccount.DataAzurermDataShareAccountConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareAccount.DataAzurermDataShareAccountTimeouts">DataAzurermDataShareAccountTimeouts</a></code> | timeouts block. |
 
 ---
@@ -803,7 +803,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_account#name DataAzurermDataShareAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_account#name DataAzurermDataShareAccount#name}.
 
 ---
 
@@ -815,7 +815,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_account#resource_group_name DataAzurermDataShareAccount#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_account#resource_group_name DataAzurermDataShareAccount#resource_group_name}.
 
 ---
 
@@ -827,7 +827,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_account#id DataAzurermDataShareAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_account#id DataAzurermDataShareAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -844,7 +844,7 @@ public readonly timeouts: DataAzurermDataShareAccountTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_account#timeouts DataAzurermDataShareAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_account#timeouts DataAzurermDataShareAccount#timeouts}
 
 ---
 
@@ -873,7 +873,7 @@ const dataAzurermDataShareAccountTimeouts: dataAzurermDataShareAccount.DataAzure
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareAccount.DataAzurermDataShareAccountTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_account#read DataAzurermDataShareAccount#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermDataShareAccount.DataAzurermDataShareAccountTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_account#read DataAzurermDataShareAccount#read}. |
 
 ---
 
@@ -885,7 +885,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/data_share_account#read DataAzurermDataShareAccount#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/data_share_account#read DataAzurermDataShareAccount#read}.
 
 ---
 

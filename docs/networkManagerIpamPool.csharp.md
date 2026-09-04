@@ -4,7 +4,7 @@
 
 ### NetworkManagerIpamPool <a name="NetworkManagerIpamPool" id="@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool azurerm_network_manager_ipam_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool azurerm_network_manager_ipam_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPool.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the NetworkManagerIpamPool to 
 
 The id of the existing NetworkManagerIpamPool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -998,15 +998,15 @@ new NetworkManagerIpamPoolConfig {
 | <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.addressPrefixes">AddressPrefixes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#address_prefixes NetworkManagerIpamPool#address_prefixes}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#location NetworkManagerIpamPool#location}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#name NetworkManagerIpamPool#name}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.networkManagerId">NetworkManagerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#network_manager_id NetworkManagerIpamPool#network_manager_id}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#description NetworkManagerIpamPool#description}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#display_name NetworkManagerIpamPool#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#id NetworkManagerIpamPool#id}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.parentPoolName">ParentPoolName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#parent_pool_name NetworkManagerIpamPool#parent_pool_name}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#tags NetworkManagerIpamPool#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.addressPrefixes">AddressPrefixes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#address_prefixes NetworkManagerIpamPool#address_prefixes}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#location NetworkManagerIpamPool#location}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#name NetworkManagerIpamPool#name}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.networkManagerId">NetworkManagerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#network_manager_id NetworkManagerIpamPool#network_manager_id}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#description NetworkManagerIpamPool#description}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#display_name NetworkManagerIpamPool#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#id NetworkManagerIpamPool#id}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.parentPoolName">ParentPoolName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#parent_pool_name NetworkManagerIpamPool#parent_pool_name}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#tags NetworkManagerIpamPool#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolTimeouts">NetworkManagerIpamPoolTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1089,7 +1089,7 @@ public string[] AddressPrefixes { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#address_prefixes NetworkManagerIpamPool#address_prefixes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#address_prefixes NetworkManagerIpamPool#address_prefixes}.
 
 ---
 
@@ -1101,7 +1101,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#location NetworkManagerIpamPool#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#location NetworkManagerIpamPool#location}.
 
 ---
 
@@ -1113,7 +1113,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#name NetworkManagerIpamPool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#name NetworkManagerIpamPool#name}.
 
 ---
 
@@ -1125,7 +1125,7 @@ public string NetworkManagerId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#network_manager_id NetworkManagerIpamPool#network_manager_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#network_manager_id NetworkManagerIpamPool#network_manager_id}.
 
 ---
 
@@ -1137,7 +1137,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#description NetworkManagerIpamPool#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#description NetworkManagerIpamPool#description}.
 
 ---
 
@@ -1149,7 +1149,7 @@ public string DisplayName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#display_name NetworkManagerIpamPool#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#display_name NetworkManagerIpamPool#display_name}.
 
 ---
 
@@ -1161,7 +1161,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#id NetworkManagerIpamPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#id NetworkManagerIpamPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1176,7 +1176,7 @@ public string ParentPoolName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#parent_pool_name NetworkManagerIpamPool#parent_pool_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#parent_pool_name NetworkManagerIpamPool#parent_pool_name}.
 
 ---
 
@@ -1188,7 +1188,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#tags NetworkManagerIpamPool#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#tags NetworkManagerIpamPool#tags}.
 
 ---
 
@@ -1202,7 +1202,7 @@ public NetworkManagerIpamPoolTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#timeouts NetworkManagerIpamPool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#timeouts NetworkManagerIpamPool#timeouts}
 
 ---
 
@@ -1225,10 +1225,10 @@ new NetworkManagerIpamPoolTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#create NetworkManagerIpamPool#create}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#delete NetworkManagerIpamPool#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#read NetworkManagerIpamPool#read}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#update NetworkManagerIpamPool#update}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#create NetworkManagerIpamPool#create}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#delete NetworkManagerIpamPool#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#read NetworkManagerIpamPool#read}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#update NetworkManagerIpamPool#update}. |
 
 ---
 
@@ -1240,7 +1240,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#create NetworkManagerIpamPool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#create NetworkManagerIpamPool#create}.
 
 ---
 
@@ -1252,7 +1252,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#delete NetworkManagerIpamPool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#delete NetworkManagerIpamPool#delete}.
 
 ---
 
@@ -1264,7 +1264,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#read NetworkManagerIpamPool#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#read NetworkManagerIpamPool#read}.
 
 ---
 
@@ -1276,7 +1276,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/network_manager_ipam_pool#update NetworkManagerIpamPool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/network_manager_ipam_pool#update NetworkManagerIpamPool#update}.
 
 ---
 

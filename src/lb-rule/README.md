@@ -1,3 +1,3 @@
 # `azurerm_lb_rule`
 
-Refer to the Terraform Registry for docs: [`azurerm_lb_rule`](https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_rule).
+Refer to the Terraform Registry for docs: [`azurerm_lb_rule`](https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_rule).

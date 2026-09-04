@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,96 +13,96 @@ import * as cdktn from 'cdktn';
 
 export interface SubnetConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#address_prefixes Subnet#address_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#address_prefixes Subnet#address_prefixes}
   */
   readonly addressPrefixes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#default_outbound_access_enabled Subnet#default_outbound_access_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#default_outbound_access_enabled Subnet#default_outbound_access_enabled}
   */
   readonly defaultOutboundAccessEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#id Subnet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#id Subnet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#name Subnet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#name Subnet#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#network_security_group_id_wo Subnet#network_security_group_id_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#network_security_group_id_wo Subnet#network_security_group_id_wo}
   */
   readonly networkSecurityGroupIdWo?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#network_security_group_id_wo_version Subnet#network_security_group_id_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#network_security_group_id_wo_version Subnet#network_security_group_id_wo_version}
   */
   readonly networkSecurityGroupIdWoVersion?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#private_endpoint_network_policies Subnet#private_endpoint_network_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#private_endpoint_network_policies Subnet#private_endpoint_network_policies}
   */
   readonly privateEndpointNetworkPolicies?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#private_link_service_network_policies_enabled Subnet#private_link_service_network_policies_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#private_link_service_network_policies_enabled Subnet#private_link_service_network_policies_enabled}
   */
   readonly privateLinkServiceNetworkPoliciesEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#resource_group_name Subnet#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#resource_group_name Subnet#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#route_table_id_wo Subnet#route_table_id_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#route_table_id_wo Subnet#route_table_id_wo}
   */
   readonly routeTableIdWo?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#route_table_id_wo_version Subnet#route_table_id_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#route_table_id_wo_version Subnet#route_table_id_wo_version}
   */
   readonly routeTableIdWoVersion?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#service_endpoint_policy_ids Subnet#service_endpoint_policy_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#service_endpoint_policy_ids Subnet#service_endpoint_policy_ids}
   */
   readonly serviceEndpointPolicyIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#sharing_scope Subnet#sharing_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#sharing_scope Subnet#sharing_scope}
   */
   readonly sharingScope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#virtual_network_name Subnet#virtual_network_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#virtual_network_name Subnet#virtual_network_name}
   */
   readonly virtualNetworkName: string;
   /**
   * delegation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#delegation Subnet#delegation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#delegation Subnet#delegation}
   */
   readonly delegation?: SubnetDelegation[] | cdktn.IResolvable;
   /**
   * ip_address_pool block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#ip_address_pool Subnet#ip_address_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#ip_address_pool Subnet#ip_address_pool}
   */
   readonly ipAddressPool?: SubnetIpAddressPool;
   /**
   * service_endpoint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#service_endpoint Subnet#service_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#service_endpoint Subnet#service_endpoint}
   */
   readonly serviceEndpoint?: SubnetServiceEndpoint[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#timeouts Subnet#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#timeouts Subnet#timeouts}
   */
   readonly timeouts?: SubnetTimeouts;
 }
 export interface SubnetDelegationServiceDelegation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#actions Subnet#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#actions Subnet#actions}
   */
   readonly actions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#name Subnet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#name Subnet#name}
   */
   readonly name: string;
 }
@@ -212,13 +212,13 @@ export class SubnetDelegationServiceDelegationOutputReference extends cdktn.Comp
 }
 export interface SubnetDelegation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#name Subnet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#name Subnet#name}
   */
   readonly name: string;
   /**
   * service_delegation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#service_delegation Subnet#service_delegation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#service_delegation Subnet#service_delegation}
   */
   readonly serviceDelegation: SubnetDelegationServiceDelegation;
 }
@@ -357,14 +357,14 @@ export class SubnetDelegationList extends cdktn.ComplexList {
 }
 export interface SubnetIpAddressPool {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#id Subnet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#id Subnet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#number_of_ip_addresses Subnet#number_of_ip_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#number_of_ip_addresses Subnet#number_of_ip_addresses}
   */
   readonly numberOfIpAddresses: string;
 }
@@ -476,11 +476,11 @@ export class SubnetIpAddressPoolOutputReference extends cdktn.ComplexObject {
 }
 export interface SubnetServiceEndpoint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#network_identifier Subnet#network_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#network_identifier Subnet#network_identifier}
   */
   readonly networkIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#service Subnet#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#service Subnet#service}
   */
   readonly service: string;
 }
@@ -622,19 +622,19 @@ export class SubnetServiceEndpointList extends cdktn.ComplexList {
 }
 export interface SubnetTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#create Subnet#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#create Subnet#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#delete Subnet#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#delete Subnet#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#read Subnet#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#read Subnet#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#update Subnet#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#update Subnet#update}
   */
   readonly update?: string;
 }
@@ -815,7 +815,7 @@ export class SubnetTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet azurerm_subnet}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet azurerm_subnet}
 */
 export class Subnet extends cdktn.TerraformResource {
 
@@ -831,7 +831,7 @@ export class Subnet extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Subnet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Subnet to import
-  * @param importFromId The id of the existing Subnet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Subnet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Subnet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -843,7 +843,7 @@ export class Subnet extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/subnet azurerm_subnet} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/subnet azurerm_subnet} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -854,7 +854,7 @@ export class Subnet extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_subnet',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### ContainerAppEnvironmentCertificate <a name="ContainerAppEnvironmentCertificate" id="@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate azurerm_container_app_environment_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate azurerm_container_app_environment_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.Initializer"></a>
 
@@ -43,13 +43,13 @@ containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate(
 | <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.Initializer.parameter.containerAppEnvironmentId">container_app_environment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#container_app_environment_id ContainerAppEnvironmentCertificate#container_app_environment_id}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#name ContainerAppEnvironmentCertificate#name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.Initializer.parameter.certificateBlobBase64">certificate_blob_base64</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#certificate_blob_base64 ContainerAppEnvironmentCertificate#certificate_blob_base64}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.Initializer.parameter.containerAppEnvironmentId">container_app_environment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#container_app_environment_id ContainerAppEnvironmentCertificate#container_app_environment_id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#name ContainerAppEnvironmentCertificate#name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.Initializer.parameter.certificateBlobBase64">certificate_blob_base64</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#certificate_blob_base64 ContainerAppEnvironmentCertificate#certificate_blob_base64}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.Initializer.parameter.certificateKeyVault">certificate_key_vault</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateCertificateKeyVault">ContainerAppEnvironmentCertificateCertificateKeyVault</a></code> | certificate_key_vault block. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.Initializer.parameter.certificatePassword">certificate_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#certificate_password ContainerAppEnvironmentCertificate#certificate_password}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#id ContainerAppEnvironmentCertificate#id}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#tags ContainerAppEnvironmentCertificate#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.Initializer.parameter.certificatePassword">certificate_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#certificate_password ContainerAppEnvironmentCertificate#certificate_password}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#id ContainerAppEnvironmentCertificate#id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#tags ContainerAppEnvironmentCertificate#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateTimeouts">ContainerAppEnvironmentCertificateTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#container_app_environment_id ContainerAppEnvironmentCertificate#container_app_environment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#container_app_environment_id ContainerAppEnvironmentCertificate#container_app_environment_id}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#name ContainerAppEnvironmentCertificate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#name ContainerAppEnvironmentCertificate#name}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#certificate_blob_base64 ContainerAppEnvironmentCertificate#certificate_blob_base64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#certificate_blob_base64 ContainerAppEnvironmentCertificate#certificate_blob_base64}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 certificate_key_vault block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#certificate_key_vault ContainerAppEnvironmentCertificate#certificate_key_vault}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#certificate_key_vault ContainerAppEnvironmentCertificate#certificate_key_vault}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#certificate_password ContainerAppEnvironmentCertificate#certificate_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#certificate_password ContainerAppEnvironmentCertificate#certificate_password}.
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#id ContainerAppEnvironmentCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#id ContainerAppEnvironmentCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -171,7 +171,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#tags ContainerAppEnvironmentCertificate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#tags ContainerAppEnvironmentCertificate#tags}.
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#timeouts ContainerAppEnvironmentCertificate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#timeouts ContainerAppEnvironmentCertificate#timeouts}
 
 ---
 
@@ -585,7 +585,7 @@ def put_certificate_key_vault(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#key_vault_secret_id ContainerAppEnvironmentCertificate#key_vault_secret_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#key_vault_secret_id ContainerAppEnvironmentCertificate#key_vault_secret_id}.
 
 ---
 
@@ -593,7 +593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#identity ContainerAppEnvironmentCertificate#identity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#identity ContainerAppEnvironmentCertificate#identity}.
 
 ---
 
@@ -612,7 +612,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#create ContainerAppEnvironmentCertificate#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#create ContainerAppEnvironmentCertificate#create}.
 
 ---
 
@@ -620,7 +620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#delete ContainerAppEnvironmentCertificate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#delete ContainerAppEnvironmentCertificate#delete}.
 
 ---
 
@@ -628,7 +628,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#read ContainerAppEnvironmentCertificate#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#read ContainerAppEnvironmentCertificate#read}.
 
 ---
 
@@ -636,7 +636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#update ContainerAppEnvironmentCertificate#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#update ContainerAppEnvironmentCertificate#update}.
 
 ---
 
@@ -790,7 +790,7 @@ The construct id used in the generated config for the ContainerAppEnvironmentCer
 
 The id of the existing ContainerAppEnvironmentCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1233,8 +1233,8 @@ containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateCertificate
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateCertificateKeyVault.property.keyVaultSecretId">key_vault_secret_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#key_vault_secret_id ContainerAppEnvironmentCertificate#key_vault_secret_id}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateCertificateKeyVault.property.identity">identity</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#identity ContainerAppEnvironmentCertificate#identity}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateCertificateKeyVault.property.keyVaultSecretId">key_vault_secret_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#key_vault_secret_id ContainerAppEnvironmentCertificate#key_vault_secret_id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateCertificateKeyVault.property.identity">identity</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#identity ContainerAppEnvironmentCertificate#identity}. |
 
 ---
 
@@ -1246,7 +1246,7 @@ key_vault_secret_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#key_vault_secret_id ContainerAppEnvironmentCertificate#key_vault_secret_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#key_vault_secret_id ContainerAppEnvironmentCertificate#key_vault_secret_id}.
 
 ---
 
@@ -1258,7 +1258,7 @@ identity: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#identity ContainerAppEnvironmentCertificate#identity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#identity ContainerAppEnvironmentCertificate#identity}.
 
 ---
 
@@ -1299,13 +1299,13 @@ containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateConfig(
 | <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateConfig.property.containerAppEnvironmentId">container_app_environment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#container_app_environment_id ContainerAppEnvironmentCertificate#container_app_environment_id}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#name ContainerAppEnvironmentCertificate#name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateConfig.property.certificateBlobBase64">certificate_blob_base64</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#certificate_blob_base64 ContainerAppEnvironmentCertificate#certificate_blob_base64}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateConfig.property.containerAppEnvironmentId">container_app_environment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#container_app_environment_id ContainerAppEnvironmentCertificate#container_app_environment_id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#name ContainerAppEnvironmentCertificate#name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateConfig.property.certificateBlobBase64">certificate_blob_base64</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#certificate_blob_base64 ContainerAppEnvironmentCertificate#certificate_blob_base64}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateConfig.property.certificateKeyVault">certificate_key_vault</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateCertificateKeyVault">ContainerAppEnvironmentCertificateCertificateKeyVault</a></code> | certificate_key_vault block. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateConfig.property.certificatePassword">certificate_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#certificate_password ContainerAppEnvironmentCertificate#certificate_password}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#id ContainerAppEnvironmentCertificate#id}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#tags ContainerAppEnvironmentCertificate#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateConfig.property.certificatePassword">certificate_password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#certificate_password ContainerAppEnvironmentCertificate#certificate_password}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#id ContainerAppEnvironmentCertificate#id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#tags ContainerAppEnvironmentCertificate#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateTimeouts">ContainerAppEnvironmentCertificateTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1388,7 +1388,7 @@ container_app_environment_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#container_app_environment_id ContainerAppEnvironmentCertificate#container_app_environment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#container_app_environment_id ContainerAppEnvironmentCertificate#container_app_environment_id}.
 
 ---
 
@@ -1400,7 +1400,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#name ContainerAppEnvironmentCertificate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#name ContainerAppEnvironmentCertificate#name}.
 
 ---
 
@@ -1412,7 +1412,7 @@ certificate_blob_base64: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#certificate_blob_base64 ContainerAppEnvironmentCertificate#certificate_blob_base64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#certificate_blob_base64 ContainerAppEnvironmentCertificate#certificate_blob_base64}.
 
 ---
 
@@ -1426,7 +1426,7 @@ certificate_key_vault: ContainerAppEnvironmentCertificateCertificateKeyVault
 
 certificate_key_vault block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#certificate_key_vault ContainerAppEnvironmentCertificate#certificate_key_vault}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#certificate_key_vault ContainerAppEnvironmentCertificate#certificate_key_vault}
 
 ---
 
@@ -1438,7 +1438,7 @@ certificate_password: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#certificate_password ContainerAppEnvironmentCertificate#certificate_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#certificate_password ContainerAppEnvironmentCertificate#certificate_password}.
 
 ---
 
@@ -1450,7 +1450,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#id ContainerAppEnvironmentCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#id ContainerAppEnvironmentCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1465,7 +1465,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#tags ContainerAppEnvironmentCertificate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#tags ContainerAppEnvironmentCertificate#tags}.
 
 ---
 
@@ -1479,7 +1479,7 @@ timeouts: ContainerAppEnvironmentCertificateTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#timeouts ContainerAppEnvironmentCertificate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#timeouts ContainerAppEnvironmentCertificate#timeouts}
 
 ---
 
@@ -1502,10 +1502,10 @@ containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#create ContainerAppEnvironmentCertificate#create}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#delete ContainerAppEnvironmentCertificate#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#read ContainerAppEnvironmentCertificate#read}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#update ContainerAppEnvironmentCertificate#update}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#create ContainerAppEnvironmentCertificate#create}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#delete ContainerAppEnvironmentCertificate#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#read ContainerAppEnvironmentCertificate#read}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#update ContainerAppEnvironmentCertificate#update}. |
 
 ---
 
@@ -1517,7 +1517,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#create ContainerAppEnvironmentCertificate#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#create ContainerAppEnvironmentCertificate#create}.
 
 ---
 
@@ -1529,7 +1529,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#delete ContainerAppEnvironmentCertificate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#delete ContainerAppEnvironmentCertificate#delete}.
 
 ---
 
@@ -1541,7 +1541,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#read ContainerAppEnvironmentCertificate#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#read ContainerAppEnvironmentCertificate#read}.
 
 ---
 
@@ -1553,7 +1553,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/container_app_environment_certificate#update ContainerAppEnvironmentCertificate#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/container_app_environment_certificate#update ContainerAppEnvironmentCertificate#update}.
 
 ---
 

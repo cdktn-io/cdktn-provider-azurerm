@@ -4,7 +4,7 @@
 
 ### ManagedRedisGeoReplication <a name="ManagedRedisGeoReplication" id="@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_redis_geo_replication azurerm_managed_redis_geo_replication}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/managed_redis_geo_replication azurerm_managed_redis_geo_replication}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplication.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ManagedRedisGeoReplication
 
 The id of the existing ManagedRedisGeoReplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_redis_geo_replication#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/managed_redis_geo_replication#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -832,9 +832,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/managedredisge
 | <code><a href="#@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationConfig.property.linkedManagedRedisIds">LinkedManagedRedisIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_redis_geo_replication#linked_managed_redis_ids ManagedRedisGeoReplication#linked_managed_redis_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationConfig.property.managedRedisId">ManagedRedisId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_redis_geo_replication#managed_redis_id ManagedRedisGeoReplication#managed_redis_id}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_redis_geo_replication#id ManagedRedisGeoReplication#id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationConfig.property.linkedManagedRedisIds">LinkedManagedRedisIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/managed_redis_geo_replication#linked_managed_redis_ids ManagedRedisGeoReplication#linked_managed_redis_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationConfig.property.managedRedisId">ManagedRedisId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/managed_redis_geo_replication#managed_redis_id ManagedRedisGeoReplication#managed_redis_id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/managed_redis_geo_replication#id ManagedRedisGeoReplication#id}. |
 | <code><a href="#@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationTimeouts">ManagedRedisGeoReplicationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -917,7 +917,7 @@ LinkedManagedRedisIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_redis_geo_replication#linked_managed_redis_ids ManagedRedisGeoReplication#linked_managed_redis_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/managed_redis_geo_replication#linked_managed_redis_ids ManagedRedisGeoReplication#linked_managed_redis_ids}.
 
 ---
 
@@ -929,7 +929,7 @@ ManagedRedisId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_redis_geo_replication#managed_redis_id ManagedRedisGeoReplication#managed_redis_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/managed_redis_geo_replication#managed_redis_id ManagedRedisGeoReplication#managed_redis_id}.
 
 ---
 
@@ -941,7 +941,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_redis_geo_replication#id ManagedRedisGeoReplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/managed_redis_geo_replication#id ManagedRedisGeoReplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -958,7 +958,7 @@ Timeouts ManagedRedisGeoReplicationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_redis_geo_replication#timeouts ManagedRedisGeoReplication#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/managed_redis_geo_replication#timeouts ManagedRedisGeoReplication#timeouts}
 
 ---
 
@@ -981,10 +981,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/managedredisge
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_redis_geo_replication#create ManagedRedisGeoReplication#create}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_redis_geo_replication#delete ManagedRedisGeoReplication#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_redis_geo_replication#read ManagedRedisGeoReplication#read}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_redis_geo_replication#update ManagedRedisGeoReplication#update}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/managed_redis_geo_replication#create ManagedRedisGeoReplication#create}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/managed_redis_geo_replication#delete ManagedRedisGeoReplication#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/managed_redis_geo_replication#read ManagedRedisGeoReplication#read}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/managed_redis_geo_replication#update ManagedRedisGeoReplication#update}. |
 
 ---
 
@@ -996,7 +996,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_redis_geo_replication#create ManagedRedisGeoReplication#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/managed_redis_geo_replication#create ManagedRedisGeoReplication#create}.
 
 ---
 
@@ -1008,7 +1008,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_redis_geo_replication#delete ManagedRedisGeoReplication#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/managed_redis_geo_replication#delete ManagedRedisGeoReplication#delete}.
 
 ---
 
@@ -1020,7 +1020,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_redis_geo_replication#read ManagedRedisGeoReplication#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/managed_redis_geo_replication#read ManagedRedisGeoReplication#read}.
 
 ---
 
@@ -1032,7 +1032,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/managed_redis_geo_replication#update ManagedRedisGeoReplication#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/managed_redis_geo_replication#update ManagedRedisGeoReplication#update}.
 
 ---
 

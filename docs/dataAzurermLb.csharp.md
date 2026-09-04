@@ -4,7 +4,7 @@
 
 ### DataAzurermLb <a name="DataAzurermLb" id="@cdktn/provider-azurerm.dataAzurermLb.DataAzurermLb"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/lb azurerm_lb}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/lb azurerm_lb}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLb.DataAzurermLb.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermLb to import.
 
 The id of the existing DataAzurermLb that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/lb#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/lb#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -774,9 +774,9 @@ new DataAzurermLbConfig {
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLb.DataAzurermLbConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLb.DataAzurermLbConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLb.DataAzurermLbConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermLb.DataAzurermLbConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/lb#name DataAzurermLb#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermLb.DataAzurermLbConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/lb#resource_group_name DataAzurermLb#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermLb.DataAzurermLbConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/lb#id DataAzurermLb#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermLb.DataAzurermLbConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/lb#name DataAzurermLb#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermLb.DataAzurermLbConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/lb#resource_group_name DataAzurermLb#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermLb.DataAzurermLbConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/lb#id DataAzurermLb#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLb.DataAzurermLbConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermLb.DataAzurermLbTimeouts">DataAzurermLbTimeouts</a></code> | timeouts block. |
 
 ---
@@ -859,7 +859,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/lb#name DataAzurermLb#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/lb#name DataAzurermLb#name}.
 
 ---
 
@@ -871,7 +871,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/lb#resource_group_name DataAzurermLb#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/lb#resource_group_name DataAzurermLb#resource_group_name}.
 
 ---
 
@@ -883,7 +883,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/lb#id DataAzurermLb#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/lb#id DataAzurermLb#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -900,7 +900,7 @@ public DataAzurermLbTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/lb#timeouts DataAzurermLb#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/lb#timeouts DataAzurermLb#timeouts}
 
 ---
 
@@ -933,7 +933,7 @@ new DataAzurermLbTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermLb.DataAzurermLbTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/lb#read DataAzurermLb#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermLb.DataAzurermLbTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/lb#read DataAzurermLb#read}. |
 
 ---
 
@@ -945,7 +945,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/lb#read DataAzurermLb#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/lb#read DataAzurermLb#read}.
 
 ---
 

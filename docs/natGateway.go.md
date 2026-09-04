@@ -4,7 +4,7 @@
 
 ### NatGateway <a name="NatGateway" id="@cdktn/provider-azurerm.natGateway.NatGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway azurerm_nat_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway azurerm_nat_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.natGateway.NatGateway.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the NatGateway to import.
 
 The id of the existing NatGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -986,15 +986,15 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/natgateway"
 | <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#location NatGateway#location}. |
-| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#name NatGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#resource_group_name NatGateway#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#id NatGateway#id}. |
-| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayConfig.property.idleTimeoutInMinutes">IdleTimeoutInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#idle_timeout_in_minutes NatGateway#idle_timeout_in_minutes}. |
-| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayConfig.property.skuName">SkuName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#sku_name NatGateway#sku_name}. |
-| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#tags NatGateway#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#location NatGateway#location}. |
+| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#name NatGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#resource_group_name NatGateway#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#id NatGateway#id}. |
+| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayConfig.property.idleTimeoutInMinutes">IdleTimeoutInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#idle_timeout_in_minutes NatGateway#idle_timeout_in_minutes}. |
+| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayConfig.property.skuName">SkuName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#sku_name NatGateway#sku_name}. |
+| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#tags NatGateway#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayTimeouts">NatGatewayTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayConfig.property.zones">Zones</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#zones NatGateway#zones}. |
+| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayConfig.property.zones">Zones</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#zones NatGateway#zones}. |
 
 ---
 
@@ -1076,7 +1076,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#location NatGateway#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#location NatGateway#location}.
 
 ---
 
@@ -1088,7 +1088,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#name NatGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#name NatGateway#name}.
 
 ---
 
@@ -1100,7 +1100,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#resource_group_name NatGateway#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#resource_group_name NatGateway#resource_group_name}.
 
 ---
 
@@ -1112,7 +1112,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#id NatGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#id NatGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1127,7 +1127,7 @@ IdleTimeoutInMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#idle_timeout_in_minutes NatGateway#idle_timeout_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#idle_timeout_in_minutes NatGateway#idle_timeout_in_minutes}.
 
 ---
 
@@ -1139,7 +1139,7 @@ SkuName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#sku_name NatGateway#sku_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#sku_name NatGateway#sku_name}.
 
 ---
 
@@ -1151,7 +1151,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#tags NatGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#tags NatGateway#tags}.
 
 ---
 
@@ -1165,7 +1165,7 @@ Timeouts NatGatewayTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#timeouts NatGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#timeouts NatGateway#timeouts}
 
 ---
 
@@ -1177,7 +1177,7 @@ Zones *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#zones NatGateway#zones}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#zones NatGateway#zones}.
 
 ---
 
@@ -1200,10 +1200,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/natgateway"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#create NatGateway#create}. |
-| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#delete NatGateway#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#read NatGateway#read}. |
-| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#update NatGateway#update}. |
+| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#create NatGateway#create}. |
+| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#delete NatGateway#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#read NatGateway#read}. |
+| <code><a href="#@cdktn/provider-azurerm.natGateway.NatGatewayTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#update NatGateway#update}. |
 
 ---
 
@@ -1215,7 +1215,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#create NatGateway#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#create NatGateway#create}.
 
 ---
 
@@ -1227,7 +1227,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#delete NatGateway#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#delete NatGateway#delete}.
 
 ---
 
@@ -1239,7 +1239,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#read NatGateway#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#read NatGateway#read}.
 
 ---
 
@@ -1251,7 +1251,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/nat_gateway#update NatGateway#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/nat_gateway#update NatGateway#update}.
 
 ---
 

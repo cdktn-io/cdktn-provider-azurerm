@@ -4,7 +4,7 @@
 
 ### MongoClusterFirewallRule <a name="MongoClusterFirewallRule" id="@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule azurerm_mongo_cluster_firewall_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule azurerm_mongo_cluster_firewall_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRule.Initializer"></a>
 
@@ -39,11 +39,11 @@ MongoClusterFirewallRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRule.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRule.Initializer.parameter.endIpAddress">endIpAddress</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#end_ip_address MongoClusterFirewallRule#end_ip_address}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRule.Initializer.parameter.mongoClusterId">mongoClusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#mongo_cluster_id MongoClusterFirewallRule#mongo_cluster_id}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRule.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#name MongoClusterFirewallRule#name}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRule.Initializer.parameter.startIpAddress">startIpAddress</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#start_ip_address MongoClusterFirewallRule#start_ip_address}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#id MongoClusterFirewallRule#id}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRule.Initializer.parameter.endIpAddress">endIpAddress</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#end_ip_address MongoClusterFirewallRule#end_ip_address}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRule.Initializer.parameter.mongoClusterId">mongoClusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#mongo_cluster_id MongoClusterFirewallRule#mongo_cluster_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRule.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#name MongoClusterFirewallRule#name}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRule.Initializer.parameter.startIpAddress">startIpAddress</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#start_ip_address MongoClusterFirewallRule#start_ip_address}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#id MongoClusterFirewallRule#id}. |
 | <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRule.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleTimeouts">MongoClusterFirewallRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#end_ip_address MongoClusterFirewallRule#end_ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#end_ip_address MongoClusterFirewallRule#end_ip_address}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#mongo_cluster_id MongoClusterFirewallRule#mongo_cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#mongo_cluster_id MongoClusterFirewallRule#mongo_cluster_id}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#name MongoClusterFirewallRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#name MongoClusterFirewallRule#name}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#start_ip_address MongoClusterFirewallRule#start_ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#start_ip_address MongoClusterFirewallRule#start_ip_address}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#id MongoClusterFirewallRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#id MongoClusterFirewallRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +157,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#timeouts MongoClusterFirewallRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#timeouts MongoClusterFirewallRule#timeouts}
 
 ---
 
@@ -633,7 +633,7 @@ The construct id used in the generated config for the MongoClusterFirewallRule t
 
 The id of the existing MongoClusterFirewallRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -995,11 +995,11 @@ MongoClusterFirewallRuleConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleConfig.property.endIpAddress">endIpAddress</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#end_ip_address MongoClusterFirewallRule#end_ip_address}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleConfig.property.mongoClusterId">mongoClusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#mongo_cluster_id MongoClusterFirewallRule#mongo_cluster_id}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#name MongoClusterFirewallRule#name}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleConfig.property.startIpAddress">startIpAddress</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#start_ip_address MongoClusterFirewallRule#start_ip_address}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#id MongoClusterFirewallRule#id}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleConfig.property.endIpAddress">endIpAddress</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#end_ip_address MongoClusterFirewallRule#end_ip_address}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleConfig.property.mongoClusterId">mongoClusterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#mongo_cluster_id MongoClusterFirewallRule#mongo_cluster_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#name MongoClusterFirewallRule#name}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleConfig.property.startIpAddress">startIpAddress</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#start_ip_address MongoClusterFirewallRule#start_ip_address}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#id MongoClusterFirewallRule#id}. |
 | <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleTimeouts">MongoClusterFirewallRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1082,7 +1082,7 @@ public java.lang.String getEndIpAddress();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#end_ip_address MongoClusterFirewallRule#end_ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#end_ip_address MongoClusterFirewallRule#end_ip_address}.
 
 ---
 
@@ -1094,7 +1094,7 @@ public java.lang.String getMongoClusterId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#mongo_cluster_id MongoClusterFirewallRule#mongo_cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#mongo_cluster_id MongoClusterFirewallRule#mongo_cluster_id}.
 
 ---
 
@@ -1106,7 +1106,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#name MongoClusterFirewallRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#name MongoClusterFirewallRule#name}.
 
 ---
 
@@ -1118,7 +1118,7 @@ public java.lang.String getStartIpAddress();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#start_ip_address MongoClusterFirewallRule#start_ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#start_ip_address MongoClusterFirewallRule#start_ip_address}.
 
 ---
 
@@ -1130,7 +1130,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#id MongoClusterFirewallRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#id MongoClusterFirewallRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1147,7 +1147,7 @@ public MongoClusterFirewallRuleTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#timeouts MongoClusterFirewallRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#timeouts MongoClusterFirewallRule#timeouts}
 
 ---
 
@@ -1170,10 +1170,10 @@ MongoClusterFirewallRuleTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#create MongoClusterFirewallRule#create}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#delete MongoClusterFirewallRule#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#read MongoClusterFirewallRule#read}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#update MongoClusterFirewallRule#update}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#create MongoClusterFirewallRule#create}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#delete MongoClusterFirewallRule#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#read MongoClusterFirewallRule#read}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#update MongoClusterFirewallRule#update}. |
 
 ---
 
@@ -1185,7 +1185,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#create MongoClusterFirewallRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#create MongoClusterFirewallRule#create}.
 
 ---
 
@@ -1197,7 +1197,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#delete MongoClusterFirewallRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#delete MongoClusterFirewallRule#delete}.
 
 ---
 
@@ -1209,7 +1209,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#read MongoClusterFirewallRule#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#read MongoClusterFirewallRule#read}.
 
 ---
 
@@ -1221,7 +1221,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/mongo_cluster_firewall_rule#update MongoClusterFirewallRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/mongo_cluster_firewall_rule#update MongoClusterFirewallRule#update}.
 
 ---
 

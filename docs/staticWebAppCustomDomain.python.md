@@ -4,7 +4,7 @@
 
 ### StaticWebAppCustomDomain <a name="StaticWebAppCustomDomain" id="@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain azurerm_static_web_app_custom_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain azurerm_static_web_app_custom_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomain.Initializer"></a>
 
@@ -40,10 +40,10 @@ staticWebAppCustomDomain.StaticWebAppCustomDomain(
 | <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomain.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomain.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomain.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomain.Initializer.parameter.domainName">domain_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#domain_name StaticWebAppCustomDomain#domain_name}. |
-| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomain.Initializer.parameter.staticWebAppId">static_web_app_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#static_web_app_id StaticWebAppCustomDomain#static_web_app_id}. |
-| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomain.Initializer.parameter.validationType">validation_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#validation_type StaticWebAppCustomDomain#validation_type}. |
-| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomain.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#id StaticWebAppCustomDomain#id}. |
+| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomain.Initializer.parameter.domainName">domain_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#domain_name StaticWebAppCustomDomain#domain_name}. |
+| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomain.Initializer.parameter.staticWebAppId">static_web_app_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#static_web_app_id StaticWebAppCustomDomain#static_web_app_id}. |
+| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomain.Initializer.parameter.validationType">validation_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#validation_type StaticWebAppCustomDomain#validation_type}. |
+| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomain.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#id StaticWebAppCustomDomain#id}. |
 | <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomain.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainTimeouts">StaticWebAppCustomDomainTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#domain_name StaticWebAppCustomDomain#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#domain_name StaticWebAppCustomDomain#domain_name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#static_web_app_id StaticWebAppCustomDomain#static_web_app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#static_web_app_id StaticWebAppCustomDomain#static_web_app_id}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#validation_type StaticWebAppCustomDomain#validation_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#validation_type StaticWebAppCustomDomain#validation_type}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#id StaticWebAppCustomDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#id StaticWebAppCustomDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -149,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#timeouts StaticWebAppCustomDomain#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#timeouts StaticWebAppCustomDomain#timeouts}
 
 ---
 
@@ -549,7 +549,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#create StaticWebAppCustomDomain#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#create StaticWebAppCustomDomain#create}.
 
 ---
 
@@ -557,7 +557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#delete StaticWebAppCustomDomain#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#delete StaticWebAppCustomDomain#delete}.
 
 ---
 
@@ -565,7 +565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#read StaticWebAppCustomDomain#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#read StaticWebAppCustomDomain#read}.
 
 ---
 
@@ -695,7 +695,7 @@ The construct id used in the generated config for the StaticWebAppCustomDomain t
 
 The id of the existing StaticWebAppCustomDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1045,10 +1045,10 @@ staticWebAppCustomDomain.StaticWebAppCustomDomainConfig(
 | <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainConfig.property.domainName">domain_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#domain_name StaticWebAppCustomDomain#domain_name}. |
-| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainConfig.property.staticWebAppId">static_web_app_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#static_web_app_id StaticWebAppCustomDomain#static_web_app_id}. |
-| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainConfig.property.validationType">validation_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#validation_type StaticWebAppCustomDomain#validation_type}. |
-| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#id StaticWebAppCustomDomain#id}. |
+| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainConfig.property.domainName">domain_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#domain_name StaticWebAppCustomDomain#domain_name}. |
+| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainConfig.property.staticWebAppId">static_web_app_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#static_web_app_id StaticWebAppCustomDomain#static_web_app_id}. |
+| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainConfig.property.validationType">validation_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#validation_type StaticWebAppCustomDomain#validation_type}. |
+| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#id StaticWebAppCustomDomain#id}. |
 | <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainTimeouts">StaticWebAppCustomDomainTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1131,7 +1131,7 @@ domain_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#domain_name StaticWebAppCustomDomain#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#domain_name StaticWebAppCustomDomain#domain_name}.
 
 ---
 
@@ -1143,7 +1143,7 @@ static_web_app_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#static_web_app_id StaticWebAppCustomDomain#static_web_app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#static_web_app_id StaticWebAppCustomDomain#static_web_app_id}.
 
 ---
 
@@ -1155,7 +1155,7 @@ validation_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#validation_type StaticWebAppCustomDomain#validation_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#validation_type StaticWebAppCustomDomain#validation_type}.
 
 ---
 
@@ -1167,7 +1167,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#id StaticWebAppCustomDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#id StaticWebAppCustomDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1184,7 +1184,7 @@ timeouts: StaticWebAppCustomDomainTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#timeouts StaticWebAppCustomDomain#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#timeouts StaticWebAppCustomDomain#timeouts}
 
 ---
 
@@ -1206,9 +1206,9 @@ staticWebAppCustomDomain.StaticWebAppCustomDomainTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#create StaticWebAppCustomDomain#create}. |
-| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#delete StaticWebAppCustomDomain#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#read StaticWebAppCustomDomain#read}. |
+| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#create StaticWebAppCustomDomain#create}. |
+| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#delete StaticWebAppCustomDomain#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#read StaticWebAppCustomDomain#read}. |
 
 ---
 
@@ -1220,7 +1220,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#create StaticWebAppCustomDomain#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#create StaticWebAppCustomDomain#create}.
 
 ---
 
@@ -1232,7 +1232,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#delete StaticWebAppCustomDomain#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#delete StaticWebAppCustomDomain#delete}.
 
 ---
 
@@ -1244,7 +1244,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/static_web_app_custom_domain#read StaticWebAppCustomDomain#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/static_web_app_custom_domain#read StaticWebAppCustomDomain#read}.
 
 ---
 

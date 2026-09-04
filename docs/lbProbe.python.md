@@ -4,7 +4,7 @@
 
 ### LbProbe <a name="LbProbe" id="@cdktn/provider-azurerm.lbProbe.LbProbe"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe azurerm_lb_probe}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe azurerm_lb_probe}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer"></a>
 
@@ -26,6 +26,7 @@ lbProbe.LbProbe(
   port: typing.Union[int, float],
   id: str = None,
   interval_in_seconds: typing.Union[int, float] = None,
+  no_healthy_backends_behavior: str = None,
   number_of_probes: typing.Union[int, float] = None,
   probe_threshold: typing.Union[int, float] = None,
   protocol: str = None,
@@ -45,15 +46,16 @@ lbProbe.LbProbe(
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.loadbalancerId">loadbalancer_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#loadbalancer_id LbProbe#loadbalancer_id}. |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#name LbProbe#name}. |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#port LbProbe#port}. |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#id LbProbe#id}. |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.intervalInSeconds">interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#interval_in_seconds LbProbe#interval_in_seconds}. |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.numberOfProbes">number_of_probes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#number_of_probes LbProbe#number_of_probes}. |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.probeThreshold">probe_threshold</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#probe_threshold LbProbe#probe_threshold}. |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#protocol LbProbe#protocol}. |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.requestPath">request_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#request_path LbProbe#request_path}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.loadbalancerId">loadbalancer_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#loadbalancer_id LbProbe#loadbalancer_id}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#name LbProbe#name}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#port LbProbe#port}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#id LbProbe#id}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.intervalInSeconds">interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#interval_in_seconds LbProbe#interval_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.noHealthyBackendsBehavior">no_healthy_backends_behavior</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#no_healthy_backends_behavior LbProbe#no_healthy_backends_behavior}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.numberOfProbes">number_of_probes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#number_of_probes LbProbe#number_of_probes}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.probeThreshold">probe_threshold</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#probe_threshold LbProbe#probe_threshold}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#protocol LbProbe#protocol}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.requestPath">request_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#request_path LbProbe#request_path}. |
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeTimeouts">LbProbeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -122,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#loadbalancer_id LbProbe#loadbalancer_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#loadbalancer_id LbProbe#loadbalancer_id}.
 
 ---
 
@@ -130,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#name LbProbe#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#name LbProbe#name}.
 
 ---
 
@@ -138,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#port LbProbe#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#port LbProbe#port}.
 
 ---
 
@@ -146,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#id LbProbe#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#id LbProbe#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +159,15 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#interval_in_seconds LbProbe#interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#interval_in_seconds LbProbe#interval_in_seconds}.
+
+---
+
+##### `no_healthy_backends_behavior`<sup>Optional</sup> <a name="no_healthy_backends_behavior" id="@cdktn/provider-azurerm.lbProbe.LbProbe.Initializer.parameter.noHealthyBackendsBehavior"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#no_healthy_backends_behavior LbProbe#no_healthy_backends_behavior}.
 
 ---
 
@@ -165,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#number_of_probes LbProbe#number_of_probes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#number_of_probes LbProbe#number_of_probes}.
 
 ---
 
@@ -173,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#probe_threshold LbProbe#probe_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#probe_threshold LbProbe#probe_threshold}.
 
 ---
 
@@ -181,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#protocol LbProbe#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#protocol LbProbe#protocol}.
 
 ---
 
@@ -189,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#request_path LbProbe#request_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#request_path LbProbe#request_path}.
 
 ---
 
@@ -199,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#timeouts LbProbe#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#timeouts LbProbe#timeouts}
 
 ---
 
@@ -234,6 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.resetIntervalInSeconds">reset_interval_in_seconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.resetNoHealthyBackendsBehavior">reset_no_healthy_backends_behavior</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.resetNumberOfProbes">reset_number_of_probes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.resetProbeThreshold">reset_probe_threshold</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.resetProtocol">reset_protocol</a></code> | *No description.* |
@@ -605,7 +616,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#create LbProbe#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#create LbProbe#create}.
 
 ---
 
@@ -613,7 +624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#delete LbProbe#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#delete LbProbe#delete}.
 
 ---
 
@@ -621,7 +632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#read LbProbe#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#read LbProbe#read}.
 
 ---
 
@@ -629,7 +640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#update LbProbe#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#update LbProbe#update}.
 
 ---
 
@@ -643,6 +654,12 @@ def reset_id() -> None
 
 ```python
 def reset_interval_in_seconds() -> None
+```
+
+##### `reset_no_healthy_backends_behavior` <a name="reset_no_healthy_backends_behavior" id="@cdktn/provider-azurerm.lbProbe.LbProbe.resetNoHealthyBackendsBehavior"></a>
+
+```python
+def reset_no_healthy_backends_behavior() -> None
 ```
 
 ##### `reset_number_of_probes` <a name="reset_number_of_probes" id="@cdktn/provider-azurerm.lbProbe.LbProbe.resetNumberOfProbes"></a>
@@ -789,7 +806,7 @@ The construct id used in the generated config for the LbProbe to import.
 
 The id of the existing LbProbe that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -825,6 +842,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.property.intervalInSecondsInput">interval_in_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.property.loadbalancerIdInput">loadbalancer_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.property.noHealthyBackendsBehaviorInput">no_healthy_backends_behavior_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.property.numberOfProbesInput">number_of_probes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.property.portInput">port_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.property.probeThresholdInput">probe_threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -835,6 +853,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.property.intervalInSeconds">interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.property.loadbalancerId">loadbalancer_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.property.noHealthyBackendsBehavior">no_healthy_backends_behavior</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.property.numberOfProbes">number_of_probes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.property.port">port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbe.property.probeThreshold">probe_threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -1045,6 +1064,16 @@ name_input: str
 
 ---
 
+##### `no_healthy_backends_behavior_input`<sup>Optional</sup> <a name="no_healthy_backends_behavior_input" id="@cdktn/provider-azurerm.lbProbe.LbProbe.property.noHealthyBackendsBehaviorInput"></a>
+
+```python
+no_healthy_backends_behavior_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `number_of_probes_input`<sup>Optional</sup> <a name="number_of_probes_input" id="@cdktn/provider-azurerm.lbProbe.LbProbe.property.numberOfProbesInput"></a>
 
 ```python
@@ -1145,6 +1174,16 @@ name: str
 
 ---
 
+##### `no_healthy_backends_behavior`<sup>Required</sup> <a name="no_healthy_backends_behavior" id="@cdktn/provider-azurerm.lbProbe.LbProbe.property.noHealthyBackendsBehavior"></a>
+
+```python
+no_healthy_backends_behavior: str
+```
+
+- *Type:* str
+
+---
+
 ##### `number_of_probes`<sup>Required</sup> <a name="number_of_probes" id="@cdktn/provider-azurerm.lbProbe.LbProbe.property.numberOfProbes"></a>
 
 ```python
@@ -1235,6 +1274,7 @@ lbProbe.LbProbeConfig(
   port: typing.Union[int, float],
   id: str = None,
   interval_in_seconds: typing.Union[int, float] = None,
+  no_healthy_backends_behavior: str = None,
   number_of_probes: typing.Union[int, float] = None,
   probe_threshold: typing.Union[int, float] = None,
   protocol: str = None,
@@ -1254,15 +1294,16 @@ lbProbe.LbProbeConfig(
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.loadbalancerId">loadbalancer_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#loadbalancer_id LbProbe#loadbalancer_id}. |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#name LbProbe#name}. |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#port LbProbe#port}. |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#id LbProbe#id}. |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.intervalInSeconds">interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#interval_in_seconds LbProbe#interval_in_seconds}. |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.numberOfProbes">number_of_probes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#number_of_probes LbProbe#number_of_probes}. |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.probeThreshold">probe_threshold</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#probe_threshold LbProbe#probe_threshold}. |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#protocol LbProbe#protocol}. |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.requestPath">request_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#request_path LbProbe#request_path}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.loadbalancerId">loadbalancer_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#loadbalancer_id LbProbe#loadbalancer_id}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#name LbProbe#name}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#port LbProbe#port}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#id LbProbe#id}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.intervalInSeconds">interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#interval_in_seconds LbProbe#interval_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.noHealthyBackendsBehavior">no_healthy_backends_behavior</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#no_healthy_backends_behavior LbProbe#no_healthy_backends_behavior}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.numberOfProbes">number_of_probes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#number_of_probes LbProbe#number_of_probes}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.probeThreshold">probe_threshold</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#probe_threshold LbProbe#probe_threshold}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.protocol">protocol</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#protocol LbProbe#protocol}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.requestPath">request_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#request_path LbProbe#request_path}. |
 | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeTimeouts">LbProbeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1345,7 +1386,7 @@ loadbalancer_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#loadbalancer_id LbProbe#loadbalancer_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#loadbalancer_id LbProbe#loadbalancer_id}.
 
 ---
 
@@ -1357,7 +1398,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#name LbProbe#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#name LbProbe#name}.
 
 ---
 
@@ -1369,7 +1410,7 @@ port: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#port LbProbe#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#port LbProbe#port}.
 
 ---
 
@@ -1381,7 +1422,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#id LbProbe#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#id LbProbe#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1396,7 +1437,19 @@ interval_in_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#interval_in_seconds LbProbe#interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#interval_in_seconds LbProbe#interval_in_seconds}.
+
+---
+
+##### `no_healthy_backends_behavior`<sup>Optional</sup> <a name="no_healthy_backends_behavior" id="@cdktn/provider-azurerm.lbProbe.LbProbeConfig.property.noHealthyBackendsBehavior"></a>
+
+```python
+no_healthy_backends_behavior: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#no_healthy_backends_behavior LbProbe#no_healthy_backends_behavior}.
 
 ---
 
@@ -1408,7 +1461,7 @@ number_of_probes: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#number_of_probes LbProbe#number_of_probes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#number_of_probes LbProbe#number_of_probes}.
 
 ---
 
@@ -1420,7 +1473,7 @@ probe_threshold: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#probe_threshold LbProbe#probe_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#probe_threshold LbProbe#probe_threshold}.
 
 ---
 
@@ -1432,7 +1485,7 @@ protocol: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#protocol LbProbe#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#protocol LbProbe#protocol}.
 
 ---
 
@@ -1444,7 +1497,7 @@ request_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#request_path LbProbe#request_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#request_path LbProbe#request_path}.
 
 ---
 
@@ -1458,7 +1511,7 @@ timeouts: LbProbeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#timeouts LbProbe#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#timeouts LbProbe#timeouts}
 
 ---
 
@@ -1481,10 +1534,10 @@ lbProbe.LbProbeTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#create LbProbe#create}. |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#delete LbProbe#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#read LbProbe#read}. |
-| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#update LbProbe#update}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#create LbProbe#create}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#delete LbProbe#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#read LbProbe#read}. |
+| <code><a href="#@cdktn/provider-azurerm.lbProbe.LbProbeTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#update LbProbe#update}. |
 
 ---
 
@@ -1496,7 +1549,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#create LbProbe#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#create LbProbe#create}.
 
 ---
 
@@ -1508,7 +1561,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#delete LbProbe#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#delete LbProbe#delete}.
 
 ---
 
@@ -1520,7 +1573,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#read LbProbe#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#read LbProbe#read}.
 
 ---
 
@@ -1532,7 +1585,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#update LbProbe#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#update LbProbe#update}.
 
 ---
 

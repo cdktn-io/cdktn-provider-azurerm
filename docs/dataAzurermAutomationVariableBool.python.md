@@ -4,7 +4,7 @@
 
 ### DataAzurermAutomationVariableBool <a name="DataAzurermAutomationVariableBool" id="@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool azurerm_automation_variable_bool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool azurerm_automation_variable_bool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBool.Initializer"></a>
 
@@ -40,10 +40,10 @@ dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBool(
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBool.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBool.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBool.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBool.Initializer.parameter.automationAccountName">automation_account_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#automation_account_name DataAzurermAutomationVariableBool#automation_account_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBool.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#name DataAzurermAutomationVariableBool#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBool.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#resource_group_name DataAzurermAutomationVariableBool#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#id DataAzurermAutomationVariableBool#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBool.Initializer.parameter.automationAccountName">automation_account_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#automation_account_name DataAzurermAutomationVariableBool#automation_account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBool.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#name DataAzurermAutomationVariableBool#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBool.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#resource_group_name DataAzurermAutomationVariableBool#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#id DataAzurermAutomationVariableBool#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBool.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBoolTimeouts">DataAzurermAutomationVariableBoolTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#automation_account_name DataAzurermAutomationVariableBool#automation_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#automation_account_name DataAzurermAutomationVariableBool#automation_account_name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#name DataAzurermAutomationVariableBool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#name DataAzurermAutomationVariableBool#name}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#resource_group_name DataAzurermAutomationVariableBool#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#resource_group_name DataAzurermAutomationVariableBool#resource_group_name}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#id DataAzurermAutomationVariableBool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#id DataAzurermAutomationVariableBool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -149,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#timeouts DataAzurermAutomationVariableBool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#timeouts DataAzurermAutomationVariableBool#timeouts}
 
 ---
 
@@ -433,7 +433,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#read DataAzurermAutomationVariableBool#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#read DataAzurermAutomationVariableBool#read}.
 
 ---
 
@@ -563,7 +563,7 @@ The construct id used in the generated config for the DataAzurermAutomationVaria
 
 The id of the existing DataAzurermAutomationVariableBool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -913,10 +913,10 @@ dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBoolConfig(
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBoolConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBoolConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBoolConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBoolConfig.property.automationAccountName">automation_account_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#automation_account_name DataAzurermAutomationVariableBool#automation_account_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBoolConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#name DataAzurermAutomationVariableBool#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBoolConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#resource_group_name DataAzurermAutomationVariableBool#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#id DataAzurermAutomationVariableBool#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBoolConfig.property.automationAccountName">automation_account_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#automation_account_name DataAzurermAutomationVariableBool#automation_account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBoolConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#name DataAzurermAutomationVariableBool#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBoolConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#resource_group_name DataAzurermAutomationVariableBool#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#id DataAzurermAutomationVariableBool#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBoolConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBoolTimeouts">DataAzurermAutomationVariableBoolTimeouts</a></code> | timeouts block. |
 
 ---
@@ -999,7 +999,7 @@ automation_account_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#automation_account_name DataAzurermAutomationVariableBool#automation_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#automation_account_name DataAzurermAutomationVariableBool#automation_account_name}.
 
 ---
 
@@ -1011,7 +1011,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#name DataAzurermAutomationVariableBool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#name DataAzurermAutomationVariableBool#name}.
 
 ---
 
@@ -1023,7 +1023,7 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#resource_group_name DataAzurermAutomationVariableBool#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#resource_group_name DataAzurermAutomationVariableBool#resource_group_name}.
 
 ---
 
@@ -1035,7 +1035,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#id DataAzurermAutomationVariableBool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#id DataAzurermAutomationVariableBool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1052,7 +1052,7 @@ timeouts: DataAzurermAutomationVariableBoolTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#timeouts DataAzurermAutomationVariableBool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#timeouts DataAzurermAutomationVariableBool#timeouts}
 
 ---
 
@@ -1072,7 +1072,7 @@ dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBoolTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBoolTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#read DataAzurermAutomationVariableBool#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermAutomationVariableBool.DataAzurermAutomationVariableBoolTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#read DataAzurermAutomationVariableBool#read}. |
 
 ---
 
@@ -1084,7 +1084,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/automation_variable_bool#read DataAzurermAutomationVariableBool#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/automation_variable_bool#read DataAzurermAutomationVariableBool#read}.
 
 ---
 

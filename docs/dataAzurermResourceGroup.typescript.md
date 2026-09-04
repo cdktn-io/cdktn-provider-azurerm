@@ -4,7 +4,7 @@
 
 ### DataAzurermResourceGroup <a name="DataAzurermResourceGroup" id="@cdktn/provider-azurerm.dataAzurermResourceGroup.DataAzurermResourceGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/resource_group azurerm_resource_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/resource_group azurerm_resource_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermResourceGroup.DataAzurermResourceGroup.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermResourceGroup t
 
 The id of the existing DataAzurermResourceGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/resource_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/resource_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -707,8 +707,8 @@ const dataAzurermResourceGroupConfig: dataAzurermResourceGroup.DataAzurermResour
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermResourceGroup.DataAzurermResourceGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermResourceGroup.DataAzurermResourceGroupConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermResourceGroup.DataAzurermResourceGroupConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermResourceGroup.DataAzurermResourceGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/resource_group#name DataAzurermResourceGroup#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermResourceGroup.DataAzurermResourceGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/resource_group#id DataAzurermResourceGroup#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermResourceGroup.DataAzurermResourceGroupConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/resource_group#name DataAzurermResourceGroup#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermResourceGroup.DataAzurermResourceGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/resource_group#id DataAzurermResourceGroup#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermResourceGroup.DataAzurermResourceGroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermResourceGroup.DataAzurermResourceGroupTimeouts">DataAzurermResourceGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -791,7 +791,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/resource_group#name DataAzurermResourceGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/resource_group#name DataAzurermResourceGroup#name}.
 
 ---
 
@@ -803,7 +803,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/resource_group#id DataAzurermResourceGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/resource_group#id DataAzurermResourceGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -820,7 +820,7 @@ public readonly timeouts: DataAzurermResourceGroupTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/resource_group#timeouts DataAzurermResourceGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/resource_group#timeouts DataAzurermResourceGroup#timeouts}
 
 ---
 
@@ -838,7 +838,7 @@ const dataAzurermResourceGroupTimeouts: dataAzurermResourceGroup.DataAzurermReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermResourceGroup.DataAzurermResourceGroupTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/resource_group#read DataAzurermResourceGroup#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermResourceGroup.DataAzurermResourceGroupTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/resource_group#read DataAzurermResourceGroup#read}. |
 
 ---
 
@@ -850,7 +850,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/resource_group#read DataAzurermResourceGroup#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/resource_group#read DataAzurermResourceGroup#read}.
 
 ---
 

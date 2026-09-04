@@ -4,7 +4,7 @@
 
 ### DataAzurermHealthcareService <a name="DataAzurermHealthcareService" id="@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service azurerm_healthcare_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service azurerm_healthcare_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareService.Initializer"></a>
 
@@ -40,10 +40,10 @@ dataAzurermHealthcareService.DataAzurermHealthcareService(
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareService.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareService.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareService.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareService.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#location DataAzurermHealthcareService#location}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareService.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#name DataAzurermHealthcareService#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareService.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#resource_group_name DataAzurermHealthcareService#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareService.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#id DataAzurermHealthcareService#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareService.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#location DataAzurermHealthcareService#location}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareService.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#name DataAzurermHealthcareService#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareService.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#resource_group_name DataAzurermHealthcareService#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareService.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#id DataAzurermHealthcareService#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareService.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareServiceTimeouts">DataAzurermHealthcareServiceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#location DataAzurermHealthcareService#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#location DataAzurermHealthcareService#location}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#name DataAzurermHealthcareService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#name DataAzurermHealthcareService#name}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#resource_group_name DataAzurermHealthcareService#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#resource_group_name DataAzurermHealthcareService#resource_group_name}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#id DataAzurermHealthcareService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#id DataAzurermHealthcareService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -149,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#timeouts DataAzurermHealthcareService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#timeouts DataAzurermHealthcareService#timeouts}
 
 ---
 
@@ -433,7 +433,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#read DataAzurermHealthcareService#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#read DataAzurermHealthcareService#read}.
 
 ---
 
@@ -563,7 +563,7 @@ The construct id used in the generated config for the DataAzurermHealthcareServi
 
 The id of the existing DataAzurermHealthcareService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -968,10 +968,10 @@ dataAzurermHealthcareService.DataAzurermHealthcareServiceConfig(
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareServiceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareServiceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareServiceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareServiceConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#location DataAzurermHealthcareService#location}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareServiceConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#name DataAzurermHealthcareService#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareServiceConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#resource_group_name DataAzurermHealthcareService#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareServiceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#id DataAzurermHealthcareService#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareServiceConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#location DataAzurermHealthcareService#location}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareServiceConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#name DataAzurermHealthcareService#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareServiceConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#resource_group_name DataAzurermHealthcareService#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareServiceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#id DataAzurermHealthcareService#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareServiceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareServiceTimeouts">DataAzurermHealthcareServiceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1054,7 +1054,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#location DataAzurermHealthcareService#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#location DataAzurermHealthcareService#location}.
 
 ---
 
@@ -1066,7 +1066,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#name DataAzurermHealthcareService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#name DataAzurermHealthcareService#name}.
 
 ---
 
@@ -1078,7 +1078,7 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#resource_group_name DataAzurermHealthcareService#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#resource_group_name DataAzurermHealthcareService#resource_group_name}.
 
 ---
 
@@ -1090,7 +1090,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#id DataAzurermHealthcareService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#id DataAzurermHealthcareService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1107,7 +1107,7 @@ timeouts: DataAzurermHealthcareServiceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#timeouts DataAzurermHealthcareService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#timeouts DataAzurermHealthcareService#timeouts}
 
 ---
 
@@ -1138,7 +1138,7 @@ dataAzurermHealthcareService.DataAzurermHealthcareServiceTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareServiceTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#read DataAzurermHealthcareService#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareService.DataAzurermHealthcareServiceTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#read DataAzurermHealthcareService#read}. |
 
 ---
 
@@ -1150,7 +1150,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/data-sources/healthcare_service#read DataAzurermHealthcareService#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/healthcare_service#read DataAzurermHealthcareService#read}.
 
 ---
 

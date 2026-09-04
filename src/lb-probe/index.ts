@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,66 +13,70 @@ import * as cdktn from 'cdktn';
 
 export interface LbProbeConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#id LbProbe#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#id LbProbe#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#interval_in_seconds LbProbe#interval_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#interval_in_seconds LbProbe#interval_in_seconds}
   */
   readonly intervalInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#loadbalancer_id LbProbe#loadbalancer_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#loadbalancer_id LbProbe#loadbalancer_id}
   */
   readonly loadbalancerId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#name LbProbe#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#name LbProbe#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#number_of_probes LbProbe#number_of_probes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#no_healthy_backends_behavior LbProbe#no_healthy_backends_behavior}
+  */
+  readonly noHealthyBackendsBehavior?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#number_of_probes LbProbe#number_of_probes}
   */
   readonly numberOfProbes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#port LbProbe#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#port LbProbe#port}
   */
   readonly port: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#probe_threshold LbProbe#probe_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#probe_threshold LbProbe#probe_threshold}
   */
   readonly probeThreshold?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#protocol LbProbe#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#protocol LbProbe#protocol}
   */
   readonly protocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#request_path LbProbe#request_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#request_path LbProbe#request_path}
   */
   readonly requestPath?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#timeouts LbProbe#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#timeouts LbProbe#timeouts}
   */
   readonly timeouts?: LbProbeTimeouts;
 }
 export interface LbProbeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#create LbProbe#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#create LbProbe#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#delete LbProbe#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#delete LbProbe#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#read LbProbe#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#read LbProbe#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#update LbProbe#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#update LbProbe#update}
   */
   readonly update?: string;
 }
@@ -253,7 +257,7 @@ export class LbProbeTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe azurerm_lb_probe}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe azurerm_lb_probe}
 */
 export class LbProbe extends cdktn.TerraformResource {
 
@@ -269,7 +273,7 @@ export class LbProbe extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a LbProbe resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LbProbe to import
-  * @param importFromId The id of the existing LbProbe that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LbProbe that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LbProbe to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -281,7 +285,7 @@ export class LbProbe extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/lb_probe azurerm_lb_probe} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/lb_probe azurerm_lb_probe} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -292,7 +296,7 @@ export class LbProbe extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_lb_probe',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '5.3.0',
+        providerVersion: '5.4.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -307,6 +311,7 @@ export class LbProbe extends cdktn.TerraformResource {
     this._intervalInSeconds = config.intervalInSeconds;
     this._loadbalancerId = config.loadbalancerId;
     this._name = config.name;
+    this._noHealthyBackendsBehavior = config.noHealthyBackendsBehavior;
     this._numberOfProbes = config.numberOfProbes;
     this._port = config.port;
     this._probeThreshold = config.probeThreshold;
@@ -380,6 +385,22 @@ export class LbProbe extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // no_healthy_backends_behavior - computed: false, optional: true, required: false
+  private _noHealthyBackendsBehavior?: string; 
+  public get noHealthyBackendsBehavior() {
+    return this.getStringAttribute('no_healthy_backends_behavior');
+  }
+  public set noHealthyBackendsBehavior(value: string) {
+    this._noHealthyBackendsBehavior = value;
+  }
+  public resetNoHealthyBackendsBehavior() {
+    this._noHealthyBackendsBehavior = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noHealthyBackendsBehaviorInput() {
+    return this._noHealthyBackendsBehavior;
   }
 
   // number_of_probes - computed: false, optional: true, required: false
@@ -485,6 +506,7 @@ export class LbProbe extends cdktn.TerraformResource {
       interval_in_seconds: cdktn.numberToTerraform(this._intervalInSeconds),
       loadbalancer_id: cdktn.stringToTerraform(this._loadbalancerId),
       name: cdktn.stringToTerraform(this._name),
+      no_healthy_backends_behavior: cdktn.stringToTerraform(this._noHealthyBackendsBehavior),
       number_of_probes: cdktn.numberToTerraform(this._numberOfProbes),
       port: cdktn.numberToTerraform(this._port),
       probe_threshold: cdktn.numberToTerraform(this._probeThreshold),
@@ -516,6 +538,12 @@ export class LbProbe extends cdktn.TerraformResource {
       },
       name: {
         value: cdktn.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      no_healthy_backends_behavior: {
+        value: cdktn.stringToHclTerraform(this._noHealthyBackendsBehavior),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

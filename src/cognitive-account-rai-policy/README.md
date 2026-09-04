@@ -1,3 +1,3 @@
 # `azurerm_cognitive_account_rai_policy`
 
-Refer to the Terraform Registry for docs: [`azurerm_cognitive_account_rai_policy`](https://registry.terraform.io/providers/hashicorp/azurerm/5.3.0/docs/resources/cognitive_account_rai_policy).
+Refer to the Terraform Registry for docs: [`azurerm_cognitive_account_rai_policy`](https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/resources/cognitive_account_rai_policy).
