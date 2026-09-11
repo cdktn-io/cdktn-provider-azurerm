@@ -4,7 +4,7 @@
 
 ### DataAzurermPublicIpPrefix <a name="DataAzurermPublicIpPrefix" id="@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefix"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/public_ip_prefix azurerm_public_ip_prefix}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/data-sources/public_ip_prefix azurerm_public_ip_prefix}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefix.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermPublicIpPrefix 
 
 The id of the existing DataAzurermPublicIpPrefix that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/public_ip_prefix#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/data-sources/public_ip_prefix#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -442,7 +442,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefix.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefix.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefix.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefix.property.customIpPrefixId">customIpPrefixId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefix.property.ipPrefix">ipPrefix</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefix.property.ipVersion">ipVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefix.property.location">location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefix.property.prefixLength">prefixLength</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefix.property.sku">sku</a></code> | <code>string</code> | *No description.* |
@@ -582,10 +584,30 @@ public readonly provider: TerraformProvider;
 
 ---
 
+##### `customIpPrefixId`<sup>Required</sup> <a name="customIpPrefixId" id="@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefix.property.customIpPrefixId"></a>
+
+```typescript
+public readonly customIpPrefixId: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `ipPrefix`<sup>Required</sup> <a name="ipPrefix" id="@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefix.property.ipPrefix"></a>
 
 ```typescript
 public readonly ipPrefix: string;
+```
+
+- *Type:* string
+
+---
+
+##### `ipVersion`<sup>Required</sup> <a name="ipVersion" id="@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefix.property.ipVersion"></a>
+
+```typescript
+public readonly ipVersion: string;
 ```
 
 - *Type:* string
@@ -773,9 +795,9 @@ const dataAzurermPublicIpPrefixConfig: dataAzurermPublicIpPrefix.DataAzurermPubl
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefixConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefixConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefixConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefixConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/public_ip_prefix#name DataAzurermPublicIpPrefix#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefixConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/public_ip_prefix#resource_group_name DataAzurermPublicIpPrefix#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefixConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/public_ip_prefix#id DataAzurermPublicIpPrefix#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefixConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/data-sources/public_ip_prefix#name DataAzurermPublicIpPrefix#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefixConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/data-sources/public_ip_prefix#resource_group_name DataAzurermPublicIpPrefix#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefixConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/data-sources/public_ip_prefix#id DataAzurermPublicIpPrefix#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefixConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefixTimeouts">DataAzurermPublicIpPrefixTimeouts</a></code> | timeouts block. |
 
 ---
@@ -858,7 +880,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/public_ip_prefix#name DataAzurermPublicIpPrefix#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/data-sources/public_ip_prefix#name DataAzurermPublicIpPrefix#name}.
 
 ---
 
@@ -870,7 +892,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/public_ip_prefix#resource_group_name DataAzurermPublicIpPrefix#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/data-sources/public_ip_prefix#resource_group_name DataAzurermPublicIpPrefix#resource_group_name}.
 
 ---
 
@@ -882,7 +904,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/public_ip_prefix#id DataAzurermPublicIpPrefix#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/data-sources/public_ip_prefix#id DataAzurermPublicIpPrefix#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -899,7 +921,7 @@ public readonly timeouts: DataAzurermPublicIpPrefixTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/public_ip_prefix#timeouts DataAzurermPublicIpPrefix#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/data-sources/public_ip_prefix#timeouts DataAzurermPublicIpPrefix#timeouts}
 
 ---
 
@@ -917,7 +939,7 @@ const dataAzurermPublicIpPrefixTimeouts: dataAzurermPublicIpPrefix.DataAzurermPu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefixTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/public_ip_prefix#read DataAzurermPublicIpPrefix#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIpPrefix.DataAzurermPublicIpPrefixTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/data-sources/public_ip_prefix#read DataAzurermPublicIpPrefix#read}. |
 
 ---
 
@@ -929,7 +951,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.4.0/docs/data-sources/public_ip_prefix#read DataAzurermPublicIpPrefix#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/data-sources/public_ip_prefix#read DataAzurermPublicIpPrefix#read}.
 
 ---
 
