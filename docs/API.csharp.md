@@ -1350,6 +1350,7 @@ The following submodules are available:
 - [storageContainerImmutabilityPolicy](./storageContainerImmutabilityPolicy.csharp.md)
 - [storageDataLakeGen2Filesystem](./storageDataLakeGen2Filesystem.csharp.md)
 - [storageDataLakeGen2Path](./storageDataLakeGen2Path.csharp.md)
+- [storageDiscoveryWorkspace](./storageDiscoveryWorkspace.csharp.md)
 - [storageEncryptionScope](./storageEncryptionScope.csharp.md)
 - [storageManagementPolicy](./storageManagementPolicy.csharp.md)
 - [storageMover](./storageMover.csharp.md)

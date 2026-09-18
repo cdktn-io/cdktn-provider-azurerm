@@ -1350,6 +1350,7 @@ The following submodules are available:
 - [storageContainerImmutabilityPolicy](./storageContainerImmutabilityPolicy.go.md)
 - [storageDataLakeGen2Filesystem](./storageDataLakeGen2Filesystem.go.md)
 - [storageDataLakeGen2Path](./storageDataLakeGen2Path.go.md)
+- [storageDiscoveryWorkspace](./storageDiscoveryWorkspace.go.md)
 - [storageEncryptionScope](./storageEncryptionScope.go.md)
 - [storageManagementPolicy](./storageManagementPolicy.go.md)
 - [storageMover](./storageMover.go.md)

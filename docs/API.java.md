@@ -1350,6 +1350,7 @@ The following submodules are available:
 - [storageContainerImmutabilityPolicy](./storageContainerImmutabilityPolicy.java.md)
 - [storageDataLakeGen2Filesystem](./storageDataLakeGen2Filesystem.java.md)
 - [storageDataLakeGen2Path](./storageDataLakeGen2Path.java.md)
+- [storageDiscoveryWorkspace](./storageDiscoveryWorkspace.java.md)
 - [storageEncryptionScope](./storageEncryptionScope.java.md)
 - [storageManagementPolicy](./storageManagementPolicy.java.md)
 - [storageMover](./storageMover.java.md)
