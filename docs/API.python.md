@@ -1350,6 +1350,7 @@ The following submodules are available:
 - [storageContainerImmutabilityPolicy](./storageContainerImmutabilityPolicy.python.md)
 - [storageDataLakeGen2Filesystem](./storageDataLakeGen2Filesystem.python.md)
 - [storageDataLakeGen2Path](./storageDataLakeGen2Path.python.md)
+- [storageDiscoveryWorkspace](./storageDiscoveryWorkspace.python.md)
 - [storageEncryptionScope](./storageEncryptionScope.python.md)
 - [storageManagementPolicy](./storageManagementPolicy.python.md)
 - [storageMover](./storageMover.python.md)

@@ -1350,6 +1350,7 @@ The following submodules are available:
 - [storageContainerImmutabilityPolicy](./storageContainerImmutabilityPolicy.typescript.md)
 - [storageDataLakeGen2Filesystem](./storageDataLakeGen2Filesystem.typescript.md)
 - [storageDataLakeGen2Path](./storageDataLakeGen2Path.typescript.md)
+- [storageDiscoveryWorkspace](./storageDiscoveryWorkspace.typescript.md)
 - [storageEncryptionScope](./storageEncryptionScope.typescript.md)
 - [storageManagementPolicy](./storageManagementPolicy.typescript.md)
 - [storageMover](./storageMover.typescript.md)
