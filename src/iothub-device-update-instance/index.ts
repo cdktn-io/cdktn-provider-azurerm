@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/resources/iothub_device_update_instance
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/iothub_device_update_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +13,60 @@ import * as cdktn from 'cdktn';
 
 export interface IothubDeviceUpdateInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/resources/iothub_device_update_instance#device_update_account_id IothubDeviceUpdateInstance#device_update_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/iothub_device_update_instance#device_update_account_id IothubDeviceUpdateInstance#device_update_account_id}
   */
   readonly deviceUpdateAccountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/resources/iothub_device_update_instance#diagnostic_enabled IothubDeviceUpdateInstance#diagnostic_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/iothub_device_update_instance#diagnostic_enabled IothubDeviceUpdateInstance#diagnostic_enabled}
   */
   readonly diagnosticEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/resources/iothub_device_update_instance#id IothubDeviceUpdateInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/iothub_device_update_instance#id IothubDeviceUpdateInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/resources/iothub_device_update_instance#iothub_id IothubDeviceUpdateInstance#iothub_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/iothub_device_update_instance#iothub_id IothubDeviceUpdateInstance#iothub_id}
   */
   readonly iothubId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/resources/iothub_device_update_instance#name IothubDeviceUpdateInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/iothub_device_update_instance#name IothubDeviceUpdateInstance#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/resources/iothub_device_update_instance#tags IothubDeviceUpdateInstance#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/iothub_device_update_instance#tags IothubDeviceUpdateInstance#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * diagnostic_storage_account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/resources/iothub_device_update_instance#diagnostic_storage_account IothubDeviceUpdateInstance#diagnostic_storage_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/iothub_device_update_instance#diagnostic_storage_account IothubDeviceUpdateInstance#diagnostic_storage_account}
   */
   readonly diagnosticStorageAccount?: IothubDeviceUpdateInstanceDiagnosticStorageAccount;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/resources/iothub_device_update_instance#timeouts IothubDeviceUpdateInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/iothub_device_update_instance#timeouts IothubDeviceUpdateInstance#timeouts}
   */
   readonly timeouts?: IothubDeviceUpdateInstanceTimeouts;
 }
 export interface IothubDeviceUpdateInstanceDiagnosticStorageAccount {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/resources/iothub_device_update_instance#connection_string IothubDeviceUpdateInstance#connection_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/iothub_device_update_instance#connection_string IothubDeviceUpdateInstance#connection_string}
   */
-  readonly connectionString: string;
+  readonly connectionString?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/resources/iothub_device_update_instance#id IothubDeviceUpdateInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/iothub_device_update_instance#connection_string_wo IothubDeviceUpdateInstance#connection_string_wo}
+  */
+  readonly connectionStringWo?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/iothub_device_update_instance#connection_string_wo_version IothubDeviceUpdateInstance#connection_string_wo_version}
+  */
+  readonly connectionStringWoVersion?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/iothub_device_update_instance#id IothubDeviceUpdateInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -73,6 +81,8 @@ export function iothubDeviceUpdateInstanceDiagnosticStorageAccountToTerraform(st
   }
   return {
     connection_string: cdktn.stringToTerraform(struct!.connectionString),
+    connection_string_wo: cdktn.stringToTerraform(struct!.connectionStringWo),
+    connection_string_wo_version: cdktn.numberToTerraform(struct!.connectionStringWoVersion),
     id: cdktn.stringToTerraform(struct!.id),
   }
 }
@@ -89,6 +99,18 @@ export function iothubDeviceUpdateInstanceDiagnosticStorageAccountToHclTerraform
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    connection_string_wo: {
+      value: cdktn.stringToHclTerraform(struct!.connectionStringWo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    connection_string_wo_version: {
+      value: cdktn.numberToHclTerraform(struct!.connectionStringWoVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
     },
     id: {
       value: cdktn.stringToHclTerraform(struct!.id),
@@ -120,6 +142,14 @@ export class IothubDeviceUpdateInstanceDiagnosticStorageAccountOutputReference e
       hasAnyValues = true;
       internalValueResult.connectionString = this._connectionString;
     }
+    if (this._connectionStringWo !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connectionStringWo = this._connectionStringWo;
+    }
+    if (this._connectionStringWoVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connectionStringWoVersion = this._connectionStringWoVersion;
+    }
     if (this._id !== undefined) {
       hasAnyValues = true;
       internalValueResult.id = this._id;
@@ -131,16 +161,20 @@ export class IothubDeviceUpdateInstanceDiagnosticStorageAccountOutputReference e
     if (value === undefined) {
       this.isEmptyObject = false;
       this._connectionString = undefined;
+      this._connectionStringWo = undefined;
+      this._connectionStringWoVersion = undefined;
       this._id = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._connectionString = value.connectionString;
+      this._connectionStringWo = value.connectionStringWo;
+      this._connectionStringWoVersion = value.connectionStringWoVersion;
       this._id = value.id;
     }
   }
 
-  // connection_string - computed: false, optional: false, required: true
+  // connection_string - computed: false, optional: true, required: false
   private _connectionString?: string; 
   public get connectionString() {
     return this.getStringAttribute('connection_string');
@@ -148,9 +182,47 @@ export class IothubDeviceUpdateInstanceDiagnosticStorageAccountOutputReference e
   public set connectionString(value: string) {
     this._connectionString = value;
   }
+  public resetConnectionString() {
+    this._connectionString = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get connectionStringInput() {
     return this._connectionString;
+  }
+
+  // connection_string_wo - computed: false, optional: true, required: false
+  private _connectionStringWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
+  public get connectionStringWo() {
+    return this.getStringAttribute('connection_string_wo');
+  }
+  public set connectionStringWo(value: string) {
+    this._connectionStringWo = value;
+  }
+  public resetConnectionStringWo() {
+    this._connectionStringWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionStringWoInput() {
+    return this._connectionStringWo;
+  }
+
+  // connection_string_wo_version - computed: false, optional: true, required: false
+  private _connectionStringWoVersion?: number; 
+  public get connectionStringWoVersion() {
+    return this.getNumberAttribute('connection_string_wo_version');
+  }
+  public set connectionStringWoVersion(value: number) {
+    this._connectionStringWoVersion = value;
+  }
+  public resetConnectionStringWoVersion() {
+    this._connectionStringWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectionStringWoVersionInput() {
+    return this._connectionStringWoVersion;
   }
 
   // id - computed: false, optional: false, required: true
@@ -168,19 +240,19 @@ export class IothubDeviceUpdateInstanceDiagnosticStorageAccountOutputReference e
 }
 export interface IothubDeviceUpdateInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/resources/iothub_device_update_instance#create IothubDeviceUpdateInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/iothub_device_update_instance#create IothubDeviceUpdateInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/resources/iothub_device_update_instance#delete IothubDeviceUpdateInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/iothub_device_update_instance#delete IothubDeviceUpdateInstance#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/resources/iothub_device_update_instance#read IothubDeviceUpdateInstance#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/iothub_device_update_instance#read IothubDeviceUpdateInstance#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/resources/iothub_device_update_instance#update IothubDeviceUpdateInstance#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/iothub_device_update_instance#update IothubDeviceUpdateInstance#update}
   */
   readonly update?: string;
 }
@@ -361,7 +433,7 @@ export class IothubDeviceUpdateInstanceTimeoutsOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/resources/iothub_device_update_instance azurerm_iothub_device_update_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/iothub_device_update_instance azurerm_iothub_device_update_instance}
 */
 export class IothubDeviceUpdateInstance extends cdktn.TerraformResource {
 
@@ -377,7 +449,7 @@ export class IothubDeviceUpdateInstance extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IothubDeviceUpdateInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IothubDeviceUpdateInstance to import
-  * @param importFromId The id of the existing IothubDeviceUpdateInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/resources/iothub_device_update_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IothubDeviceUpdateInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/iothub_device_update_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IothubDeviceUpdateInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -389,7 +461,7 @@ export class IothubDeviceUpdateInstance extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.5.0/docs/resources/iothub_device_update_instance azurerm_iothub_device_update_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/iothub_device_update_instance azurerm_iothub_device_update_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -400,7 +472,7 @@ export class IothubDeviceUpdateInstance extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_iothub_device_update_instance',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '5.5.0',
+        providerVersion: '5.6.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

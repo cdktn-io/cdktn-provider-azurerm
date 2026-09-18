@@ -951,6 +951,7 @@ export * as storageContainer from './storage-container/index';
 export * as storageContainerImmutabilityPolicy from './storage-container-immutability-policy/index';
 export * as storageDataLakeGen2Filesystem from './storage-data-lake-gen2-filesystem/index';
 export * as storageDataLakeGen2Path from './storage-data-lake-gen2-path/index';
+export * as storageDiscoveryWorkspace from './storage-discovery-workspace/index';
 export * as storageEncryptionScope from './storage-encryption-scope/index';
 export * as storageManagementPolicy from './storage-management-policy/index';
 export * as storageMover from './storage-mover/index';

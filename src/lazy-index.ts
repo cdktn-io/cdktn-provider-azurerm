@@ -951,6 +951,7 @@ Object.defineProperty(exports, 'storageContainer', { get: function () { return r
 Object.defineProperty(exports, 'storageContainerImmutabilityPolicy', { get: function () { return require('./storage-container-immutability-policy'); } });
 Object.defineProperty(exports, 'storageDataLakeGen2Filesystem', { get: function () { return require('./storage-data-lake-gen2-filesystem'); } });
 Object.defineProperty(exports, 'storageDataLakeGen2Path', { get: function () { return require('./storage-data-lake-gen2-path'); } });
+Object.defineProperty(exports, 'storageDiscoveryWorkspace', { get: function () { return require('./storage-discovery-workspace'); } });
 Object.defineProperty(exports, 'storageEncryptionScope', { get: function () { return require('./storage-encryption-scope'); } });
 Object.defineProperty(exports, 'storageManagementPolicy', { get: function () { return require('./storage-management-policy'); } });
 Object.defineProperty(exports, 'storageMover', { get: function () { return require('./storage-mover'); } });
