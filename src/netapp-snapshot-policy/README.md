@@ -1,3 +1,3 @@
 # `azurerm_netapp_snapshot_policy`
 
-Refer to the Terraform Registry for docs: [`azurerm_netapp_snapshot_policy`](https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/netapp_snapshot_policy).
+Refer to the Terraform Registry for docs: [`azurerm_netapp_snapshot_policy`](https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/netapp_snapshot_policy).

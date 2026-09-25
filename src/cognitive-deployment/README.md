@@ -1,3 +1,3 @@
 # `azurerm_cognitive_deployment`
 
-Refer to the Terraform Registry for docs: [`azurerm_cognitive_deployment`](https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/cognitive_deployment).
+Refer to the Terraform Registry for docs: [`azurerm_cognitive_deployment`](https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/cognitive_deployment).
