@@ -1,3 +1,3 @@
 # `data_azurerm_subscriptions`
 
-Refer to the Terraform Registry for docs: [`data_azurerm_subscriptions`](https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/data-sources/subscriptions).
+Refer to the Terraform Registry for docs: [`data_azurerm_subscriptions`](https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/data-sources/subscriptions).

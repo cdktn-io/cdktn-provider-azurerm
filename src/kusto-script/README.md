@@ -1,3 +1,3 @@
 # `azurerm_kusto_script`
 
-Refer to the Terraform Registry for docs: [`azurerm_kusto_script`](https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/kusto_script).
+Refer to the Terraform Registry for docs: [`azurerm_kusto_script`](https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/kusto_script).

@@ -1,3 +1,3 @@
 # `azurerm_database_migration_service`
 
-Refer to the Terraform Registry for docs: [`azurerm_database_migration_service`](https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/database_migration_service).
+Refer to the Terraform Registry for docs: [`azurerm_database_migration_service`](https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/database_migration_service).

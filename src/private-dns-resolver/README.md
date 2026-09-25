@@ -1,3 +1,3 @@
 # `azurerm_private_dns_resolver`
 
-Refer to the Terraform Registry for docs: [`azurerm_private_dns_resolver`](https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/private_dns_resolver).
+Refer to the Terraform Registry for docs: [`azurerm_private_dns_resolver`](https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/private_dns_resolver).
