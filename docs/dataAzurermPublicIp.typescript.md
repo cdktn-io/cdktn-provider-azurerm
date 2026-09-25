@@ -4,7 +4,7 @@
 
 ### DataAzurermPublicIp <a name="DataAzurermPublicIp" id="@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/data-sources/public_ip azurerm_public_ip}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/data-sources/public_ip azurerm_public_ip}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermPublicIp to imp
 
 The id of the existing DataAzurermPublicIp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/data-sources/public_ip#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/data-sources/public_ip#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -446,14 +446,18 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.ddosProtectionMode">ddosProtectionMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.ddosProtectionPlanId">ddosProtectionPlanId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.domainNameLabel">domainNameLabel</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.domainNameLabelScope">domainNameLabelScope</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.edgeZone">edgeZone</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.fqdn">fqdn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.idleTimeoutInMinutes">idleTimeoutInMinutes</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.ipAddress">ipAddress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.ipTags">ipTags</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.ipVersion">ipVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.location">location</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.publicIpPrefixId">publicIpPrefixId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.reverseFqdn">reverseFqdn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.sku">sku</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.skuTier">skuTier</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.tags">tags</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIpTimeoutsOutputReference">DataAzurermPublicIpTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.zones">zones</a></code> | <code>string[]</code> | *No description.* |
@@ -629,6 +633,26 @@ public readonly domainNameLabel: string;
 
 ---
 
+##### `domainNameLabelScope`<sup>Required</sup> <a name="domainNameLabelScope" id="@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.domainNameLabelScope"></a>
+
+```typescript
+public readonly domainNameLabelScope: string;
+```
+
+- *Type:* string
+
+---
+
+##### `edgeZone`<sup>Required</sup> <a name="edgeZone" id="@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.edgeZone"></a>
+
+```typescript
+public readonly edgeZone: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `fqdn`<sup>Required</sup> <a name="fqdn" id="@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.fqdn"></a>
 
 ```typescript
@@ -689,6 +713,16 @@ public readonly location: string;
 
 ---
 
+##### `publicIpPrefixId`<sup>Required</sup> <a name="publicIpPrefixId" id="@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.publicIpPrefixId"></a>
+
+```typescript
+public readonly publicIpPrefixId: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `reverseFqdn`<sup>Required</sup> <a name="reverseFqdn" id="@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.reverseFqdn"></a>
 
 ```typescript
@@ -703,6 +737,16 @@ public readonly reverseFqdn: string;
 
 ```typescript
 public readonly sku: string;
+```
+
+- *Type:* string
+
+---
+
+##### `skuTier`<sup>Required</sup> <a name="skuTier" id="@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIp.property.skuTier"></a>
+
+```typescript
+public readonly skuTier: string;
 ```
 
 - *Type:* string
@@ -850,9 +894,9 @@ const dataAzurermPublicIpConfig: dataAzurermPublicIp.DataAzurermPublicIpConfig =
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIpConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIpConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIpConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIpConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/data-sources/public_ip#name DataAzurermPublicIp#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIpConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/data-sources/public_ip#resource_group_name DataAzurermPublicIp#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIpConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/data-sources/public_ip#id DataAzurermPublicIp#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIpConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/data-sources/public_ip#name DataAzurermPublicIp#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIpConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/data-sources/public_ip#resource_group_name DataAzurermPublicIp#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIpConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/data-sources/public_ip#id DataAzurermPublicIp#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIpConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIpTimeouts">DataAzurermPublicIpTimeouts</a></code> | timeouts block. |
 
 ---
@@ -935,7 +979,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/data-sources/public_ip#name DataAzurermPublicIp#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/data-sources/public_ip#name DataAzurermPublicIp#name}.
 
 ---
 
@@ -947,7 +991,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/data-sources/public_ip#resource_group_name DataAzurermPublicIp#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/data-sources/public_ip#resource_group_name DataAzurermPublicIp#resource_group_name}.
 
 ---
 
@@ -959,7 +1003,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/data-sources/public_ip#id DataAzurermPublicIp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/data-sources/public_ip#id DataAzurermPublicIp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -976,7 +1020,7 @@ public readonly timeouts: DataAzurermPublicIpTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/data-sources/public_ip#timeouts DataAzurermPublicIp#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/data-sources/public_ip#timeouts DataAzurermPublicIp#timeouts}
 
 ---
 
@@ -994,7 +1038,7 @@ const dataAzurermPublicIpTimeouts: dataAzurermPublicIp.DataAzurermPublicIpTimeou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIpTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/data-sources/public_ip#read DataAzurermPublicIp#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermPublicIp.DataAzurermPublicIpTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/data-sources/public_ip#read DataAzurermPublicIp#read}. |
 
 ---
 
@@ -1006,7 +1050,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/data-sources/public_ip#read DataAzurermPublicIp#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/data-sources/public_ip#read DataAzurermPublicIp#read}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### MongoCluster <a name="MongoCluster" id="@cdktn/provider-azurerm.mongoCluster.MongoCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster azurerm_mongo_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster azurerm_mongo_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mongoCluster.MongoCluster.Initializer"></a>
 
@@ -695,7 +695,7 @@ The construct id used in the generated config for the MongoCluster to import.
 
 The id of the existing MongoCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1472,31 +1472,31 @@ const mongoClusterConfig: mongoCluster.MongoClusterConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#location MongoCluster#location}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#name MongoCluster#name}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#resource_group_name MongoCluster#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.administratorPassword">administratorPassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#administrator_password MongoCluster#administrator_password}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.administratorUsername">administratorUsername</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#administrator_username MongoCluster#administrator_username}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.authenticationMethods">authenticationMethods</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#authentication_methods MongoCluster#authentication_methods}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.computeTier">computeTier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#compute_tier MongoCluster#compute_tier}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.cosmosDbNetworkBypassEnabled">cosmosDbNetworkBypassEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#cosmos_db_network_bypass_enabled MongoCluster#cosmos_db_network_bypass_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.createMode">createMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#create_mode MongoCluster#create_mode}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#location MongoCluster#location}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#name MongoCluster#name}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#resource_group_name MongoCluster#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.administratorPassword">administratorPassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#administrator_password MongoCluster#administrator_password}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.administratorUsername">administratorUsername</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#administrator_username MongoCluster#administrator_username}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.authenticationMethods">authenticationMethods</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#authentication_methods MongoCluster#authentication_methods}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.computeTier">computeTier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#compute_tier MongoCluster#compute_tier}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.cosmosDbNetworkBypassEnabled">cosmosDbNetworkBypassEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#cosmos_db_network_bypass_enabled MongoCluster#cosmos_db_network_bypass_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.createMode">createMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#create_mode MongoCluster#create_mode}. |
 | <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.customerManagedKey">customerManagedKey</a></code> | <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterCustomerManagedKey">MongoClusterCustomerManagedKey</a></code> | customer_managed_key block. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.dataApiModeEnabled">dataApiModeEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#data_api_mode_enabled MongoCluster#data_api_mode_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.highAvailabilityMode">highAvailabilityMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#high_availability_mode MongoCluster#high_availability_mode}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#id MongoCluster#id}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.dataApiModeEnabled">dataApiModeEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#data_api_mode_enabled MongoCluster#data_api_mode_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.highAvailabilityMode">highAvailabilityMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#high_availability_mode MongoCluster#high_availability_mode}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#id MongoCluster#id}. |
 | <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterIdentity">MongoClusterIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.previewFeatures">previewFeatures</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#preview_features MongoCluster#preview_features}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.publicNetworkAccess">publicNetworkAccess</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#public_network_access MongoCluster#public_network_access}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.previewFeatures">previewFeatures</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#preview_features MongoCluster#preview_features}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.publicNetworkAccess">publicNetworkAccess</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#public_network_access MongoCluster#public_network_access}. |
 | <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.restore">restore</a></code> | <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterRestore">MongoClusterRestore</a></code> | restore block. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.shardCount">shardCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#shard_count MongoCluster#shard_count}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.sourceLocation">sourceLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#source_location MongoCluster#source_location}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.sourceServerId">sourceServerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#source_server_id MongoCluster#source_server_id}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.storageSizeInGb">storageSizeInGb</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#storage_size_in_gb MongoCluster#storage_size_in_gb}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.storageType">storageType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#storage_type MongoCluster#storage_type}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#tags MongoCluster#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.shardCount">shardCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#shard_count MongoCluster#shard_count}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.sourceLocation">sourceLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#source_location MongoCluster#source_location}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.sourceServerId">sourceServerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#source_server_id MongoCluster#source_server_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.storageSizeInGb">storageSizeInGb</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#storage_size_in_gb MongoCluster#storage_size_in_gb}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.storageType">storageType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#storage_type MongoCluster#storage_type}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#tags MongoCluster#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterTimeouts">MongoClusterTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.version">version</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#version MongoCluster#version}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterConfig.property.version">version</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#version MongoCluster#version}. |
 
 ---
 
@@ -1578,7 +1578,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#location MongoCluster#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#location MongoCluster#location}.
 
 ---
 
@@ -1590,7 +1590,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#name MongoCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#name MongoCluster#name}.
 
 ---
 
@@ -1602,7 +1602,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#resource_group_name MongoCluster#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#resource_group_name MongoCluster#resource_group_name}.
 
 ---
 
@@ -1614,7 +1614,7 @@ public readonly administratorPassword: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#administrator_password MongoCluster#administrator_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#administrator_password MongoCluster#administrator_password}.
 
 ---
 
@@ -1626,7 +1626,7 @@ public readonly administratorUsername: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#administrator_username MongoCluster#administrator_username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#administrator_username MongoCluster#administrator_username}.
 
 ---
 
@@ -1638,7 +1638,7 @@ public readonly authenticationMethods: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#authentication_methods MongoCluster#authentication_methods}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#authentication_methods MongoCluster#authentication_methods}.
 
 ---
 
@@ -1650,7 +1650,7 @@ public readonly computeTier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#compute_tier MongoCluster#compute_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#compute_tier MongoCluster#compute_tier}.
 
 ---
 
@@ -1662,7 +1662,7 @@ public readonly cosmosDbNetworkBypassEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#cosmos_db_network_bypass_enabled MongoCluster#cosmos_db_network_bypass_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#cosmos_db_network_bypass_enabled MongoCluster#cosmos_db_network_bypass_enabled}.
 
 ---
 
@@ -1674,7 +1674,7 @@ public readonly createMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#create_mode MongoCluster#create_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#create_mode MongoCluster#create_mode}.
 
 ---
 
@@ -1688,7 +1688,7 @@ public readonly customerManagedKey: MongoClusterCustomerManagedKey;
 
 customer_managed_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#customer_managed_key MongoCluster#customer_managed_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#customer_managed_key MongoCluster#customer_managed_key}
 
 ---
 
@@ -1700,7 +1700,7 @@ public readonly dataApiModeEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#data_api_mode_enabled MongoCluster#data_api_mode_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#data_api_mode_enabled MongoCluster#data_api_mode_enabled}.
 
 ---
 
@@ -1712,7 +1712,7 @@ public readonly highAvailabilityMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#high_availability_mode MongoCluster#high_availability_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#high_availability_mode MongoCluster#high_availability_mode}.
 
 ---
 
@@ -1724,7 +1724,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#id MongoCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#id MongoCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1741,7 +1741,7 @@ public readonly identity: MongoClusterIdentity;
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#identity MongoCluster#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#identity MongoCluster#identity}
 
 ---
 
@@ -1753,7 +1753,7 @@ public readonly previewFeatures: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#preview_features MongoCluster#preview_features}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#preview_features MongoCluster#preview_features}.
 
 ---
 
@@ -1765,7 +1765,7 @@ public readonly publicNetworkAccess: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#public_network_access MongoCluster#public_network_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#public_network_access MongoCluster#public_network_access}.
 
 ---
 
@@ -1779,7 +1779,7 @@ public readonly restore: MongoClusterRestore;
 
 restore block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#restore MongoCluster#restore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#restore MongoCluster#restore}
 
 ---
 
@@ -1791,7 +1791,7 @@ public readonly shardCount: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#shard_count MongoCluster#shard_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#shard_count MongoCluster#shard_count}.
 
 ---
 
@@ -1803,7 +1803,7 @@ public readonly sourceLocation: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#source_location MongoCluster#source_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#source_location MongoCluster#source_location}.
 
 ---
 
@@ -1815,7 +1815,7 @@ public readonly sourceServerId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#source_server_id MongoCluster#source_server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#source_server_id MongoCluster#source_server_id}.
 
 ---
 
@@ -1827,7 +1827,7 @@ public readonly storageSizeInGb: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#storage_size_in_gb MongoCluster#storage_size_in_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#storage_size_in_gb MongoCluster#storage_size_in_gb}.
 
 ---
 
@@ -1839,7 +1839,7 @@ public readonly storageType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#storage_type MongoCluster#storage_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#storage_type MongoCluster#storage_type}.
 
 ---
 
@@ -1851,7 +1851,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#tags MongoCluster#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#tags MongoCluster#tags}.
 
 ---
 
@@ -1865,7 +1865,7 @@ public readonly timeouts: MongoClusterTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#timeouts MongoCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#timeouts MongoCluster#timeouts}
 
 ---
 
@@ -1877,7 +1877,7 @@ public readonly version: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#version MongoCluster#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#version MongoCluster#version}.
 
 ---
 
@@ -1906,8 +1906,8 @@ const mongoClusterCustomerManagedKey: mongoCluster.MongoClusterCustomerManagedKe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterCustomerManagedKey.property.keyVaultKeyId">keyVaultKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#key_vault_key_id MongoCluster#key_vault_key_id}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterCustomerManagedKey.property.userAssignedIdentityId">userAssignedIdentityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#user_assigned_identity_id MongoCluster#user_assigned_identity_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterCustomerManagedKey.property.keyVaultKeyId">keyVaultKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#key_vault_key_id MongoCluster#key_vault_key_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterCustomerManagedKey.property.userAssignedIdentityId">userAssignedIdentityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#user_assigned_identity_id MongoCluster#user_assigned_identity_id}. |
 
 ---
 
@@ -1919,7 +1919,7 @@ public readonly keyVaultKeyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#key_vault_key_id MongoCluster#key_vault_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#key_vault_key_id MongoCluster#key_vault_key_id}.
 
 ---
 
@@ -1931,7 +1931,7 @@ public readonly userAssignedIdentityId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#user_assigned_identity_id MongoCluster#user_assigned_identity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#user_assigned_identity_id MongoCluster#user_assigned_identity_id}.
 
 ---
 
@@ -1949,8 +1949,8 @@ const mongoClusterIdentity: mongoCluster.MongoClusterIdentity = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterIdentity.property.identityIds">identityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#identity_ids MongoCluster#identity_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#type MongoCluster#type}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterIdentity.property.identityIds">identityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#identity_ids MongoCluster#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#type MongoCluster#type}. |
 
 ---
 
@@ -1962,7 +1962,7 @@ public readonly identityIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#identity_ids MongoCluster#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#identity_ids MongoCluster#identity_ids}.
 
 ---
 
@@ -1974,7 +1974,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#type MongoCluster#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#type MongoCluster#type}.
 
 ---
 
@@ -1992,8 +1992,8 @@ const mongoClusterRestore: mongoCluster.MongoClusterRestore = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterRestore.property.pointInTimeUtc">pointInTimeUtc</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#point_in_time_utc MongoCluster#point_in_time_utc}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterRestore.property.sourceId">sourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#source_id MongoCluster#source_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterRestore.property.pointInTimeUtc">pointInTimeUtc</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#point_in_time_utc MongoCluster#point_in_time_utc}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterRestore.property.sourceId">sourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#source_id MongoCluster#source_id}. |
 
 ---
 
@@ -2005,7 +2005,7 @@ public readonly pointInTimeUtc: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#point_in_time_utc MongoCluster#point_in_time_utc}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#point_in_time_utc MongoCluster#point_in_time_utc}.
 
 ---
 
@@ -2017,7 +2017,7 @@ public readonly sourceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#source_id MongoCluster#source_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#source_id MongoCluster#source_id}.
 
 ---
 
@@ -2035,10 +2035,10 @@ const mongoClusterTimeouts: mongoCluster.MongoClusterTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#create MongoCluster#create}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#delete MongoCluster#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#read MongoCluster#read}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#update MongoCluster#update}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#create MongoCluster#create}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#delete MongoCluster#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#read MongoCluster#read}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoCluster.MongoClusterTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#update MongoCluster#update}. |
 
 ---
 
@@ -2050,7 +2050,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#create MongoCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#create MongoCluster#create}.
 
 ---
 
@@ -2062,7 +2062,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#delete MongoCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#delete MongoCluster#delete}.
 
 ---
 
@@ -2074,7 +2074,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#read MongoCluster#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#read MongoCluster#read}.
 
 ---
 
@@ -2086,7 +2086,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.6.0/docs/resources/mongo_cluster#update MongoCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.7.0/docs/resources/mongo_cluster#update MongoCluster#update}.
 
 ---
 
