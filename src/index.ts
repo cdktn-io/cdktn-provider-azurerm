@@ -719,6 +719,7 @@ export * as oracleAutonomousDatabase from './oracle-autonomous-database/index';
 export * as oracleAutonomousDatabaseBackup from './oracle-autonomous-database-backup/index';
 export * as oracleAutonomousDatabaseCloneFromBackup from './oracle-autonomous-database-clone-from-backup/index';
 export * as oracleAutonomousDatabaseCloneFromDatabase from './oracle-autonomous-database-clone-from-database/index';
+export * as oracleAutonomousDatabaseCrossRegionDisasterRecovery from './oracle-autonomous-database-cross-region-disaster-recovery/index';
 export * as oracleCloudVmCluster from './oracle-cloud-vm-cluster/index';
 export * as oracleExadataInfrastructure from './oracle-exadata-infrastructure/index';
 export * as oracleExascaleDatabaseStorageVault from './oracle-exascale-database-storage-vault/index';
@@ -1371,6 +1372,7 @@ export * as dataAzurermOracleAutonomousDatabaseBackup from './data-azurerm-oracl
 export * as dataAzurermOracleAutonomousDatabaseBackups from './data-azurerm-oracle-autonomous-database-backups/index';
 export * as dataAzurermOracleAutonomousDatabaseCloneFromBackup from './data-azurerm-oracle-autonomous-database-clone-from-backup/index';
 export * as dataAzurermOracleAutonomousDatabaseCloneFromDatabase from './data-azurerm-oracle-autonomous-database-clone-from-database/index';
+export * as dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery from './data-azurerm-oracle-autonomous-database-cross-region-disaster-recovery/index';
 export * as dataAzurermOracleCloudVmCluster from './data-azurerm-oracle-cloud-vm-cluster/index';
 export * as dataAzurermOracleDatabaseSystemVersions from './data-azurerm-oracle-database-system-versions/index';
 export * as dataAzurermOracleDbNodes from './data-azurerm-oracle-db-nodes/index';
