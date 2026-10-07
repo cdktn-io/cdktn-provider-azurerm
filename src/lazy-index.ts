@@ -719,6 +719,7 @@ Object.defineProperty(exports, 'oracleAutonomousDatabase', { get: function () { 
 Object.defineProperty(exports, 'oracleAutonomousDatabaseBackup', { get: function () { return require('./oracle-autonomous-database-backup'); } });
 Object.defineProperty(exports, 'oracleAutonomousDatabaseCloneFromBackup', { get: function () { return require('./oracle-autonomous-database-clone-from-backup'); } });
 Object.defineProperty(exports, 'oracleAutonomousDatabaseCloneFromDatabase', { get: function () { return require('./oracle-autonomous-database-clone-from-database'); } });
+Object.defineProperty(exports, 'oracleAutonomousDatabaseCrossRegionDisasterRecovery', { get: function () { return require('./oracle-autonomous-database-cross-region-disaster-recovery'); } });
 Object.defineProperty(exports, 'oracleCloudVmCluster', { get: function () { return require('./oracle-cloud-vm-cluster'); } });
 Object.defineProperty(exports, 'oracleExadataInfrastructure', { get: function () { return require('./oracle-exadata-infrastructure'); } });
 Object.defineProperty(exports, 'oracleExascaleDatabaseStorageVault', { get: function () { return require('./oracle-exascale-database-storage-vault'); } });
@@ -1371,6 +1372,7 @@ Object.defineProperty(exports, 'dataAzurermOracleAutonomousDatabaseBackup', { ge
 Object.defineProperty(exports, 'dataAzurermOracleAutonomousDatabaseBackups', { get: function () { return require('./data-azurerm-oracle-autonomous-database-backups'); } });
 Object.defineProperty(exports, 'dataAzurermOracleAutonomousDatabaseCloneFromBackup', { get: function () { return require('./data-azurerm-oracle-autonomous-database-clone-from-backup'); } });
 Object.defineProperty(exports, 'dataAzurermOracleAutonomousDatabaseCloneFromDatabase', { get: function () { return require('./data-azurerm-oracle-autonomous-database-clone-from-database'); } });
+Object.defineProperty(exports, 'dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery', { get: function () { return require('./data-azurerm-oracle-autonomous-database-cross-region-disaster-recovery'); } });
 Object.defineProperty(exports, 'dataAzurermOracleCloudVmCluster', { get: function () { return require('./data-azurerm-oracle-cloud-vm-cluster'); } });
 Object.defineProperty(exports, 'dataAzurermOracleDatabaseSystemVersions', { get: function () { return require('./data-azurerm-oracle-database-system-versions'); } });
 Object.defineProperty(exports, 'dataAzurermOracleDbNodes', { get: function () { return require('./data-azurerm-oracle-db-nodes'); } });
