@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +13,56 @@ import * as cdktn from 'cdktn';
 
 export interface StorageBlobInventoryPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#id StorageBlobInventoryPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#id StorageBlobInventoryPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#storage_account_id StorageBlobInventoryPolicy#storage_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#storage_account_id StorageBlobInventoryPolicy#storage_account_id}
   */
   readonly storageAccountId: string;
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#rules StorageBlobInventoryPolicy#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#rules StorageBlobInventoryPolicy#rules}
   */
   readonly rules: StorageBlobInventoryPolicyRules[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#timeouts StorageBlobInventoryPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#timeouts StorageBlobInventoryPolicy#timeouts}
   */
   readonly timeouts?: StorageBlobInventoryPolicyTimeouts;
 }
 export interface StorageBlobInventoryPolicyRulesFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#blob_types StorageBlobInventoryPolicy#blob_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#blob_types StorageBlobInventoryPolicy#blob_types}
   */
   readonly blobTypes: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#exclude_prefixes StorageBlobInventoryPolicy#exclude_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#created_within_days StorageBlobInventoryPolicy#created_within_days}
+  */
+  readonly createdWithinDays?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#exclude_prefixes StorageBlobInventoryPolicy#exclude_prefixes}
   */
   readonly excludePrefixes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#include_blob_versions StorageBlobInventoryPolicy#include_blob_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#include_blob_versions StorageBlobInventoryPolicy#include_blob_versions}
   */
   readonly includeBlobVersions?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#include_deleted StorageBlobInventoryPolicy#include_deleted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#include_deleted StorageBlobInventoryPolicy#include_deleted}
   */
   readonly includeDeleted?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#include_snapshots StorageBlobInventoryPolicy#include_snapshots}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#include_snapshots StorageBlobInventoryPolicy#include_snapshots}
   */
   readonly includeSnapshots?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#prefix_match StorageBlobInventoryPolicy#prefix_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#prefix_match StorageBlobInventoryPolicy#prefix_match}
   */
   readonly prefixMatch?: string[];
 }
@@ -70,6 +74,7 @@ export function storageBlobInventoryPolicyRulesFilterToTerraform(struct?: Storag
   }
   return {
     blob_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.blobTypes),
+    created_within_days: cdktn.numberToTerraform(struct!.createdWithinDays),
     exclude_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludePrefixes),
     include_blob_versions: cdktn.booleanToTerraform(struct!.includeBlobVersions),
     include_deleted: cdktn.booleanToTerraform(struct!.includeDeleted),
@@ -90,6 +95,12 @@ export function storageBlobInventoryPolicyRulesFilterToHclTerraform(struct?: Sto
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
+    },
+    created_within_days: {
+      value: cdktn.numberToHclTerraform(struct!.createdWithinDays),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
     },
     exclude_prefixes: {
       value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludePrefixes),
@@ -145,6 +156,10 @@ export class StorageBlobInventoryPolicyRulesFilterOutputReference extends cdktn.
       hasAnyValues = true;
       internalValueResult.blobTypes = this._blobTypes;
     }
+    if (this._createdWithinDays !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.createdWithinDays = this._createdWithinDays;
+    }
     if (this._excludePrefixes !== undefined) {
       hasAnyValues = true;
       internalValueResult.excludePrefixes = this._excludePrefixes;
@@ -172,6 +187,7 @@ export class StorageBlobInventoryPolicyRulesFilterOutputReference extends cdktn.
     if (value === undefined) {
       this.isEmptyObject = false;
       this._blobTypes = undefined;
+      this._createdWithinDays = undefined;
       this._excludePrefixes = undefined;
       this._includeBlobVersions = undefined;
       this._includeDeleted = undefined;
@@ -181,6 +197,7 @@ export class StorageBlobInventoryPolicyRulesFilterOutputReference extends cdktn.
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._blobTypes = value.blobTypes;
+      this._createdWithinDays = value.createdWithinDays;
       this._excludePrefixes = value.excludePrefixes;
       this._includeBlobVersions = value.includeBlobVersions;
       this._includeDeleted = value.includeDeleted;
@@ -200,6 +217,22 @@ export class StorageBlobInventoryPolicyRulesFilterOutputReference extends cdktn.
   // Temporarily expose input value. Use with caution.
   public get blobTypesInput() {
     return this._blobTypes;
+  }
+
+  // created_within_days - computed: false, optional: true, required: false
+  private _createdWithinDays?: number; 
+  public get createdWithinDays() {
+    return this.getNumberAttribute('created_within_days');
+  }
+  public set createdWithinDays(value: number) {
+    this._createdWithinDays = value;
+  }
+  public resetCreatedWithinDays() {
+    this._createdWithinDays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createdWithinDaysInput() {
+    return this._createdWithinDays;
   }
 
   // exclude_prefixes - computed: false, optional: true, required: false
@@ -284,33 +317,33 @@ export class StorageBlobInventoryPolicyRulesFilterOutputReference extends cdktn.
 }
 export interface StorageBlobInventoryPolicyRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#format StorageBlobInventoryPolicy#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#format StorageBlobInventoryPolicy#format}
   */
   readonly format: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#name StorageBlobInventoryPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#name StorageBlobInventoryPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#schedule StorageBlobInventoryPolicy#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#schedule StorageBlobInventoryPolicy#schedule}
   */
   readonly schedule: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#schema_fields StorageBlobInventoryPolicy#schema_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#schema_fields StorageBlobInventoryPolicy#schema_fields}
   */
   readonly schemaFields: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#scope StorageBlobInventoryPolicy#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#scope StorageBlobInventoryPolicy#scope}
   */
   readonly scope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#storage_container_name StorageBlobInventoryPolicy#storage_container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#storage_container_name StorageBlobInventoryPolicy#storage_container_name}
   */
   readonly storageContainerName: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#filter StorageBlobInventoryPolicy#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#filter StorageBlobInventoryPolicy#filter}
   */
   readonly filter?: StorageBlobInventoryPolicyRulesFilter;
 }
@@ -582,19 +615,19 @@ export class StorageBlobInventoryPolicyRulesList extends cdktn.ComplexList {
 }
 export interface StorageBlobInventoryPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#create StorageBlobInventoryPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#create StorageBlobInventoryPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#delete StorageBlobInventoryPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#delete StorageBlobInventoryPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#read StorageBlobInventoryPolicy#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#read StorageBlobInventoryPolicy#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#update StorageBlobInventoryPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#update StorageBlobInventoryPolicy#update}
   */
   readonly update?: string;
 }
@@ -775,7 +808,7 @@ export class StorageBlobInventoryPolicyTimeoutsOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy azurerm_storage_blob_inventory_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy azurerm_storage_blob_inventory_policy}
 */
 export class StorageBlobInventoryPolicy extends cdktn.TerraformResource {
 
@@ -791,7 +824,7 @@ export class StorageBlobInventoryPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a StorageBlobInventoryPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageBlobInventoryPolicy to import
-  * @param importFromId The id of the existing StorageBlobInventoryPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageBlobInventoryPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageBlobInventoryPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -803,7 +836,7 @@ export class StorageBlobInventoryPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/resources/storage_blob_inventory_policy azurerm_storage_blob_inventory_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/storage_blob_inventory_policy azurerm_storage_blob_inventory_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -814,7 +847,7 @@ export class StorageBlobInventoryPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_storage_blob_inventory_policy',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '5.8.0',
+        providerVersion: '5.9.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
