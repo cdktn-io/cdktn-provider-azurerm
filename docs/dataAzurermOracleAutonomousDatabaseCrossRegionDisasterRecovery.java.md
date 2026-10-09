@@ -4,7 +4,7 @@
 
 ### DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery <a name="DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery" id="@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery azurerm_oracle_autonomous_database_cross_region_disaster_recovery}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery azurerm_oracle_autonomous_database_cross_region_disaster_recovery}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.Initializer"></a>
 
@@ -37,9 +37,9 @@ DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.Builder.create(Co
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#name DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#resource_group_name DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#id DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#name DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#resource_group_name DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#id DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecoveryTimeouts">DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecoveryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#name DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#name DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#name}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#resource_group_name DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#resource_group_name DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#resource_group_name}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#id DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#id DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#timeouts DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#timeouts DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#timeouts}
 
 ---
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the DataAzurermOracleAutonomou
 
 The id of the existing DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1474,9 +1474,9 @@ DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecoveryConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecoveryConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecoveryConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecoveryConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecoveryConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#name DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecoveryConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#resource_group_name DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecoveryConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#id DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecoveryConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#name DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecoveryConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#resource_group_name DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecoveryConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#id DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecoveryConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecoveryTimeouts">DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecoveryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1559,7 +1559,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#name DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#name DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#name}.
 
 ---
 
@@ -1571,7 +1571,7 @@ public java.lang.String getResourceGroupName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#resource_group_name DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#resource_group_name DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#resource_group_name}.
 
 ---
 
@@ -1583,7 +1583,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#id DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#id DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1600,7 +1600,7 @@ public DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecoveryTimeouts ge
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#timeouts DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#timeouts DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#timeouts}
 
 ---
 
@@ -1620,7 +1620,7 @@ DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecoveryTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecoveryTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#read DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery.DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecoveryTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#read DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#read}. |
 
 ---
 
@@ -1632,7 +1632,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.8.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#read DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/data-sources/oracle_autonomous_database_cross_region_disaster_recovery#read DataAzurermOracleAutonomousDatabaseCrossRegionDisasterRecovery#read}.
 
 ---
 
