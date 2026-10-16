@@ -4,7 +4,7 @@
 
 ### EventgridDomain <a name="EventgridDomain" id="@cdktn/provider-azurerm.eventgridDomain.EventgridDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain azurerm_eventgrid_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain azurerm_eventgrid_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.Initializer"></a>
 
@@ -81,6 +81,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.resetAutoCreateTopicWithFirstSubscription">ResetAutoCreateTopicWithFirstSubscription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.resetAutoDeleteTopicWithLastSubscription">ResetAutoDeleteTopicWithLastSubscription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.resetDataResidencyBoundary">ResetDataResidencyBoundary</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.resetIdentity">ResetIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.resetInboundIpRule">ResetInboundIpRule</a></code> | *No description.* |
@@ -88,6 +89,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.resetInputMappingFields">ResetInputMappingFields</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.resetInputSchema">ResetInputSchema</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.resetLocalAuthEnabled">ResetLocalAuthEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.resetMinimumTlsVersion">ResetMinimumTlsVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.resetPublicNetworkAccessEnabled">ResetPublicNetworkAccessEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -475,6 +477,12 @@ private void ResetAutoCreateTopicWithFirstSubscription()
 private void ResetAutoDeleteTopicWithLastSubscription()
 ```
 
+##### `ResetDataResidencyBoundary` <a name="ResetDataResidencyBoundary" id="@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.resetDataResidencyBoundary"></a>
+
+```csharp
+private void ResetDataResidencyBoundary()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.resetId"></a>
 
 ```csharp
@@ -515,6 +523,12 @@ private void ResetInputSchema()
 
 ```csharp
 private void ResetLocalAuthEnabled()
+```
+
+##### `ResetMinimumTlsVersion` <a name="ResetMinimumTlsVersion" id="@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.resetMinimumTlsVersion"></a>
+
+```csharp
+private void ResetMinimumTlsVersion()
 ```
 
 ##### `ResetPublicNetworkAccessEnabled` <a name="ResetPublicNetworkAccessEnabled" id="@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.resetPublicNetworkAccessEnabled"></a>
@@ -638,7 +652,7 @@ The construct id used in the generated config for the EventgridDomain to import.
 
 The id of the existing EventgridDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -678,6 +692,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainTimeoutsOutputReference">EventgridDomainTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.autoCreateTopicWithFirstSubscriptionInput">AutoCreateTopicWithFirstSubscriptionInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.autoDeleteTopicWithLastSubscriptionInput">AutoDeleteTopicWithLastSubscriptionInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.dataResidencyBoundaryInput">DataResidencyBoundaryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.identityInput">IdentityInput</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainIdentity">EventgridDomainIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.inboundIpRuleInput">InboundIpRuleInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInboundIpRule">EventgridDomainInboundIpRule</a>[]</code> | *No description.* |
@@ -686,6 +701,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.inputSchemaInput">InputSchemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.localAuthEnabledInput">LocalAuthEnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.locationInput">LocationInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.minimumTlsVersionInput">MinimumTlsVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.publicNetworkAccessEnabledInput">PublicNetworkAccessEnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.resourceGroupNameInput">ResourceGroupNameInput</a></code> | <code>string</code> | *No description.* |
@@ -693,10 +709,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainTimeouts">EventgridDomainTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.autoCreateTopicWithFirstSubscription">AutoCreateTopicWithFirstSubscription</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.autoDeleteTopicWithLastSubscription">AutoDeleteTopicWithLastSubscription</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.dataResidencyBoundary">DataResidencyBoundary</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.inputSchema">InputSchema</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.localAuthEnabled">LocalAuthEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.location">Location</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.minimumTlsVersion">MinimumTlsVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.publicNetworkAccessEnabled">PublicNetworkAccessEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | *No description.* |
@@ -946,6 +964,16 @@ public bool|IResolvable AutoDeleteTopicWithLastSubscriptionInput { get; }
 
 ---
 
+##### `DataResidencyBoundaryInput`<sup>Optional</sup> <a name="DataResidencyBoundaryInput" id="@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.dataResidencyBoundaryInput"></a>
+
+```csharp
+public string DataResidencyBoundaryInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `IdentityInput`<sup>Optional</sup> <a name="IdentityInput" id="@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.identityInput"></a>
 
 ```csharp
@@ -1026,6 +1054,16 @@ public string LocationInput { get; }
 
 ---
 
+##### `MinimumTlsVersionInput`<sup>Optional</sup> <a name="MinimumTlsVersionInput" id="@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.minimumTlsVersionInput"></a>
+
+```csharp
+public string MinimumTlsVersionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.nameInput"></a>
 
 ```csharp
@@ -1096,6 +1134,16 @@ public bool|IResolvable AutoDeleteTopicWithLastSubscription { get; }
 
 ---
 
+##### `DataResidencyBoundary`<sup>Required</sup> <a name="DataResidencyBoundary" id="@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.dataResidencyBoundary"></a>
+
+```csharp
+public string DataResidencyBoundary { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.id"></a>
 
 ```csharp
@@ -1130,6 +1178,16 @@ public bool|IResolvable LocalAuthEnabled { get; }
 
 ```csharp
 public string Location { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `MinimumTlsVersion`<sup>Required</sup> <a name="MinimumTlsVersion" id="@cdktn/provider-azurerm.eventgridDomain.EventgridDomain.property.minimumTlsVersion"></a>
+
+```csharp
+public string MinimumTlsVersion { get; }
 ```
 
 - *Type:* string
@@ -1216,6 +1274,7 @@ new EventgridDomainConfig {
     string ResourceGroupName,
     bool|IResolvable AutoCreateTopicWithFirstSubscription = null,
     bool|IResolvable AutoDeleteTopicWithLastSubscription = null,
+    string DataResidencyBoundary = null,
     string Id = null,
     EventgridDomainIdentity Identity = null,
     IResolvable|EventgridDomainInboundIpRule[] InboundIpRule = null,
@@ -1223,6 +1282,7 @@ new EventgridDomainConfig {
     EventgridDomainInputMappingFields InputMappingFields = null,
     string InputSchema = null,
     bool|IResolvable LocalAuthEnabled = null,
+    string MinimumTlsVersion = null,
     bool|IResolvable PublicNetworkAccessEnabled = null,
     System.Collections.Generic.IDictionary<string, string> Tags = null,
     EventgridDomainTimeouts Timeouts = null
@@ -1240,20 +1300,22 @@ new EventgridDomainConfig {
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#location EventgridDomain#location}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#name EventgridDomain#name}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#resource_group_name EventgridDomain#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.autoCreateTopicWithFirstSubscription">AutoCreateTopicWithFirstSubscription</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#auto_create_topic_with_first_subscription EventgridDomain#auto_create_topic_with_first_subscription}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.autoDeleteTopicWithLastSubscription">AutoDeleteTopicWithLastSubscription</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#auto_delete_topic_with_last_subscription EventgridDomain#auto_delete_topic_with_last_subscription}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#id EventgridDomain#id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#location EventgridDomain#location}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#name EventgridDomain#name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#resource_group_name EventgridDomain#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.autoCreateTopicWithFirstSubscription">AutoCreateTopicWithFirstSubscription</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#auto_create_topic_with_first_subscription EventgridDomain#auto_create_topic_with_first_subscription}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.autoDeleteTopicWithLastSubscription">AutoDeleteTopicWithLastSubscription</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#auto_delete_topic_with_last_subscription EventgridDomain#auto_delete_topic_with_last_subscription}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.dataResidencyBoundary">DataResidencyBoundary</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#data_residency_boundary EventgridDomain#data_residency_boundary}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#id EventgridDomain#id}. |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainIdentity">EventgridDomainIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.inboundIpRule">InboundIpRule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInboundIpRule">EventgridDomainInboundIpRule</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#inbound_ip_rule EventgridDomain#inbound_ip_rule}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.inboundIpRule">InboundIpRule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInboundIpRule">EventgridDomainInboundIpRule</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#inbound_ip_rule EventgridDomain#inbound_ip_rule}. |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.inputMappingDefaultValues">InputMappingDefaultValues</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInputMappingDefaultValues">EventgridDomainInputMappingDefaultValues</a></code> | input_mapping_default_values block. |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.inputMappingFields">InputMappingFields</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInputMappingFields">EventgridDomainInputMappingFields</a></code> | input_mapping_fields block. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.inputSchema">InputSchema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#input_schema EventgridDomain#input_schema}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.localAuthEnabled">LocalAuthEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#local_auth_enabled EventgridDomain#local_auth_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.publicNetworkAccessEnabled">PublicNetworkAccessEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#public_network_access_enabled EventgridDomain#public_network_access_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#tags EventgridDomain#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.inputSchema">InputSchema</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#input_schema EventgridDomain#input_schema}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.localAuthEnabled">LocalAuthEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#local_auth_enabled EventgridDomain#local_auth_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.minimumTlsVersion">MinimumTlsVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#minimum_tls_version EventgridDomain#minimum_tls_version}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.publicNetworkAccessEnabled">PublicNetworkAccessEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#public_network_access_enabled EventgridDomain#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#tags EventgridDomain#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainTimeouts">EventgridDomainTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1336,7 +1398,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#location EventgridDomain#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#location EventgridDomain#location}.
 
 ---
 
@@ -1348,7 +1410,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#name EventgridDomain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#name EventgridDomain#name}.
 
 ---
 
@@ -1360,7 +1422,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#resource_group_name EventgridDomain#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#resource_group_name EventgridDomain#resource_group_name}.
 
 ---
 
@@ -1372,7 +1434,7 @@ public bool|IResolvable AutoCreateTopicWithFirstSubscription { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#auto_create_topic_with_first_subscription EventgridDomain#auto_create_topic_with_first_subscription}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#auto_create_topic_with_first_subscription EventgridDomain#auto_create_topic_with_first_subscription}.
 
 ---
 
@@ -1384,7 +1446,19 @@ public bool|IResolvable AutoDeleteTopicWithLastSubscription { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#auto_delete_topic_with_last_subscription EventgridDomain#auto_delete_topic_with_last_subscription}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#auto_delete_topic_with_last_subscription EventgridDomain#auto_delete_topic_with_last_subscription}.
+
+---
+
+##### `DataResidencyBoundary`<sup>Optional</sup> <a name="DataResidencyBoundary" id="@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.dataResidencyBoundary"></a>
+
+```csharp
+public string DataResidencyBoundary { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#data_residency_boundary EventgridDomain#data_residency_boundary}.
 
 ---
 
@@ -1396,7 +1470,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#id EventgridDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#id EventgridDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1413,7 +1487,7 @@ public EventgridDomainIdentity Identity { get; set; }
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#identity EventgridDomain#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#identity EventgridDomain#identity}
 
 ---
 
@@ -1425,7 +1499,7 @@ public IResolvable|EventgridDomainInboundIpRule[] InboundIpRule { get; set; }
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInboundIpRule">EventgridDomainInboundIpRule</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#inbound_ip_rule EventgridDomain#inbound_ip_rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#inbound_ip_rule EventgridDomain#inbound_ip_rule}.
 
 ---
 
@@ -1439,7 +1513,7 @@ public EventgridDomainInputMappingDefaultValues InputMappingDefaultValues { get;
 
 input_mapping_default_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#input_mapping_default_values EventgridDomain#input_mapping_default_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#input_mapping_default_values EventgridDomain#input_mapping_default_values}
 
 ---
 
@@ -1453,7 +1527,7 @@ public EventgridDomainInputMappingFields InputMappingFields { get; set; }
 
 input_mapping_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#input_mapping_fields EventgridDomain#input_mapping_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#input_mapping_fields EventgridDomain#input_mapping_fields}
 
 ---
 
@@ -1465,7 +1539,7 @@ public string InputSchema { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#input_schema EventgridDomain#input_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#input_schema EventgridDomain#input_schema}.
 
 ---
 
@@ -1477,7 +1551,19 @@ public bool|IResolvable LocalAuthEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#local_auth_enabled EventgridDomain#local_auth_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#local_auth_enabled EventgridDomain#local_auth_enabled}.
+
+---
+
+##### `MinimumTlsVersion`<sup>Optional</sup> <a name="MinimumTlsVersion" id="@cdktn/provider-azurerm.eventgridDomain.EventgridDomainConfig.property.minimumTlsVersion"></a>
+
+```csharp
+public string MinimumTlsVersion { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#minimum_tls_version EventgridDomain#minimum_tls_version}.
 
 ---
 
@@ -1489,7 +1575,7 @@ public bool|IResolvable PublicNetworkAccessEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#public_network_access_enabled EventgridDomain#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#public_network_access_enabled EventgridDomain#public_network_access_enabled}.
 
 ---
 
@@ -1501,7 +1587,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#tags EventgridDomain#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#tags EventgridDomain#tags}.
 
 ---
 
@@ -1515,7 +1601,7 @@ public EventgridDomainTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#timeouts EventgridDomain#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#timeouts EventgridDomain#timeouts}
 
 ---
 
@@ -1536,8 +1622,8 @@ new EventgridDomainIdentity {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#type EventgridDomain#type}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#identity_ids EventgridDomain#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#type EventgridDomain#type}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#identity_ids EventgridDomain#identity_ids}. |
 
 ---
 
@@ -1549,7 +1635,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#type EventgridDomain#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#type EventgridDomain#type}.
 
 ---
 
@@ -1561,7 +1647,7 @@ public string[] IdentityIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#identity_ids EventgridDomain#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#identity_ids EventgridDomain#identity_ids}.
 
 ---
 
@@ -1582,8 +1668,8 @@ new EventgridDomainInboundIpRule {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInboundIpRule.property.action">Action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#action EventgridDomain#action}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInboundIpRule.property.ipMask">IpMask</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#ip_mask EventgridDomain#ip_mask}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInboundIpRule.property.action">Action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#action EventgridDomain#action}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInboundIpRule.property.ipMask">IpMask</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#ip_mask EventgridDomain#ip_mask}. |
 
 ---
 
@@ -1595,7 +1681,7 @@ public string Action { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#action EventgridDomain#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#action EventgridDomain#action}.
 
 ---
 
@@ -1607,7 +1693,7 @@ public string IpMask { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#ip_mask EventgridDomain#ip_mask}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#ip_mask EventgridDomain#ip_mask}.
 
 ---
 
@@ -1629,9 +1715,9 @@ new EventgridDomainInputMappingDefaultValues {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInputMappingDefaultValues.property.dataVersion">DataVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#data_version EventgridDomain#data_version}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInputMappingDefaultValues.property.eventType">EventType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#event_type EventgridDomain#event_type}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInputMappingDefaultValues.property.subject">Subject</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#subject EventgridDomain#subject}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInputMappingDefaultValues.property.dataVersion">DataVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#data_version EventgridDomain#data_version}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInputMappingDefaultValues.property.eventType">EventType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#event_type EventgridDomain#event_type}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInputMappingDefaultValues.property.subject">Subject</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#subject EventgridDomain#subject}. |
 
 ---
 
@@ -1643,7 +1729,7 @@ public string DataVersion { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#data_version EventgridDomain#data_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#data_version EventgridDomain#data_version}.
 
 ---
 
@@ -1655,7 +1741,7 @@ public string EventType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#event_type EventgridDomain#event_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#event_type EventgridDomain#event_type}.
 
 ---
 
@@ -1667,7 +1753,7 @@ public string Subject { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#subject EventgridDomain#subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#subject EventgridDomain#subject}.
 
 ---
 
@@ -1692,12 +1778,12 @@ new EventgridDomainInputMappingFields {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInputMappingFields.property.dataVersion">DataVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#data_version EventgridDomain#data_version}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInputMappingFields.property.eventTime">EventTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#event_time EventgridDomain#event_time}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInputMappingFields.property.eventType">EventType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#event_type EventgridDomain#event_type}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInputMappingFields.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#id EventgridDomain#id}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInputMappingFields.property.subject">Subject</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#subject EventgridDomain#subject}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInputMappingFields.property.topic">Topic</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#topic EventgridDomain#topic}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInputMappingFields.property.dataVersion">DataVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#data_version EventgridDomain#data_version}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInputMappingFields.property.eventTime">EventTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#event_time EventgridDomain#event_time}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInputMappingFields.property.eventType">EventType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#event_type EventgridDomain#event_type}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInputMappingFields.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#id EventgridDomain#id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInputMappingFields.property.subject">Subject</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#subject EventgridDomain#subject}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainInputMappingFields.property.topic">Topic</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#topic EventgridDomain#topic}. |
 
 ---
 
@@ -1709,7 +1795,7 @@ public string DataVersion { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#data_version EventgridDomain#data_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#data_version EventgridDomain#data_version}.
 
 ---
 
@@ -1721,7 +1807,7 @@ public string EventTime { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#event_time EventgridDomain#event_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#event_time EventgridDomain#event_time}.
 
 ---
 
@@ -1733,7 +1819,7 @@ public string EventType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#event_type EventgridDomain#event_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#event_type EventgridDomain#event_type}.
 
 ---
 
@@ -1745,7 +1831,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#id EventgridDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#id EventgridDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1760,7 +1846,7 @@ public string Subject { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#subject EventgridDomain#subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#subject EventgridDomain#subject}.
 
 ---
 
@@ -1772,7 +1858,7 @@ public string Topic { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#topic EventgridDomain#topic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#topic EventgridDomain#topic}.
 
 ---
 
@@ -1795,10 +1881,10 @@ new EventgridDomainTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#create EventgridDomain#create}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#delete EventgridDomain#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#read EventgridDomain#read}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#update EventgridDomain#update}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#create EventgridDomain#create}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#delete EventgridDomain#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#read EventgridDomain#read}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridDomain.EventgridDomainTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#update EventgridDomain#update}. |
 
 ---
 
@@ -1810,7 +1896,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#create EventgridDomain#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#create EventgridDomain#create}.
 
 ---
 
@@ -1822,7 +1908,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#delete EventgridDomain#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#delete EventgridDomain#delete}.
 
 ---
 
@@ -1834,7 +1920,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#read EventgridDomain#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#read EventgridDomain#read}.
 
 ---
 
@@ -1846,7 +1932,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#update EventgridDomain#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#update EventgridDomain#update}.
 
 ---
 
