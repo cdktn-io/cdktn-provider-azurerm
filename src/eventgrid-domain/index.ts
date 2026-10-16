@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,84 +13,92 @@ import * as cdktn from 'cdktn';
 
 export interface EventgridDomainConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#auto_create_topic_with_first_subscription EventgridDomain#auto_create_topic_with_first_subscription}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#auto_create_topic_with_first_subscription EventgridDomain#auto_create_topic_with_first_subscription}
   */
   readonly autoCreateTopicWithFirstSubscription?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#auto_delete_topic_with_last_subscription EventgridDomain#auto_delete_topic_with_last_subscription}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#auto_delete_topic_with_last_subscription EventgridDomain#auto_delete_topic_with_last_subscription}
   */
   readonly autoDeleteTopicWithLastSubscription?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#id EventgridDomain#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#data_residency_boundary EventgridDomain#data_residency_boundary}
+  */
+  readonly dataResidencyBoundary?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#id EventgridDomain#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#inbound_ip_rule EventgridDomain#inbound_ip_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#inbound_ip_rule EventgridDomain#inbound_ip_rule}
   */
   readonly inboundIpRule?: EventgridDomainInboundIpRule[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#input_schema EventgridDomain#input_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#input_schema EventgridDomain#input_schema}
   */
   readonly inputSchema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#local_auth_enabled EventgridDomain#local_auth_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#local_auth_enabled EventgridDomain#local_auth_enabled}
   */
   readonly localAuthEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#location EventgridDomain#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#location EventgridDomain#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#name EventgridDomain#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#minimum_tls_version EventgridDomain#minimum_tls_version}
+  */
+  readonly minimumTlsVersion?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#name EventgridDomain#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#public_network_access_enabled EventgridDomain#public_network_access_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#public_network_access_enabled EventgridDomain#public_network_access_enabled}
   */
   readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#resource_group_name EventgridDomain#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#resource_group_name EventgridDomain#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#tags EventgridDomain#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#tags EventgridDomain#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#identity EventgridDomain#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#identity EventgridDomain#identity}
   */
   readonly identity?: EventgridDomainIdentity;
   /**
   * input_mapping_default_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#input_mapping_default_values EventgridDomain#input_mapping_default_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#input_mapping_default_values EventgridDomain#input_mapping_default_values}
   */
   readonly inputMappingDefaultValues?: EventgridDomainInputMappingDefaultValues;
   /**
   * input_mapping_fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#input_mapping_fields EventgridDomain#input_mapping_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#input_mapping_fields EventgridDomain#input_mapping_fields}
   */
   readonly inputMappingFields?: EventgridDomainInputMappingFields;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#timeouts EventgridDomain#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#timeouts EventgridDomain#timeouts}
   */
   readonly timeouts?: EventgridDomainTimeouts;
 }
 export interface EventgridDomainInboundIpRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#action EventgridDomain#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#action EventgridDomain#action}
   */
   readonly action?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#ip_mask EventgridDomain#ip_mask}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#ip_mask EventgridDomain#ip_mask}
   */
   readonly ipMask?: string;
 }
@@ -235,11 +243,11 @@ export class EventgridDomainInboundIpRuleList extends cdktn.ComplexList {
 }
 export interface EventgridDomainIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#identity_ids EventgridDomain#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#identity_ids EventgridDomain#identity_ids}
   */
   readonly identityIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#type EventgridDomain#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#type EventgridDomain#type}
   */
   readonly type: string;
 }
@@ -359,15 +367,15 @@ export class EventgridDomainIdentityOutputReference extends cdktn.ComplexObject 
 }
 export interface EventgridDomainInputMappingDefaultValues {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#data_version EventgridDomain#data_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#data_version EventgridDomain#data_version}
   */
   readonly dataVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#event_type EventgridDomain#event_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#event_type EventgridDomain#event_type}
   */
   readonly eventType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#subject EventgridDomain#subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#subject EventgridDomain#subject}
   */
   readonly subject?: string;
 }
@@ -509,30 +517,30 @@ export class EventgridDomainInputMappingDefaultValuesOutputReference extends cdk
 }
 export interface EventgridDomainInputMappingFields {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#data_version EventgridDomain#data_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#data_version EventgridDomain#data_version}
   */
   readonly dataVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#event_time EventgridDomain#event_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#event_time EventgridDomain#event_time}
   */
   readonly eventTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#event_type EventgridDomain#event_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#event_type EventgridDomain#event_type}
   */
   readonly eventType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#id EventgridDomain#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#id EventgridDomain#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#subject EventgridDomain#subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#subject EventgridDomain#subject}
   */
   readonly subject?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#topic EventgridDomain#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#topic EventgridDomain#topic}
   */
   readonly topic?: string;
 }
@@ -761,19 +769,19 @@ export class EventgridDomainInputMappingFieldsOutputReference extends cdktn.Comp
 }
 export interface EventgridDomainTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#create EventgridDomain#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#create EventgridDomain#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#delete EventgridDomain#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#delete EventgridDomain#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#read EventgridDomain#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#read EventgridDomain#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#update EventgridDomain#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#update EventgridDomain#update}
   */
   readonly update?: string;
 }
@@ -954,7 +962,7 @@ export class EventgridDomainTimeoutsOutputReference extends cdktn.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain azurerm_eventgrid_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain azurerm_eventgrid_domain}
 */
 export class EventgridDomain extends cdktn.TerraformResource {
 
@@ -970,7 +978,7 @@ export class EventgridDomain extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EventgridDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventgridDomain to import
-  * @param importFromId The id of the existing EventgridDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EventgridDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventgridDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -982,7 +990,7 @@ export class EventgridDomain extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.9.0/docs/resources/eventgrid_domain azurerm_eventgrid_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/eventgrid_domain azurerm_eventgrid_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -993,7 +1001,7 @@ export class EventgridDomain extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_eventgrid_domain',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '5.9.0',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1006,11 +1014,13 @@ export class EventgridDomain extends cdktn.TerraformResource {
     });
     this._autoCreateTopicWithFirstSubscription = config.autoCreateTopicWithFirstSubscription;
     this._autoDeleteTopicWithLastSubscription = config.autoDeleteTopicWithLastSubscription;
+    this._dataResidencyBoundary = config.dataResidencyBoundary;
     this._id = config.id;
     this._inboundIpRule.internalValue = config.inboundIpRule;
     this._inputSchema = config.inputSchema;
     this._localAuthEnabled = config.localAuthEnabled;
     this._location = config.location;
+    this._minimumTlsVersion = config.minimumTlsVersion;
     this._name = config.name;
     this._publicNetworkAccessEnabled = config.publicNetworkAccessEnabled;
     this._resourceGroupName = config.resourceGroupName;
@@ -1055,6 +1065,22 @@ export class EventgridDomain extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get autoDeleteTopicWithLastSubscriptionInput() {
     return this._autoDeleteTopicWithLastSubscription;
+  }
+
+  // data_residency_boundary - computed: true, optional: true, required: false
+  private _dataResidencyBoundary?: string; 
+  public get dataResidencyBoundary() {
+    return this.getStringAttribute('data_residency_boundary');
+  }
+  public set dataResidencyBoundary(value: string) {
+    this._dataResidencyBoundary = value;
+  }
+  public resetDataResidencyBoundary() {
+    this._dataResidencyBoundary = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataResidencyBoundaryInput() {
+    return this._dataResidencyBoundary;
   }
 
   // endpoint - computed: true, optional: false, required: false
@@ -1137,6 +1163,22 @@ export class EventgridDomain extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get locationInput() {
     return this._location;
+  }
+
+  // minimum_tls_version - computed: true, optional: true, required: false
+  private _minimumTlsVersion?: string; 
+  public get minimumTlsVersion() {
+    return this.getStringAttribute('minimum_tls_version');
+  }
+  public set minimumTlsVersion(value: string) {
+    this._minimumTlsVersion = value;
+  }
+  public resetMinimumTlsVersion() {
+    this._minimumTlsVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minimumTlsVersionInput() {
+    return this._minimumTlsVersion;
   }
 
   // name - computed: false, optional: false, required: true
@@ -1279,11 +1321,13 @@ export class EventgridDomain extends cdktn.TerraformResource {
     return {
       auto_create_topic_with_first_subscription: cdktn.booleanToTerraform(this._autoCreateTopicWithFirstSubscription),
       auto_delete_topic_with_last_subscription: cdktn.booleanToTerraform(this._autoDeleteTopicWithLastSubscription),
+      data_residency_boundary: cdktn.stringToTerraform(this._dataResidencyBoundary),
       id: cdktn.stringToTerraform(this._id),
       inbound_ip_rule: cdktn.listMapper(eventgridDomainInboundIpRuleToTerraform, false)(this._inboundIpRule.internalValue),
       input_schema: cdktn.stringToTerraform(this._inputSchema),
       local_auth_enabled: cdktn.booleanToTerraform(this._localAuthEnabled),
       location: cdktn.stringToTerraform(this._location),
+      minimum_tls_version: cdktn.stringToTerraform(this._minimumTlsVersion),
       name: cdktn.stringToTerraform(this._name),
       public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
       resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
@@ -1308,6 +1352,12 @@ export class EventgridDomain extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      data_residency_boundary: {
+        value: cdktn.stringToHclTerraform(this._dataResidencyBoundary),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       id: {
         value: cdktn.stringToHclTerraform(this._id),
@@ -1335,6 +1385,12 @@ export class EventgridDomain extends cdktn.TerraformResource {
       },
       location: {
         value: cdktn.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      minimum_tls_version: {
+        value: cdktn.stringToHclTerraform(this._minimumTlsVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
