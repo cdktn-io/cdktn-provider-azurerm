@@ -313,6 +313,7 @@ export * as dataProtectionBackupInstanceKubernetesCluster from './data-protectio
 export * as dataProtectionBackupInstanceMysqlFlexibleServer from './data-protection-backup-instance-mysql-flexible-server/index';
 export * as dataProtectionBackupInstancePostgresqlFlexibleServer from './data-protection-backup-instance-postgresql-flexible-server/index';
 export * as dataProtectionBackupPolicyBlobStorage from './data-protection-backup-policy-blob-storage/index';
+export * as dataProtectionBackupPolicyCosmosdbAccount from './data-protection-backup-policy-cosmosdb-account/index';
 export * as dataProtectionBackupPolicyDataLakeStorage from './data-protection-backup-policy-data-lake-storage/index';
 export * as dataProtectionBackupPolicyDisk from './data-protection-backup-policy-disk/index';
 export * as dataProtectionBackupPolicyKubernetesCluster from './data-protection-backup-policy-kubernetes-cluster/index';
@@ -1460,6 +1461,7 @@ export * as dataAzurermStaticWebApp from './data-azurerm-static-web-app/index';
 export * as dataAzurermStorageAccount from './data-azurerm-storage-account/index';
 export * as dataAzurermStorageAccountBlobContainerSas from './data-azurerm-storage-account-blob-container-sas/index';
 export * as dataAzurermStorageAccountSas from './data-azurerm-storage-account-sas/index';
+export * as dataAzurermStorageAccountStaticWebsite from './data-azurerm-storage-account-static-website/index';
 export * as dataAzurermStorageBlob from './data-azurerm-storage-blob/index';
 export * as dataAzurermStorageContainer from './data-azurerm-storage-container/index';
 export * as dataAzurermStorageContainers from './data-azurerm-storage-containers/index';
