@@ -4,12 +4,12 @@
 
 ### DataAzurermSignalrService <a name="DataAzurermSignalrService" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/signalr_service azurerm_signalr_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/signalr_service azurerm_signalr_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 dataazurermsignalrservice.NewDataAzurermSignalrService(scope Construct, id *string, config DataAzurermSignalrServiceConfig) DataAzurermSignalrService
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 dataazurermsignalrservice.DataAzurermSignalrService_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 dataazurermsignalrservice.DataAzurermSignalrService_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermsignalrservice.DataAzurermSignalrService_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 dataazurermsignalrservice.DataAzurermSignalrService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermsignalrservice.DataAzurermSignalrService_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 dataazurermsignalrservice.DataAzurermSignalrService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermSignalrService 
 
 The id of the existing DataAzurermSignalrService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/signalr_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/signalr_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -944,7 +944,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 &dataazurermsignalrservice.DataAzurermSignalrServiceConfig {
 	Connection: interface{},
@@ -957,7 +957,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsig
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataAzurermSignalrService.DataAzurermSignalrServiceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19.dataAzurermSignalrService.DataAzurermSignalrServiceTimeouts,
 }
 ```
 
@@ -972,9 +972,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsig
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/signalr_service#name DataAzurermSignalrService#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/signalr_service#resource_group_name DataAzurermSignalrService#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/signalr_service#id DataAzurermSignalrService#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/signalr_service#name DataAzurermSignalrService#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/signalr_service#resource_group_name DataAzurermSignalrService#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/signalr_service#id DataAzurermSignalrService#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceTimeouts">DataAzurermSignalrServiceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1057,7 +1057,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/signalr_service#name DataAzurermSignalrService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/signalr_service#name DataAzurermSignalrService#name}.
 
 ---
 
@@ -1069,7 +1069,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/signalr_service#resource_group_name DataAzurermSignalrService#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/signalr_service#resource_group_name DataAzurermSignalrService#resource_group_name}.
 
 ---
 
@@ -1081,7 +1081,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/signalr_service#id DataAzurermSignalrService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/signalr_service#id DataAzurermSignalrService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1098,7 +1098,7 @@ Timeouts DataAzurermSignalrServiceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/signalr_service#timeouts DataAzurermSignalrService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/signalr_service#timeouts DataAzurermSignalrService#timeouts}
 
 ---
 
@@ -1107,7 +1107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceCors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 &dataazurermsignalrservice.DataAzurermSignalrServiceCors {
 
@@ -1120,7 +1120,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsig
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 &dataazurermsignalrservice.DataAzurermSignalrServiceIdentity {
 
@@ -1133,7 +1133,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsig
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceLiveTrace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 &dataazurermsignalrservice.DataAzurermSignalrServiceLiveTrace {
 
@@ -1146,7 +1146,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsig
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceSku.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 &dataazurermsignalrservice.DataAzurermSignalrServiceSku {
 
@@ -1159,7 +1159,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsig
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 &dataazurermsignalrservice.DataAzurermSignalrServiceTimeouts {
 	Read: *string,
@@ -1170,7 +1170,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/signalr_service#read DataAzurermSignalrService#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/signalr_service#read DataAzurermSignalrService#read}. |
 
 ---
 
@@ -1182,7 +1182,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/signalr_service#read DataAzurermSignalrService#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/signalr_service#read DataAzurermSignalrService#read}.
 
 ---
 
@@ -1191,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceUpstreamEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 &dataazurermsignalrservice.DataAzurermSignalrServiceUpstreamEndpoint {
 
@@ -1206,7 +1206,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsig
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceCorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 dataazurermsignalrservice.NewDataAzurermSignalrServiceCorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermSignalrServiceCorsList
 ```
@@ -1355,7 +1355,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 dataazurermsignalrservice.NewDataAzurermSignalrServiceCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermSignalrServiceCorsOutputReference
 ```
@@ -1633,7 +1633,7 @@ func InternalValue() DataAzurermSignalrServiceCors
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 dataazurermsignalrservice.NewDataAzurermSignalrServiceIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermSignalrServiceIdentityList
 ```
@@ -1782,7 +1782,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 dataazurermsignalrservice.NewDataAzurermSignalrServiceIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermSignalrServiceIdentityOutputReference
 ```
@@ -2093,7 +2093,7 @@ func InternalValue() DataAzurermSignalrServiceIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceLiveTraceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 dataazurermsignalrservice.NewDataAzurermSignalrServiceLiveTraceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermSignalrServiceLiveTraceList
 ```
@@ -2242,7 +2242,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceLiveTraceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 dataazurermsignalrservice.NewDataAzurermSignalrServiceLiveTraceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermSignalrServiceLiveTraceOutputReference
 ```
@@ -2553,7 +2553,7 @@ func InternalValue() DataAzurermSignalrServiceLiveTrace
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceSkuList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 dataazurermsignalrservice.NewDataAzurermSignalrServiceSkuList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermSignalrServiceSkuList
 ```
@@ -2702,7 +2702,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceSkuOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 dataazurermsignalrservice.NewDataAzurermSignalrServiceSkuOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermSignalrServiceSkuOutputReference
 ```
@@ -2991,7 +2991,7 @@ func InternalValue() DataAzurermSignalrServiceSku
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 dataazurermsignalrservice.NewDataAzurermSignalrServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermSignalrServiceTimeoutsOutputReference
 ```
@@ -3269,7 +3269,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceUpstreamEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 dataazurermsignalrservice.NewDataAzurermSignalrServiceUpstreamEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermSignalrServiceUpstreamEndpointList
 ```
@@ -3418,7 +3418,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSignalrService.DataAzurermSignalrServiceUpstreamEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermsignalrservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermsignalrservice"
 
 dataazurermsignalrservice.NewDataAzurermSignalrServiceUpstreamEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermSignalrServiceUpstreamEndpointOutputReference
 ```

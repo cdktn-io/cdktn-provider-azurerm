@@ -4,12 +4,12 @@
 
 ### SharedImageVersion <a name="SharedImageVersion" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version azurerm_shared_image_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version azurerm_shared_image_version}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 sharedimageversion.NewSharedImageVersion(scope Construct, id *string, config SharedImageVersionConfig) SharedImageVersion
 ```
@@ -523,7 +523,7 @@ func ResetUefi()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 sharedimageversion.SharedImageVersion_IsConstruct(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 sharedimageversion.SharedImageVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ sharedimageversion.SharedImageVersion_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 sharedimageversion.SharedImageVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -583,7 +583,7 @@ sharedimageversion.SharedImageVersion_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 sharedimageversion.SharedImageVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -612,7 +612,7 @@ The construct id used in the generated config for the SharedImageVersion to impo
 
 The id of the existing SharedImageVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1208,7 +1208,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 &sharedimageversion.SharedImageVersionConfig {
 	Connection: interface{},
@@ -1234,8 +1234,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimagever
 	ReplicationMode: *string,
 	StorageAccountId: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.sharedImageVersion.SharedImageVersionTimeouts,
-	Uefi: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.sharedImageVersion.SharedImageVersionUefi,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19.sharedImageVersion.SharedImageVersionTimeouts,
+	Uefi: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19.sharedImageVersion.SharedImageVersionUefi,
 }
 ```
 
@@ -1250,22 +1250,22 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimagever
 | <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.galleryName">GalleryName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#gallery_name SharedImageVersion#gallery_name}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.imageName">ImageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#image_name SharedImageVersion#image_name}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#location SharedImageVersion#location}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#name SharedImageVersion#name}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#resource_group_name SharedImageVersion#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.galleryName">GalleryName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#gallery_name SharedImageVersion#gallery_name}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.imageName">ImageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#image_name SharedImageVersion#image_name}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#location SharedImageVersion#location}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#name SharedImageVersion#name}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#resource_group_name SharedImageVersion#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.targetRegion">TargetRegion</a></code> | <code>interface{}</code> | target_region block. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.blobUri">BlobUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#blob_uri SharedImageVersion#blob_uri}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.deletionOfReplicatedLocationsEnabled">DeletionOfReplicatedLocationsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#deletion_of_replicated_locations_enabled SharedImageVersion#deletion_of_replicated_locations_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.endOfLifeDate">EndOfLifeDate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#end_of_life_date SharedImageVersion#end_of_life_date}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.excludeFromLatest">ExcludeFromLatest</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#exclude_from_latest SharedImageVersion#exclude_from_latest}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#id SharedImageVersion#id}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.managedImageId">ManagedImageId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#managed_image_id SharedImageVersion#managed_image_id}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.osDiskSnapshotId">OsDiskSnapshotId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#os_disk_snapshot_id SharedImageVersion#os_disk_snapshot_id}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.replicationMode">ReplicationMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#replication_mode SharedImageVersion#replication_mode}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.storageAccountId">StorageAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#storage_account_id SharedImageVersion#storage_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#tags SharedImageVersion#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.blobUri">BlobUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#blob_uri SharedImageVersion#blob_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.deletionOfReplicatedLocationsEnabled">DeletionOfReplicatedLocationsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#deletion_of_replicated_locations_enabled SharedImageVersion#deletion_of_replicated_locations_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.endOfLifeDate">EndOfLifeDate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#end_of_life_date SharedImageVersion#end_of_life_date}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.excludeFromLatest">ExcludeFromLatest</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#exclude_from_latest SharedImageVersion#exclude_from_latest}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#id SharedImageVersion#id}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.managedImageId">ManagedImageId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#managed_image_id SharedImageVersion#managed_image_id}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.osDiskSnapshotId">OsDiskSnapshotId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#os_disk_snapshot_id SharedImageVersion#os_disk_snapshot_id}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.replicationMode">ReplicationMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#replication_mode SharedImageVersion#replication_mode}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.storageAccountId">StorageAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#storage_account_id SharedImageVersion#storage_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#tags SharedImageVersion#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTimeouts">SharedImageVersionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionConfig.property.uefi">Uefi</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefi">SharedImageVersionUefi</a></code> | uefi block. |
 
@@ -1349,7 +1349,7 @@ GalleryName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#gallery_name SharedImageVersion#gallery_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#gallery_name SharedImageVersion#gallery_name}.
 
 ---
 
@@ -1361,7 +1361,7 @@ ImageName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#image_name SharedImageVersion#image_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#image_name SharedImageVersion#image_name}.
 
 ---
 
@@ -1373,7 +1373,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#location SharedImageVersion#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#location SharedImageVersion#location}.
 
 ---
 
@@ -1385,7 +1385,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#name SharedImageVersion#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#name SharedImageVersion#name}.
 
 ---
 
@@ -1397,7 +1397,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#resource_group_name SharedImageVersion#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#resource_group_name SharedImageVersion#resource_group_name}.
 
 ---
 
@@ -1411,7 +1411,7 @@ TargetRegion interface{}
 
 target_region block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#target_region SharedImageVersion#target_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#target_region SharedImageVersion#target_region}
 
 ---
 
@@ -1423,7 +1423,7 @@ BlobUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#blob_uri SharedImageVersion#blob_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#blob_uri SharedImageVersion#blob_uri}.
 
 ---
 
@@ -1435,7 +1435,7 @@ DeletionOfReplicatedLocationsEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#deletion_of_replicated_locations_enabled SharedImageVersion#deletion_of_replicated_locations_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#deletion_of_replicated_locations_enabled SharedImageVersion#deletion_of_replicated_locations_enabled}.
 
 ---
 
@@ -1447,7 +1447,7 @@ EndOfLifeDate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#end_of_life_date SharedImageVersion#end_of_life_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#end_of_life_date SharedImageVersion#end_of_life_date}.
 
 ---
 
@@ -1459,7 +1459,7 @@ ExcludeFromLatest interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#exclude_from_latest SharedImageVersion#exclude_from_latest}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#exclude_from_latest SharedImageVersion#exclude_from_latest}.
 
 ---
 
@@ -1471,7 +1471,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#id SharedImageVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#id SharedImageVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1486,7 +1486,7 @@ ManagedImageId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#managed_image_id SharedImageVersion#managed_image_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#managed_image_id SharedImageVersion#managed_image_id}.
 
 ---
 
@@ -1498,7 +1498,7 @@ OsDiskSnapshotId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#os_disk_snapshot_id SharedImageVersion#os_disk_snapshot_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#os_disk_snapshot_id SharedImageVersion#os_disk_snapshot_id}.
 
 ---
 
@@ -1510,7 +1510,7 @@ ReplicationMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#replication_mode SharedImageVersion#replication_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#replication_mode SharedImageVersion#replication_mode}.
 
 ---
 
@@ -1522,7 +1522,7 @@ StorageAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#storage_account_id SharedImageVersion#storage_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#storage_account_id SharedImageVersion#storage_account_id}.
 
 ---
 
@@ -1534,7 +1534,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#tags SharedImageVersion#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#tags SharedImageVersion#tags}.
 
 ---
 
@@ -1548,7 +1548,7 @@ Timeouts SharedImageVersionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#timeouts SharedImageVersion#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#timeouts SharedImageVersion#timeouts}
 
 ---
 
@@ -1562,7 +1562,7 @@ Uefi SharedImageVersionUefi
 
 uefi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#uefi SharedImageVersion#uefi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#uefi SharedImageVersion#uefi}
 
 ---
 
@@ -1571,7 +1571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTargetRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 &sharedimageversion.SharedImageVersionTargetRegion {
 	Name: *string,
@@ -1586,11 +1586,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimagever
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTargetRegion.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#name SharedImageVersion#name}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTargetRegion.property.regionalReplicaCount">RegionalReplicaCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#regional_replica_count SharedImageVersion#regional_replica_count}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTargetRegion.property.diskEncryptionSetId">DiskEncryptionSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#disk_encryption_set_id SharedImageVersion#disk_encryption_set_id}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTargetRegion.property.excludeFromLatestEnabled">ExcludeFromLatestEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#exclude_from_latest_enabled SharedImageVersion#exclude_from_latest_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTargetRegion.property.storageAccountType">StorageAccountType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#storage_account_type SharedImageVersion#storage_account_type}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTargetRegion.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#name SharedImageVersion#name}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTargetRegion.property.regionalReplicaCount">RegionalReplicaCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#regional_replica_count SharedImageVersion#regional_replica_count}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTargetRegion.property.diskEncryptionSetId">DiskEncryptionSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#disk_encryption_set_id SharedImageVersion#disk_encryption_set_id}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTargetRegion.property.excludeFromLatestEnabled">ExcludeFromLatestEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#exclude_from_latest_enabled SharedImageVersion#exclude_from_latest_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTargetRegion.property.storageAccountType">StorageAccountType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#storage_account_type SharedImageVersion#storage_account_type}. |
 
 ---
 
@@ -1602,7 +1602,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#name SharedImageVersion#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#name SharedImageVersion#name}.
 
 ---
 
@@ -1614,7 +1614,7 @@ RegionalReplicaCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#regional_replica_count SharedImageVersion#regional_replica_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#regional_replica_count SharedImageVersion#regional_replica_count}.
 
 ---
 
@@ -1626,7 +1626,7 @@ DiskEncryptionSetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#disk_encryption_set_id SharedImageVersion#disk_encryption_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#disk_encryption_set_id SharedImageVersion#disk_encryption_set_id}.
 
 ---
 
@@ -1638,7 +1638,7 @@ ExcludeFromLatestEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#exclude_from_latest_enabled SharedImageVersion#exclude_from_latest_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#exclude_from_latest_enabled SharedImageVersion#exclude_from_latest_enabled}.
 
 ---
 
@@ -1650,7 +1650,7 @@ StorageAccountType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#storage_account_type SharedImageVersion#storage_account_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#storage_account_type SharedImageVersion#storage_account_type}.
 
 ---
 
@@ -1659,7 +1659,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 &sharedimageversion.SharedImageVersionTimeouts {
 	Create: *string,
@@ -1673,10 +1673,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimagever
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#create SharedImageVersion#create}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#delete SharedImageVersion#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#read SharedImageVersion#read}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#update SharedImageVersion#update}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#create SharedImageVersion#create}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#delete SharedImageVersion#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#read SharedImageVersion#read}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#update SharedImageVersion#update}. |
 
 ---
 
@@ -1688,7 +1688,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#create SharedImageVersion#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#create SharedImageVersion#create}.
 
 ---
 
@@ -1700,7 +1700,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#delete SharedImageVersion#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#delete SharedImageVersion#delete}.
 
 ---
 
@@ -1712,7 +1712,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#read SharedImageVersion#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#read SharedImageVersion#read}.
 
 ---
 
@@ -1724,7 +1724,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#update SharedImageVersion#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#update SharedImageVersion#update}.
 
 ---
 
@@ -1733,11 +1733,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 &sharedimageversion.SharedImageVersionUefi {
 	SignatureTemplateNames: *[]*string,
-	AdditionalSignatures: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.sharedImageVersion.SharedImageVersionUefiAdditionalSignatures,
+	AdditionalSignatures: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19.sharedImageVersion.SharedImageVersionUefiAdditionalSignatures,
 }
 ```
 
@@ -1745,7 +1745,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimagever
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefi.property.signatureTemplateNames">SignatureTemplateNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#signature_template_names SharedImageVersion#signature_template_names}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefi.property.signatureTemplateNames">SignatureTemplateNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#signature_template_names SharedImageVersion#signature_template_names}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefi.property.additionalSignatures">AdditionalSignatures</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignatures">SharedImageVersionUefiAdditionalSignatures</a></code> | additional_signatures block. |
 
 ---
@@ -1758,7 +1758,7 @@ SignatureTemplateNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#signature_template_names SharedImageVersion#signature_template_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#signature_template_names SharedImageVersion#signature_template_names}.
 
 ---
 
@@ -1772,7 +1772,7 @@ AdditionalSignatures SharedImageVersionUefiAdditionalSignatures
 
 additional_signatures block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#additional_signatures SharedImageVersion#additional_signatures}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#additional_signatures SharedImageVersion#additional_signatures}
 
 ---
 
@@ -1781,13 +1781,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignatures.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 &sharedimageversion.SharedImageVersionUefiAdditionalSignatures {
 	Db: interface{},
 	Dbx: interface{},
 	Kek: interface{},
-	Pk: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesPk,
+	Pk: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesPk,
 }
 ```
 
@@ -1812,7 +1812,7 @@ Db interface{}
 
 db block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#db SharedImageVersion#db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#db SharedImageVersion#db}
 
 ---
 
@@ -1826,7 +1826,7 @@ Dbx interface{}
 
 dbx block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#dbx SharedImageVersion#dbx}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#dbx SharedImageVersion#dbx}
 
 ---
 
@@ -1840,7 +1840,7 @@ Kek interface{}
 
 kek block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#kek SharedImageVersion#kek}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#kek SharedImageVersion#kek}
 
 ---
 
@@ -1854,7 +1854,7 @@ Pk SharedImageVersionUefiAdditionalSignaturesPk
 
 pk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#pk SharedImageVersion#pk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#pk SharedImageVersion#pk}
 
 ---
 
@@ -1863,7 +1863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesDb.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 &sharedimageversion.SharedImageVersionUefiAdditionalSignaturesDb {
 	Type: *string,
@@ -1875,8 +1875,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimagever
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesDb.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#type SharedImageVersion#type}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesDb.property.valuesBase64">ValuesBase64</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#values_base64 SharedImageVersion#values_base64}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesDb.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#type SharedImageVersion#type}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesDb.property.valuesBase64">ValuesBase64</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#values_base64 SharedImageVersion#values_base64}. |
 
 ---
 
@@ -1888,7 +1888,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#type SharedImageVersion#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#type SharedImageVersion#type}.
 
 ---
 
@@ -1900,7 +1900,7 @@ ValuesBase64 *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#values_base64 SharedImageVersion#values_base64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#values_base64 SharedImageVersion#values_base64}.
 
 ---
 
@@ -1909,7 +1909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesDbx.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 &sharedimageversion.SharedImageVersionUefiAdditionalSignaturesDbx {
 	Type: *string,
@@ -1921,8 +1921,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimagever
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesDbx.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#type SharedImageVersion#type}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesDbx.property.valuesBase64">ValuesBase64</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#values_base64 SharedImageVersion#values_base64}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesDbx.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#type SharedImageVersion#type}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesDbx.property.valuesBase64">ValuesBase64</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#values_base64 SharedImageVersion#values_base64}. |
 
 ---
 
@@ -1934,7 +1934,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#type SharedImageVersion#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#type SharedImageVersion#type}.
 
 ---
 
@@ -1946,7 +1946,7 @@ ValuesBase64 *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#values_base64 SharedImageVersion#values_base64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#values_base64 SharedImageVersion#values_base64}.
 
 ---
 
@@ -1955,7 +1955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesKek.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 &sharedimageversion.SharedImageVersionUefiAdditionalSignaturesKek {
 	Type: *string,
@@ -1967,8 +1967,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimagever
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesKek.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#type SharedImageVersion#type}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesKek.property.valuesBase64">ValuesBase64</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#values_base64 SharedImageVersion#values_base64}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesKek.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#type SharedImageVersion#type}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesKek.property.valuesBase64">ValuesBase64</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#values_base64 SharedImageVersion#values_base64}. |
 
 ---
 
@@ -1980,7 +1980,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#type SharedImageVersion#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#type SharedImageVersion#type}.
 
 ---
 
@@ -1992,7 +1992,7 @@ ValuesBase64 *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#values_base64 SharedImageVersion#values_base64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#values_base64 SharedImageVersion#values_base64}.
 
 ---
 
@@ -2001,7 +2001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesPk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 &sharedimageversion.SharedImageVersionUefiAdditionalSignaturesPk {
 	Type: *string,
@@ -2013,8 +2013,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimagever
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesPk.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#type SharedImageVersion#type}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesPk.property.valuesBase64">ValuesBase64</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#values_base64 SharedImageVersion#values_base64}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesPk.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#type SharedImageVersion#type}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesPk.property.valuesBase64">ValuesBase64</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#values_base64 SharedImageVersion#values_base64}. |
 
 ---
 
@@ -2026,7 +2026,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#type SharedImageVersion#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#type SharedImageVersion#type}.
 
 ---
 
@@ -2038,7 +2038,7 @@ ValuesBase64 *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/shared_image_version#values_base64 SharedImageVersion#values_base64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/shared_image_version#values_base64 SharedImageVersion#values_base64}.
 
 ---
 
@@ -2049,7 +2049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTargetRegionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 sharedimageversion.NewSharedImageVersionTargetRegionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SharedImageVersionTargetRegionList
 ```
@@ -2209,7 +2209,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTargetRegionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 sharedimageversion.NewSharedImageVersionTargetRegionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SharedImageVersionTargetRegionOutputReference
 ```
@@ -2607,7 +2607,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 sharedimageversion.NewSharedImageVersionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SharedImageVersionTimeoutsOutputReference
 ```
@@ -2972,7 +2972,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesDbList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 sharedimageversion.NewSharedImageVersionUefiAdditionalSignaturesDbList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SharedImageVersionUefiAdditionalSignaturesDbList
 ```
@@ -3132,7 +3132,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesDbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 sharedimageversion.NewSharedImageVersionUefiAdditionalSignaturesDbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SharedImageVersionUefiAdditionalSignaturesDbOutputReference
 ```
@@ -3443,7 +3443,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesDbxList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 sharedimageversion.NewSharedImageVersionUefiAdditionalSignaturesDbxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SharedImageVersionUefiAdditionalSignaturesDbxList
 ```
@@ -3603,7 +3603,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesDbxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 sharedimageversion.NewSharedImageVersionUefiAdditionalSignaturesDbxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SharedImageVersionUefiAdditionalSignaturesDbxOutputReference
 ```
@@ -3914,7 +3914,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesKekList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 sharedimageversion.NewSharedImageVersionUefiAdditionalSignaturesKekList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SharedImageVersionUefiAdditionalSignaturesKekList
 ```
@@ -4074,7 +4074,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesKekOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 sharedimageversion.NewSharedImageVersionUefiAdditionalSignaturesKekOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SharedImageVersionUefiAdditionalSignaturesKekOutputReference
 ```
@@ -4385,7 +4385,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 sharedimageversion.NewSharedImageVersionUefiAdditionalSignaturesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SharedImageVersionUefiAdditionalSignaturesOutputReference
 ```
@@ -4802,7 +4802,7 @@ func InternalValue() SharedImageVersionUefiAdditionalSignatures
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiAdditionalSignaturesPkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 sharedimageversion.NewSharedImageVersionUefiAdditionalSignaturesPkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SharedImageVersionUefiAdditionalSignaturesPkOutputReference
 ```
@@ -5095,7 +5095,7 @@ func InternalValue() SharedImageVersionUefiAdditionalSignaturesPk
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImageVersion.SharedImageVersionUefiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimageversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/sharedimageversion"
 
 sharedimageversion.NewSharedImageVersionUefiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SharedImageVersionUefiOutputReference
 ```

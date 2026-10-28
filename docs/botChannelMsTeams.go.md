@@ -4,12 +4,12 @@
 
 ### BotChannelMsTeams <a name="BotChannelMsTeams" id="@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeams"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams azurerm_bot_channel_ms_teams}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams azurerm_bot_channel_ms_teams}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/botchannelmsteams"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/botchannelmsteams"
 
 botchannelmsteams.NewBotChannelMsTeams(scope Construct, id *string, config BotChannelMsTeamsConfig) BotChannelMsTeams
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeams.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/botchannelmsteams"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/botchannelmsteams"
 
 botchannelmsteams.BotChannelMsTeams_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeams.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/botchannelmsteams"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/botchannelmsteams"
 
 botchannelmsteams.BotChannelMsTeams_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ botchannelmsteams.BotChannelMsTeams_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeams.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/botchannelmsteams"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/botchannelmsteams"
 
 botchannelmsteams.BotChannelMsTeams_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ botchannelmsteams.BotChannelMsTeams_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeams.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/botchannelmsteams"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/botchannelmsteams"
 
 botchannelmsteams.BotChannelMsTeams_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the BotChannelMsTeams to impor
 
 The id of the existing BotChannelMsTeams that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -913,7 +913,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/botchannelmsteams"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/botchannelmsteams"
 
 &botchannelmsteams.BotChannelMsTeamsConfig {
 	Connection: interface{},
@@ -930,7 +930,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/botchannelmste
 	CallingWebHook: *string,
 	DeploymentEnvironment: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.botChannelMsTeams.BotChannelMsTeamsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19.botChannelMsTeams.BotChannelMsTeamsTimeouts,
 }
 ```
 
@@ -945,13 +945,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/botchannelmste
 | <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsConfig.property.botName">BotName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#bot_name BotChannelMsTeams#bot_name}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#location BotChannelMsTeams#location}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#resource_group_name BotChannelMsTeams#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsConfig.property.callingEnabled">CallingEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#calling_enabled BotChannelMsTeams#calling_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsConfig.property.callingWebHook">CallingWebHook</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#calling_web_hook BotChannelMsTeams#calling_web_hook}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsConfig.property.deploymentEnvironment">DeploymentEnvironment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#deployment_environment BotChannelMsTeams#deployment_environment}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#id BotChannelMsTeams#id}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsConfig.property.botName">BotName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#bot_name BotChannelMsTeams#bot_name}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#location BotChannelMsTeams#location}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#resource_group_name BotChannelMsTeams#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsConfig.property.callingEnabled">CallingEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#calling_enabled BotChannelMsTeams#calling_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsConfig.property.callingWebHook">CallingWebHook</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#calling_web_hook BotChannelMsTeams#calling_web_hook}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsConfig.property.deploymentEnvironment">DeploymentEnvironment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#deployment_environment BotChannelMsTeams#deployment_environment}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#id BotChannelMsTeams#id}. |
 | <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsTimeouts">BotChannelMsTeamsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1034,7 +1034,7 @@ BotName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#bot_name BotChannelMsTeams#bot_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#bot_name BotChannelMsTeams#bot_name}.
 
 ---
 
@@ -1046,7 +1046,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#location BotChannelMsTeams#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#location BotChannelMsTeams#location}.
 
 ---
 
@@ -1058,7 +1058,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#resource_group_name BotChannelMsTeams#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#resource_group_name BotChannelMsTeams#resource_group_name}.
 
 ---
 
@@ -1070,7 +1070,7 @@ CallingEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#calling_enabled BotChannelMsTeams#calling_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#calling_enabled BotChannelMsTeams#calling_enabled}.
 
 ---
 
@@ -1082,7 +1082,7 @@ CallingWebHook *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#calling_web_hook BotChannelMsTeams#calling_web_hook}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#calling_web_hook BotChannelMsTeams#calling_web_hook}.
 
 ---
 
@@ -1094,7 +1094,7 @@ DeploymentEnvironment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#deployment_environment BotChannelMsTeams#deployment_environment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#deployment_environment BotChannelMsTeams#deployment_environment}.
 
 ---
 
@@ -1106,7 +1106,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#id BotChannelMsTeams#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#id BotChannelMsTeams#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1123,7 +1123,7 @@ Timeouts BotChannelMsTeamsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#timeouts BotChannelMsTeams#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#timeouts BotChannelMsTeams#timeouts}
 
 ---
 
@@ -1132,7 +1132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/botchannelmsteams"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/botchannelmsteams"
 
 &botchannelmsteams.BotChannelMsTeamsTimeouts {
 	Create: *string,
@@ -1146,10 +1146,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/botchannelmste
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#create BotChannelMsTeams#create}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#delete BotChannelMsTeams#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#read BotChannelMsTeams#read}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#update BotChannelMsTeams#update}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#create BotChannelMsTeams#create}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#delete BotChannelMsTeams#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#read BotChannelMsTeams#read}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#update BotChannelMsTeams#update}. |
 
 ---
 
@@ -1161,7 +1161,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#create BotChannelMsTeams#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#create BotChannelMsTeams#create}.
 
 ---
 
@@ -1173,7 +1173,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#delete BotChannelMsTeams#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#delete BotChannelMsTeams#delete}.
 
 ---
 
@@ -1185,7 +1185,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#read BotChannelMsTeams#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#read BotChannelMsTeams#read}.
 
 ---
 
@@ -1197,7 +1197,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/bot_channel_ms_teams#update BotChannelMsTeams#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/bot_channel_ms_teams#update BotChannelMsTeams#update}.
 
 ---
 
@@ -1208,7 +1208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.botChannelMsTeams.BotChannelMsTeamsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/botchannelmsteams"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/botchannelmsteams"
 
 botchannelmsteams.NewBotChannelMsTeamsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BotChannelMsTeamsTimeoutsOutputReference
 ```

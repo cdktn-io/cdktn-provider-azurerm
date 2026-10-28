@@ -4,12 +4,12 @@
 
 ### DataAzurermWebPubsub <a name="DataAzurermWebPubsub" id="@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsub"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/web_pubsub azurerm_web_pubsub}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/web_pubsub azurerm_web_pubsub}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsub.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermwebpubsub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermwebpubsub"
 
 dataazurermwebpubsub.NewDataAzurermWebPubsub(scope Construct, id *string, config DataAzurermWebPubsubConfig) DataAzurermWebPubsub
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsub.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermwebpubsub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermwebpubsub"
 
 dataazurermwebpubsub.DataAzurermWebPubsub_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsub.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermwebpubsub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermwebpubsub"
 
 dataazurermwebpubsub.DataAzurermWebPubsub_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermwebpubsub.DataAzurermWebPubsub_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsub.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermwebpubsub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermwebpubsub"
 
 dataazurermwebpubsub.DataAzurermWebPubsub_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermwebpubsub.DataAzurermWebPubsub_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsub.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermwebpubsub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermwebpubsub"
 
 dataazurermwebpubsub.DataAzurermWebPubsub_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermWebPubsub to im
 
 The id of the existing DataAzurermWebPubsub that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/web_pubsub#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/web_pubsub#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -889,7 +889,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermwebpubsub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermwebpubsub"
 
 &dataazurermwebpubsub.DataAzurermWebPubsubConfig {
 	Connection: interface{},
@@ -902,7 +902,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermweb
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataAzurermWebPubsub.DataAzurermWebPubsubTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19.dataAzurermWebPubsub.DataAzurermWebPubsubTimeouts,
 }
 ```
 
@@ -917,9 +917,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermweb
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/web_pubsub#name DataAzurermWebPubsub#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/web_pubsub#resource_group_name DataAzurermWebPubsub#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/web_pubsub#id DataAzurermWebPubsub#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/web_pubsub#name DataAzurermWebPubsub#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/web_pubsub#resource_group_name DataAzurermWebPubsub#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/web_pubsub#id DataAzurermWebPubsub#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubTimeouts">DataAzurermWebPubsubTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1002,7 +1002,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/web_pubsub#name DataAzurermWebPubsub#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/web_pubsub#name DataAzurermWebPubsub#name}.
 
 ---
 
@@ -1014,7 +1014,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/web_pubsub#resource_group_name DataAzurermWebPubsub#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/web_pubsub#resource_group_name DataAzurermWebPubsub#resource_group_name}.
 
 ---
 
@@ -1026,7 +1026,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/web_pubsub#id DataAzurermWebPubsub#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/web_pubsub#id DataAzurermWebPubsub#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1043,7 +1043,7 @@ Timeouts DataAzurermWebPubsubTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/web_pubsub#timeouts DataAzurermWebPubsub#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/web_pubsub#timeouts DataAzurermWebPubsub#timeouts}
 
 ---
 
@@ -1052,7 +1052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermwebpubsub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermwebpubsub"
 
 &dataazurermwebpubsub.DataAzurermWebPubsubIdentity {
 
@@ -1065,7 +1065,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermweb
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubLiveTrace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermwebpubsub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermwebpubsub"
 
 &dataazurermwebpubsub.DataAzurermWebPubsubLiveTrace {
 
@@ -1078,7 +1078,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermweb
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermwebpubsub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermwebpubsub"
 
 &dataazurermwebpubsub.DataAzurermWebPubsubTimeouts {
 	Read: *string,
@@ -1089,7 +1089,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermweb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/web_pubsub#read DataAzurermWebPubsub#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/web_pubsub#read DataAzurermWebPubsub#read}. |
 
 ---
 
@@ -1101,7 +1101,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/web_pubsub#read DataAzurermWebPubsub#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/web_pubsub#read DataAzurermWebPubsub#read}.
 
 ---
 
@@ -1112,7 +1112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermwebpubsub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermwebpubsub"
 
 dataazurermwebpubsub.NewDataAzurermWebPubsubIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermWebPubsubIdentityList
 ```
@@ -1261,7 +1261,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermwebpubsub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermwebpubsub"
 
 dataazurermwebpubsub.NewDataAzurermWebPubsubIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermWebPubsubIdentityOutputReference
 ```
@@ -1572,7 +1572,7 @@ func InternalValue() DataAzurermWebPubsubIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubLiveTraceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermwebpubsub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermwebpubsub"
 
 dataazurermwebpubsub.NewDataAzurermWebPubsubLiveTraceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermWebPubsubLiveTraceList
 ```
@@ -1721,7 +1721,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubLiveTraceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermwebpubsub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermwebpubsub"
 
 dataazurermwebpubsub.NewDataAzurermWebPubsubLiveTraceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermWebPubsubLiveTraceOutputReference
 ```
@@ -2032,7 +2032,7 @@ func InternalValue() DataAzurermWebPubsubLiveTrace
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermWebPubsub.DataAzurermWebPubsubTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermwebpubsub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermwebpubsub"
 
 dataazurermwebpubsub.NewDataAzurermWebPubsubTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermWebPubsubTimeoutsOutputReference
 ```

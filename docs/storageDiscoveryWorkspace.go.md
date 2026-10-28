@@ -4,12 +4,12 @@
 
 ### StorageDiscoveryWorkspace <a name="StorageDiscoveryWorkspace" id="@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace azurerm_storage_discovery_workspace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace azurerm_storage_discovery_workspace}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagediscoveryworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/storagediscoveryworkspace"
 
 storagediscoveryworkspace.NewStorageDiscoveryWorkspace(scope Construct, id *string, config StorageDiscoveryWorkspaceConfig) StorageDiscoveryWorkspace
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagediscoveryworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/storagediscoveryworkspace"
 
 storagediscoveryworkspace.StorageDiscoveryWorkspace_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagediscoveryworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/storagediscoveryworkspace"
 
 storagediscoveryworkspace.StorageDiscoveryWorkspace_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ storagediscoveryworkspace.StorageDiscoveryWorkspace_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagediscoveryworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/storagediscoveryworkspace"
 
 storagediscoveryworkspace.StorageDiscoveryWorkspace_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ storagediscoveryworkspace.StorageDiscoveryWorkspace_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagediscoveryworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/storagediscoveryworkspace"
 
 storagediscoveryworkspace.StorageDiscoveryWorkspace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -550,7 +550,7 @@ The construct id used in the generated config for the StorageDiscoveryWorkspace 
 
 The id of the existing StorageDiscoveryWorkspace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -970,7 +970,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagediscoveryworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/storagediscoveryworkspace"
 
 &storagediscoveryworkspace.StorageDiscoveryWorkspaceConfig {
 	Connection: interface{},
@@ -989,7 +989,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagediscove
 	Id: *string,
 	Sku: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceTimeouts,
 }
 ```
 
@@ -1004,15 +1004,15 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagediscove
 | <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#location StorageDiscoveryWorkspace#location}. |
-| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#name StorageDiscoveryWorkspace#name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#resource_group_name StorageDiscoveryWorkspace#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#location StorageDiscoveryWorkspace#location}. |
+| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#name StorageDiscoveryWorkspace#name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#resource_group_name StorageDiscoveryWorkspace#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.property.scope">Scope</a></code> | <code>interface{}</code> | scope block. |
-| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.property.workspaceRoots">WorkspaceRoots</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#workspace_roots StorageDiscoveryWorkspace#workspace_roots}. |
-| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#description StorageDiscoveryWorkspace#description}. |
-| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#id StorageDiscoveryWorkspace#id}. |
-| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.property.sku">Sku</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#sku StorageDiscoveryWorkspace#sku}. |
-| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#tags StorageDiscoveryWorkspace#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.property.workspaceRoots">WorkspaceRoots</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#workspace_roots StorageDiscoveryWorkspace#workspace_roots}. |
+| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#description StorageDiscoveryWorkspace#description}. |
+| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#id StorageDiscoveryWorkspace#id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.property.sku">Sku</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#sku StorageDiscoveryWorkspace#sku}. |
+| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#tags StorageDiscoveryWorkspace#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceTimeouts">StorageDiscoveryWorkspaceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1095,7 +1095,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#location StorageDiscoveryWorkspace#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#location StorageDiscoveryWorkspace#location}.
 
 ---
 
@@ -1107,7 +1107,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#name StorageDiscoveryWorkspace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#name StorageDiscoveryWorkspace#name}.
 
 ---
 
@@ -1119,7 +1119,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#resource_group_name StorageDiscoveryWorkspace#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#resource_group_name StorageDiscoveryWorkspace#resource_group_name}.
 
 ---
 
@@ -1133,7 +1133,7 @@ Scope interface{}
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#scope StorageDiscoveryWorkspace#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#scope StorageDiscoveryWorkspace#scope}
 
 ---
 
@@ -1145,7 +1145,7 @@ WorkspaceRoots *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#workspace_roots StorageDiscoveryWorkspace#workspace_roots}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#workspace_roots StorageDiscoveryWorkspace#workspace_roots}.
 
 ---
 
@@ -1157,7 +1157,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#description StorageDiscoveryWorkspace#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#description StorageDiscoveryWorkspace#description}.
 
 ---
 
@@ -1169,7 +1169,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#id StorageDiscoveryWorkspace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#id StorageDiscoveryWorkspace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1184,7 +1184,7 @@ Sku *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#sku StorageDiscoveryWorkspace#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#sku StorageDiscoveryWorkspace#sku}.
 
 ---
 
@@ -1196,7 +1196,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#tags StorageDiscoveryWorkspace#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#tags StorageDiscoveryWorkspace#tags}.
 
 ---
 
@@ -1210,7 +1210,7 @@ Timeouts StorageDiscoveryWorkspaceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#timeouts StorageDiscoveryWorkspace#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#timeouts StorageDiscoveryWorkspace#timeouts}
 
 ---
 
@@ -1219,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagediscoveryworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/storagediscoveryworkspace"
 
 &storagediscoveryworkspace.StorageDiscoveryWorkspaceScope {
 	DisplayName: *string,
@@ -1233,10 +1233,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagediscove
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceScope.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#display_name StorageDiscoveryWorkspace#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceScope.property.resourceTypes">ResourceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#resource_types StorageDiscoveryWorkspace#resource_types}. |
-| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceScope.property.tagKeysOnly">TagKeysOnly</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#tag_keys_only StorageDiscoveryWorkspace#tag_keys_only}. |
-| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceScope.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#tags StorageDiscoveryWorkspace#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceScope.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#display_name StorageDiscoveryWorkspace#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceScope.property.resourceTypes">ResourceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#resource_types StorageDiscoveryWorkspace#resource_types}. |
+| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceScope.property.tagKeysOnly">TagKeysOnly</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#tag_keys_only StorageDiscoveryWorkspace#tag_keys_only}. |
+| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceScope.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#tags StorageDiscoveryWorkspace#tags}. |
 
 ---
 
@@ -1248,7 +1248,7 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#display_name StorageDiscoveryWorkspace#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#display_name StorageDiscoveryWorkspace#display_name}.
 
 ---
 
@@ -1260,7 +1260,7 @@ ResourceTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#resource_types StorageDiscoveryWorkspace#resource_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#resource_types StorageDiscoveryWorkspace#resource_types}.
 
 ---
 
@@ -1272,7 +1272,7 @@ TagKeysOnly *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#tag_keys_only StorageDiscoveryWorkspace#tag_keys_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#tag_keys_only StorageDiscoveryWorkspace#tag_keys_only}.
 
 ---
 
@@ -1284,7 +1284,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#tags StorageDiscoveryWorkspace#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#tags StorageDiscoveryWorkspace#tags}.
 
 ---
 
@@ -1293,7 +1293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagediscoveryworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/storagediscoveryworkspace"
 
 &storagediscoveryworkspace.StorageDiscoveryWorkspaceTimeouts {
 	Create: *string,
@@ -1307,10 +1307,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagediscove
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#create StorageDiscoveryWorkspace#create}. |
-| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#delete StorageDiscoveryWorkspace#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#read StorageDiscoveryWorkspace#read}. |
-| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#update StorageDiscoveryWorkspace#update}. |
+| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#create StorageDiscoveryWorkspace#create}. |
+| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#delete StorageDiscoveryWorkspace#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#read StorageDiscoveryWorkspace#read}. |
+| <code><a href="#@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#update StorageDiscoveryWorkspace#update}. |
 
 ---
 
@@ -1322,7 +1322,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#create StorageDiscoveryWorkspace#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#create StorageDiscoveryWorkspace#create}.
 
 ---
 
@@ -1334,7 +1334,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#delete StorageDiscoveryWorkspace#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#delete StorageDiscoveryWorkspace#delete}.
 
 ---
 
@@ -1346,7 +1346,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#read StorageDiscoveryWorkspace#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#read StorageDiscoveryWorkspace#read}.
 
 ---
 
@@ -1358,7 +1358,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/storage_discovery_workspace#update StorageDiscoveryWorkspace#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/storage_discovery_workspace#update StorageDiscoveryWorkspace#update}.
 
 ---
 
@@ -1369,7 +1369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagediscoveryworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/storagediscoveryworkspace"
 
 storagediscoveryworkspace.NewStorageDiscoveryWorkspaceScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageDiscoveryWorkspaceScopeList
 ```
@@ -1529,7 +1529,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagediscoveryworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/storagediscoveryworkspace"
 
 storagediscoveryworkspace.NewStorageDiscoveryWorkspaceScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageDiscoveryWorkspaceScopeOutputReference
 ```
@@ -1898,7 +1898,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageDiscoveryWorkspace.StorageDiscoveryWorkspaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagediscoveryworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/storagediscoveryworkspace"
 
 storagediscoveryworkspace.NewStorageDiscoveryWorkspaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageDiscoveryWorkspaceTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### CdnFrontdoorRule <a name="CdnFrontdoorRule" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule azurerm_cdn_frontdoor_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule azurerm_cdn_frontdoor_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRule(scope Construct, id *string, config CdnFrontdoorRuleConfig) CdnFrontdoorRule
 ```
@@ -467,7 +467,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.CdnFrontdoorRule_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.CdnFrontdoorRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ cdnfrontdoorrule.CdnFrontdoorRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.CdnFrontdoorRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ cdnfrontdoorrule.CdnFrontdoorRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.CdnFrontdoorRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -556,7 +556,7 @@ The construct id used in the generated config for the CdnFrontdoorRule to import
 
 The id of the existing CdnFrontdoorRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -943,14 +943,14 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleActions {
 	ModifyRequestHeader: interface{},
 	ModifyResponseHeader: interface{},
-	RouteConfigurationOverride: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverride,
-	UrlRedirect: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRedirect,
-	UrlRewrite: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRewrite,
+	RouteConfigurationOverride: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverride,
+	UrlRedirect: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRedirect,
+	UrlRewrite: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRewrite,
 }
 ```
 
@@ -976,7 +976,7 @@ ModifyRequestHeader interface{}
 
 modify_request_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#modify_request_header CdnFrontdoorRule#modify_request_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#modify_request_header CdnFrontdoorRule#modify_request_header}
 
 ---
 
@@ -990,7 +990,7 @@ ModifyResponseHeader interface{}
 
 modify_response_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#modify_response_header CdnFrontdoorRule#modify_response_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#modify_response_header CdnFrontdoorRule#modify_response_header}
 
 ---
 
@@ -1004,7 +1004,7 @@ RouteConfigurationOverride CdnFrontdoorRuleActionsRouteConfigurationOverride
 
 route_configuration_override block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#route_configuration_override CdnFrontdoorRule#route_configuration_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#route_configuration_override CdnFrontdoorRule#route_configuration_override}
 
 ---
 
@@ -1018,7 +1018,7 @@ UrlRedirect CdnFrontdoorRuleActionsUrlRedirect
 
 url_redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#url_redirect CdnFrontdoorRule#url_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#url_redirect CdnFrontdoorRule#url_redirect}
 
 ---
 
@@ -1032,7 +1032,7 @@ UrlRewrite CdnFrontdoorRuleActionsUrlRewrite
 
 url_rewrite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#url_rewrite CdnFrontdoorRule#url_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#url_rewrite CdnFrontdoorRule#url_rewrite}
 
 ---
 
@@ -1041,7 +1041,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsModifyRequestHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleActionsModifyRequestHeader {
 	HeaderName: *string,
@@ -1054,9 +1054,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsModifyRequestHeader.property.headerName">HeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#header_name CdnFrontdoorRule#header_name}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsModifyRequestHeader.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsModifyRequestHeader.property.headerValue">HeaderValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#header_value CdnFrontdoorRule#header_value}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsModifyRequestHeader.property.headerName">HeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#header_name CdnFrontdoorRule#header_name}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsModifyRequestHeader.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsModifyRequestHeader.property.headerValue">HeaderValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#header_value CdnFrontdoorRule#header_value}. |
 
 ---
 
@@ -1068,7 +1068,7 @@ HeaderName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#header_name CdnFrontdoorRule#header_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#header_name CdnFrontdoorRule#header_name}.
 
 ---
 
@@ -1080,7 +1080,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
 
 ---
 
@@ -1092,7 +1092,7 @@ HeaderValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#header_value CdnFrontdoorRule#header_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#header_value CdnFrontdoorRule#header_value}.
 
 ---
 
@@ -1101,7 +1101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsModifyResponseHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleActionsModifyResponseHeader {
 	HeaderName: *string,
@@ -1114,9 +1114,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsModifyResponseHeader.property.headerName">HeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#header_name CdnFrontdoorRule#header_name}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsModifyResponseHeader.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsModifyResponseHeader.property.headerValue">HeaderValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#header_value CdnFrontdoorRule#header_value}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsModifyResponseHeader.property.headerName">HeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#header_name CdnFrontdoorRule#header_name}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsModifyResponseHeader.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsModifyResponseHeader.property.headerValue">HeaderValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#header_value CdnFrontdoorRule#header_value}. |
 
 ---
 
@@ -1128,7 +1128,7 @@ HeaderName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#header_name CdnFrontdoorRule#header_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#header_name CdnFrontdoorRule#header_name}.
 
 ---
 
@@ -1140,7 +1140,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
 
 ---
 
@@ -1152,7 +1152,7 @@ HeaderValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#header_value CdnFrontdoorRule#header_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#header_value CdnFrontdoorRule#header_value}.
 
 ---
 
@@ -1161,11 +1161,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleActionsRouteConfigurationOverride {
-	Caching: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching,
-	OriginGroup: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroup,
+	Caching: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching,
+	OriginGroup: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroup,
 }
 ```
 
@@ -1188,7 +1188,7 @@ Caching CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching
 
 caching block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#caching CdnFrontdoorRule#caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#caching CdnFrontdoorRule#caching}
 
 ---
 
@@ -1202,7 +1202,7 @@ OriginGroup CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroup
 
 origin_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#origin_group CdnFrontdoorRule#origin_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#origin_group CdnFrontdoorRule#origin_group}
 
 ---
 
@@ -1211,7 +1211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching {
 	Behaviour: *string,
@@ -1226,11 +1226,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching.property.behaviour">Behaviour</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#behaviour CdnFrontdoorRule#behaviour}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching.property.compressionEnabled">CompressionEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#compression_enabled CdnFrontdoorRule#compression_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching.property.duration">Duration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#duration CdnFrontdoorRule#duration}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching.property.queryStringBehaviour">QueryStringBehaviour</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#query_string_behaviour CdnFrontdoorRule#query_string_behaviour}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching.property.queryStringParameters">QueryStringParameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#query_string_parameters CdnFrontdoorRule#query_string_parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching.property.behaviour">Behaviour</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#behaviour CdnFrontdoorRule#behaviour}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching.property.compressionEnabled">CompressionEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#compression_enabled CdnFrontdoorRule#compression_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching.property.duration">Duration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#duration CdnFrontdoorRule#duration}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching.property.queryStringBehaviour">QueryStringBehaviour</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#query_string_behaviour CdnFrontdoorRule#query_string_behaviour}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching.property.queryStringParameters">QueryStringParameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#query_string_parameters CdnFrontdoorRule#query_string_parameters}. |
 
 ---
 
@@ -1242,7 +1242,7 @@ Behaviour *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#behaviour CdnFrontdoorRule#behaviour}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#behaviour CdnFrontdoorRule#behaviour}.
 
 ---
 
@@ -1254,7 +1254,7 @@ CompressionEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#compression_enabled CdnFrontdoorRule#compression_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#compression_enabled CdnFrontdoorRule#compression_enabled}.
 
 ---
 
@@ -1266,7 +1266,7 @@ Duration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#duration CdnFrontdoorRule#duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#duration CdnFrontdoorRule#duration}.
 
 ---
 
@@ -1278,7 +1278,7 @@ QueryStringBehaviour *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#query_string_behaviour CdnFrontdoorRule#query_string_behaviour}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#query_string_behaviour CdnFrontdoorRule#query_string_behaviour}.
 
 ---
 
@@ -1290,7 +1290,7 @@ QueryStringParameters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#query_string_parameters CdnFrontdoorRule#query_string_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#query_string_parameters CdnFrontdoorRule#query_string_parameters}.
 
 ---
 
@@ -1299,7 +1299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroup {
 	CdnFrontdoorOriginGroupId: *string,
@@ -1311,8 +1311,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroup.property.cdnFrontdoorOriginGroupId">CdnFrontdoorOriginGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#cdn_frontdoor_origin_group_id CdnFrontdoorRule#cdn_frontdoor_origin_group_id}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroup.property.forwardingProtocol">ForwardingProtocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#forwarding_protocol CdnFrontdoorRule#forwarding_protocol}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroup.property.cdnFrontdoorOriginGroupId">CdnFrontdoorOriginGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#cdn_frontdoor_origin_group_id CdnFrontdoorRule#cdn_frontdoor_origin_group_id}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroup.property.forwardingProtocol">ForwardingProtocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#forwarding_protocol CdnFrontdoorRule#forwarding_protocol}. |
 
 ---
 
@@ -1324,7 +1324,7 @@ CdnFrontdoorOriginGroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#cdn_frontdoor_origin_group_id CdnFrontdoorRule#cdn_frontdoor_origin_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#cdn_frontdoor_origin_group_id CdnFrontdoorRule#cdn_frontdoor_origin_group_id}.
 
 ---
 
@@ -1336,7 +1336,7 @@ ForwardingProtocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#forwarding_protocol CdnFrontdoorRule#forwarding_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#forwarding_protocol CdnFrontdoorRule#forwarding_protocol}.
 
 ---
 
@@ -1345,7 +1345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleActionsUrlRedirect {
 	RedirectType: *string,
@@ -1361,12 +1361,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRedirect.property.redirectType">RedirectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#redirect_type CdnFrontdoorRule#redirect_type}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRedirect.property.destinationFragment">DestinationFragment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#destination_fragment CdnFrontdoorRule#destination_fragment}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRedirect.property.destinationHostName">DestinationHostName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#destination_host_name CdnFrontdoorRule#destination_host_name}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRedirect.property.destinationPath">DestinationPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#destination_path CdnFrontdoorRule#destination_path}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRedirect.property.queryString">QueryString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#query_string CdnFrontdoorRule#query_string}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRedirect.property.redirectProtocol">RedirectProtocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#redirect_protocol CdnFrontdoorRule#redirect_protocol}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRedirect.property.redirectType">RedirectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#redirect_type CdnFrontdoorRule#redirect_type}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRedirect.property.destinationFragment">DestinationFragment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#destination_fragment CdnFrontdoorRule#destination_fragment}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRedirect.property.destinationHostName">DestinationHostName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#destination_host_name CdnFrontdoorRule#destination_host_name}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRedirect.property.destinationPath">DestinationPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#destination_path CdnFrontdoorRule#destination_path}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRedirect.property.queryString">QueryString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#query_string CdnFrontdoorRule#query_string}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRedirect.property.redirectProtocol">RedirectProtocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#redirect_protocol CdnFrontdoorRule#redirect_protocol}. |
 
 ---
 
@@ -1378,7 +1378,7 @@ RedirectType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#redirect_type CdnFrontdoorRule#redirect_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#redirect_type CdnFrontdoorRule#redirect_type}.
 
 ---
 
@@ -1390,7 +1390,7 @@ DestinationFragment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#destination_fragment CdnFrontdoorRule#destination_fragment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#destination_fragment CdnFrontdoorRule#destination_fragment}.
 
 ---
 
@@ -1402,7 +1402,7 @@ DestinationHostName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#destination_host_name CdnFrontdoorRule#destination_host_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#destination_host_name CdnFrontdoorRule#destination_host_name}.
 
 ---
 
@@ -1414,7 +1414,7 @@ DestinationPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#destination_path CdnFrontdoorRule#destination_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#destination_path CdnFrontdoorRule#destination_path}.
 
 ---
 
@@ -1426,7 +1426,7 @@ QueryString *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#query_string CdnFrontdoorRule#query_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#query_string CdnFrontdoorRule#query_string}.
 
 ---
 
@@ -1438,7 +1438,7 @@ RedirectProtocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#redirect_protocol CdnFrontdoorRule#redirect_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#redirect_protocol CdnFrontdoorRule#redirect_protocol}.
 
 ---
 
@@ -1447,7 +1447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRewrite.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleActionsUrlRewrite {
 	DestinationPath: *string,
@@ -1460,9 +1460,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRewrite.property.destinationPath">DestinationPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#destination_path CdnFrontdoorRule#destination_path}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRewrite.property.sourcePattern">SourcePattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#source_pattern CdnFrontdoorRule#source_pattern}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRewrite.property.preserveUnmatchedPathEnabled">PreserveUnmatchedPathEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#preserve_unmatched_path_enabled CdnFrontdoorRule#preserve_unmatched_path_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRewrite.property.destinationPath">DestinationPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#destination_path CdnFrontdoorRule#destination_path}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRewrite.property.sourcePattern">SourcePattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#source_pattern CdnFrontdoorRule#source_pattern}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRewrite.property.preserveUnmatchedPathEnabled">PreserveUnmatchedPathEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#preserve_unmatched_path_enabled CdnFrontdoorRule#preserve_unmatched_path_enabled}. |
 
 ---
 
@@ -1474,7 +1474,7 @@ DestinationPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#destination_path CdnFrontdoorRule#destination_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#destination_path CdnFrontdoorRule#destination_path}.
 
 ---
 
@@ -1486,7 +1486,7 @@ SourcePattern *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#source_pattern CdnFrontdoorRule#source_pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#source_pattern CdnFrontdoorRule#source_pattern}.
 
 ---
 
@@ -1498,7 +1498,7 @@ PreserveUnmatchedPathEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#preserve_unmatched_path_enabled CdnFrontdoorRule#preserve_unmatched_path_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#preserve_unmatched_path_enabled CdnFrontdoorRule#preserve_unmatched_path_enabled}.
 
 ---
 
@@ -1507,7 +1507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleConditions {
 	ClientPort: interface{},
@@ -1568,7 +1568,7 @@ ClientPort interface{}
 
 client_port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#client_port CdnFrontdoorRule#client_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#client_port CdnFrontdoorRule#client_port}
 
 ---
 
@@ -1582,7 +1582,7 @@ DeviceType interface{}
 
 device_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#device_type CdnFrontdoorRule#device_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#device_type CdnFrontdoorRule#device_type}
 
 ---
 
@@ -1596,7 +1596,7 @@ HostName interface{}
 
 host_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#host_name CdnFrontdoorRule#host_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#host_name CdnFrontdoorRule#host_name}
 
 ---
 
@@ -1610,7 +1610,7 @@ HttpVersion interface{}
 
 http_version block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#http_version CdnFrontdoorRule#http_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#http_version CdnFrontdoorRule#http_version}
 
 ---
 
@@ -1624,7 +1624,7 @@ PostArgument interface{}
 
 post_argument block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#post_argument CdnFrontdoorRule#post_argument}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#post_argument CdnFrontdoorRule#post_argument}
 
 ---
 
@@ -1638,7 +1638,7 @@ QueryString interface{}
 
 query_string block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#query_string CdnFrontdoorRule#query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#query_string CdnFrontdoorRule#query_string}
 
 ---
 
@@ -1652,7 +1652,7 @@ RemoteAddress interface{}
 
 remote_address block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#remote_address CdnFrontdoorRule#remote_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#remote_address CdnFrontdoorRule#remote_address}
 
 ---
 
@@ -1666,7 +1666,7 @@ RequestBody interface{}
 
 request_body block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#request_body CdnFrontdoorRule#request_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#request_body CdnFrontdoorRule#request_body}
 
 ---
 
@@ -1680,7 +1680,7 @@ RequestCookies interface{}
 
 request_cookies block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#request_cookies CdnFrontdoorRule#request_cookies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#request_cookies CdnFrontdoorRule#request_cookies}
 
 ---
 
@@ -1694,7 +1694,7 @@ RequestFileExtension interface{}
 
 request_file_extension block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#request_file_extension CdnFrontdoorRule#request_file_extension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#request_file_extension CdnFrontdoorRule#request_file_extension}
 
 ---
 
@@ -1708,7 +1708,7 @@ RequestFilename interface{}
 
 request_filename block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#request_filename CdnFrontdoorRule#request_filename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#request_filename CdnFrontdoorRule#request_filename}
 
 ---
 
@@ -1722,7 +1722,7 @@ RequestHeader interface{}
 
 request_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#request_header CdnFrontdoorRule#request_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#request_header CdnFrontdoorRule#request_header}
 
 ---
 
@@ -1736,7 +1736,7 @@ RequestMethod interface{}
 
 request_method block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#request_method CdnFrontdoorRule#request_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#request_method CdnFrontdoorRule#request_method}
 
 ---
 
@@ -1750,7 +1750,7 @@ RequestPath interface{}
 
 request_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#request_path CdnFrontdoorRule#request_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#request_path CdnFrontdoorRule#request_path}
 
 ---
 
@@ -1764,7 +1764,7 @@ RequestScheme interface{}
 
 request_scheme block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#request_scheme CdnFrontdoorRule#request_scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#request_scheme CdnFrontdoorRule#request_scheme}
 
 ---
 
@@ -1778,7 +1778,7 @@ RequestUrl interface{}
 
 request_url block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#request_url CdnFrontdoorRule#request_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#request_url CdnFrontdoorRule#request_url}
 
 ---
 
@@ -1792,7 +1792,7 @@ ServerPort interface{}
 
 server_port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#server_port CdnFrontdoorRule#server_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#server_port CdnFrontdoorRule#server_port}
 
 ---
 
@@ -1806,7 +1806,7 @@ SocketAddress interface{}
 
 socket_address block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#socket_address CdnFrontdoorRule#socket_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#socket_address CdnFrontdoorRule#socket_address}
 
 ---
 
@@ -1820,7 +1820,7 @@ SslProtocol interface{}
 
 ssl_protocol block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#ssl_protocol CdnFrontdoorRule#ssl_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#ssl_protocol CdnFrontdoorRule#ssl_protocol}
 
 ---
 
@@ -1829,7 +1829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsClientPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleConditionsClientPort {
 	Operator: *string,
@@ -1841,8 +1841,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsClientPort.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsClientPort.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsClientPort.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsClientPort.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
 
 ---
 
@@ -1854,7 +1854,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
 
 ---
 
@@ -1866,7 +1866,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
 
 ---
 
@@ -1875,7 +1875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsDeviceType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleConditionsDeviceType {
 	Operator: *string,
@@ -1887,8 +1887,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsDeviceType.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsDeviceType.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsDeviceType.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsDeviceType.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
 
 ---
 
@@ -1900,7 +1900,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
 
 ---
 
@@ -1912,7 +1912,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
 
 ---
 
@@ -1921,7 +1921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsHostName.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleConditionsHostName {
 	Operator: *string,
@@ -1934,9 +1934,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsHostName.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsHostName.property.transforms">Transforms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsHostName.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsHostName.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsHostName.property.transforms">Transforms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsHostName.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
 
 ---
 
@@ -1948,7 +1948,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
 
 ---
 
@@ -1960,7 +1960,7 @@ Transforms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}.
 
 ---
 
@@ -1972,7 +1972,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
 
 ---
 
@@ -1981,7 +1981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsHttpVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleConditionsHttpVersion {
 	Operator: *string,
@@ -1993,8 +1993,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsHttpVersion.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsHttpVersion.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsHttpVersion.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsHttpVersion.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
 
 ---
 
@@ -2006,7 +2006,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
 
 ---
 
@@ -2018,7 +2018,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
 
 ---
 
@@ -2027,7 +2027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsPostArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleConditionsPostArgument {
 	Name: *string,
@@ -2041,10 +2041,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsPostArgument.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#name CdnFrontdoorRule#name}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsPostArgument.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsPostArgument.property.transforms">Transforms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsPostArgument.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsPostArgument.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#name CdnFrontdoorRule#name}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsPostArgument.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsPostArgument.property.transforms">Transforms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsPostArgument.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
 
 ---
 
@@ -2056,7 +2056,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#name CdnFrontdoorRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#name CdnFrontdoorRule#name}.
 
 ---
 
@@ -2068,7 +2068,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
 
 ---
 
@@ -2080,7 +2080,7 @@ Transforms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}.
 
 ---
 
@@ -2092,7 +2092,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
 
 ---
 
@@ -2101,7 +2101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleConditionsQueryString {
 	Operator: *string,
@@ -2114,9 +2114,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsQueryString.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsQueryString.property.transforms">Transforms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsQueryString.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsQueryString.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsQueryString.property.transforms">Transforms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsQueryString.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
 
 ---
 
@@ -2128,7 +2128,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
 
 ---
 
@@ -2140,7 +2140,7 @@ Transforms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}.
 
 ---
 
@@ -2152,7 +2152,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
 
 ---
 
@@ -2161,7 +2161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRemoteAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleConditionsRemoteAddress {
 	Operator: *string,
@@ -2173,8 +2173,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRemoteAddress.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRemoteAddress.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRemoteAddress.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRemoteAddress.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
 
 ---
 
@@ -2186,7 +2186,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
 
 ---
 
@@ -2198,7 +2198,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
 
 ---
 
@@ -2207,7 +2207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleConditionsRequestBody {
 	Operator: *string,
@@ -2220,9 +2220,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestBody.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestBody.property.transforms">Transforms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestBody.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestBody.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestBody.property.transforms">Transforms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestBody.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
 
 ---
 
@@ -2234,7 +2234,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
 
 ---
 
@@ -2246,7 +2246,7 @@ Transforms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}.
 
 ---
 
@@ -2258,7 +2258,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
 
 ---
 
@@ -2267,7 +2267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleConditionsRequestCookies {
 	Name: *string,
@@ -2281,10 +2281,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestCookies.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#name CdnFrontdoorRule#name}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestCookies.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestCookies.property.transforms">Transforms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestCookies.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestCookies.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#name CdnFrontdoorRule#name}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestCookies.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestCookies.property.transforms">Transforms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestCookies.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
 
 ---
 
@@ -2296,7 +2296,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#name CdnFrontdoorRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#name CdnFrontdoorRule#name}.
 
 ---
 
@@ -2308,7 +2308,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
 
 ---
 
@@ -2320,7 +2320,7 @@ Transforms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}.
 
 ---
 
@@ -2332,7 +2332,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
 
 ---
 
@@ -2341,7 +2341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestFileExtension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleConditionsRequestFileExtension {
 	Operator: *string,
@@ -2354,9 +2354,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestFileExtension.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestFileExtension.property.transforms">Transforms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestFileExtension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestFileExtension.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestFileExtension.property.transforms">Transforms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestFileExtension.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
 
 ---
 
@@ -2368,7 +2368,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
 
 ---
 
@@ -2380,7 +2380,7 @@ Transforms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}.
 
 ---
 
@@ -2392,7 +2392,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
 
 ---
 
@@ -2401,7 +2401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestFilename.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleConditionsRequestFilename {
 	Operator: *string,
@@ -2414,9 +2414,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestFilename.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestFilename.property.transforms">Transforms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestFilename.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestFilename.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestFilename.property.transforms">Transforms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestFilename.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
 
 ---
 
@@ -2428,7 +2428,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
 
 ---
 
@@ -2440,7 +2440,7 @@ Transforms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}.
 
 ---
 
@@ -2452,7 +2452,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
 
 ---
 
@@ -2461,7 +2461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleConditionsRequestHeader {
 	Name: *string,
@@ -2475,10 +2475,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestHeader.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#name CdnFrontdoorRule#name}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestHeader.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestHeader.property.transforms">Transforms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestHeader.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestHeader.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#name CdnFrontdoorRule#name}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestHeader.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestHeader.property.transforms">Transforms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestHeader.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
 
 ---
 
@@ -2490,7 +2490,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#name CdnFrontdoorRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#name CdnFrontdoorRule#name}.
 
 ---
 
@@ -2502,7 +2502,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
 
 ---
 
@@ -2514,7 +2514,7 @@ Transforms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}.
 
 ---
 
@@ -2526,7 +2526,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
 
 ---
 
@@ -2535,7 +2535,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleConditionsRequestMethod {
 	Operator: *string,
@@ -2547,8 +2547,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestMethod.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestMethod.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestMethod.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestMethod.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
 
 ---
 
@@ -2560,7 +2560,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
 
 ---
 
@@ -2572,7 +2572,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
 
 ---
 
@@ -2581,7 +2581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleConditionsRequestPath {
 	Operator: *string,
@@ -2594,9 +2594,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestPath.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestPath.property.transforms">Transforms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestPath.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestPath.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestPath.property.transforms">Transforms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestPath.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
 
 ---
 
@@ -2608,7 +2608,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
 
 ---
 
@@ -2620,7 +2620,7 @@ Transforms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}.
 
 ---
 
@@ -2632,7 +2632,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
 
 ---
 
@@ -2641,7 +2641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestScheme.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleConditionsRequestScheme {
 	Operator: *string,
@@ -2653,8 +2653,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestScheme.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestScheme.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestScheme.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestScheme.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
 
 ---
 
@@ -2666,7 +2666,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
 
 ---
 
@@ -2678,7 +2678,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
 
 ---
 
@@ -2687,7 +2687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleConditionsRequestUrl {
 	Operator: *string,
@@ -2700,9 +2700,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestUrl.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestUrl.property.transforms">Transforms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestUrl.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestUrl.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestUrl.property.transforms">Transforms</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestUrl.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
 
 ---
 
@@ -2714,7 +2714,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
 
 ---
 
@@ -2726,7 +2726,7 @@ Transforms *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#transforms CdnFrontdoorRule#transforms}.
 
 ---
 
@@ -2738,7 +2738,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
 
 ---
 
@@ -2747,7 +2747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsServerPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleConditionsServerPort {
 	Operator: *string,
@@ -2759,8 +2759,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsServerPort.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsServerPort.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsServerPort.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsServerPort.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
 
 ---
 
@@ -2772,7 +2772,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
 
 ---
 
@@ -2784,7 +2784,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
 
 ---
 
@@ -2793,7 +2793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsSocketAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleConditionsSocketAddress {
 	Operator: *string,
@@ -2805,8 +2805,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsSocketAddress.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsSocketAddress.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsSocketAddress.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsSocketAddress.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
 
 ---
 
@@ -2818,7 +2818,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
 
 ---
 
@@ -2830,7 +2830,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
 
 ---
 
@@ -2839,7 +2839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsSslProtocol.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleConditionsSslProtocol {
 	Operator: *string,
@@ -2851,8 +2851,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsSslProtocol.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsSslProtocol.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsSslProtocol.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsSslProtocol.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}. |
 
 ---
 
@@ -2864,7 +2864,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#operator CdnFrontdoorRule#operator}.
 
 ---
 
@@ -2876,7 +2876,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#values CdnFrontdoorRule#values}.
 
 ---
 
@@ -2885,7 +2885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleConfig {
 	Connection: interface{},
@@ -2895,14 +2895,14 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Actions: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.cdnFrontdoorRule.CdnFrontdoorRuleActions,
+	Actions: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19.cdnFrontdoorRule.CdnFrontdoorRuleActions,
 	CdnFrontdoorRuleSetId: *string,
 	Name: *string,
 	Order: *f64,
 	BehaviourOnMatch: *string,
-	Conditions: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.cdnFrontdoorRule.CdnFrontdoorRuleConditions,
+	Conditions: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19.cdnFrontdoorRule.CdnFrontdoorRuleConditions,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.cdnFrontdoorRule.CdnFrontdoorRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19.cdnFrontdoorRule.CdnFrontdoorRuleTimeouts,
 }
 ```
 
@@ -2918,12 +2918,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 | <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConfig.property.actions">Actions</a></code> | <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActions">CdnFrontdoorRuleActions</a></code> | actions block. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConfig.property.cdnFrontdoorRuleSetId">CdnFrontdoorRuleSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#cdn_frontdoor_rule_set_id CdnFrontdoorRule#cdn_frontdoor_rule_set_id}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#name CdnFrontdoorRule#name}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConfig.property.order">Order</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#order CdnFrontdoorRule#order}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConfig.property.behaviourOnMatch">BehaviourOnMatch</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#behaviour_on_match CdnFrontdoorRule#behaviour_on_match}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConfig.property.cdnFrontdoorRuleSetId">CdnFrontdoorRuleSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#cdn_frontdoor_rule_set_id CdnFrontdoorRule#cdn_frontdoor_rule_set_id}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#name CdnFrontdoorRule#name}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConfig.property.order">Order</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#order CdnFrontdoorRule#order}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConfig.property.behaviourOnMatch">BehaviourOnMatch</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#behaviour_on_match CdnFrontdoorRule#behaviour_on_match}. |
 | <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConfig.property.conditions">Conditions</a></code> | <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditions">CdnFrontdoorRuleConditions</a></code> | conditions block. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#id CdnFrontdoorRule#id}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#id CdnFrontdoorRule#id}. |
 | <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleTimeouts">CdnFrontdoorRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -3008,7 +3008,7 @@ Actions CdnFrontdoorRuleActions
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#actions CdnFrontdoorRule#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#actions CdnFrontdoorRule#actions}
 
 ---
 
@@ -3020,7 +3020,7 @@ CdnFrontdoorRuleSetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#cdn_frontdoor_rule_set_id CdnFrontdoorRule#cdn_frontdoor_rule_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#cdn_frontdoor_rule_set_id CdnFrontdoorRule#cdn_frontdoor_rule_set_id}.
 
 ---
 
@@ -3032,7 +3032,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#name CdnFrontdoorRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#name CdnFrontdoorRule#name}.
 
 ---
 
@@ -3044,7 +3044,7 @@ Order *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#order CdnFrontdoorRule#order}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#order CdnFrontdoorRule#order}.
 
 ---
 
@@ -3056,7 +3056,7 @@ BehaviourOnMatch *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#behaviour_on_match CdnFrontdoorRule#behaviour_on_match}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#behaviour_on_match CdnFrontdoorRule#behaviour_on_match}.
 
 ---
 
@@ -3070,7 +3070,7 @@ Conditions CdnFrontdoorRuleConditions
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#conditions CdnFrontdoorRule#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#conditions CdnFrontdoorRule#conditions}
 
 ---
 
@@ -3082,7 +3082,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#id CdnFrontdoorRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#id CdnFrontdoorRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3099,7 +3099,7 @@ Timeouts CdnFrontdoorRuleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#timeouts CdnFrontdoorRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#timeouts CdnFrontdoorRule#timeouts}
 
 ---
 
@@ -3108,7 +3108,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 &cdnfrontdoorrule.CdnFrontdoorRuleTimeouts {
 	Create: *string,
@@ -3122,10 +3122,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorru
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#create CdnFrontdoorRule#create}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#delete CdnFrontdoorRule#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#read CdnFrontdoorRule#read}. |
-| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#update CdnFrontdoorRule#update}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#create CdnFrontdoorRule#create}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#delete CdnFrontdoorRule#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#read CdnFrontdoorRule#read}. |
+| <code><a href="#@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#update CdnFrontdoorRule#update}. |
 
 ---
 
@@ -3137,7 +3137,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#create CdnFrontdoorRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#create CdnFrontdoorRule#create}.
 
 ---
 
@@ -3149,7 +3149,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#delete CdnFrontdoorRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#delete CdnFrontdoorRule#delete}.
 
 ---
 
@@ -3161,7 +3161,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#read CdnFrontdoorRule#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#read CdnFrontdoorRule#read}.
 
 ---
 
@@ -3173,7 +3173,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/resources/cdn_frontdoor_rule#update CdnFrontdoorRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/resources/cdn_frontdoor_rule#update CdnFrontdoorRule#update}.
 
 ---
 
@@ -3184,7 +3184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsModifyRequestHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleActionsModifyRequestHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorRuleActionsModifyRequestHeaderList
 ```
@@ -3344,7 +3344,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsModifyRequestHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleActionsModifyRequestHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorRuleActionsModifyRequestHeaderOutputReference
 ```
@@ -3684,7 +3684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsModifyResponseHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleActionsModifyResponseHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorRuleActionsModifyResponseHeaderList
 ```
@@ -3844,7 +3844,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsModifyResponseHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleActionsModifyResponseHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorRuleActionsModifyResponseHeaderOutputReference
 ```
@@ -4184,7 +4184,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorRuleActionsOutputReference
 ```
@@ -4643,7 +4643,7 @@ func InternalValue() CdnFrontdoorRuleActions
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideCachingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleActionsRouteConfigurationOverrideCachingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorRuleActionsRouteConfigurationOverrideCachingOutputReference
 ```
@@ -5030,7 +5030,7 @@ func InternalValue() CdnFrontdoorRuleActionsRouteConfigurationOverrideCaching
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGroupOutputReference
 ```
@@ -5323,7 +5323,7 @@ func InternalValue() CdnFrontdoorRuleActionsRouteConfigurationOverrideOriginGrou
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsRouteConfigurationOverrideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleActionsRouteConfigurationOverrideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorRuleActionsRouteConfigurationOverrideOutputReference
 ```
@@ -5649,7 +5649,7 @@ func InternalValue() CdnFrontdoorRuleActionsRouteConfigurationOverride
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleActionsUrlRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorRuleActionsUrlRedirectOutputReference
 ```
@@ -6065,7 +6065,7 @@ func InternalValue() CdnFrontdoorRuleActionsUrlRedirect
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleActionsUrlRewriteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleActionsUrlRewriteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorRuleActionsUrlRewriteOutputReference
 ```
@@ -6387,7 +6387,7 @@ func InternalValue() CdnFrontdoorRuleActionsUrlRewrite
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsClientPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsClientPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorRuleConditionsClientPortList
 ```
@@ -6547,7 +6547,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsClientPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsClientPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorRuleConditionsClientPortOutputReference
 ```
@@ -6865,7 +6865,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsDeviceTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsDeviceTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorRuleConditionsDeviceTypeList
 ```
@@ -7025,7 +7025,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsDeviceTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsDeviceTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorRuleConditionsDeviceTypeOutputReference
 ```
@@ -7336,7 +7336,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsHostNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsHostNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorRuleConditionsHostNameList
 ```
@@ -7496,7 +7496,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsHostNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsHostNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorRuleConditionsHostNameOutputReference
 ```
@@ -7843,7 +7843,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsHttpVersionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsHttpVersionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorRuleConditionsHttpVersionList
 ```
@@ -8003,7 +8003,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsHttpVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsHttpVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorRuleConditionsHttpVersionOutputReference
 ```
@@ -8314,7 +8314,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorRuleConditionsOutputReference
 ```
@@ -9361,7 +9361,7 @@ func InternalValue() CdnFrontdoorRuleConditions
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsPostArgumentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsPostArgumentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorRuleConditionsPostArgumentList
 ```
@@ -9521,7 +9521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsPostArgumentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsPostArgumentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorRuleConditionsPostArgumentOutputReference
 ```
@@ -9890,7 +9890,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsQueryStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsQueryStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorRuleConditionsQueryStringList
 ```
@@ -10050,7 +10050,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsQueryStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsQueryStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorRuleConditionsQueryStringOutputReference
 ```
@@ -10397,7 +10397,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRemoteAddressList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsRemoteAddressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorRuleConditionsRemoteAddressList
 ```
@@ -10557,7 +10557,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRemoteAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsRemoteAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorRuleConditionsRemoteAddressOutputReference
 ```
@@ -10868,7 +10868,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsRequestBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorRuleConditionsRequestBodyList
 ```
@@ -11028,7 +11028,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsRequestBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorRuleConditionsRequestBodyOutputReference
 ```
@@ -11375,7 +11375,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestCookiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsRequestCookiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorRuleConditionsRequestCookiesList
 ```
@@ -11535,7 +11535,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestCookiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsRequestCookiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorRuleConditionsRequestCookiesOutputReference
 ```
@@ -11904,7 +11904,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestFileExtensionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsRequestFileExtensionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorRuleConditionsRequestFileExtensionList
 ```
@@ -12064,7 +12064,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestFileExtensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsRequestFileExtensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorRuleConditionsRequestFileExtensionOutputReference
 ```
@@ -12411,7 +12411,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestFilenameList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsRequestFilenameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorRuleConditionsRequestFilenameList
 ```
@@ -12571,7 +12571,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestFilenameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsRequestFilenameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorRuleConditionsRequestFilenameOutputReference
 ```
@@ -12918,7 +12918,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsRequestHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorRuleConditionsRequestHeaderList
 ```
@@ -13078,7 +13078,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsRequestHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorRuleConditionsRequestHeaderOutputReference
 ```
@@ -13447,7 +13447,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestMethodList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsRequestMethodList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorRuleConditionsRequestMethodList
 ```
@@ -13607,7 +13607,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsRequestMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorRuleConditionsRequestMethodOutputReference
 ```
@@ -13918,7 +13918,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsRequestPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorRuleConditionsRequestPathList
 ```
@@ -14078,7 +14078,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsRequestPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorRuleConditionsRequestPathOutputReference
 ```
@@ -14425,7 +14425,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestSchemeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsRequestSchemeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorRuleConditionsRequestSchemeList
 ```
@@ -14585,7 +14585,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestSchemeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsRequestSchemeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorRuleConditionsRequestSchemeOutputReference
 ```
@@ -14896,7 +14896,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestUrlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsRequestUrlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorRuleConditionsRequestUrlList
 ```
@@ -15056,7 +15056,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsRequestUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsRequestUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorRuleConditionsRequestUrlOutputReference
 ```
@@ -15403,7 +15403,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsServerPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsServerPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorRuleConditionsServerPortList
 ```
@@ -15563,7 +15563,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsServerPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsServerPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorRuleConditionsServerPortOutputReference
 ```
@@ -15881,7 +15881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsSocketAddressList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsSocketAddressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorRuleConditionsSocketAddressList
 ```
@@ -16041,7 +16041,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsSocketAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsSocketAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorRuleConditionsSocketAddressOutputReference
 ```
@@ -16352,7 +16352,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsSslProtocolList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsSslProtocolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorRuleConditionsSslProtocolList
 ```
@@ -16512,7 +16512,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleConditionsSslProtocolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleConditionsSslProtocolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorRuleConditionsSslProtocolOutputReference
 ```
@@ -16823,7 +16823,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorRule.CdnFrontdoorRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cdnfrontdoorrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/cdnfrontdoorrule"
 
 cdnfrontdoorrule.NewCdnFrontdoorRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorRuleTimeoutsOutputReference
 ```
