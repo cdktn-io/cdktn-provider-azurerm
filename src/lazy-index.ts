@@ -313,6 +313,7 @@ Object.defineProperty(exports, 'dataProtectionBackupInstanceKubernetesCluster', 
 Object.defineProperty(exports, 'dataProtectionBackupInstanceMysqlFlexibleServer', { get: function () { return require('./data-protection-backup-instance-mysql-flexible-server'); } });
 Object.defineProperty(exports, 'dataProtectionBackupInstancePostgresqlFlexibleServer', { get: function () { return require('./data-protection-backup-instance-postgresql-flexible-server'); } });
 Object.defineProperty(exports, 'dataProtectionBackupPolicyBlobStorage', { get: function () { return require('./data-protection-backup-policy-blob-storage'); } });
+Object.defineProperty(exports, 'dataProtectionBackupPolicyCosmosdbAccount', { get: function () { return require('./data-protection-backup-policy-cosmosdb-account'); } });
 Object.defineProperty(exports, 'dataProtectionBackupPolicyDataLakeStorage', { get: function () { return require('./data-protection-backup-policy-data-lake-storage'); } });
 Object.defineProperty(exports, 'dataProtectionBackupPolicyDisk', { get: function () { return require('./data-protection-backup-policy-disk'); } });
 Object.defineProperty(exports, 'dataProtectionBackupPolicyKubernetesCluster', { get: function () { return require('./data-protection-backup-policy-kubernetes-cluster'); } });
@@ -1460,6 +1461,7 @@ Object.defineProperty(exports, 'dataAzurermStaticWebApp', { get: function () { r
 Object.defineProperty(exports, 'dataAzurermStorageAccount', { get: function () { return require('./data-azurerm-storage-account'); } });
 Object.defineProperty(exports, 'dataAzurermStorageAccountBlobContainerSas', { get: function () { return require('./data-azurerm-storage-account-blob-container-sas'); } });
 Object.defineProperty(exports, 'dataAzurermStorageAccountSas', { get: function () { return require('./data-azurerm-storage-account-sas'); } });
+Object.defineProperty(exports, 'dataAzurermStorageAccountStaticWebsite', { get: function () { return require('./data-azurerm-storage-account-static-website'); } });
 Object.defineProperty(exports, 'dataAzurermStorageBlob', { get: function () { return require('./data-azurerm-storage-blob'); } });
 Object.defineProperty(exports, 'dataAzurermStorageContainer', { get: function () { return require('./data-azurerm-storage-container'); } });
 Object.defineProperty(exports, 'dataAzurermStorageContainers', { get: function () { return require('./data-azurerm-storage-containers'); } });
