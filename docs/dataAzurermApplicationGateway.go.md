@@ -4,12 +4,12 @@
 
 ### DataAzurermApplicationGateway <a name="DataAzurermApplicationGateway" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/application_gateway azurerm_application_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/application_gateway azurerm_application_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGateway(scope Construct, id *string, config DataAzurermApplicationGatewayConfig) DataAzurermApplicationGateway
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.DataAzurermApplicationGateway_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.DataAzurermApplicationGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermapplicationgateway.DataAzurermApplicationGateway_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.DataAzurermApplicationGateway_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermapplicationgateway.DataAzurermApplicationGateway_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.DataAzurermApplicationGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermApplicationGate
 
 The id of the existing DataAzurermApplicationGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/application_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/application_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1054,7 +1054,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAutoscaleConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayAutoscaleConfiguration {
 
@@ -1067,7 +1067,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayBackend {
 
@@ -1080,7 +1080,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendAddressPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayBackendAddressPool {
 
@@ -1093,7 +1093,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayBackendHttpSettings {
 
@@ -1106,7 +1106,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsConnectionDraining.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayBackendHttpSettingsConnectionDraining {
 
@@ -1119,7 +1119,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayConfig {
 	Connection: interface{},
@@ -1132,7 +1132,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTimeouts,
 }
 ```
 
@@ -1147,9 +1147,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/application_gateway#name DataAzurermApplicationGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/application_gateway#resource_group_name DataAzurermApplicationGateway#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/application_gateway#id DataAzurermApplicationGateway#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/application_gateway#name DataAzurermApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/application_gateway#resource_group_name DataAzurermApplicationGateway#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/application_gateway#id DataAzurermApplicationGateway#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTimeouts">DataAzurermApplicationGatewayTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1232,7 +1232,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/application_gateway#name DataAzurermApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/application_gateway#name DataAzurermApplicationGateway#name}.
 
 ---
 
@@ -1244,7 +1244,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/application_gateway#resource_group_name DataAzurermApplicationGateway#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/application_gateway#resource_group_name DataAzurermApplicationGateway#resource_group_name}.
 
 ---
 
@@ -1256,7 +1256,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/application_gateway#id DataAzurermApplicationGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/application_gateway#id DataAzurermApplicationGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1273,7 +1273,7 @@ Timeouts DataAzurermApplicationGatewayTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/application_gateway#timeouts DataAzurermApplicationGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/application_gateway#timeouts DataAzurermApplicationGateway#timeouts}
 
 ---
 
@@ -1282,7 +1282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayCustomErrorConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayCustomErrorConfiguration {
 
@@ -1295,7 +1295,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayFrontendIpConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayFrontendIpConfiguration {
 
@@ -1308,7 +1308,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayFrontendPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayFrontendPort {
 
@@ -1321,7 +1321,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayGatewayIpConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayGatewayIpConfiguration {
 
@@ -1334,7 +1334,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayGlobal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayGlobal {
 
@@ -1347,7 +1347,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayHttpListener.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayHttpListener {
 
@@ -1360,7 +1360,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayHttpListenerCustomErrorConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayHttpListenerCustomErrorConfiguration {
 
@@ -1373,7 +1373,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayIdentity {
 
@@ -1386,7 +1386,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListener.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayListener {
 
@@ -1399,7 +1399,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayPrivateEndpointConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayPrivateEndpointConnection {
 
@@ -1412,7 +1412,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayPrivateLinkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayPrivateLinkConfiguration {
 
@@ -1425,7 +1425,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayPrivateLinkConfigurationIpConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayPrivateLinkConfigurationIpConfiguration {
 
@@ -1438,7 +1438,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayProbe {
 
@@ -1451,7 +1451,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayProbeMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayProbeMatch {
 
@@ -1464,7 +1464,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRedirectConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayRedirectConfiguration {
 
@@ -1477,7 +1477,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRequestRoutingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayRequestRoutingRule {
 
@@ -1490,7 +1490,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayRewriteRuleSet {
 
@@ -1503,7 +1503,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRule {
 
@@ -1516,7 +1516,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleCondition {
 
@@ -1529,7 +1529,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfiguration {
 
@@ -1542,7 +1542,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfiguration {
 
@@ -1555,7 +1555,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleUrl {
 
@@ -1568,7 +1568,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayRoutingRule {
 
@@ -1581,7 +1581,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySku.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewaySku {
 
@@ -1594,7 +1594,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySslCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewaySslCertificate {
 
@@ -1607,7 +1607,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySslPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewaySslPolicy {
 
@@ -1620,7 +1620,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySslProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewaySslProfile {
 
@@ -1633,7 +1633,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySslProfileSslPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewaySslProfileSslPolicy {
 
@@ -1646,7 +1646,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayTimeouts {
 	Read: *string,
@@ -1657,7 +1657,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/application_gateway#read DataAzurermApplicationGateway#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/application_gateway#read DataAzurermApplicationGateway#read}. |
 
 ---
 
@@ -1669,7 +1669,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.10.0/docs/data-sources/application_gateway#read DataAzurermApplicationGateway#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.11.0/docs/data-sources/application_gateway#read DataAzurermApplicationGateway#read}.
 
 ---
 
@@ -1678,7 +1678,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTrustedClientCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayTrustedClientCertificate {
 
@@ -1691,7 +1691,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTrustedRootCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayTrustedRootCertificate {
 
@@ -1704,7 +1704,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayUrlPathMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayUrlPathMap {
 
@@ -1717,7 +1717,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayUrlPathMapPathRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayUrlPathMapPathRule {
 
@@ -1730,7 +1730,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayWafConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayWafConfiguration {
 
@@ -1743,7 +1743,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayWafConfigurationDisabledRuleGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayWafConfigurationDisabledRuleGroup {
 
@@ -1756,7 +1756,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayWafConfigurationExclusion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayWafConfigurationExclusion {
 
@@ -1771,7 +1771,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapp
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAutoscaleConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayAutoscaleConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayAutoscaleConfigurationList
 ```
@@ -1920,7 +1920,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAutoscaleConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayAutoscaleConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayAutoscaleConfigurationOutputReference
 ```
@@ -2209,7 +2209,7 @@ func InternalValue() DataAzurermApplicationGatewayAutoscaleConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendAddressPoolList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayBackendAddressPoolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayBackendAddressPoolList
 ```
@@ -2358,7 +2358,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendAddressPoolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayBackendAddressPoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayBackendAddressPoolOutputReference
 ```
@@ -2669,7 +2669,7 @@ func InternalValue() DataAzurermApplicationGatewayBackendAddressPool
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsConnectionDrainingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayBackendHttpSettingsConnectionDrainingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayBackendHttpSettingsConnectionDrainingList
 ```
@@ -2818,7 +2818,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsConnectionDrainingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayBackendHttpSettingsConnectionDrainingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayBackendHttpSettingsConnectionDrainingOutputReference
 ```
@@ -3107,7 +3107,7 @@ func InternalValue() DataAzurermApplicationGatewayBackendHttpSettingsConnectionD
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayBackendHttpSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayBackendHttpSettingsList
 ```
@@ -3256,7 +3256,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayBackendHttpSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayBackendHttpSettingsOutputReference
 ```
@@ -3721,7 +3721,7 @@ func InternalValue() DataAzurermApplicationGatewayBackendHttpSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayBackendList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayBackendList
 ```
@@ -3870,7 +3870,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayBackendOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayBackendOutputReference
 ```
@@ -4247,7 +4247,7 @@ func InternalValue() DataAzurermApplicationGatewayBackend
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayCustomErrorConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayCustomErrorConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayCustomErrorConfigurationList
 ```
@@ -4396,7 +4396,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayCustomErrorConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayCustomErrorConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayCustomErrorConfigurationOutputReference
 ```
@@ -4696,7 +4696,7 @@ func InternalValue() DataAzurermApplicationGatewayCustomErrorConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayFrontendIpConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayFrontendIpConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayFrontendIpConfigurationList
 ```
@@ -4845,7 +4845,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayFrontendIpConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayFrontendIpConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayFrontendIpConfigurationOutputReference
 ```
@@ -5200,7 +5200,7 @@ func InternalValue() DataAzurermApplicationGatewayFrontendIpConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayFrontendPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayFrontendPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayFrontendPortList
 ```
@@ -5349,7 +5349,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayFrontendPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayFrontendPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayFrontendPortOutputReference
 ```
@@ -5649,7 +5649,7 @@ func InternalValue() DataAzurermApplicationGatewayFrontendPort
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayGatewayIpConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayGatewayIpConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayGatewayIpConfigurationList
 ```
@@ -5798,7 +5798,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayGatewayIpConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayGatewayIpConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayGatewayIpConfigurationOutputReference
 ```
@@ -6098,7 +6098,7 @@ func InternalValue() DataAzurermApplicationGatewayGatewayIpConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayGlobalList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayGlobalList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayGlobalList
 ```
@@ -6247,7 +6247,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayGlobalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayGlobalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayGlobalOutputReference
 ```
@@ -6536,7 +6536,7 @@ func InternalValue() DataAzurermApplicationGatewayGlobal
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayHttpListenerCustomErrorConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayHttpListenerCustomErrorConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayHttpListenerCustomErrorConfigurationList
 ```
@@ -6685,7 +6685,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayHttpListenerCustomErrorConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayHttpListenerCustomErrorConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayHttpListenerCustomErrorConfigurationOutputReference
 ```
@@ -6985,7 +6985,7 @@ func InternalValue() DataAzurermApplicationGatewayHttpListenerCustomErrorConfigu
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayHttpListenerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayHttpListenerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayHttpListenerList
 ```
@@ -7134,7 +7134,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayHttpListenerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayHttpListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayHttpListenerOutputReference
 ```
@@ -7577,7 +7577,7 @@ func InternalValue() DataAzurermApplicationGatewayHttpListener
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayIdentityList
 ```
@@ -7726,7 +7726,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayIdentityOutputReference
 ```
@@ -8037,7 +8037,7 @@ func InternalValue() DataAzurermApplicationGatewayIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayListenerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayListenerList
 ```
@@ -8186,7 +8186,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayListenerOutputReference
 ```
@@ -8585,7 +8585,7 @@ func InternalValue() DataAzurermApplicationGatewayListener
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayPrivateEndpointConnectionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayPrivateEndpointConnectionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayPrivateEndpointConnectionList
 ```
@@ -8734,7 +8734,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayPrivateEndpointConnectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayPrivateEndpointConnectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayPrivateEndpointConnectionOutputReference
 ```
@@ -9023,7 +9023,7 @@ func InternalValue() DataAzurermApplicationGatewayPrivateEndpointConnection
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayPrivateLinkConfigurationIpConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayPrivateLinkConfigurationIpConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayPrivateLinkConfigurationIpConfigurationList
 ```
@@ -9172,7 +9172,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayPrivateLinkConfigurationIpConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayPrivateLinkConfigurationIpConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayPrivateLinkConfigurationIpConfigurationOutputReference
 ```
@@ -9494,7 +9494,7 @@ func InternalValue() DataAzurermApplicationGatewayPrivateLinkConfigurationIpConf
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayPrivateLinkConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayPrivateLinkConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayPrivateLinkConfigurationList
 ```
@@ -9643,7 +9643,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayPrivateLinkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayPrivateLinkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayPrivateLinkConfigurationOutputReference
 ```
@@ -9943,7 +9943,7 @@ func InternalValue() DataAzurermApplicationGatewayPrivateLinkConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayProbeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayProbeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayProbeList
 ```
@@ -10092,7 +10092,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayProbeMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayProbeMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayProbeMatchList
 ```
@@ -10241,7 +10241,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayProbeMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayProbeMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayProbeMatchOutputReference
 ```
@@ -10530,7 +10530,7 @@ func InternalValue() DataAzurermApplicationGatewayProbeMatch
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayProbeOutputReference
 ```
@@ -10940,7 +10940,7 @@ func InternalValue() DataAzurermApplicationGatewayProbe
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRedirectConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayRedirectConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayRedirectConfigurationList
 ```
@@ -11089,7 +11089,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRedirectConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayRedirectConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayRedirectConfigurationOutputReference
 ```
@@ -11444,7 +11444,7 @@ func InternalValue() DataAzurermApplicationGatewayRedirectConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRequestRoutingRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayRequestRoutingRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayRequestRoutingRuleList
 ```
@@ -11593,7 +11593,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRequestRoutingRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayRequestRoutingRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayRequestRoutingRuleOutputReference
 ```
@@ -12036,7 +12036,7 @@ func InternalValue() DataAzurermApplicationGatewayRequestRoutingRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayRewriteRuleSetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayRewriteRuleSetList
 ```
@@ -12185,7 +12185,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayRewriteRuleSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayRewriteRuleSetOutputReference
 ```
@@ -12485,7 +12485,7 @@ func InternalValue() DataAzurermApplicationGatewayRewriteRuleSet
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayRewriteRuleSetRewriteRuleConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleConditionList
 ```
@@ -12634,7 +12634,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayRewriteRuleSetRewriteRuleConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleConditionOutputReference
 ```
@@ -12945,7 +12945,7 @@ func InternalValue() DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleCondi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayRewriteRuleSetRewriteRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleList
 ```
@@ -13094,7 +13094,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayRewriteRuleSetRewriteRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleOutputReference
 ```
@@ -13427,7 +13427,7 @@ func InternalValue() DataAzurermApplicationGatewayRewriteRuleSetRewriteRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationList
 ```
@@ -13576,7 +13576,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfigurationOutputReference
 ```
@@ -13865,7 +13865,7 @@ func InternalValue() DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleReque
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurationList
 ```
@@ -14014,7 +14014,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfigurationOutputReference
 ```
@@ -14303,7 +14303,7 @@ func InternalValue() DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleRespo
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleUrlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayRewriteRuleSetRewriteRuleUrlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleUrlList
 ```
@@ -14452,7 +14452,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayRewriteRuleSetRewriteRuleUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleUrlOutputReference
 ```
@@ -14763,7 +14763,7 @@ func InternalValue() DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleUrl
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayRoutingRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayRoutingRuleList
 ```
@@ -14912,7 +14912,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayRoutingRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayRoutingRuleOutputReference
 ```
@@ -15278,7 +15278,7 @@ func InternalValue() DataAzurermApplicationGatewayRoutingRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySkuList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewaySkuList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewaySkuList
 ```
@@ -15427,7 +15427,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySkuOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewaySkuOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewaySkuOutputReference
 ```
@@ -15727,7 +15727,7 @@ func InternalValue() DataAzurermApplicationGatewaySku
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySslCertificateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewaySslCertificateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewaySslCertificateList
 ```
@@ -15876,7 +15876,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySslCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewaySslCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewaySslCertificateOutputReference
 ```
@@ -16187,7 +16187,7 @@ func InternalValue() DataAzurermApplicationGatewaySslCertificate
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySslPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewaySslPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewaySslPolicyList
 ```
@@ -16336,7 +16336,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySslPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewaySslPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewaySslPolicyOutputReference
 ```
@@ -16658,7 +16658,7 @@ func InternalValue() DataAzurermApplicationGatewaySslPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySslProfileList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewaySslProfileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewaySslProfileList
 ```
@@ -16807,7 +16807,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySslProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewaySslProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewaySslProfileOutputReference
 ```
@@ -17151,7 +17151,7 @@ func InternalValue() DataAzurermApplicationGatewaySslProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySslProfileSslPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewaySslProfileSslPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewaySslProfileSslPolicyList
 ```
@@ -17300,7 +17300,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySslProfileSslPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewaySslProfileSslPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewaySslProfileSslPolicyOutputReference
 ```
@@ -17622,7 +17622,7 @@ func InternalValue() DataAzurermApplicationGatewaySslProfileSslPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermApplicationGatewayTimeoutsOutputReference
 ```
@@ -17900,7 +17900,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTrustedClientCertificateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayTrustedClientCertificateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayTrustedClientCertificateList
 ```
@@ -18049,7 +18049,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTrustedClientCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayTrustedClientCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayTrustedClientCertificateOutputReference
 ```
@@ -18349,7 +18349,7 @@ func InternalValue() DataAzurermApplicationGatewayTrustedClientCertificate
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTrustedRootCertificateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayTrustedRootCertificateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayTrustedRootCertificateList
 ```
@@ -18498,7 +18498,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTrustedRootCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayTrustedRootCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayTrustedRootCertificateOutputReference
 ```
@@ -18798,7 +18798,7 @@ func InternalValue() DataAzurermApplicationGatewayTrustedRootCertificate
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayUrlPathMapList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayUrlPathMapList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayUrlPathMapList
 ```
@@ -18947,7 +18947,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayUrlPathMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayUrlPathMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayUrlPathMapOutputReference
 ```
@@ -19335,7 +19335,7 @@ func InternalValue() DataAzurermApplicationGatewayUrlPathMap
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayUrlPathMapPathRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayUrlPathMapPathRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayUrlPathMapPathRuleList
 ```
@@ -19484,7 +19484,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayUrlPathMapPathRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayUrlPathMapPathRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayUrlPathMapPathRuleOutputReference
 ```
@@ -19883,7 +19883,7 @@ func InternalValue() DataAzurermApplicationGatewayUrlPathMapPathRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayWafConfigurationDisabledRuleGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayWafConfigurationDisabledRuleGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayWafConfigurationDisabledRuleGroupList
 ```
@@ -20032,7 +20032,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayWafConfigurationDisabledRuleGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayWafConfigurationDisabledRuleGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayWafConfigurationDisabledRuleGroupOutputReference
 ```
@@ -20321,7 +20321,7 @@ func InternalValue() DataAzurermApplicationGatewayWafConfigurationDisabledRuleGr
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayWafConfigurationExclusionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayWafConfigurationExclusionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayWafConfigurationExclusionList
 ```
@@ -20470,7 +20470,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayWafConfigurationExclusionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayWafConfigurationExclusionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayWafConfigurationExclusionOutputReference
 ```
@@ -20770,7 +20770,7 @@ func InternalValue() DataAzurermApplicationGatewayWafConfigurationExclusion
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayWafConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayWafConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayWafConfigurationList
 ```
@@ -20919,7 +20919,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayWafConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermapplicationgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/dataazurermapplicationgateway"
 
 dataazurermapplicationgateway.NewDataAzurermApplicationGatewayWafConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayWafConfigurationOutputReference
 ```
