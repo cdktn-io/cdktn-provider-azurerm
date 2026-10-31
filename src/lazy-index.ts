@@ -1420,6 +1420,7 @@ Object.defineProperty(exports, 'dataAzurermPublicIps', { get: function () { retu
 Object.defineProperty(exports, 'dataAzurermPublicMaintenanceConfigurations', { get: function () { return require('./data-azurerm-public-maintenance-configurations'); } });
 Object.defineProperty(exports, 'dataAzurermRecoveryServicesVault', { get: function () { return require('./data-azurerm-recovery-services-vault'); } });
 Object.defineProperty(exports, 'dataAzurermRedisCache', { get: function () { return require('./data-azurerm-redis-cache'); } });
+Object.defineProperty(exports, 'dataAzurermRelayNamespace', { get: function () { return require('./data-azurerm-relay-namespace'); } });
 Object.defineProperty(exports, 'dataAzurermResourceGroup', { get: function () { return require('./data-azurerm-resource-group'); } });
 Object.defineProperty(exports, 'dataAzurermResourceGroupTemplateDeployment', { get: function () { return require('./data-azurerm-resource-group-template-deployment'); } });
 Object.defineProperty(exports, 'dataAzurermResources', { get: function () { return require('./data-azurerm-resources'); } });

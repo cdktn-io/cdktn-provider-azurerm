@@ -1420,6 +1420,7 @@ export * as dataAzurermPublicIps from './data-azurerm-public-ips/index';
 export * as dataAzurermPublicMaintenanceConfigurations from './data-azurerm-public-maintenance-configurations/index';
 export * as dataAzurermRecoveryServicesVault from './data-azurerm-recovery-services-vault/index';
 export * as dataAzurermRedisCache from './data-azurerm-redis-cache/index';
+export * as dataAzurermRelayNamespace from './data-azurerm-relay-namespace/index';
 export * as dataAzurermResourceGroup from './data-azurerm-resource-group/index';
 export * as dataAzurermResourceGroupTemplateDeployment from './data-azurerm-resource-group-template-deployment/index';
 export * as dataAzurermResources from './data-azurerm-resources/index';
