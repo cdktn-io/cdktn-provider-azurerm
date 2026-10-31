@@ -564,6 +564,7 @@ The following submodules are available:
 - [dataAzurermPublicMaintenanceConfigurations](./dataAzurermPublicMaintenanceConfigurations.typescript.md)
 - [dataAzurermRecoveryServicesVault](./dataAzurermRecoveryServicesVault.typescript.md)
 - [dataAzurermRedisCache](./dataAzurermRedisCache.typescript.md)
+- [dataAzurermRelayNamespace](./dataAzurermRelayNamespace.typescript.md)
 - [dataAzurermResourceGroup](./dataAzurermResourceGroup.typescript.md)
 - [dataAzurermResourceGroupTemplateDeployment](./dataAzurermResourceGroupTemplateDeployment.typescript.md)
 - [dataAzurermResources](./dataAzurermResources.typescript.md)
