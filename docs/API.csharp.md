@@ -564,6 +564,7 @@ The following submodules are available:
 - [dataAzurermPublicMaintenanceConfigurations](./dataAzurermPublicMaintenanceConfigurations.csharp.md)
 - [dataAzurermRecoveryServicesVault](./dataAzurermRecoveryServicesVault.csharp.md)
 - [dataAzurermRedisCache](./dataAzurermRedisCache.csharp.md)
+- [dataAzurermRelayNamespace](./dataAzurermRelayNamespace.csharp.md)
 - [dataAzurermResourceGroup](./dataAzurermResourceGroup.csharp.md)
 - [dataAzurermResourceGroupTemplateDeployment](./dataAzurermResourceGroupTemplateDeployment.csharp.md)
 - [dataAzurermResources](./dataAzurermResources.csharp.md)

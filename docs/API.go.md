@@ -564,6 +564,7 @@ The following submodules are available:
 - [dataAzurermPublicMaintenanceConfigurations](./dataAzurermPublicMaintenanceConfigurations.go.md)
 - [dataAzurermRecoveryServicesVault](./dataAzurermRecoveryServicesVault.go.md)
 - [dataAzurermRedisCache](./dataAzurermRedisCache.go.md)
+- [dataAzurermRelayNamespace](./dataAzurermRelayNamespace.go.md)
 - [dataAzurermResourceGroup](./dataAzurermResourceGroup.go.md)
 - [dataAzurermResourceGroupTemplateDeployment](./dataAzurermResourceGroupTemplateDeployment.go.md)
 - [dataAzurermResources](./dataAzurermResources.go.md)

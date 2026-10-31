@@ -564,6 +564,7 @@ The following submodules are available:
 - [dataAzurermPublicMaintenanceConfigurations](./dataAzurermPublicMaintenanceConfigurations.python.md)
 - [dataAzurermRecoveryServicesVault](./dataAzurermRecoveryServicesVault.python.md)
 - [dataAzurermRedisCache](./dataAzurermRedisCache.python.md)
+- [dataAzurermRelayNamespace](./dataAzurermRelayNamespace.python.md)
 - [dataAzurermResourceGroup](./dataAzurermResourceGroup.python.md)
 - [dataAzurermResourceGroupTemplateDeployment](./dataAzurermResourceGroupTemplateDeployment.python.md)
 - [dataAzurermResources](./dataAzurermResources.python.md)
