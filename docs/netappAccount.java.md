@@ -4,7 +4,7 @@
 
 ### NetappAccount <a name="NetappAccount" id="@cdktn/provider-azurerm.netappAccount.NetappAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account azurerm_netapp_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account azurerm_netapp_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer"></a>
 
@@ -41,13 +41,13 @@ NetappAccount.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#location NetappAccount#location}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#name NetappAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#location NetappAccount#location}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#name NetappAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.activeDirectory">activeDirectory</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory">NetappAccountActiveDirectory</a></code> | active_directory block. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#id NetappAccount#id}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#id NetappAccount#id}. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountIdentity">NetappAccountIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#tags NetappAccount#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#tags NetappAccount#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts">NetappAccountTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#location NetappAccount#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#location NetappAccount#location}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#name NetappAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#name NetappAccount#name}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 active_directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#active_directory NetappAccount#active_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#active_directory NetappAccount#active_directory}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#id NetappAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#id NetappAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -163,7 +163,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#identity NetappAccount#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#identity NetappAccount#identity}
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#tags NetappAccount#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#tags NetappAccount#tags}.
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#timeouts NetappAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#timeouts NetappAccount#timeouts}
 
 ---
 
@@ -704,7 +704,7 @@ The construct id used in the generated config for the NetappAccount to import.
 
 The id of the existing NetappAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1088,13 +1088,19 @@ NetappAccountActiveDirectory.builder()
     .password(java.lang.String)
     .smbServerName(java.lang.String)
     .username(java.lang.String)
+//  .administratorUsers(java.util.List<java.lang.String>)
 //  .aesEncryptionEnabled(java.lang.Boolean|IResolvable)
+//  .backupUsers(java.util.List<java.lang.String>)
+//  .domainControllerConnectionEncryptionEnabled(java.lang.Boolean|IResolvable)
 //  .kerberosAdName(java.lang.String)
 //  .kerberosKdcIp(java.lang.String)
+//  .ldapClientPreferredServers(java.util.List<java.lang.String>)
 //  .ldapOverTlsEnabled(java.lang.Boolean|IResolvable)
+//  .ldapSearchScope(NetappAccountActiveDirectoryLdapSearchScope)
 //  .ldapSigningEnabled(java.lang.Boolean|IResolvable)
 //  .localNfsUsersWithLdapAllowed(java.lang.Boolean|IResolvable)
 //  .organizationalUnit(java.lang.String)
+//  .securityUsers(java.util.List<java.lang.String>)
 //  .serverRootCaCertificate(java.lang.String)
 //  .siteName(java.lang.String)
     .build();
@@ -1104,18 +1110,24 @@ NetappAccountActiveDirectory.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.dnsServers">dnsServers</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#dns_servers NetappAccount#dns_servers}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.domain">domain</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#domain NetappAccount#domain}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.password">password</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#password NetappAccount#password}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.smbServerName">smbServerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#smb_server_name NetappAccount#smb_server_name}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#username NetappAccount#username}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.dnsServers">dnsServers</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#dns_servers NetappAccount#dns_servers}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.domain">domain</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#domain NetappAccount#domain}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.password">password</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#password NetappAccount#password}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.smbServerName">smbServerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#smb_server_name NetappAccount#smb_server_name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#username NetappAccount#username}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.administratorUsers">administratorUsers</a></code> | <code>java.util.List<java.lang.String></code> | Domain users to be added to the built-in Administrators active directory group. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.aesEncryptionEnabled">aesEncryptionEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If enabled, AES encryption will be enabled for SMB communication. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.backupUsers">backupUsers</a></code> | <code>java.util.List<java.lang.String></code> | Domain users to be added to the built-in Backup Operators active directory group. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.domainControllerConnectionEncryptionEnabled">domainControllerConnectionEncryptionEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Specifies if traffic between the Domain Controller and SMB server is encrypted. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.kerberosAdName">kerberosAdName</a></code> | <code>java.lang.String</code> | Name of the active directory machine. This optional parameter is used only while creating kerberos volume. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.kerberosKdcIp">kerberosKdcIp</a></code> | <code>java.lang.String</code> | IP address of the KDC server (usually same the DC). |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.ldapClientPreferredServers">ldapClientPreferredServers</a></code> | <code>java.util.List<java.lang.String></code> | Specifies the preferred LDAP server IPs for the LDAP client. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.ldapOverTlsEnabled">ldapOverTlsEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Specifies whether or not the LDAP traffic needs to be secured via TLS. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.ldapSearchScope">ldapSearchScope</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope">NetappAccountActiveDirectoryLdapSearchScope</a></code> | ldap_search_scope block. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.ldapSigningEnabled">ldapSigningEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Specifies whether or not the LDAP traffic needs to be signed. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.localNfsUsersWithLdapAllowed">localNfsUsersWithLdapAllowed</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If enabled, NFS client local users can also (in addition to LDAP users) access the NFS volumes. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.organizationalUnit">organizationalUnit</a></code> | <code>java.lang.String</code> | The Organizational Unit (OU) within the Windows Active Directory where machines will be created. If blank, defaults to 'CN=Computers'. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.securityUsers">securityUsers</a></code> | <code>java.util.List<java.lang.String></code> | Domain users to be given SeSecurityPrivilege privilege. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.serverRootCaCertificate">serverRootCaCertificate</a></code> | <code>java.lang.String</code> | When LDAP over SSL/TLS is enabled, the LDAP client is required to have base64 encoded Active Directory Certificate Service's self-signed root CA certificate, this optional parameter is used only for dual protocol with LDAP user-mapping volumes. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.siteName">siteName</a></code> | <code>java.lang.String</code> | The Active Directory site the service will limit Domain Controller discovery to. If blank, defaults to 'Default-First-Site-Name'. |
 
@@ -1129,7 +1141,7 @@ public java.util.List<java.lang.String> getDnsServers();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#dns_servers NetappAccount#dns_servers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#dns_servers NetappAccount#dns_servers}.
 
 ---
 
@@ -1141,7 +1153,7 @@ public java.lang.String getDomain();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#domain NetappAccount#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#domain NetappAccount#domain}.
 
 ---
 
@@ -1153,7 +1165,7 @@ public java.lang.String getPassword();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#password NetappAccount#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#password NetappAccount#password}.
 
 ---
 
@@ -1165,7 +1177,7 @@ public java.lang.String getSmbServerName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#smb_server_name NetappAccount#smb_server_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#smb_server_name NetappAccount#smb_server_name}.
 
 ---
 
@@ -1177,7 +1189,21 @@ public java.lang.String getUsername();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#username NetappAccount#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#username NetappAccount#username}.
+
+---
+
+##### `administratorUsers`<sup>Optional</sup> <a name="administratorUsers" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.administratorUsers"></a>
+
+```java
+public java.util.List<java.lang.String> getAdministratorUsers();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Domain users to be added to the built-in Administrators active directory group.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#administrator_users NetappAccount#administrator_users}
 
 ---
 
@@ -1191,7 +1217,35 @@ public java.lang.Boolean|IResolvable getAesEncryptionEnabled();
 
 If enabled, AES encryption will be enabled for SMB communication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#aes_encryption_enabled NetappAccount#aes_encryption_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#aes_encryption_enabled NetappAccount#aes_encryption_enabled}
+
+---
+
+##### `backupUsers`<sup>Optional</sup> <a name="backupUsers" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.backupUsers"></a>
+
+```java
+public java.util.List<java.lang.String> getBackupUsers();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Domain users to be added to the built-in Backup Operators active directory group.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#backup_users NetappAccount#backup_users}
+
+---
+
+##### `domainControllerConnectionEncryptionEnabled`<sup>Optional</sup> <a name="domainControllerConnectionEncryptionEnabled" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.domainControllerConnectionEncryptionEnabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDomainControllerConnectionEncryptionEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Specifies if traffic between the Domain Controller and SMB server is encrypted.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#domain_controller_connection_encryption_enabled NetappAccount#domain_controller_connection_encryption_enabled}
 
 ---
 
@@ -1205,7 +1259,7 @@ public java.lang.String getKerberosAdName();
 
 Name of the active directory machine. This optional parameter is used only while creating kerberos volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#kerberos_ad_name NetappAccount#kerberos_ad_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#kerberos_ad_name NetappAccount#kerberos_ad_name}
 
 ---
 
@@ -1221,7 +1275,21 @@ IP address of the KDC server (usually same the DC).
 
 This optional parameter is used only while creating kerberos volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#kerberos_kdc_ip NetappAccount#kerberos_kdc_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#kerberos_kdc_ip NetappAccount#kerberos_kdc_ip}
+
+---
+
+##### `ldapClientPreferredServers`<sup>Optional</sup> <a name="ldapClientPreferredServers" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.ldapClientPreferredServers"></a>
+
+```java
+public java.util.List<java.lang.String> getLdapClientPreferredServers();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Specifies the preferred LDAP server IPs for the LDAP client.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_client_preferred_servers NetappAccount#ldap_client_preferred_servers}
 
 ---
 
@@ -1235,7 +1303,21 @@ public java.lang.Boolean|IResolvable getLdapOverTlsEnabled();
 
 Specifies whether or not the LDAP traffic needs to be secured via TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#ldap_over_tls_enabled NetappAccount#ldap_over_tls_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_over_tls_enabled NetappAccount#ldap_over_tls_enabled}
+
+---
+
+##### `ldapSearchScope`<sup>Optional</sup> <a name="ldapSearchScope" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.ldapSearchScope"></a>
+
+```java
+public NetappAccountActiveDirectoryLdapSearchScope getLdapSearchScope();
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope">NetappAccountActiveDirectoryLdapSearchScope</a>
+
+ldap_search_scope block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_search_scope NetappAccount#ldap_search_scope}
 
 ---
 
@@ -1249,7 +1331,7 @@ public java.lang.Boolean|IResolvable getLdapSigningEnabled();
 
 Specifies whether or not the LDAP traffic needs to be signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#ldap_signing_enabled NetappAccount#ldap_signing_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_signing_enabled NetappAccount#ldap_signing_enabled}
 
 ---
 
@@ -1263,7 +1345,7 @@ public java.lang.Boolean|IResolvable getLocalNfsUsersWithLdapAllowed();
 
 If enabled, NFS client local users can also (in addition to LDAP users) access the NFS volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#local_nfs_users_with_ldap_allowed NetappAccount#local_nfs_users_with_ldap_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#local_nfs_users_with_ldap_allowed NetappAccount#local_nfs_users_with_ldap_allowed}
 
 ---
 
@@ -1277,7 +1359,21 @@ public java.lang.String getOrganizationalUnit();
 
 The Organizational Unit (OU) within the Windows Active Directory where machines will be created. If blank, defaults to 'CN=Computers'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#organizational_unit NetappAccount#organizational_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#organizational_unit NetappAccount#organizational_unit}
+
+---
+
+##### `securityUsers`<sup>Optional</sup> <a name="securityUsers" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.securityUsers"></a>
+
+```java
+public java.util.List<java.lang.String> getSecurityUsers();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Domain users to be given SeSecurityPrivilege privilege.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#security_users NetappAccount#security_users}
 
 ---
 
@@ -1291,7 +1387,7 @@ public java.lang.String getServerRootCaCertificate();
 
 When LDAP over SSL/TLS is enabled, the LDAP client is required to have base64 encoded Active Directory Certificate Service's self-signed root CA certificate, this optional parameter is used only for dual protocol with LDAP user-mapping volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#server_root_ca_certificate NetappAccount#server_root_ca_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#server_root_ca_certificate NetappAccount#server_root_ca_certificate}
 
 ---
 
@@ -1305,7 +1401,73 @@ public java.lang.String getSiteName();
 
 The Active Directory site the service will limit Domain Controller discovery to. If blank, defaults to 'Default-First-Site-Name'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#site_name NetappAccount#site_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#site_name NetappAccount#site_name}
+
+---
+
+### NetappAccountActiveDirectoryLdapSearchScope <a name="NetappAccountActiveDirectoryLdapSearchScope" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope.Initializer"></a>
+
+```java
+import io.cdktn.providers.azurerm.netapp_account.NetappAccountActiveDirectoryLdapSearchScope;
+
+NetappAccountActiveDirectoryLdapSearchScope.builder()
+//  .groupDn(java.lang.String)
+//  .groupMembershipFilter(java.lang.String)
+//  .userDn(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope.property.groupDn">groupDn</a></code> | <code>java.lang.String</code> | Specifies the group DN, which overrides the base DN for group lookups. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope.property.groupMembershipFilter">groupMembershipFilter</a></code> | <code>java.lang.String</code> | Specifies the custom LDAP search filter to be used when looking up group membership from LDAP server. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope.property.userDn">userDn</a></code> | <code>java.lang.String</code> | Specifies the user DN, which overrides the base DN for user lookups. |
+
+---
+
+##### `groupDn`<sup>Optional</sup> <a name="groupDn" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope.property.groupDn"></a>
+
+```java
+public java.lang.String getGroupDn();
+```
+
+- *Type:* java.lang.String
+
+Specifies the group DN, which overrides the base DN for group lookups.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#group_dn NetappAccount#group_dn}
+
+---
+
+##### `groupMembershipFilter`<sup>Optional</sup> <a name="groupMembershipFilter" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope.property.groupMembershipFilter"></a>
+
+```java
+public java.lang.String getGroupMembershipFilter();
+```
+
+- *Type:* java.lang.String
+
+Specifies the custom LDAP search filter to be used when looking up group membership from LDAP server.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#group_membership_filter NetappAccount#group_membership_filter}
+
+---
+
+##### `userDn`<sup>Optional</sup> <a name="userDn" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope.property.userDn"></a>
+
+```java
+public java.lang.String getUserDn();
+```
+
+- *Type:* java.lang.String
+
+Specifies the user DN, which overrides the base DN for user lookups.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#user_dn NetappAccount#user_dn}
 
 ---
 
@@ -1346,13 +1508,13 @@ NetappAccountConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#location NetappAccount#location}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#name NetappAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#location NetappAccount#location}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#name NetappAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.activeDirectory">activeDirectory</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory">NetappAccountActiveDirectory</a></code> | active_directory block. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#id NetappAccount#id}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#id NetappAccount#id}. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountIdentity">NetappAccountIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#tags NetappAccount#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#tags NetappAccount#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts">NetappAccountTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1435,7 +1597,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#location NetappAccount#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#location NetappAccount#location}.
 
 ---
 
@@ -1447,7 +1609,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#name NetappAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#name NetappAccount#name}.
 
 ---
 
@@ -1459,7 +1621,7 @@ public java.lang.String getResourceGroupName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}.
 
 ---
 
@@ -1473,7 +1635,7 @@ public NetappAccountActiveDirectory getActiveDirectory();
 
 active_directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#active_directory NetappAccount#active_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#active_directory NetappAccount#active_directory}
 
 ---
 
@@ -1485,7 +1647,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#id NetappAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#id NetappAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1502,7 +1664,7 @@ public NetappAccountIdentity getIdentity();
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#identity NetappAccount#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#identity NetappAccount#identity}
 
 ---
 
@@ -1514,7 +1676,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#tags NetappAccount#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#tags NetappAccount#tags}.
 
 ---
 
@@ -1528,7 +1690,7 @@ public NetappAccountTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#timeouts NetappAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#timeouts NetappAccount#timeouts}
 
 ---
 
@@ -1549,8 +1711,8 @@ NetappAccountIdentity.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountIdentity.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#type NetappAccount#type}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountIdentity.property.identityIds">identityIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#identity_ids NetappAccount#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountIdentity.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#type NetappAccount#type}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountIdentity.property.identityIds">identityIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#identity_ids NetappAccount#identity_ids}. |
 
 ---
 
@@ -1562,7 +1724,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#type NetappAccount#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#type NetappAccount#type}.
 
 ---
 
@@ -1574,7 +1736,7 @@ public java.util.List<java.lang.String> getIdentityIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#identity_ids NetappAccount#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#identity_ids NetappAccount#identity_ids}.
 
 ---
 
@@ -1597,10 +1759,10 @@ NetappAccountTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#create NetappAccount#create}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#delete NetappAccount#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#read NetappAccount#read}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#update NetappAccount#update}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#create NetappAccount#create}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#delete NetappAccount#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#read NetappAccount#read}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#update NetappAccount#update}. |
 
 ---
 
@@ -1612,7 +1774,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#create NetappAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#create NetappAccount#create}.
 
 ---
 
@@ -1624,7 +1786,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#delete NetappAccount#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#delete NetappAccount#delete}.
 
 ---
 
@@ -1636,7 +1798,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#read NetappAccount#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#read NetappAccount#read}.
 
 ---
 
@@ -1648,11 +1810,347 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#update NetappAccount#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#update NetappAccount#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### NetappAccountActiveDirectoryLdapSearchScopeOutputReference <a name="NetappAccountActiveDirectoryLdapSearchScopeOutputReference" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.azurerm.netapp_account.NetappAccountActiveDirectoryLdapSearchScopeOutputReference;
+
+new NetappAccountActiveDirectoryLdapSearchScopeOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.resetGroupDn">resetGroupDn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.resetGroupMembershipFilter">resetGroupMembershipFilter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.resetUserDn">resetUserDn</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetGroupDn` <a name="resetGroupDn" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.resetGroupDn"></a>
+
+```java
+public void resetGroupDn()
+```
+
+##### `resetGroupMembershipFilter` <a name="resetGroupMembershipFilter" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.resetGroupMembershipFilter"></a>
+
+```java
+public void resetGroupMembershipFilter()
+```
+
+##### `resetUserDn` <a name="resetUserDn" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.resetUserDn"></a>
+
+```java
+public void resetUserDn()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.groupDnInput">groupDnInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.groupMembershipFilterInput">groupMembershipFilterInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.userDnInput">userDnInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.groupDn">groupDn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.groupMembershipFilter">groupMembershipFilter</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.userDn">userDn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope">NetappAccountActiveDirectoryLdapSearchScope</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `groupDnInput`<sup>Optional</sup> <a name="groupDnInput" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.groupDnInput"></a>
+
+```java
+public java.lang.String getGroupDnInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `groupMembershipFilterInput`<sup>Optional</sup> <a name="groupMembershipFilterInput" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.groupMembershipFilterInput"></a>
+
+```java
+public java.lang.String getGroupMembershipFilterInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `userDnInput`<sup>Optional</sup> <a name="userDnInput" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.userDnInput"></a>
+
+```java
+public java.lang.String getUserDnInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `groupDn`<sup>Required</sup> <a name="groupDn" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.groupDn"></a>
+
+```java
+public java.lang.String getGroupDn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `groupMembershipFilter`<sup>Required</sup> <a name="groupMembershipFilter" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.groupMembershipFilter"></a>
+
+```java
+public java.lang.String getGroupMembershipFilter();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `userDn`<sup>Required</sup> <a name="userDn" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.userDn"></a>
+
+```java
+public java.lang.String getUserDn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.internalValue"></a>
+
+```java
+public NetappAccountActiveDirectoryLdapSearchScope getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope">NetappAccountActiveDirectoryLdapSearchScope</a>
+
+---
+
 
 ### NetappAccountActiveDirectoryOutputReference <a name="NetappAccountActiveDirectoryOutputReference" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference"></a>
 
@@ -1704,13 +2202,20 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.putLdapSearchScope">putLdapSearchScope</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetAdministratorUsers">resetAdministratorUsers</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetAesEncryptionEnabled">resetAesEncryptionEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetBackupUsers">resetBackupUsers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetDomainControllerConnectionEncryptionEnabled">resetDomainControllerConnectionEncryptionEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetKerberosAdName">resetKerberosAdName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetKerberosKdcIp">resetKerberosKdcIp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetLdapClientPreferredServers">resetLdapClientPreferredServers</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetLdapOverTlsEnabled">resetLdapOverTlsEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetLdapSearchScope">resetLdapSearchScope</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetLdapSigningEnabled">resetLdapSigningEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetLocalNfsUsersWithLdapAllowed">resetLocalNfsUsersWithLdapAllowed</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetOrganizationalUnit">resetOrganizationalUnit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetSecurityUsers">resetSecurityUsers</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetServerRootCaCertificate">resetServerRootCaCertificate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetSiteName">resetSiteName</a></code> | *No description.* |
 
@@ -1866,10 +2371,40 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putLdapSearchScope` <a name="putLdapSearchScope" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.putLdapSearchScope"></a>
+
+```java
+public void putLdapSearchScope(NetappAccountActiveDirectoryLdapSearchScope value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.putLdapSearchScope.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope">NetappAccountActiveDirectoryLdapSearchScope</a>
+
+---
+
+##### `resetAdministratorUsers` <a name="resetAdministratorUsers" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetAdministratorUsers"></a>
+
+```java
+public void resetAdministratorUsers()
+```
+
 ##### `resetAesEncryptionEnabled` <a name="resetAesEncryptionEnabled" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetAesEncryptionEnabled"></a>
 
 ```java
 public void resetAesEncryptionEnabled()
+```
+
+##### `resetBackupUsers` <a name="resetBackupUsers" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetBackupUsers"></a>
+
+```java
+public void resetBackupUsers()
+```
+
+##### `resetDomainControllerConnectionEncryptionEnabled` <a name="resetDomainControllerConnectionEncryptionEnabled" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetDomainControllerConnectionEncryptionEnabled"></a>
+
+```java
+public void resetDomainControllerConnectionEncryptionEnabled()
 ```
 
 ##### `resetKerberosAdName` <a name="resetKerberosAdName" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetKerberosAdName"></a>
@@ -1884,10 +2419,22 @@ public void resetKerberosAdName()
 public void resetKerberosKdcIp()
 ```
 
+##### `resetLdapClientPreferredServers` <a name="resetLdapClientPreferredServers" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetLdapClientPreferredServers"></a>
+
+```java
+public void resetLdapClientPreferredServers()
+```
+
 ##### `resetLdapOverTlsEnabled` <a name="resetLdapOverTlsEnabled" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetLdapOverTlsEnabled"></a>
 
 ```java
 public void resetLdapOverTlsEnabled()
+```
+
+##### `resetLdapSearchScope` <a name="resetLdapSearchScope" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetLdapSearchScope"></a>
+
+```java
+public void resetLdapSearchScope()
 ```
 
 ##### `resetLdapSigningEnabled` <a name="resetLdapSigningEnabled" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetLdapSigningEnabled"></a>
@@ -1906,6 +2453,12 @@ public void resetLocalNfsUsersWithLdapAllowed()
 
 ```java
 public void resetOrganizationalUnit()
+```
+
+##### `resetSecurityUsers` <a name="resetSecurityUsers" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetSecurityUsers"></a>
+
+```java
+public void resetSecurityUsers()
 ```
 
 ##### `resetServerRootCaCertificate` <a name="resetServerRootCaCertificate" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetServerRootCaCertificate"></a>
@@ -1927,30 +2480,42 @@ public void resetSiteName()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapSearchScope">ldapSearchScope</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference">NetappAccountActiveDirectoryLdapSearchScopeOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.administratorUsersInput">administratorUsersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.aesEncryptionEnabledInput">aesEncryptionEnabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.backupUsersInput">backupUsersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.dnsServersInput">dnsServersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.domainControllerConnectionEncryptionEnabledInput">domainControllerConnectionEncryptionEnabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.domainInput">domainInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.kerberosAdNameInput">kerberosAdNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.kerberosKdcIpInput">kerberosKdcIpInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapClientPreferredServersInput">ldapClientPreferredServersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapOverTlsEnabledInput">ldapOverTlsEnabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapSearchScopeInput">ldapSearchScopeInput</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope">NetappAccountActiveDirectoryLdapSearchScope</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapSigningEnabledInput">ldapSigningEnabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.localNfsUsersWithLdapAllowedInput">localNfsUsersWithLdapAllowedInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.organizationalUnitInput">organizationalUnitInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.passwordInput">passwordInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.securityUsersInput">securityUsersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.serverRootCaCertificateInput">serverRootCaCertificateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.siteNameInput">siteNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.smbServerNameInput">smbServerNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.usernameInput">usernameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.administratorUsers">administratorUsers</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.aesEncryptionEnabled">aesEncryptionEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.backupUsers">backupUsers</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.dnsServers">dnsServers</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.domain">domain</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.domainControllerConnectionEncryptionEnabled">domainControllerConnectionEncryptionEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.kerberosAdName">kerberosAdName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.kerberosKdcIp">kerberosKdcIp</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapClientPreferredServers">ldapClientPreferredServers</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapOverTlsEnabled">ldapOverTlsEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapSigningEnabled">ldapSigningEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.localNfsUsersWithLdapAllowed">localNfsUsersWithLdapAllowed</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.organizationalUnit">organizationalUnit</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.password">password</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.securityUsers">securityUsers</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.serverRootCaCertificate">serverRootCaCertificate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.siteName">siteName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.smbServerName">smbServerName</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1983,6 +2548,26 @@ public java.lang.String getFqn();
 
 ---
 
+##### `ldapSearchScope`<sup>Required</sup> <a name="ldapSearchScope" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapSearchScope"></a>
+
+```java
+public NetappAccountActiveDirectoryLdapSearchScopeOutputReference getLdapSearchScope();
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference">NetappAccountActiveDirectoryLdapSearchScopeOutputReference</a>
+
+---
+
+##### `administratorUsersInput`<sup>Optional</sup> <a name="administratorUsersInput" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.administratorUsersInput"></a>
+
+```java
+public java.util.List<java.lang.String> getAdministratorUsersInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `aesEncryptionEnabledInput`<sup>Optional</sup> <a name="aesEncryptionEnabledInput" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.aesEncryptionEnabledInput"></a>
 
 ```java
@@ -1993,6 +2578,16 @@ public java.lang.Boolean|IResolvable getAesEncryptionEnabledInput();
 
 ---
 
+##### `backupUsersInput`<sup>Optional</sup> <a name="backupUsersInput" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.backupUsersInput"></a>
+
+```java
+public java.util.List<java.lang.String> getBackupUsersInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `dnsServersInput`<sup>Optional</sup> <a name="dnsServersInput" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.dnsServersInput"></a>
 
 ```java
@@ -2000,6 +2595,16 @@ public java.util.List<java.lang.String> getDnsServersInput();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `domainControllerConnectionEncryptionEnabledInput`<sup>Optional</sup> <a name="domainControllerConnectionEncryptionEnabledInput" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.domainControllerConnectionEncryptionEnabledInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDomainControllerConnectionEncryptionEnabledInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -2033,6 +2638,16 @@ public java.lang.String getKerberosKdcIpInput();
 
 ---
 
+##### `ldapClientPreferredServersInput`<sup>Optional</sup> <a name="ldapClientPreferredServersInput" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapClientPreferredServersInput"></a>
+
+```java
+public java.util.List<java.lang.String> getLdapClientPreferredServersInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `ldapOverTlsEnabledInput`<sup>Optional</sup> <a name="ldapOverTlsEnabledInput" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapOverTlsEnabledInput"></a>
 
 ```java
@@ -2040,6 +2655,16 @@ public java.lang.Boolean|IResolvable getLdapOverTlsEnabledInput();
 ```
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `ldapSearchScopeInput`<sup>Optional</sup> <a name="ldapSearchScopeInput" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapSearchScopeInput"></a>
+
+```java
+public NetappAccountActiveDirectoryLdapSearchScope getLdapSearchScopeInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope">NetappAccountActiveDirectoryLdapSearchScope</a>
 
 ---
 
@@ -2083,6 +2708,16 @@ public java.lang.String getPasswordInput();
 
 ---
 
+##### `securityUsersInput`<sup>Optional</sup> <a name="securityUsersInput" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.securityUsersInput"></a>
+
+```java
+public java.util.List<java.lang.String> getSecurityUsersInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `serverRootCaCertificateInput`<sup>Optional</sup> <a name="serverRootCaCertificateInput" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.serverRootCaCertificateInput"></a>
 
 ```java
@@ -2123,6 +2758,16 @@ public java.lang.String getUsernameInput();
 
 ---
 
+##### `administratorUsers`<sup>Required</sup> <a name="administratorUsers" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.administratorUsers"></a>
+
+```java
+public java.util.List<java.lang.String> getAdministratorUsers();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `aesEncryptionEnabled`<sup>Required</sup> <a name="aesEncryptionEnabled" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.aesEncryptionEnabled"></a>
 
 ```java
@@ -2130,6 +2775,16 @@ public java.lang.Boolean|IResolvable getAesEncryptionEnabled();
 ```
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `backupUsers`<sup>Required</sup> <a name="backupUsers" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.backupUsers"></a>
+
+```java
+public java.util.List<java.lang.String> getBackupUsers();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -2153,6 +2808,16 @@ public java.lang.String getDomain();
 
 ---
 
+##### `domainControllerConnectionEncryptionEnabled`<sup>Required</sup> <a name="domainControllerConnectionEncryptionEnabled" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.domainControllerConnectionEncryptionEnabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDomainControllerConnectionEncryptionEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `kerberosAdName`<sup>Required</sup> <a name="kerberosAdName" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.kerberosAdName"></a>
 
 ```java
@@ -2170,6 +2835,16 @@ public java.lang.String getKerberosKdcIp();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `ldapClientPreferredServers`<sup>Required</sup> <a name="ldapClientPreferredServers" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapClientPreferredServers"></a>
+
+```java
+public java.util.List<java.lang.String> getLdapClientPreferredServers();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -2220,6 +2895,16 @@ public java.lang.String getPassword();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `securityUsers`<sup>Required</sup> <a name="securityUsers" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.securityUsers"></a>
+
+```java
+public java.util.List<java.lang.String> getSecurityUsers();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 

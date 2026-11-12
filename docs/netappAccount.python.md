@@ -4,7 +4,7 @@
 
 ### NetappAccount <a name="NetappAccount" id="@cdktn/provider-azurerm.netappAccount.NetappAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account azurerm_netapp_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account azurerm_netapp_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer"></a>
 
@@ -43,13 +43,13 @@ netappAccount.NetappAccount(
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#location NetappAccount#location}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#name NetappAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#location NetappAccount#location}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#name NetappAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.activeDirectory">active_directory</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory">NetappAccountActiveDirectory</a></code> | active_directory block. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#id NetappAccount#id}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#id NetappAccount#id}. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountIdentity">NetappAccountIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#tags NetappAccount#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#tags NetappAccount#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts">NetappAccountTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#location NetappAccount#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#location NetappAccount#location}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#name NetappAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#name NetappAccount#name}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 active_directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#active_directory NetappAccount#active_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#active_directory NetappAccount#active_directory}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#id NetappAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#id NetappAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -165,7 +165,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#identity NetappAccount#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#identity NetappAccount#identity}
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#tags NetappAccount#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#tags NetappAccount#tags}.
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#timeouts NetappAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#timeouts NetappAccount#timeouts}
 
 ---
 
@@ -583,13 +583,19 @@ def put_active_directory(
   password: str,
   smb_server_name: str,
   username: str,
+  administrator_users: typing.List[str] = None,
   aes_encryption_enabled: bool | IResolvable = None,
+  backup_users: typing.List[str] = None,
+  domain_controller_connection_encryption_enabled: bool | IResolvable = None,
   kerberos_ad_name: str = None,
   kerberos_kdc_ip: str = None,
+  ldap_client_preferred_servers: typing.List[str] = None,
   ldap_over_tls_enabled: bool | IResolvable = None,
+  ldap_search_scope: NetappAccountActiveDirectoryLdapSearchScope = None,
   ldap_signing_enabled: bool | IResolvable = None,
   local_nfs_users_with_ldap_allowed: bool | IResolvable = None,
   organizational_unit: str = None,
+  security_users: typing.List[str] = None,
   server_root_ca_certificate: str = None,
   site_name: str = None
 ) -> None
@@ -599,7 +605,7 @@ def put_active_directory(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#dns_servers NetappAccount#dns_servers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#dns_servers NetappAccount#dns_servers}.
 
 ---
 
@@ -607,7 +613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#domain NetappAccount#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#domain NetappAccount#domain}.
 
 ---
 
@@ -615,7 +621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#password NetappAccount#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#password NetappAccount#password}.
 
 ---
 
@@ -623,7 +629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#smb_server_name NetappAccount#smb_server_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#smb_server_name NetappAccount#smb_server_name}.
 
 ---
 
@@ -631,7 +637,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#username NetappAccount#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#username NetappAccount#username}.
+
+---
+
+###### `administrator_users`<sup>Optional</sup> <a name="administrator_users" id="@cdktn/provider-azurerm.netappAccount.NetappAccount.putActiveDirectory.parameter.administratorUsers"></a>
+
+- *Type:* typing.List[str]
+
+Domain users to be added to the built-in Administrators active directory group.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#administrator_users NetappAccount#administrator_users}
 
 ---
 
@@ -641,7 +657,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If enabled, AES encryption will be enabled for SMB communication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#aes_encryption_enabled NetappAccount#aes_encryption_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#aes_encryption_enabled NetappAccount#aes_encryption_enabled}
+
+---
+
+###### `backup_users`<sup>Optional</sup> <a name="backup_users" id="@cdktn/provider-azurerm.netappAccount.NetappAccount.putActiveDirectory.parameter.backupUsers"></a>
+
+- *Type:* typing.List[str]
+
+Domain users to be added to the built-in Backup Operators active directory group.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#backup_users NetappAccount#backup_users}
+
+---
+
+###### `domain_controller_connection_encryption_enabled`<sup>Optional</sup> <a name="domain_controller_connection_encryption_enabled" id="@cdktn/provider-azurerm.netappAccount.NetappAccount.putActiveDirectory.parameter.domainControllerConnectionEncryptionEnabled"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Specifies if traffic between the Domain Controller and SMB server is encrypted.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#domain_controller_connection_encryption_enabled NetappAccount#domain_controller_connection_encryption_enabled}
 
 ---
 
@@ -651,7 +687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the active directory machine. This optional parameter is used only while creating kerberos volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#kerberos_ad_name NetappAccount#kerberos_ad_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#kerberos_ad_name NetappAccount#kerberos_ad_name}
 
 ---
 
@@ -663,7 +699,17 @@ IP address of the KDC server (usually same the DC).
 
 This optional parameter is used only while creating kerberos volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#kerberos_kdc_ip NetappAccount#kerberos_kdc_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#kerberos_kdc_ip NetappAccount#kerberos_kdc_ip}
+
+---
+
+###### `ldap_client_preferred_servers`<sup>Optional</sup> <a name="ldap_client_preferred_servers" id="@cdktn/provider-azurerm.netappAccount.NetappAccount.putActiveDirectory.parameter.ldapClientPreferredServers"></a>
+
+- *Type:* typing.List[str]
+
+Specifies the preferred LDAP server IPs for the LDAP client.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_client_preferred_servers NetappAccount#ldap_client_preferred_servers}
 
 ---
 
@@ -673,7 +719,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies whether or not the LDAP traffic needs to be secured via TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#ldap_over_tls_enabled NetappAccount#ldap_over_tls_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_over_tls_enabled NetappAccount#ldap_over_tls_enabled}
+
+---
+
+###### `ldap_search_scope`<sup>Optional</sup> <a name="ldap_search_scope" id="@cdktn/provider-azurerm.netappAccount.NetappAccount.putActiveDirectory.parameter.ldapSearchScope"></a>
+
+- *Type:* <a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope">NetappAccountActiveDirectoryLdapSearchScope</a>
+
+ldap_search_scope block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_search_scope NetappAccount#ldap_search_scope}
 
 ---
 
@@ -683,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies whether or not the LDAP traffic needs to be signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#ldap_signing_enabled NetappAccount#ldap_signing_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_signing_enabled NetappAccount#ldap_signing_enabled}
 
 ---
 
@@ -693,7 +749,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If enabled, NFS client local users can also (in addition to LDAP users) access the NFS volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#local_nfs_users_with_ldap_allowed NetappAccount#local_nfs_users_with_ldap_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#local_nfs_users_with_ldap_allowed NetappAccount#local_nfs_users_with_ldap_allowed}
 
 ---
 
@@ -703,7 +759,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Organizational Unit (OU) within the Windows Active Directory where machines will be created. If blank, defaults to 'CN=Computers'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#organizational_unit NetappAccount#organizational_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#organizational_unit NetappAccount#organizational_unit}
+
+---
+
+###### `security_users`<sup>Optional</sup> <a name="security_users" id="@cdktn/provider-azurerm.netappAccount.NetappAccount.putActiveDirectory.parameter.securityUsers"></a>
+
+- *Type:* typing.List[str]
+
+Domain users to be given SeSecurityPrivilege privilege.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#security_users NetappAccount#security_users}
 
 ---
 
@@ -713,7 +779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 When LDAP over SSL/TLS is enabled, the LDAP client is required to have base64 encoded Active Directory Certificate Service's self-signed root CA certificate, this optional parameter is used only for dual protocol with LDAP user-mapping volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#server_root_ca_certificate NetappAccount#server_root_ca_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#server_root_ca_certificate NetappAccount#server_root_ca_certificate}
 
 ---
 
@@ -723,7 +789,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Active Directory site the service will limit Domain Controller discovery to. If blank, defaults to 'Default-First-Site-Name'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#site_name NetappAccount#site_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#site_name NetappAccount#site_name}
 
 ---
 
@@ -740,7 +806,7 @@ def put_identity(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#type NetappAccount#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#type NetappAccount#type}.
 
 ---
 
@@ -748,7 +814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#identity_ids NetappAccount#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#identity_ids NetappAccount#identity_ids}.
 
 ---
 
@@ -767,7 +833,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#create NetappAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#create NetappAccount#create}.
 
 ---
 
@@ -775,7 +841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#delete NetappAccount#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#delete NetappAccount#delete}.
 
 ---
 
@@ -783,7 +849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#read NetappAccount#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#read NetappAccount#read}.
 
 ---
 
@@ -791,7 +857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#update NetappAccount#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#update NetappAccount#update}.
 
 ---
 
@@ -939,7 +1005,7 @@ The construct id used in the generated config for the NetappAccount to import.
 
 The id of the existing NetappAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1323,13 +1389,19 @@ netappAccount.NetappAccountActiveDirectory(
   password: str,
   smb_server_name: str,
   username: str,
+  administrator_users: typing.List[str] = None,
   aes_encryption_enabled: bool | IResolvable = None,
+  backup_users: typing.List[str] = None,
+  domain_controller_connection_encryption_enabled: bool | IResolvable = None,
   kerberos_ad_name: str = None,
   kerberos_kdc_ip: str = None,
+  ldap_client_preferred_servers: typing.List[str] = None,
   ldap_over_tls_enabled: bool | IResolvable = None,
+  ldap_search_scope: NetappAccountActiveDirectoryLdapSearchScope = None,
   ldap_signing_enabled: bool | IResolvable = None,
   local_nfs_users_with_ldap_allowed: bool | IResolvable = None,
   organizational_unit: str = None,
+  security_users: typing.List[str] = None,
   server_root_ca_certificate: str = None,
   site_name: str = None
 )
@@ -1339,18 +1411,24 @@ netappAccount.NetappAccountActiveDirectory(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.dnsServers">dns_servers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#dns_servers NetappAccount#dns_servers}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#domain NetappAccount#domain}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#password NetappAccount#password}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.smbServerName">smb_server_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#smb_server_name NetappAccount#smb_server_name}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#username NetappAccount#username}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.dnsServers">dns_servers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#dns_servers NetappAccount#dns_servers}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#domain NetappAccount#domain}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#password NetappAccount#password}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.smbServerName">smb_server_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#smb_server_name NetappAccount#smb_server_name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#username NetappAccount#username}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.administratorUsers">administrator_users</a></code> | <code>typing.List[str]</code> | Domain users to be added to the built-in Administrators active directory group. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.aesEncryptionEnabled">aes_encryption_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | If enabled, AES encryption will be enabled for SMB communication. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.backupUsers">backup_users</a></code> | <code>typing.List[str]</code> | Domain users to be added to the built-in Backup Operators active directory group. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.domainControllerConnectionEncryptionEnabled">domain_controller_connection_encryption_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies if traffic between the Domain Controller and SMB server is encrypted. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.kerberosAdName">kerberos_ad_name</a></code> | <code>str</code> | Name of the active directory machine. This optional parameter is used only while creating kerberos volume. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.kerberosKdcIp">kerberos_kdc_ip</a></code> | <code>str</code> | IP address of the KDC server (usually same the DC). |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.ldapClientPreferredServers">ldap_client_preferred_servers</a></code> | <code>typing.List[str]</code> | Specifies the preferred LDAP server IPs for the LDAP client. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.ldapOverTlsEnabled">ldap_over_tls_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether or not the LDAP traffic needs to be secured via TLS. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.ldapSearchScope">ldap_search_scope</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope">NetappAccountActiveDirectoryLdapSearchScope</a></code> | ldap_search_scope block. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.ldapSigningEnabled">ldap_signing_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies whether or not the LDAP traffic needs to be signed. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.localNfsUsersWithLdapAllowed">local_nfs_users_with_ldap_allowed</a></code> | <code>bool \| cdktn.IResolvable</code> | If enabled, NFS client local users can also (in addition to LDAP users) access the NFS volumes. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.organizationalUnit">organizational_unit</a></code> | <code>str</code> | The Organizational Unit (OU) within the Windows Active Directory where machines will be created. If blank, defaults to 'CN=Computers'. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.securityUsers">security_users</a></code> | <code>typing.List[str]</code> | Domain users to be given SeSecurityPrivilege privilege. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.serverRootCaCertificate">server_root_ca_certificate</a></code> | <code>str</code> | When LDAP over SSL/TLS is enabled, the LDAP client is required to have base64 encoded Active Directory Certificate Service's self-signed root CA certificate, this optional parameter is used only for dual protocol with LDAP user-mapping volumes. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.siteName">site_name</a></code> | <code>str</code> | The Active Directory site the service will limit Domain Controller discovery to. If blank, defaults to 'Default-First-Site-Name'. |
 
@@ -1364,7 +1442,7 @@ dns_servers: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#dns_servers NetappAccount#dns_servers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#dns_servers NetappAccount#dns_servers}.
 
 ---
 
@@ -1376,7 +1454,7 @@ domain: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#domain NetappAccount#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#domain NetappAccount#domain}.
 
 ---
 
@@ -1388,7 +1466,7 @@ password: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#password NetappAccount#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#password NetappAccount#password}.
 
 ---
 
@@ -1400,7 +1478,7 @@ smb_server_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#smb_server_name NetappAccount#smb_server_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#smb_server_name NetappAccount#smb_server_name}.
 
 ---
 
@@ -1412,7 +1490,21 @@ username: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#username NetappAccount#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#username NetappAccount#username}.
+
+---
+
+##### `administrator_users`<sup>Optional</sup> <a name="administrator_users" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.administratorUsers"></a>
+
+```python
+administrator_users: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Domain users to be added to the built-in Administrators active directory group.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#administrator_users NetappAccount#administrator_users}
 
 ---
 
@@ -1426,7 +1518,35 @@ aes_encryption_enabled: bool | IResolvable
 
 If enabled, AES encryption will be enabled for SMB communication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#aes_encryption_enabled NetappAccount#aes_encryption_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#aes_encryption_enabled NetappAccount#aes_encryption_enabled}
+
+---
+
+##### `backup_users`<sup>Optional</sup> <a name="backup_users" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.backupUsers"></a>
+
+```python
+backup_users: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Domain users to be added to the built-in Backup Operators active directory group.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#backup_users NetappAccount#backup_users}
+
+---
+
+##### `domain_controller_connection_encryption_enabled`<sup>Optional</sup> <a name="domain_controller_connection_encryption_enabled" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.domainControllerConnectionEncryptionEnabled"></a>
+
+```python
+domain_controller_connection_encryption_enabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Specifies if traffic between the Domain Controller and SMB server is encrypted.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#domain_controller_connection_encryption_enabled NetappAccount#domain_controller_connection_encryption_enabled}
 
 ---
 
@@ -1440,7 +1560,7 @@ kerberos_ad_name: str
 
 Name of the active directory machine. This optional parameter is used only while creating kerberos volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#kerberos_ad_name NetappAccount#kerberos_ad_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#kerberos_ad_name NetappAccount#kerberos_ad_name}
 
 ---
 
@@ -1456,7 +1576,21 @@ IP address of the KDC server (usually same the DC).
 
 This optional parameter is used only while creating kerberos volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#kerberos_kdc_ip NetappAccount#kerberos_kdc_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#kerberos_kdc_ip NetappAccount#kerberos_kdc_ip}
+
+---
+
+##### `ldap_client_preferred_servers`<sup>Optional</sup> <a name="ldap_client_preferred_servers" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.ldapClientPreferredServers"></a>
+
+```python
+ldap_client_preferred_servers: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Specifies the preferred LDAP server IPs for the LDAP client.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_client_preferred_servers NetappAccount#ldap_client_preferred_servers}
 
 ---
 
@@ -1470,7 +1604,21 @@ ldap_over_tls_enabled: bool | IResolvable
 
 Specifies whether or not the LDAP traffic needs to be secured via TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#ldap_over_tls_enabled NetappAccount#ldap_over_tls_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_over_tls_enabled NetappAccount#ldap_over_tls_enabled}
+
+---
+
+##### `ldap_search_scope`<sup>Optional</sup> <a name="ldap_search_scope" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.ldapSearchScope"></a>
+
+```python
+ldap_search_scope: NetappAccountActiveDirectoryLdapSearchScope
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope">NetappAccountActiveDirectoryLdapSearchScope</a>
+
+ldap_search_scope block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_search_scope NetappAccount#ldap_search_scope}
 
 ---
 
@@ -1484,7 +1632,7 @@ ldap_signing_enabled: bool | IResolvable
 
 Specifies whether or not the LDAP traffic needs to be signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#ldap_signing_enabled NetappAccount#ldap_signing_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_signing_enabled NetappAccount#ldap_signing_enabled}
 
 ---
 
@@ -1498,7 +1646,7 @@ local_nfs_users_with_ldap_allowed: bool | IResolvable
 
 If enabled, NFS client local users can also (in addition to LDAP users) access the NFS volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#local_nfs_users_with_ldap_allowed NetappAccount#local_nfs_users_with_ldap_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#local_nfs_users_with_ldap_allowed NetappAccount#local_nfs_users_with_ldap_allowed}
 
 ---
 
@@ -1512,7 +1660,21 @@ organizational_unit: str
 
 The Organizational Unit (OU) within the Windows Active Directory where machines will be created. If blank, defaults to 'CN=Computers'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#organizational_unit NetappAccount#organizational_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#organizational_unit NetappAccount#organizational_unit}
+
+---
+
+##### `security_users`<sup>Optional</sup> <a name="security_users" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.securityUsers"></a>
+
+```python
+security_users: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Domain users to be given SeSecurityPrivilege privilege.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#security_users NetappAccount#security_users}
 
 ---
 
@@ -1526,7 +1688,7 @@ server_root_ca_certificate: str
 
 When LDAP over SSL/TLS is enabled, the LDAP client is required to have base64 encoded Active Directory Certificate Service's self-signed root CA certificate, this optional parameter is used only for dual protocol with LDAP user-mapping volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#server_root_ca_certificate NetappAccount#server_root_ca_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#server_root_ca_certificate NetappAccount#server_root_ca_certificate}
 
 ---
 
@@ -1540,7 +1702,73 @@ site_name: str
 
 The Active Directory site the service will limit Domain Controller discovery to. If blank, defaults to 'Default-First-Site-Name'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#site_name NetappAccount#site_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#site_name NetappAccount#site_name}
+
+---
+
+### NetappAccountActiveDirectoryLdapSearchScope <a name="NetappAccountActiveDirectoryLdapSearchScope" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope.Initializer"></a>
+
+```python
+from cdktn_provider_azurerm import netapp_account
+
+netappAccount.NetappAccountActiveDirectoryLdapSearchScope(
+  group_dn: str = None,
+  group_membership_filter: str = None,
+  user_dn: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope.property.groupDn">group_dn</a></code> | <code>str</code> | Specifies the group DN, which overrides the base DN for group lookups. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope.property.groupMembershipFilter">group_membership_filter</a></code> | <code>str</code> | Specifies the custom LDAP search filter to be used when looking up group membership from LDAP server. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope.property.userDn">user_dn</a></code> | <code>str</code> | Specifies the user DN, which overrides the base DN for user lookups. |
+
+---
+
+##### `group_dn`<sup>Optional</sup> <a name="group_dn" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope.property.groupDn"></a>
+
+```python
+group_dn: str
+```
+
+- *Type:* str
+
+Specifies the group DN, which overrides the base DN for group lookups.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#group_dn NetappAccount#group_dn}
+
+---
+
+##### `group_membership_filter`<sup>Optional</sup> <a name="group_membership_filter" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope.property.groupMembershipFilter"></a>
+
+```python
+group_membership_filter: str
+```
+
+- *Type:* str
+
+Specifies the custom LDAP search filter to be used when looking up group membership from LDAP server.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#group_membership_filter NetappAccount#group_membership_filter}
+
+---
+
+##### `user_dn`<sup>Optional</sup> <a name="user_dn" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope.property.userDn"></a>
+
+```python
+user_dn: str
+```
+
+- *Type:* str
+
+Specifies the user DN, which overrides the base DN for user lookups.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#user_dn NetappAccount#user_dn}
 
 ---
 
@@ -1581,13 +1809,13 @@ netappAccount.NetappAccountConfig(
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#location NetappAccount#location}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#name NetappAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#location NetappAccount#location}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#name NetappAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.activeDirectory">active_directory</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory">NetappAccountActiveDirectory</a></code> | active_directory block. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#id NetappAccount#id}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#id NetappAccount#id}. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountIdentity">NetappAccountIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#tags NetappAccount#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#tags NetappAccount#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts">NetappAccountTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1670,7 +1898,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#location NetappAccount#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#location NetappAccount#location}.
 
 ---
 
@@ -1682,7 +1910,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#name NetappAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#name NetappAccount#name}.
 
 ---
 
@@ -1694,7 +1922,7 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}.
 
 ---
 
@@ -1708,7 +1936,7 @@ active_directory: NetappAccountActiveDirectory
 
 active_directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#active_directory NetappAccount#active_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#active_directory NetappAccount#active_directory}
 
 ---
 
@@ -1720,7 +1948,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#id NetappAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#id NetappAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1737,7 +1965,7 @@ identity: NetappAccountIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#identity NetappAccount#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#identity NetappAccount#identity}
 
 ---
 
@@ -1749,7 +1977,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#tags NetappAccount#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#tags NetappAccount#tags}.
 
 ---
 
@@ -1763,7 +1991,7 @@ timeouts: NetappAccountTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#timeouts NetappAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#timeouts NetappAccount#timeouts}
 
 ---
 
@@ -1784,8 +2012,8 @@ netappAccount.NetappAccountIdentity(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountIdentity.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#type NetappAccount#type}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountIdentity.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#identity_ids NetappAccount#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountIdentity.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#type NetappAccount#type}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountIdentity.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#identity_ids NetappAccount#identity_ids}. |
 
 ---
 
@@ -1797,7 +2025,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#type NetappAccount#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#type NetappAccount#type}.
 
 ---
 
@@ -1809,7 +2037,7 @@ identity_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#identity_ids NetappAccount#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#identity_ids NetappAccount#identity_ids}.
 
 ---
 
@@ -1832,10 +2060,10 @@ netappAccount.NetappAccountTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#create NetappAccount#create}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#delete NetappAccount#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#read NetappAccount#read}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#update NetappAccount#update}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#create NetappAccount#create}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#delete NetappAccount#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#read NetappAccount#read}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#update NetappAccount#update}. |
 
 ---
 
@@ -1847,7 +2075,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#create NetappAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#create NetappAccount#create}.
 
 ---
 
@@ -1859,7 +2087,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#delete NetappAccount#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#delete NetappAccount#delete}.
 
 ---
 
@@ -1871,7 +2099,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#read NetappAccount#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#read NetappAccount#read}.
 
 ---
 
@@ -1883,11 +2111,372 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#update NetappAccount#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#update NetappAccount#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### NetappAccountActiveDirectoryLdapSearchScopeOutputReference <a name="NetappAccountActiveDirectoryLdapSearchScopeOutputReference" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_azurerm import netapp_account
+
+netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.resetGroupDn">reset_group_dn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.resetGroupMembershipFilter">reset_group_membership_filter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.resetUserDn">reset_user_dn</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_group_dn` <a name="reset_group_dn" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.resetGroupDn"></a>
+
+```python
+def reset_group_dn() -> None
+```
+
+##### `reset_group_membership_filter` <a name="reset_group_membership_filter" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.resetGroupMembershipFilter"></a>
+
+```python
+def reset_group_membership_filter() -> None
+```
+
+##### `reset_user_dn` <a name="reset_user_dn" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.resetUserDn"></a>
+
+```python
+def reset_user_dn() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.groupDnInput">group_dn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.groupMembershipFilterInput">group_membership_filter_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.userDnInput">user_dn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.groupDn">group_dn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.groupMembershipFilter">group_membership_filter</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.userDn">user_dn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope">NetappAccountActiveDirectoryLdapSearchScope</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `group_dn_input`<sup>Optional</sup> <a name="group_dn_input" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.groupDnInput"></a>
+
+```python
+group_dn_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `group_membership_filter_input`<sup>Optional</sup> <a name="group_membership_filter_input" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.groupMembershipFilterInput"></a>
+
+```python
+group_membership_filter_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `user_dn_input`<sup>Optional</sup> <a name="user_dn_input" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.userDnInput"></a>
+
+```python
+user_dn_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `group_dn`<sup>Required</sup> <a name="group_dn" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.groupDn"></a>
+
+```python
+group_dn: str
+```
+
+- *Type:* str
+
+---
+
+##### `group_membership_filter`<sup>Required</sup> <a name="group_membership_filter" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.groupMembershipFilter"></a>
+
+```python
+group_membership_filter: str
+```
+
+- *Type:* str
+
+---
+
+##### `user_dn`<sup>Required</sup> <a name="user_dn" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.userDn"></a>
+
+```python
+user_dn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference.property.internalValue"></a>
+
+```python
+internal_value: NetappAccountActiveDirectoryLdapSearchScope
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope">NetappAccountActiveDirectoryLdapSearchScope</a>
+
+---
+
 
 ### NetappAccountActiveDirectoryOutputReference <a name="NetappAccountActiveDirectoryOutputReference" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference"></a>
 
@@ -1942,13 +2531,20 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.putLdapSearchScope">put_ldap_search_scope</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetAdministratorUsers">reset_administrator_users</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetAesEncryptionEnabled">reset_aes_encryption_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetBackupUsers">reset_backup_users</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetDomainControllerConnectionEncryptionEnabled">reset_domain_controller_connection_encryption_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetKerberosAdName">reset_kerberos_ad_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetKerberosKdcIp">reset_kerberos_kdc_ip</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetLdapClientPreferredServers">reset_ldap_client_preferred_servers</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetLdapOverTlsEnabled">reset_ldap_over_tls_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetLdapSearchScope">reset_ldap_search_scope</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetLdapSigningEnabled">reset_ldap_signing_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetLocalNfsUsersWithLdapAllowed">reset_local_nfs_users_with_ldap_allowed</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetOrganizationalUnit">reset_organizational_unit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetSecurityUsers">reset_security_users</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetServerRootCaCertificate">reset_server_root_ca_certificate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetSiteName">reset_site_name</a></code> | *No description.* |
 
@@ -2126,10 +2722,68 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `put_ldap_search_scope` <a name="put_ldap_search_scope" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.putLdapSearchScope"></a>
+
+```python
+def put_ldap_search_scope(
+  group_dn: str = None,
+  group_membership_filter: str = None,
+  user_dn: str = None
+) -> None
+```
+
+###### `group_dn`<sup>Optional</sup> <a name="group_dn" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.putLdapSearchScope.parameter.groupDn"></a>
+
+- *Type:* str
+
+Specifies the group DN, which overrides the base DN for group lookups.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#group_dn NetappAccount#group_dn}
+
+---
+
+###### `group_membership_filter`<sup>Optional</sup> <a name="group_membership_filter" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.putLdapSearchScope.parameter.groupMembershipFilter"></a>
+
+- *Type:* str
+
+Specifies the custom LDAP search filter to be used when looking up group membership from LDAP server.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#group_membership_filter NetappAccount#group_membership_filter}
+
+---
+
+###### `user_dn`<sup>Optional</sup> <a name="user_dn" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.putLdapSearchScope.parameter.userDn"></a>
+
+- *Type:* str
+
+Specifies the user DN, which overrides the base DN for user lookups.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#user_dn NetappAccount#user_dn}
+
+---
+
+##### `reset_administrator_users` <a name="reset_administrator_users" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetAdministratorUsers"></a>
+
+```python
+def reset_administrator_users() -> None
+```
+
 ##### `reset_aes_encryption_enabled` <a name="reset_aes_encryption_enabled" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetAesEncryptionEnabled"></a>
 
 ```python
 def reset_aes_encryption_enabled() -> None
+```
+
+##### `reset_backup_users` <a name="reset_backup_users" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetBackupUsers"></a>
+
+```python
+def reset_backup_users() -> None
+```
+
+##### `reset_domain_controller_connection_encryption_enabled` <a name="reset_domain_controller_connection_encryption_enabled" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetDomainControllerConnectionEncryptionEnabled"></a>
+
+```python
+def reset_domain_controller_connection_encryption_enabled() -> None
 ```
 
 ##### `reset_kerberos_ad_name` <a name="reset_kerberos_ad_name" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetKerberosAdName"></a>
@@ -2144,10 +2798,22 @@ def reset_kerberos_ad_name() -> None
 def reset_kerberos_kdc_ip() -> None
 ```
 
+##### `reset_ldap_client_preferred_servers` <a name="reset_ldap_client_preferred_servers" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetLdapClientPreferredServers"></a>
+
+```python
+def reset_ldap_client_preferred_servers() -> None
+```
+
 ##### `reset_ldap_over_tls_enabled` <a name="reset_ldap_over_tls_enabled" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetLdapOverTlsEnabled"></a>
 
 ```python
 def reset_ldap_over_tls_enabled() -> None
+```
+
+##### `reset_ldap_search_scope` <a name="reset_ldap_search_scope" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetLdapSearchScope"></a>
+
+```python
+def reset_ldap_search_scope() -> None
 ```
 
 ##### `reset_ldap_signing_enabled` <a name="reset_ldap_signing_enabled" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetLdapSigningEnabled"></a>
@@ -2166,6 +2832,12 @@ def reset_local_nfs_users_with_ldap_allowed() -> None
 
 ```python
 def reset_organizational_unit() -> None
+```
+
+##### `reset_security_users` <a name="reset_security_users" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetSecurityUsers"></a>
+
+```python
+def reset_security_users() -> None
 ```
 
 ##### `reset_server_root_ca_certificate` <a name="reset_server_root_ca_certificate" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.resetServerRootCaCertificate"></a>
@@ -2187,30 +2859,42 @@ def reset_site_name() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapSearchScope">ldap_search_scope</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference">NetappAccountActiveDirectoryLdapSearchScopeOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.administratorUsersInput">administrator_users_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.aesEncryptionEnabledInput">aes_encryption_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.backupUsersInput">backup_users_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.dnsServersInput">dns_servers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.domainControllerConnectionEncryptionEnabledInput">domain_controller_connection_encryption_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.domainInput">domain_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.kerberosAdNameInput">kerberos_ad_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.kerberosKdcIpInput">kerberos_kdc_ip_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapClientPreferredServersInput">ldap_client_preferred_servers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapOverTlsEnabledInput">ldap_over_tls_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapSearchScopeInput">ldap_search_scope_input</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope">NetappAccountActiveDirectoryLdapSearchScope</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapSigningEnabledInput">ldap_signing_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.localNfsUsersWithLdapAllowedInput">local_nfs_users_with_ldap_allowed_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.organizationalUnitInput">organizational_unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.securityUsersInput">security_users_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.serverRootCaCertificateInput">server_root_ca_certificate_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.siteNameInput">site_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.smbServerNameInput">smb_server_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.administratorUsers">administrator_users</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.aesEncryptionEnabled">aes_encryption_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.backupUsers">backup_users</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.dnsServers">dns_servers</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.domain">domain</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.domainControllerConnectionEncryptionEnabled">domain_controller_connection_encryption_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.kerberosAdName">kerberos_ad_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.kerberosKdcIp">kerberos_kdc_ip</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapClientPreferredServers">ldap_client_preferred_servers</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapOverTlsEnabled">ldap_over_tls_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapSigningEnabled">ldap_signing_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.localNfsUsersWithLdapAllowed">local_nfs_users_with_ldap_allowed</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.organizationalUnit">organizational_unit</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.password">password</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.securityUsers">security_users</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.serverRootCaCertificate">server_root_ca_certificate</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.siteName">site_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.smbServerName">smb_server_name</a></code> | <code>str</code> | *No description.* |
@@ -2243,6 +2927,26 @@ fqn: str
 
 ---
 
+##### `ldap_search_scope`<sup>Required</sup> <a name="ldap_search_scope" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapSearchScope"></a>
+
+```python
+ldap_search_scope: NetappAccountActiveDirectoryLdapSearchScopeOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScopeOutputReference">NetappAccountActiveDirectoryLdapSearchScopeOutputReference</a>
+
+---
+
+##### `administrator_users_input`<sup>Optional</sup> <a name="administrator_users_input" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.administratorUsersInput"></a>
+
+```python
+administrator_users_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `aes_encryption_enabled_input`<sup>Optional</sup> <a name="aes_encryption_enabled_input" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.aesEncryptionEnabledInput"></a>
 
 ```python
@@ -2253,6 +2957,16 @@ aes_encryption_enabled_input: bool | IResolvable
 
 ---
 
+##### `backup_users_input`<sup>Optional</sup> <a name="backup_users_input" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.backupUsersInput"></a>
+
+```python
+backup_users_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `dns_servers_input`<sup>Optional</sup> <a name="dns_servers_input" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.dnsServersInput"></a>
 
 ```python
@@ -2260,6 +2974,16 @@ dns_servers_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `domain_controller_connection_encryption_enabled_input`<sup>Optional</sup> <a name="domain_controller_connection_encryption_enabled_input" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.domainControllerConnectionEncryptionEnabledInput"></a>
+
+```python
+domain_controller_connection_encryption_enabled_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2293,6 +3017,16 @@ kerberos_kdc_ip_input: str
 
 ---
 
+##### `ldap_client_preferred_servers_input`<sup>Optional</sup> <a name="ldap_client_preferred_servers_input" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapClientPreferredServersInput"></a>
+
+```python
+ldap_client_preferred_servers_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `ldap_over_tls_enabled_input`<sup>Optional</sup> <a name="ldap_over_tls_enabled_input" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapOverTlsEnabledInput"></a>
 
 ```python
@@ -2300,6 +3034,16 @@ ldap_over_tls_enabled_input: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `ldap_search_scope_input`<sup>Optional</sup> <a name="ldap_search_scope_input" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapSearchScopeInput"></a>
+
+```python
+ldap_search_scope_input: NetappAccountActiveDirectoryLdapSearchScope
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryLdapSearchScope">NetappAccountActiveDirectoryLdapSearchScope</a>
 
 ---
 
@@ -2343,6 +3087,16 @@ password_input: str
 
 ---
 
+##### `security_users_input`<sup>Optional</sup> <a name="security_users_input" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.securityUsersInput"></a>
+
+```python
+security_users_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `server_root_ca_certificate_input`<sup>Optional</sup> <a name="server_root_ca_certificate_input" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.serverRootCaCertificateInput"></a>
 
 ```python
@@ -2383,6 +3137,16 @@ username_input: str
 
 ---
 
+##### `administrator_users`<sup>Required</sup> <a name="administrator_users" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.administratorUsers"></a>
+
+```python
+administrator_users: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `aes_encryption_enabled`<sup>Required</sup> <a name="aes_encryption_enabled" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.aesEncryptionEnabled"></a>
 
 ```python
@@ -2390,6 +3154,16 @@ aes_encryption_enabled: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `backup_users`<sup>Required</sup> <a name="backup_users" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.backupUsers"></a>
+
+```python
+backup_users: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -2413,6 +3187,16 @@ domain: str
 
 ---
 
+##### `domain_controller_connection_encryption_enabled`<sup>Required</sup> <a name="domain_controller_connection_encryption_enabled" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.domainControllerConnectionEncryptionEnabled"></a>
+
+```python
+domain_controller_connection_encryption_enabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `kerberos_ad_name`<sup>Required</sup> <a name="kerberos_ad_name" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.kerberosAdName"></a>
 
 ```python
@@ -2430,6 +3214,16 @@ kerberos_kdc_ip: str
 ```
 
 - *Type:* str
+
+---
+
+##### `ldap_client_preferred_servers`<sup>Required</sup> <a name="ldap_client_preferred_servers" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.ldapClientPreferredServers"></a>
+
+```python
+ldap_client_preferred_servers: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -2480,6 +3274,16 @@ password: str
 ```
 
 - *Type:* str
+
+---
+
+##### `security_users`<sup>Required</sup> <a name="security_users" id="@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectoryOutputReference.property.securityUsers"></a>
+
+```python
+security_users: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 

@@ -705,6 +705,7 @@ The following submodules are available:
 - [dataFactoryTriggerSchedule](./dataFactoryTriggerSchedule.csharp.md)
 - [dataFactoryTriggerTumblingWindow](./dataFactoryTriggerTumblingWindow.csharp.md)
 - [dataProtectionBackupInstanceBlobStorage](./dataProtectionBackupInstanceBlobStorage.csharp.md)
+- [dataProtectionBackupInstanceCosmosdbAccount](./dataProtectionBackupInstanceCosmosdbAccount.csharp.md)
 - [dataProtectionBackupInstanceDataLakeStorage](./dataProtectionBackupInstanceDataLakeStorage.csharp.md)
 - [dataProtectionBackupInstanceDisk](./dataProtectionBackupInstanceDisk.csharp.md)
 - [dataProtectionBackupInstanceKubernetesCluster](./dataProtectionBackupInstanceKubernetesCluster.csharp.md)

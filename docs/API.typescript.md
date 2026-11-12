@@ -705,6 +705,7 @@ The following submodules are available:
 - [dataFactoryTriggerSchedule](./dataFactoryTriggerSchedule.typescript.md)
 - [dataFactoryTriggerTumblingWindow](./dataFactoryTriggerTumblingWindow.typescript.md)
 - [dataProtectionBackupInstanceBlobStorage](./dataProtectionBackupInstanceBlobStorage.typescript.md)
+- [dataProtectionBackupInstanceCosmosdbAccount](./dataProtectionBackupInstanceCosmosdbAccount.typescript.md)
 - [dataProtectionBackupInstanceDataLakeStorage](./dataProtectionBackupInstanceDataLakeStorage.typescript.md)
 - [dataProtectionBackupInstanceDisk](./dataProtectionBackupInstanceDisk.typescript.md)
 - [dataProtectionBackupInstanceKubernetesCluster](./dataProtectionBackupInstanceKubernetesCluster.typescript.md)

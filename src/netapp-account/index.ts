@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,122 +13,314 @@ import * as cdktn from 'cdktn';
 
 export interface NetappAccountConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#id NetappAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#id NetappAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#location NetappAccount#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#location NetappAccount#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#name NetappAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#name NetappAccount#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#tags NetappAccount#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#tags NetappAccount#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * active_directory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#active_directory NetappAccount#active_directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#active_directory NetappAccount#active_directory}
   */
   readonly activeDirectory?: NetappAccountActiveDirectory;
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#identity NetappAccount#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#identity NetappAccount#identity}
   */
   readonly identity?: NetappAccountIdentity;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#timeouts NetappAccount#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#timeouts NetappAccount#timeouts}
   */
   readonly timeouts?: NetappAccountTimeouts;
 }
+export interface NetappAccountActiveDirectoryLdapSearchScope {
+  /**
+  * Specifies the group DN, which overrides the base DN for group lookups.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#group_dn NetappAccount#group_dn}
+  */
+  readonly groupDn?: string;
+  /**
+  * Specifies the custom LDAP search filter to be used when looking up group membership from LDAP server.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#group_membership_filter NetappAccount#group_membership_filter}
+  */
+  readonly groupMembershipFilter?: string;
+  /**
+  * Specifies the user DN, which overrides the base DN for user lookups.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#user_dn NetappAccount#user_dn}
+  */
+  readonly userDn?: string;
+}
+
+export function netappAccountActiveDirectoryLdapSearchScopeToTerraform(struct?: NetappAccountActiveDirectoryLdapSearchScopeOutputReference | NetappAccountActiveDirectoryLdapSearchScope): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    group_dn: cdktn.stringToTerraform(struct!.groupDn),
+    group_membership_filter: cdktn.stringToTerraform(struct!.groupMembershipFilter),
+    user_dn: cdktn.stringToTerraform(struct!.userDn),
+  }
+}
+
+
+export function netappAccountActiveDirectoryLdapSearchScopeToHclTerraform(struct?: NetappAccountActiveDirectoryLdapSearchScopeOutputReference | NetappAccountActiveDirectoryLdapSearchScope): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    group_dn: {
+      value: cdktn.stringToHclTerraform(struct!.groupDn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_membership_filter: {
+      value: cdktn.stringToHclTerraform(struct!.groupMembershipFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_dn: {
+      value: cdktn.stringToHclTerraform(struct!.userDn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetappAccountActiveDirectoryLdapSearchScopeOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetappAccountActiveDirectoryLdapSearchScope | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._groupDn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupDn = this._groupDn;
+    }
+    if (this._groupMembershipFilter !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupMembershipFilter = this._groupMembershipFilter;
+    }
+    if (this._userDn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userDn = this._userDn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetappAccountActiveDirectoryLdapSearchScope | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._groupDn = undefined;
+      this._groupMembershipFilter = undefined;
+      this._userDn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._groupDn = value.groupDn;
+      this._groupMembershipFilter = value.groupMembershipFilter;
+      this._userDn = value.userDn;
+    }
+  }
+
+  // group_dn - computed: false, optional: true, required: false
+  private _groupDn?: string; 
+  public get groupDn() {
+    return this.getStringAttribute('group_dn');
+  }
+  public set groupDn(value: string) {
+    this._groupDn = value;
+  }
+  public resetGroupDn() {
+    this._groupDn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupDnInput() {
+    return this._groupDn;
+  }
+
+  // group_membership_filter - computed: false, optional: true, required: false
+  private _groupMembershipFilter?: string; 
+  public get groupMembershipFilter() {
+    return this.getStringAttribute('group_membership_filter');
+  }
+  public set groupMembershipFilter(value: string) {
+    this._groupMembershipFilter = value;
+  }
+  public resetGroupMembershipFilter() {
+    this._groupMembershipFilter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupMembershipFilterInput() {
+    return this._groupMembershipFilter;
+  }
+
+  // user_dn - computed: false, optional: true, required: false
+  private _userDn?: string; 
+  public get userDn() {
+    return this.getStringAttribute('user_dn');
+  }
+  public set userDn(value: string) {
+    this._userDn = value;
+  }
+  public resetUserDn() {
+    this._userDn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userDnInput() {
+    return this._userDn;
+  }
+}
 export interface NetappAccountActiveDirectory {
+  /**
+  * Domain users to be added to the built-in Administrators active directory group.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#administrator_users NetappAccount#administrator_users}
+  */
+  readonly administratorUsers?: string[];
   /**
   * If enabled, AES encryption will be enabled for SMB communication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#aes_encryption_enabled NetappAccount#aes_encryption_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#aes_encryption_enabled NetappAccount#aes_encryption_enabled}
   */
   readonly aesEncryptionEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#dns_servers NetappAccount#dns_servers}
+  * Domain users to be added to the built-in Backup Operators active directory group.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#backup_users NetappAccount#backup_users}
+  */
+  readonly backupUsers?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#dns_servers NetappAccount#dns_servers}
   */
   readonly dnsServers: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#domain NetappAccount#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#domain NetappAccount#domain}
   */
   readonly domain: string;
   /**
+  * Specifies if traffic between the Domain Controller and SMB server is encrypted.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#domain_controller_connection_encryption_enabled NetappAccount#domain_controller_connection_encryption_enabled}
+  */
+  readonly domainControllerConnectionEncryptionEnabled?: boolean | cdktn.IResolvable;
+  /**
   * Name of the active directory machine. This optional parameter is used only while creating kerberos volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#kerberos_ad_name NetappAccount#kerberos_ad_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#kerberos_ad_name NetappAccount#kerberos_ad_name}
   */
   readonly kerberosAdName?: string;
   /**
   * IP address of the KDC server (usually same the DC). This optional parameter is used only while creating kerberos volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#kerberos_kdc_ip NetappAccount#kerberos_kdc_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#kerberos_kdc_ip NetappAccount#kerberos_kdc_ip}
   */
   readonly kerberosKdcIp?: string;
   /**
+  * Specifies the preferred LDAP server IPs for the LDAP client.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_client_preferred_servers NetappAccount#ldap_client_preferred_servers}
+  */
+  readonly ldapClientPreferredServers?: string[];
+  /**
   * Specifies whether or not the LDAP traffic needs to be secured via TLS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#ldap_over_tls_enabled NetappAccount#ldap_over_tls_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_over_tls_enabled NetappAccount#ldap_over_tls_enabled}
   */
   readonly ldapOverTlsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Specifies whether or not the LDAP traffic needs to be signed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#ldap_signing_enabled NetappAccount#ldap_signing_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_signing_enabled NetappAccount#ldap_signing_enabled}
   */
   readonly ldapSigningEnabled?: boolean | cdktn.IResolvable;
   /**
   * If enabled, NFS client local users can also (in addition to LDAP users) access the NFS volumes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#local_nfs_users_with_ldap_allowed NetappAccount#local_nfs_users_with_ldap_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#local_nfs_users_with_ldap_allowed NetappAccount#local_nfs_users_with_ldap_allowed}
   */
   readonly localNfsUsersWithLdapAllowed?: boolean | cdktn.IResolvable;
   /**
   * The Organizational Unit (OU) within the Windows Active Directory where machines will be created. If blank, defaults to 'CN=Computers'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#organizational_unit NetappAccount#organizational_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#organizational_unit NetappAccount#organizational_unit}
   */
   readonly organizationalUnit?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#password NetappAccount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#password NetappAccount#password}
   */
   readonly password: string;
   /**
+  * Domain users to be given SeSecurityPrivilege privilege.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#security_users NetappAccount#security_users}
+  */
+  readonly securityUsers?: string[];
+  /**
   * When LDAP over SSL/TLS is enabled, the LDAP client is required to have base64 encoded Active Directory Certificate Service's self-signed root CA certificate, this optional parameter is used only for dual protocol with LDAP user-mapping volumes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#server_root_ca_certificate NetappAccount#server_root_ca_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#server_root_ca_certificate NetappAccount#server_root_ca_certificate}
   */
   readonly serverRootCaCertificate?: string;
   /**
   * The Active Directory site the service will limit Domain Controller discovery to. If blank, defaults to 'Default-First-Site-Name'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#site_name NetappAccount#site_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#site_name NetappAccount#site_name}
   */
   readonly siteName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#smb_server_name NetappAccount#smb_server_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#smb_server_name NetappAccount#smb_server_name}
   */
   readonly smbServerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#username NetappAccount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#username NetappAccount#username}
   */
   readonly username: string;
+  /**
+  * ldap_search_scope block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_search_scope NetappAccount#ldap_search_scope}
+  */
+  readonly ldapSearchScope?: NetappAccountActiveDirectoryLdapSearchScope;
 }
 
 export function netappAccountActiveDirectoryToTerraform(struct?: NetappAccountActiveDirectoryOutputReference | NetappAccountActiveDirectory): any {
@@ -137,20 +329,26 @@ export function netappAccountActiveDirectoryToTerraform(struct?: NetappAccountAc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
+    administrator_users: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.administratorUsers),
     aes_encryption_enabled: cdktn.booleanToTerraform(struct!.aesEncryptionEnabled),
+    backup_users: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.backupUsers),
     dns_servers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dnsServers),
     domain: cdktn.stringToTerraform(struct!.domain),
+    domain_controller_connection_encryption_enabled: cdktn.booleanToTerraform(struct!.domainControllerConnectionEncryptionEnabled),
     kerberos_ad_name: cdktn.stringToTerraform(struct!.kerberosAdName),
     kerberos_kdc_ip: cdktn.stringToTerraform(struct!.kerberosKdcIp),
+    ldap_client_preferred_servers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ldapClientPreferredServers),
     ldap_over_tls_enabled: cdktn.booleanToTerraform(struct!.ldapOverTlsEnabled),
     ldap_signing_enabled: cdktn.booleanToTerraform(struct!.ldapSigningEnabled),
     local_nfs_users_with_ldap_allowed: cdktn.booleanToTerraform(struct!.localNfsUsersWithLdapAllowed),
     organizational_unit: cdktn.stringToTerraform(struct!.organizationalUnit),
     password: cdktn.stringToTerraform(struct!.password),
+    security_users: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.securityUsers),
     server_root_ca_certificate: cdktn.stringToTerraform(struct!.serverRootCaCertificate),
     site_name: cdktn.stringToTerraform(struct!.siteName),
     smb_server_name: cdktn.stringToTerraform(struct!.smbServerName),
     username: cdktn.stringToTerraform(struct!.username),
+    ldap_search_scope: netappAccountActiveDirectoryLdapSearchScopeToTerraform(struct!.ldapSearchScope),
   }
 }
 
@@ -161,11 +359,23 @@ export function netappAccountActiveDirectoryToHclTerraform(struct?: NetappAccoun
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
+    administrator_users: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.administratorUsers),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
     aes_encryption_enabled: {
       value: cdktn.booleanToHclTerraform(struct!.aesEncryptionEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
+    },
+    backup_users: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.backupUsers),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
     },
     dns_servers: {
       value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dnsServers),
@@ -179,6 +389,12 @@ export function netappAccountActiveDirectoryToHclTerraform(struct?: NetappAccoun
       type: "simple",
       storageClassType: "string",
     },
+    domain_controller_connection_encryption_enabled: {
+      value: cdktn.booleanToHclTerraform(struct!.domainControllerConnectionEncryptionEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     kerberos_ad_name: {
       value: cdktn.stringToHclTerraform(struct!.kerberosAdName),
       isBlock: false,
@@ -190,6 +406,12 @@ export function netappAccountActiveDirectoryToHclTerraform(struct?: NetappAccoun
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    ldap_client_preferred_servers: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.ldapClientPreferredServers),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
     },
     ldap_over_tls_enabled: {
       value: cdktn.booleanToHclTerraform(struct!.ldapOverTlsEnabled),
@@ -221,6 +443,12 @@ export function netappAccountActiveDirectoryToHclTerraform(struct?: NetappAccoun
       type: "simple",
       storageClassType: "string",
     },
+    security_users: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.securityUsers),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
     server_root_ca_certificate: {
       value: cdktn.stringToHclTerraform(struct!.serverRootCaCertificate),
       isBlock: false,
@@ -245,6 +473,12 @@ export function netappAccountActiveDirectoryToHclTerraform(struct?: NetappAccoun
       type: "simple",
       storageClassType: "string",
     },
+    ldap_search_scope: {
+      value: netappAccountActiveDirectoryLdapSearchScopeToHclTerraform(struct!.ldapSearchScope),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetappAccountActiveDirectoryLdapSearchScopeList",
+    },
   };
 
   // remove undefined attributes
@@ -265,9 +499,17 @@ export class NetappAccountActiveDirectoryOutputReference extends cdktn.ComplexOb
   public get internalValue(): NetappAccountActiveDirectory | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._administratorUsers !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.administratorUsers = this._administratorUsers;
+    }
     if (this._aesEncryptionEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.aesEncryptionEnabled = this._aesEncryptionEnabled;
+    }
+    if (this._backupUsers !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backupUsers = this._backupUsers;
     }
     if (this._dnsServers !== undefined) {
       hasAnyValues = true;
@@ -277,6 +519,10 @@ export class NetappAccountActiveDirectoryOutputReference extends cdktn.ComplexOb
       hasAnyValues = true;
       internalValueResult.domain = this._domain;
     }
+    if (this._domainControllerConnectionEncryptionEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.domainControllerConnectionEncryptionEnabled = this._domainControllerConnectionEncryptionEnabled;
+    }
     if (this._kerberosAdName !== undefined) {
       hasAnyValues = true;
       internalValueResult.kerberosAdName = this._kerberosAdName;
@@ -284,6 +530,10 @@ export class NetappAccountActiveDirectoryOutputReference extends cdktn.ComplexOb
     if (this._kerberosKdcIp !== undefined) {
       hasAnyValues = true;
       internalValueResult.kerberosKdcIp = this._kerberosKdcIp;
+    }
+    if (this._ldapClientPreferredServers !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ldapClientPreferredServers = this._ldapClientPreferredServers;
     }
     if (this._ldapOverTlsEnabled !== undefined) {
       hasAnyValues = true;
@@ -305,6 +555,10 @@ export class NetappAccountActiveDirectoryOutputReference extends cdktn.ComplexOb
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._securityUsers !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.securityUsers = this._securityUsers;
+    }
     if (this._serverRootCaCertificate !== undefined) {
       hasAnyValues = true;
       internalValueResult.serverRootCaCertificate = this._serverRootCaCertificate;
@@ -321,44 +575,76 @@ export class NetappAccountActiveDirectoryOutputReference extends cdktn.ComplexOb
       hasAnyValues = true;
       internalValueResult.username = this._username;
     }
+    if (this._ldapSearchScope?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ldapSearchScope = this._ldapSearchScope?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: NetappAccountActiveDirectory | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._administratorUsers = undefined;
       this._aesEncryptionEnabled = undefined;
+      this._backupUsers = undefined;
       this._dnsServers = undefined;
       this._domain = undefined;
+      this._domainControllerConnectionEncryptionEnabled = undefined;
       this._kerberosAdName = undefined;
       this._kerberosKdcIp = undefined;
+      this._ldapClientPreferredServers = undefined;
       this._ldapOverTlsEnabled = undefined;
       this._ldapSigningEnabled = undefined;
       this._localNfsUsersWithLdapAllowed = undefined;
       this._organizationalUnit = undefined;
       this._password = undefined;
+      this._securityUsers = undefined;
       this._serverRootCaCertificate = undefined;
       this._siteName = undefined;
       this._smbServerName = undefined;
       this._username = undefined;
+      this._ldapSearchScope.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._administratorUsers = value.administratorUsers;
       this._aesEncryptionEnabled = value.aesEncryptionEnabled;
+      this._backupUsers = value.backupUsers;
       this._dnsServers = value.dnsServers;
       this._domain = value.domain;
+      this._domainControllerConnectionEncryptionEnabled = value.domainControllerConnectionEncryptionEnabled;
       this._kerberosAdName = value.kerberosAdName;
       this._kerberosKdcIp = value.kerberosKdcIp;
+      this._ldapClientPreferredServers = value.ldapClientPreferredServers;
       this._ldapOverTlsEnabled = value.ldapOverTlsEnabled;
       this._ldapSigningEnabled = value.ldapSigningEnabled;
       this._localNfsUsersWithLdapAllowed = value.localNfsUsersWithLdapAllowed;
       this._organizationalUnit = value.organizationalUnit;
       this._password = value.password;
+      this._securityUsers = value.securityUsers;
       this._serverRootCaCertificate = value.serverRootCaCertificate;
       this._siteName = value.siteName;
       this._smbServerName = value.smbServerName;
       this._username = value.username;
+      this._ldapSearchScope.internalValue = value.ldapSearchScope;
     }
+  }
+
+  // administrator_users - computed: false, optional: true, required: false
+  private _administratorUsers?: string[]; 
+  public get administratorUsers() {
+    return cdktn.Fn.tolist(this.getListAttribute('administrator_users'));
+  }
+  public set administratorUsers(value: string[]) {
+    this._administratorUsers = value;
+  }
+  public resetAdministratorUsers() {
+    this._administratorUsers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get administratorUsersInput() {
+    return this._administratorUsers;
   }
 
   // aes_encryption_enabled - computed: false, optional: true, required: false
@@ -375,6 +661,22 @@ export class NetappAccountActiveDirectoryOutputReference extends cdktn.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get aesEncryptionEnabledInput() {
     return this._aesEncryptionEnabled;
+  }
+
+  // backup_users - computed: false, optional: true, required: false
+  private _backupUsers?: string[]; 
+  public get backupUsers() {
+    return cdktn.Fn.tolist(this.getListAttribute('backup_users'));
+  }
+  public set backupUsers(value: string[]) {
+    this._backupUsers = value;
+  }
+  public resetBackupUsers() {
+    this._backupUsers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backupUsersInput() {
+    return this._backupUsers;
   }
 
   // dns_servers - computed: false, optional: false, required: true
@@ -401,6 +703,22 @@ export class NetappAccountActiveDirectoryOutputReference extends cdktn.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get domainInput() {
     return this._domain;
+  }
+
+  // domain_controller_connection_encryption_enabled - computed: false, optional: true, required: false
+  private _domainControllerConnectionEncryptionEnabled?: boolean | cdktn.IResolvable; 
+  public get domainControllerConnectionEncryptionEnabled() {
+    return this.getBooleanAttribute('domain_controller_connection_encryption_enabled');
+  }
+  public set domainControllerConnectionEncryptionEnabled(value: boolean | cdktn.IResolvable) {
+    this._domainControllerConnectionEncryptionEnabled = value;
+  }
+  public resetDomainControllerConnectionEncryptionEnabled() {
+    this._domainControllerConnectionEncryptionEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainControllerConnectionEncryptionEnabledInput() {
+    return this._domainControllerConnectionEncryptionEnabled;
   }
 
   // kerberos_ad_name - computed: false, optional: true, required: false
@@ -433,6 +751,22 @@ export class NetappAccountActiveDirectoryOutputReference extends cdktn.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get kerberosKdcIpInput() {
     return this._kerberosKdcIp;
+  }
+
+  // ldap_client_preferred_servers - computed: false, optional: true, required: false
+  private _ldapClientPreferredServers?: string[]; 
+  public get ldapClientPreferredServers() {
+    return this.getListAttribute('ldap_client_preferred_servers');
+  }
+  public set ldapClientPreferredServers(value: string[]) {
+    this._ldapClientPreferredServers = value;
+  }
+  public resetLdapClientPreferredServers() {
+    this._ldapClientPreferredServers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ldapClientPreferredServersInput() {
+    return this._ldapClientPreferredServers;
   }
 
   // ldap_over_tls_enabled - computed: false, optional: true, required: false
@@ -512,6 +846,22 @@ export class NetappAccountActiveDirectoryOutputReference extends cdktn.ComplexOb
     return this._password;
   }
 
+  // security_users - computed: false, optional: true, required: false
+  private _securityUsers?: string[]; 
+  public get securityUsers() {
+    return cdktn.Fn.tolist(this.getListAttribute('security_users'));
+  }
+  public set securityUsers(value: string[]) {
+    this._securityUsers = value;
+  }
+  public resetSecurityUsers() {
+    this._securityUsers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityUsersInput() {
+    return this._securityUsers;
+  }
+
   // server_root_ca_certificate - computed: false, optional: true, required: false
   private _serverRootCaCertificate?: string; 
   public get serverRootCaCertificate() {
@@ -569,14 +919,30 @@ export class NetappAccountActiveDirectoryOutputReference extends cdktn.ComplexOb
   public get usernameInput() {
     return this._username;
   }
+
+  // ldap_search_scope - computed: false, optional: true, required: false
+  private _ldapSearchScope = new NetappAccountActiveDirectoryLdapSearchScopeOutputReference(this, "ldap_search_scope");
+  public get ldapSearchScope() {
+    return this._ldapSearchScope;
+  }
+  public putLdapSearchScope(value: NetappAccountActiveDirectoryLdapSearchScope) {
+    this._ldapSearchScope.internalValue = value;
+  }
+  public resetLdapSearchScope() {
+    this._ldapSearchScope.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ldapSearchScopeInput() {
+    return this._ldapSearchScope.internalValue;
+  }
 }
 export interface NetappAccountIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#identity_ids NetappAccount#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#identity_ids NetappAccount#identity_ids}
   */
   readonly identityIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#type NetappAccount#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#type NetappAccount#type}
   */
   readonly type: string;
 }
@@ -696,19 +1062,19 @@ export class NetappAccountIdentityOutputReference extends cdktn.ComplexObject {
 }
 export interface NetappAccountTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#create NetappAccount#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#create NetappAccount#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#delete NetappAccount#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#delete NetappAccount#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#read NetappAccount#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#read NetappAccount#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#update NetappAccount#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#update NetappAccount#update}
   */
   readonly update?: string;
 }
@@ -889,7 +1255,7 @@ export class NetappAccountTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account azurerm_netapp_account}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account azurerm_netapp_account}
 */
 export class NetappAccount extends cdktn.TerraformResource {
 
@@ -905,7 +1271,7 @@ export class NetappAccount extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetappAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetappAccount to import
-  * @param importFromId The id of the existing NetappAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetappAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetappAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -917,7 +1283,7 @@ export class NetappAccount extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.12.0/docs/resources/netapp_account azurerm_netapp_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account azurerm_netapp_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -928,7 +1294,7 @@ export class NetappAccount extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_netapp_account',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '5.12.0',
+        providerVersion: '5.13.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

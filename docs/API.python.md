@@ -705,6 +705,7 @@ The following submodules are available:
 - [dataFactoryTriggerSchedule](./dataFactoryTriggerSchedule.python.md)
 - [dataFactoryTriggerTumblingWindow](./dataFactoryTriggerTumblingWindow.python.md)
 - [dataProtectionBackupInstanceBlobStorage](./dataProtectionBackupInstanceBlobStorage.python.md)
+- [dataProtectionBackupInstanceCosmosdbAccount](./dataProtectionBackupInstanceCosmosdbAccount.python.md)
 - [dataProtectionBackupInstanceDataLakeStorage](./dataProtectionBackupInstanceDataLakeStorage.python.md)
 - [dataProtectionBackupInstanceDisk](./dataProtectionBackupInstanceDisk.python.md)
 - [dataProtectionBackupInstanceKubernetesCluster](./dataProtectionBackupInstanceKubernetesCluster.python.md)

@@ -307,6 +307,7 @@ Object.defineProperty(exports, 'dataFactoryTriggerCustomEvent', { get: function 
 Object.defineProperty(exports, 'dataFactoryTriggerSchedule', { get: function () { return require('./data-factory-trigger-schedule'); } });
 Object.defineProperty(exports, 'dataFactoryTriggerTumblingWindow', { get: function () { return require('./data-factory-trigger-tumbling-window'); } });
 Object.defineProperty(exports, 'dataProtectionBackupInstanceBlobStorage', { get: function () { return require('./data-protection-backup-instance-blob-storage'); } });
+Object.defineProperty(exports, 'dataProtectionBackupInstanceCosmosdbAccount', { get: function () { return require('./data-protection-backup-instance-cosmosdb-account'); } });
 Object.defineProperty(exports, 'dataProtectionBackupInstanceDataLakeStorage', { get: function () { return require('./data-protection-backup-instance-data-lake-storage'); } });
 Object.defineProperty(exports, 'dataProtectionBackupInstanceDisk', { get: function () { return require('./data-protection-backup-instance-disk'); } });
 Object.defineProperty(exports, 'dataProtectionBackupInstanceKubernetesCluster', { get: function () { return require('./data-protection-backup-instance-kubernetes-cluster'); } });
