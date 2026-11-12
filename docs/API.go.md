@@ -705,6 +705,7 @@ The following submodules are available:
 - [dataFactoryTriggerSchedule](./dataFactoryTriggerSchedule.go.md)
 - [dataFactoryTriggerTumblingWindow](./dataFactoryTriggerTumblingWindow.go.md)
 - [dataProtectionBackupInstanceBlobStorage](./dataProtectionBackupInstanceBlobStorage.go.md)
+- [dataProtectionBackupInstanceCosmosdbAccount](./dataProtectionBackupInstanceCosmosdbAccount.go.md)
 - [dataProtectionBackupInstanceDataLakeStorage](./dataProtectionBackupInstanceDataLakeStorage.go.md)
 - [dataProtectionBackupInstanceDisk](./dataProtectionBackupInstanceDisk.go.md)
 - [dataProtectionBackupInstanceKubernetesCluster](./dataProtectionBackupInstanceKubernetesCluster.go.md)

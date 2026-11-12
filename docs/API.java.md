@@ -705,6 +705,7 @@ The following submodules are available:
 - [dataFactoryTriggerSchedule](./dataFactoryTriggerSchedule.java.md)
 - [dataFactoryTriggerTumblingWindow](./dataFactoryTriggerTumblingWindow.java.md)
 - [dataProtectionBackupInstanceBlobStorage](./dataProtectionBackupInstanceBlobStorage.java.md)
+- [dataProtectionBackupInstanceCosmosdbAccount](./dataProtectionBackupInstanceCosmosdbAccount.java.md)
 - [dataProtectionBackupInstanceDataLakeStorage](./dataProtectionBackupInstanceDataLakeStorage.java.md)
 - [dataProtectionBackupInstanceDisk](./dataProtectionBackupInstanceDisk.java.md)
 - [dataProtectionBackupInstanceKubernetesCluster](./dataProtectionBackupInstanceKubernetesCluster.java.md)
