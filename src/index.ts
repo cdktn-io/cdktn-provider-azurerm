@@ -307,6 +307,7 @@ export * as dataFactoryTriggerCustomEvent from './data-factory-trigger-custom-ev
 export * as dataFactoryTriggerSchedule from './data-factory-trigger-schedule/index';
 export * as dataFactoryTriggerTumblingWindow from './data-factory-trigger-tumbling-window/index';
 export * as dataProtectionBackupInstanceBlobStorage from './data-protection-backup-instance-blob-storage/index';
+export * as dataProtectionBackupInstanceCosmosdbAccount from './data-protection-backup-instance-cosmosdb-account/index';
 export * as dataProtectionBackupInstanceDataLakeStorage from './data-protection-backup-instance-data-lake-storage/index';
 export * as dataProtectionBackupInstanceDisk from './data-protection-backup-instance-disk/index';
 export * as dataProtectionBackupInstanceKubernetesCluster from './data-protection-backup-instance-kubernetes-cluster/index';
