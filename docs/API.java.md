@@ -194,6 +194,7 @@ The following submodules are available:
 - [cognitiveAccountConnectionEntraId](./cognitiveAccountConnectionEntraId.java.md)
 - [cognitiveAccountCustomerManagedKey](./cognitiveAccountCustomerManagedKey.java.md)
 - [cognitiveAccountProject](./cognitiveAccountProject.java.md)
+- [cognitiveAccountProjectConnectionEntraId](./cognitiveAccountProjectConnectionEntraId.java.md)
 - [cognitiveAccountRaiBlocklist](./cognitiveAccountRaiBlocklist.java.md)
 - [cognitiveAccountRaiPolicy](./cognitiveAccountRaiPolicy.java.md)
 - [cognitiveDeployment](./cognitiveDeployment.java.md)

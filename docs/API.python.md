@@ -194,6 +194,7 @@ The following submodules are available:
 - [cognitiveAccountConnectionEntraId](./cognitiveAccountConnectionEntraId.python.md)
 - [cognitiveAccountCustomerManagedKey](./cognitiveAccountCustomerManagedKey.python.md)
 - [cognitiveAccountProject](./cognitiveAccountProject.python.md)
+- [cognitiveAccountProjectConnectionEntraId](./cognitiveAccountProjectConnectionEntraId.python.md)
 - [cognitiveAccountRaiBlocklist](./cognitiveAccountRaiBlocklist.python.md)
 - [cognitiveAccountRaiPolicy](./cognitiveAccountRaiPolicy.python.md)
 - [cognitiveDeployment](./cognitiveDeployment.python.md)

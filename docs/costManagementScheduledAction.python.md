@@ -4,7 +4,7 @@
 
 ### CostManagementScheduledAction <a name="CostManagementScheduledAction" id="@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action azurerm_cost_management_scheduled_action}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action azurerm_cost_management_scheduled_action}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer"></a>
 
@@ -23,7 +23,6 @@ costManagementScheduledAction.CostManagementScheduledAction(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   display_name: str,
   email_addresses: typing.List[str],
-  email_address_sender: str,
   email_subject: str,
   end_date: str,
   frequency: str,
@@ -32,6 +31,7 @@ costManagementScheduledAction.CostManagementScheduledAction(
   view_id: str,
   day_of_month: typing.Union[int, float] = None,
   days_of_week: typing.List[str] = None,
+  email_address_sender: str = None,
   hour_of_day: typing.Union[int, float] = None,
   id: str = None,
   message: str = None,
@@ -51,22 +51,22 @@ costManagementScheduledAction.CostManagementScheduledAction(
 | <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#display_name CostManagementScheduledAction#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.emailAddresses">email_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#email_addresses CostManagementScheduledAction#email_addresses}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.emailAddressSender">email_address_sender</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#email_address_sender CostManagementScheduledAction#email_address_sender}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.emailSubject">email_subject</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#email_subject CostManagementScheduledAction#email_subject}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.endDate">end_date</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#end_date CostManagementScheduledAction#end_date}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.frequency">frequency</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#frequency CostManagementScheduledAction#frequency}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#name CostManagementScheduledAction#name}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.startDate">start_date</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#start_date CostManagementScheduledAction#start_date}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.viewId">view_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#view_id CostManagementScheduledAction#view_id}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.dayOfMonth">day_of_month</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#day_of_month CostManagementScheduledAction#day_of_month}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.daysOfWeek">days_of_week</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#days_of_week CostManagementScheduledAction#days_of_week}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.hourOfDay">hour_of_day</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#hour_of_day CostManagementScheduledAction#hour_of_day}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#id CostManagementScheduledAction#id}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.message">message</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#message CostManagementScheduledAction#message}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#display_name CostManagementScheduledAction#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.emailAddresses">email_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#email_addresses CostManagementScheduledAction#email_addresses}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.emailSubject">email_subject</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#email_subject CostManagementScheduledAction#email_subject}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.endDate">end_date</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#end_date CostManagementScheduledAction#end_date}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.frequency">frequency</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#frequency CostManagementScheduledAction#frequency}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#name CostManagementScheduledAction#name}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.startDate">start_date</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#start_date CostManagementScheduledAction#start_date}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.viewId">view_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#view_id CostManagementScheduledAction#view_id}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.dayOfMonth">day_of_month</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#day_of_month CostManagementScheduledAction#day_of_month}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.daysOfWeek">days_of_week</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#days_of_week CostManagementScheduledAction#days_of_week}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.emailAddressSender">email_address_sender</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#email_address_sender CostManagementScheduledAction#email_address_sender}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.hourOfDay">hour_of_day</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#hour_of_day CostManagementScheduledAction#hour_of_day}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#id CostManagementScheduledAction#id}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.message">message</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#message CostManagementScheduledAction#message}. |
 | <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionTimeouts">CostManagementScheduledActionTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.weeksOfMonth">weeks_of_month</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#weeks_of_month CostManagementScheduledAction#weeks_of_month}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.weeksOfMonth">weeks_of_month</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#weeks_of_month CostManagementScheduledAction#weeks_of_month}. |
 
 ---
 
@@ -134,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#display_name CostManagementScheduledAction#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#display_name CostManagementScheduledAction#display_name}.
 
 ---
 
@@ -142,15 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#email_addresses CostManagementScheduledAction#email_addresses}.
-
----
-
-##### `email_address_sender`<sup>Required</sup> <a name="email_address_sender" id="@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.emailAddressSender"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#email_address_sender CostManagementScheduledAction#email_address_sender}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#email_addresses CostManagementScheduledAction#email_addresses}.
 
 ---
 
@@ -158,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#email_subject CostManagementScheduledAction#email_subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#email_subject CostManagementScheduledAction#email_subject}.
 
 ---
 
@@ -166,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#end_date CostManagementScheduledAction#end_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#end_date CostManagementScheduledAction#end_date}.
 
 ---
 
@@ -174,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#frequency CostManagementScheduledAction#frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#frequency CostManagementScheduledAction#frequency}.
 
 ---
 
@@ -182,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#name CostManagementScheduledAction#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#name CostManagementScheduledAction#name}.
 
 ---
 
@@ -190,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#start_date CostManagementScheduledAction#start_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#start_date CostManagementScheduledAction#start_date}.
 
 ---
 
@@ -198,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#view_id CostManagementScheduledAction#view_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#view_id CostManagementScheduledAction#view_id}.
 
 ---
 
@@ -206,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#day_of_month CostManagementScheduledAction#day_of_month}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#day_of_month CostManagementScheduledAction#day_of_month}.
 
 ---
 
@@ -214,7 +206,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#days_of_week CostManagementScheduledAction#days_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#days_of_week CostManagementScheduledAction#days_of_week}.
+
+---
+
+##### `email_address_sender`<sup>Optional</sup> <a name="email_address_sender" id="@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.Initializer.parameter.emailAddressSender"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#email_address_sender CostManagementScheduledAction#email_address_sender}.
 
 ---
 
@@ -222,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#hour_of_day CostManagementScheduledAction#hour_of_day}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#hour_of_day CostManagementScheduledAction#hour_of_day}.
 
 ---
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#id CostManagementScheduledAction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#id CostManagementScheduledAction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -241,7 +241,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#message CostManagementScheduledAction#message}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#message CostManagementScheduledAction#message}.
 
 ---
 
@@ -251,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#timeouts CostManagementScheduledAction#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#timeouts CostManagementScheduledAction#timeouts}
 
 ---
 
@@ -259,7 +259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#weeks_of_month CostManagementScheduledAction#weeks_of_month}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#weeks_of_month CostManagementScheduledAction#weeks_of_month}.
 
 ---
 
@@ -294,6 +294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.resetDayOfMonth">reset_day_of_month</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.resetDaysOfWeek">reset_days_of_week</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.resetEmailAddressSender">reset_email_address_sender</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.resetHourOfDay">reset_hour_of_day</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.resetMessage">reset_message</a></code> | *No description.* |
@@ -665,7 +666,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#create CostManagementScheduledAction#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#create CostManagementScheduledAction#create}.
 
 ---
 
@@ -673,7 +674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#delete CostManagementScheduledAction#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#delete CostManagementScheduledAction#delete}.
 
 ---
 
@@ -681,7 +682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#read CostManagementScheduledAction#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#read CostManagementScheduledAction#read}.
 
 ---
 
@@ -689,7 +690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#update CostManagementScheduledAction#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#update CostManagementScheduledAction#update}.
 
 ---
 
@@ -703,6 +704,12 @@ def reset_day_of_month() -> None
 
 ```python
 def reset_days_of_week() -> None
+```
+
+##### `reset_email_address_sender` <a name="reset_email_address_sender" id="@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.resetEmailAddressSender"></a>
+
+```python
+def reset_email_address_sender() -> None
 ```
 
 ##### `reset_hour_of_day` <a name="reset_hour_of_day" id="@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledAction.resetHourOfDay"></a>
@@ -849,7 +856,7 @@ The construct id used in the generated config for the CostManagementScheduledAct
 
 The id of the existing CostManagementScheduledAction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1413,7 +1420,6 @@ costManagementScheduledAction.CostManagementScheduledActionConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   display_name: str,
   email_addresses: typing.List[str],
-  email_address_sender: str,
   email_subject: str,
   end_date: str,
   frequency: str,
@@ -1422,6 +1428,7 @@ costManagementScheduledAction.CostManagementScheduledActionConfig(
   view_id: str,
   day_of_month: typing.Union[int, float] = None,
   days_of_week: typing.List[str] = None,
+  email_address_sender: str = None,
   hour_of_day: typing.Union[int, float] = None,
   id: str = None,
   message: str = None,
@@ -1441,22 +1448,22 @@ costManagementScheduledAction.CostManagementScheduledActionConfig(
 | <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#display_name CostManagementScheduledAction#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.emailAddresses">email_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#email_addresses CostManagementScheduledAction#email_addresses}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.emailAddressSender">email_address_sender</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#email_address_sender CostManagementScheduledAction#email_address_sender}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.emailSubject">email_subject</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#email_subject CostManagementScheduledAction#email_subject}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.endDate">end_date</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#end_date CostManagementScheduledAction#end_date}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.frequency">frequency</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#frequency CostManagementScheduledAction#frequency}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#name CostManagementScheduledAction#name}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.startDate">start_date</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#start_date CostManagementScheduledAction#start_date}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.viewId">view_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#view_id CostManagementScheduledAction#view_id}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.dayOfMonth">day_of_month</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#day_of_month CostManagementScheduledAction#day_of_month}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.daysOfWeek">days_of_week</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#days_of_week CostManagementScheduledAction#days_of_week}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.hourOfDay">hour_of_day</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#hour_of_day CostManagementScheduledAction#hour_of_day}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#id CostManagementScheduledAction#id}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.message">message</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#message CostManagementScheduledAction#message}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#display_name CostManagementScheduledAction#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.emailAddresses">email_addresses</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#email_addresses CostManagementScheduledAction#email_addresses}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.emailSubject">email_subject</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#email_subject CostManagementScheduledAction#email_subject}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.endDate">end_date</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#end_date CostManagementScheduledAction#end_date}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.frequency">frequency</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#frequency CostManagementScheduledAction#frequency}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#name CostManagementScheduledAction#name}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.startDate">start_date</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#start_date CostManagementScheduledAction#start_date}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.viewId">view_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#view_id CostManagementScheduledAction#view_id}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.dayOfMonth">day_of_month</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#day_of_month CostManagementScheduledAction#day_of_month}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.daysOfWeek">days_of_week</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#days_of_week CostManagementScheduledAction#days_of_week}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.emailAddressSender">email_address_sender</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#email_address_sender CostManagementScheduledAction#email_address_sender}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.hourOfDay">hour_of_day</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#hour_of_day CostManagementScheduledAction#hour_of_day}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#id CostManagementScheduledAction#id}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.message">message</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#message CostManagementScheduledAction#message}. |
 | <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionTimeouts">CostManagementScheduledActionTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.weeksOfMonth">weeks_of_month</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#weeks_of_month CostManagementScheduledAction#weeks_of_month}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.weeksOfMonth">weeks_of_month</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#weeks_of_month CostManagementScheduledAction#weeks_of_month}. |
 
 ---
 
@@ -1538,7 +1545,7 @@ display_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#display_name CostManagementScheduledAction#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#display_name CostManagementScheduledAction#display_name}.
 
 ---
 
@@ -1550,19 +1557,7 @@ email_addresses: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#email_addresses CostManagementScheduledAction#email_addresses}.
-
----
-
-##### `email_address_sender`<sup>Required</sup> <a name="email_address_sender" id="@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.emailAddressSender"></a>
-
-```python
-email_address_sender: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#email_address_sender CostManagementScheduledAction#email_address_sender}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#email_addresses CostManagementScheduledAction#email_addresses}.
 
 ---
 
@@ -1574,7 +1569,7 @@ email_subject: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#email_subject CostManagementScheduledAction#email_subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#email_subject CostManagementScheduledAction#email_subject}.
 
 ---
 
@@ -1586,7 +1581,7 @@ end_date: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#end_date CostManagementScheduledAction#end_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#end_date CostManagementScheduledAction#end_date}.
 
 ---
 
@@ -1598,7 +1593,7 @@ frequency: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#frequency CostManagementScheduledAction#frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#frequency CostManagementScheduledAction#frequency}.
 
 ---
 
@@ -1610,7 +1605,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#name CostManagementScheduledAction#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#name CostManagementScheduledAction#name}.
 
 ---
 
@@ -1622,7 +1617,7 @@ start_date: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#start_date CostManagementScheduledAction#start_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#start_date CostManagementScheduledAction#start_date}.
 
 ---
 
@@ -1634,7 +1629,7 @@ view_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#view_id CostManagementScheduledAction#view_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#view_id CostManagementScheduledAction#view_id}.
 
 ---
 
@@ -1646,7 +1641,7 @@ day_of_month: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#day_of_month CostManagementScheduledAction#day_of_month}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#day_of_month CostManagementScheduledAction#day_of_month}.
 
 ---
 
@@ -1658,7 +1653,19 @@ days_of_week: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#days_of_week CostManagementScheduledAction#days_of_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#days_of_week CostManagementScheduledAction#days_of_week}.
+
+---
+
+##### `email_address_sender`<sup>Optional</sup> <a name="email_address_sender" id="@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionConfig.property.emailAddressSender"></a>
+
+```python
+email_address_sender: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#email_address_sender CostManagementScheduledAction#email_address_sender}.
 
 ---
 
@@ -1670,7 +1677,7 @@ hour_of_day: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#hour_of_day CostManagementScheduledAction#hour_of_day}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#hour_of_day CostManagementScheduledAction#hour_of_day}.
 
 ---
 
@@ -1682,7 +1689,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#id CostManagementScheduledAction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#id CostManagementScheduledAction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1697,7 +1704,7 @@ message: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#message CostManagementScheduledAction#message}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#message CostManagementScheduledAction#message}.
 
 ---
 
@@ -1711,7 +1718,7 @@ timeouts: CostManagementScheduledActionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#timeouts CostManagementScheduledAction#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#timeouts CostManagementScheduledAction#timeouts}
 
 ---
 
@@ -1723,7 +1730,7 @@ weeks_of_month: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#weeks_of_month CostManagementScheduledAction#weeks_of_month}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#weeks_of_month CostManagementScheduledAction#weeks_of_month}.
 
 ---
 
@@ -1746,10 +1753,10 @@ costManagementScheduledAction.CostManagementScheduledActionTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#create CostManagementScheduledAction#create}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#delete CostManagementScheduledAction#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#read CostManagementScheduledAction#read}. |
-| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#update CostManagementScheduledAction#update}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#create CostManagementScheduledAction#create}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#delete CostManagementScheduledAction#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#read CostManagementScheduledAction#read}. |
+| <code><a href="#@cdktn/provider-azurerm.costManagementScheduledAction.CostManagementScheduledActionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#update CostManagementScheduledAction#update}. |
 
 ---
 
@@ -1761,7 +1768,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#create CostManagementScheduledAction#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#create CostManagementScheduledAction#create}.
 
 ---
 
@@ -1773,7 +1780,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#delete CostManagementScheduledAction#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#delete CostManagementScheduledAction#delete}.
 
 ---
 
@@ -1785,7 +1792,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#read CostManagementScheduledAction#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#read CostManagementScheduledAction#read}.
 
 ---
 
@@ -1797,7 +1804,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/cost_management_scheduled_action#update CostManagementScheduledAction#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/cost_management_scheduled_action#update CostManagementScheduledAction#update}.
 
 ---
 
