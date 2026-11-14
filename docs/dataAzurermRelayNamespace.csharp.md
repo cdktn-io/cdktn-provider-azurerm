@@ -4,7 +4,7 @@
 
 ### DataAzurermRelayNamespace <a name="DataAzurermRelayNamespace" id="@cdktn/provider-azurerm.dataAzurermRelayNamespace.DataAzurermRelayNamespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/data-sources/relay_namespace azurerm_relay_namespace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/data-sources/relay_namespace azurerm_relay_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermRelayNamespace.DataAzurermRelayNamespace.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermRelayNamespace 
 
 The id of the existing DataAzurermRelayNamespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/data-sources/relay_namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/data-sources/relay_namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -796,9 +796,9 @@ new DataAzurermRelayNamespaceConfig {
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermRelayNamespace.DataAzurermRelayNamespaceConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermRelayNamespace.DataAzurermRelayNamespaceConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermRelayNamespace.DataAzurermRelayNamespaceConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermRelayNamespace.DataAzurermRelayNamespaceConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/data-sources/relay_namespace#name DataAzurermRelayNamespace#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermRelayNamespace.DataAzurermRelayNamespaceConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/data-sources/relay_namespace#resource_group_name DataAzurermRelayNamespace#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermRelayNamespace.DataAzurermRelayNamespaceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/data-sources/relay_namespace#id DataAzurermRelayNamespace#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermRelayNamespace.DataAzurermRelayNamespaceConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/data-sources/relay_namespace#name DataAzurermRelayNamespace#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermRelayNamespace.DataAzurermRelayNamespaceConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/data-sources/relay_namespace#resource_group_name DataAzurermRelayNamespace#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermRelayNamespace.DataAzurermRelayNamespaceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/data-sources/relay_namespace#id DataAzurermRelayNamespace#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermRelayNamespace.DataAzurermRelayNamespaceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermRelayNamespace.DataAzurermRelayNamespaceTimeouts">DataAzurermRelayNamespaceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -881,7 +881,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/data-sources/relay_namespace#name DataAzurermRelayNamespace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/data-sources/relay_namespace#name DataAzurermRelayNamespace#name}.
 
 ---
 
@@ -893,7 +893,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/data-sources/relay_namespace#resource_group_name DataAzurermRelayNamespace#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/data-sources/relay_namespace#resource_group_name DataAzurermRelayNamespace#resource_group_name}.
 
 ---
 
@@ -905,7 +905,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/data-sources/relay_namespace#id DataAzurermRelayNamespace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/data-sources/relay_namespace#id DataAzurermRelayNamespace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -922,7 +922,7 @@ public DataAzurermRelayNamespaceTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/data-sources/relay_namespace#timeouts DataAzurermRelayNamespace#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/data-sources/relay_namespace#timeouts DataAzurermRelayNamespace#timeouts}
 
 ---
 
@@ -942,7 +942,7 @@ new DataAzurermRelayNamespaceTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermRelayNamespace.DataAzurermRelayNamespaceTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/data-sources/relay_namespace#read DataAzurermRelayNamespace#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermRelayNamespace.DataAzurermRelayNamespaceTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/data-sources/relay_namespace#read DataAzurermRelayNamespace#read}. |
 
 ---
 
@@ -954,7 +954,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/data-sources/relay_namespace#read DataAzurermRelayNamespace#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/data-sources/relay_namespace#read DataAzurermRelayNamespace#read}.
 
 ---
 

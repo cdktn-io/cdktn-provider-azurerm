@@ -1,3 +1,3 @@
 # `azurerm_sentinel_log_analytics_workspace_onboarding`
 
-Refer to the Terraform Registry for docs: [`azurerm_sentinel_log_analytics_workspace_onboarding`](https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/sentinel_log_analytics_workspace_onboarding).
+Refer to the Terraform Registry for docs: [`azurerm_sentinel_log_analytics_workspace_onboarding`](https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/sentinel_log_analytics_workspace_onboarding).

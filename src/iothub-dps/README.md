@@ -1,3 +1,3 @@
 # `azurerm_iothub_dps`
 
-Refer to the Terraform Registry for docs: [`azurerm_iothub_dps`](https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/iothub_dps).
+Refer to the Terraform Registry for docs: [`azurerm_iothub_dps`](https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/iothub_dps).

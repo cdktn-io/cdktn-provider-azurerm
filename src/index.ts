@@ -194,6 +194,7 @@ export * as cognitiveAccountConnectionCustomKeys from './cognitive-account-conne
 export * as cognitiveAccountConnectionEntraId from './cognitive-account-connection-entra-id/index';
 export * as cognitiveAccountCustomerManagedKey from './cognitive-account-customer-managed-key/index';
 export * as cognitiveAccountProject from './cognitive-account-project/index';
+export * as cognitiveAccountProjectConnectionEntraId from './cognitive-account-project-connection-entra-id/index';
 export * as cognitiveAccountRaiBlocklist from './cognitive-account-rai-blocklist/index';
 export * as cognitiveAccountRaiPolicy from './cognitive-account-rai-policy/index';
 export * as cognitiveDeployment from './cognitive-deployment/index';

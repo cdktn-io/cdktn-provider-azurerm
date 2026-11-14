@@ -1,3 +1,3 @@
 # `azurerm_kusto_cosmosdb_data_connection`
 
-Refer to the Terraform Registry for docs: [`azurerm_kusto_cosmosdb_data_connection`](https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/kusto_cosmosdb_data_connection).
+Refer to the Terraform Registry for docs: [`azurerm_kusto_cosmosdb_data_connection`](https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/kusto_cosmosdb_data_connection).

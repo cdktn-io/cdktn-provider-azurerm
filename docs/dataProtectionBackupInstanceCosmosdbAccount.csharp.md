@@ -4,7 +4,7 @@
 
 ### DataProtectionBackupInstanceCosmosdbAccount <a name="DataProtectionBackupInstanceCosmosdbAccount" id="@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account azurerm_data_protection_backup_instance_cosmosdb_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account azurerm_data_protection_backup_instance_cosmosdb_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccount.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the DataProtectionBackupInstan
 
 The id of the existing DataProtectionBackupInstanceCosmosdbAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -912,12 +912,12 @@ new DataProtectionBackupInstanceCosmosdbAccountConfig {
 | <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountConfig.property.cosmosdbAccountId">CosmosdbAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#cosmosdb_account_id DataProtectionBackupInstanceCosmosdbAccount#cosmosdb_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountConfig.property.dataProtectionBackupPolicyCosmosdbAccountId">DataProtectionBackupPolicyCosmosdbAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#data_protection_backup_policy_cosmosdb_account_id DataProtectionBackupInstanceCosmosdbAccount#data_protection_backup_policy_cosmosdb_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountConfig.property.dataProtectionBackupVaultId">DataProtectionBackupVaultId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#data_protection_backup_vault_id DataProtectionBackupInstanceCosmosdbAccount#data_protection_backup_vault_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#location DataProtectionBackupInstanceCosmosdbAccount#location}. |
-| <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#name DataProtectionBackupInstanceCosmosdbAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#id DataProtectionBackupInstanceCosmosdbAccount#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountConfig.property.cosmosdbAccountId">CosmosdbAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#cosmosdb_account_id DataProtectionBackupInstanceCosmosdbAccount#cosmosdb_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountConfig.property.dataProtectionBackupPolicyCosmosdbAccountId">DataProtectionBackupPolicyCosmosdbAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#data_protection_backup_policy_cosmosdb_account_id DataProtectionBackupInstanceCosmosdbAccount#data_protection_backup_policy_cosmosdb_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountConfig.property.dataProtectionBackupVaultId">DataProtectionBackupVaultId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#data_protection_backup_vault_id DataProtectionBackupInstanceCosmosdbAccount#data_protection_backup_vault_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#location DataProtectionBackupInstanceCosmosdbAccount#location}. |
+| <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#name DataProtectionBackupInstanceCosmosdbAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#id DataProtectionBackupInstanceCosmosdbAccount#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountTimeouts">DataProtectionBackupInstanceCosmosdbAccountTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1000,7 +1000,7 @@ public string CosmosdbAccountId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#cosmosdb_account_id DataProtectionBackupInstanceCosmosdbAccount#cosmosdb_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#cosmosdb_account_id DataProtectionBackupInstanceCosmosdbAccount#cosmosdb_account_id}.
 
 ---
 
@@ -1012,7 +1012,7 @@ public string DataProtectionBackupPolicyCosmosdbAccountId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#data_protection_backup_policy_cosmosdb_account_id DataProtectionBackupInstanceCosmosdbAccount#data_protection_backup_policy_cosmosdb_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#data_protection_backup_policy_cosmosdb_account_id DataProtectionBackupInstanceCosmosdbAccount#data_protection_backup_policy_cosmosdb_account_id}.
 
 ---
 
@@ -1024,7 +1024,7 @@ public string DataProtectionBackupVaultId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#data_protection_backup_vault_id DataProtectionBackupInstanceCosmosdbAccount#data_protection_backup_vault_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#data_protection_backup_vault_id DataProtectionBackupInstanceCosmosdbAccount#data_protection_backup_vault_id}.
 
 ---
 
@@ -1036,7 +1036,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#location DataProtectionBackupInstanceCosmosdbAccount#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#location DataProtectionBackupInstanceCosmosdbAccount#location}.
 
 ---
 
@@ -1048,7 +1048,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#name DataProtectionBackupInstanceCosmosdbAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#name DataProtectionBackupInstanceCosmosdbAccount#name}.
 
 ---
 
@@ -1060,7 +1060,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#id DataProtectionBackupInstanceCosmosdbAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#id DataProtectionBackupInstanceCosmosdbAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1077,7 +1077,7 @@ public DataProtectionBackupInstanceCosmosdbAccountTimeouts Timeouts { get; set; 
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#timeouts DataProtectionBackupInstanceCosmosdbAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#timeouts DataProtectionBackupInstanceCosmosdbAccount#timeouts}
 
 ---
 
@@ -1100,10 +1100,10 @@ new DataProtectionBackupInstanceCosmosdbAccountTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#create DataProtectionBackupInstanceCosmosdbAccount#create}. |
-| <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#delete DataProtectionBackupInstanceCosmosdbAccount#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#read DataProtectionBackupInstanceCosmosdbAccount#read}. |
-| <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#update DataProtectionBackupInstanceCosmosdbAccount#update}. |
+| <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#create DataProtectionBackupInstanceCosmosdbAccount#create}. |
+| <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#delete DataProtectionBackupInstanceCosmosdbAccount#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#read DataProtectionBackupInstanceCosmosdbAccount#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataProtectionBackupInstanceCosmosdbAccount.DataProtectionBackupInstanceCosmosdbAccountTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#update DataProtectionBackupInstanceCosmosdbAccount#update}. |
 
 ---
 
@@ -1115,7 +1115,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#create DataProtectionBackupInstanceCosmosdbAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#create DataProtectionBackupInstanceCosmosdbAccount#create}.
 
 ---
 
@@ -1127,7 +1127,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#delete DataProtectionBackupInstanceCosmosdbAccount#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#delete DataProtectionBackupInstanceCosmosdbAccount#delete}.
 
 ---
 
@@ -1139,7 +1139,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#read DataProtectionBackupInstanceCosmosdbAccount#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#read DataProtectionBackupInstanceCosmosdbAccount#read}.
 
 ---
 
@@ -1151,7 +1151,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/data_protection_backup_instance_cosmosdb_account#update DataProtectionBackupInstanceCosmosdbAccount#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/data_protection_backup_instance_cosmosdb_account#update DataProtectionBackupInstanceCosmosdbAccount#update}.
 
 ---
 

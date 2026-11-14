@@ -194,6 +194,7 @@ The following submodules are available:
 - [cognitiveAccountConnectionEntraId](./cognitiveAccountConnectionEntraId.typescript.md)
 - [cognitiveAccountCustomerManagedKey](./cognitiveAccountCustomerManagedKey.typescript.md)
 - [cognitiveAccountProject](./cognitiveAccountProject.typescript.md)
+- [cognitiveAccountProjectConnectionEntraId](./cognitiveAccountProjectConnectionEntraId.typescript.md)
 - [cognitiveAccountRaiBlocklist](./cognitiveAccountRaiBlocklist.typescript.md)
 - [cognitiveAccountRaiPolicy](./cognitiveAccountRaiPolicy.typescript.md)
 - [cognitiveDeployment](./cognitiveDeployment.typescript.md)

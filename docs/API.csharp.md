@@ -194,6 +194,7 @@ The following submodules are available:
 - [cognitiveAccountConnectionEntraId](./cognitiveAccountConnectionEntraId.csharp.md)
 - [cognitiveAccountCustomerManagedKey](./cognitiveAccountCustomerManagedKey.csharp.md)
 - [cognitiveAccountProject](./cognitiveAccountProject.csharp.md)
+- [cognitiveAccountProjectConnectionEntraId](./cognitiveAccountProjectConnectionEntraId.csharp.md)
 - [cognitiveAccountRaiBlocklist](./cognitiveAccountRaiBlocklist.csharp.md)
 - [cognitiveAccountRaiPolicy](./cognitiveAccountRaiPolicy.csharp.md)
 - [cognitiveDeployment](./cognitiveDeployment.csharp.md)

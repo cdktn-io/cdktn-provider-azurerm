@@ -194,6 +194,7 @@ Object.defineProperty(exports, 'cognitiveAccountConnectionCustomKeys', { get: fu
 Object.defineProperty(exports, 'cognitiveAccountConnectionEntraId', { get: function () { return require('./cognitive-account-connection-entra-id'); } });
 Object.defineProperty(exports, 'cognitiveAccountCustomerManagedKey', { get: function () { return require('./cognitive-account-customer-managed-key'); } });
 Object.defineProperty(exports, 'cognitiveAccountProject', { get: function () { return require('./cognitive-account-project'); } });
+Object.defineProperty(exports, 'cognitiveAccountProjectConnectionEntraId', { get: function () { return require('./cognitive-account-project-connection-entra-id'); } });
 Object.defineProperty(exports, 'cognitiveAccountRaiBlocklist', { get: function () { return require('./cognitive-account-rai-blocklist'); } });
 Object.defineProperty(exports, 'cognitiveAccountRaiPolicy', { get: function () { return require('./cognitive-account-rai-policy'); } });
 Object.defineProperty(exports, 'cognitiveDeployment', { get: function () { return require('./cognitive-deployment'); } });

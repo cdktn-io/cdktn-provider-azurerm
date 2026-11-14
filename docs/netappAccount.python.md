@@ -4,7 +4,7 @@
 
 ### NetappAccount <a name="NetappAccount" id="@cdktn/provider-azurerm.netappAccount.NetappAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account azurerm_netapp_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account azurerm_netapp_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer"></a>
 
@@ -43,13 +43,13 @@ netappAccount.NetappAccount(
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#location NetappAccount#location}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#name NetappAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#location NetappAccount#location}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#name NetappAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.activeDirectory">active_directory</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory">NetappAccountActiveDirectory</a></code> | active_directory block. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#id NetappAccount#id}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#id NetappAccount#id}. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountIdentity">NetappAccountIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#tags NetappAccount#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#tags NetappAccount#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccount.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts">NetappAccountTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#location NetappAccount#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#location NetappAccount#location}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#name NetappAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#name NetappAccount#name}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 active_directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#active_directory NetappAccount#active_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#active_directory NetappAccount#active_directory}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#id NetappAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#id NetappAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -165,7 +165,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#identity NetappAccount#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#identity NetappAccount#identity}
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#tags NetappAccount#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#tags NetappAccount#tags}.
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#timeouts NetappAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#timeouts NetappAccount#timeouts}
 
 ---
 
@@ -605,7 +605,7 @@ def put_active_directory(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#dns_servers NetappAccount#dns_servers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#dns_servers NetappAccount#dns_servers}.
 
 ---
 
@@ -613,7 +613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#domain NetappAccount#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#domain NetappAccount#domain}.
 
 ---
 
@@ -621,7 +621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#password NetappAccount#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#password NetappAccount#password}.
 
 ---
 
@@ -629,7 +629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#smb_server_name NetappAccount#smb_server_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#smb_server_name NetappAccount#smb_server_name}.
 
 ---
 
@@ -637,7 +637,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#username NetappAccount#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#username NetappAccount#username}.
 
 ---
 
@@ -647,7 +647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Domain users to be added to the built-in Administrators active directory group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#administrator_users NetappAccount#administrator_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#administrator_users NetappAccount#administrator_users}
 
 ---
 
@@ -657,7 +657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If enabled, AES encryption will be enabled for SMB communication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#aes_encryption_enabled NetappAccount#aes_encryption_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#aes_encryption_enabled NetappAccount#aes_encryption_enabled}
 
 ---
 
@@ -667,7 +667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Domain users to be added to the built-in Backup Operators active directory group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#backup_users NetappAccount#backup_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#backup_users NetappAccount#backup_users}
 
 ---
 
@@ -677,7 +677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies if traffic between the Domain Controller and SMB server is encrypted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#domain_controller_connection_encryption_enabled NetappAccount#domain_controller_connection_encryption_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#domain_controller_connection_encryption_enabled NetappAccount#domain_controller_connection_encryption_enabled}
 
 ---
 
@@ -687,7 +687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the active directory machine. This optional parameter is used only while creating kerberos volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#kerberos_ad_name NetappAccount#kerberos_ad_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#kerberos_ad_name NetappAccount#kerberos_ad_name}
 
 ---
 
@@ -699,7 +699,7 @@ IP address of the KDC server (usually same the DC).
 
 This optional parameter is used only while creating kerberos volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#kerberos_kdc_ip NetappAccount#kerberos_kdc_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#kerberos_kdc_ip NetappAccount#kerberos_kdc_ip}
 
 ---
 
@@ -709,7 +709,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the preferred LDAP server IPs for the LDAP client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_client_preferred_servers NetappAccount#ldap_client_preferred_servers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#ldap_client_preferred_servers NetappAccount#ldap_client_preferred_servers}
 
 ---
 
@@ -719,7 +719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies whether or not the LDAP traffic needs to be secured via TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_over_tls_enabled NetappAccount#ldap_over_tls_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#ldap_over_tls_enabled NetappAccount#ldap_over_tls_enabled}
 
 ---
 
@@ -729,7 +729,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ldap_search_scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_search_scope NetappAccount#ldap_search_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#ldap_search_scope NetappAccount#ldap_search_scope}
 
 ---
 
@@ -739,7 +739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies whether or not the LDAP traffic needs to be signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_signing_enabled NetappAccount#ldap_signing_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#ldap_signing_enabled NetappAccount#ldap_signing_enabled}
 
 ---
 
@@ -749,7 +749,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If enabled, NFS client local users can also (in addition to LDAP users) access the NFS volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#local_nfs_users_with_ldap_allowed NetappAccount#local_nfs_users_with_ldap_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#local_nfs_users_with_ldap_allowed NetappAccount#local_nfs_users_with_ldap_allowed}
 
 ---
 
@@ -759,7 +759,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Organizational Unit (OU) within the Windows Active Directory where machines will be created. If blank, defaults to 'CN=Computers'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#organizational_unit NetappAccount#organizational_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#organizational_unit NetappAccount#organizational_unit}
 
 ---
 
@@ -769,7 +769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Domain users to be given SeSecurityPrivilege privilege.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#security_users NetappAccount#security_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#security_users NetappAccount#security_users}
 
 ---
 
@@ -779,7 +779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 When LDAP over SSL/TLS is enabled, the LDAP client is required to have base64 encoded Active Directory Certificate Service's self-signed root CA certificate, this optional parameter is used only for dual protocol with LDAP user-mapping volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#server_root_ca_certificate NetappAccount#server_root_ca_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#server_root_ca_certificate NetappAccount#server_root_ca_certificate}
 
 ---
 
@@ -789,7 +789,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Active Directory site the service will limit Domain Controller discovery to. If blank, defaults to 'Default-First-Site-Name'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#site_name NetappAccount#site_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#site_name NetappAccount#site_name}
 
 ---
 
@@ -806,7 +806,7 @@ def put_identity(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#type NetappAccount#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#type NetappAccount#type}.
 
 ---
 
@@ -814,7 +814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#identity_ids NetappAccount#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#identity_ids NetappAccount#identity_ids}.
 
 ---
 
@@ -833,7 +833,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#create NetappAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#create NetappAccount#create}.
 
 ---
 
@@ -841,7 +841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#delete NetappAccount#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#delete NetappAccount#delete}.
 
 ---
 
@@ -849,7 +849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#read NetappAccount#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#read NetappAccount#read}.
 
 ---
 
@@ -857,7 +857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#update NetappAccount#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#update NetappAccount#update}.
 
 ---
 
@@ -1005,7 +1005,7 @@ The construct id used in the generated config for the NetappAccount to import.
 
 The id of the existing NetappAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1411,11 +1411,11 @@ netappAccount.NetappAccountActiveDirectory(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.dnsServers">dns_servers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#dns_servers NetappAccount#dns_servers}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#domain NetappAccount#domain}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#password NetappAccount#password}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.smbServerName">smb_server_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#smb_server_name NetappAccount#smb_server_name}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#username NetappAccount#username}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.dnsServers">dns_servers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#dns_servers NetappAccount#dns_servers}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#domain NetappAccount#domain}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#password NetappAccount#password}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.smbServerName">smb_server_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#smb_server_name NetappAccount#smb_server_name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#username NetappAccount#username}. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.administratorUsers">administrator_users</a></code> | <code>typing.List[str]</code> | Domain users to be added to the built-in Administrators active directory group. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.aesEncryptionEnabled">aes_encryption_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | If enabled, AES encryption will be enabled for SMB communication. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory.property.backupUsers">backup_users</a></code> | <code>typing.List[str]</code> | Domain users to be added to the built-in Backup Operators active directory group. |
@@ -1442,7 +1442,7 @@ dns_servers: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#dns_servers NetappAccount#dns_servers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#dns_servers NetappAccount#dns_servers}.
 
 ---
 
@@ -1454,7 +1454,7 @@ domain: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#domain NetappAccount#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#domain NetappAccount#domain}.
 
 ---
 
@@ -1466,7 +1466,7 @@ password: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#password NetappAccount#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#password NetappAccount#password}.
 
 ---
 
@@ -1478,7 +1478,7 @@ smb_server_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#smb_server_name NetappAccount#smb_server_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#smb_server_name NetappAccount#smb_server_name}.
 
 ---
 
@@ -1490,7 +1490,7 @@ username: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#username NetappAccount#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#username NetappAccount#username}.
 
 ---
 
@@ -1504,7 +1504,7 @@ administrator_users: typing.List[str]
 
 Domain users to be added to the built-in Administrators active directory group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#administrator_users NetappAccount#administrator_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#administrator_users NetappAccount#administrator_users}
 
 ---
 
@@ -1518,7 +1518,7 @@ aes_encryption_enabled: bool | IResolvable
 
 If enabled, AES encryption will be enabled for SMB communication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#aes_encryption_enabled NetappAccount#aes_encryption_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#aes_encryption_enabled NetappAccount#aes_encryption_enabled}
 
 ---
 
@@ -1532,7 +1532,7 @@ backup_users: typing.List[str]
 
 Domain users to be added to the built-in Backup Operators active directory group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#backup_users NetappAccount#backup_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#backup_users NetappAccount#backup_users}
 
 ---
 
@@ -1546,7 +1546,7 @@ domain_controller_connection_encryption_enabled: bool | IResolvable
 
 Specifies if traffic between the Domain Controller and SMB server is encrypted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#domain_controller_connection_encryption_enabled NetappAccount#domain_controller_connection_encryption_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#domain_controller_connection_encryption_enabled NetappAccount#domain_controller_connection_encryption_enabled}
 
 ---
 
@@ -1560,7 +1560,7 @@ kerberos_ad_name: str
 
 Name of the active directory machine. This optional parameter is used only while creating kerberos volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#kerberos_ad_name NetappAccount#kerberos_ad_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#kerberos_ad_name NetappAccount#kerberos_ad_name}
 
 ---
 
@@ -1576,7 +1576,7 @@ IP address of the KDC server (usually same the DC).
 
 This optional parameter is used only while creating kerberos volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#kerberos_kdc_ip NetappAccount#kerberos_kdc_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#kerberos_kdc_ip NetappAccount#kerberos_kdc_ip}
 
 ---
 
@@ -1590,7 +1590,7 @@ ldap_client_preferred_servers: typing.List[str]
 
 Specifies the preferred LDAP server IPs for the LDAP client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_client_preferred_servers NetappAccount#ldap_client_preferred_servers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#ldap_client_preferred_servers NetappAccount#ldap_client_preferred_servers}
 
 ---
 
@@ -1604,7 +1604,7 @@ ldap_over_tls_enabled: bool | IResolvable
 
 Specifies whether or not the LDAP traffic needs to be secured via TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_over_tls_enabled NetappAccount#ldap_over_tls_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#ldap_over_tls_enabled NetappAccount#ldap_over_tls_enabled}
 
 ---
 
@@ -1618,7 +1618,7 @@ ldap_search_scope: NetappAccountActiveDirectoryLdapSearchScope
 
 ldap_search_scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_search_scope NetappAccount#ldap_search_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#ldap_search_scope NetappAccount#ldap_search_scope}
 
 ---
 
@@ -1632,7 +1632,7 @@ ldap_signing_enabled: bool | IResolvable
 
 Specifies whether or not the LDAP traffic needs to be signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#ldap_signing_enabled NetappAccount#ldap_signing_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#ldap_signing_enabled NetappAccount#ldap_signing_enabled}
 
 ---
 
@@ -1646,7 +1646,7 @@ local_nfs_users_with_ldap_allowed: bool | IResolvable
 
 If enabled, NFS client local users can also (in addition to LDAP users) access the NFS volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#local_nfs_users_with_ldap_allowed NetappAccount#local_nfs_users_with_ldap_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#local_nfs_users_with_ldap_allowed NetappAccount#local_nfs_users_with_ldap_allowed}
 
 ---
 
@@ -1660,7 +1660,7 @@ organizational_unit: str
 
 The Organizational Unit (OU) within the Windows Active Directory where machines will be created. If blank, defaults to 'CN=Computers'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#organizational_unit NetappAccount#organizational_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#organizational_unit NetappAccount#organizational_unit}
 
 ---
 
@@ -1674,7 +1674,7 @@ security_users: typing.List[str]
 
 Domain users to be given SeSecurityPrivilege privilege.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#security_users NetappAccount#security_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#security_users NetappAccount#security_users}
 
 ---
 
@@ -1688,7 +1688,7 @@ server_root_ca_certificate: str
 
 When LDAP over SSL/TLS is enabled, the LDAP client is required to have base64 encoded Active Directory Certificate Service's self-signed root CA certificate, this optional parameter is used only for dual protocol with LDAP user-mapping volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#server_root_ca_certificate NetappAccount#server_root_ca_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#server_root_ca_certificate NetappAccount#server_root_ca_certificate}
 
 ---
 
@@ -1702,7 +1702,7 @@ site_name: str
 
 The Active Directory site the service will limit Domain Controller discovery to. If blank, defaults to 'Default-First-Site-Name'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#site_name NetappAccount#site_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#site_name NetappAccount#site_name}
 
 ---
 
@@ -1740,7 +1740,7 @@ group_dn: str
 
 Specifies the group DN, which overrides the base DN for group lookups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#group_dn NetappAccount#group_dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#group_dn NetappAccount#group_dn}
 
 ---
 
@@ -1754,7 +1754,7 @@ group_membership_filter: str
 
 Specifies the custom LDAP search filter to be used when looking up group membership from LDAP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#group_membership_filter NetappAccount#group_membership_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#group_membership_filter NetappAccount#group_membership_filter}
 
 ---
 
@@ -1768,7 +1768,7 @@ user_dn: str
 
 Specifies the user DN, which overrides the base DN for user lookups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#user_dn NetappAccount#user_dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#user_dn NetappAccount#user_dn}
 
 ---
 
@@ -1809,13 +1809,13 @@ netappAccount.NetappAccountConfig(
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#location NetappAccount#location}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#name NetappAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#location NetappAccount#location}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#name NetappAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.activeDirectory">active_directory</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountActiveDirectory">NetappAccountActiveDirectory</a></code> | active_directory block. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#id NetappAccount#id}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#id NetappAccount#id}. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountIdentity">NetappAccountIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#tags NetappAccount#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#tags NetappAccount#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts">NetappAccountTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1898,7 +1898,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#location NetappAccount#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#location NetappAccount#location}.
 
 ---
 
@@ -1910,7 +1910,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#name NetappAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#name NetappAccount#name}.
 
 ---
 
@@ -1922,7 +1922,7 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#resource_group_name NetappAccount#resource_group_name}.
 
 ---
 
@@ -1936,7 +1936,7 @@ active_directory: NetappAccountActiveDirectory
 
 active_directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#active_directory NetappAccount#active_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#active_directory NetappAccount#active_directory}
 
 ---
 
@@ -1948,7 +1948,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#id NetappAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#id NetappAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1965,7 +1965,7 @@ identity: NetappAccountIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#identity NetappAccount#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#identity NetappAccount#identity}
 
 ---
 
@@ -1977,7 +1977,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#tags NetappAccount#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#tags NetappAccount#tags}.
 
 ---
 
@@ -1991,7 +1991,7 @@ timeouts: NetappAccountTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#timeouts NetappAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#timeouts NetappAccount#timeouts}
 
 ---
 
@@ -2012,8 +2012,8 @@ netappAccount.NetappAccountIdentity(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountIdentity.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#type NetappAccount#type}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountIdentity.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#identity_ids NetappAccount#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountIdentity.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#type NetappAccount#type}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountIdentity.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#identity_ids NetappAccount#identity_ids}. |
 
 ---
 
@@ -2025,7 +2025,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#type NetappAccount#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#type NetappAccount#type}.
 
 ---
 
@@ -2037,7 +2037,7 @@ identity_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#identity_ids NetappAccount#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#identity_ids NetappAccount#identity_ids}.
 
 ---
 
@@ -2060,10 +2060,10 @@ netappAccount.NetappAccountTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#create NetappAccount#create}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#delete NetappAccount#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#read NetappAccount#read}. |
-| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#update NetappAccount#update}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#create NetappAccount#create}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#delete NetappAccount#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#read NetappAccount#read}. |
+| <code><a href="#@cdktn/provider-azurerm.netappAccount.NetappAccountTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#update NetappAccount#update}. |
 
 ---
 
@@ -2075,7 +2075,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#create NetappAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#create NetappAccount#create}.
 
 ---
 
@@ -2087,7 +2087,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#delete NetappAccount#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#delete NetappAccount#delete}.
 
 ---
 
@@ -2099,7 +2099,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#read NetappAccount#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#read NetappAccount#read}.
 
 ---
 
@@ -2111,7 +2111,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#update NetappAccount#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#update NetappAccount#update}.
 
 ---
 
@@ -2738,7 +2738,7 @@ def put_ldap_search_scope(
 
 Specifies the group DN, which overrides the base DN for group lookups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#group_dn NetappAccount#group_dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#group_dn NetappAccount#group_dn}
 
 ---
 
@@ -2748,7 +2748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the custom LDAP search filter to be used when looking up group membership from LDAP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#group_membership_filter NetappAccount#group_membership_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#group_membership_filter NetappAccount#group_membership_filter}
 
 ---
 
@@ -2758,7 +2758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the user DN, which overrides the base DN for user lookups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/netapp_account#user_dn NetappAccount#user_dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/netapp_account#user_dn NetappAccount#user_dn}
 
 ---
 
