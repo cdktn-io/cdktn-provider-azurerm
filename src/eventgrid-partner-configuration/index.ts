@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/eventgrid_partner_configuration
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/eventgrid_partner_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktn from 'cdktn';
 
 export interface EventgridPartnerConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/eventgrid_partner_configuration#default_maximum_expiration_time_in_days EventgridPartnerConfiguration#default_maximum_expiration_time_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/eventgrid_partner_configuration#default_maximum_expiration_time_in_days EventgridPartnerConfiguration#default_maximum_expiration_time_in_days}
   */
   readonly defaultMaximumExpirationTimeInDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/eventgrid_partner_configuration#id EventgridPartnerConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/eventgrid_partner_configuration#id EventgridPartnerConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/eventgrid_partner_configuration#resource_group_name EventgridPartnerConfiguration#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/eventgrid_partner_configuration#resource_group_name EventgridPartnerConfiguration#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/eventgrid_partner_configuration#tags EventgridPartnerConfiguration#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/eventgrid_partner_configuration#tags EventgridPartnerConfiguration#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * partner_authorization block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/eventgrid_partner_configuration#partner_authorization EventgridPartnerConfiguration#partner_authorization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/eventgrid_partner_configuration#partner_authorization EventgridPartnerConfiguration#partner_authorization}
   */
   readonly partnerAuthorization?: EventgridPartnerConfigurationPartnerAuthorization[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/eventgrid_partner_configuration#timeouts EventgridPartnerConfiguration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/eventgrid_partner_configuration#timeouts EventgridPartnerConfiguration#timeouts}
   */
   readonly timeouts?: EventgridPartnerConfigurationTimeouts;
 }
 export interface EventgridPartnerConfigurationPartnerAuthorization {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/eventgrid_partner_configuration#authorization_expiration_time_in_utc EventgridPartnerConfiguration#authorization_expiration_time_in_utc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/eventgrid_partner_configuration#authorization_expiration_time_in_utc EventgridPartnerConfiguration#authorization_expiration_time_in_utc}
   */
   readonly authorizationExpirationTimeInUtc?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/eventgrid_partner_configuration#partner_name EventgridPartnerConfiguration#partner_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/eventgrid_partner_configuration#partner_name EventgridPartnerConfiguration#partner_name}
   */
-  readonly partnerName: string;
+  readonly partnerName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/eventgrid_partner_configuration#partner_registration_id EventgridPartnerConfiguration#partner_registration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/eventgrid_partner_configuration#partner_registration_id EventgridPartnerConfiguration#partner_registration_id}
   */
-  readonly partnerRegistrationId: string;
+  readonly partnerRegistrationId?: string;
 }
 
 export function eventgridPartnerConfigurationPartnerAuthorizationToTerraform(struct?: EventgridPartnerConfigurationPartnerAuthorization | cdktn.IResolvable): any {
@@ -174,7 +174,7 @@ export class EventgridPartnerConfigurationPartnerAuthorizationOutputReference ex
     return this._authorizationExpirationTimeInUtc;
   }
 
-  // partner_name - computed: false, optional: false, required: true
+  // partner_name - computed: false, optional: true, required: false
   private _partnerName?: string; 
   public get partnerName() {
     return this.getStringAttribute('partner_name');
@@ -182,18 +182,24 @@ export class EventgridPartnerConfigurationPartnerAuthorizationOutputReference ex
   public set partnerName(value: string) {
     this._partnerName = value;
   }
+  public resetPartnerName() {
+    this._partnerName = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get partnerNameInput() {
     return this._partnerName;
   }
 
-  // partner_registration_id - computed: false, optional: false, required: true
+  // partner_registration_id - computed: false, optional: true, required: false
   private _partnerRegistrationId?: string; 
   public get partnerRegistrationId() {
     return this.getStringAttribute('partner_registration_id');
   }
   public set partnerRegistrationId(value: string) {
     this._partnerRegistrationId = value;
+  }
+  public resetPartnerRegistrationId() {
+    this._partnerRegistrationId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get partnerRegistrationIdInput() {
@@ -222,19 +228,19 @@ export class EventgridPartnerConfigurationPartnerAuthorizationList extends cdktn
 }
 export interface EventgridPartnerConfigurationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/eventgrid_partner_configuration#create EventgridPartnerConfiguration#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/eventgrid_partner_configuration#create EventgridPartnerConfiguration#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/eventgrid_partner_configuration#delete EventgridPartnerConfiguration#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/eventgrid_partner_configuration#delete EventgridPartnerConfiguration#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/eventgrid_partner_configuration#read EventgridPartnerConfiguration#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/eventgrid_partner_configuration#read EventgridPartnerConfiguration#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/eventgrid_partner_configuration#update EventgridPartnerConfiguration#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/eventgrid_partner_configuration#update EventgridPartnerConfiguration#update}
   */
   readonly update?: string;
 }
@@ -415,7 +421,7 @@ export class EventgridPartnerConfigurationTimeoutsOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/eventgrid_partner_configuration azurerm_eventgrid_partner_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/eventgrid_partner_configuration azurerm_eventgrid_partner_configuration}
 */
 export class EventgridPartnerConfiguration extends cdktn.TerraformResource {
 
@@ -431,7 +437,7 @@ export class EventgridPartnerConfiguration extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EventgridPartnerConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventgridPartnerConfiguration to import
-  * @param importFromId The id of the existing EventgridPartnerConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/eventgrid_partner_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EventgridPartnerConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/eventgrid_partner_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventgridPartnerConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -443,7 +449,7 @@ export class EventgridPartnerConfiguration extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/eventgrid_partner_configuration azurerm_eventgrid_partner_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/eventgrid_partner_configuration azurerm_eventgrid_partner_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -454,7 +460,7 @@ export class EventgridPartnerConfiguration extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_eventgrid_partner_configuration',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '5.13.0',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

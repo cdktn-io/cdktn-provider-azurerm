@@ -1,3 +1,3 @@
 # `azurerm_email_communication_service_domain_sender_username`
 
-Refer to the Terraform Registry for docs: [`azurerm_email_communication_service_domain_sender_username`](https://registry.terraform.io/providers/hashicorp/azurerm/5.13.0/docs/resources/email_communication_service_domain_sender_username).
+Refer to the Terraform Registry for docs: [`azurerm_email_communication_service_domain_sender_username`](https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/email_communication_service_domain_sender_username).
