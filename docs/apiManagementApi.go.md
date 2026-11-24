@@ -4,7 +4,7 @@
 
 ### ApiManagementApi <a name="ApiManagementApi" id="@cdktn/provider-azurerm.apiManagementApi.ApiManagementApi"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api azurerm_api_management_api}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api azurerm_api_management_api}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementApi.ApiManagementApi.Initializer"></a>
 
@@ -727,7 +727,7 @@ The construct id used in the generated config for the ApiManagementApi to import
 
 The id of the existing ApiManagementApi that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1548,31 +1548,31 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/apimanagementa
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.apiManagementName">ApiManagementName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#api_management_name ApiManagementApi#api_management_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#name ApiManagementApi#name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#resource_group_name ApiManagementApi#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.revision">Revision</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#revision ApiManagementApi#revision}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.apiType">ApiType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#api_type ApiManagementApi#api_type}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.apiManagementName">ApiManagementName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#api_management_name ApiManagementApi#api_management_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.name">Name</a></code> | <code>*string</code> | The name of the API Management API. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#resource_group_name ApiManagementApi#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.revision">Revision</a></code> | <code>*string</code> | The Revision which used for this API. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.apiType">ApiType</a></code> | <code>*string</code> | Type of API. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.contact">Contact</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiContact">ApiManagementApiContact</a></code> | contact block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#description ApiManagementApi#description}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#display_name ApiManagementApi#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#id ApiManagementApi#id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.description">Description</a></code> | <code>*string</code> | A description of the API Management API, which may include HTML formatting tags. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name of the API. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#id ApiManagementApi#id}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.import">Import</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiImport">ApiManagementApiImport</a></code> | import block. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.license">License</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiLicense">ApiManagementApiLicense</a></code> | license block. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.oauth2Authorization">Oauth2Authorization</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiOauth2Authorization">ApiManagementApiOauth2Authorization</a></code> | oauth2_authorization block. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.openidAuthentication">OpenidAuthentication</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiOpenidAuthentication">ApiManagementApiOpenidAuthentication</a></code> | openid_authentication block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#path ApiManagementApi#path}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.protocols">Protocols</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#protocols ApiManagementApi#protocols}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.revisionDescription">RevisionDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#revision_description ApiManagementApi#revision_description}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.serviceUrl">ServiceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#service_url ApiManagementApi#service_url}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.sourceApiId">SourceApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#source_api_id ApiManagementApi#source_api_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.path">Path</a></code> | <code>*string</code> | The Path for this API Management API, which is a relative URL which uniquely identifies this API and all of its resource paths within the API Management Service. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.protocols">Protocols</a></code> | <code>*[]*string</code> | A list of protocols the operations in this API can be invoked. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.revisionDescription">RevisionDescription</a></code> | <code>*string</code> | The description of the API Revision of the API Management API. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.serviceUrl">ServiceUrl</a></code> | <code>*string</code> | Absolute URL of the backend service implementing this API. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.sourceApiId">SourceApiId</a></code> | <code>*string</code> | The API ID of the source API, which could be in format `azurerm_api_management_api.example.id` or in format `azurerm_api_management_api.example.id;rev=1`. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.subscriptionKeyParameterNames">SubscriptionKeyParameterNames</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiSubscriptionKeyParameterNames">ApiManagementApiSubscriptionKeyParameterNames</a></code> | subscription_key_parameter_names block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.subscriptionRequired">SubscriptionRequired</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#subscription_required ApiManagementApi#subscription_required}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.termsOfServiceUrl">TermsOfServiceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#terms_of_service_url ApiManagementApi#terms_of_service_url}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.subscriptionRequired">SubscriptionRequired</a></code> | <code>interface{}</code> | Should this API require a subscription key? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.termsOfServiceUrl">TermsOfServiceUrl</a></code> | <code>*string</code> | Absolute URL of the Terms of Service for the API. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiTimeouts">ApiManagementApiTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#version ApiManagementApi#version}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.versionDescription">VersionDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#version_description ApiManagementApi#version_description}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.versionSetId">VersionSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#version_set_id ApiManagementApi#version_set_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.version">Version</a></code> | <code>*string</code> | The Version number of this API, if this API is versioned. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.versionDescription">VersionDescription</a></code> | <code>*string</code> | The description of the API Version of the API Management API. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiConfig.property.versionSetId">VersionSetId</a></code> | <code>*string</code> | The ID of the Version Set which this API is associated with. |
 
 ---
 
@@ -1654,7 +1654,7 @@ ApiManagementName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#api_management_name ApiManagementApi#api_management_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#api_management_name ApiManagementApi#api_management_name}.
 
 ---
 
@@ -1666,7 +1666,9 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#name ApiManagementApi#name}.
+The name of the API Management API.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#name ApiManagementApi#name}
 
 ---
 
@@ -1678,7 +1680,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#resource_group_name ApiManagementApi#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#resource_group_name ApiManagementApi#resource_group_name}.
 
 ---
 
@@ -1690,7 +1692,9 @@ Revision *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#revision ApiManagementApi#revision}.
+The Revision which used for this API.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#revision ApiManagementApi#revision}
 
 ---
 
@@ -1702,7 +1706,9 @@ ApiType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#api_type ApiManagementApi#api_type}.
+Type of API.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#api_type ApiManagementApi#api_type}
 
 ---
 
@@ -1716,7 +1722,7 @@ Contact ApiManagementApiContact
 
 contact block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#contact ApiManagementApi#contact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#contact ApiManagementApi#contact}
 
 ---
 
@@ -1728,7 +1734,9 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#description ApiManagementApi#description}.
+A description of the API Management API, which may include HTML formatting tags.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#description ApiManagementApi#description}
 
 ---
 
@@ -1740,7 +1748,9 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#display_name ApiManagementApi#display_name}.
+The display name of the API.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#display_name ApiManagementApi#display_name}
 
 ---
 
@@ -1752,7 +1762,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#id ApiManagementApi#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#id ApiManagementApi#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1769,7 +1779,7 @@ Import ApiManagementApiImport
 
 import block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#import ApiManagementApi#import}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#import ApiManagementApi#import}
 
 ---
 
@@ -1783,7 +1793,7 @@ License ApiManagementApiLicense
 
 license block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#license ApiManagementApi#license}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#license ApiManagementApi#license}
 
 ---
 
@@ -1797,7 +1807,7 @@ Oauth2Authorization ApiManagementApiOauth2Authorization
 
 oauth2_authorization block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#oauth2_authorization ApiManagementApi#oauth2_authorization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#oauth2_authorization ApiManagementApi#oauth2_authorization}
 
 ---
 
@@ -1811,7 +1821,7 @@ OpenidAuthentication ApiManagementApiOpenidAuthentication
 
 openid_authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#openid_authentication ApiManagementApi#openid_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#openid_authentication ApiManagementApi#openid_authentication}
 
 ---
 
@@ -1823,7 +1833,9 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#path ApiManagementApi#path}.
+The Path for this API Management API, which is a relative URL which uniquely identifies this API and all of its resource paths within the API Management Service.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#path ApiManagementApi#path}
 
 ---
 
@@ -1835,7 +1847,9 @@ Protocols *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#protocols ApiManagementApi#protocols}.
+A list of protocols the operations in this API can be invoked.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#protocols ApiManagementApi#protocols}
 
 ---
 
@@ -1847,7 +1861,9 @@ RevisionDescription *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#revision_description ApiManagementApi#revision_description}.
+The description of the API Revision of the API Management API.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#revision_description ApiManagementApi#revision_description}
 
 ---
 
@@ -1859,7 +1875,9 @@ ServiceUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#service_url ApiManagementApi#service_url}.
+Absolute URL of the backend service implementing this API.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#service_url ApiManagementApi#service_url}
 
 ---
 
@@ -1871,7 +1889,9 @@ SourceApiId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#source_api_id ApiManagementApi#source_api_id}.
+The API ID of the source API, which could be in format `azurerm_api_management_api.example.id` or in format `azurerm_api_management_api.example.id;rev=1`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#source_api_id ApiManagementApi#source_api_id}
 
 ---
 
@@ -1885,7 +1905,7 @@ SubscriptionKeyParameterNames ApiManagementApiSubscriptionKeyParameterNames
 
 subscription_key_parameter_names block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#subscription_key_parameter_names ApiManagementApi#subscription_key_parameter_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#subscription_key_parameter_names ApiManagementApi#subscription_key_parameter_names}
 
 ---
 
@@ -1897,7 +1917,9 @@ SubscriptionRequired interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#subscription_required ApiManagementApi#subscription_required}.
+Should this API require a subscription key?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#subscription_required ApiManagementApi#subscription_required}
 
 ---
 
@@ -1909,7 +1931,9 @@ TermsOfServiceUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#terms_of_service_url ApiManagementApi#terms_of_service_url}.
+Absolute URL of the Terms of Service for the API.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#terms_of_service_url ApiManagementApi#terms_of_service_url}
 
 ---
 
@@ -1923,7 +1947,7 @@ Timeouts ApiManagementApiTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#timeouts ApiManagementApi#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#timeouts ApiManagementApi#timeouts}
 
 ---
 
@@ -1935,7 +1959,9 @@ Version *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#version ApiManagementApi#version}.
+The Version number of this API, if this API is versioned.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#version ApiManagementApi#version}
 
 ---
 
@@ -1947,7 +1973,9 @@ VersionDescription *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#version_description ApiManagementApi#version_description}.
+The description of the API Version of the API Management API.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#version_description ApiManagementApi#version_description}
 
 ---
 
@@ -1959,7 +1987,9 @@ VersionSetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#version_set_id ApiManagementApi#version_set_id}.
+The ID of the Version Set which this API is associated with.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#version_set_id ApiManagementApi#version_set_id}
 
 ---
 
@@ -1981,9 +2011,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/apimanagementa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiContact.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#email ApiManagementApi#email}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiContact.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#name ApiManagementApi#name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiContact.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#url ApiManagementApi#url}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiContact.property.email">Email</a></code> | <code>*string</code> | The email address of the contact person/organization. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiContact.property.name">Name</a></code> | <code>*string</code> | The name of the contact person/organization. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiContact.property.url">Url</a></code> | <code>*string</code> | Absolute URL of the contact information. |
 
 ---
 
@@ -1995,7 +2025,9 @@ Email *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#email ApiManagementApi#email}.
+The email address of the contact person/organization.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#email ApiManagementApi#email}
 
 ---
 
@@ -2007,7 +2039,9 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#name ApiManagementApi#name}.
+The name of the contact person/organization.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#name ApiManagementApi#name}
 
 ---
 
@@ -2019,7 +2053,9 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#url ApiManagementApi#url}.
+Absolute URL of the contact information.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#url ApiManagementApi#url}
 
 ---
 
@@ -2041,8 +2077,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/apimanagementa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiImport.property.contentFormat">ContentFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#content_format ApiManagementApi#content_format}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiImport.property.contentValue">ContentValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#content_value ApiManagementApi#content_value}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiImport.property.contentFormat">ContentFormat</a></code> | <code>*string</code> | The format of the content from which the API Definition should be imported. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiImport.property.contentValue">ContentValue</a></code> | <code>*string</code> | The Content from which the API Definition should be imported. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiImport.property.wsdlSelector">WsdlSelector</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiImportWsdlSelector">ApiManagementApiImportWsdlSelector</a></code> | wsdl_selector block. |
 
 ---
@@ -2055,7 +2091,9 @@ ContentFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#content_format ApiManagementApi#content_format}.
+The format of the content from which the API Definition should be imported.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#content_format ApiManagementApi#content_format}
 
 ---
 
@@ -2067,7 +2105,11 @@ ContentValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#content_value ApiManagementApi#content_value}.
+The Content from which the API Definition should be imported.
+
+When a `content_format` of `*-link-*` is specified this must be a URL, otherwise this must be defined inline. The URL must be accessible and return a valid document; otherwise, deployment may fail.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#content_value ApiManagementApi#content_value}
 
 ---
 
@@ -2081,7 +2123,7 @@ WsdlSelector ApiManagementApiImportWsdlSelector
 
 wsdl_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#wsdl_selector ApiManagementApi#wsdl_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#wsdl_selector ApiManagementApi#wsdl_selector}
 
 ---
 
@@ -2102,8 +2144,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/apimanagementa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiImportWsdlSelector.property.endpointName">EndpointName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#endpoint_name ApiManagementApi#endpoint_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiImportWsdlSelector.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#service_name ApiManagementApi#service_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiImportWsdlSelector.property.endpointName">EndpointName</a></code> | <code>*string</code> | The name of endpoint (port) to import from WSDL. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiImportWsdlSelector.property.serviceName">ServiceName</a></code> | <code>*string</code> | The name of service to import from WSDL. |
 
 ---
 
@@ -2115,7 +2157,9 @@ EndpointName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#endpoint_name ApiManagementApi#endpoint_name}.
+The name of endpoint (port) to import from WSDL.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#endpoint_name ApiManagementApi#endpoint_name}
 
 ---
 
@@ -2127,7 +2171,9 @@ ServiceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#service_name ApiManagementApi#service_name}.
+The name of service to import from WSDL.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#service_name ApiManagementApi#service_name}
 
 ---
 
@@ -2148,8 +2194,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/apimanagementa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiLicense.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#name ApiManagementApi#name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiLicense.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#url ApiManagementApi#url}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiLicense.property.name">Name</a></code> | <code>*string</code> | The name of the license. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiLicense.property.url">Url</a></code> | <code>*string</code> | Absolute URL of the license. |
 
 ---
 
@@ -2161,7 +2207,9 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#name ApiManagementApi#name}.
+The name of the license.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#name ApiManagementApi#name}
 
 ---
 
@@ -2173,7 +2221,9 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#url ApiManagementApi#url}.
+Absolute URL of the license.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#url ApiManagementApi#url}
 
 ---
 
@@ -2194,8 +2244,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/apimanagementa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiOauth2Authorization.property.authorizationServerName">AuthorizationServerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#authorization_server_name ApiManagementApi#authorization_server_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiOauth2Authorization.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#scope ApiManagementApi#scope}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiOauth2Authorization.property.authorizationServerName">AuthorizationServerName</a></code> | <code>*string</code> | OAuth authorization server identifier. The name of an [OAuth2 Authorization Server](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/api_management_authorization_server). |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiOauth2Authorization.property.scope">Scope</a></code> | <code>*string</code> | Operations scope. |
 
 ---
 
@@ -2207,7 +2257,9 @@ AuthorizationServerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#authorization_server_name ApiManagementApi#authorization_server_name}.
+OAuth authorization server identifier. The name of an [OAuth2 Authorization Server](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/api_management_authorization_server).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#authorization_server_name ApiManagementApi#authorization_server_name}
 
 ---
 
@@ -2219,7 +2271,9 @@ Scope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#scope ApiManagementApi#scope}.
+Operations scope.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#scope ApiManagementApi#scope}
 
 ---
 
@@ -2240,8 +2294,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/apimanagementa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiOpenidAuthentication.property.openidProviderName">OpenidProviderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#openid_provider_name ApiManagementApi#openid_provider_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiOpenidAuthentication.property.bearerTokenSendingMethods">BearerTokenSendingMethods</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#bearer_token_sending_methods ApiManagementApi#bearer_token_sending_methods}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiOpenidAuthentication.property.openidProviderName">OpenidProviderName</a></code> | <code>*string</code> | OpenID Connect provider identifier. The name of an [OpenID Connect Provider](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/api_management_openid_connect_provider). |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiOpenidAuthentication.property.bearerTokenSendingMethods">BearerTokenSendingMethods</a></code> | <code>*[]*string</code> | How to send token to the server. A list of zero or more methods. |
 
 ---
 
@@ -2253,7 +2307,9 @@ OpenidProviderName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#openid_provider_name ApiManagementApi#openid_provider_name}.
+OpenID Connect provider identifier. The name of an [OpenID Connect Provider](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/api_management_openid_connect_provider).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#openid_provider_name ApiManagementApi#openid_provider_name}
 
 ---
 
@@ -2265,7 +2321,9 @@ BearerTokenSendingMethods *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#bearer_token_sending_methods ApiManagementApi#bearer_token_sending_methods}.
+How to send token to the server. A list of zero or more methods.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#bearer_token_sending_methods ApiManagementApi#bearer_token_sending_methods}
 
 ---
 
@@ -2286,8 +2344,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/apimanagementa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiSubscriptionKeyParameterNames.property.header">Header</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#header ApiManagementApi#header}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiSubscriptionKeyParameterNames.property.query">Query</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#query ApiManagementApi#query}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiSubscriptionKeyParameterNames.property.header">Header</a></code> | <code>*string</code> | The name of the HTTP Header which should be used for the Subscription Key. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiSubscriptionKeyParameterNames.property.query">Query</a></code> | <code>*string</code> | The name of the QueryString parameter which should be used for the Subscription Key. |
 
 ---
 
@@ -2299,7 +2357,9 @@ Header *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#header ApiManagementApi#header}.
+The name of the HTTP Header which should be used for the Subscription Key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#header ApiManagementApi#header}
 
 ---
 
@@ -2311,7 +2371,9 @@ Query *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#query ApiManagementApi#query}.
+The name of the QueryString parameter which should be used for the Subscription Key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#query ApiManagementApi#query}
 
 ---
 
@@ -2334,10 +2396,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/apimanagementa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#create ApiManagementApi#create}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#delete ApiManagementApi#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#read ApiManagementApi#read}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#update ApiManagementApi#update}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#create ApiManagementApi#create}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#delete ApiManagementApi#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#read ApiManagementApi#read}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApi.ApiManagementApiTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#update ApiManagementApi#update}. |
 
 ---
 
@@ -2349,7 +2411,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#create ApiManagementApi#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#create ApiManagementApi#create}.
 
 ---
 
@@ -2361,7 +2423,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#delete ApiManagementApi#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#delete ApiManagementApi#delete}.
 
 ---
 
@@ -2373,7 +2435,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#read ApiManagementApi#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#read ApiManagementApi#read}.
 
 ---
 
@@ -2385,7 +2447,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_api#update ApiManagementApi#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_api#update ApiManagementApi#update}.
 
 ---
 

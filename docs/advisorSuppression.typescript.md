@@ -4,7 +4,7 @@
 
 ### AdvisorSuppression <a name="AdvisorSuppression" id="@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppression"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/advisor_suppression azurerm_advisor_suppression}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/advisor_suppression azurerm_advisor_suppression}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppression.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the AdvisorSuppression to impo
 
 The id of the existing AdvisorSuppression that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/advisor_suppression#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/advisor_suppression#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -882,12 +882,12 @@ const advisorSuppressionConfig: advisorSuppression.AdvisorSuppressionConfig = { 
 | <code><a href="#@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppressionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppressionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppressionConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppressionConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/advisor_suppression#name AdvisorSuppression#name}. |
-| <code><a href="#@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppressionConfig.property.recommendationId">recommendationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/advisor_suppression#recommendation_id AdvisorSuppression#recommendation_id}. |
-| <code><a href="#@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppressionConfig.property.resourceId">resourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/advisor_suppression#resource_id AdvisorSuppression#resource_id}. |
-| <code><a href="#@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppressionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/advisor_suppression#id AdvisorSuppression#id}. |
+| <code><a href="#@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppressionConfig.property.name">name</a></code> | <code>string</code> | The Name which should be used for this Advisor suppression. |
+| <code><a href="#@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppressionConfig.property.recommendationId">recommendationId</a></code> | <code>string</code> | The ID of the Advisor recommendation to suppress. |
+| <code><a href="#@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppressionConfig.property.resourceId">resourceId</a></code> | <code>string</code> | The ID of the Resource to suppress the Advisor recommendation for. |
+| <code><a href="#@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppressionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/advisor_suppression#id AdvisorSuppression#id}. |
 | <code><a href="#@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppressionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppressionTimeouts">AdvisorSuppressionTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppressionConfig.property.ttl">ttl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/advisor_suppression#ttl AdvisorSuppression#ttl}. |
+| <code><a href="#@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppressionConfig.property.ttl">ttl</a></code> | <code>string</code> | An optional time to live value. If omitted, the suppression will not expire. |
 
 ---
 
@@ -969,7 +969,9 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/advisor_suppression#name AdvisorSuppression#name}.
+The Name which should be used for this Advisor suppression.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/advisor_suppression#name AdvisorSuppression#name}
 
 ---
 
@@ -981,7 +983,9 @@ public readonly recommendationId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/advisor_suppression#recommendation_id AdvisorSuppression#recommendation_id}.
+The ID of the Advisor recommendation to suppress.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/advisor_suppression#recommendation_id AdvisorSuppression#recommendation_id}
 
 ---
 
@@ -993,7 +997,9 @@ public readonly resourceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/advisor_suppression#resource_id AdvisorSuppression#resource_id}.
+The ID of the Resource to suppress the Advisor recommendation for.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/advisor_suppression#resource_id AdvisorSuppression#resource_id}
 
 ---
 
@@ -1005,7 +1011,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/advisor_suppression#id AdvisorSuppression#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/advisor_suppression#id AdvisorSuppression#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1022,7 +1028,7 @@ public readonly timeouts: AdvisorSuppressionTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/advisor_suppression#timeouts AdvisorSuppression#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/advisor_suppression#timeouts AdvisorSuppression#timeouts}
 
 ---
 
@@ -1034,7 +1040,9 @@ public readonly ttl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/advisor_suppression#ttl AdvisorSuppression#ttl}.
+An optional time to live value. If omitted, the suppression will not expire.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/advisor_suppression#ttl AdvisorSuppression#ttl}
 
 ---
 
@@ -1052,9 +1060,9 @@ const advisorSuppressionTimeouts: advisorSuppression.AdvisorSuppressionTimeouts 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppressionTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/advisor_suppression#create AdvisorSuppression#create}. |
-| <code><a href="#@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppressionTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/advisor_suppression#delete AdvisorSuppression#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppressionTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/advisor_suppression#read AdvisorSuppression#read}. |
+| <code><a href="#@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppressionTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/advisor_suppression#create AdvisorSuppression#create}. |
+| <code><a href="#@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppressionTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/advisor_suppression#delete AdvisorSuppression#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.advisorSuppression.AdvisorSuppressionTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/advisor_suppression#read AdvisorSuppression#read}. |
 
 ---
 
@@ -1066,7 +1074,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/advisor_suppression#create AdvisorSuppression#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/advisor_suppression#create AdvisorSuppression#create}.
 
 ---
 
@@ -1078,7 +1086,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/advisor_suppression#delete AdvisorSuppression#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/advisor_suppression#delete AdvisorSuppression#delete}.
 
 ---
 
@@ -1090,7 +1098,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/advisor_suppression#read AdvisorSuppression#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/advisor_suppression#read AdvisorSuppression#read}.
 
 ---
 

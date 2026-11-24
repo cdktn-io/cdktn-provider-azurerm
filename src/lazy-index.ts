@@ -172,6 +172,7 @@ Object.defineProperty(exports, 'cdnEndpointCustomDomain', { get: function () { r
 Object.defineProperty(exports, 'cdnFrontdoorBatchRuleSet', { get: function () { return require('./cdn-frontdoor-batch-rule-set'); } });
 Object.defineProperty(exports, 'cdnFrontdoorCustomDomain', { get: function () { return require('./cdn-frontdoor-custom-domain'); } });
 Object.defineProperty(exports, 'cdnFrontdoorCustomDomainAssociation', { get: function () { return require('./cdn-frontdoor-custom-domain-association'); } });
+Object.defineProperty(exports, 'cdnFrontdoorEdgeAction', { get: function () { return require('./cdn-frontdoor-edge-action'); } });
 Object.defineProperty(exports, 'cdnFrontdoorEndpoint', { get: function () { return require('./cdn-frontdoor-endpoint'); } });
 Object.defineProperty(exports, 'cdnFrontdoorFirewallPolicy', { get: function () { return require('./cdn-frontdoor-firewall-policy'); } });
 Object.defineProperty(exports, 'cdnFrontdoorOrigin', { get: function () { return require('./cdn-frontdoor-origin'); } });
@@ -323,6 +324,7 @@ Object.defineProperty(exports, 'dataProtectionBackupPolicyMysqlFlexibleServer', 
 Object.defineProperty(exports, 'dataProtectionBackupPolicyPostgresqlFlexibleServer', { get: function () { return require('./data-protection-backup-policy-postgresql-flexible-server'); } });
 Object.defineProperty(exports, 'dataProtectionBackupVault', { get: function () { return require('./data-protection-backup-vault'); } });
 Object.defineProperty(exports, 'dataProtectionBackupVaultCustomerManagedKey', { get: function () { return require('./data-protection-backup-vault-customer-managed-key'); } });
+Object.defineProperty(exports, 'dataProtectionBackupVaultResourceGuardAssociation', { get: function () { return require('./data-protection-backup-vault-resource-guard-association'); } });
 Object.defineProperty(exports, 'dataProtectionResourceGuard', { get: function () { return require('./data-protection-resource-guard'); } });
 Object.defineProperty(exports, 'dataShare', { get: function () { return require('./data-share'); } });
 Object.defineProperty(exports, 'dataShareAccount', { get: function () { return require('./data-share-account'); } });
@@ -448,6 +450,8 @@ Object.defineProperty(exports, 'healthcareMedtechService', { get: function () { 
 Object.defineProperty(exports, 'healthcareMedtechServiceFhirDestination', { get: function () { return require('./healthcare-medtech-service-fhir-destination'); } });
 Object.defineProperty(exports, 'healthcareService', { get: function () { return require('./healthcare-service'); } });
 Object.defineProperty(exports, 'healthcareWorkspace', { get: function () { return require('./healthcare-workspace'); } });
+Object.defineProperty(exports, 'horizondbCluster', { get: function () { return require('./horizondb-cluster'); } });
+Object.defineProperty(exports, 'horizondbFirewallRule', { get: function () { return require('./horizondb-firewall-rule'); } });
 Object.defineProperty(exports, 'image', { get: function () { return require('./image'); } });
 Object.defineProperty(exports, 'iotSecurityDeviceGroup', { get: function () { return require('./iot-security-device-group'); } });
 Object.defineProperty(exports, 'iotSecuritySolution', { get: function () { return require('./iot-security-solution'); } });
@@ -820,6 +824,7 @@ Object.defineProperty(exports, 'routeServer', { get: function () { return requir
 Object.defineProperty(exports, 'routeServerBgpConnection', { get: function () { return require('./route-server-bgp-connection'); } });
 Object.defineProperty(exports, 'routeTable', { get: function () { return require('./route-table'); } });
 Object.defineProperty(exports, 'searchService', { get: function () { return require('./search-service'); } });
+Object.defineProperty(exports, 'searchServiceDatasourceBlob', { get: function () { return require('./search-service-datasource-blob'); } });
 Object.defineProperty(exports, 'searchSharedPrivateLinkService', { get: function () { return require('./search-shared-private-link-service'); } });
 Object.defineProperty(exports, 'securityCenterAssessment', { get: function () { return require('./security-center-assessment'); } });
 Object.defineProperty(exports, 'securityCenterAssessmentPolicy', { get: function () { return require('./security-center-assessment-policy'); } });

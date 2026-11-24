@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_gateway_api
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_gateway_api
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,19 @@ import * as cdktn from 'cdktn';
 
 export interface ApiManagementGatewayApiConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_gateway_api#api_id ApiManagementGatewayApi#api_id}
+  * The Identifier of the API Management API within the API Management Service.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_gateway_api#api_id ApiManagementGatewayApi#api_id}
   */
   readonly apiId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_gateway_api#gateway_id ApiManagementGatewayApi#gateway_id}
+  * The Identifier for the API Management Gateway.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_gateway_api#gateway_id ApiManagementGatewayApi#gateway_id}
   */
   readonly gatewayId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_gateway_api#id ApiManagementGatewayApi#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_gateway_api#id ApiManagementGatewayApi#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,21 +34,21 @@ export interface ApiManagementGatewayApiConfig extends cdktn.TerraformMetaArgume
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_gateway_api#timeouts ApiManagementGatewayApi#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_gateway_api#timeouts ApiManagementGatewayApi#timeouts}
   */
   readonly timeouts?: ApiManagementGatewayApiTimeouts;
 }
 export interface ApiManagementGatewayApiTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_gateway_api#create ApiManagementGatewayApi#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_gateway_api#create ApiManagementGatewayApi#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_gateway_api#delete ApiManagementGatewayApi#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_gateway_api#delete ApiManagementGatewayApi#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_gateway_api#read ApiManagementGatewayApi#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_gateway_api#read ApiManagementGatewayApi#read}
   */
   readonly read?: string;
 }
@@ -196,7 +200,7 @@ export class ApiManagementGatewayApiTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_gateway_api azurerm_api_management_gateway_api}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_gateway_api azurerm_api_management_gateway_api}
 */
 export class ApiManagementGatewayApi extends cdktn.TerraformResource {
 
@@ -212,7 +216,7 @@ export class ApiManagementGatewayApi extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApiManagementGatewayApi resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiManagementGatewayApi to import
-  * @param importFromId The id of the existing ApiManagementGatewayApi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_gateway_api#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiManagementGatewayApi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_gateway_api#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiManagementGatewayApi to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -224,7 +228,7 @@ export class ApiManagementGatewayApi extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_gateway_api azurerm_api_management_gateway_api} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_gateway_api azurerm_api_management_gateway_api} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -235,7 +239,7 @@ export class ApiManagementGatewayApi extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_api_management_gateway_api',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '5.14.0',
+        providerVersion: '5.15.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

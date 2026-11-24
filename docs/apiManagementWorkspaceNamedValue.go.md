@@ -4,7 +4,7 @@
 
 ### ApiManagementWorkspaceNamedValue <a name="ApiManagementWorkspaceNamedValue" id="@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value azurerm_api_management_workspace_named_value}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value azurerm_api_management_workspace_named_value}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValue.Initializer"></a>
 
@@ -557,7 +557,7 @@ The construct id used in the generated config for the ApiManagementWorkspaceName
 
 The id of the existing ApiManagementWorkspaceNamedValue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -988,14 +988,14 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/apimanagementw
 | <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueConfig.property.apiManagementWorkspaceId">ApiManagementWorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#api_management_workspace_id ApiManagementWorkspaceNamedValue#api_management_workspace_id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#display_name ApiManagementWorkspaceNamedValue#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#name ApiManagementWorkspaceNamedValue#name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#id ApiManagementWorkspaceNamedValue#id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueConfig.property.secret">Secret</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#secret ApiManagementWorkspaceNamedValue#secret}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#tags ApiManagementWorkspaceNamedValue#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueConfig.property.apiManagementWorkspaceId">ApiManagementWorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#api_management_workspace_id ApiManagementWorkspaceNamedValue#api_management_workspace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name of this API Management Workspace Named Value. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueConfig.property.name">Name</a></code> | <code>*string</code> | The name of the API Management Workspace Named Value. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#id ApiManagementWorkspaceNamedValue#id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueConfig.property.secret">Secret</a></code> | <code>interface{}</code> | Whether the API Management Workspace Named Value is secret. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | A list of tags to be applied to the API Management Workspace Named Value. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueTimeouts">ApiManagementWorkspaceNamedValueTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#value ApiManagementWorkspaceNamedValue#value}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueConfig.property.value">Value</a></code> | <code>*string</code> | The value of this API Management Workspace Named Value. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueConfig.property.valueFromKeyVault">ValueFromKeyVault</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueValueFromKeyVault">ApiManagementWorkspaceNamedValueValueFromKeyVault</a></code> | value_from_key_vault block. |
 
 ---
@@ -1078,7 +1078,7 @@ ApiManagementWorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#api_management_workspace_id ApiManagementWorkspaceNamedValue#api_management_workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#api_management_workspace_id ApiManagementWorkspaceNamedValue#api_management_workspace_id}.
 
 ---
 
@@ -1090,7 +1090,9 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#display_name ApiManagementWorkspaceNamedValue#display_name}.
+The display name of this API Management Workspace Named Value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#display_name ApiManagementWorkspaceNamedValue#display_name}
 
 ---
 
@@ -1102,7 +1104,9 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#name ApiManagementWorkspaceNamedValue#name}.
+The name of the API Management Workspace Named Value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#name ApiManagementWorkspaceNamedValue#name}
 
 ---
 
@@ -1114,7 +1118,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#id ApiManagementWorkspaceNamedValue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#id ApiManagementWorkspaceNamedValue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1129,7 +1133,9 @@ Secret interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#secret ApiManagementWorkspaceNamedValue#secret}.
+Whether the API Management Workspace Named Value is secret.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#secret ApiManagementWorkspaceNamedValue#secret}
 
 ---
 
@@ -1141,7 +1147,9 @@ Tags *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#tags ApiManagementWorkspaceNamedValue#tags}.
+A list of tags to be applied to the API Management Workspace Named Value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#tags ApiManagementWorkspaceNamedValue#tags}
 
 ---
 
@@ -1155,7 +1163,7 @@ Timeouts ApiManagementWorkspaceNamedValueTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#timeouts ApiManagementWorkspaceNamedValue#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#timeouts ApiManagementWorkspaceNamedValue#timeouts}
 
 ---
 
@@ -1167,7 +1175,9 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#value ApiManagementWorkspaceNamedValue#value}.
+The value of this API Management Workspace Named Value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#value ApiManagementWorkspaceNamedValue#value}
 
 ---
 
@@ -1181,7 +1191,7 @@ ValueFromKeyVault ApiManagementWorkspaceNamedValueValueFromKeyVault
 
 value_from_key_vault block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#value_from_key_vault ApiManagementWorkspaceNamedValue#value_from_key_vault}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#value_from_key_vault ApiManagementWorkspaceNamedValue#value_from_key_vault}
 
 ---
 
@@ -1204,10 +1214,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/apimanagementw
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#create ApiManagementWorkspaceNamedValue#create}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#delete ApiManagementWorkspaceNamedValue#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#read ApiManagementWorkspaceNamedValue#read}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#update ApiManagementWorkspaceNamedValue#update}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#create ApiManagementWorkspaceNamedValue#create}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#delete ApiManagementWorkspaceNamedValue#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#read ApiManagementWorkspaceNamedValue#read}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#update ApiManagementWorkspaceNamedValue#update}. |
 
 ---
 
@@ -1219,7 +1229,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#create ApiManagementWorkspaceNamedValue#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#create ApiManagementWorkspaceNamedValue#create}.
 
 ---
 
@@ -1231,7 +1241,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#delete ApiManagementWorkspaceNamedValue#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#delete ApiManagementWorkspaceNamedValue#delete}.
 
 ---
 
@@ -1243,7 +1253,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#read ApiManagementWorkspaceNamedValue#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#read ApiManagementWorkspaceNamedValue#read}.
 
 ---
 
@@ -1255,7 +1265,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#update ApiManagementWorkspaceNamedValue#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#update ApiManagementWorkspaceNamedValue#update}.
 
 ---
 
@@ -1276,8 +1286,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/apimanagementw
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueValueFromKeyVault.property.secretId">SecretId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#secret_id ApiManagementWorkspaceNamedValue#secret_id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueValueFromKeyVault.property.identityClientId">IdentityClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#identity_client_id ApiManagementWorkspaceNamedValue#identity_client_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueValueFromKeyVault.property.secretId">SecretId</a></code> | <code>*string</code> | The resource ID of the Key Vault Secret. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspaceNamedValue.ApiManagementWorkspaceNamedValueValueFromKeyVault.property.identityClientId">IdentityClientId</a></code> | <code>*string</code> | The client ID of the User Assigned Identity, for the API Management Service, which will be used to access the Key Vault Secret. |
 
 ---
 
@@ -1289,7 +1299,9 @@ SecretId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#secret_id ApiManagementWorkspaceNamedValue#secret_id}.
+The resource ID of the Key Vault Secret.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#secret_id ApiManagementWorkspaceNamedValue#secret_id}
 
 ---
 
@@ -1301,7 +1313,11 @@ IdentityClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_workspace_named_value#identity_client_id ApiManagementWorkspaceNamedValue#identity_client_id}.
+The client ID of the User Assigned Identity, for the API Management Service, which will be used to access the Key Vault Secret.
+
+The System Assigned Identity will be used if not specified.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_workspace_named_value#identity_client_id ApiManagementWorkspaceNamedValue#identity_client_id}
 
 ---
 

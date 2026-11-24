@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,88 +13,104 @@ import * as cdktn from 'cdktn';
 
 export interface ApiManagementBackendConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#api_management_name ApiManagementBackend#api_management_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#api_management_name ApiManagementBackend#api_management_name}
   */
   readonly apiManagementName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#description ApiManagementBackend#description}
+  * The description of the backend.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#description ApiManagementBackend#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#id ApiManagementBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#id ApiManagementBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#name ApiManagementBackend#name}
+  * The name of the API Management backend.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#name ApiManagementBackend#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#protocol ApiManagementBackend#protocol}
+  * The protocol used by the backend host.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#protocol ApiManagementBackend#protocol}
   */
   readonly protocol: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#resource_group_name ApiManagementBackend#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#resource_group_name ApiManagementBackend#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#resource_id ApiManagementBackend#resource_id}
+  * The management URI of the backend host in an external system. This URI can be the ARM Resource ID of Logic Apps, Function Apps or API Apps, or the management endpoint of a Service Fabric Cluster.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#resource_id ApiManagementBackend#resource_id}
   */
   readonly resourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#title ApiManagementBackend#title}
+  * The title of the backend.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#title ApiManagementBackend#title}
   */
   readonly title?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#url ApiManagementBackend#url}
+  * The backend host URL should be specified in the format `"https://backend.com/api"`, avoiding trailing slashes (/) to minimize misconfiguration risks. Azure API Management instance will append the backend resource name to this URL. This URL typically serves as the `base-url` in the [`set-backend-service`](https://learn.microsoft.com/azure/api-management/set-backend-service-policy) policy, enabling seamless transitions from frontend to backend.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#url ApiManagementBackend#url}
   */
   readonly url: string;
   /**
   * circuit_breaker_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#circuit_breaker_rule ApiManagementBackend#circuit_breaker_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#circuit_breaker_rule ApiManagementBackend#circuit_breaker_rule}
   */
   readonly circuitBreakerRule?: ApiManagementBackendCircuitBreakerRule;
   /**
   * credentials block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#credentials ApiManagementBackend#credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#credentials ApiManagementBackend#credentials}
   */
   readonly credentials?: ApiManagementBackendCredentials;
   /**
   * proxy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#proxy ApiManagementBackend#proxy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#proxy ApiManagementBackend#proxy}
   */
   readonly proxy?: ApiManagementBackendProxy;
   /**
   * service_fabric_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#service_fabric_cluster ApiManagementBackend#service_fabric_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#service_fabric_cluster ApiManagementBackend#service_fabric_cluster}
   */
   readonly serviceFabricCluster?: ApiManagementBackendServiceFabricCluster;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#timeouts ApiManagementBackend#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#timeouts ApiManagementBackend#timeouts}
   */
   readonly timeouts?: ApiManagementBackendTimeouts;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#tls ApiManagementBackend#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#tls ApiManagementBackend#tls}
   */
   readonly tls?: ApiManagementBackendTls;
 }
 export interface ApiManagementBackendCircuitBreakerRuleFailureConditionStatusCodeRange {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#max ApiManagementBackend#max}
+  * The maximum HTTP status code to consider as a failure.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#max ApiManagementBackend#max}
   */
   readonly max: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#min ApiManagementBackend#min}
+  * The minimum HTTP status code to consider as a failure.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#min ApiManagementBackend#min}
   */
   readonly min: number;
 }
@@ -233,25 +249,33 @@ export class ApiManagementBackendCircuitBreakerRuleFailureConditionStatusCodeRan
 }
 export interface ApiManagementBackendCircuitBreakerRuleFailureCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#count ApiManagementBackend#count}
+  * The number of failures within the specified interval that will trigger the circuit breaker.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#count ApiManagementBackend#count}
   */
   readonly count?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#error_reasons ApiManagementBackend#error_reasons}
+  * A list of error reasons to consider as failures.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#error_reasons ApiManagementBackend#error_reasons}
   */
   readonly errorReasons?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#interval_duration ApiManagementBackend#interval_duration}
+  * The time window over which failures are counted, in ISO 8601 format.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#interval_duration ApiManagementBackend#interval_duration}
   */
   readonly intervalDuration: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#percentage ApiManagementBackend#percentage}
+  * The percentage of failures within the specified interval that will trigger the circuit breaker.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#percentage ApiManagementBackend#percentage}
   */
   readonly percentage?: number;
   /**
   * status_code_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#status_code_range ApiManagementBackend#status_code_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#status_code_range ApiManagementBackend#status_code_range}
   */
   readonly statusCodeRange?: ApiManagementBackendCircuitBreakerRuleFailureConditionStatusCodeRange[] | cdktn.IResolvable;
 }
@@ -448,21 +472,27 @@ export class ApiManagementBackendCircuitBreakerRuleFailureConditionOutputReferen
 }
 export interface ApiManagementBackendCircuitBreakerRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#accept_retry_after_enabled ApiManagementBackend#accept_retry_after_enabled}
+  * Whether the circuit breaker should honour `Retry-After` requests.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#accept_retry_after_enabled ApiManagementBackend#accept_retry_after_enabled}
   */
   readonly acceptRetryAfterEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#name ApiManagementBackend#name}
+  * The name of the circuit breaker rule.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#name ApiManagementBackend#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#trip_duration ApiManagementBackend#trip_duration}
+  * The duration for which the circuit remains open before retrying, in ISO 8601 format.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#trip_duration ApiManagementBackend#trip_duration}
   */
   readonly tripDuration: string;
   /**
   * failure_condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#failure_condition ApiManagementBackend#failure_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#failure_condition ApiManagementBackend#failure_condition}
   */
   readonly failureCondition: ApiManagementBackendCircuitBreakerRuleFailureCondition;
 }
@@ -624,11 +654,15 @@ export class ApiManagementBackendCircuitBreakerRuleOutputReference extends cdktn
 }
 export interface ApiManagementBackendCredentialsAuthorization {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#parameter ApiManagementBackend#parameter}
+  * The authentication Parameter value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#parameter ApiManagementBackend#parameter}
   */
   readonly parameter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#scheme ApiManagementBackend#scheme}
+  * The authentication Scheme name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#scheme ApiManagementBackend#scheme}
   */
   readonly scheme?: string;
 }
@@ -741,21 +775,27 @@ export class ApiManagementBackendCredentialsAuthorizationOutputReference extends
 }
 export interface ApiManagementBackendCredentials {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#certificate ApiManagementBackend#certificate}
+  * A list of client certificate thumbprints to present to the backend host. The certificates must exist within the API Management Service.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#certificate ApiManagementBackend#certificate}
   */
   readonly certificate?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#header ApiManagementBackend#header}
+  * A mapping of header parameters to pass to the backend host. The keys are the header names and the values are a comma separated string of header values. This is converted to a list before being passed to the API.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#header ApiManagementBackend#header}
   */
   readonly header?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#query ApiManagementBackend#query}
+  * A mapping of query parameters to pass to the backend host. The keys are the query names and the values are a comma separated string of query values. This is converted to a list before being passed to the API.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#query ApiManagementBackend#query}
   */
   readonly query?: { [key: string]: string };
   /**
   * authorization block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#authorization ApiManagementBackend#authorization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#authorization ApiManagementBackend#authorization}
   */
   readonly authorization?: ApiManagementBackendCredentialsAuthorization;
 }
@@ -926,15 +966,21 @@ export class ApiManagementBackendCredentialsOutputReference extends cdktn.Comple
 }
 export interface ApiManagementBackendProxy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#password ApiManagementBackend#password}
+  * The password to connect to the proxy server.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#password ApiManagementBackend#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#url ApiManagementBackend#url}
+  * The URL of the proxy server.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#url ApiManagementBackend#url}
   */
   readonly url: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#username ApiManagementBackend#username}
+  * The username to connect to the proxy server.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#username ApiManagementBackend#username}
   */
   readonly username?: string;
 }
@@ -1073,11 +1119,15 @@ export class ApiManagementBackendProxyOutputReference extends cdktn.ComplexObjec
 }
 export interface ApiManagementBackendServiceFabricClusterServerX509Name {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#issuer_certificate_thumbprint ApiManagementBackend#issuer_certificate_thumbprint}
+  * The thumbprint for the issuer of the certificate.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#issuer_certificate_thumbprint ApiManagementBackend#issuer_certificate_thumbprint}
   */
   readonly issuerCertificateThumbprint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#name ApiManagementBackend#name}
+  * The common name of the certificate.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#name ApiManagementBackend#name}
   */
   readonly name: string;
 }
@@ -1216,29 +1266,39 @@ export class ApiManagementBackendServiceFabricClusterServerX509NameList extends 
 }
 export interface ApiManagementBackendServiceFabricCluster {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#client_certificate_id ApiManagementBackend#client_certificate_id}
+  * The client certificate resource ID for the management endpoint.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#client_certificate_id ApiManagementBackend#client_certificate_id}
   */
   readonly clientCertificateId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#client_certificate_thumbprint ApiManagementBackend#client_certificate_thumbprint}
+  * The client certificate thumbprint for the management endpoint.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#client_certificate_thumbprint ApiManagementBackend#client_certificate_thumbprint}
   */
   readonly clientCertificateThumbprint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#management_endpoints ApiManagementBackend#management_endpoints}
+  * A list of cluster management endpoints.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#management_endpoints ApiManagementBackend#management_endpoints}
   */
   readonly managementEndpoints: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#max_partition_resolution_retries ApiManagementBackend#max_partition_resolution_retries}
+  * The maximum number of retries when attempting resolve the partition.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#max_partition_resolution_retries ApiManagementBackend#max_partition_resolution_retries}
   */
   readonly maxPartitionResolutionRetries: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#server_certificate_thumbprints ApiManagementBackend#server_certificate_thumbprints}
+  * A list of thumbprints of the server certificates of the Service Fabric Cluster.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#server_certificate_thumbprints ApiManagementBackend#server_certificate_thumbprints}
   */
   readonly serverCertificateThumbprints?: string[];
   /**
   * server_x509_name block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#server_x509_name ApiManagementBackend#server_x509_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#server_x509_name ApiManagementBackend#server_x509_name}
   */
   readonly serverX509Name?: ApiManagementBackendServiceFabricClusterServerX509Name[] | cdktn.IResolvable;
 }
@@ -1461,19 +1521,19 @@ export class ApiManagementBackendServiceFabricClusterOutputReference extends cdk
 }
 export interface ApiManagementBackendTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#create ApiManagementBackend#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#create ApiManagementBackend#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#delete ApiManagementBackend#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#delete ApiManagementBackend#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#read ApiManagementBackend#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#read ApiManagementBackend#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#update ApiManagementBackend#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#update ApiManagementBackend#update}
   */
   readonly update?: string;
 }
@@ -1654,11 +1714,15 @@ export class ApiManagementBackendTimeoutsOutputReference extends cdktn.ComplexOb
 }
 export interface ApiManagementBackendTls {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#validate_certificate_chain ApiManagementBackend#validate_certificate_chain}
+  * Flag indicating whether SSL certificate chain validation should be done when using self-signed certificates for the backend host.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#validate_certificate_chain ApiManagementBackend#validate_certificate_chain}
   */
   readonly validateCertificateChain?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#validate_certificate_name ApiManagementBackend#validate_certificate_name}
+  * Flag indicating whether SSL certificate name validation should be done when using self-signed certificates for the backend host.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#validate_certificate_name ApiManagementBackend#validate_certificate_name}
   */
   readonly validateCertificateName?: boolean | cdktn.IResolvable;
 }
@@ -1771,7 +1835,7 @@ export class ApiManagementBackendTlsOutputReference extends cdktn.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend azurerm_api_management_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend azurerm_api_management_backend}
 */
 export class ApiManagementBackend extends cdktn.TerraformResource {
 
@@ -1787,7 +1851,7 @@ export class ApiManagementBackend extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApiManagementBackend resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiManagementBackend to import
-  * @param importFromId The id of the existing ApiManagementBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiManagementBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiManagementBackend to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1799,7 +1863,7 @@ export class ApiManagementBackend extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_backend azurerm_api_management_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_backend azurerm_api_management_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1810,7 +1874,7 @@ export class ApiManagementBackend extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_api_management_backend',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '5.14.0',
+        providerVersion: '5.15.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

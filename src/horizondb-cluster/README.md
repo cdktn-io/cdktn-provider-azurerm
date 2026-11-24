@@ -1,0 +1,3 @@
+# `azurerm_horizondb_cluster`
+
+Refer to the Terraform Registry for docs: [`azurerm_horizondb_cluster`](https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/horizondb_cluster).
