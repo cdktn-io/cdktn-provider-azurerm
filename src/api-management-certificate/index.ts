@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_certificate
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,62 +13,72 @@ import * as cdktn from 'cdktn';
 
 export interface ApiManagementCertificateAConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_certificate#api_management_name ApiManagementCertificateA#api_management_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_certificate#api_management_name ApiManagementCertificateA#api_management_name}
   */
   readonly apiManagementName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_certificate#data ApiManagementCertificateA#data}
+  * The base-64 encoded certificate data, which must be a PFX file.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_certificate#data ApiManagementCertificateA#data}
   */
   readonly data?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_certificate#id ApiManagementCertificateA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_certificate#id ApiManagementCertificateA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_certificate#key_vault_identity_client_id ApiManagementCertificateA#key_vault_identity_client_id}
+  * The Client ID of the User Assigned Managed Identity to use for retrieving certificate.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_certificate#key_vault_identity_client_id ApiManagementCertificateA#key_vault_identity_client_id}
   */
   readonly keyVaultIdentityClientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_certificate#key_vault_secret_id ApiManagementCertificateA#key_vault_secret_id}
+  * The ID of the Key Vault Secret containing the SSL Certificate, which must be of the type `application/x-pkcs12`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_certificate#key_vault_secret_id ApiManagementCertificateA#key_vault_secret_id}
   */
   readonly keyVaultSecretId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_certificate#name ApiManagementCertificateA#name}
+  * The name of the API Management Certificate.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_certificate#name ApiManagementCertificateA#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_certificate#password ApiManagementCertificateA#password}
+  * The password used for this certificate.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_certificate#password ApiManagementCertificateA#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_certificate#resource_group_name ApiManagementCertificateA#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_certificate#resource_group_name ApiManagementCertificateA#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_certificate#timeouts ApiManagementCertificateA#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_certificate#timeouts ApiManagementCertificateA#timeouts}
   */
   readonly timeouts?: ApiManagementCertificateTimeouts;
 }
 export interface ApiManagementCertificateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_certificate#create ApiManagementCertificateA#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_certificate#create ApiManagementCertificateA#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_certificate#delete ApiManagementCertificateA#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_certificate#delete ApiManagementCertificateA#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_certificate#read ApiManagementCertificateA#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_certificate#read ApiManagementCertificateA#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_certificate#update ApiManagementCertificateA#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_certificate#update ApiManagementCertificateA#update}
   */
   readonly update?: string;
 }
@@ -249,7 +259,7 @@ export class ApiManagementCertificateTimeoutsOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_certificate azurerm_api_management_certificate}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_certificate azurerm_api_management_certificate}
 */
 export class ApiManagementCertificateA extends cdktn.TerraformResource {
 
@@ -265,7 +275,7 @@ export class ApiManagementCertificateA extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApiManagementCertificateA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiManagementCertificateA to import
-  * @param importFromId The id of the existing ApiManagementCertificateA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_certificate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiManagementCertificateA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiManagementCertificateA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -277,7 +287,7 @@ export class ApiManagementCertificateA extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_certificate azurerm_api_management_certificate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_certificate azurerm_api_management_certificate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -288,7 +298,7 @@ export class ApiManagementCertificateA extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_api_management_certificate',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '5.14.0',
+        providerVersion: '5.15.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

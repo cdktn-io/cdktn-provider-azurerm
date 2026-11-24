@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_named_value
+// https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_named_value
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,68 +13,78 @@ import * as cdktn from 'cdktn';
 
 export interface ApiManagementNamedValueConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_named_value#api_management_name ApiManagementNamedValue#api_management_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_named_value#api_management_name ApiManagementNamedValue#api_management_name}
   */
   readonly apiManagementName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_named_value#display_name ApiManagementNamedValue#display_name}
+  * The display name of this API Management Named Value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_named_value#display_name ApiManagementNamedValue#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_named_value#id ApiManagementNamedValue#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_named_value#id ApiManagementNamedValue#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_named_value#name ApiManagementNamedValue#name}
+  * The name of the API Management Named Value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_named_value#name ApiManagementNamedValue#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_named_value#resource_group_name ApiManagementNamedValue#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_named_value#resource_group_name ApiManagementNamedValue#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_named_value#secret ApiManagementNamedValue#secret}
+  * Whether the API Management Named Value is secret.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_named_value#secret ApiManagementNamedValue#secret}
   */
   readonly secret?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_named_value#tags ApiManagementNamedValue#tags}
+  * A list of tags to be applied to the API Management Named Value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_named_value#tags ApiManagementNamedValue#tags}
   */
   readonly tags?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_named_value#value ApiManagementNamedValue#value}
+  * The value of this API Management Named Value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_named_value#value ApiManagementNamedValue#value}
   */
   readonly value?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_named_value#timeouts ApiManagementNamedValue#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_named_value#timeouts ApiManagementNamedValue#timeouts}
   */
   readonly timeouts?: ApiManagementNamedValueTimeouts;
   /**
   * value_from_key_vault block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_named_value#value_from_key_vault ApiManagementNamedValue#value_from_key_vault}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_named_value#value_from_key_vault ApiManagementNamedValue#value_from_key_vault}
   */
   readonly valueFromKeyVault?: ApiManagementNamedValueValueFromKeyVault;
 }
 export interface ApiManagementNamedValueTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_named_value#create ApiManagementNamedValue#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_named_value#create ApiManagementNamedValue#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_named_value#delete ApiManagementNamedValue#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_named_value#delete ApiManagementNamedValue#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_named_value#read ApiManagementNamedValue#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_named_value#read ApiManagementNamedValue#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_named_value#update ApiManagementNamedValue#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_named_value#update ApiManagementNamedValue#update}
   */
   readonly update?: string;
 }
@@ -255,11 +265,15 @@ export class ApiManagementNamedValueTimeoutsOutputReference extends cdktn.Comple
 }
 export interface ApiManagementNamedValueValueFromKeyVault {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_named_value#identity_client_id ApiManagementNamedValue#identity_client_id}
+  * The client ID of User Assigned Identity, for the API Management Service, which will be used to access the Key Vault Secret. The System Assigned Identity will be used in absence.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_named_value#identity_client_id ApiManagementNamedValue#identity_client_id}
   */
   readonly identityClientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_named_value#secret_id ApiManagementNamedValue#secret_id}
+  * The resource ID of the Key Vault Secret.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_named_value#secret_id ApiManagementNamedValue#secret_id}
   */
   readonly secretId: string;
 }
@@ -369,7 +383,7 @@ export class ApiManagementNamedValueValueFromKeyVaultOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_named_value azurerm_api_management_named_value}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_named_value azurerm_api_management_named_value}
 */
 export class ApiManagementNamedValue extends cdktn.TerraformResource {
 
@@ -385,7 +399,7 @@ export class ApiManagementNamedValue extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApiManagementNamedValue resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiManagementNamedValue to import
-  * @param importFromId The id of the existing ApiManagementNamedValue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_named_value#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiManagementNamedValue that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_named_value#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiManagementNamedValue to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -397,7 +411,7 @@ export class ApiManagementNamedValue extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_named_value azurerm_api_management_named_value} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_named_value azurerm_api_management_named_value} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -408,7 +422,7 @@ export class ApiManagementNamedValue extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_api_management_named_value',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '5.14.0',
+        providerVersion: '5.15.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

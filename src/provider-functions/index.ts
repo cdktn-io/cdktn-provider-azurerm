@@ -21,8 +21,8 @@ export class AzurermProviderFunctions {
   }
 
   /**
-  * Parses and attempts to normalise the casing on an Azure Resource Manager ID into the correct casing for Terraform
-  * @param {string} id - Resource ID
+  * Parses and attempts to normalise the casing on an Azure Resource Manager ID into the correct casing for Terraform.
+  * @param {string} id - Resource ID.
   * @returns {string}
   */
   public normaliseResourceId(id: string): string {
@@ -30,8 +30,8 @@ export class AzurermProviderFunctions {
   }
 
   /**
-  * Parses an Azure Resource Manager ID and exposes the contained information
-  * @param {string} id - Resource ID
+  * Parses an Azure Resource Manager ID and exposes the contained information.
+  * @param {string} id - Resource ID.
   * @returns {object}
   */
   public parseResourceId(id: string): cdktn.IResolvable {
