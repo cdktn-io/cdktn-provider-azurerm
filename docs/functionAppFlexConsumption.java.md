@@ -4,7 +4,7 @@
 
 ### FunctionAppFlexConsumption <a name="FunctionAppFlexConsumption" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption azurerm_function_app_flex_consumption}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption azurerm_function_app_flex_consumption}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer"></a>
 
@@ -67,39 +67,39 @@ FunctionAppFlexConsumption.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#location FunctionAppFlexConsumption#location}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Specifies the name of the Function App. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#resource_group_name FunctionAppFlexConsumption#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.runtimeName">runtimeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#runtime_name FunctionAppFlexConsumption#runtime_name}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.runtimeVersion">runtimeVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#runtime_version FunctionAppFlexConsumption#runtime_version}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#location FunctionAppFlexConsumption#location}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the Function App. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#resource_group_name FunctionAppFlexConsumption#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.runtimeName">runtimeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#runtime_name FunctionAppFlexConsumption#runtime_name}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.runtimeVersion">runtimeVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#runtime_version FunctionAppFlexConsumption#runtime_version}. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.servicePlanId">servicePlanId</a></code> | <code>java.lang.String</code> | The ID of the App Service Plan within which to create this Function App. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.siteConfig">siteConfig</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig">FunctionAppFlexConsumptionSiteConfig</a></code> | site_config block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.storageAuthenticationType">storageAuthenticationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#storage_authentication_type FunctionAppFlexConsumption#storage_authentication_type}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.storageContainerEndpoint">storageContainerEndpoint</a></code> | <code>java.lang.String</code> | The endpoint of the storage container where the function app's code is hosted. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.storageContainerType">storageContainerType</a></code> | <code>java.lang.String</code> | The type of the storage container where the function app's code is hosted. Only `blobContainer` is supported currently. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.storageAuthenticationType">storageAuthenticationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#storage_authentication_type FunctionAppFlexConsumption#storage_authentication_type}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.storageContainerEndpoint">storageContainerEndpoint</a></code> | <code>java.lang.String</code> | The endpoint of the Storage Container where the Function App's code is hosted. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.storageContainerType">storageContainerType</a></code> | <code>java.lang.String</code> | The type of the Storage Container where the Function App's code is hosted. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.alwaysReady">alwaysReady</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAlwaysReady">FunctionAppFlexConsumptionAlwaysReady</a>></code> | always_ready block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.appSettings">appSettings</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A map of key-value pairs for [App Settings](https://docs.microsoft.com/azure/azure-functions/functions-app-settings) and custom values. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.appSettings">appSettings</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A map of key-value pairs for [App Settings](https://learn.microsoft.com/azure/azure-functions/functions-app-settings) and custom values. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.authSettings">authSettings</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings">FunctionAppFlexConsumptionAuthSettings</a></code> | auth_settings block. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.authSettingsV2">authSettingsV2</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2">FunctionAppFlexConsumptionAuthSettingsV2</a></code> | auth_settings_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.clientCertificateEnabled">clientCertificateEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the function app use Client Certificates. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.clientCertificateExclusionPaths">clientCertificateExclusionPaths</a></code> | <code>java.lang.String</code> | Paths to exclude when using client certificates, separated by ; |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.clientCertificateEnabled">clientCertificateEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the Function App use Client Certificates? |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.clientCertificateExclusionPaths">clientCertificateExclusionPaths</a></code> | <code>java.lang.String</code> | Paths to exclude when using client certificates, separated by `;`. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.clientCertificateMode">clientCertificateMode</a></code> | <code>java.lang.String</code> | The mode of the Function App's client certificates requirement for incoming requests. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.connectionString">connectionString</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConnectionString">FunctionAppFlexConsumptionConnectionString</a>></code> | connection_string block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Is the Function App enabled. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.httpConcurrency">httpConcurrency</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#http_concurrency FunctionAppFlexConsumption#http_concurrency}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Is the Function App enabled? |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.httpConcurrency">httpConcurrency</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#http_concurrency FunctionAppFlexConsumption#http_concurrency}. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.httpsOnly">httpsOnly</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Can the Function App only be accessed via HTTPS? |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#id FunctionAppFlexConsumption#id}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#id FunctionAppFlexConsumption#id}. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionIdentity">FunctionAppFlexConsumptionIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.instanceMemoryInMb">instanceMemoryInMb</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#instance_memory_in_mb FunctionAppFlexConsumption#instance_memory_in_mb}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.maximumInstanceCount">maximumInstanceCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#maximum_instance_count FunctionAppFlexConsumption#maximum_instance_count}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#public_network_access_enabled FunctionAppFlexConsumption#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.instanceMemoryInMb">instanceMemoryInMb</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#instance_memory_in_mb FunctionAppFlexConsumption#instance_memory_in_mb}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.maximumInstanceCount">maximumInstanceCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#maximum_instance_count FunctionAppFlexConsumption#maximum_instance_count}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#public_network_access_enabled FunctionAppFlexConsumption#public_network_access_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.stickySettings">stickySettings</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionStickySettings">FunctionAppFlexConsumptionStickySettings</a></code> | sticky_settings block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.storageAccessKey">storageAccessKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#storage_access_key FunctionAppFlexConsumption#storage_access_key}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.storageUserAssignedIdentityId">storageUserAssignedIdentityId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#storage_user_assigned_identity_id FunctionAppFlexConsumption#storage_user_assigned_identity_id}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#tags FunctionAppFlexConsumption#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.storageAccessKey">storageAccessKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#storage_access_key FunctionAppFlexConsumption#storage_access_key}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.storageUserAssignedIdentityId">storageUserAssignedIdentityId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#storage_user_assigned_identity_id FunctionAppFlexConsumption#storage_user_assigned_identity_id}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#tags FunctionAppFlexConsumption#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionTimeouts">FunctionAppFlexConsumptionTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.virtualNetworkSubnetId">virtualNetworkSubnetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#virtual_network_subnet_id FunctionAppFlexConsumption#virtual_network_subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.webdeployPublishBasicAuthenticationEnabled">webdeployPublishBasicAuthenticationEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#webdeploy_publish_basic_authentication_enabled FunctionAppFlexConsumption#webdeploy_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.virtualNetworkSubnetId">virtualNetworkSubnetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#virtual_network_subnet_id FunctionAppFlexConsumption#virtual_network_subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.webdeployPublishBasicAuthenticationEnabled">webdeployPublishBasicAuthenticationEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#webdeploy_publish_basic_authentication_enabled FunctionAppFlexConsumption#webdeploy_publish_basic_authentication_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer.parameter.zipDeployFile">zipDeployFile</a></code> | <code>java.lang.String</code> | The local path and filename of the Zip packaged application to deploy to this Function App. |
 
 ---
@@ -168,7 +168,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#location FunctionAppFlexConsumption#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#location FunctionAppFlexConsumption#location}.
 
 ---
 
@@ -176,9 +176,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Specifies the name of the Function App.
+The name of the Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#name FunctionAppFlexConsumption#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#name FunctionAppFlexConsumption#name}
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#resource_group_name FunctionAppFlexConsumption#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#resource_group_name FunctionAppFlexConsumption#resource_group_name}.
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#runtime_name FunctionAppFlexConsumption#runtime_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#runtime_name FunctionAppFlexConsumption#runtime_name}.
 
 ---
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#runtime_version FunctionAppFlexConsumption#runtime_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#runtime_version FunctionAppFlexConsumption#runtime_version}.
 
 ---
 
@@ -212,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the App Service Plan within which to create this Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#service_plan_id FunctionAppFlexConsumption#service_plan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#service_plan_id FunctionAppFlexConsumption#service_plan_id}
 
 ---
 
@@ -222,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 site_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#site_config FunctionAppFlexConsumption#site_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#site_config FunctionAppFlexConsumption#site_config}
 
 ---
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#storage_authentication_type FunctionAppFlexConsumption#storage_authentication_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#storage_authentication_type FunctionAppFlexConsumption#storage_authentication_type}.
 
 ---
 
@@ -238,9 +238,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-The endpoint of the storage container where the function app's code is hosted.
+The endpoint of the Storage Container where the Function App's code is hosted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#storage_container_endpoint FunctionAppFlexConsumption#storage_container_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#storage_container_endpoint FunctionAppFlexConsumption#storage_container_endpoint}
 
 ---
 
@@ -248,9 +248,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-The type of the storage container where the function app's code is hosted. Only `blobContainer` is supported currently.
+The type of the Storage Container where the Function App's code is hosted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#storage_container_type FunctionAppFlexConsumption#storage_container_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#storage_container_type FunctionAppFlexConsumption#storage_container_type}
 
 ---
 
@@ -260,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 always_ready block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#always_ready FunctionAppFlexConsumption#always_ready}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#always_ready FunctionAppFlexConsumption#always_ready}
 
 ---
 
@@ -268,9 +268,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-A map of key-value pairs for [App Settings](https://docs.microsoft.com/azure/azure-functions/functions-app-settings) and custom values.
+A map of key-value pairs for [App Settings](https://learn.microsoft.com/azure/azure-functions/functions-app-settings) and custom values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#app_settings FunctionAppFlexConsumption#app_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#app_settings FunctionAppFlexConsumption#app_settings}
 
 ---
 
@@ -280,7 +280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 auth_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#auth_settings FunctionAppFlexConsumption#auth_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#auth_settings FunctionAppFlexConsumption#auth_settings}
 
 ---
 
@@ -290,7 +290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 auth_settings_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#auth_settings_v2 FunctionAppFlexConsumption#auth_settings_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#auth_settings_v2 FunctionAppFlexConsumption#auth_settings_v2}
 
 ---
 
@@ -298,9 +298,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Should the function app use Client Certificates.
+Should the Function App use Client Certificates?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_certificate_enabled FunctionAppFlexConsumption#client_certificate_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_certificate_enabled FunctionAppFlexConsumption#client_certificate_enabled}
 
 ---
 
@@ -308,9 +308,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Paths to exclude when using client certificates, separated by ;
+Paths to exclude when using client certificates, separated by `;`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_certificate_exclusion_paths FunctionAppFlexConsumption#client_certificate_exclusion_paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_certificate_exclusion_paths FunctionAppFlexConsumption#client_certificate_exclusion_paths}
 
 ---
 
@@ -320,9 +320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The mode of the Function App's client certificates requirement for incoming requests.
 
-Possible values are `Required`, `Optional`, and `OptionalInteractiveUser`
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_certificate_mode FunctionAppFlexConsumption#client_certificate_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_certificate_mode FunctionAppFlexConsumption#client_certificate_mode}
 
 ---
 
@@ -332,7 +330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 connection_string block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#connection_string FunctionAppFlexConsumption#connection_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#connection_string FunctionAppFlexConsumption#connection_string}
 
 ---
 
@@ -340,9 +338,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Is the Function App enabled.
+Is the Function App enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#enabled FunctionAppFlexConsumption#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#enabled FunctionAppFlexConsumption#enabled}
 
 ---
 
@@ -350,7 +348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#http_concurrency FunctionAppFlexConsumption#http_concurrency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#http_concurrency FunctionAppFlexConsumption#http_concurrency}.
 
 ---
 
@@ -360,7 +358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Can the Function App only be accessed via HTTPS?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#https_only FunctionAppFlexConsumption#https_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#https_only FunctionAppFlexConsumption#https_only}
 
 ---
 
@@ -368,7 +366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#id FunctionAppFlexConsumption#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#id FunctionAppFlexConsumption#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -381,7 +379,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#identity FunctionAppFlexConsumption#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#identity FunctionAppFlexConsumption#identity}
 
 ---
 
@@ -389,7 +387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#instance_memory_in_mb FunctionAppFlexConsumption#instance_memory_in_mb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#instance_memory_in_mb FunctionAppFlexConsumption#instance_memory_in_mb}.
 
 ---
 
@@ -397,7 +395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#maximum_instance_count FunctionAppFlexConsumption#maximum_instance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#maximum_instance_count FunctionAppFlexConsumption#maximum_instance_count}.
 
 ---
 
@@ -405,7 +403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#public_network_access_enabled FunctionAppFlexConsumption#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#public_network_access_enabled FunctionAppFlexConsumption#public_network_access_enabled}.
 
 ---
 
@@ -415,7 +413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 sticky_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#sticky_settings FunctionAppFlexConsumption#sticky_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#sticky_settings FunctionAppFlexConsumption#sticky_settings}
 
 ---
 
@@ -423,7 +421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#storage_access_key FunctionAppFlexConsumption#storage_access_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#storage_access_key FunctionAppFlexConsumption#storage_access_key}.
 
 ---
 
@@ -431,7 +429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#storage_user_assigned_identity_id FunctionAppFlexConsumption#storage_user_assigned_identity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#storage_user_assigned_identity_id FunctionAppFlexConsumption#storage_user_assigned_identity_id}.
 
 ---
 
@@ -439,7 +437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#tags FunctionAppFlexConsumption#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#tags FunctionAppFlexConsumption#tags}.
 
 ---
 
@@ -449,7 +447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#timeouts FunctionAppFlexConsumption#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#timeouts FunctionAppFlexConsumption#timeouts}
 
 ---
 
@@ -457,7 +455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#virtual_network_subnet_id FunctionAppFlexConsumption#virtual_network_subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#virtual_network_subnet_id FunctionAppFlexConsumption#virtual_network_subnet_id}.
 
 ---
 
@@ -465,7 +463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#webdeploy_publish_basic_authentication_enabled FunctionAppFlexConsumption#webdeploy_publish_basic_authentication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#webdeploy_publish_basic_authentication_enabled FunctionAppFlexConsumption#webdeploy_publish_basic_authentication_enabled}.
 
 ---
 
@@ -477,7 +475,7 @@ The local path and filename of the Zip packaged application to deploy to this Fu
 
 **Note:** Using this value requires either `WEBSITE_RUN_FROM_PACKAGE=1` or `SCM_DO_BUILD_DURING_DEPLOYMENT=true` to be set on the App in `app_settings`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#zip_deploy_file FunctionAppFlexConsumption#zip_deploy_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#zip_deploy_file FunctionAppFlexConsumption#zip_deploy_file}
 
 ---
 
@@ -1198,7 +1196,7 @@ The construct id used in the generated config for the FunctionAppFlexConsumption
 
 The id of the existing FunctionAppFlexConsumption that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2257,8 +2255,8 @@ FunctionAppFlexConsumptionAlwaysReady.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAlwaysReady.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#name FunctionAppFlexConsumption#name}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAlwaysReady.property.instanceCount">instanceCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#instance_count FunctionAppFlexConsumption#instance_count}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAlwaysReady.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#name FunctionAppFlexConsumption#name}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAlwaysReady.property.instanceCount">instanceCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#instance_count FunctionAppFlexConsumption#instance_count}. |
 
 ---
 
@@ -2270,7 +2268,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#name FunctionAppFlexConsumption#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#name FunctionAppFlexConsumption#name}.
 
 ---
 
@@ -2282,7 +2280,7 @@ public java.lang.Number getInstanceCount();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#instance_count FunctionAppFlexConsumption#instance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#instance_count FunctionAppFlexConsumption#instance_count}.
 
 ---
 
@@ -2318,8 +2316,8 @@ FunctionAppFlexConsumptionAuthSettings.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the Authentication / Authorization feature be enabled? |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings.property.activeDirectory">activeDirectory</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsActiveDirectory">FunctionAppFlexConsumptionAuthSettingsActiveDirectory</a></code> | active_directory block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings.property.additionalLoginParameters">additionalLoginParameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Specifies a map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings.property.allowedExternalRedirectUrls">allowedExternalRedirectUrls</a></code> | <code>java.util.List<java.lang.String></code> | Specifies a list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings.property.additionalLoginParameters">additionalLoginParameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings.property.allowedExternalRedirectUrls">allowedExternalRedirectUrls</a></code> | <code>java.util.List<java.lang.String></code> | A list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings.property.defaultProvider">defaultProvider</a></code> | <code>java.lang.String</code> | The default authentication provider to use when multiple providers are configured. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings.property.facebook">facebook</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsFacebook">FunctionAppFlexConsumptionAuthSettingsFacebook</a></code> | facebook block. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings.property.github">github</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGithub">FunctionAppFlexConsumptionAuthSettingsGithub</a></code> | github block. |
@@ -2328,9 +2326,9 @@ FunctionAppFlexConsumptionAuthSettings.builder()
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings.property.microsoft">microsoft</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsMicrosoft">FunctionAppFlexConsumptionAuthSettingsMicrosoft</a></code> | microsoft block. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings.property.runtimeVersion">runtimeVersion</a></code> | <code>java.lang.String</code> | The RuntimeVersion of the Authentication / Authorization feature in use. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings.property.tokenRefreshExtensionHours">tokenRefreshExtensionHours</a></code> | <code>java.lang.Number</code> | The number of hours after session token expiration that a session token can be used to call the token refresh API. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings.property.tokenStoreEnabled">tokenStoreEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings.property.tokenStoreEnabled">tokenStoreEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings.property.twitter">twitter</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsTwitter">FunctionAppFlexConsumptionAuthSettingsTwitter</a></code> | twitter block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings.property.unauthenticatedClientAction">unauthenticatedClientAction</a></code> | <code>java.lang.String</code> | The action to take when an unauthenticated client attempts to access the app. Possible values include: `RedirectToLoginPage`, `AllowAnonymous`. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings.property.unauthenticatedClientAction">unauthenticatedClientAction</a></code> | <code>java.lang.String</code> | The action to take when an unauthenticated client attempts to access the app. |
 
 ---
 
@@ -2344,7 +2342,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Should the Authentication / Authorization feature be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#enabled FunctionAppFlexConsumption#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#enabled FunctionAppFlexConsumption#enabled}
 
 ---
 
@@ -2358,7 +2356,7 @@ public FunctionAppFlexConsumptionAuthSettingsActiveDirectory getActiveDirectory(
 
 active_directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#active_directory FunctionAppFlexConsumption#active_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#active_directory FunctionAppFlexConsumption#active_directory}
 
 ---
 
@@ -2370,9 +2368,9 @@ public java.util.Map<java.lang.String, java.lang.String> getAdditionalLoginParam
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Specifies a map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in.
+A map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#additional_login_parameters FunctionAppFlexConsumption#additional_login_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#additional_login_parameters FunctionAppFlexConsumption#additional_login_parameters}
 
 ---
 
@@ -2384,9 +2382,9 @@ public java.util.List<java.lang.String> getAllowedExternalRedirectUrls();
 
 - *Type:* java.util.List<java.lang.String>
 
-Specifies a list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App.
+A list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#allowed_external_redirect_urls FunctionAppFlexConsumption#allowed_external_redirect_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#allowed_external_redirect_urls FunctionAppFlexConsumption#allowed_external_redirect_urls}
 
 ---
 
@@ -2400,9 +2398,7 @@ public java.lang.String getDefaultProvider();
 
 The default authentication provider to use when multiple providers are configured.
 
-Possible values include: `AzureActiveDirectory`, `Facebook`, `Google`, `MicrosoftAccount`, `Twitter`, `Github`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#default_provider FunctionAppFlexConsumption#default_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#default_provider FunctionAppFlexConsumption#default_provider}
 
 ---
 
@@ -2416,7 +2412,7 @@ public FunctionAppFlexConsumptionAuthSettingsFacebook getFacebook();
 
 facebook block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#facebook FunctionAppFlexConsumption#facebook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#facebook FunctionAppFlexConsumption#facebook}
 
 ---
 
@@ -2430,7 +2426,7 @@ public FunctionAppFlexConsumptionAuthSettingsGithub getGithub();
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#github FunctionAppFlexConsumption#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#github FunctionAppFlexConsumption#github}
 
 ---
 
@@ -2444,7 +2440,7 @@ public FunctionAppFlexConsumptionAuthSettingsGoogle getGoogle();
 
 google block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#google FunctionAppFlexConsumption#google}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#google FunctionAppFlexConsumption#google}
 
 ---
 
@@ -2458,7 +2454,7 @@ public java.lang.String getIssuer();
 
 The OpenID Connect Issuer URI that represents the entity which issues access tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#issuer FunctionAppFlexConsumption#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#issuer FunctionAppFlexConsumption#issuer}
 
 ---
 
@@ -2472,7 +2468,7 @@ public FunctionAppFlexConsumptionAuthSettingsMicrosoft getMicrosoft();
 
 microsoft block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#microsoft FunctionAppFlexConsumption#microsoft}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#microsoft FunctionAppFlexConsumption#microsoft}
 
 ---
 
@@ -2486,7 +2482,7 @@ public java.lang.String getRuntimeVersion();
 
 The RuntimeVersion of the Authentication / Authorization feature in use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#runtime_version FunctionAppFlexConsumption#runtime_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#runtime_version FunctionAppFlexConsumption#runtime_version}
 
 ---
 
@@ -2500,9 +2496,7 @@ public java.lang.Number getTokenRefreshExtensionHours();
 
 The number of hours after session token expiration that a session token can be used to call the token refresh API.
 
-Defaults to `72` hours.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#token_refresh_extension_hours FunctionAppFlexConsumption#token_refresh_extension_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#token_refresh_extension_hours FunctionAppFlexConsumption#token_refresh_extension_hours}
 
 ---
 
@@ -2514,9 +2508,9 @@ public java.lang.Boolean|IResolvable getTokenStoreEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`.
+Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#token_store_enabled FunctionAppFlexConsumption#token_store_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#token_store_enabled FunctionAppFlexConsumption#token_store_enabled}
 
 ---
 
@@ -2530,7 +2524,7 @@ public FunctionAppFlexConsumptionAuthSettingsTwitter getTwitter();
 
 twitter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#twitter FunctionAppFlexConsumption#twitter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#twitter FunctionAppFlexConsumption#twitter}
 
 ---
 
@@ -2542,9 +2536,9 @@ public java.lang.String getUnauthenticatedClientAction();
 
 - *Type:* java.lang.String
 
-The action to take when an unauthenticated client attempts to access the app. Possible values include: `RedirectToLoginPage`, `AllowAnonymous`.
+The action to take when an unauthenticated client attempts to access the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#unauthenticated_client_action FunctionAppFlexConsumption#unauthenticated_client_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#unauthenticated_client_action FunctionAppFlexConsumption#unauthenticated_client_action}
 
 ---
 
@@ -2568,9 +2562,9 @@ FunctionAppFlexConsumptionAuthSettingsActiveDirectory.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsActiveDirectory.property.clientId">clientId</a></code> | <code>java.lang.String</code> | The ID of the Client to use to authenticate with Azure Active Directory. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsActiveDirectory.property.allowedAudiences">allowedAudiences</a></code> | <code>java.util.List<java.lang.String></code> | Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsActiveDirectory.property.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | The Client Secret for the Client ID. Cannot be used with `client_secret_setting_name`. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsActiveDirectory.property.clientSecretSettingName">clientSecretSettingName</a></code> | <code>java.lang.String</code> | The App Setting name that contains the client secret of the Client. Cannot be used with `client_secret`. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsActiveDirectory.property.allowedAudiences">allowedAudiences</a></code> | <code>java.util.List<java.lang.String></code> | A list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsActiveDirectory.property.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | The Client Secret for the Client ID. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsActiveDirectory.property.clientSecretSettingName">clientSecretSettingName</a></code> | <code>java.lang.String</code> | The App Setting name that contains the client secret of the Client. |
 
 ---
 
@@ -2584,7 +2578,7 @@ public java.lang.String getClientId();
 
 The ID of the Client to use to authenticate with Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
 
 ---
 
@@ -2596,9 +2590,9 @@ public java.util.List<java.lang.String> getAllowedAudiences();
 
 - *Type:* java.util.List<java.lang.String>
 
-Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
+A list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#allowed_audiences FunctionAppFlexConsumption#allowed_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#allowed_audiences FunctionAppFlexConsumption#allowed_audiences}
 
 ---
 
@@ -2610,9 +2604,9 @@ public java.lang.String getClientSecret();
 
 - *Type:* java.lang.String
 
-The Client Secret for the Client ID. Cannot be used with `client_secret_setting_name`.
+The Client Secret for the Client ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_secret FunctionAppFlexConsumption#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_secret FunctionAppFlexConsumption#client_secret}
 
 ---
 
@@ -2624,9 +2618,9 @@ public java.lang.String getClientSecretSettingName();
 
 - *Type:* java.lang.String
 
-The App Setting name that contains the client secret of the Client. Cannot be used with `client_secret`.
+The App Setting name that contains the client secret of the Client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_secret_setting_name FunctionAppFlexConsumption#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_secret_setting_name FunctionAppFlexConsumption#client_secret_setting_name}
 
 ---
 
@@ -2650,9 +2644,9 @@ FunctionAppFlexConsumptionAuthSettingsFacebook.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsFacebook.property.appId">appId</a></code> | <code>java.lang.String</code> | The App ID of the Facebook app used for login. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsFacebook.property.appSecret">appSecret</a></code> | <code>java.lang.String</code> | The App Secret of the Facebook app used for Facebook Login. Cannot be specified with `app_secret_setting_name`. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsFacebook.property.appSecretSettingName">appSecretSettingName</a></code> | <code>java.lang.String</code> | The app setting name that contains the `app_secret` value used for Facebook Login. Cannot be specified with `app_secret`. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsFacebook.property.oauthScopes">oauthScopes</a></code> | <code>java.util.List<java.lang.String></code> | Specifies a list of OAuth 2.0 scopes to be requested as part of Facebook Login authentication. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsFacebook.property.appSecret">appSecret</a></code> | <code>java.lang.String</code> | The App Secret of the Facebook app used for Facebook Login. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsFacebook.property.appSecretSettingName">appSecretSettingName</a></code> | <code>java.lang.String</code> | The app setting name that contains the `app_secret` value used for Facebook Login. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsFacebook.property.oauthScopes">oauthScopes</a></code> | <code>java.util.List<java.lang.String></code> | A list of OAuth 2.0 scopes to be requested as part of Facebook Login authentication. |
 
 ---
 
@@ -2666,7 +2660,7 @@ public java.lang.String getAppId();
 
 The App ID of the Facebook app used for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#app_id FunctionAppFlexConsumption#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#app_id FunctionAppFlexConsumption#app_id}
 
 ---
 
@@ -2678,9 +2672,9 @@ public java.lang.String getAppSecret();
 
 - *Type:* java.lang.String
 
-The App Secret of the Facebook app used for Facebook Login. Cannot be specified with `app_secret_setting_name`.
+The App Secret of the Facebook app used for Facebook Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#app_secret FunctionAppFlexConsumption#app_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#app_secret FunctionAppFlexConsumption#app_secret}
 
 ---
 
@@ -2692,9 +2686,9 @@ public java.lang.String getAppSecretSettingName();
 
 - *Type:* java.lang.String
 
-The app setting name that contains the `app_secret` value used for Facebook Login. Cannot be specified with `app_secret`.
+The app setting name that contains the `app_secret` value used for Facebook Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#app_secret_setting_name FunctionAppFlexConsumption#app_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#app_secret_setting_name FunctionAppFlexConsumption#app_secret_setting_name}
 
 ---
 
@@ -2706,9 +2700,9 @@ public java.util.List<java.lang.String> getOauthScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Specifies a list of OAuth 2.0 scopes to be requested as part of Facebook Login authentication.
+A list of OAuth 2.0 scopes to be requested as part of Facebook Login authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#oauth_scopes FunctionAppFlexConsumption#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#oauth_scopes FunctionAppFlexConsumption#oauth_scopes}
 
 ---
 
@@ -2732,9 +2726,9 @@ FunctionAppFlexConsumptionAuthSettingsGithub.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGithub.property.clientId">clientId</a></code> | <code>java.lang.String</code> | The ID of the GitHub app used for login. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGithub.property.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | The Client Secret of the GitHub app used for GitHub Login. Cannot be specified with `client_secret_setting_name`. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGithub.property.clientSecretSettingName">clientSecretSettingName</a></code> | <code>java.lang.String</code> | The app setting name that contains the `client_secret` value used for GitHub Login. Cannot be specified with `client_secret`. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGithub.property.oauthScopes">oauthScopes</a></code> | <code>java.util.List<java.lang.String></code> | Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGithub.property.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | The Client Secret of the GitHub app used for GitHub Login. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGithub.property.clientSecretSettingName">clientSecretSettingName</a></code> | <code>java.lang.String</code> | The app setting name that contains the `client_secret` value used for GitHub Login. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGithub.property.oauthScopes">oauthScopes</a></code> | <code>java.util.List<java.lang.String></code> | A list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication. |
 
 ---
 
@@ -2748,7 +2742,7 @@ public java.lang.String getClientId();
 
 The ID of the GitHub app used for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
 
 ---
 
@@ -2760,9 +2754,9 @@ public java.lang.String getClientSecret();
 
 - *Type:* java.lang.String
 
-The Client Secret of the GitHub app used for GitHub Login. Cannot be specified with `client_secret_setting_name`.
+The Client Secret of the GitHub app used for GitHub Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_secret FunctionAppFlexConsumption#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_secret FunctionAppFlexConsumption#client_secret}
 
 ---
 
@@ -2774,9 +2768,9 @@ public java.lang.String getClientSecretSettingName();
 
 - *Type:* java.lang.String
 
-The app setting name that contains the `client_secret` value used for GitHub Login. Cannot be specified with `client_secret`.
+The app setting name that contains the `client_secret` value used for GitHub Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_secret_setting_name FunctionAppFlexConsumption#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_secret_setting_name FunctionAppFlexConsumption#client_secret_setting_name}
 
 ---
 
@@ -2788,9 +2782,9 @@ public java.util.List<java.lang.String> getOauthScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
+A list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#oauth_scopes FunctionAppFlexConsumption#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#oauth_scopes FunctionAppFlexConsumption#oauth_scopes}
 
 ---
 
@@ -2814,9 +2808,9 @@ FunctionAppFlexConsumptionAuthSettingsGoogle.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGoogle.property.clientId">clientId</a></code> | <code>java.lang.String</code> | The OpenID Connect Client ID for the Google web application. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGoogle.property.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | The client secret associated with the Google web application.  Cannot be specified with `client_secret_setting_name`. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGoogle.property.clientSecretSettingName">clientSecretSettingName</a></code> | <code>java.lang.String</code> | The app setting name that contains the `client_secret` value used for Google Login. Cannot be specified with `client_secret`. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGoogle.property.oauthScopes">oauthScopes</a></code> | <code>java.util.List<java.lang.String></code> | Specifies a list of OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. If not specified, "openid", "profile", and "email" are used as default scopes. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGoogle.property.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | The client secret associated with the Google web application. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGoogle.property.clientSecretSettingName">clientSecretSettingName</a></code> | <code>java.lang.String</code> | The app setting name that contains the `client_secret` value used for Google Login. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGoogle.property.oauthScopes">oauthScopes</a></code> | <code>java.util.List<java.lang.String></code> | A list of OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. If not specified, "openid", "profile", and "email" are used as default scopes. |
 
 ---
 
@@ -2830,7 +2824,7 @@ public java.lang.String getClientId();
 
 The OpenID Connect Client ID for the Google web application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
 
 ---
 
@@ -2842,9 +2836,9 @@ public java.lang.String getClientSecret();
 
 - *Type:* java.lang.String
 
-The client secret associated with the Google web application.  Cannot be specified with `client_secret_setting_name`.
+The client secret associated with the Google web application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_secret FunctionAppFlexConsumption#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_secret FunctionAppFlexConsumption#client_secret}
 
 ---
 
@@ -2856,9 +2850,9 @@ public java.lang.String getClientSecretSettingName();
 
 - *Type:* java.lang.String
 
-The app setting name that contains the `client_secret` value used for Google Login. Cannot be specified with `client_secret`.
+The app setting name that contains the `client_secret` value used for Google Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_secret_setting_name FunctionAppFlexConsumption#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_secret_setting_name FunctionAppFlexConsumption#client_secret_setting_name}
 
 ---
 
@@ -2870,9 +2864,9 @@ public java.util.List<java.lang.String> getOauthScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Specifies a list of OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. If not specified, "openid", "profile", and "email" are used as default scopes.
+A list of OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. If not specified, "openid", "profile", and "email" are used as default scopes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#oauth_scopes FunctionAppFlexConsumption#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#oauth_scopes FunctionAppFlexConsumption#oauth_scopes}
 
 ---
 
@@ -2896,8 +2890,8 @@ FunctionAppFlexConsumptionAuthSettingsMicrosoft.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsMicrosoft.property.clientId">clientId</a></code> | <code>java.lang.String</code> | The OAuth 2.0 client ID that was created for the app used for authentication. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsMicrosoft.property.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret_setting_name`. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsMicrosoft.property.clientSecretSettingName">clientSecretSettingName</a></code> | <code>java.lang.String</code> | The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret`. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsMicrosoft.property.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | The OAuth 2.0 client secret that was created for the app used for authentication. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsMicrosoft.property.clientSecretSettingName">clientSecretSettingName</a></code> | <code>java.lang.String</code> | The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsMicrosoft.property.oauthScopes">oauthScopes</a></code> | <code>java.util.List<java.lang.String></code> | The list of OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. If not specified, `wl.basic` is used as the default scope. |
 
 ---
@@ -2912,7 +2906,7 @@ public java.lang.String getClientId();
 
 The OAuth 2.0 client ID that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
 
 ---
 
@@ -2924,9 +2918,9 @@ public java.lang.String getClientSecret();
 
 - *Type:* java.lang.String
 
-The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret_setting_name`.
+The OAuth 2.0 client secret that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_secret FunctionAppFlexConsumption#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_secret FunctionAppFlexConsumption#client_secret}
 
 ---
 
@@ -2938,9 +2932,9 @@ public java.lang.String getClientSecretSettingName();
 
 - *Type:* java.lang.String
 
-The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret`.
+The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_secret_setting_name FunctionAppFlexConsumption#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_secret_setting_name FunctionAppFlexConsumption#client_secret_setting_name}
 
 ---
 
@@ -2954,7 +2948,7 @@ public java.util.List<java.lang.String> getOauthScopes();
 
 The list of OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. If not specified, `wl.basic` is used as the default scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#oauth_scopes FunctionAppFlexConsumption#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#oauth_scopes FunctionAppFlexConsumption#oauth_scopes}
 
 ---
 
@@ -2977,7 +2971,7 @@ FunctionAppFlexConsumptionAuthSettingsTwitter.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsTwitter.property.consumerKey">consumerKey</a></code> | <code>java.lang.String</code> | The OAuth 1.0a consumer key of the Twitter application used for sign-in. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsTwitter.property.consumerSecret">consumerSecret</a></code> | <code>java.lang.String</code> | The OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret_setting_name`. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsTwitter.property.consumerSecret">consumerSecret</a></code> | <code>java.lang.String</code> | The OAuth 1.0a consumer secret of the Twitter application used for sign-in. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsTwitter.property.consumerSecretSettingName">consumerSecretSettingName</a></code> | <code>java.lang.String</code> | The app setting name that contains the OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret`. |
 
 ---
@@ -2992,7 +2986,7 @@ public java.lang.String getConsumerKey();
 
 The OAuth 1.0a consumer key of the Twitter application used for sign-in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#consumer_key FunctionAppFlexConsumption#consumer_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#consumer_key FunctionAppFlexConsumption#consumer_key}
 
 ---
 
@@ -3004,9 +2998,9 @@ public java.lang.String getConsumerSecret();
 
 - *Type:* java.lang.String
 
-The OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret_setting_name`.
+The OAuth 1.0a consumer secret of the Twitter application used for sign-in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#consumer_secret FunctionAppFlexConsumption#consumer_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#consumer_secret FunctionAppFlexConsumption#consumer_secret}
 
 ---
 
@@ -3020,7 +3014,7 @@ public java.lang.String getConsumerSecretSettingName();
 
 The app setting name that contains the OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#consumer_secret_setting_name FunctionAppFlexConsumption#consumer_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#consumer_secret_setting_name FunctionAppFlexConsumption#consumer_secret_setting_name}
 
 ---
 
@@ -3064,23 +3058,23 @@ FunctionAppFlexConsumptionAuthSettingsV2.builder()
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.login">login</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2Login">FunctionAppFlexConsumptionAuthSettingsV2Login</a></code> | login block. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.activeDirectoryV2">activeDirectoryV2</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2">FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2</a></code> | active_directory_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.appleV2">appleV2</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2AppleV2">FunctionAppFlexConsumptionAuthSettingsV2AppleV2</a></code> | apple_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.authEnabled">authEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the AuthV2 Settings be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.authEnabled">authEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the AuthV2 Settings be enabled? |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.azureStaticWebAppV2">azureStaticWebAppV2</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2AzureStaticWebAppV2">FunctionAppFlexConsumptionAuthSettingsV2AzureStaticWebAppV2</a></code> | azure_static_web_app_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.configFilePath">configFilePath</a></code> | <code>java.lang.String</code> | The path to the App Auth settings. **Note:** Relative Paths are evaluated from the Site Root directory. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.customOidcV2">customOidcV2</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2CustomOidcV2">FunctionAppFlexConsumptionAuthSettingsV2CustomOidcV2</a>></code> | custom_oidc_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.defaultProvider">defaultProvider</a></code> | <code>java.lang.String</code> | The Default Authentication Provider to use when the `unauthenticated_action` is set to `RedirectToLoginPage`. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.excludedPaths">excludedPaths</a></code> | <code>java.util.List<java.lang.String></code> | The paths which should be excluded from the `unauthenticated_action` when it is set to `RedirectToLoginPage`. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.facebookV2">facebookV2</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2FacebookV2">FunctionAppFlexConsumptionAuthSettingsV2FacebookV2</a></code> | facebook_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.forwardProxyConvention">forwardProxyConvention</a></code> | <code>java.lang.String</code> | The convention used to determine the url of the request made. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.forwardProxyConvention">forwardProxyConvention</a></code> | <code>java.lang.String</code> | The convention used to determine the URL of the request made. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.forwardProxyCustomHostHeaderName">forwardProxyCustomHostHeaderName</a></code> | <code>java.lang.String</code> | The name of the header containing the host of the request. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.forwardProxyCustomSchemeHeaderName">forwardProxyCustomSchemeHeaderName</a></code> | <code>java.lang.String</code> | The name of the header containing the scheme of the request. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.githubV2">githubV2</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2GithubV2">FunctionAppFlexConsumptionAuthSettingsV2GithubV2</a></code> | github_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.googleV2">googleV2</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2GoogleV2">FunctionAppFlexConsumptionAuthSettingsV2GoogleV2</a></code> | google_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.httpRouteApiPrefix">httpRouteApiPrefix</a></code> | <code>java.lang.String</code> | The prefix that should precede all the authentication and authorisation paths. Defaults to `/.auth`. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.httpRouteApiPrefix">httpRouteApiPrefix</a></code> | <code>java.lang.String</code> | The prefix that should precede all the authentication and authorisation paths. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.microsoftV2">microsoftV2</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2MicrosoftV2">FunctionAppFlexConsumptionAuthSettingsV2MicrosoftV2</a></code> | microsoft_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.requireAuthentication">requireAuthentication</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the authentication flow be used for all requests. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.requireHttps">requireHttps</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should HTTPS be required on connections? Defaults to true. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.runtimeVersion">runtimeVersion</a></code> | <code>java.lang.String</code> | The Runtime Version of the Authentication and Authorisation feature of this App. Defaults to `~1`. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.requireAuthentication">requireAuthentication</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the authentication flow be used for all requests? |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.requireHttps">requireHttps</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should HTTPS be required on connections? |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.runtimeVersion">runtimeVersion</a></code> | <code>java.lang.String</code> | The Runtime Version of the Authentication and Authorisation feature of this App. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.twitterV2">twitterV2</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2TwitterV2">FunctionAppFlexConsumptionAuthSettingsV2TwitterV2</a></code> | twitter_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.property.unauthenticatedAction">unauthenticatedAction</a></code> | <code>java.lang.String</code> | The action to take for requests made without authentication. |
 
@@ -3096,7 +3090,7 @@ public FunctionAppFlexConsumptionAuthSettingsV2Login getLogin();
 
 login block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#login FunctionAppFlexConsumption#login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#login FunctionAppFlexConsumption#login}
 
 ---
 
@@ -3110,7 +3104,7 @@ public FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2 getActiveDirect
 
 active_directory_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#active_directory_v2 FunctionAppFlexConsumption#active_directory_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#active_directory_v2 FunctionAppFlexConsumption#active_directory_v2}
 
 ---
 
@@ -3124,7 +3118,7 @@ public FunctionAppFlexConsumptionAuthSettingsV2AppleV2 getAppleV2();
 
 apple_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#apple_v2 FunctionAppFlexConsumption#apple_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#apple_v2 FunctionAppFlexConsumption#apple_v2}
 
 ---
 
@@ -3136,9 +3130,9 @@ public java.lang.Boolean|IResolvable getAuthEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Should the AuthV2 Settings be enabled. Defaults to `false`.
+Should the AuthV2 Settings be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#auth_enabled FunctionAppFlexConsumption#auth_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#auth_enabled FunctionAppFlexConsumption#auth_enabled}
 
 ---
 
@@ -3152,7 +3146,7 @@ public FunctionAppFlexConsumptionAuthSettingsV2AzureStaticWebAppV2 getAzureStati
 
 azure_static_web_app_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#azure_static_web_app_v2 FunctionAppFlexConsumption#azure_static_web_app_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#azure_static_web_app_v2 FunctionAppFlexConsumption#azure_static_web_app_v2}
 
 ---
 
@@ -3166,7 +3160,7 @@ public java.lang.String getConfigFilePath();
 
 The path to the App Auth settings. **Note:** Relative Paths are evaluated from the Site Root directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#config_file_path FunctionAppFlexConsumption#config_file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#config_file_path FunctionAppFlexConsumption#config_file_path}
 
 ---
 
@@ -3180,7 +3174,7 @@ public IResolvable|java.util.List<FunctionAppFlexConsumptionAuthSettingsV2Custom
 
 custom_oidc_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#custom_oidc_v2 FunctionAppFlexConsumption#custom_oidc_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#custom_oidc_v2 FunctionAppFlexConsumption#custom_oidc_v2}
 
 ---
 
@@ -3196,7 +3190,7 @@ The Default Authentication Provider to use when the `unauthenticated_action` is 
 
 Possible values include: `apple`, `azureactivedirectory`, `facebook`, `github`, `google`, `twitter` and the `name` of your `custom_oidc_v2` provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#default_provider FunctionAppFlexConsumption#default_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#default_provider FunctionAppFlexConsumption#default_provider}
 
 ---
 
@@ -3210,7 +3204,7 @@ public java.util.List<java.lang.String> getExcludedPaths();
 
 The paths which should be excluded from the `unauthenticated_action` when it is set to `RedirectToLoginPage`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#excluded_paths FunctionAppFlexConsumption#excluded_paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#excluded_paths FunctionAppFlexConsumption#excluded_paths}
 
 ---
 
@@ -3224,7 +3218,7 @@ public FunctionAppFlexConsumptionAuthSettingsV2FacebookV2 getFacebookV2();
 
 facebook_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#facebook_v2 FunctionAppFlexConsumption#facebook_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#facebook_v2 FunctionAppFlexConsumption#facebook_v2}
 
 ---
 
@@ -3236,11 +3230,9 @@ public java.lang.String getForwardProxyConvention();
 
 - *Type:* java.lang.String
 
-The convention used to determine the url of the request made.
+The convention used to determine the URL of the request made.
 
-Possible values include `ForwardProxyConventionNoProxy`, `ForwardProxyConventionStandard`, `ForwardProxyConventionCustom`. Defaults to `ForwardProxyConventionNoProxy`
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#forward_proxy_convention FunctionAppFlexConsumption#forward_proxy_convention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#forward_proxy_convention FunctionAppFlexConsumption#forward_proxy_convention}
 
 ---
 
@@ -3254,7 +3246,7 @@ public java.lang.String getForwardProxyCustomHostHeaderName();
 
 The name of the header containing the host of the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#forward_proxy_custom_host_header_name FunctionAppFlexConsumption#forward_proxy_custom_host_header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#forward_proxy_custom_host_header_name FunctionAppFlexConsumption#forward_proxy_custom_host_header_name}
 
 ---
 
@@ -3268,7 +3260,7 @@ public java.lang.String getForwardProxyCustomSchemeHeaderName();
 
 The name of the header containing the scheme of the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#forward_proxy_custom_scheme_header_name FunctionAppFlexConsumption#forward_proxy_custom_scheme_header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#forward_proxy_custom_scheme_header_name FunctionAppFlexConsumption#forward_proxy_custom_scheme_header_name}
 
 ---
 
@@ -3282,7 +3274,7 @@ public FunctionAppFlexConsumptionAuthSettingsV2GithubV2 getGithubV2();
 
 github_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#github_v2 FunctionAppFlexConsumption#github_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#github_v2 FunctionAppFlexConsumption#github_v2}
 
 ---
 
@@ -3296,7 +3288,7 @@ public FunctionAppFlexConsumptionAuthSettingsV2GoogleV2 getGoogleV2();
 
 google_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#google_v2 FunctionAppFlexConsumption#google_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#google_v2 FunctionAppFlexConsumption#google_v2}
 
 ---
 
@@ -3308,9 +3300,9 @@ public java.lang.String getHttpRouteApiPrefix();
 
 - *Type:* java.lang.String
 
-The prefix that should precede all the authentication and authorisation paths. Defaults to `/.auth`.
+The prefix that should precede all the authentication and authorisation paths.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#http_route_api_prefix FunctionAppFlexConsumption#http_route_api_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#http_route_api_prefix FunctionAppFlexConsumption#http_route_api_prefix}
 
 ---
 
@@ -3324,7 +3316,7 @@ public FunctionAppFlexConsumptionAuthSettingsV2MicrosoftV2 getMicrosoftV2();
 
 microsoft_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#microsoft_v2 FunctionAppFlexConsumption#microsoft_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#microsoft_v2 FunctionAppFlexConsumption#microsoft_v2}
 
 ---
 
@@ -3336,9 +3328,9 @@ public java.lang.Boolean|IResolvable getRequireAuthentication();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Should the authentication flow be used for all requests.
+Should the authentication flow be used for all requests?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#require_authentication FunctionAppFlexConsumption#require_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#require_authentication FunctionAppFlexConsumption#require_authentication}
 
 ---
 
@@ -3350,9 +3342,9 @@ public java.lang.Boolean|IResolvable getRequireHttps();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Should HTTPS be required on connections? Defaults to true.
+Should HTTPS be required on connections?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#require_https FunctionAppFlexConsumption#require_https}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#require_https FunctionAppFlexConsumption#require_https}
 
 ---
 
@@ -3364,9 +3356,9 @@ public java.lang.String getRuntimeVersion();
 
 - *Type:* java.lang.String
 
-The Runtime Version of the Authentication and Authorisation feature of this App. Defaults to `~1`.
+The Runtime Version of the Authentication and Authorisation feature of this App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#runtime_version FunctionAppFlexConsumption#runtime_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#runtime_version FunctionAppFlexConsumption#runtime_version}
 
 ---
 
@@ -3380,7 +3372,7 @@ public FunctionAppFlexConsumptionAuthSettingsV2TwitterV2 getTwitterV2();
 
 twitter_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#twitter_v2 FunctionAppFlexConsumption#twitter_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#twitter_v2 FunctionAppFlexConsumption#twitter_v2}
 
 ---
 
@@ -3394,9 +3386,7 @@ public java.lang.String getUnauthenticatedAction();
 
 The action to take for requests made without authentication.
 
-Possible values include `RedirectToLoginPage`, `AllowAnonymous`, `Return401`, and `Return403`. Defaults to `RedirectToLoginPage`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#unauthenticated_action FunctionAppFlexConsumption#unauthenticated_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#unauthenticated_action FunctionAppFlexConsumption#unauthenticated_action}
 
 ---
 
@@ -3430,7 +3420,7 @@ FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2.builder()
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2.property.clientId">clientId</a></code> | <code>java.lang.String</code> | The ID of the Client to use to authenticate with Azure Active Directory. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2.property.tenantAuthEndpoint">tenantAuthEndpoint</a></code> | <code>java.lang.String</code> | The Azure Tenant Endpoint for the Authenticating Tenant. e.g. `https://login.microsoftonline.com/v2.0/{tenant-guid}/`. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2.property.allowedApplications">allowedApplications</a></code> | <code>java.util.List<java.lang.String></code> | The list of allowed Applications for the Default Authorisation Policy. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2.property.allowedAudiences">allowedAudiences</a></code> | <code>java.util.List<java.lang.String></code> | Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2.property.allowedAudiences">allowedAudiences</a></code> | <code>java.util.List<java.lang.String></code> | A list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2.property.allowedGroups">allowedGroups</a></code> | <code>java.util.List<java.lang.String></code> | The list of allowed Group Names for the Default Authorisation Policy. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2.property.allowedIdentities">allowedIdentities</a></code> | <code>java.util.List<java.lang.String></code> | The list of allowed Identities for the Default Authorisation Policy. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2.property.clientSecretCertificateThumbprint">clientSecretCertificateThumbprint</a></code> | <code>java.lang.String</code> | The thumbprint of the certificate used for signing purposes. |
@@ -3438,7 +3428,7 @@ FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2.builder()
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2.property.jwtAllowedClientApplications">jwtAllowedClientApplications</a></code> | <code>java.util.List<java.lang.String></code> | A list of Allowed Client Applications in the JWT Claim. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2.property.jwtAllowedGroups">jwtAllowedGroups</a></code> | <code>java.util.List<java.lang.String></code> | A list of Allowed Groups in the JWT Claim. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2.property.loginParameters">loginParameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A map of key-value pairs to send to the Authorisation Endpoint when a user logs in. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2.property.wwwAuthenticationDisabled">wwwAuthenticationDisabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the www-authenticate provider should be omitted from the request? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2.property.wwwAuthenticationDisabled">wwwAuthenticationDisabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the www-authenticate provider should be omitted from the request? |
 
 ---
 
@@ -3452,7 +3442,7 @@ public java.lang.String getClientId();
 
 The ID of the Client to use to authenticate with Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
 
 ---
 
@@ -3466,7 +3456,7 @@ public java.lang.String getTenantAuthEndpoint();
 
 The Azure Tenant Endpoint for the Authenticating Tenant. e.g. `https://login.microsoftonline.com/v2.0/{tenant-guid}/`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#tenant_auth_endpoint FunctionAppFlexConsumption#tenant_auth_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#tenant_auth_endpoint FunctionAppFlexConsumption#tenant_auth_endpoint}
 
 ---
 
@@ -3480,7 +3470,7 @@ public java.util.List<java.lang.String> getAllowedApplications();
 
 The list of allowed Applications for the Default Authorisation Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#allowed_applications FunctionAppFlexConsumption#allowed_applications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#allowed_applications FunctionAppFlexConsumption#allowed_applications}
 
 ---
 
@@ -3492,9 +3482,9 @@ public java.util.List<java.lang.String> getAllowedAudiences();
 
 - *Type:* java.util.List<java.lang.String>
 
-Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
+A list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#allowed_audiences FunctionAppFlexConsumption#allowed_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#allowed_audiences FunctionAppFlexConsumption#allowed_audiences}
 
 ---
 
@@ -3508,7 +3498,7 @@ public java.util.List<java.lang.String> getAllowedGroups();
 
 The list of allowed Group Names for the Default Authorisation Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#allowed_groups FunctionAppFlexConsumption#allowed_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#allowed_groups FunctionAppFlexConsumption#allowed_groups}
 
 ---
 
@@ -3522,7 +3512,7 @@ public java.util.List<java.lang.String> getAllowedIdentities();
 
 The list of allowed Identities for the Default Authorisation Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#allowed_identities FunctionAppFlexConsumption#allowed_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#allowed_identities FunctionAppFlexConsumption#allowed_identities}
 
 ---
 
@@ -3536,7 +3526,7 @@ public java.lang.String getClientSecretCertificateThumbprint();
 
 The thumbprint of the certificate used for signing purposes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_secret_certificate_thumbprint FunctionAppFlexConsumption#client_secret_certificate_thumbprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_secret_certificate_thumbprint FunctionAppFlexConsumption#client_secret_certificate_thumbprint}
 
 ---
 
@@ -3550,7 +3540,7 @@ public java.lang.String getClientSecretSettingName();
 
 The App Setting name that contains the client secret of the Client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_secret_setting_name FunctionAppFlexConsumption#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_secret_setting_name FunctionAppFlexConsumption#client_secret_setting_name}
 
 ---
 
@@ -3564,7 +3554,7 @@ public java.util.List<java.lang.String> getJwtAllowedClientApplications();
 
 A list of Allowed Client Applications in the JWT Claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#jwt_allowed_client_applications FunctionAppFlexConsumption#jwt_allowed_client_applications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#jwt_allowed_client_applications FunctionAppFlexConsumption#jwt_allowed_client_applications}
 
 ---
 
@@ -3578,7 +3568,7 @@ public java.util.List<java.lang.String> getJwtAllowedGroups();
 
 A list of Allowed Groups in the JWT Claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#jwt_allowed_groups FunctionAppFlexConsumption#jwt_allowed_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#jwt_allowed_groups FunctionAppFlexConsumption#jwt_allowed_groups}
 
 ---
 
@@ -3592,7 +3582,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLoginParameters();
 
 A map of key-value pairs to send to the Authorisation Endpoint when a user logs in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#login_parameters FunctionAppFlexConsumption#login_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#login_parameters FunctionAppFlexConsumption#login_parameters}
 
 ---
 
@@ -3604,9 +3594,9 @@ public java.lang.Boolean|IResolvable getWwwAuthenticationDisabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Should the www-authenticate provider should be omitted from the request? Defaults to `false`.
+Should the www-authenticate provider should be omitted from the request?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#www_authentication_disabled FunctionAppFlexConsumption#www_authentication_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#www_authentication_disabled FunctionAppFlexConsumption#www_authentication_disabled}
 
 ---
 
@@ -3642,7 +3632,7 @@ public java.lang.String getClientId();
 
 The OpenID Connect Client ID for the Apple web application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
 
 ---
 
@@ -3656,7 +3646,7 @@ public java.lang.String getClientSecretSettingName();
 
 The app setting name that contains the `client_secret` value used for Apple Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_secret_setting_name FunctionAppFlexConsumption#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_secret_setting_name FunctionAppFlexConsumption#client_secret_setting_name}
 
 ---
 
@@ -3690,7 +3680,7 @@ public java.lang.String getClientId();
 
 The ID of the Client to use to authenticate with Azure Static Web App Authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
 
 ---
 
@@ -3732,7 +3722,7 @@ public java.lang.String getClientId();
 
 The ID of the Client to use to authenticate with this Custom OIDC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
 
 ---
 
@@ -3746,7 +3736,7 @@ public java.lang.String getName();
 
 The name of the Custom OIDC Authentication Provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#name FunctionAppFlexConsumption#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#name FunctionAppFlexConsumption#name}
 
 ---
 
@@ -3760,7 +3750,7 @@ public java.lang.String getOpenidConfigurationEndpoint();
 
 The endpoint that contains all the configuration endpoints for this Custom OIDC provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#openid_configuration_endpoint FunctionAppFlexConsumption#openid_configuration_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#openid_configuration_endpoint FunctionAppFlexConsumption#openid_configuration_endpoint}
 
 ---
 
@@ -3774,7 +3764,7 @@ public java.lang.String getNameClaimType();
 
 The name of the claim that contains the users name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#name_claim_type FunctionAppFlexConsumption#name_claim_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#name_claim_type FunctionAppFlexConsumption#name_claim_type}
 
 ---
 
@@ -3788,7 +3778,7 @@ public java.util.List<java.lang.String> getScopes();
 
 The list of the scopes that should be requested while authenticating.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#scopes FunctionAppFlexConsumption#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#scopes FunctionAppFlexConsumption#scopes}
 
 ---
 
@@ -3814,7 +3804,7 @@ FunctionAppFlexConsumptionAuthSettingsV2FacebookV2.builder()
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2FacebookV2.property.appId">appId</a></code> | <code>java.lang.String</code> | The App ID of the Facebook app used for login. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2FacebookV2.property.appSecretSettingName">appSecretSettingName</a></code> | <code>java.lang.String</code> | The app setting name that contains the `app_secret` value used for Facebook Login. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2FacebookV2.property.graphApiVersion">graphApiVersion</a></code> | <code>java.lang.String</code> | The version of the Facebook API to be used while logging in. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2FacebookV2.property.loginScopes">loginScopes</a></code> | <code>java.util.List<java.lang.String></code> | Specifies a list of scopes to be requested as part of Facebook Login authentication. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2FacebookV2.property.loginScopes">loginScopes</a></code> | <code>java.util.List<java.lang.String></code> | A list of scopes to be requested as part of Facebook Login authentication. |
 
 ---
 
@@ -3828,7 +3818,7 @@ public java.lang.String getAppId();
 
 The App ID of the Facebook app used for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#app_id FunctionAppFlexConsumption#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#app_id FunctionAppFlexConsumption#app_id}
 
 ---
 
@@ -3842,7 +3832,7 @@ public java.lang.String getAppSecretSettingName();
 
 The app setting name that contains the `app_secret` value used for Facebook Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#app_secret_setting_name FunctionAppFlexConsumption#app_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#app_secret_setting_name FunctionAppFlexConsumption#app_secret_setting_name}
 
 ---
 
@@ -3856,7 +3846,7 @@ public java.lang.String getGraphApiVersion();
 
 The version of the Facebook API to be used while logging in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#graph_api_version FunctionAppFlexConsumption#graph_api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#graph_api_version FunctionAppFlexConsumption#graph_api_version}
 
 ---
 
@@ -3868,9 +3858,9 @@ public java.util.List<java.lang.String> getLoginScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Specifies a list of scopes to be requested as part of Facebook Login authentication.
+A list of scopes to be requested as part of Facebook Login authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#login_scopes FunctionAppFlexConsumption#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#login_scopes FunctionAppFlexConsumption#login_scopes}
 
 ---
 
@@ -3894,7 +3884,7 @@ FunctionAppFlexConsumptionAuthSettingsV2GithubV2.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2GithubV2.property.clientId">clientId</a></code> | <code>java.lang.String</code> | The ID of the GitHub app used for login. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2GithubV2.property.clientSecretSettingName">clientSecretSettingName</a></code> | <code>java.lang.String</code> | The app setting name that contains the `client_secret` value used for GitHub Login. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2GithubV2.property.loginScopes">loginScopes</a></code> | <code>java.util.List<java.lang.String></code> | Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2GithubV2.property.loginScopes">loginScopes</a></code> | <code>java.util.List<java.lang.String></code> | A list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication. |
 
 ---
 
@@ -3908,7 +3898,7 @@ public java.lang.String getClientId();
 
 The ID of the GitHub app used for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
 
 ---
 
@@ -3922,7 +3912,7 @@ public java.lang.String getClientSecretSettingName();
 
 The app setting name that contains the `client_secret` value used for GitHub Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_secret_setting_name FunctionAppFlexConsumption#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_secret_setting_name FunctionAppFlexConsumption#client_secret_setting_name}
 
 ---
 
@@ -3934,9 +3924,9 @@ public java.util.List<java.lang.String> getLoginScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
+A list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#login_scopes FunctionAppFlexConsumption#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#login_scopes FunctionAppFlexConsumption#login_scopes}
 
 ---
 
@@ -3961,8 +3951,8 @@ FunctionAppFlexConsumptionAuthSettingsV2GoogleV2.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2GoogleV2.property.clientId">clientId</a></code> | <code>java.lang.String</code> | The OpenID Connect Client ID for the Google web application. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2GoogleV2.property.clientSecretSettingName">clientSecretSettingName</a></code> | <code>java.lang.String</code> | The app setting name that contains the `client_secret` value used for Google Login. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2GoogleV2.property.allowedAudiences">allowedAudiences</a></code> | <code>java.util.List<java.lang.String></code> | Specifies a list of Allowed Audiences that will be requested as part of Google Sign-In authentication. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2GoogleV2.property.loginScopes">loginScopes</a></code> | <code>java.util.List<java.lang.String></code> | Specifies a list of Login scopes that will be requested as part of Google Sign-In authentication. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2GoogleV2.property.allowedAudiences">allowedAudiences</a></code> | <code>java.util.List<java.lang.String></code> | A list of Allowed Audiences that will be requested as part of Google Sign-In authentication. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2GoogleV2.property.loginScopes">loginScopes</a></code> | <code>java.util.List<java.lang.String></code> | A list of Login scopes that will be requested as part of Google Sign-In authentication. |
 
 ---
 
@@ -3976,7 +3966,7 @@ public java.lang.String getClientId();
 
 The OpenID Connect Client ID for the Google web application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
 
 ---
 
@@ -3990,7 +3980,7 @@ public java.lang.String getClientSecretSettingName();
 
 The app setting name that contains the `client_secret` value used for Google Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_secret_setting_name FunctionAppFlexConsumption#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_secret_setting_name FunctionAppFlexConsumption#client_secret_setting_name}
 
 ---
 
@@ -4002,9 +3992,9 @@ public java.util.List<java.lang.String> getAllowedAudiences();
 
 - *Type:* java.util.List<java.lang.String>
 
-Specifies a list of Allowed Audiences that will be requested as part of Google Sign-In authentication.
+A list of Allowed Audiences that will be requested as part of Google Sign-In authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#allowed_audiences FunctionAppFlexConsumption#allowed_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#allowed_audiences FunctionAppFlexConsumption#allowed_audiences}
 
 ---
 
@@ -4016,9 +4006,9 @@ public java.util.List<java.lang.String> getLoginScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Specifies a list of Login scopes that will be requested as part of Google Sign-In authentication.
+A list of Login scopes that will be requested as part of Google Sign-In authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#login_scopes FunctionAppFlexConsumption#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#login_scopes FunctionAppFlexConsumption#login_scopes}
 
 ---
 
@@ -4049,16 +4039,16 @@ FunctionAppFlexConsumptionAuthSettingsV2Login.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2Login.property.allowedExternalRedirectUrls">allowedExternalRedirectUrls</a></code> | <code>java.util.List<java.lang.String></code> | External URLs that can be redirected to as part of logging in or logging out of the app. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2Login.property.cookieExpirationConvention">cookieExpirationConvention</a></code> | <code>java.lang.String</code> | The method by which cookies expire. Possible values include: `FixedTime`, and `IdentityProviderDerived`. Defaults to `FixedTime`. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2Login.property.cookieExpirationTime">cookieExpirationTime</a></code> | <code>java.lang.String</code> | The time after the request is made when the session cookie should expire. Defaults to `08:00:00`. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2Login.property.cookieExpirationConvention">cookieExpirationConvention</a></code> | <code>java.lang.String</code> | The method by which cookies expire. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2Login.property.cookieExpirationTime">cookieExpirationTime</a></code> | <code>java.lang.String</code> | The time after the request is made when the session cookie should expire. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2Login.property.logoutEndpoint">logoutEndpoint</a></code> | <code>java.lang.String</code> | The endpoint to which logout requests should be made. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2Login.property.nonceExpirationTime">nonceExpirationTime</a></code> | <code>java.lang.String</code> | The time after the request is made when the nonce should expire. Defaults to `00:05:00`. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2Login.property.preserveUrlFragmentsForLogins">preserveUrlFragmentsForLogins</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the fragments from the request be preserved after the login request is made. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2Login.property.nonceExpirationTime">nonceExpirationTime</a></code> | <code>java.lang.String</code> | The time after the request is made when the nonce should expire. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2Login.property.preserveUrlFragmentsForLogins">preserveUrlFragmentsForLogins</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the fragments from the request be preserved after the login request is made? |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2Login.property.tokenRefreshExtensionTime">tokenRefreshExtensionTime</a></code> | <code>java.lang.Number</code> | The number of hours after session token expiration that a session token can be used to call the token refresh API. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2Login.property.tokenStoreEnabled">tokenStoreEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the Token Store configuration Enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2Login.property.tokenStoreEnabled">tokenStoreEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the Token Store configuration Enabled? |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2Login.property.tokenStorePath">tokenStorePath</a></code> | <code>java.lang.String</code> | The directory path in the App Filesystem in which the tokens will be stored. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2Login.property.tokenStoreSasSettingName">tokenStoreSasSettingName</a></code> | <code>java.lang.String</code> | The name of the app setting which contains the SAS URL of the blob storage containing the tokens. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2Login.property.validateNonce">validateNonce</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the nonce be validated while completing the login flow. Defaults to `true`. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2Login.property.validateNonce">validateNonce</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the nonce be validated while completing the login flow? |
 
 ---
 
@@ -4074,7 +4064,7 @@ External URLs that can be redirected to as part of logging in or logging out of 
 
 This is an advanced setting typically only needed by Windows Store application backends. **Note:** URLs within the current domain are always implicitly allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#allowed_external_redirect_urls FunctionAppFlexConsumption#allowed_external_redirect_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#allowed_external_redirect_urls FunctionAppFlexConsumption#allowed_external_redirect_urls}
 
 ---
 
@@ -4086,9 +4076,9 @@ public java.lang.String getCookieExpirationConvention();
 
 - *Type:* java.lang.String
 
-The method by which cookies expire. Possible values include: `FixedTime`, and `IdentityProviderDerived`. Defaults to `FixedTime`.
+The method by which cookies expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#cookie_expiration_convention FunctionAppFlexConsumption#cookie_expiration_convention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#cookie_expiration_convention FunctionAppFlexConsumption#cookie_expiration_convention}
 
 ---
 
@@ -4100,9 +4090,9 @@ public java.lang.String getCookieExpirationTime();
 
 - *Type:* java.lang.String
 
-The time after the request is made when the session cookie should expire. Defaults to `08:00:00`.
+The time after the request is made when the session cookie should expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#cookie_expiration_time FunctionAppFlexConsumption#cookie_expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#cookie_expiration_time FunctionAppFlexConsumption#cookie_expiration_time}
 
 ---
 
@@ -4116,7 +4106,7 @@ public java.lang.String getLogoutEndpoint();
 
 The endpoint to which logout requests should be made.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#logout_endpoint FunctionAppFlexConsumption#logout_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#logout_endpoint FunctionAppFlexConsumption#logout_endpoint}
 
 ---
 
@@ -4128,9 +4118,9 @@ public java.lang.String getNonceExpirationTime();
 
 - *Type:* java.lang.String
 
-The time after the request is made when the nonce should expire. Defaults to `00:05:00`.
+The time after the request is made when the nonce should expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#nonce_expiration_time FunctionAppFlexConsumption#nonce_expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#nonce_expiration_time FunctionAppFlexConsumption#nonce_expiration_time}
 
 ---
 
@@ -4142,9 +4132,9 @@ public java.lang.Boolean|IResolvable getPreserveUrlFragmentsForLogins();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Should the fragments from the request be preserved after the login request is made. Defaults to `false`.
+Should the fragments from the request be preserved after the login request is made?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#preserve_url_fragments_for_logins FunctionAppFlexConsumption#preserve_url_fragments_for_logins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#preserve_url_fragments_for_logins FunctionAppFlexConsumption#preserve_url_fragments_for_logins}
 
 ---
 
@@ -4158,9 +4148,7 @@ public java.lang.Number getTokenRefreshExtensionTime();
 
 The number of hours after session token expiration that a session token can be used to call the token refresh API.
 
-Defaults to `72` hours.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#token_refresh_extension_time FunctionAppFlexConsumption#token_refresh_extension_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#token_refresh_extension_time FunctionAppFlexConsumption#token_refresh_extension_time}
 
 ---
 
@@ -4172,9 +4160,9 @@ public java.lang.Boolean|IResolvable getTokenStoreEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Should the Token Store configuration Enabled. Defaults to `false`.
+Should the Token Store configuration Enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#token_store_enabled FunctionAppFlexConsumption#token_store_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#token_store_enabled FunctionAppFlexConsumption#token_store_enabled}
 
 ---
 
@@ -4188,7 +4176,7 @@ public java.lang.String getTokenStorePath();
 
 The directory path in the App Filesystem in which the tokens will be stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#token_store_path FunctionAppFlexConsumption#token_store_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#token_store_path FunctionAppFlexConsumption#token_store_path}
 
 ---
 
@@ -4202,7 +4190,7 @@ public java.lang.String getTokenStoreSasSettingName();
 
 The name of the app setting which contains the SAS URL of the blob storage containing the tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#token_store_sas_setting_name FunctionAppFlexConsumption#token_store_sas_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#token_store_sas_setting_name FunctionAppFlexConsumption#token_store_sas_setting_name}
 
 ---
 
@@ -4214,9 +4202,9 @@ public java.lang.Boolean|IResolvable getValidateNonce();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Should the nonce be validated while completing the login flow. Defaults to `true`.
+Should the nonce be validated while completing the login flow?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#validate_nonce FunctionAppFlexConsumption#validate_nonce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#validate_nonce FunctionAppFlexConsumption#validate_nonce}
 
 ---
 
@@ -4241,7 +4229,7 @@ FunctionAppFlexConsumptionAuthSettingsV2MicrosoftV2.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2MicrosoftV2.property.clientId">clientId</a></code> | <code>java.lang.String</code> | The OAuth 2.0 client ID that was created for the app used for authentication. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2MicrosoftV2.property.clientSecretSettingName">clientSecretSettingName</a></code> | <code>java.lang.String</code> | The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2MicrosoftV2.property.allowedAudiences">allowedAudiences</a></code> | <code>java.util.List<java.lang.String></code> | Specifies a list of Allowed Audiences that will be requested as part of Microsoft Sign-In authentication. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2MicrosoftV2.property.allowedAudiences">allowedAudiences</a></code> | <code>java.util.List<java.lang.String></code> | A list of Allowed Audiences that will be requested as part of Microsoft Sign-In authentication. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2MicrosoftV2.property.loginScopes">loginScopes</a></code> | <code>java.util.List<java.lang.String></code> | The list of Login scopes that will be requested as part of Microsoft Account authentication. |
 
 ---
@@ -4256,7 +4244,7 @@ public java.lang.String getClientId();
 
 The OAuth 2.0 client ID that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_id FunctionAppFlexConsumption#client_id}
 
 ---
 
@@ -4270,7 +4258,7 @@ public java.lang.String getClientSecretSettingName();
 
 The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_secret_setting_name FunctionAppFlexConsumption#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_secret_setting_name FunctionAppFlexConsumption#client_secret_setting_name}
 
 ---
 
@@ -4282,9 +4270,9 @@ public java.util.List<java.lang.String> getAllowedAudiences();
 
 - *Type:* java.util.List<java.lang.String>
 
-Specifies a list of Allowed Audiences that will be requested as part of Microsoft Sign-In authentication.
+A list of Allowed Audiences that will be requested as part of Microsoft Sign-In authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#allowed_audiences FunctionAppFlexConsumption#allowed_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#allowed_audiences FunctionAppFlexConsumption#allowed_audiences}
 
 ---
 
@@ -4298,7 +4286,7 @@ public java.util.List<java.lang.String> getLoginScopes();
 
 The list of Login scopes that will be requested as part of Microsoft Account authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#login_scopes FunctionAppFlexConsumption#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#login_scopes FunctionAppFlexConsumption#login_scopes}
 
 ---
 
@@ -4334,7 +4322,7 @@ public java.lang.String getConsumerKey();
 
 The OAuth 1.0a consumer key of the Twitter application used for sign-in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#consumer_key FunctionAppFlexConsumption#consumer_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#consumer_key FunctionAppFlexConsumption#consumer_key}
 
 ---
 
@@ -4348,7 +4336,7 @@ public java.lang.String getConsumerSecretSettingName();
 
 The app setting name that contains the OAuth 1.0a consumer secret of the Twitter application used for sign-in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#consumer_secret_setting_name FunctionAppFlexConsumption#consumer_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#consumer_secret_setting_name FunctionAppFlexConsumption#consumer_secret_setting_name}
 
 ---
 
@@ -4415,39 +4403,39 @@ FunctionAppFlexConsumptionConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#location FunctionAppFlexConsumption#location}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.name">name</a></code> | <code>java.lang.String</code> | Specifies the name of the Function App. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#resource_group_name FunctionAppFlexConsumption#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.runtimeName">runtimeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#runtime_name FunctionAppFlexConsumption#runtime_name}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.runtimeVersion">runtimeVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#runtime_version FunctionAppFlexConsumption#runtime_version}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#location FunctionAppFlexConsumption#location}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the Function App. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#resource_group_name FunctionAppFlexConsumption#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.runtimeName">runtimeName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#runtime_name FunctionAppFlexConsumption#runtime_name}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.runtimeVersion">runtimeVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#runtime_version FunctionAppFlexConsumption#runtime_version}. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.servicePlanId">servicePlanId</a></code> | <code>java.lang.String</code> | The ID of the App Service Plan within which to create this Function App. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.siteConfig">siteConfig</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig">FunctionAppFlexConsumptionSiteConfig</a></code> | site_config block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.storageAuthenticationType">storageAuthenticationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#storage_authentication_type FunctionAppFlexConsumption#storage_authentication_type}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.storageContainerEndpoint">storageContainerEndpoint</a></code> | <code>java.lang.String</code> | The endpoint of the storage container where the function app's code is hosted. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.storageContainerType">storageContainerType</a></code> | <code>java.lang.String</code> | The type of the storage container where the function app's code is hosted. Only `blobContainer` is supported currently. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.storageAuthenticationType">storageAuthenticationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#storage_authentication_type FunctionAppFlexConsumption#storage_authentication_type}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.storageContainerEndpoint">storageContainerEndpoint</a></code> | <code>java.lang.String</code> | The endpoint of the Storage Container where the Function App's code is hosted. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.storageContainerType">storageContainerType</a></code> | <code>java.lang.String</code> | The type of the Storage Container where the Function App's code is hosted. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.alwaysReady">alwaysReady</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAlwaysReady">FunctionAppFlexConsumptionAlwaysReady</a>></code> | always_ready block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.appSettings">appSettings</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A map of key-value pairs for [App Settings](https://docs.microsoft.com/azure/azure-functions/functions-app-settings) and custom values. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.appSettings">appSettings</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A map of key-value pairs for [App Settings](https://learn.microsoft.com/azure/azure-functions/functions-app-settings) and custom values. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.authSettings">authSettings</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings">FunctionAppFlexConsumptionAuthSettings</a></code> | auth_settings block. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.authSettingsV2">authSettingsV2</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2">FunctionAppFlexConsumptionAuthSettingsV2</a></code> | auth_settings_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.clientCertificateEnabled">clientCertificateEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the function app use Client Certificates. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.clientCertificateExclusionPaths">clientCertificateExclusionPaths</a></code> | <code>java.lang.String</code> | Paths to exclude when using client certificates, separated by ; |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.clientCertificateEnabled">clientCertificateEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the Function App use Client Certificates? |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.clientCertificateExclusionPaths">clientCertificateExclusionPaths</a></code> | <code>java.lang.String</code> | Paths to exclude when using client certificates, separated by `;`. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.clientCertificateMode">clientCertificateMode</a></code> | <code>java.lang.String</code> | The mode of the Function App's client certificates requirement for incoming requests. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.connectionString">connectionString</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConnectionString">FunctionAppFlexConsumptionConnectionString</a>></code> | connection_string block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Is the Function App enabled. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.httpConcurrency">httpConcurrency</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#http_concurrency FunctionAppFlexConsumption#http_concurrency}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Is the Function App enabled? |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.httpConcurrency">httpConcurrency</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#http_concurrency FunctionAppFlexConsumption#http_concurrency}. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.httpsOnly">httpsOnly</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Can the Function App only be accessed via HTTPS? |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#id FunctionAppFlexConsumption#id}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#id FunctionAppFlexConsumption#id}. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionIdentity">FunctionAppFlexConsumptionIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.instanceMemoryInMb">instanceMemoryInMb</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#instance_memory_in_mb FunctionAppFlexConsumption#instance_memory_in_mb}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.maximumInstanceCount">maximumInstanceCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#maximum_instance_count FunctionAppFlexConsumption#maximum_instance_count}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#public_network_access_enabled FunctionAppFlexConsumption#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.instanceMemoryInMb">instanceMemoryInMb</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#instance_memory_in_mb FunctionAppFlexConsumption#instance_memory_in_mb}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.maximumInstanceCount">maximumInstanceCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#maximum_instance_count FunctionAppFlexConsumption#maximum_instance_count}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#public_network_access_enabled FunctionAppFlexConsumption#public_network_access_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.stickySettings">stickySettings</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionStickySettings">FunctionAppFlexConsumptionStickySettings</a></code> | sticky_settings block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.storageAccessKey">storageAccessKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#storage_access_key FunctionAppFlexConsumption#storage_access_key}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.storageUserAssignedIdentityId">storageUserAssignedIdentityId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#storage_user_assigned_identity_id FunctionAppFlexConsumption#storage_user_assigned_identity_id}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#tags FunctionAppFlexConsumption#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.storageAccessKey">storageAccessKey</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#storage_access_key FunctionAppFlexConsumption#storage_access_key}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.storageUserAssignedIdentityId">storageUserAssignedIdentityId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#storage_user_assigned_identity_id FunctionAppFlexConsumption#storage_user_assigned_identity_id}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#tags FunctionAppFlexConsumption#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionTimeouts">FunctionAppFlexConsumptionTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.virtualNetworkSubnetId">virtualNetworkSubnetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#virtual_network_subnet_id FunctionAppFlexConsumption#virtual_network_subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.webdeployPublishBasicAuthenticationEnabled">webdeployPublishBasicAuthenticationEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#webdeploy_publish_basic_authentication_enabled FunctionAppFlexConsumption#webdeploy_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.virtualNetworkSubnetId">virtualNetworkSubnetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#virtual_network_subnet_id FunctionAppFlexConsumption#virtual_network_subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.webdeployPublishBasicAuthenticationEnabled">webdeployPublishBasicAuthenticationEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#webdeploy_publish_basic_authentication_enabled FunctionAppFlexConsumption#webdeploy_publish_basic_authentication_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.property.zipDeployFile">zipDeployFile</a></code> | <code>java.lang.String</code> | The local path and filename of the Zip packaged application to deploy to this Function App. |
 
 ---
@@ -4530,7 +4518,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#location FunctionAppFlexConsumption#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#location FunctionAppFlexConsumption#location}.
 
 ---
 
@@ -4542,9 +4530,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Specifies the name of the Function App.
+The name of the Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#name FunctionAppFlexConsumption#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#name FunctionAppFlexConsumption#name}
 
 ---
 
@@ -4556,7 +4544,7 @@ public java.lang.String getResourceGroupName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#resource_group_name FunctionAppFlexConsumption#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#resource_group_name FunctionAppFlexConsumption#resource_group_name}.
 
 ---
 
@@ -4568,7 +4556,7 @@ public java.lang.String getRuntimeName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#runtime_name FunctionAppFlexConsumption#runtime_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#runtime_name FunctionAppFlexConsumption#runtime_name}.
 
 ---
 
@@ -4580,7 +4568,7 @@ public java.lang.String getRuntimeVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#runtime_version FunctionAppFlexConsumption#runtime_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#runtime_version FunctionAppFlexConsumption#runtime_version}.
 
 ---
 
@@ -4594,7 +4582,7 @@ public java.lang.String getServicePlanId();
 
 The ID of the App Service Plan within which to create this Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#service_plan_id FunctionAppFlexConsumption#service_plan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#service_plan_id FunctionAppFlexConsumption#service_plan_id}
 
 ---
 
@@ -4608,7 +4596,7 @@ public FunctionAppFlexConsumptionSiteConfig getSiteConfig();
 
 site_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#site_config FunctionAppFlexConsumption#site_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#site_config FunctionAppFlexConsumption#site_config}
 
 ---
 
@@ -4620,7 +4608,7 @@ public java.lang.String getStorageAuthenticationType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#storage_authentication_type FunctionAppFlexConsumption#storage_authentication_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#storage_authentication_type FunctionAppFlexConsumption#storage_authentication_type}.
 
 ---
 
@@ -4632,9 +4620,9 @@ public java.lang.String getStorageContainerEndpoint();
 
 - *Type:* java.lang.String
 
-The endpoint of the storage container where the function app's code is hosted.
+The endpoint of the Storage Container where the Function App's code is hosted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#storage_container_endpoint FunctionAppFlexConsumption#storage_container_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#storage_container_endpoint FunctionAppFlexConsumption#storage_container_endpoint}
 
 ---
 
@@ -4646,9 +4634,9 @@ public java.lang.String getStorageContainerType();
 
 - *Type:* java.lang.String
 
-The type of the storage container where the function app's code is hosted. Only `blobContainer` is supported currently.
+The type of the Storage Container where the Function App's code is hosted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#storage_container_type FunctionAppFlexConsumption#storage_container_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#storage_container_type FunctionAppFlexConsumption#storage_container_type}
 
 ---
 
@@ -4662,7 +4650,7 @@ public IResolvable|java.util.List<FunctionAppFlexConsumptionAlwaysReady> getAlwa
 
 always_ready block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#always_ready FunctionAppFlexConsumption#always_ready}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#always_ready FunctionAppFlexConsumption#always_ready}
 
 ---
 
@@ -4674,9 +4662,9 @@ public java.util.Map<java.lang.String, java.lang.String> getAppSettings();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-A map of key-value pairs for [App Settings](https://docs.microsoft.com/azure/azure-functions/functions-app-settings) and custom values.
+A map of key-value pairs for [App Settings](https://learn.microsoft.com/azure/azure-functions/functions-app-settings) and custom values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#app_settings FunctionAppFlexConsumption#app_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#app_settings FunctionAppFlexConsumption#app_settings}
 
 ---
 
@@ -4690,7 +4678,7 @@ public FunctionAppFlexConsumptionAuthSettings getAuthSettings();
 
 auth_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#auth_settings FunctionAppFlexConsumption#auth_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#auth_settings FunctionAppFlexConsumption#auth_settings}
 
 ---
 
@@ -4704,7 +4692,7 @@ public FunctionAppFlexConsumptionAuthSettingsV2 getAuthSettingsV2();
 
 auth_settings_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#auth_settings_v2 FunctionAppFlexConsumption#auth_settings_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#auth_settings_v2 FunctionAppFlexConsumption#auth_settings_v2}
 
 ---
 
@@ -4716,9 +4704,9 @@ public java.lang.Boolean|IResolvable getClientCertificateEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Should the function app use Client Certificates.
+Should the Function App use Client Certificates?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_certificate_enabled FunctionAppFlexConsumption#client_certificate_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_certificate_enabled FunctionAppFlexConsumption#client_certificate_enabled}
 
 ---
 
@@ -4730,9 +4718,9 @@ public java.lang.String getClientCertificateExclusionPaths();
 
 - *Type:* java.lang.String
 
-Paths to exclude when using client certificates, separated by ;
+Paths to exclude when using client certificates, separated by `;`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_certificate_exclusion_paths FunctionAppFlexConsumption#client_certificate_exclusion_paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_certificate_exclusion_paths FunctionAppFlexConsumption#client_certificate_exclusion_paths}
 
 ---
 
@@ -4746,9 +4734,7 @@ public java.lang.String getClientCertificateMode();
 
 The mode of the Function App's client certificates requirement for incoming requests.
 
-Possible values are `Required`, `Optional`, and `OptionalInteractiveUser`
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#client_certificate_mode FunctionAppFlexConsumption#client_certificate_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#client_certificate_mode FunctionAppFlexConsumption#client_certificate_mode}
 
 ---
 
@@ -4762,7 +4748,7 @@ public IResolvable|java.util.List<FunctionAppFlexConsumptionConnectionString> ge
 
 connection_string block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#connection_string FunctionAppFlexConsumption#connection_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#connection_string FunctionAppFlexConsumption#connection_string}
 
 ---
 
@@ -4774,9 +4760,9 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Is the Function App enabled.
+Is the Function App enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#enabled FunctionAppFlexConsumption#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#enabled FunctionAppFlexConsumption#enabled}
 
 ---
 
@@ -4788,7 +4774,7 @@ public java.lang.Number getHttpConcurrency();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#http_concurrency FunctionAppFlexConsumption#http_concurrency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#http_concurrency FunctionAppFlexConsumption#http_concurrency}.
 
 ---
 
@@ -4802,7 +4788,7 @@ public java.lang.Boolean|IResolvable getHttpsOnly();
 
 Can the Function App only be accessed via HTTPS?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#https_only FunctionAppFlexConsumption#https_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#https_only FunctionAppFlexConsumption#https_only}
 
 ---
 
@@ -4814,7 +4800,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#id FunctionAppFlexConsumption#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#id FunctionAppFlexConsumption#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4831,7 +4817,7 @@ public FunctionAppFlexConsumptionIdentity getIdentity();
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#identity FunctionAppFlexConsumption#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#identity FunctionAppFlexConsumption#identity}
 
 ---
 
@@ -4843,7 +4829,7 @@ public java.lang.Number getInstanceMemoryInMb();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#instance_memory_in_mb FunctionAppFlexConsumption#instance_memory_in_mb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#instance_memory_in_mb FunctionAppFlexConsumption#instance_memory_in_mb}.
 
 ---
 
@@ -4855,7 +4841,7 @@ public java.lang.Number getMaximumInstanceCount();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#maximum_instance_count FunctionAppFlexConsumption#maximum_instance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#maximum_instance_count FunctionAppFlexConsumption#maximum_instance_count}.
 
 ---
 
@@ -4867,7 +4853,7 @@ public java.lang.Boolean|IResolvable getPublicNetworkAccessEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#public_network_access_enabled FunctionAppFlexConsumption#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#public_network_access_enabled FunctionAppFlexConsumption#public_network_access_enabled}.
 
 ---
 
@@ -4881,7 +4867,7 @@ public FunctionAppFlexConsumptionStickySettings getStickySettings();
 
 sticky_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#sticky_settings FunctionAppFlexConsumption#sticky_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#sticky_settings FunctionAppFlexConsumption#sticky_settings}
 
 ---
 
@@ -4893,7 +4879,7 @@ public java.lang.String getStorageAccessKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#storage_access_key FunctionAppFlexConsumption#storage_access_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#storage_access_key FunctionAppFlexConsumption#storage_access_key}.
 
 ---
 
@@ -4905,7 +4891,7 @@ public java.lang.String getStorageUserAssignedIdentityId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#storage_user_assigned_identity_id FunctionAppFlexConsumption#storage_user_assigned_identity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#storage_user_assigned_identity_id FunctionAppFlexConsumption#storage_user_assigned_identity_id}.
 
 ---
 
@@ -4917,7 +4903,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#tags FunctionAppFlexConsumption#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#tags FunctionAppFlexConsumption#tags}.
 
 ---
 
@@ -4931,7 +4917,7 @@ public FunctionAppFlexConsumptionTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#timeouts FunctionAppFlexConsumption#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#timeouts FunctionAppFlexConsumption#timeouts}
 
 ---
 
@@ -4943,7 +4929,7 @@ public java.lang.String getVirtualNetworkSubnetId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#virtual_network_subnet_id FunctionAppFlexConsumption#virtual_network_subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#virtual_network_subnet_id FunctionAppFlexConsumption#virtual_network_subnet_id}.
 
 ---
 
@@ -4955,7 +4941,7 @@ public java.lang.Boolean|IResolvable getWebdeployPublishBasicAuthenticationEnabl
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#webdeploy_publish_basic_authentication_enabled FunctionAppFlexConsumption#webdeploy_publish_basic_authentication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#webdeploy_publish_basic_authentication_enabled FunctionAppFlexConsumption#webdeploy_publish_basic_authentication_enabled}.
 
 ---
 
@@ -4971,7 +4957,7 @@ The local path and filename of the Zip packaged application to deploy to this Fu
 
 **Note:** Using this value requires either `WEBSITE_RUN_FROM_PACKAGE=1` or `SCM_DO_BUILD_DURING_DEPLOYMENT=true` to be set on the App in `app_settings`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#zip_deploy_file FunctionAppFlexConsumption#zip_deploy_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#zip_deploy_file FunctionAppFlexConsumption#zip_deploy_file}
 
 ---
 
@@ -4994,7 +4980,7 @@ FunctionAppFlexConsumptionConnectionString.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConnectionString.property.name">name</a></code> | <code>java.lang.String</code> | The name which should be used for this Connection. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConnectionString.property.type">type</a></code> | <code>java.lang.String</code> | Type of database. Possible values include: `MySQL`, `SQLServer`, `SQLAzure`, `Custom`, `NotificationHub`, `ServiceBus`, `EventHub`, `APIHub`, `DocDb`, `RedisCache`, and `PostgreSQL`. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConnectionString.property.type">type</a></code> | <code>java.lang.String</code> | Type of database. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConnectionString.property.value">value</a></code> | <code>java.lang.String</code> | The connection string value. |
 
 ---
@@ -5009,7 +4995,7 @@ public java.lang.String getName();
 
 The name which should be used for this Connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#name FunctionAppFlexConsumption#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#name FunctionAppFlexConsumption#name}
 
 ---
 
@@ -5021,9 +5007,9 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Type of database. Possible values include: `MySQL`, `SQLServer`, `SQLAzure`, `Custom`, `NotificationHub`, `ServiceBus`, `EventHub`, `APIHub`, `DocDb`, `RedisCache`, and `PostgreSQL`.
+Type of database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#type FunctionAppFlexConsumption#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#type FunctionAppFlexConsumption#type}
 
 ---
 
@@ -5037,7 +5023,7 @@ public java.lang.String getValue();
 
 The connection string value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#value FunctionAppFlexConsumption#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#value FunctionAppFlexConsumption#value}
 
 ---
 
@@ -5058,8 +5044,8 @@ FunctionAppFlexConsumptionIdentity.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionIdentity.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#type FunctionAppFlexConsumption#type}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionIdentity.property.identityIds">identityIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#identity_ids FunctionAppFlexConsumption#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionIdentity.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#type FunctionAppFlexConsumption#type}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionIdentity.property.identityIds">identityIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#identity_ids FunctionAppFlexConsumption#identity_ids}. |
 
 ---
 
@@ -5071,7 +5057,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#type FunctionAppFlexConsumption#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#type FunctionAppFlexConsumption#type}.
 
 ---
 
@@ -5083,7 +5069,7 @@ public java.util.List<java.lang.String> getIdentityIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#identity_ids FunctionAppFlexConsumption#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#identity_ids FunctionAppFlexConsumption#identity_ids}.
 
 ---
 
@@ -5139,28 +5125,28 @@ FunctionAppFlexConsumptionSiteConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.applicationInsightsKey">applicationInsightsKey</a></code> | <code>java.lang.String</code> | The Instrumentation Key for connecting the Linux Function App to Application Insights. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.appServiceLogs">appServiceLogs</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigAppServiceLogs">FunctionAppFlexConsumptionSiteConfigAppServiceLogs</a></code> | app_service_logs block. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.containerRegistryManagedIdentityClientId">containerRegistryManagedIdentityClientId</a></code> | <code>java.lang.String</code> | The Client ID of the Managed Service Identity to use for connections to the Azure Container Registry. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.containerRegistryUseManagedIdentity">containerRegistryUseManagedIdentity</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should connections for Azure Container Registry use Managed Identity. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.containerRegistryUseManagedIdentity">containerRegistryUseManagedIdentity</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should connections for Azure Container Registry use Managed Identity? |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.cors">cors</a></code> | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigCors">FunctionAppFlexConsumptionSiteConfigCors</a></code> | cors block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.defaultDocuments">defaultDocuments</a></code> | <code>java.util.List<java.lang.String></code> | Specifies a list of Default Documents for the Linux Web App. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.defaultDocuments">defaultDocuments</a></code> | <code>java.util.List<java.lang.String></code> | A list of Default Documents for the Linux Web App. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.elasticInstanceMinimum">elasticInstanceMinimum</a></code> | <code>java.lang.Number</code> | The number of minimum instances for this Linux Function App. Only affects apps on Elastic Premium plans. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.healthCheckEvictionTimeInMin">healthCheckEvictionTimeInMin</a></code> | <code>java.lang.Number</code> | The amount of time in minutes that a node is unhealthy before being removed from the load balancer. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.healthCheckPath">healthCheckPath</a></code> | <code>java.lang.String</code> | The path to be checked for this function app health. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.http2Enabled">http2Enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Specifies if the http2 protocol should be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.healthCheckPath">healthCheckPath</a></code> | <code>java.lang.String</code> | The path to be checked for this Function App health. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.http2Enabled">http2Enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether the http2 protocol should be enabled. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.ipRestriction">ipRestriction</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestriction">FunctionAppFlexConsumptionSiteConfigIpRestriction</a>></code> | ip_restriction block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.ipRestrictionDefaultAction">ipRestrictionDefaultAction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#ip_restriction_default_action FunctionAppFlexConsumption#ip_restriction_default_action}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.loadBalancingMode">loadBalancingMode</a></code> | <code>java.lang.String</code> | The Site load balancing mode. Possible values include: `WeightedRoundRobin`, `LeastRequests`, `LeastResponseTime`, `WeightedTotalTraffic`, `RequestHash`, `PerSiteRoundRobin`. Defaults to `LeastRequests` if omitted. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.managedPipelineMode">managedPipelineMode</a></code> | <code>java.lang.String</code> | The Managed Pipeline mode. Possible values include: `Integrated`, `Classic`. Defaults to `Integrated`. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.ipRestrictionDefaultAction">ipRestrictionDefaultAction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#ip_restriction_default_action FunctionAppFlexConsumption#ip_restriction_default_action}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.loadBalancingMode">loadBalancingMode</a></code> | <code>java.lang.String</code> | The Site load balancing mode. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.managedPipelineMode">managedPipelineMode</a></code> | <code>java.lang.String</code> | The Managed Pipeline mode. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.minimumTlsVersion">minimumTlsVersion</a></code> | <code>java.lang.String</code> | The configures the minimum version of TLS required for SSL requests. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.remoteDebuggingEnabled">remoteDebuggingEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should Remote Debugging be enabled. Defaults to `false`. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.remoteDebuggingVersion">remoteDebuggingVersion</a></code> | <code>java.lang.String</code> | The Remote Debugging Version. Possible values include `VS2017`, `VS2019`, and `VS2022``. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.runtimeScaleMonitoringEnabled">runtimeScaleMonitoringEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should Functions Runtime Scale Monitoring be enabled. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.remoteDebuggingEnabled">remoteDebuggingEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should Remote Debugging be enabled? |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.remoteDebuggingVersion">remoteDebuggingVersion</a></code> | <code>java.lang.String</code> | The Remote Debugging Version. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.runtimeScaleMonitoringEnabled">runtimeScaleMonitoringEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should Functions Runtime Scale Monitoring be enabled? |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.scmIpRestriction">scmIpRestriction</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestriction">FunctionAppFlexConsumptionSiteConfigScmIpRestriction</a>></code> | scm_ip_restriction block. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.scmIpRestrictionDefaultAction">scmIpRestrictionDefaultAction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#scm_ip_restriction_default_action FunctionAppFlexConsumption#scm_ip_restriction_default_action}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.scmMinimumTlsVersion">scmMinimumTlsVersion</a></code> | <code>java.lang.String</code> | Configures the minimum version of TLS required for SSL requests to the SCM site Possible values include: `1.0`, `1.1`, and  `1.2`. Defaults to `1.2`. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.scmUseMainIpRestriction">scmUseMainIpRestriction</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the Linux Function App `ip_restriction` configuration be used for the SCM also. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.use32BitWorker">use32BitWorker</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the Linux Function App use a 32-bit worker. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.vnetRouteAllEnabled">vnetRouteAllEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the Linux Function App route all traffic through the virtual network. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.websocketsEnabled">websocketsEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should Web Sockets be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.scmIpRestrictionDefaultAction">scmIpRestrictionDefaultAction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#scm_ip_restriction_default_action FunctionAppFlexConsumption#scm_ip_restriction_default_action}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.scmMinimumTlsVersion">scmMinimumTlsVersion</a></code> | <code>java.lang.String</code> | Configures the minimum version of TLS required for SSL requests to the SCM site. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.scmUseMainIpRestriction">scmUseMainIpRestriction</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the Linux Function App `ip_restriction` configuration be used for the SCM also? |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.use32BitWorker">use32BitWorker</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the Linux Function App use a 32-bit worker? |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.vnetRouteAllEnabled">vnetRouteAllEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should the Linux Function App route all traffic through the Virtual Network? |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.websocketsEnabled">websocketsEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Should Web Sockets be enabled? |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.property.workerCount">workerCount</a></code> | <code>java.lang.Number</code> | The number of Workers for this Linux Function App. |
 
 ---
@@ -5175,7 +5161,7 @@ public java.lang.String getApiDefinitionUrl();
 
 The URL of the API definition that describes this Linux Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#api_definition_url FunctionAppFlexConsumption#api_definition_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#api_definition_url FunctionAppFlexConsumption#api_definition_url}
 
 ---
 
@@ -5189,7 +5175,7 @@ public java.lang.String getApiManagementApiId();
 
 The ID of the API Management API for this Linux Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#api_management_api_id FunctionAppFlexConsumption#api_management_api_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#api_management_api_id FunctionAppFlexConsumption#api_management_api_id}
 
 ---
 
@@ -5203,7 +5189,7 @@ public java.lang.String getAppCommandLine();
 
 The program and any arguments used to launch this app via the command line. (Example `node myapp.js`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#app_command_line FunctionAppFlexConsumption#app_command_line}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#app_command_line FunctionAppFlexConsumption#app_command_line}
 
 ---
 
@@ -5217,7 +5203,7 @@ public java.lang.String getApplicationInsightsConnectionString();
 
 The Connection String for linking the Linux Function App to Application Insights.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#application_insights_connection_string FunctionAppFlexConsumption#application_insights_connection_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#application_insights_connection_string FunctionAppFlexConsumption#application_insights_connection_string}
 
 ---
 
@@ -5231,7 +5217,7 @@ public java.lang.String getApplicationInsightsKey();
 
 The Instrumentation Key for connecting the Linux Function App to Application Insights.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#application_insights_key FunctionAppFlexConsumption#application_insights_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#application_insights_key FunctionAppFlexConsumption#application_insights_key}
 
 ---
 
@@ -5245,7 +5231,7 @@ public FunctionAppFlexConsumptionSiteConfigAppServiceLogs getAppServiceLogs();
 
 app_service_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#app_service_logs FunctionAppFlexConsumption#app_service_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#app_service_logs FunctionAppFlexConsumption#app_service_logs}
 
 ---
 
@@ -5259,7 +5245,7 @@ public java.lang.String getContainerRegistryManagedIdentityClientId();
 
 The Client ID of the Managed Service Identity to use for connections to the Azure Container Registry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#container_registry_managed_identity_client_id FunctionAppFlexConsumption#container_registry_managed_identity_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#container_registry_managed_identity_client_id FunctionAppFlexConsumption#container_registry_managed_identity_client_id}
 
 ---
 
@@ -5271,9 +5257,9 @@ public java.lang.Boolean|IResolvable getContainerRegistryUseManagedIdentity();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Should connections for Azure Container Registry use Managed Identity.
+Should connections for Azure Container Registry use Managed Identity?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#container_registry_use_managed_identity FunctionAppFlexConsumption#container_registry_use_managed_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#container_registry_use_managed_identity FunctionAppFlexConsumption#container_registry_use_managed_identity}
 
 ---
 
@@ -5287,7 +5273,7 @@ public FunctionAppFlexConsumptionSiteConfigCors getCors();
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#cors FunctionAppFlexConsumption#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#cors FunctionAppFlexConsumption#cors}
 
 ---
 
@@ -5299,9 +5285,9 @@ public java.util.List<java.lang.String> getDefaultDocuments();
 
 - *Type:* java.util.List<java.lang.String>
 
-Specifies a list of Default Documents for the Linux Web App.
+A list of Default Documents for the Linux Web App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#default_documents FunctionAppFlexConsumption#default_documents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#default_documents FunctionAppFlexConsumption#default_documents}
 
 ---
 
@@ -5315,7 +5301,7 @@ public java.lang.Number getElasticInstanceMinimum();
 
 The number of minimum instances for this Linux Function App. Only affects apps on Elastic Premium plans.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#elastic_instance_minimum FunctionAppFlexConsumption#elastic_instance_minimum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#elastic_instance_minimum FunctionAppFlexConsumption#elastic_instance_minimum}
 
 ---
 
@@ -5329,9 +5315,7 @@ public java.lang.Number getHealthCheckEvictionTimeInMin();
 
 The amount of time in minutes that a node is unhealthy before being removed from the load balancer.
 
-Possible values are between `2` and `10`. Only valid in conjunction with `health_check_path`
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#health_check_eviction_time_in_min FunctionAppFlexConsumption#health_check_eviction_time_in_min}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#health_check_eviction_time_in_min FunctionAppFlexConsumption#health_check_eviction_time_in_min}
 
 ---
 
@@ -5343,9 +5327,9 @@ public java.lang.String getHealthCheckPath();
 
 - *Type:* java.lang.String
 
-The path to be checked for this function app health.
+The path to be checked for this Function App health.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#health_check_path FunctionAppFlexConsumption#health_check_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#health_check_path FunctionAppFlexConsumption#health_check_path}
 
 ---
 
@@ -5357,9 +5341,9 @@ public java.lang.Boolean|IResolvable getHttp2Enabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Specifies if the http2 protocol should be enabled. Defaults to `false`.
+Whether the http2 protocol should be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#http2_enabled FunctionAppFlexConsumption#http2_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#http2_enabled FunctionAppFlexConsumption#http2_enabled}
 
 ---
 
@@ -5373,7 +5357,7 @@ public IResolvable|java.util.List<FunctionAppFlexConsumptionSiteConfigIpRestrict
 
 ip_restriction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#ip_restriction FunctionAppFlexConsumption#ip_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#ip_restriction FunctionAppFlexConsumption#ip_restriction}
 
 ---
 
@@ -5385,7 +5369,7 @@ public java.lang.String getIpRestrictionDefaultAction();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#ip_restriction_default_action FunctionAppFlexConsumption#ip_restriction_default_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#ip_restriction_default_action FunctionAppFlexConsumption#ip_restriction_default_action}.
 
 ---
 
@@ -5397,9 +5381,9 @@ public java.lang.String getLoadBalancingMode();
 
 - *Type:* java.lang.String
 
-The Site load balancing mode. Possible values include: `WeightedRoundRobin`, `LeastRequests`, `LeastResponseTime`, `WeightedTotalTraffic`, `RequestHash`, `PerSiteRoundRobin`. Defaults to `LeastRequests` if omitted.
+The Site load balancing mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#load_balancing_mode FunctionAppFlexConsumption#load_balancing_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#load_balancing_mode FunctionAppFlexConsumption#load_balancing_mode}
 
 ---
 
@@ -5411,9 +5395,9 @@ public java.lang.String getManagedPipelineMode();
 
 - *Type:* java.lang.String
 
-The Managed Pipeline mode. Possible values include: `Integrated`, `Classic`. Defaults to `Integrated`.
+The Managed Pipeline mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#managed_pipeline_mode FunctionAppFlexConsumption#managed_pipeline_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#managed_pipeline_mode FunctionAppFlexConsumption#managed_pipeline_mode}
 
 ---
 
@@ -5427,9 +5411,7 @@ public java.lang.String getMinimumTlsVersion();
 
 The configures the minimum version of TLS required for SSL requests.
 
-Possible values include: `1.0`, `1.1`, and  `1.2`. Defaults to `1.2`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#minimum_tls_version FunctionAppFlexConsumption#minimum_tls_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#minimum_tls_version FunctionAppFlexConsumption#minimum_tls_version}
 
 ---
 
@@ -5441,9 +5423,9 @@ public java.lang.Boolean|IResolvable getRemoteDebuggingEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Should Remote Debugging be enabled. Defaults to `false`.
+Should Remote Debugging be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#remote_debugging_enabled FunctionAppFlexConsumption#remote_debugging_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#remote_debugging_enabled FunctionAppFlexConsumption#remote_debugging_enabled}
 
 ---
 
@@ -5455,9 +5437,9 @@ public java.lang.String getRemoteDebuggingVersion();
 
 - *Type:* java.lang.String
 
-The Remote Debugging Version. Possible values include `VS2017`, `VS2019`, and `VS2022``.
+The Remote Debugging Version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#remote_debugging_version FunctionAppFlexConsumption#remote_debugging_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#remote_debugging_version FunctionAppFlexConsumption#remote_debugging_version}
 
 ---
 
@@ -5469,9 +5451,9 @@ public java.lang.Boolean|IResolvable getRuntimeScaleMonitoringEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Should Functions Runtime Scale Monitoring be enabled.
+Should Functions Runtime Scale Monitoring be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#runtime_scale_monitoring_enabled FunctionAppFlexConsumption#runtime_scale_monitoring_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#runtime_scale_monitoring_enabled FunctionAppFlexConsumption#runtime_scale_monitoring_enabled}
 
 ---
 
@@ -5485,7 +5467,7 @@ public IResolvable|java.util.List<FunctionAppFlexConsumptionSiteConfigScmIpRestr
 
 scm_ip_restriction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#scm_ip_restriction FunctionAppFlexConsumption#scm_ip_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#scm_ip_restriction FunctionAppFlexConsumption#scm_ip_restriction}
 
 ---
 
@@ -5497,7 +5479,7 @@ public java.lang.String getScmIpRestrictionDefaultAction();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#scm_ip_restriction_default_action FunctionAppFlexConsumption#scm_ip_restriction_default_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#scm_ip_restriction_default_action FunctionAppFlexConsumption#scm_ip_restriction_default_action}.
 
 ---
 
@@ -5509,9 +5491,9 @@ public java.lang.String getScmMinimumTlsVersion();
 
 - *Type:* java.lang.String
 
-Configures the minimum version of TLS required for SSL requests to the SCM site Possible values include: `1.0`, `1.1`, and  `1.2`. Defaults to `1.2`.
+Configures the minimum version of TLS required for SSL requests to the SCM site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#scm_minimum_tls_version FunctionAppFlexConsumption#scm_minimum_tls_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#scm_minimum_tls_version FunctionAppFlexConsumption#scm_minimum_tls_version}
 
 ---
 
@@ -5523,9 +5505,9 @@ public java.lang.Boolean|IResolvable getScmUseMainIpRestriction();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Should the Linux Function App `ip_restriction` configuration be used for the SCM also.
+Should the Linux Function App `ip_restriction` configuration be used for the SCM also?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#scm_use_main_ip_restriction FunctionAppFlexConsumption#scm_use_main_ip_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#scm_use_main_ip_restriction FunctionAppFlexConsumption#scm_use_main_ip_restriction}
 
 ---
 
@@ -5537,9 +5519,9 @@ public java.lang.Boolean|IResolvable getUse32BitWorker();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Should the Linux Function App use a 32-bit worker.
+Should the Linux Function App use a 32-bit worker?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#use_32_bit_worker FunctionAppFlexConsumption#use_32_bit_worker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#use_32_bit_worker FunctionAppFlexConsumption#use_32_bit_worker}
 
 ---
 
@@ -5551,9 +5533,9 @@ public java.lang.Boolean|IResolvable getVnetRouteAllEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Should the Linux Function App route all traffic through the virtual network.
+Should the Linux Function App route all traffic through the Virtual Network?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#vnet_route_all_enabled FunctionAppFlexConsumption#vnet_route_all_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#vnet_route_all_enabled FunctionAppFlexConsumption#vnet_route_all_enabled}
 
 ---
 
@@ -5565,9 +5547,9 @@ public java.lang.Boolean|IResolvable getWebsocketsEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Should Web Sockets be enabled. Defaults to `false`.
+Should Web Sockets be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#websockets_enabled FunctionAppFlexConsumption#websockets_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#websockets_enabled FunctionAppFlexConsumption#websockets_enabled}
 
 ---
 
@@ -5581,7 +5563,7 @@ public java.lang.Number getWorkerCount();
 
 The number of Workers for this Linux Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#worker_count FunctionAppFlexConsumption#worker_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#worker_count FunctionAppFlexConsumption#worker_count}
 
 ---
 
@@ -5602,8 +5584,8 @@ FunctionAppFlexConsumptionSiteConfigAppServiceLogs.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigAppServiceLogs.property.diskQuotaMb">diskQuotaMb</a></code> | <code>java.lang.Number</code> | The amount of disk space to use for logs. Valid values are between `25` and `100`. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigAppServiceLogs.property.retentionPeriodDays">retentionPeriodDays</a></code> | <code>java.lang.Number</code> | The retention period for logs in days. Valid values are between `0` and `99999`. Defaults to `0` (never delete). |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigAppServiceLogs.property.diskQuotaMb">diskQuotaMb</a></code> | <code>java.lang.Number</code> | The amount of disk space to use for logs. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigAppServiceLogs.property.retentionPeriodDays">retentionPeriodDays</a></code> | <code>java.lang.Number</code> | The retention period for logs in days. Defaults to `0` (never delete). |
 
 ---
 
@@ -5615,9 +5597,9 @@ public java.lang.Number getDiskQuotaMb();
 
 - *Type:* java.lang.Number
 
-The amount of disk space to use for logs. Valid values are between `25` and `100`.
+The amount of disk space to use for logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#disk_quota_mb FunctionAppFlexConsumption#disk_quota_mb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#disk_quota_mb FunctionAppFlexConsumption#disk_quota_mb}
 
 ---
 
@@ -5629,9 +5611,9 @@ public java.lang.Number getRetentionPeriodDays();
 
 - *Type:* java.lang.Number
 
-The retention period for logs in days. Valid values are between `0` and `99999`. Defaults to `0` (never delete).
+The retention period for logs in days. Defaults to `0` (never delete).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#retention_period_days FunctionAppFlexConsumption#retention_period_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#retention_period_days FunctionAppFlexConsumption#retention_period_days}
 
 ---
 
@@ -5652,8 +5634,8 @@ FunctionAppFlexConsumptionSiteConfigCors.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigCors.property.allowedOrigins">allowedOrigins</a></code> | <code>java.util.List<java.lang.String></code> | Specifies a list of origins that should be allowed to make cross-origin calls. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigCors.property.supportCredentials">supportCredentials</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Are credentials allowed in CORS requests? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigCors.property.allowedOrigins">allowedOrigins</a></code> | <code>java.util.List<java.lang.String></code> | A list of origins that should be allowed to make cross-origin calls. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigCors.property.supportCredentials">supportCredentials</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Are credentials allowed in CORS requests? |
 
 ---
 
@@ -5665,9 +5647,9 @@ public java.util.List<java.lang.String> getAllowedOrigins();
 
 - *Type:* java.util.List<java.lang.String>
 
-Specifies a list of origins that should be allowed to make cross-origin calls.
+A list of origins that should be allowed to make cross-origin calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#allowed_origins FunctionAppFlexConsumption#allowed_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#allowed_origins FunctionAppFlexConsumption#allowed_origins}
 
 ---
 
@@ -5679,9 +5661,9 @@ public java.lang.Boolean|IResolvable getSupportCredentials();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Are credentials allowed in CORS requests? Defaults to `false`.
+Are credentials allowed in CORS requests?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#support_credentials FunctionAppFlexConsumption#support_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#support_credentials FunctionAppFlexConsumption#support_credentials}
 
 ---
 
@@ -5708,9 +5690,9 @@ FunctionAppFlexConsumptionSiteConfigIpRestriction.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestriction.property.action">action</a></code> | <code>java.lang.String</code> | The action to take. Possible values are `Allow` or `Deny`. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestriction.property.action">action</a></code> | <code>java.lang.String</code> | The action to take. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestriction.property.description">description</a></code> | <code>java.lang.String</code> | The description of the IP restriction rule. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestriction.property.headers">headers</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestrictionHeaders">FunctionAppFlexConsumptionSiteConfigIpRestrictionHeaders</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#headers FunctionAppFlexConsumption#headers}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestriction.property.headers">headers</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestrictionHeaders">FunctionAppFlexConsumptionSiteConfigIpRestrictionHeaders</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#headers FunctionAppFlexConsumption#headers}. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestriction.property.ipAddress">ipAddress</a></code> | <code>java.lang.String</code> | The CIDR notation of the IP or IP Range to match. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestriction.property.name">name</a></code> | <code>java.lang.String</code> | The name which should be used for this `ip_restriction`. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestriction.property.priority">priority</a></code> | <code>java.lang.Number</code> | The priority value of this `ip_restriction`. |
@@ -5727,9 +5709,9 @@ public java.lang.String getAction();
 
 - *Type:* java.lang.String
 
-The action to take. Possible values are `Allow` or `Deny`.
+The action to take.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#action FunctionAppFlexConsumption#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#action FunctionAppFlexConsumption#action}
 
 ---
 
@@ -5743,7 +5725,7 @@ public java.lang.String getDescription();
 
 The description of the IP restriction rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#description FunctionAppFlexConsumption#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#description FunctionAppFlexConsumption#description}
 
 ---
 
@@ -5755,7 +5737,7 @@ public IResolvable|java.util.List<FunctionAppFlexConsumptionSiteConfigIpRestrict
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestrictionHeaders">FunctionAppFlexConsumptionSiteConfigIpRestrictionHeaders</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#headers FunctionAppFlexConsumption#headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#headers FunctionAppFlexConsumption#headers}.
 
 ---
 
@@ -5769,9 +5751,9 @@ public java.lang.String getIpAddress();
 
 The CIDR notation of the IP or IP Range to match.
 
-For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`
+For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#ip_address FunctionAppFlexConsumption#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#ip_address FunctionAppFlexConsumption#ip_address}
 
 ---
 
@@ -5785,7 +5767,7 @@ public java.lang.String getName();
 
 The name which should be used for this `ip_restriction`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#name FunctionAppFlexConsumption#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#name FunctionAppFlexConsumption#name}
 
 ---
 
@@ -5799,7 +5781,7 @@ public java.lang.Number getPriority();
 
 The priority value of this `ip_restriction`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#priority FunctionAppFlexConsumption#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#priority FunctionAppFlexConsumption#priority}
 
 ---
 
@@ -5813,7 +5795,7 @@ public java.lang.String getServiceTag();
 
 The Service Tag used for this IP Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#service_tag FunctionAppFlexConsumption#service_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#service_tag FunctionAppFlexConsumption#service_tag}
 
 ---
 
@@ -5827,7 +5809,7 @@ public java.lang.String getVirtualNetworkSubnetId();
 
 The Virtual Network Subnet ID used for this IP Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#virtual_network_subnet_id FunctionAppFlexConsumption#virtual_network_subnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#virtual_network_subnet_id FunctionAppFlexConsumption#virtual_network_subnet_id}
 
 ---
 
@@ -5850,10 +5832,10 @@ FunctionAppFlexConsumptionSiteConfigIpRestrictionHeaders.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestrictionHeaders.property.xAzureFdid">xAzureFdid</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#x_azure_fdid FunctionAppFlexConsumption#x_azure_fdid}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestrictionHeaders.property.xFdHealthProbe">xFdHealthProbe</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#x_fd_health_probe FunctionAppFlexConsumption#x_fd_health_probe}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestrictionHeaders.property.xForwardedFor">xForwardedFor</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#x_forwarded_for FunctionAppFlexConsumption#x_forwarded_for}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestrictionHeaders.property.xForwardedHost">xForwardedHost</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#x_forwarded_host FunctionAppFlexConsumption#x_forwarded_host}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestrictionHeaders.property.xAzureFdid">xAzureFdid</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#x_azure_fdid FunctionAppFlexConsumption#x_azure_fdid}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestrictionHeaders.property.xFdHealthProbe">xFdHealthProbe</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#x_fd_health_probe FunctionAppFlexConsumption#x_fd_health_probe}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestrictionHeaders.property.xForwardedFor">xForwardedFor</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#x_forwarded_for FunctionAppFlexConsumption#x_forwarded_for}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestrictionHeaders.property.xForwardedHost">xForwardedHost</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#x_forwarded_host FunctionAppFlexConsumption#x_forwarded_host}. |
 
 ---
 
@@ -5865,7 +5847,7 @@ public java.util.List<java.lang.String> getXAzureFdid();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#x_azure_fdid FunctionAppFlexConsumption#x_azure_fdid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#x_azure_fdid FunctionAppFlexConsumption#x_azure_fdid}.
 
 ---
 
@@ -5877,7 +5859,7 @@ public java.util.List<java.lang.String> getXFdHealthProbe();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#x_fd_health_probe FunctionAppFlexConsumption#x_fd_health_probe}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#x_fd_health_probe FunctionAppFlexConsumption#x_fd_health_probe}.
 
 ---
 
@@ -5889,7 +5871,7 @@ public java.util.List<java.lang.String> getXForwardedFor();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#x_forwarded_for FunctionAppFlexConsumption#x_forwarded_for}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#x_forwarded_for FunctionAppFlexConsumption#x_forwarded_for}.
 
 ---
 
@@ -5901,7 +5883,7 @@ public java.util.List<java.lang.String> getXForwardedHost();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#x_forwarded_host FunctionAppFlexConsumption#x_forwarded_host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#x_forwarded_host FunctionAppFlexConsumption#x_forwarded_host}.
 
 ---
 
@@ -5928,9 +5910,9 @@ FunctionAppFlexConsumptionSiteConfigScmIpRestriction.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestriction.property.action">action</a></code> | <code>java.lang.String</code> | The action to take. Possible values are `Allow` or `Deny`. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestriction.property.action">action</a></code> | <code>java.lang.String</code> | The action to take. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestriction.property.description">description</a></code> | <code>java.lang.String</code> | The description of the IP restriction rule. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestriction.property.headers">headers</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeaders">FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeaders</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#headers FunctionAppFlexConsumption#headers}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestriction.property.headers">headers</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeaders">FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeaders</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#headers FunctionAppFlexConsumption#headers}. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestriction.property.ipAddress">ipAddress</a></code> | <code>java.lang.String</code> | The CIDR notation of the IP or IP Range to match. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestriction.property.name">name</a></code> | <code>java.lang.String</code> | The name which should be used for this `ip_restriction`. |
 | <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestriction.property.priority">priority</a></code> | <code>java.lang.Number</code> | The priority value of this `ip_restriction`. |
@@ -5947,9 +5929,9 @@ public java.lang.String getAction();
 
 - *Type:* java.lang.String
 
-The action to take. Possible values are `Allow` or `Deny`.
+The action to take.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#action FunctionAppFlexConsumption#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#action FunctionAppFlexConsumption#action}
 
 ---
 
@@ -5963,7 +5945,7 @@ public java.lang.String getDescription();
 
 The description of the IP restriction rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#description FunctionAppFlexConsumption#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#description FunctionAppFlexConsumption#description}
 
 ---
 
@@ -5975,7 +5957,7 @@ public IResolvable|java.util.List<FunctionAppFlexConsumptionSiteConfigScmIpRestr
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeaders">FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeaders</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#headers FunctionAppFlexConsumption#headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#headers FunctionAppFlexConsumption#headers}.
 
 ---
 
@@ -5989,9 +5971,9 @@ public java.lang.String getIpAddress();
 
 The CIDR notation of the IP or IP Range to match.
 
-For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`
+For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#ip_address FunctionAppFlexConsumption#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#ip_address FunctionAppFlexConsumption#ip_address}
 
 ---
 
@@ -6005,7 +5987,7 @@ public java.lang.String getName();
 
 The name which should be used for this `ip_restriction`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#name FunctionAppFlexConsumption#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#name FunctionAppFlexConsumption#name}
 
 ---
 
@@ -6019,7 +6001,7 @@ public java.lang.Number getPriority();
 
 The priority value of this `ip_restriction`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#priority FunctionAppFlexConsumption#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#priority FunctionAppFlexConsumption#priority}
 
 ---
 
@@ -6033,7 +6015,7 @@ public java.lang.String getServiceTag();
 
 The Service Tag used for this IP Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#service_tag FunctionAppFlexConsumption#service_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#service_tag FunctionAppFlexConsumption#service_tag}
 
 ---
 
@@ -6047,7 +6029,7 @@ public java.lang.String getVirtualNetworkSubnetId();
 
 The Virtual Network Subnet ID used for this IP Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#virtual_network_subnet_id FunctionAppFlexConsumption#virtual_network_subnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#virtual_network_subnet_id FunctionAppFlexConsumption#virtual_network_subnet_id}
 
 ---
 
@@ -6070,10 +6052,10 @@ FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeaders.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeaders.property.xAzureFdid">xAzureFdid</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#x_azure_fdid FunctionAppFlexConsumption#x_azure_fdid}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeaders.property.xFdHealthProbe">xFdHealthProbe</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#x_fd_health_probe FunctionAppFlexConsumption#x_fd_health_probe}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeaders.property.xForwardedFor">xForwardedFor</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#x_forwarded_for FunctionAppFlexConsumption#x_forwarded_for}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeaders.property.xForwardedHost">xForwardedHost</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#x_forwarded_host FunctionAppFlexConsumption#x_forwarded_host}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeaders.property.xAzureFdid">xAzureFdid</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#x_azure_fdid FunctionAppFlexConsumption#x_azure_fdid}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeaders.property.xFdHealthProbe">xFdHealthProbe</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#x_fd_health_probe FunctionAppFlexConsumption#x_fd_health_probe}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeaders.property.xForwardedFor">xForwardedFor</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#x_forwarded_for FunctionAppFlexConsumption#x_forwarded_for}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeaders.property.xForwardedHost">xForwardedHost</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#x_forwarded_host FunctionAppFlexConsumption#x_forwarded_host}. |
 
 ---
 
@@ -6085,7 +6067,7 @@ public java.util.List<java.lang.String> getXAzureFdid();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#x_azure_fdid FunctionAppFlexConsumption#x_azure_fdid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#x_azure_fdid FunctionAppFlexConsumption#x_azure_fdid}.
 
 ---
 
@@ -6097,7 +6079,7 @@ public java.util.List<java.lang.String> getXFdHealthProbe();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#x_fd_health_probe FunctionAppFlexConsumption#x_fd_health_probe}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#x_fd_health_probe FunctionAppFlexConsumption#x_fd_health_probe}.
 
 ---
 
@@ -6109,7 +6091,7 @@ public java.util.List<java.lang.String> getXForwardedFor();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#x_forwarded_for FunctionAppFlexConsumption#x_forwarded_for}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#x_forwarded_for FunctionAppFlexConsumption#x_forwarded_for}.
 
 ---
 
@@ -6121,7 +6103,7 @@ public java.util.List<java.lang.String> getXForwardedHost();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#x_forwarded_host FunctionAppFlexConsumption#x_forwarded_host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#x_forwarded_host FunctionAppFlexConsumption#x_forwarded_host}.
 
 ---
 
@@ -6154,8 +6136,8 @@ FunctionAppFlexConsumptionStickySettings.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionStickySettings.property.appSettingNames">appSettingNames</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#app_setting_names FunctionAppFlexConsumption#app_setting_names}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionStickySettings.property.connectionStringNames">connectionStringNames</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#connection_string_names FunctionAppFlexConsumption#connection_string_names}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionStickySettings.property.appSettingNames">appSettingNames</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#app_setting_names FunctionAppFlexConsumption#app_setting_names}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionStickySettings.property.connectionStringNames">connectionStringNames</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#connection_string_names FunctionAppFlexConsumption#connection_string_names}. |
 
 ---
 
@@ -6167,7 +6149,7 @@ public java.util.List<java.lang.String> getAppSettingNames();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#app_setting_names FunctionAppFlexConsumption#app_setting_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#app_setting_names FunctionAppFlexConsumption#app_setting_names}.
 
 ---
 
@@ -6179,7 +6161,7 @@ public java.util.List<java.lang.String> getConnectionStringNames();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#connection_string_names FunctionAppFlexConsumption#connection_string_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#connection_string_names FunctionAppFlexConsumption#connection_string_names}.
 
 ---
 
@@ -6202,10 +6184,10 @@ FunctionAppFlexConsumptionTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#create FunctionAppFlexConsumption#create}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#delete FunctionAppFlexConsumption#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#read FunctionAppFlexConsumption#read}. |
-| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#update FunctionAppFlexConsumption#update}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#create FunctionAppFlexConsumption#create}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#delete FunctionAppFlexConsumption#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#read FunctionAppFlexConsumption#read}. |
+| <code><a href="#@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#update FunctionAppFlexConsumption#update}. |
 
 ---
 
@@ -6217,7 +6199,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#create FunctionAppFlexConsumption#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#create FunctionAppFlexConsumption#create}.
 
 ---
 
@@ -6229,7 +6211,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#delete FunctionAppFlexConsumption#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#delete FunctionAppFlexConsumption#delete}.
 
 ---
 
@@ -6241,7 +6223,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#read FunctionAppFlexConsumption#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#read FunctionAppFlexConsumption#read}.
 
 ---
 
@@ -6253,7 +6235,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/function_app_flex_consumption#update FunctionAppFlexConsumption#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/function_app_flex_consumption#update FunctionAppFlexConsumption#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### WindowsFunctionApp <a name="WindowsFunctionApp" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app azurerm_windows_function_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app azurerm_windows_function_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer"></a>
 
@@ -837,7 +837,7 @@ The construct id used in the generated config for the WindowsFunctionApp to impo
 
 The id of the existing WindowsFunctionApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1999,8 +1999,8 @@ new WindowsFunctionAppAuthSettings {
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the Authentication / Authorization feature be enabled? |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.activeDirectory">ActiveDirectory</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsActiveDirectory">WindowsFunctionAppAuthSettingsActiveDirectory</a></code> | active_directory block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.additionalLoginParameters">AdditionalLoginParameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Specifies a map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.allowedExternalRedirectUrls">AllowedExternalRedirectUrls</a></code> | <code>string[]</code> | Specifies a list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.additionalLoginParameters">AdditionalLoginParameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.allowedExternalRedirectUrls">AllowedExternalRedirectUrls</a></code> | <code>string[]</code> | A list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.defaultProvider">DefaultProvider</a></code> | <code>string</code> | The default authentication provider to use when multiple providers are configured. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.facebook">Facebook</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsFacebook">WindowsFunctionAppAuthSettingsFacebook</a></code> | facebook block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.github">Github</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGithub">WindowsFunctionAppAuthSettingsGithub</a></code> | github block. |
@@ -2009,9 +2009,9 @@ new WindowsFunctionAppAuthSettings {
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.microsoft">Microsoft</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsMicrosoft">WindowsFunctionAppAuthSettingsMicrosoft</a></code> | microsoft block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.runtimeVersion">RuntimeVersion</a></code> | <code>string</code> | The RuntimeVersion of the Authentication / Authorization feature in use. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.tokenRefreshExtensionHours">TokenRefreshExtensionHours</a></code> | <code>double</code> | The number of hours after session token expiration that a session token can be used to call the token refresh API. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.tokenStoreEnabled">TokenStoreEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.tokenStoreEnabled">TokenStoreEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.twitter">Twitter</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsTwitter">WindowsFunctionAppAuthSettingsTwitter</a></code> | twitter block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.unauthenticatedClientAction">UnauthenticatedClientAction</a></code> | <code>string</code> | The action to take when an unauthenticated client attempts to access the app. Possible values include: `RedirectToLoginPage`, `AllowAnonymous`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.unauthenticatedClientAction">UnauthenticatedClientAction</a></code> | <code>string</code> | The action to take when an unauthenticated client attempts to access the app. |
 
 ---
 
@@ -2025,7 +2025,7 @@ public bool|IResolvable Enabled { get; set; }
 
 Should the Authentication / Authorization feature be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#enabled WindowsFunctionApp#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#enabled WindowsFunctionApp#enabled}
 
 ---
 
@@ -2039,7 +2039,7 @@ public WindowsFunctionAppAuthSettingsActiveDirectory ActiveDirectory { get; set;
 
 active_directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#active_directory WindowsFunctionApp#active_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#active_directory WindowsFunctionApp#active_directory}
 
 ---
 
@@ -2051,9 +2051,9 @@ public System.Collections.Generic.IDictionary<string, string> AdditionalLoginPar
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Specifies a map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in.
+A map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#additional_login_parameters WindowsFunctionApp#additional_login_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#additional_login_parameters WindowsFunctionApp#additional_login_parameters}
 
 ---
 
@@ -2065,9 +2065,9 @@ public string[] AllowedExternalRedirectUrls { get; set; }
 
 - *Type:* string[]
 
-Specifies a list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App.
+A list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#allowed_external_redirect_urls WindowsFunctionApp#allowed_external_redirect_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#allowed_external_redirect_urls WindowsFunctionApp#allowed_external_redirect_urls}
 
 ---
 
@@ -2081,9 +2081,7 @@ public string DefaultProvider { get; set; }
 
 The default authentication provider to use when multiple providers are configured.
 
-Possible values include: `AzureActiveDirectory`, `Facebook`, `Google`, `MicrosoftAccount`, `Twitter`, `Github`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#default_provider WindowsFunctionApp#default_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#default_provider WindowsFunctionApp#default_provider}
 
 ---
 
@@ -2097,7 +2095,7 @@ public WindowsFunctionAppAuthSettingsFacebook Facebook { get; set; }
 
 facebook block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#facebook WindowsFunctionApp#facebook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#facebook WindowsFunctionApp#facebook}
 
 ---
 
@@ -2111,7 +2109,7 @@ public WindowsFunctionAppAuthSettingsGithub Github { get; set; }
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#github WindowsFunctionApp#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#github WindowsFunctionApp#github}
 
 ---
 
@@ -2125,7 +2123,7 @@ public WindowsFunctionAppAuthSettingsGoogle Google { get; set; }
 
 google block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#google WindowsFunctionApp#google}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#google WindowsFunctionApp#google}
 
 ---
 
@@ -2139,7 +2137,7 @@ public string Issuer { get; set; }
 
 The OpenID Connect Issuer URI that represents the entity which issues access tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#issuer WindowsFunctionApp#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#issuer WindowsFunctionApp#issuer}
 
 ---
 
@@ -2153,7 +2151,7 @@ public WindowsFunctionAppAuthSettingsMicrosoft Microsoft { get; set; }
 
 microsoft block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#microsoft WindowsFunctionApp#microsoft}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#microsoft WindowsFunctionApp#microsoft}
 
 ---
 
@@ -2167,7 +2165,7 @@ public string RuntimeVersion { get; set; }
 
 The RuntimeVersion of the Authentication / Authorization feature in use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#runtime_version WindowsFunctionApp#runtime_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#runtime_version WindowsFunctionApp#runtime_version}
 
 ---
 
@@ -2181,9 +2179,7 @@ public double TokenRefreshExtensionHours { get; set; }
 
 The number of hours after session token expiration that a session token can be used to call the token refresh API.
 
-Defaults to `72` hours.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#token_refresh_extension_hours WindowsFunctionApp#token_refresh_extension_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#token_refresh_extension_hours WindowsFunctionApp#token_refresh_extension_hours}
 
 ---
 
@@ -2195,9 +2191,9 @@ public bool|IResolvable TokenStoreEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`.
+Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#token_store_enabled WindowsFunctionApp#token_store_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#token_store_enabled WindowsFunctionApp#token_store_enabled}
 
 ---
 
@@ -2211,7 +2207,7 @@ public WindowsFunctionAppAuthSettingsTwitter Twitter { get; set; }
 
 twitter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#twitter WindowsFunctionApp#twitter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#twitter WindowsFunctionApp#twitter}
 
 ---
 
@@ -2223,9 +2219,9 @@ public string UnauthenticatedClientAction { get; set; }
 
 - *Type:* string
 
-The action to take when an unauthenticated client attempts to access the app. Possible values include: `RedirectToLoginPage`, `AllowAnonymous`.
+The action to take when an unauthenticated client attempts to access the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#unauthenticated_client_action WindowsFunctionApp#unauthenticated_client_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#unauthenticated_client_action WindowsFunctionApp#unauthenticated_client_action}
 
 ---
 
@@ -2249,9 +2245,9 @@ new WindowsFunctionAppAuthSettingsActiveDirectory {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsActiveDirectory.property.clientId">ClientId</a></code> | <code>string</code> | The ID of the Client to use to authenticate with Azure Active Directory. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsActiveDirectory.property.allowedAudiences">AllowedAudiences</a></code> | <code>string[]</code> | Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsActiveDirectory.property.clientSecret">ClientSecret</a></code> | <code>string</code> | The Client Secret for the Client ID. Cannot be used with `client_secret_setting_name`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsActiveDirectory.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>string</code> | The App Setting name that contains the client secret of the Client. Cannot be used with `client_secret`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsActiveDirectory.property.allowedAudiences">AllowedAudiences</a></code> | <code>string[]</code> | A list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsActiveDirectory.property.clientSecret">ClientSecret</a></code> | <code>string</code> | The Client Secret for the Client ID. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsActiveDirectory.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>string</code> | The App Setting name that contains the client secret of the Client. |
 
 ---
 
@@ -2265,7 +2261,7 @@ public string ClientId { get; set; }
 
 The ID of the Client to use to authenticate with Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
 
 ---
 
@@ -2277,9 +2273,9 @@ public string[] AllowedAudiences { get; set; }
 
 - *Type:* string[]
 
-Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
+A list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#allowed_audiences WindowsFunctionApp#allowed_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#allowed_audiences WindowsFunctionApp#allowed_audiences}
 
 ---
 
@@ -2291,9 +2287,9 @@ public string ClientSecret { get; set; }
 
 - *Type:* string
 
-The Client Secret for the Client ID. Cannot be used with `client_secret_setting_name`.
+The Client Secret for the Client ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_secret WindowsFunctionApp#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_secret WindowsFunctionApp#client_secret}
 
 ---
 
@@ -2305,9 +2301,9 @@ public string ClientSecretSettingName { get; set; }
 
 - *Type:* string
 
-The App Setting name that contains the client secret of the Client. Cannot be used with `client_secret`.
+The App Setting name that contains the client secret of the Client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_secret_setting_name WindowsFunctionApp#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_secret_setting_name WindowsFunctionApp#client_secret_setting_name}
 
 ---
 
@@ -2331,9 +2327,9 @@ new WindowsFunctionAppAuthSettingsFacebook {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsFacebook.property.appId">AppId</a></code> | <code>string</code> | The App ID of the Facebook app used for login. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsFacebook.property.appSecret">AppSecret</a></code> | <code>string</code> | The App Secret of the Facebook app used for Facebook Login. Cannot be specified with `app_secret_setting_name`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsFacebook.property.appSecretSettingName">AppSecretSettingName</a></code> | <code>string</code> | The app setting name that contains the `app_secret` value used for Facebook Login. Cannot be specified with `app_secret`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsFacebook.property.oauthScopes">OauthScopes</a></code> | <code>string[]</code> | Specifies a list of OAuth 2.0 scopes to be requested as part of Facebook Login authentication. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsFacebook.property.appSecret">AppSecret</a></code> | <code>string</code> | The App Secret of the Facebook app used for Facebook Login. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsFacebook.property.appSecretSettingName">AppSecretSettingName</a></code> | <code>string</code> | The app setting name that contains the `app_secret` value used for Facebook Login. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsFacebook.property.oauthScopes">OauthScopes</a></code> | <code>string[]</code> | A list of OAuth 2.0 scopes to be requested as part of Facebook Login authentication. |
 
 ---
 
@@ -2347,7 +2343,7 @@ public string AppId { get; set; }
 
 The App ID of the Facebook app used for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#app_id WindowsFunctionApp#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#app_id WindowsFunctionApp#app_id}
 
 ---
 
@@ -2359,9 +2355,9 @@ public string AppSecret { get; set; }
 
 - *Type:* string
 
-The App Secret of the Facebook app used for Facebook Login. Cannot be specified with `app_secret_setting_name`.
+The App Secret of the Facebook app used for Facebook Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#app_secret WindowsFunctionApp#app_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#app_secret WindowsFunctionApp#app_secret}
 
 ---
 
@@ -2373,9 +2369,9 @@ public string AppSecretSettingName { get; set; }
 
 - *Type:* string
 
-The app setting name that contains the `app_secret` value used for Facebook Login. Cannot be specified with `app_secret`.
+The app setting name that contains the `app_secret` value used for Facebook Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#app_secret_setting_name WindowsFunctionApp#app_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#app_secret_setting_name WindowsFunctionApp#app_secret_setting_name}
 
 ---
 
@@ -2387,9 +2383,9 @@ public string[] OauthScopes { get; set; }
 
 - *Type:* string[]
 
-Specifies a list of OAuth 2.0 scopes to be requested as part of Facebook Login authentication.
+A list of OAuth 2.0 scopes to be requested as part of Facebook Login authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#oauth_scopes WindowsFunctionApp#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#oauth_scopes WindowsFunctionApp#oauth_scopes}
 
 ---
 
@@ -2413,9 +2409,9 @@ new WindowsFunctionAppAuthSettingsGithub {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGithub.property.clientId">ClientId</a></code> | <code>string</code> | The ID of the GitHub app used for login. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGithub.property.clientSecret">ClientSecret</a></code> | <code>string</code> | The Client Secret of the GitHub app used for GitHub Login. Cannot be specified with `client_secret_setting_name`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGithub.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>string</code> | The app setting name that contains the `client_secret` value used for GitHub Login. Cannot be specified with `client_secret`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGithub.property.oauthScopes">OauthScopes</a></code> | <code>string[]</code> | Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGithub.property.clientSecret">ClientSecret</a></code> | <code>string</code> | The Client Secret of the GitHub app used for GitHub Login. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGithub.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>string</code> | The app setting name that contains the `client_secret` value used for GitHub Login. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGithub.property.oauthScopes">OauthScopes</a></code> | <code>string[]</code> | A list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication. |
 
 ---
 
@@ -2429,7 +2425,7 @@ public string ClientId { get; set; }
 
 The ID of the GitHub app used for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
 
 ---
 
@@ -2441,9 +2437,9 @@ public string ClientSecret { get; set; }
 
 - *Type:* string
 
-The Client Secret of the GitHub app used for GitHub Login. Cannot be specified with `client_secret_setting_name`.
+The Client Secret of the GitHub app used for GitHub Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_secret WindowsFunctionApp#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_secret WindowsFunctionApp#client_secret}
 
 ---
 
@@ -2455,9 +2451,9 @@ public string ClientSecretSettingName { get; set; }
 
 - *Type:* string
 
-The app setting name that contains the `client_secret` value used for GitHub Login. Cannot be specified with `client_secret`.
+The app setting name that contains the `client_secret` value used for GitHub Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_secret_setting_name WindowsFunctionApp#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_secret_setting_name WindowsFunctionApp#client_secret_setting_name}
 
 ---
 
@@ -2469,9 +2465,9 @@ public string[] OauthScopes { get; set; }
 
 - *Type:* string[]
 
-Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
+A list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#oauth_scopes WindowsFunctionApp#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#oauth_scopes WindowsFunctionApp#oauth_scopes}
 
 ---
 
@@ -2495,9 +2491,9 @@ new WindowsFunctionAppAuthSettingsGoogle {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGoogle.property.clientId">ClientId</a></code> | <code>string</code> | The OpenID Connect Client ID for the Google web application. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGoogle.property.clientSecret">ClientSecret</a></code> | <code>string</code> | The client secret associated with the Google web application.  Cannot be specified with `client_secret_setting_name`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGoogle.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>string</code> | The app setting name that contains the `client_secret` value used for Google Login. Cannot be specified with `client_secret`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGoogle.property.oauthScopes">OauthScopes</a></code> | <code>string[]</code> | Specifies a list of OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. If not specified, "openid", "profile", and "email" are used as default scopes. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGoogle.property.clientSecret">ClientSecret</a></code> | <code>string</code> | The client secret associated with the Google web application. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGoogle.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>string</code> | The app setting name that contains the `client_secret` value used for Google Login. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGoogle.property.oauthScopes">OauthScopes</a></code> | <code>string[]</code> | A list of OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. If not specified, "openid", "profile", and "email" are used as default scopes. |
 
 ---
 
@@ -2511,7 +2507,7 @@ public string ClientId { get; set; }
 
 The OpenID Connect Client ID for the Google web application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
 
 ---
 
@@ -2523,9 +2519,9 @@ public string ClientSecret { get; set; }
 
 - *Type:* string
 
-The client secret associated with the Google web application.  Cannot be specified with `client_secret_setting_name`.
+The client secret associated with the Google web application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_secret WindowsFunctionApp#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_secret WindowsFunctionApp#client_secret}
 
 ---
 
@@ -2537,9 +2533,9 @@ public string ClientSecretSettingName { get; set; }
 
 - *Type:* string
 
-The app setting name that contains the `client_secret` value used for Google Login. Cannot be specified with `client_secret`.
+The app setting name that contains the `client_secret` value used for Google Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_secret_setting_name WindowsFunctionApp#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_secret_setting_name WindowsFunctionApp#client_secret_setting_name}
 
 ---
 
@@ -2551,9 +2547,9 @@ public string[] OauthScopes { get; set; }
 
 - *Type:* string[]
 
-Specifies a list of OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. If not specified, "openid", "profile", and "email" are used as default scopes.
+A list of OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. If not specified, "openid", "profile", and "email" are used as default scopes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#oauth_scopes WindowsFunctionApp#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#oauth_scopes WindowsFunctionApp#oauth_scopes}
 
 ---
 
@@ -2577,8 +2573,8 @@ new WindowsFunctionAppAuthSettingsMicrosoft {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsMicrosoft.property.clientId">ClientId</a></code> | <code>string</code> | The OAuth 2.0 client ID that was created for the app used for authentication. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsMicrosoft.property.clientSecret">ClientSecret</a></code> | <code>string</code> | The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret_setting_name`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsMicrosoft.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>string</code> | The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsMicrosoft.property.clientSecret">ClientSecret</a></code> | <code>string</code> | The OAuth 2.0 client secret that was created for the app used for authentication. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsMicrosoft.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>string</code> | The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsMicrosoft.property.oauthScopes">OauthScopes</a></code> | <code>string[]</code> | The list of OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. If not specified, `wl.basic` is used as the default scope. |
 
 ---
@@ -2593,7 +2589,7 @@ public string ClientId { get; set; }
 
 The OAuth 2.0 client ID that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
 
 ---
 
@@ -2605,9 +2601,9 @@ public string ClientSecret { get; set; }
 
 - *Type:* string
 
-The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret_setting_name`.
+The OAuth 2.0 client secret that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_secret WindowsFunctionApp#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_secret WindowsFunctionApp#client_secret}
 
 ---
 
@@ -2619,9 +2615,9 @@ public string ClientSecretSettingName { get; set; }
 
 - *Type:* string
 
-The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret`.
+The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_secret_setting_name WindowsFunctionApp#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_secret_setting_name WindowsFunctionApp#client_secret_setting_name}
 
 ---
 
@@ -2635,7 +2631,7 @@ public string[] OauthScopes { get; set; }
 
 The list of OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. If not specified, `wl.basic` is used as the default scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#oauth_scopes WindowsFunctionApp#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#oauth_scopes WindowsFunctionApp#oauth_scopes}
 
 ---
 
@@ -2658,7 +2654,7 @@ new WindowsFunctionAppAuthSettingsTwitter {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsTwitter.property.consumerKey">ConsumerKey</a></code> | <code>string</code> | The OAuth 1.0a consumer key of the Twitter application used for sign-in. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsTwitter.property.consumerSecret">ConsumerSecret</a></code> | <code>string</code> | The OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret_setting_name`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsTwitter.property.consumerSecret">ConsumerSecret</a></code> | <code>string</code> | The OAuth 1.0a consumer secret of the Twitter application used for sign-in. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsTwitter.property.consumerSecretSettingName">ConsumerSecretSettingName</a></code> | <code>string</code> | The app setting name that contains the OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret`. |
 
 ---
@@ -2673,7 +2669,7 @@ public string ConsumerKey { get; set; }
 
 The OAuth 1.0a consumer key of the Twitter application used for sign-in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#consumer_key WindowsFunctionApp#consumer_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#consumer_key WindowsFunctionApp#consumer_key}
 
 ---
 
@@ -2685,9 +2681,9 @@ public string ConsumerSecret { get; set; }
 
 - *Type:* string
 
-The OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret_setting_name`.
+The OAuth 1.0a consumer secret of the Twitter application used for sign-in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#consumer_secret WindowsFunctionApp#consumer_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#consumer_secret WindowsFunctionApp#consumer_secret}
 
 ---
 
@@ -2701,7 +2697,7 @@ public string ConsumerSecretSettingName { get; set; }
 
 The app setting name that contains the OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#consumer_secret_setting_name WindowsFunctionApp#consumer_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#consumer_secret_setting_name WindowsFunctionApp#consumer_secret_setting_name}
 
 ---
 
@@ -2745,23 +2741,23 @@ new WindowsFunctionAppAuthSettingsV2 {
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.login">Login</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login">WindowsFunctionAppAuthSettingsV2Login</a></code> | login block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.activeDirectoryV2">ActiveDirectoryV2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2">WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2</a></code> | active_directory_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.appleV2">AppleV2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2AppleV2">WindowsFunctionAppAuthSettingsV2AppleV2</a></code> | apple_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.authEnabled">AuthEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the AuthV2 Settings be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.authEnabled">AuthEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the AuthV2 Settings be enabled? |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.azureStaticWebAppV2">AzureStaticWebAppV2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2AzureStaticWebAppV2">WindowsFunctionAppAuthSettingsV2AzureStaticWebAppV2</a></code> | azure_static_web_app_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.configFilePath">ConfigFilePath</a></code> | <code>string</code> | The path to the App Auth settings. **Note:** Relative Paths are evaluated from the Site Root directory. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.customOidcV2">CustomOidcV2</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2">WindowsFunctionAppAuthSettingsV2CustomOidcV2</a>[]</code> | custom_oidc_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.defaultProvider">DefaultProvider</a></code> | <code>string</code> | The Default Authentication Provider to use when the `unauthenticated_action` is set to `RedirectToLoginPage`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.excludedPaths">ExcludedPaths</a></code> | <code>string[]</code> | The paths which should be excluded from the `unauthenticated_action` when it is set to `RedirectToLoginPage`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.facebookV2">FacebookV2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2FacebookV2">WindowsFunctionAppAuthSettingsV2FacebookV2</a></code> | facebook_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.forwardProxyConvention">ForwardProxyConvention</a></code> | <code>string</code> | The convention used to determine the url of the request made. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.forwardProxyConvention">ForwardProxyConvention</a></code> | <code>string</code> | The convention used to determine the URL of the request made. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.forwardProxyCustomHostHeaderName">ForwardProxyCustomHostHeaderName</a></code> | <code>string</code> | The name of the header containing the host of the request. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.forwardProxyCustomSchemeHeaderName">ForwardProxyCustomSchemeHeaderName</a></code> | <code>string</code> | The name of the header containing the scheme of the request. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.githubV2">GithubV2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GithubV2">WindowsFunctionAppAuthSettingsV2GithubV2</a></code> | github_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.googleV2">GoogleV2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GoogleV2">WindowsFunctionAppAuthSettingsV2GoogleV2</a></code> | google_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.httpRouteApiPrefix">HttpRouteApiPrefix</a></code> | <code>string</code> | The prefix that should precede all the authentication and authorisation paths. Defaults to `/.auth`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.httpRouteApiPrefix">HttpRouteApiPrefix</a></code> | <code>string</code> | The prefix that should precede all the authentication and authorisation paths. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.microsoftV2">MicrosoftV2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2MicrosoftV2">WindowsFunctionAppAuthSettingsV2MicrosoftV2</a></code> | microsoft_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.requireAuthentication">RequireAuthentication</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the authentication flow be used for all requests. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.requireHttps">RequireHttps</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should HTTPS be required on connections? Defaults to true. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.runtimeVersion">RuntimeVersion</a></code> | <code>string</code> | The Runtime Version of the Authentication and Authorisation feature of this App. Defaults to `~1`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.requireAuthentication">RequireAuthentication</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the authentication flow be used for all requests? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.requireHttps">RequireHttps</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should HTTPS be required on connections? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.runtimeVersion">RuntimeVersion</a></code> | <code>string</code> | The Runtime Version of the Authentication and Authorisation feature of this App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.twitterV2">TwitterV2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2TwitterV2">WindowsFunctionAppAuthSettingsV2TwitterV2</a></code> | twitter_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.unauthenticatedAction">UnauthenticatedAction</a></code> | <code>string</code> | The action to take for requests made without authentication. |
 
@@ -2777,7 +2773,7 @@ public WindowsFunctionAppAuthSettingsV2Login Login { get; set; }
 
 login block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#login WindowsFunctionApp#login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#login WindowsFunctionApp#login}
 
 ---
 
@@ -2791,7 +2787,7 @@ public WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2 ActiveDirectoryV2 { get
 
 active_directory_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#active_directory_v2 WindowsFunctionApp#active_directory_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#active_directory_v2 WindowsFunctionApp#active_directory_v2}
 
 ---
 
@@ -2805,7 +2801,7 @@ public WindowsFunctionAppAuthSettingsV2AppleV2 AppleV2 { get; set; }
 
 apple_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#apple_v2 WindowsFunctionApp#apple_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#apple_v2 WindowsFunctionApp#apple_v2}
 
 ---
 
@@ -2817,9 +2813,9 @@ public bool|IResolvable AuthEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Should the AuthV2 Settings be enabled. Defaults to `false`.
+Should the AuthV2 Settings be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#auth_enabled WindowsFunctionApp#auth_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#auth_enabled WindowsFunctionApp#auth_enabled}
 
 ---
 
@@ -2833,7 +2829,7 @@ public WindowsFunctionAppAuthSettingsV2AzureStaticWebAppV2 AzureStaticWebAppV2 {
 
 azure_static_web_app_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#azure_static_web_app_v2 WindowsFunctionApp#azure_static_web_app_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#azure_static_web_app_v2 WindowsFunctionApp#azure_static_web_app_v2}
 
 ---
 
@@ -2847,7 +2843,7 @@ public string ConfigFilePath { get; set; }
 
 The path to the App Auth settings. **Note:** Relative Paths are evaluated from the Site Root directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#config_file_path WindowsFunctionApp#config_file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#config_file_path WindowsFunctionApp#config_file_path}
 
 ---
 
@@ -2861,7 +2857,7 @@ public IResolvable|WindowsFunctionAppAuthSettingsV2CustomOidcV2[] CustomOidcV2 {
 
 custom_oidc_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#custom_oidc_v2 WindowsFunctionApp#custom_oidc_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#custom_oidc_v2 WindowsFunctionApp#custom_oidc_v2}
 
 ---
 
@@ -2877,7 +2873,7 @@ The Default Authentication Provider to use when the `unauthenticated_action` is 
 
 Possible values include: `apple`, `azureactivedirectory`, `facebook`, `github`, `google`, `twitter` and the `name` of your `custom_oidc_v2` provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#default_provider WindowsFunctionApp#default_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#default_provider WindowsFunctionApp#default_provider}
 
 ---
 
@@ -2891,7 +2887,7 @@ public string[] ExcludedPaths { get; set; }
 
 The paths which should be excluded from the `unauthenticated_action` when it is set to `RedirectToLoginPage`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#excluded_paths WindowsFunctionApp#excluded_paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#excluded_paths WindowsFunctionApp#excluded_paths}
 
 ---
 
@@ -2905,7 +2901,7 @@ public WindowsFunctionAppAuthSettingsV2FacebookV2 FacebookV2 { get; set; }
 
 facebook_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#facebook_v2 WindowsFunctionApp#facebook_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#facebook_v2 WindowsFunctionApp#facebook_v2}
 
 ---
 
@@ -2917,11 +2913,9 @@ public string ForwardProxyConvention { get; set; }
 
 - *Type:* string
 
-The convention used to determine the url of the request made.
+The convention used to determine the URL of the request made.
 
-Possible values include `ForwardProxyConventionNoProxy`, `ForwardProxyConventionStandard`, `ForwardProxyConventionCustom`. Defaults to `ForwardProxyConventionNoProxy`
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#forward_proxy_convention WindowsFunctionApp#forward_proxy_convention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#forward_proxy_convention WindowsFunctionApp#forward_proxy_convention}
 
 ---
 
@@ -2935,7 +2929,7 @@ public string ForwardProxyCustomHostHeaderName { get; set; }
 
 The name of the header containing the host of the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#forward_proxy_custom_host_header_name WindowsFunctionApp#forward_proxy_custom_host_header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#forward_proxy_custom_host_header_name WindowsFunctionApp#forward_proxy_custom_host_header_name}
 
 ---
 
@@ -2949,7 +2943,7 @@ public string ForwardProxyCustomSchemeHeaderName { get; set; }
 
 The name of the header containing the scheme of the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#forward_proxy_custom_scheme_header_name WindowsFunctionApp#forward_proxy_custom_scheme_header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#forward_proxy_custom_scheme_header_name WindowsFunctionApp#forward_proxy_custom_scheme_header_name}
 
 ---
 
@@ -2963,7 +2957,7 @@ public WindowsFunctionAppAuthSettingsV2GithubV2 GithubV2 { get; set; }
 
 github_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#github_v2 WindowsFunctionApp#github_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#github_v2 WindowsFunctionApp#github_v2}
 
 ---
 
@@ -2977,7 +2971,7 @@ public WindowsFunctionAppAuthSettingsV2GoogleV2 GoogleV2 { get; set; }
 
 google_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#google_v2 WindowsFunctionApp#google_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#google_v2 WindowsFunctionApp#google_v2}
 
 ---
 
@@ -2989,9 +2983,9 @@ public string HttpRouteApiPrefix { get; set; }
 
 - *Type:* string
 
-The prefix that should precede all the authentication and authorisation paths. Defaults to `/.auth`.
+The prefix that should precede all the authentication and authorisation paths.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#http_route_api_prefix WindowsFunctionApp#http_route_api_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#http_route_api_prefix WindowsFunctionApp#http_route_api_prefix}
 
 ---
 
@@ -3005,7 +2999,7 @@ public WindowsFunctionAppAuthSettingsV2MicrosoftV2 MicrosoftV2 { get; set; }
 
 microsoft_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#microsoft_v2 WindowsFunctionApp#microsoft_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#microsoft_v2 WindowsFunctionApp#microsoft_v2}
 
 ---
 
@@ -3017,9 +3011,9 @@ public bool|IResolvable RequireAuthentication { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Should the authentication flow be used for all requests.
+Should the authentication flow be used for all requests?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#require_authentication WindowsFunctionApp#require_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#require_authentication WindowsFunctionApp#require_authentication}
 
 ---
 
@@ -3031,9 +3025,9 @@ public bool|IResolvable RequireHttps { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Should HTTPS be required on connections? Defaults to true.
+Should HTTPS be required on connections?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#require_https WindowsFunctionApp#require_https}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#require_https WindowsFunctionApp#require_https}
 
 ---
 
@@ -3045,9 +3039,9 @@ public string RuntimeVersion { get; set; }
 
 - *Type:* string
 
-The Runtime Version of the Authentication and Authorisation feature of this App. Defaults to `~1`.
+The Runtime Version of the Authentication and Authorisation feature of this App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#runtime_version WindowsFunctionApp#runtime_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#runtime_version WindowsFunctionApp#runtime_version}
 
 ---
 
@@ -3061,7 +3055,7 @@ public WindowsFunctionAppAuthSettingsV2TwitterV2 TwitterV2 { get; set; }
 
 twitter_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#twitter_v2 WindowsFunctionApp#twitter_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#twitter_v2 WindowsFunctionApp#twitter_v2}
 
 ---
 
@@ -3075,9 +3069,7 @@ public string UnauthenticatedAction { get; set; }
 
 The action to take for requests made without authentication.
 
-Possible values include `RedirectToLoginPage`, `AllowAnonymous`, `Return401`, and `Return403`. Defaults to `RedirectToLoginPage`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#unauthenticated_action WindowsFunctionApp#unauthenticated_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#unauthenticated_action WindowsFunctionApp#unauthenticated_action}
 
 ---
 
@@ -3111,7 +3103,7 @@ new WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2 {
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2.property.clientId">ClientId</a></code> | <code>string</code> | The ID of the Client to use to authenticate with Azure Active Directory. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2.property.tenantAuthEndpoint">TenantAuthEndpoint</a></code> | <code>string</code> | The Azure Tenant Endpoint for the Authenticating Tenant. e.g. `https://login.microsoftonline.com/v2.0/{tenant-guid}/`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2.property.allowedApplications">AllowedApplications</a></code> | <code>string[]</code> | The list of allowed Applications for the Default Authorisation Policy. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2.property.allowedAudiences">AllowedAudiences</a></code> | <code>string[]</code> | Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2.property.allowedAudiences">AllowedAudiences</a></code> | <code>string[]</code> | A list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2.property.allowedGroups">AllowedGroups</a></code> | <code>string[]</code> | The list of allowed Group Names for the Default Authorisation Policy. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2.property.allowedIdentities">AllowedIdentities</a></code> | <code>string[]</code> | The list of allowed Identities for the Default Authorisation Policy. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2.property.clientSecretCertificateThumbprint">ClientSecretCertificateThumbprint</a></code> | <code>string</code> | The thumbprint of the certificate used for signing purposes. |
@@ -3119,7 +3111,7 @@ new WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2 {
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2.property.jwtAllowedClientApplications">JwtAllowedClientApplications</a></code> | <code>string[]</code> | A list of Allowed Client Applications in the JWT Claim. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2.property.jwtAllowedGroups">JwtAllowedGroups</a></code> | <code>string[]</code> | A list of Allowed Groups in the JWT Claim. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2.property.loginParameters">LoginParameters</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of key-value pairs to send to the Authorisation Endpoint when a user logs in. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2.property.wwwAuthenticationDisabled">WwwAuthenticationDisabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the www-authenticate provider should be omitted from the request? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2.property.wwwAuthenticationDisabled">WwwAuthenticationDisabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the www-authenticate provider should be omitted from the request? |
 
 ---
 
@@ -3133,7 +3125,7 @@ public string ClientId { get; set; }
 
 The ID of the Client to use to authenticate with Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
 
 ---
 
@@ -3147,7 +3139,7 @@ public string TenantAuthEndpoint { get; set; }
 
 The Azure Tenant Endpoint for the Authenticating Tenant. e.g. `https://login.microsoftonline.com/v2.0/{tenant-guid}/`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#tenant_auth_endpoint WindowsFunctionApp#tenant_auth_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#tenant_auth_endpoint WindowsFunctionApp#tenant_auth_endpoint}
 
 ---
 
@@ -3161,7 +3153,7 @@ public string[] AllowedApplications { get; set; }
 
 The list of allowed Applications for the Default Authorisation Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#allowed_applications WindowsFunctionApp#allowed_applications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#allowed_applications WindowsFunctionApp#allowed_applications}
 
 ---
 
@@ -3173,9 +3165,9 @@ public string[] AllowedAudiences { get; set; }
 
 - *Type:* string[]
 
-Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
+A list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#allowed_audiences WindowsFunctionApp#allowed_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#allowed_audiences WindowsFunctionApp#allowed_audiences}
 
 ---
 
@@ -3189,7 +3181,7 @@ public string[] AllowedGroups { get; set; }
 
 The list of allowed Group Names for the Default Authorisation Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#allowed_groups WindowsFunctionApp#allowed_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#allowed_groups WindowsFunctionApp#allowed_groups}
 
 ---
 
@@ -3203,7 +3195,7 @@ public string[] AllowedIdentities { get; set; }
 
 The list of allowed Identities for the Default Authorisation Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#allowed_identities WindowsFunctionApp#allowed_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#allowed_identities WindowsFunctionApp#allowed_identities}
 
 ---
 
@@ -3217,7 +3209,7 @@ public string ClientSecretCertificateThumbprint { get; set; }
 
 The thumbprint of the certificate used for signing purposes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_secret_certificate_thumbprint WindowsFunctionApp#client_secret_certificate_thumbprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_secret_certificate_thumbprint WindowsFunctionApp#client_secret_certificate_thumbprint}
 
 ---
 
@@ -3231,7 +3223,7 @@ public string ClientSecretSettingName { get; set; }
 
 The App Setting name that contains the client secret of the Client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_secret_setting_name WindowsFunctionApp#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_secret_setting_name WindowsFunctionApp#client_secret_setting_name}
 
 ---
 
@@ -3245,7 +3237,7 @@ public string[] JwtAllowedClientApplications { get; set; }
 
 A list of Allowed Client Applications in the JWT Claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#jwt_allowed_client_applications WindowsFunctionApp#jwt_allowed_client_applications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#jwt_allowed_client_applications WindowsFunctionApp#jwt_allowed_client_applications}
 
 ---
 
@@ -3259,7 +3251,7 @@ public string[] JwtAllowedGroups { get; set; }
 
 A list of Allowed Groups in the JWT Claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#jwt_allowed_groups WindowsFunctionApp#jwt_allowed_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#jwt_allowed_groups WindowsFunctionApp#jwt_allowed_groups}
 
 ---
 
@@ -3273,7 +3265,7 @@ public System.Collections.Generic.IDictionary<string, string> LoginParameters { 
 
 A map of key-value pairs to send to the Authorisation Endpoint when a user logs in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#login_parameters WindowsFunctionApp#login_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#login_parameters WindowsFunctionApp#login_parameters}
 
 ---
 
@@ -3285,9 +3277,9 @@ public bool|IResolvable WwwAuthenticationDisabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Should the www-authenticate provider should be omitted from the request? Defaults to `false`.
+Should the www-authenticate provider should be omitted from the request?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#www_authentication_disabled WindowsFunctionApp#www_authentication_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#www_authentication_disabled WindowsFunctionApp#www_authentication_disabled}
 
 ---
 
@@ -3323,7 +3315,7 @@ public string ClientId { get; set; }
 
 The OpenID Connect Client ID for the Apple web application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
 
 ---
 
@@ -3337,7 +3329,7 @@ public string ClientSecretSettingName { get; set; }
 
 The app setting name that contains the `client_secret` value used for Apple Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_secret_setting_name WindowsFunctionApp#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_secret_setting_name WindowsFunctionApp#client_secret_setting_name}
 
 ---
 
@@ -3371,7 +3363,7 @@ public string ClientId { get; set; }
 
 The ID of the Client to use to authenticate with Azure Static Web App Authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
 
 ---
 
@@ -3413,7 +3405,7 @@ public string ClientId { get; set; }
 
 The ID of the Client to use to authenticate with this Custom OIDC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
 
 ---
 
@@ -3427,7 +3419,7 @@ public string Name { get; set; }
 
 The name of the Custom OIDC Authentication Provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#name WindowsFunctionApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#name WindowsFunctionApp#name}
 
 ---
 
@@ -3441,7 +3433,7 @@ public string OpenidConfigurationEndpoint { get; set; }
 
 The endpoint that contains all the configuration endpoints for this Custom OIDC provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#openid_configuration_endpoint WindowsFunctionApp#openid_configuration_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#openid_configuration_endpoint WindowsFunctionApp#openid_configuration_endpoint}
 
 ---
 
@@ -3455,7 +3447,7 @@ public string NameClaimType { get; set; }
 
 The name of the claim that contains the users name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#name_claim_type WindowsFunctionApp#name_claim_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#name_claim_type WindowsFunctionApp#name_claim_type}
 
 ---
 
@@ -3469,7 +3461,7 @@ public string[] Scopes { get; set; }
 
 The list of the scopes that should be requested while authenticating.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#scopes WindowsFunctionApp#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#scopes WindowsFunctionApp#scopes}
 
 ---
 
@@ -3495,7 +3487,7 @@ new WindowsFunctionAppAuthSettingsV2FacebookV2 {
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2FacebookV2.property.appId">AppId</a></code> | <code>string</code> | The App ID of the Facebook app used for login. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2FacebookV2.property.appSecretSettingName">AppSecretSettingName</a></code> | <code>string</code> | The app setting name that contains the `app_secret` value used for Facebook Login. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2FacebookV2.property.graphApiVersion">GraphApiVersion</a></code> | <code>string</code> | The version of the Facebook API to be used while logging in. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2FacebookV2.property.loginScopes">LoginScopes</a></code> | <code>string[]</code> | Specifies a list of scopes to be requested as part of Facebook Login authentication. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2FacebookV2.property.loginScopes">LoginScopes</a></code> | <code>string[]</code> | A list of scopes to be requested as part of Facebook Login authentication. |
 
 ---
 
@@ -3509,7 +3501,7 @@ public string AppId { get; set; }
 
 The App ID of the Facebook app used for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#app_id WindowsFunctionApp#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#app_id WindowsFunctionApp#app_id}
 
 ---
 
@@ -3523,7 +3515,7 @@ public string AppSecretSettingName { get; set; }
 
 The app setting name that contains the `app_secret` value used for Facebook Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#app_secret_setting_name WindowsFunctionApp#app_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#app_secret_setting_name WindowsFunctionApp#app_secret_setting_name}
 
 ---
 
@@ -3537,7 +3529,7 @@ public string GraphApiVersion { get; set; }
 
 The version of the Facebook API to be used while logging in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#graph_api_version WindowsFunctionApp#graph_api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#graph_api_version WindowsFunctionApp#graph_api_version}
 
 ---
 
@@ -3549,9 +3541,9 @@ public string[] LoginScopes { get; set; }
 
 - *Type:* string[]
 
-Specifies a list of scopes to be requested as part of Facebook Login authentication.
+A list of scopes to be requested as part of Facebook Login authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#login_scopes WindowsFunctionApp#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#login_scopes WindowsFunctionApp#login_scopes}
 
 ---
 
@@ -3575,7 +3567,7 @@ new WindowsFunctionAppAuthSettingsV2GithubV2 {
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GithubV2.property.clientId">ClientId</a></code> | <code>string</code> | The ID of the GitHub app used for login. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GithubV2.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>string</code> | The app setting name that contains the `client_secret` value used for GitHub Login. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GithubV2.property.loginScopes">LoginScopes</a></code> | <code>string[]</code> | Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GithubV2.property.loginScopes">LoginScopes</a></code> | <code>string[]</code> | A list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication. |
 
 ---
 
@@ -3589,7 +3581,7 @@ public string ClientId { get; set; }
 
 The ID of the GitHub app used for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
 
 ---
 
@@ -3603,7 +3595,7 @@ public string ClientSecretSettingName { get; set; }
 
 The app setting name that contains the `client_secret` value used for GitHub Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_secret_setting_name WindowsFunctionApp#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_secret_setting_name WindowsFunctionApp#client_secret_setting_name}
 
 ---
 
@@ -3615,9 +3607,9 @@ public string[] LoginScopes { get; set; }
 
 - *Type:* string[]
 
-Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
+A list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#login_scopes WindowsFunctionApp#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#login_scopes WindowsFunctionApp#login_scopes}
 
 ---
 
@@ -3642,8 +3634,8 @@ new WindowsFunctionAppAuthSettingsV2GoogleV2 {
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GoogleV2.property.clientId">ClientId</a></code> | <code>string</code> | The OpenID Connect Client ID for the Google web application. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GoogleV2.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>string</code> | The app setting name that contains the `client_secret` value used for Google Login. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GoogleV2.property.allowedAudiences">AllowedAudiences</a></code> | <code>string[]</code> | Specifies a list of Allowed Audiences that will be requested as part of Google Sign-In authentication. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GoogleV2.property.loginScopes">LoginScopes</a></code> | <code>string[]</code> | Specifies a list of Login scopes that will be requested as part of Google Sign-In authentication. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GoogleV2.property.allowedAudiences">AllowedAudiences</a></code> | <code>string[]</code> | A list of Allowed Audiences that will be requested as part of Google Sign-In authentication. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GoogleV2.property.loginScopes">LoginScopes</a></code> | <code>string[]</code> | A list of Login scopes that will be requested as part of Google Sign-In authentication. |
 
 ---
 
@@ -3657,7 +3649,7 @@ public string ClientId { get; set; }
 
 The OpenID Connect Client ID for the Google web application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
 
 ---
 
@@ -3671,7 +3663,7 @@ public string ClientSecretSettingName { get; set; }
 
 The app setting name that contains the `client_secret` value used for Google Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_secret_setting_name WindowsFunctionApp#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_secret_setting_name WindowsFunctionApp#client_secret_setting_name}
 
 ---
 
@@ -3683,9 +3675,9 @@ public string[] AllowedAudiences { get; set; }
 
 - *Type:* string[]
 
-Specifies a list of Allowed Audiences that will be requested as part of Google Sign-In authentication.
+A list of Allowed Audiences that will be requested as part of Google Sign-In authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#allowed_audiences WindowsFunctionApp#allowed_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#allowed_audiences WindowsFunctionApp#allowed_audiences}
 
 ---
 
@@ -3697,9 +3689,9 @@ public string[] LoginScopes { get; set; }
 
 - *Type:* string[]
 
-Specifies a list of Login scopes that will be requested as part of Google Sign-In authentication.
+A list of Login scopes that will be requested as part of Google Sign-In authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#login_scopes WindowsFunctionApp#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#login_scopes WindowsFunctionApp#login_scopes}
 
 ---
 
@@ -3730,16 +3722,16 @@ new WindowsFunctionAppAuthSettingsV2Login {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.allowedExternalRedirectUrls">AllowedExternalRedirectUrls</a></code> | <code>string[]</code> | External URLs that can be redirected to as part of logging in or logging out of the app. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.cookieExpirationConvention">CookieExpirationConvention</a></code> | <code>string</code> | The method by which cookies expire. Possible values include: `FixedTime`, and `IdentityProviderDerived`. Defaults to `FixedTime`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.cookieExpirationTime">CookieExpirationTime</a></code> | <code>string</code> | The time after the request is made when the session cookie should expire. Defaults to `08:00:00`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.cookieExpirationConvention">CookieExpirationConvention</a></code> | <code>string</code> | The method by which cookies expire. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.cookieExpirationTime">CookieExpirationTime</a></code> | <code>string</code> | The time after the request is made when the session cookie should expire. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.logoutEndpoint">LogoutEndpoint</a></code> | <code>string</code> | The endpoint to which logout requests should be made. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.nonceExpirationTime">NonceExpirationTime</a></code> | <code>string</code> | The time after the request is made when the nonce should expire. Defaults to `00:05:00`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.preserveUrlFragmentsForLogins">PreserveUrlFragmentsForLogins</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the fragments from the request be preserved after the login request is made. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.nonceExpirationTime">NonceExpirationTime</a></code> | <code>string</code> | The time after the request is made when the nonce should expire. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.preserveUrlFragmentsForLogins">PreserveUrlFragmentsForLogins</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the fragments from the request be preserved after the login request is made? |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.tokenRefreshExtensionTime">TokenRefreshExtensionTime</a></code> | <code>double</code> | The number of hours after session token expiration that a session token can be used to call the token refresh API. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.tokenStoreEnabled">TokenStoreEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the Token Store configuration Enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.tokenStoreEnabled">TokenStoreEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the Token Store configuration Enabled? |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.tokenStorePath">TokenStorePath</a></code> | <code>string</code> | The directory path in the App Filesystem in which the tokens will be stored. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.tokenStoreSasSettingName">TokenStoreSasSettingName</a></code> | <code>string</code> | The name of the app setting which contains the SAS URL of the blob storage containing the tokens. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.validateNonce">ValidateNonce</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the nonce be validated while completing the login flow. Defaults to `true`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.validateNonce">ValidateNonce</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the nonce be validated while completing the login flow? |
 
 ---
 
@@ -3755,7 +3747,7 @@ External URLs that can be redirected to as part of logging in or logging out of 
 
 This is an advanced setting typically only needed by Windows Store application backends. **Note:** URLs within the current domain are always implicitly allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#allowed_external_redirect_urls WindowsFunctionApp#allowed_external_redirect_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#allowed_external_redirect_urls WindowsFunctionApp#allowed_external_redirect_urls}
 
 ---
 
@@ -3767,9 +3759,9 @@ public string CookieExpirationConvention { get; set; }
 
 - *Type:* string
 
-The method by which cookies expire. Possible values include: `FixedTime`, and `IdentityProviderDerived`. Defaults to `FixedTime`.
+The method by which cookies expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#cookie_expiration_convention WindowsFunctionApp#cookie_expiration_convention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#cookie_expiration_convention WindowsFunctionApp#cookie_expiration_convention}
 
 ---
 
@@ -3781,9 +3773,9 @@ public string CookieExpirationTime { get; set; }
 
 - *Type:* string
 
-The time after the request is made when the session cookie should expire. Defaults to `08:00:00`.
+The time after the request is made when the session cookie should expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#cookie_expiration_time WindowsFunctionApp#cookie_expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#cookie_expiration_time WindowsFunctionApp#cookie_expiration_time}
 
 ---
 
@@ -3797,7 +3789,7 @@ public string LogoutEndpoint { get; set; }
 
 The endpoint to which logout requests should be made.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#logout_endpoint WindowsFunctionApp#logout_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#logout_endpoint WindowsFunctionApp#logout_endpoint}
 
 ---
 
@@ -3809,9 +3801,9 @@ public string NonceExpirationTime { get; set; }
 
 - *Type:* string
 
-The time after the request is made when the nonce should expire. Defaults to `00:05:00`.
+The time after the request is made when the nonce should expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#nonce_expiration_time WindowsFunctionApp#nonce_expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#nonce_expiration_time WindowsFunctionApp#nonce_expiration_time}
 
 ---
 
@@ -3823,9 +3815,9 @@ public bool|IResolvable PreserveUrlFragmentsForLogins { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Should the fragments from the request be preserved after the login request is made. Defaults to `false`.
+Should the fragments from the request be preserved after the login request is made?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#preserve_url_fragments_for_logins WindowsFunctionApp#preserve_url_fragments_for_logins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#preserve_url_fragments_for_logins WindowsFunctionApp#preserve_url_fragments_for_logins}
 
 ---
 
@@ -3839,9 +3831,7 @@ public double TokenRefreshExtensionTime { get; set; }
 
 The number of hours after session token expiration that a session token can be used to call the token refresh API.
 
-Defaults to `72` hours.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#token_refresh_extension_time WindowsFunctionApp#token_refresh_extension_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#token_refresh_extension_time WindowsFunctionApp#token_refresh_extension_time}
 
 ---
 
@@ -3853,9 +3843,9 @@ public bool|IResolvable TokenStoreEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Should the Token Store configuration Enabled. Defaults to `false`.
+Should the Token Store configuration Enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#token_store_enabled WindowsFunctionApp#token_store_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#token_store_enabled WindowsFunctionApp#token_store_enabled}
 
 ---
 
@@ -3869,7 +3859,7 @@ public string TokenStorePath { get; set; }
 
 The directory path in the App Filesystem in which the tokens will be stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#token_store_path WindowsFunctionApp#token_store_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#token_store_path WindowsFunctionApp#token_store_path}
 
 ---
 
@@ -3883,7 +3873,7 @@ public string TokenStoreSasSettingName { get; set; }
 
 The name of the app setting which contains the SAS URL of the blob storage containing the tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#token_store_sas_setting_name WindowsFunctionApp#token_store_sas_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#token_store_sas_setting_name WindowsFunctionApp#token_store_sas_setting_name}
 
 ---
 
@@ -3895,9 +3885,9 @@ public bool|IResolvable ValidateNonce { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Should the nonce be validated while completing the login flow. Defaults to `true`.
+Should the nonce be validated while completing the login flow?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#validate_nonce WindowsFunctionApp#validate_nonce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#validate_nonce WindowsFunctionApp#validate_nonce}
 
 ---
 
@@ -3922,7 +3912,7 @@ new WindowsFunctionAppAuthSettingsV2MicrosoftV2 {
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2MicrosoftV2.property.clientId">ClientId</a></code> | <code>string</code> | The OAuth 2.0 client ID that was created for the app used for authentication. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2MicrosoftV2.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>string</code> | The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2MicrosoftV2.property.allowedAudiences">AllowedAudiences</a></code> | <code>string[]</code> | Specifies a list of Allowed Audiences that will be requested as part of Microsoft Sign-In authentication. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2MicrosoftV2.property.allowedAudiences">AllowedAudiences</a></code> | <code>string[]</code> | A list of Allowed Audiences that will be requested as part of Microsoft Sign-In authentication. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2MicrosoftV2.property.loginScopes">LoginScopes</a></code> | <code>string[]</code> | The list of Login scopes that will be requested as part of Microsoft Account authentication. |
 
 ---
@@ -3937,7 +3927,7 @@ public string ClientId { get; set; }
 
 The OAuth 2.0 client ID that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_id WindowsFunctionApp#client_id}
 
 ---
 
@@ -3951,7 +3941,7 @@ public string ClientSecretSettingName { get; set; }
 
 The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_secret_setting_name WindowsFunctionApp#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_secret_setting_name WindowsFunctionApp#client_secret_setting_name}
 
 ---
 
@@ -3963,9 +3953,9 @@ public string[] AllowedAudiences { get; set; }
 
 - *Type:* string[]
 
-Specifies a list of Allowed Audiences that will be requested as part of Microsoft Sign-In authentication.
+A list of Allowed Audiences that will be requested as part of Microsoft Sign-In authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#allowed_audiences WindowsFunctionApp#allowed_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#allowed_audiences WindowsFunctionApp#allowed_audiences}
 
 ---
 
@@ -3979,7 +3969,7 @@ public string[] LoginScopes { get; set; }
 
 The list of Login scopes that will be requested as part of Microsoft Account authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#login_scopes WindowsFunctionApp#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#login_scopes WindowsFunctionApp#login_scopes}
 
 ---
 
@@ -4015,7 +4005,7 @@ public string ConsumerKey { get; set; }
 
 The OAuth 1.0a consumer key of the Twitter application used for sign-in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#consumer_key WindowsFunctionApp#consumer_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#consumer_key WindowsFunctionApp#consumer_key}
 
 ---
 
@@ -4029,7 +4019,7 @@ public string ConsumerSecretSettingName { get; set; }
 
 The app setting name that contains the OAuth 1.0a consumer secret of the Twitter application used for sign-in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#consumer_secret_setting_name WindowsFunctionApp#consumer_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#consumer_secret_setting_name WindowsFunctionApp#consumer_secret_setting_name}
 
 ---
 
@@ -4069,7 +4059,7 @@ public string Name { get; set; }
 
 The name which should be used for this Backup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#name WindowsFunctionApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#name WindowsFunctionApp#name}
 
 ---
 
@@ -4083,7 +4073,7 @@ public WindowsFunctionAppBackupSchedule Schedule { get; set; }
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#schedule WindowsFunctionApp#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#schedule WindowsFunctionApp#schedule}
 
 ---
 
@@ -4097,7 +4087,7 @@ public string StorageAccountUrl { get; set; }
 
 The SAS URL to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#storage_account_url WindowsFunctionApp#storage_account_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#storage_account_url WindowsFunctionApp#storage_account_url}
 
 ---
 
@@ -4111,7 +4101,7 @@ public bool|IResolvable Enabled { get; set; }
 
 Should this backup job be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#enabled WindowsFunctionApp#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#enabled WindowsFunctionApp#enabled}
 
 ---
 
@@ -4136,8 +4126,8 @@ new WindowsFunctionAppBackupSchedule {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupSchedule.property.frequencyInterval">FrequencyInterval</a></code> | <code>double</code> | How often the backup should be executed (e.g. for weekly backup, this should be set to `7` and `frequency_unit` should be set to `Day`). |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupSchedule.property.frequencyUnit">FrequencyUnit</a></code> | <code>string</code> | The unit of time for how often the backup should take place. Possible values include: `Day` and `Hour`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupSchedule.property.keepAtLeastOneBackup">KeepAtLeastOneBackup</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the service keep at least one backup, regardless of age of backup. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupSchedule.property.frequencyUnit">FrequencyUnit</a></code> | <code>string</code> | The unit of time for how often the backup should take place. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupSchedule.property.keepAtLeastOneBackup">KeepAtLeastOneBackup</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the service keep at least one backup, regardless of age of backup? |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupSchedule.property.retentionPeriodDays">RetentionPeriodDays</a></code> | <code>double</code> | After how many days backups should be deleted. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupSchedule.property.startTime">StartTime</a></code> | <code>string</code> | When the schedule should start working in RFC-3339 format. |
 
@@ -4153,7 +4143,7 @@ public double FrequencyInterval { get; set; }
 
 How often the backup should be executed (e.g. for weekly backup, this should be set to `7` and `frequency_unit` should be set to `Day`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#frequency_interval WindowsFunctionApp#frequency_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#frequency_interval WindowsFunctionApp#frequency_interval}
 
 ---
 
@@ -4165,9 +4155,9 @@ public string FrequencyUnit { get; set; }
 
 - *Type:* string
 
-The unit of time for how often the backup should take place. Possible values include: `Day` and `Hour`.
+The unit of time for how often the backup should take place.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#frequency_unit WindowsFunctionApp#frequency_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#frequency_unit WindowsFunctionApp#frequency_unit}
 
 ---
 
@@ -4179,9 +4169,9 @@ public bool|IResolvable KeepAtLeastOneBackup { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Should the service keep at least one backup, regardless of age of backup. Defaults to `false`.
+Should the service keep at least one backup, regardless of age of backup?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#keep_at_least_one_backup WindowsFunctionApp#keep_at_least_one_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#keep_at_least_one_backup WindowsFunctionApp#keep_at_least_one_backup}
 
 ---
 
@@ -4195,7 +4185,7 @@ public double RetentionPeriodDays { get; set; }
 
 After how many days backups should be deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#retention_period_days WindowsFunctionApp#retention_period_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#retention_period_days WindowsFunctionApp#retention_period_days}
 
 ---
 
@@ -4209,7 +4199,7 @@ public string StartTime { get; set; }
 
 When the schedule should start working in RFC-3339 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#start_time WindowsFunctionApp#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#start_time WindowsFunctionApp#start_time}
 
 ---
 
@@ -4280,43 +4270,43 @@ new WindowsFunctionAppConfig {
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#location WindowsFunctionApp#location}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.name">Name</a></code> | <code>string</code> | Specifies the name of the Function App. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#resource_group_name WindowsFunctionApp#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#location WindowsFunctionApp#location}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.name">Name</a></code> | <code>string</code> | The name of the Function App. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#resource_group_name WindowsFunctionApp#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.servicePlanId">ServicePlanId</a></code> | <code>string</code> | The ID of the App Service Plan within which to create this Function App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.siteConfig">SiteConfig</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig">WindowsFunctionAppSiteConfig</a></code> | site_config block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.appSettings">AppSettings</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of key-value pairs for [App Settings](https://docs.microsoft.com/azure/azure-functions/functions-app-settings) and custom values. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.appSettings">AppSettings</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of key-value pairs for [App Settings](https://learn.microsoft.com/azure/azure-functions/functions-app-settings) and custom values. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.authSettings">AuthSettings</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings">WindowsFunctionAppAuthSettings</a></code> | auth_settings block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.authSettingsV2">AuthSettingsV2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2">WindowsFunctionAppAuthSettingsV2</a></code> | auth_settings_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.backup">Backup</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackup">WindowsFunctionAppBackup</a></code> | backup block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.builtinLoggingEnabled">BuiltinLoggingEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should built in logging be enabled. Configures `AzureWebJobsDashboard` app setting based on the configured storage setting. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.clientCertificateEnabled">ClientCertificateEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the function app use Client Certificates. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.clientCertificateExclusionPaths">ClientCertificateExclusionPaths</a></code> | <code>string</code> | Paths to exclude when using client certificates, separated by ; |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.builtinLoggingEnabled">BuiltinLoggingEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should built in logging be enabled? Configures `AzureWebJobsDashboard` app setting based on the configured storage setting. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.clientCertificateEnabled">ClientCertificateEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the Function App use Client Certificates? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.clientCertificateExclusionPaths">ClientCertificateExclusionPaths</a></code> | <code>string</code> | Paths to exclude when using client certificates, separated by `;`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.clientCertificateMode">ClientCertificateMode</a></code> | <code>string</code> | The mode of the Function App's client certificates requirement for incoming requests. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.connectionString">ConnectionString</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a>[]</code> | connection_string block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.contentShareForceDisabled">ContentShareForceDisabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Force disable the content share settings. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.dailyMemoryTimeQuota">DailyMemoryTimeQuota</a></code> | <code>double</code> | The amount of memory in gigabyte-seconds that your application is allowed to consume per day. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Is the Windows Function App enabled. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.endToEndTlsEncryptionEnabled">EndToEndTlsEncryptionEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#end_to_end_tls_encryption_enabled WindowsFunctionApp#end_to_end_tls_encryption_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.ftpPublishBasicAuthenticationEnabled">FtpPublishBasicAuthenticationEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#ftp_publish_basic_authentication_enabled WindowsFunctionApp#ftp_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Is the Windows Function App enabled? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.endToEndTlsEncryptionEnabled">EndToEndTlsEncryptionEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#end_to_end_tls_encryption_enabled WindowsFunctionApp#end_to_end_tls_encryption_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.ftpPublishBasicAuthenticationEnabled">FtpPublishBasicAuthenticationEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#ftp_publish_basic_authentication_enabled WindowsFunctionApp#ftp_publish_basic_authentication_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.functionsExtensionVersion">FunctionsExtensionVersion</a></code> | <code>string</code> | The runtime version associated with the Function App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.httpsOnly">HttpsOnly</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Can the Function App only be accessed via HTTPS? |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#id WindowsFunctionApp#id}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#id WindowsFunctionApp#id}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppIdentity">WindowsFunctionAppIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.keyVaultReferenceIdentityId">KeyVaultReferenceIdentityId</a></code> | <code>string</code> | The User Assigned Identity to use for Key Vault access. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.publicNetworkAccessEnabled">PublicNetworkAccessEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#public_network_access_enabled WindowsFunctionApp#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.publicNetworkAccessEnabled">PublicNetworkAccessEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#public_network_access_enabled WindowsFunctionApp#public_network_access_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.stickySettings">StickySettings</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStickySettings">WindowsFunctionAppStickySettings</a></code> | sticky_settings block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.storageAccount">StorageAccount</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a>[]</code> | storage_account block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.storageAccountAccessKey">StorageAccountAccessKey</a></code> | <code>string</code> | The access key which will be used to access the storage account for the Function App. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.storageAccountName">StorageAccountName</a></code> | <code>string</code> | The backend storage account name which will be used by this Function App. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.storageKeyVaultSecretId">StorageKeyVaultSecretId</a></code> | <code>string</code> | The Key Vault Secret ID, including version, that contains the Connection String to connect to the storage account for this Function App. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.storageAccountAccessKey">StorageAccountAccessKey</a></code> | <code>string</code> | The access key which will be used to access the Storage Account for the Function App. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.storageAccountName">StorageAccountName</a></code> | <code>string</code> | The backend Storage Account name which will be used by this Function App. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.storageKeyVaultSecretId">StorageKeyVaultSecretId</a></code> | <code>string</code> | The Key Vault Secret ID, including version, that contains the Connection String to connect to the Storage Account for this Function App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.storageUsesManagedIdentity">StorageUsesManagedIdentity</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the Function App use its Managed Identity to access storage? |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#tags WindowsFunctionApp#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#tags WindowsFunctionApp#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeouts">WindowsFunctionAppTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.virtualNetworkBackupRestoreEnabled">VirtualNetworkBackupRestoreEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#virtual_network_backup_restore_enabled WindowsFunctionApp#virtual_network_backup_restore_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.virtualNetworkSubnetId">VirtualNetworkSubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#virtual_network_subnet_id WindowsFunctionApp#virtual_network_subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.vnetImagePullEnabled">VnetImagePullEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Is container image pull over virtual network enabled? Defaults to `false`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.webdeployPublishBasicAuthenticationEnabled">WebdeployPublishBasicAuthenticationEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#webdeploy_publish_basic_authentication_enabled WindowsFunctionApp#webdeploy_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.virtualNetworkBackupRestoreEnabled">VirtualNetworkBackupRestoreEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#virtual_network_backup_restore_enabled WindowsFunctionApp#virtual_network_backup_restore_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.virtualNetworkSubnetId">VirtualNetworkSubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#virtual_network_subnet_id WindowsFunctionApp#virtual_network_subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.vnetImagePullEnabled">VnetImagePullEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Is container image pull over Virtual Network enabled? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.webdeployPublishBasicAuthenticationEnabled">WebdeployPublishBasicAuthenticationEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#webdeploy_publish_basic_authentication_enabled WindowsFunctionApp#webdeploy_publish_basic_authentication_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.zipDeployFile">ZipDeployFile</a></code> | <code>string</code> | The local path and filename of the Zip packaged application to deploy to this Windows Function App. |
 
 ---
@@ -4399,7 +4389,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#location WindowsFunctionApp#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#location WindowsFunctionApp#location}.
 
 ---
 
@@ -4411,9 +4401,9 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Specifies the name of the Function App.
+The name of the Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#name WindowsFunctionApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#name WindowsFunctionApp#name}
 
 ---
 
@@ -4425,7 +4415,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#resource_group_name WindowsFunctionApp#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#resource_group_name WindowsFunctionApp#resource_group_name}.
 
 ---
 
@@ -4439,7 +4429,7 @@ public string ServicePlanId { get; set; }
 
 The ID of the App Service Plan within which to create this Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#service_plan_id WindowsFunctionApp#service_plan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#service_plan_id WindowsFunctionApp#service_plan_id}
 
 ---
 
@@ -4453,7 +4443,7 @@ public WindowsFunctionAppSiteConfig SiteConfig { get; set; }
 
 site_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#site_config WindowsFunctionApp#site_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#site_config WindowsFunctionApp#site_config}
 
 ---
 
@@ -4465,9 +4455,9 @@ public System.Collections.Generic.IDictionary<string, string> AppSettings { get;
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-A map of key-value pairs for [App Settings](https://docs.microsoft.com/azure/azure-functions/functions-app-settings) and custom values.
+A map of key-value pairs for [App Settings](https://learn.microsoft.com/azure/azure-functions/functions-app-settings) and custom values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#app_settings WindowsFunctionApp#app_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#app_settings WindowsFunctionApp#app_settings}
 
 ---
 
@@ -4481,7 +4471,7 @@ public WindowsFunctionAppAuthSettings AuthSettings { get; set; }
 
 auth_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#auth_settings WindowsFunctionApp#auth_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#auth_settings WindowsFunctionApp#auth_settings}
 
 ---
 
@@ -4495,7 +4485,7 @@ public WindowsFunctionAppAuthSettingsV2 AuthSettingsV2 { get; set; }
 
 auth_settings_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#auth_settings_v2 WindowsFunctionApp#auth_settings_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#auth_settings_v2 WindowsFunctionApp#auth_settings_v2}
 
 ---
 
@@ -4509,7 +4499,7 @@ public WindowsFunctionAppBackup Backup { get; set; }
 
 backup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#backup WindowsFunctionApp#backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#backup WindowsFunctionApp#backup}
 
 ---
 
@@ -4521,9 +4511,9 @@ public bool|IResolvable BuiltinLoggingEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Should built in logging be enabled. Configures `AzureWebJobsDashboard` app setting based on the configured storage setting.
+Should built in logging be enabled? Configures `AzureWebJobsDashboard` app setting based on the configured storage setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#builtin_logging_enabled WindowsFunctionApp#builtin_logging_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#builtin_logging_enabled WindowsFunctionApp#builtin_logging_enabled}
 
 ---
 
@@ -4535,9 +4525,9 @@ public bool|IResolvable ClientCertificateEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Should the function app use Client Certificates.
+Should the Function App use Client Certificates?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_certificate_enabled WindowsFunctionApp#client_certificate_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_certificate_enabled WindowsFunctionApp#client_certificate_enabled}
 
 ---
 
@@ -4549,9 +4539,9 @@ public string ClientCertificateExclusionPaths { get; set; }
 
 - *Type:* string
 
-Paths to exclude when using client certificates, separated by ;
+Paths to exclude when using client certificates, separated by `;`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_certificate_exclusion_paths WindowsFunctionApp#client_certificate_exclusion_paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_certificate_exclusion_paths WindowsFunctionApp#client_certificate_exclusion_paths}
 
 ---
 
@@ -4565,9 +4555,7 @@ public string ClientCertificateMode { get; set; }
 
 The mode of the Function App's client certificates requirement for incoming requests.
 
-Possible values are `Required`, `Optional`, and `OptionalInteractiveUser`
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#client_certificate_mode WindowsFunctionApp#client_certificate_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#client_certificate_mode WindowsFunctionApp#client_certificate_mode}
 
 ---
 
@@ -4581,7 +4569,7 @@ public IResolvable|WindowsFunctionAppConnectionString[] ConnectionString { get; 
 
 connection_string block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#connection_string WindowsFunctionApp#connection_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#connection_string WindowsFunctionApp#connection_string}
 
 ---
 
@@ -4595,7 +4583,7 @@ public bool|IResolvable ContentShareForceDisabled { get; set; }
 
 Force disable the content share settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#content_share_force_disabled WindowsFunctionApp#content_share_force_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#content_share_force_disabled WindowsFunctionApp#content_share_force_disabled}
 
 ---
 
@@ -4609,9 +4597,9 @@ public double DailyMemoryTimeQuota { get; set; }
 
 The amount of memory in gigabyte-seconds that your application is allowed to consume per day.
 
-Setting this value only affects function apps in Consumption Plans.
+Setting this value only affects Function Apps in Consumption Plans.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#daily_memory_time_quota WindowsFunctionApp#daily_memory_time_quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#daily_memory_time_quota WindowsFunctionApp#daily_memory_time_quota}
 
 ---
 
@@ -4623,9 +4611,9 @@ public bool|IResolvable Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Is the Windows Function App enabled.
+Is the Windows Function App enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#enabled WindowsFunctionApp#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#enabled WindowsFunctionApp#enabled}
 
 ---
 
@@ -4637,7 +4625,7 @@ public bool|IResolvable EndToEndTlsEncryptionEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#end_to_end_tls_encryption_enabled WindowsFunctionApp#end_to_end_tls_encryption_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#end_to_end_tls_encryption_enabled WindowsFunctionApp#end_to_end_tls_encryption_enabled}.
 
 ---
 
@@ -4649,7 +4637,7 @@ public bool|IResolvable FtpPublishBasicAuthenticationEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#ftp_publish_basic_authentication_enabled WindowsFunctionApp#ftp_publish_basic_authentication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#ftp_publish_basic_authentication_enabled WindowsFunctionApp#ftp_publish_basic_authentication_enabled}.
 
 ---
 
@@ -4663,7 +4651,7 @@ public string FunctionsExtensionVersion { get; set; }
 
 The runtime version associated with the Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#functions_extension_version WindowsFunctionApp#functions_extension_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#functions_extension_version WindowsFunctionApp#functions_extension_version}
 
 ---
 
@@ -4677,7 +4665,7 @@ public bool|IResolvable HttpsOnly { get; set; }
 
 Can the Function App only be accessed via HTTPS?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#https_only WindowsFunctionApp#https_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#https_only WindowsFunctionApp#https_only}
 
 ---
 
@@ -4689,7 +4677,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#id WindowsFunctionApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#id WindowsFunctionApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4706,7 +4694,7 @@ public WindowsFunctionAppIdentity Identity { get; set; }
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#identity WindowsFunctionApp#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#identity WindowsFunctionApp#identity}
 
 ---
 
@@ -4720,7 +4708,7 @@ public string KeyVaultReferenceIdentityId { get; set; }
 
 The User Assigned Identity to use for Key Vault access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#key_vault_reference_identity_id WindowsFunctionApp#key_vault_reference_identity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#key_vault_reference_identity_id WindowsFunctionApp#key_vault_reference_identity_id}
 
 ---
 
@@ -4732,7 +4720,7 @@ public bool|IResolvable PublicNetworkAccessEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#public_network_access_enabled WindowsFunctionApp#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#public_network_access_enabled WindowsFunctionApp#public_network_access_enabled}.
 
 ---
 
@@ -4746,7 +4734,7 @@ public WindowsFunctionAppStickySettings StickySettings { get; set; }
 
 sticky_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#sticky_settings WindowsFunctionApp#sticky_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#sticky_settings WindowsFunctionApp#sticky_settings}
 
 ---
 
@@ -4760,7 +4748,7 @@ public IResolvable|WindowsFunctionAppStorageAccount[] StorageAccount { get; set;
 
 storage_account block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#storage_account WindowsFunctionApp#storage_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#storage_account WindowsFunctionApp#storage_account}
 
 ---
 
@@ -4772,9 +4760,9 @@ public string StorageAccountAccessKey { get; set; }
 
 - *Type:* string
 
-The access key which will be used to access the storage account for the Function App.
+The access key which will be used to access the Storage Account for the Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#storage_account_access_key WindowsFunctionApp#storage_account_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#storage_account_access_key WindowsFunctionApp#storage_account_access_key}
 
 ---
 
@@ -4786,9 +4774,9 @@ public string StorageAccountName { get; set; }
 
 - *Type:* string
 
-The backend storage account name which will be used by this Function App.
+The backend Storage Account name which will be used by this Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#storage_account_name WindowsFunctionApp#storage_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#storage_account_name WindowsFunctionApp#storage_account_name}
 
 ---
 
@@ -4800,9 +4788,9 @@ public string StorageKeyVaultSecretId { get; set; }
 
 - *Type:* string
 
-The Key Vault Secret ID, including version, that contains the Connection String to connect to the storage account for this Function App.
+The Key Vault Secret ID, including version, that contains the Connection String to connect to the Storage Account for this Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#storage_key_vault_secret_id WindowsFunctionApp#storage_key_vault_secret_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#storage_key_vault_secret_id WindowsFunctionApp#storage_key_vault_secret_id}
 
 ---
 
@@ -4816,7 +4804,7 @@ public bool|IResolvable StorageUsesManagedIdentity { get; set; }
 
 Should the Function App use its Managed Identity to access storage?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#storage_uses_managed_identity WindowsFunctionApp#storage_uses_managed_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#storage_uses_managed_identity WindowsFunctionApp#storage_uses_managed_identity}
 
 ---
 
@@ -4828,7 +4816,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#tags WindowsFunctionApp#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#tags WindowsFunctionApp#tags}.
 
 ---
 
@@ -4842,7 +4830,7 @@ public WindowsFunctionAppTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#timeouts WindowsFunctionApp#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#timeouts WindowsFunctionApp#timeouts}
 
 ---
 
@@ -4854,7 +4842,7 @@ public bool|IResolvable VirtualNetworkBackupRestoreEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#virtual_network_backup_restore_enabled WindowsFunctionApp#virtual_network_backup_restore_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#virtual_network_backup_restore_enabled WindowsFunctionApp#virtual_network_backup_restore_enabled}.
 
 ---
 
@@ -4866,7 +4854,7 @@ public string VirtualNetworkSubnetId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#virtual_network_subnet_id WindowsFunctionApp#virtual_network_subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#virtual_network_subnet_id WindowsFunctionApp#virtual_network_subnet_id}.
 
 ---
 
@@ -4878,9 +4866,9 @@ public bool|IResolvable VnetImagePullEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Is container image pull over virtual network enabled? Defaults to `false`.
+Is container image pull over Virtual Network enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#vnet_image_pull_enabled WindowsFunctionApp#vnet_image_pull_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#vnet_image_pull_enabled WindowsFunctionApp#vnet_image_pull_enabled}
 
 ---
 
@@ -4892,7 +4880,7 @@ public bool|IResolvable WebdeployPublishBasicAuthenticationEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#webdeploy_publish_basic_authentication_enabled WindowsFunctionApp#webdeploy_publish_basic_authentication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#webdeploy_publish_basic_authentication_enabled WindowsFunctionApp#webdeploy_publish_basic_authentication_enabled}.
 
 ---
 
@@ -4908,7 +4896,7 @@ The local path and filename of the Zip packaged application to deploy to this Wi
 
 **Note:** Using this value requires `WEBSITE_RUN_FROM_PACKAGE=1` to be set on the App in `app_settings`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#zip_deploy_file WindowsFunctionApp#zip_deploy_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#zip_deploy_file WindowsFunctionApp#zip_deploy_file}
 
 ---
 
@@ -4931,7 +4919,7 @@ new WindowsFunctionAppConnectionString {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString.property.name">Name</a></code> | <code>string</code> | The name which should be used for this Connection. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString.property.type">Type</a></code> | <code>string</code> | Type of database. Possible values include: `MySQL`, `SQLServer`, `SQLAzure`, `Custom`, `NotificationHub`, `ServiceBus`, `EventHub`, `APIHub`, `DocDb`, `RedisCache`, and `PostgreSQL`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString.property.type">Type</a></code> | <code>string</code> | Type of database. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString.property.value">Value</a></code> | <code>string</code> | The connection string value. |
 
 ---
@@ -4946,7 +4934,7 @@ public string Name { get; set; }
 
 The name which should be used for this Connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#name WindowsFunctionApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#name WindowsFunctionApp#name}
 
 ---
 
@@ -4958,9 +4946,9 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Type of database. Possible values include: `MySQL`, `SQLServer`, `SQLAzure`, `Custom`, `NotificationHub`, `ServiceBus`, `EventHub`, `APIHub`, `DocDb`, `RedisCache`, and `PostgreSQL`.
+Type of database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#type WindowsFunctionApp#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#type WindowsFunctionApp#type}
 
 ---
 
@@ -4974,7 +4962,7 @@ public string Value { get; set; }
 
 The connection string value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#value WindowsFunctionApp#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#value WindowsFunctionApp#value}
 
 ---
 
@@ -4995,8 +4983,8 @@ new WindowsFunctionAppIdentity {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#type WindowsFunctionApp#type}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#identity_ids WindowsFunctionApp#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#type WindowsFunctionApp#type}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#identity_ids WindowsFunctionApp#identity_ids}. |
 
 ---
 
@@ -5008,7 +4996,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#type WindowsFunctionApp#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#type WindowsFunctionApp#type}.
 
 ---
 
@@ -5020,7 +5008,7 @@ public string[] IdentityIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#identity_ids WindowsFunctionApp#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#identity_ids WindowsFunctionApp#identity_ids}.
 
 ---
 
@@ -5073,39 +5061,39 @@ new WindowsFunctionAppSiteConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.alwaysOn">AlwaysOn</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | If this Windows Web App is Always On enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.alwaysOn">AlwaysOn</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | If this Windows Web App is Always On enabled. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.apiDefinitionUrl">ApiDefinitionUrl</a></code> | <code>string</code> | The URL of the API definition that describes this Windows Function App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.apiManagementApiId">ApiManagementApiId</a></code> | <code>string</code> | The ID of the API Management API for this Windows Function App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.appCommandLine">AppCommandLine</a></code> | <code>string</code> | The program and any arguments used to launch this app via the command line. (Example `node myapp.js`). |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.applicationInsightsConnectionString">ApplicationInsightsConnectionString</a></code> | <code>string</code> | The Connection String for linking the Windows Function App to Application Insights. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.applicationInsightsKey">ApplicationInsightsKey</a></code> | <code>string</code> | The Instrumentation Key for connecting the Windows Function App to Application Insights. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.applicationStack">ApplicationStack</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStack">WindowsFunctionAppSiteConfigApplicationStack</a></code> | application_stack block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.appScaleLimit">AppScaleLimit</a></code> | <code>double</code> | The number of workers this function app can scale out to. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.appScaleLimit">AppScaleLimit</a></code> | <code>double</code> | The number of workers this Function App can scale out to. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.appServiceLogs">AppServiceLogs</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigAppServiceLogs">WindowsFunctionAppSiteConfigAppServiceLogs</a></code> | app_service_logs block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.cors">Cors</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCors">WindowsFunctionAppSiteConfigCors</a></code> | cors block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.defaultDocuments">DefaultDocuments</a></code> | <code>string[]</code> | Specifies a list of Default Documents for the Windows Web App. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.defaultDocuments">DefaultDocuments</a></code> | <code>string[]</code> | A list of Default Documents for the Windows Web App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.elasticInstanceMinimum">ElasticInstanceMinimum</a></code> | <code>double</code> | The number of minimum instances for this Windows Function App. Only affects apps on Elastic Premium plans. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.ftpsState">FtpsState</a></code> | <code>string</code> | State of FTP / FTPS service for this function app. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.ftpsState">FtpsState</a></code> | <code>string</code> | State of FTP / FTPS service for this Function App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.healthCheckEvictionTimeInMin">HealthCheckEvictionTimeInMin</a></code> | <code>double</code> | The amount of time in minutes that a node is unhealthy before being removed from the load balancer. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.healthCheckPath">HealthCheckPath</a></code> | <code>string</code> | The path to be checked for this function app health. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.http2Enabled">Http2Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Specifies if the http2 protocol should be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.healthCheckPath">HealthCheckPath</a></code> | <code>string</code> | The path to be checked for this Function App health. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.http2Enabled">Http2Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Whether the http2 protocol should be enabled. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.ipRestriction">IpRestriction</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction">WindowsFunctionAppSiteConfigIpRestriction</a>[]</code> | ip_restriction block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.ipRestrictionDefaultAction">IpRestrictionDefaultAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#ip_restriction_default_action WindowsFunctionApp#ip_restriction_default_action}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.loadBalancingMode">LoadBalancingMode</a></code> | <code>string</code> | The Site load balancing mode. Possible values include: `WeightedRoundRobin`, `LeastRequests`, `LeastResponseTime`, `WeightedTotalTraffic`, `RequestHash`, `PerSiteRoundRobin`. Defaults to `LeastRequests` if omitted. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.managedPipelineMode">ManagedPipelineMode</a></code> | <code>string</code> | The Managed Pipeline mode. Possible values include: `Integrated`, `Classic`. Defaults to `Integrated`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.ipRestrictionDefaultAction">IpRestrictionDefaultAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#ip_restriction_default_action WindowsFunctionApp#ip_restriction_default_action}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.loadBalancingMode">LoadBalancingMode</a></code> | <code>string</code> | The Site load balancing mode. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.managedPipelineMode">ManagedPipelineMode</a></code> | <code>string</code> | The Managed Pipeline mode. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.minimumTlsCipherSuite">MinimumTlsCipherSuite</a></code> | <code>string</code> | Configures the minimum TLS cipher suite for the incoming requests to the Site. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.minimumTlsVersion">MinimumTlsVersion</a></code> | <code>string</code> | The configures the minimum version of TLS required for SSL requests. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.preWarmedInstanceCount">PreWarmedInstanceCount</a></code> | <code>double</code> | The number of pre-warmed instances for this function app. Only affects apps on an Elastic Premium plan. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.remoteDebuggingEnabled">RemoteDebuggingEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should Remote Debugging be enabled. Defaults to `false`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.remoteDebuggingVersion">RemoteDebuggingVersion</a></code> | <code>string</code> | The Remote Debugging Version. Currently only `VS2022` is supported. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.runtimeScaleMonitoringEnabled">RuntimeScaleMonitoringEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should Functions Runtime Scale Monitoring be enabled. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.preWarmedInstanceCount">PreWarmedInstanceCount</a></code> | <code>double</code> | The number of pre-warmed instances for this Function App. Only affects apps on an Elastic Premium plan. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.remoteDebuggingEnabled">RemoteDebuggingEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should Remote Debugging be enabled? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.remoteDebuggingVersion">RemoteDebuggingVersion</a></code> | <code>string</code> | The Remote Debugging Version. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.runtimeScaleMonitoringEnabled">RuntimeScaleMonitoringEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should Functions Runtime Scale Monitoring be enabled? |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.scmIpRestriction">ScmIpRestriction</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction">WindowsFunctionAppSiteConfigScmIpRestriction</a>[]</code> | scm_ip_restriction block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.scmIpRestrictionDefaultAction">ScmIpRestrictionDefaultAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#scm_ip_restriction_default_action WindowsFunctionApp#scm_ip_restriction_default_action}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.scmMinimumTlsVersion">ScmMinimumTlsVersion</a></code> | <code>string</code> | Configures the minimum version of TLS required for SSL requests to the SCM site Possible values include: `1.0`, `1.1`, `1.2` and  `1.3`. Defaults to `1.2`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.scmUseMainIpRestriction">ScmUseMainIpRestriction</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the Windows Function App `ip_restriction` configuration be used for the SCM also. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.use32BitWorker">Use32BitWorker</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the Windows Web App use a 32-bit worker. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.vnetRouteAllEnabled">VnetRouteAllEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.websocketsEnabled">WebsocketsEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should Web Sockets be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.scmIpRestrictionDefaultAction">ScmIpRestrictionDefaultAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#scm_ip_restriction_default_action WindowsFunctionApp#scm_ip_restriction_default_action}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.scmMinimumTlsVersion">ScmMinimumTlsVersion</a></code> | <code>string</code> | Configures the minimum version of TLS required for SSL requests to the SCM site. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.scmUseMainIpRestriction">ScmUseMainIpRestriction</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the Windows Function App `ip_restriction` configuration be used for the SCM also? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.use32BitWorker">Use32BitWorker</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the Windows Web App use a 32-bit worker? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.vnetRouteAllEnabled">VnetRouteAllEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.websocketsEnabled">WebsocketsEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should Web Sockets be enabled? |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.workerCount">WorkerCount</a></code> | <code>double</code> | The number of Workers for this Windows Function App. |
 
 ---
@@ -5118,9 +5106,9 @@ public bool|IResolvable AlwaysOn { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-If this Windows Web App is Always On enabled. Defaults to `false`.
+If this Windows Web App is Always On enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#always_on WindowsFunctionApp#always_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#always_on WindowsFunctionApp#always_on}
 
 ---
 
@@ -5134,7 +5122,7 @@ public string ApiDefinitionUrl { get; set; }
 
 The URL of the API definition that describes this Windows Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#api_definition_url WindowsFunctionApp#api_definition_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#api_definition_url WindowsFunctionApp#api_definition_url}
 
 ---
 
@@ -5148,7 +5136,7 @@ public string ApiManagementApiId { get; set; }
 
 The ID of the API Management API for this Windows Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#api_management_api_id WindowsFunctionApp#api_management_api_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#api_management_api_id WindowsFunctionApp#api_management_api_id}
 
 ---
 
@@ -5162,7 +5150,7 @@ public string AppCommandLine { get; set; }
 
 The program and any arguments used to launch this app via the command line. (Example `node myapp.js`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#app_command_line WindowsFunctionApp#app_command_line}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#app_command_line WindowsFunctionApp#app_command_line}
 
 ---
 
@@ -5176,7 +5164,7 @@ public string ApplicationInsightsConnectionString { get; set; }
 
 The Connection String for linking the Windows Function App to Application Insights.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#application_insights_connection_string WindowsFunctionApp#application_insights_connection_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#application_insights_connection_string WindowsFunctionApp#application_insights_connection_string}
 
 ---
 
@@ -5190,7 +5178,7 @@ public string ApplicationInsightsKey { get; set; }
 
 The Instrumentation Key for connecting the Windows Function App to Application Insights.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#application_insights_key WindowsFunctionApp#application_insights_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#application_insights_key WindowsFunctionApp#application_insights_key}
 
 ---
 
@@ -5204,7 +5192,7 @@ public WindowsFunctionAppSiteConfigApplicationStack ApplicationStack { get; set;
 
 application_stack block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#application_stack WindowsFunctionApp#application_stack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#application_stack WindowsFunctionApp#application_stack}
 
 ---
 
@@ -5216,11 +5204,11 @@ public double AppScaleLimit { get; set; }
 
 - *Type:* double
 
-The number of workers this function app can scale out to.
+The number of workers this Function App can scale out to.
 
 Only applicable to apps on the Consumption and Premium plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#app_scale_limit WindowsFunctionApp#app_scale_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#app_scale_limit WindowsFunctionApp#app_scale_limit}
 
 ---
 
@@ -5234,7 +5222,7 @@ public WindowsFunctionAppSiteConfigAppServiceLogs AppServiceLogs { get; set; }
 
 app_service_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#app_service_logs WindowsFunctionApp#app_service_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#app_service_logs WindowsFunctionApp#app_service_logs}
 
 ---
 
@@ -5248,7 +5236,7 @@ public WindowsFunctionAppSiteConfigCors Cors { get; set; }
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#cors WindowsFunctionApp#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#cors WindowsFunctionApp#cors}
 
 ---
 
@@ -5260,9 +5248,9 @@ public string[] DefaultDocuments { get; set; }
 
 - *Type:* string[]
 
-Specifies a list of Default Documents for the Windows Web App.
+A list of Default Documents for the Windows Web App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#default_documents WindowsFunctionApp#default_documents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#default_documents WindowsFunctionApp#default_documents}
 
 ---
 
@@ -5276,7 +5264,7 @@ public double ElasticInstanceMinimum { get; set; }
 
 The number of minimum instances for this Windows Function App. Only affects apps on Elastic Premium plans.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#elastic_instance_minimum WindowsFunctionApp#elastic_instance_minimum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#elastic_instance_minimum WindowsFunctionApp#elastic_instance_minimum}
 
 ---
 
@@ -5288,11 +5276,9 @@ public string FtpsState { get; set; }
 
 - *Type:* string
 
-State of FTP / FTPS service for this function app.
+State of FTP / FTPS service for this Function App.
 
-Possible values include: `AllAllowed`, `FtpsOnly` and `Disabled`. Defaults to `Disabled`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#ftps_state WindowsFunctionApp#ftps_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#ftps_state WindowsFunctionApp#ftps_state}
 
 ---
 
@@ -5306,9 +5292,7 @@ public double HealthCheckEvictionTimeInMin { get; set; }
 
 The amount of time in minutes that a node is unhealthy before being removed from the load balancer.
 
-Possible values are between `2` and `10`. Only valid in conjunction with `health_check_path`
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#health_check_eviction_time_in_min WindowsFunctionApp#health_check_eviction_time_in_min}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#health_check_eviction_time_in_min WindowsFunctionApp#health_check_eviction_time_in_min}
 
 ---
 
@@ -5320,9 +5304,9 @@ public string HealthCheckPath { get; set; }
 
 - *Type:* string
 
-The path to be checked for this function app health.
+The path to be checked for this Function App health.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#health_check_path WindowsFunctionApp#health_check_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#health_check_path WindowsFunctionApp#health_check_path}
 
 ---
 
@@ -5334,9 +5318,9 @@ public bool|IResolvable Http2Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Specifies if the http2 protocol should be enabled. Defaults to `false`.
+Whether the http2 protocol should be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#http2_enabled WindowsFunctionApp#http2_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#http2_enabled WindowsFunctionApp#http2_enabled}
 
 ---
 
@@ -5350,7 +5334,7 @@ public IResolvable|WindowsFunctionAppSiteConfigIpRestriction[] IpRestriction { g
 
 ip_restriction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#ip_restriction WindowsFunctionApp#ip_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#ip_restriction WindowsFunctionApp#ip_restriction}
 
 ---
 
@@ -5362,7 +5346,7 @@ public string IpRestrictionDefaultAction { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#ip_restriction_default_action WindowsFunctionApp#ip_restriction_default_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#ip_restriction_default_action WindowsFunctionApp#ip_restriction_default_action}.
 
 ---
 
@@ -5374,9 +5358,9 @@ public string LoadBalancingMode { get; set; }
 
 - *Type:* string
 
-The Site load balancing mode. Possible values include: `WeightedRoundRobin`, `LeastRequests`, `LeastResponseTime`, `WeightedTotalTraffic`, `RequestHash`, `PerSiteRoundRobin`. Defaults to `LeastRequests` if omitted.
+The Site load balancing mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#load_balancing_mode WindowsFunctionApp#load_balancing_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#load_balancing_mode WindowsFunctionApp#load_balancing_mode}
 
 ---
 
@@ -5388,9 +5372,9 @@ public string ManagedPipelineMode { get; set; }
 
 - *Type:* string
 
-The Managed Pipeline mode. Possible values include: `Integrated`, `Classic`. Defaults to `Integrated`.
+The Managed Pipeline mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#managed_pipeline_mode WindowsFunctionApp#managed_pipeline_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#managed_pipeline_mode WindowsFunctionApp#managed_pipeline_mode}
 
 ---
 
@@ -5404,7 +5388,7 @@ public string MinimumTlsCipherSuite { get; set; }
 
 Configures the minimum TLS cipher suite for the incoming requests to the Site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#minimum_tls_cipher_suite WindowsFunctionApp#minimum_tls_cipher_suite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#minimum_tls_cipher_suite WindowsFunctionApp#minimum_tls_cipher_suite}
 
 ---
 
@@ -5418,9 +5402,7 @@ public string MinimumTlsVersion { get; set; }
 
 The configures the minimum version of TLS required for SSL requests.
 
-Possible values include: `1.0`, `1.1`, and  `1.2`. Defaults to `1.2`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#minimum_tls_version WindowsFunctionApp#minimum_tls_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#minimum_tls_version WindowsFunctionApp#minimum_tls_version}
 
 ---
 
@@ -5432,9 +5414,9 @@ public double PreWarmedInstanceCount { get; set; }
 
 - *Type:* double
 
-The number of pre-warmed instances for this function app. Only affects apps on an Elastic Premium plan.
+The number of pre-warmed instances for this Function App. Only affects apps on an Elastic Premium plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#pre_warmed_instance_count WindowsFunctionApp#pre_warmed_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#pre_warmed_instance_count WindowsFunctionApp#pre_warmed_instance_count}
 
 ---
 
@@ -5446,9 +5428,9 @@ public bool|IResolvable RemoteDebuggingEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Should Remote Debugging be enabled. Defaults to `false`.
+Should Remote Debugging be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#remote_debugging_enabled WindowsFunctionApp#remote_debugging_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#remote_debugging_enabled WindowsFunctionApp#remote_debugging_enabled}
 
 ---
 
@@ -5460,9 +5442,9 @@ public string RemoteDebuggingVersion { get; set; }
 
 - *Type:* string
 
-The Remote Debugging Version. Currently only `VS2022` is supported.
+The Remote Debugging Version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#remote_debugging_version WindowsFunctionApp#remote_debugging_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#remote_debugging_version WindowsFunctionApp#remote_debugging_version}
 
 ---
 
@@ -5474,9 +5456,9 @@ public bool|IResolvable RuntimeScaleMonitoringEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Should Functions Runtime Scale Monitoring be enabled.
+Should Functions Runtime Scale Monitoring be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#runtime_scale_monitoring_enabled WindowsFunctionApp#runtime_scale_monitoring_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#runtime_scale_monitoring_enabled WindowsFunctionApp#runtime_scale_monitoring_enabled}
 
 ---
 
@@ -5490,7 +5472,7 @@ public IResolvable|WindowsFunctionAppSiteConfigScmIpRestriction[] ScmIpRestricti
 
 scm_ip_restriction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#scm_ip_restriction WindowsFunctionApp#scm_ip_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#scm_ip_restriction WindowsFunctionApp#scm_ip_restriction}
 
 ---
 
@@ -5502,7 +5484,7 @@ public string ScmIpRestrictionDefaultAction { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#scm_ip_restriction_default_action WindowsFunctionApp#scm_ip_restriction_default_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#scm_ip_restriction_default_action WindowsFunctionApp#scm_ip_restriction_default_action}.
 
 ---
 
@@ -5514,9 +5496,9 @@ public string ScmMinimumTlsVersion { get; set; }
 
 - *Type:* string
 
-Configures the minimum version of TLS required for SSL requests to the SCM site Possible values include: `1.0`, `1.1`, `1.2` and  `1.3`. Defaults to `1.2`.
+Configures the minimum version of TLS required for SSL requests to the SCM site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#scm_minimum_tls_version WindowsFunctionApp#scm_minimum_tls_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#scm_minimum_tls_version WindowsFunctionApp#scm_minimum_tls_version}
 
 ---
 
@@ -5528,9 +5510,9 @@ public bool|IResolvable ScmUseMainIpRestriction { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Should the Windows Function App `ip_restriction` configuration be used for the SCM also.
+Should the Windows Function App `ip_restriction` configuration be used for the SCM also?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#scm_use_main_ip_restriction WindowsFunctionApp#scm_use_main_ip_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#scm_use_main_ip_restriction WindowsFunctionApp#scm_use_main_ip_restriction}
 
 ---
 
@@ -5542,9 +5524,9 @@ public bool|IResolvable Use32BitWorker { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Should the Windows Web App use a 32-bit worker.
+Should the Windows Web App use a 32-bit worker?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#use_32_bit_worker WindowsFunctionApp#use_32_bit_worker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#use_32_bit_worker WindowsFunctionApp#use_32_bit_worker}
 
 ---
 
@@ -5556,9 +5538,9 @@ public bool|IResolvable VnetRouteAllEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`.
+Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#vnet_route_all_enabled WindowsFunctionApp#vnet_route_all_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#vnet_route_all_enabled WindowsFunctionApp#vnet_route_all_enabled}
 
 ---
 
@@ -5570,9 +5552,9 @@ public bool|IResolvable WebsocketsEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Should Web Sockets be enabled. Defaults to `false`.
+Should Web Sockets be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#websockets_enabled WindowsFunctionApp#websockets_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#websockets_enabled WindowsFunctionApp#websockets_enabled}
 
 ---
 
@@ -5586,7 +5568,7 @@ public double WorkerCount { get; set; }
 
 The number of Workers for this Windows Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#worker_count WindowsFunctionApp#worker_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#worker_count WindowsFunctionApp#worker_count}
 
 ---
 
@@ -5611,12 +5593,12 @@ new WindowsFunctionAppSiteConfigApplicationStack {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStack.property.dotnetVersion">DotnetVersion</a></code> | <code>string</code> | The version of .Net. Possible values are `v3.0`, `v4.0`, `v6.0`, `v7.0`, `v8.0`, `v9.0` and `v10.0`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStack.property.javaVersion">JavaVersion</a></code> | <code>string</code> | The version of Java to use. Possible values are `1.8`, `11`, `17`, `21` and `25`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStack.property.nodeVersion">NodeVersion</a></code> | <code>string</code> | The version of Node to use. Possible values include `~12`, `~14`, `~16`, `~18`, `~20`, `~22` and `~24`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStack.property.powershellCoreVersion">PowershellCoreVersion</a></code> | <code>string</code> | The PowerShell Core version to use. Possible values are `7`, `7.2`, `7.4`, and `7.6`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStack.property.dotnetVersion">DotnetVersion</a></code> | <code>string</code> | The version of .Net. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStack.property.javaVersion">JavaVersion</a></code> | <code>string</code> | The version of Java to use. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStack.property.nodeVersion">NodeVersion</a></code> | <code>string</code> | The version of Node to use. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStack.property.powershellCoreVersion">PowershellCoreVersion</a></code> | <code>string</code> | The PowerShell Core version to use. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStack.property.useCustomRuntime">UseCustomRuntime</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Does the Function App use a custom Application Stack? |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStack.property.useDotnetIsolatedRuntime">UseDotnetIsolatedRuntime</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the DotNet process use an isolated runtime. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStack.property.useDotnetIsolatedRuntime">UseDotnetIsolatedRuntime</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the DotNet process use an isolated runtime? |
 
 ---
 
@@ -5628,9 +5610,9 @@ public string DotnetVersion { get; set; }
 
 - *Type:* string
 
-The version of .Net. Possible values are `v3.0`, `v4.0`, `v6.0`, `v7.0`, `v8.0`, `v9.0` and `v10.0`.
+The version of .Net.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#dotnet_version WindowsFunctionApp#dotnet_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#dotnet_version WindowsFunctionApp#dotnet_version}
 
 ---
 
@@ -5642,9 +5624,9 @@ public string JavaVersion { get; set; }
 
 - *Type:* string
 
-The version of Java to use. Possible values are `1.8`, `11`, `17`, `21` and `25`.
+The version of Java to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#java_version WindowsFunctionApp#java_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#java_version WindowsFunctionApp#java_version}
 
 ---
 
@@ -5656,9 +5638,9 @@ public string NodeVersion { get; set; }
 
 - *Type:* string
 
-The version of Node to use. Possible values include `~12`, `~14`, `~16`, `~18`, `~20`, `~22` and `~24`.
+The version of Node to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#node_version WindowsFunctionApp#node_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#node_version WindowsFunctionApp#node_version}
 
 ---
 
@@ -5670,9 +5652,9 @@ public string PowershellCoreVersion { get; set; }
 
 - *Type:* string
 
-The PowerShell Core version to use. Possible values are `7`, `7.2`, `7.4`, and `7.6`.
+The PowerShell Core version to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#powershell_core_version WindowsFunctionApp#powershell_core_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#powershell_core_version WindowsFunctionApp#powershell_core_version}
 
 ---
 
@@ -5686,7 +5668,7 @@ public bool|IResolvable UseCustomRuntime { get; set; }
 
 Does the Function App use a custom Application Stack?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#use_custom_runtime WindowsFunctionApp#use_custom_runtime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#use_custom_runtime WindowsFunctionApp#use_custom_runtime}
 
 ---
 
@@ -5698,9 +5680,9 @@ public bool|IResolvable UseDotnetIsolatedRuntime { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Should the DotNet process use an isolated runtime. Defaults to `false`.
+Should the DotNet process use an isolated runtime?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#use_dotnet_isolated_runtime WindowsFunctionApp#use_dotnet_isolated_runtime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#use_dotnet_isolated_runtime WindowsFunctionApp#use_dotnet_isolated_runtime}
 
 ---
 
@@ -5721,8 +5703,8 @@ new WindowsFunctionAppSiteConfigAppServiceLogs {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigAppServiceLogs.property.diskQuotaMb">DiskQuotaMb</a></code> | <code>double</code> | The amount of disk space to use for logs. Valid values are between `25` and `100`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigAppServiceLogs.property.retentionPeriodDays">RetentionPeriodDays</a></code> | <code>double</code> | The retention period for logs in days. Valid values are between `0` and `99999`. Defaults to `0` (never delete). |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigAppServiceLogs.property.diskQuotaMb">DiskQuotaMb</a></code> | <code>double</code> | The amount of disk space to use for logs. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigAppServiceLogs.property.retentionPeriodDays">RetentionPeriodDays</a></code> | <code>double</code> | The retention period for logs in days. Defaults to `0` (never delete). |
 
 ---
 
@@ -5734,9 +5716,9 @@ public double DiskQuotaMb { get; set; }
 
 - *Type:* double
 
-The amount of disk space to use for logs. Valid values are between `25` and `100`.
+The amount of disk space to use for logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#disk_quota_mb WindowsFunctionApp#disk_quota_mb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#disk_quota_mb WindowsFunctionApp#disk_quota_mb}
 
 ---
 
@@ -5748,9 +5730,9 @@ public double RetentionPeriodDays { get; set; }
 
 - *Type:* double
 
-The retention period for logs in days. Valid values are between `0` and `99999`. Defaults to `0` (never delete).
+The retention period for logs in days. Defaults to `0` (never delete).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#retention_period_days WindowsFunctionApp#retention_period_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#retention_period_days WindowsFunctionApp#retention_period_days}
 
 ---
 
@@ -5771,8 +5753,8 @@ new WindowsFunctionAppSiteConfigCors {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCors.property.allowedOrigins">AllowedOrigins</a></code> | <code>string[]</code> | Specifies a list of origins that should be allowed to make cross-origin calls. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCors.property.supportCredentials">SupportCredentials</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Are credentials allowed in CORS requests? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCors.property.allowedOrigins">AllowedOrigins</a></code> | <code>string[]</code> | A list of origins that should be allowed to make cross-origin calls. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCors.property.supportCredentials">SupportCredentials</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Are credentials allowed in CORS requests? |
 
 ---
 
@@ -5784,9 +5766,9 @@ public string[] AllowedOrigins { get; set; }
 
 - *Type:* string[]
 
-Specifies a list of origins that should be allowed to make cross-origin calls.
+A list of origins that should be allowed to make cross-origin calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#allowed_origins WindowsFunctionApp#allowed_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#allowed_origins WindowsFunctionApp#allowed_origins}
 
 ---
 
@@ -5798,9 +5780,9 @@ public bool|IResolvable SupportCredentials { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Are credentials allowed in CORS requests? Defaults to `false`.
+Are credentials allowed in CORS requests?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#support_credentials WindowsFunctionApp#support_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#support_credentials WindowsFunctionApp#support_credentials}
 
 ---
 
@@ -5827,9 +5809,9 @@ new WindowsFunctionAppSiteConfigIpRestriction {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction.property.action">Action</a></code> | <code>string</code> | The action to take. Possible values are `Allow` or `Deny`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction.property.action">Action</a></code> | <code>string</code> | The action to take. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction.property.description">Description</a></code> | <code>string</code> | The description of the IP restriction rule. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction.property.headers">Headers</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders">WindowsFunctionAppSiteConfigIpRestrictionHeaders</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#headers WindowsFunctionApp#headers}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction.property.headers">Headers</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders">WindowsFunctionAppSiteConfigIpRestrictionHeaders</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#headers WindowsFunctionApp#headers}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction.property.ipAddress">IpAddress</a></code> | <code>string</code> | The CIDR notation of the IP or IP Range to match. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction.property.name">Name</a></code> | <code>string</code> | The name which should be used for this `ip_restriction`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction.property.priority">Priority</a></code> | <code>double</code> | The priority value of this `ip_restriction`. |
@@ -5846,9 +5828,9 @@ public string Action { get; set; }
 
 - *Type:* string
 
-The action to take. Possible values are `Allow` or `Deny`.
+The action to take.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#action WindowsFunctionApp#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#action WindowsFunctionApp#action}
 
 ---
 
@@ -5862,7 +5844,7 @@ public string Description { get; set; }
 
 The description of the IP restriction rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#description WindowsFunctionApp#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#description WindowsFunctionApp#description}
 
 ---
 
@@ -5874,7 +5856,7 @@ public IResolvable|WindowsFunctionAppSiteConfigIpRestrictionHeaders[] Headers { 
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders">WindowsFunctionAppSiteConfigIpRestrictionHeaders</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#headers WindowsFunctionApp#headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#headers WindowsFunctionApp#headers}.
 
 ---
 
@@ -5888,9 +5870,9 @@ public string IpAddress { get; set; }
 
 The CIDR notation of the IP or IP Range to match.
 
-For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`
+For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#ip_address WindowsFunctionApp#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#ip_address WindowsFunctionApp#ip_address}
 
 ---
 
@@ -5904,7 +5886,7 @@ public string Name { get; set; }
 
 The name which should be used for this `ip_restriction`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#name WindowsFunctionApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#name WindowsFunctionApp#name}
 
 ---
 
@@ -5918,7 +5900,7 @@ public double Priority { get; set; }
 
 The priority value of this `ip_restriction`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#priority WindowsFunctionApp#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#priority WindowsFunctionApp#priority}
 
 ---
 
@@ -5932,7 +5914,7 @@ public string ServiceTag { get; set; }
 
 The Service Tag used for this IP Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#service_tag WindowsFunctionApp#service_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#service_tag WindowsFunctionApp#service_tag}
 
 ---
 
@@ -5946,7 +5928,7 @@ public string VirtualNetworkSubnetId { get; set; }
 
 The Virtual Network Subnet ID used for this IP Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#virtual_network_subnet_id WindowsFunctionApp#virtual_network_subnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#virtual_network_subnet_id WindowsFunctionApp#virtual_network_subnet_id}
 
 ---
 
@@ -5969,10 +5951,10 @@ new WindowsFunctionAppSiteConfigIpRestrictionHeaders {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders.property.xAzureFdid">XAzureFdid</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#x_azure_fdid WindowsFunctionApp#x_azure_fdid}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders.property.xFdHealthProbe">XFdHealthProbe</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#x_fd_health_probe WindowsFunctionApp#x_fd_health_probe}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders.property.xForwardedFor">XForwardedFor</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#x_forwarded_for WindowsFunctionApp#x_forwarded_for}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders.property.xForwardedHost">XForwardedHost</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#x_forwarded_host WindowsFunctionApp#x_forwarded_host}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders.property.xAzureFdid">XAzureFdid</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#x_azure_fdid WindowsFunctionApp#x_azure_fdid}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders.property.xFdHealthProbe">XFdHealthProbe</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#x_fd_health_probe WindowsFunctionApp#x_fd_health_probe}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders.property.xForwardedFor">XForwardedFor</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#x_forwarded_for WindowsFunctionApp#x_forwarded_for}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders.property.xForwardedHost">XForwardedHost</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#x_forwarded_host WindowsFunctionApp#x_forwarded_host}. |
 
 ---
 
@@ -5984,7 +5966,7 @@ public string[] XAzureFdid { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#x_azure_fdid WindowsFunctionApp#x_azure_fdid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#x_azure_fdid WindowsFunctionApp#x_azure_fdid}.
 
 ---
 
@@ -5996,7 +5978,7 @@ public string[] XFdHealthProbe { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#x_fd_health_probe WindowsFunctionApp#x_fd_health_probe}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#x_fd_health_probe WindowsFunctionApp#x_fd_health_probe}.
 
 ---
 
@@ -6008,7 +5990,7 @@ public string[] XForwardedFor { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#x_forwarded_for WindowsFunctionApp#x_forwarded_for}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#x_forwarded_for WindowsFunctionApp#x_forwarded_for}.
 
 ---
 
@@ -6020,7 +6002,7 @@ public string[] XForwardedHost { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#x_forwarded_host WindowsFunctionApp#x_forwarded_host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#x_forwarded_host WindowsFunctionApp#x_forwarded_host}.
 
 ---
 
@@ -6047,9 +6029,9 @@ new WindowsFunctionAppSiteConfigScmIpRestriction {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction.property.action">Action</a></code> | <code>string</code> | The action to take. Possible values are `Allow` or `Deny`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction.property.action">Action</a></code> | <code>string</code> | The action to take. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction.property.description">Description</a></code> | <code>string</code> | The description of the IP restriction rule. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction.property.headers">Headers</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSiteConfigScmIpRestrictionHeaders</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#headers WindowsFunctionApp#headers}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction.property.headers">Headers</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSiteConfigScmIpRestrictionHeaders</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#headers WindowsFunctionApp#headers}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction.property.ipAddress">IpAddress</a></code> | <code>string</code> | The CIDR notation of the IP or IP Range to match. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction.property.name">Name</a></code> | <code>string</code> | The name which should be used for this `ip_restriction`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction.property.priority">Priority</a></code> | <code>double</code> | The priority value of this `ip_restriction`. |
@@ -6066,9 +6048,9 @@ public string Action { get; set; }
 
 - *Type:* string
 
-The action to take. Possible values are `Allow` or `Deny`.
+The action to take.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#action WindowsFunctionApp#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#action WindowsFunctionApp#action}
 
 ---
 
@@ -6082,7 +6064,7 @@ public string Description { get; set; }
 
 The description of the IP restriction rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#description WindowsFunctionApp#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#description WindowsFunctionApp#description}
 
 ---
 
@@ -6094,7 +6076,7 @@ public IResolvable|WindowsFunctionAppSiteConfigScmIpRestrictionHeaders[] Headers
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSiteConfigScmIpRestrictionHeaders</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#headers WindowsFunctionApp#headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#headers WindowsFunctionApp#headers}.
 
 ---
 
@@ -6108,9 +6090,9 @@ public string IpAddress { get; set; }
 
 The CIDR notation of the IP or IP Range to match.
 
-For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`
+For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#ip_address WindowsFunctionApp#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#ip_address WindowsFunctionApp#ip_address}
 
 ---
 
@@ -6124,7 +6106,7 @@ public string Name { get; set; }
 
 The name which should be used for this `ip_restriction`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#name WindowsFunctionApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#name WindowsFunctionApp#name}
 
 ---
 
@@ -6138,7 +6120,7 @@ public double Priority { get; set; }
 
 The priority value of this `ip_restriction`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#priority WindowsFunctionApp#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#priority WindowsFunctionApp#priority}
 
 ---
 
@@ -6152,7 +6134,7 @@ public string ServiceTag { get; set; }
 
 The Service Tag used for this IP Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#service_tag WindowsFunctionApp#service_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#service_tag WindowsFunctionApp#service_tag}
 
 ---
 
@@ -6166,7 +6148,7 @@ public string VirtualNetworkSubnetId { get; set; }
 
 The Virtual Network Subnet ID used for this IP Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#virtual_network_subnet_id WindowsFunctionApp#virtual_network_subnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#virtual_network_subnet_id WindowsFunctionApp#virtual_network_subnet_id}
 
 ---
 
@@ -6189,10 +6171,10 @@ new WindowsFunctionAppSiteConfigScmIpRestrictionHeaders {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders.property.xAzureFdid">XAzureFdid</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#x_azure_fdid WindowsFunctionApp#x_azure_fdid}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders.property.xFdHealthProbe">XFdHealthProbe</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#x_fd_health_probe WindowsFunctionApp#x_fd_health_probe}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders.property.xForwardedFor">XForwardedFor</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#x_forwarded_for WindowsFunctionApp#x_forwarded_for}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders.property.xForwardedHost">XForwardedHost</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#x_forwarded_host WindowsFunctionApp#x_forwarded_host}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders.property.xAzureFdid">XAzureFdid</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#x_azure_fdid WindowsFunctionApp#x_azure_fdid}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders.property.xFdHealthProbe">XFdHealthProbe</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#x_fd_health_probe WindowsFunctionApp#x_fd_health_probe}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders.property.xForwardedFor">XForwardedFor</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#x_forwarded_for WindowsFunctionApp#x_forwarded_for}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders.property.xForwardedHost">XForwardedHost</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#x_forwarded_host WindowsFunctionApp#x_forwarded_host}. |
 
 ---
 
@@ -6204,7 +6186,7 @@ public string[] XAzureFdid { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#x_azure_fdid WindowsFunctionApp#x_azure_fdid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#x_azure_fdid WindowsFunctionApp#x_azure_fdid}.
 
 ---
 
@@ -6216,7 +6198,7 @@ public string[] XFdHealthProbe { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#x_fd_health_probe WindowsFunctionApp#x_fd_health_probe}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#x_fd_health_probe WindowsFunctionApp#x_fd_health_probe}.
 
 ---
 
@@ -6228,7 +6210,7 @@ public string[] XForwardedFor { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#x_forwarded_for WindowsFunctionApp#x_forwarded_for}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#x_forwarded_for WindowsFunctionApp#x_forwarded_for}.
 
 ---
 
@@ -6240,7 +6222,7 @@ public string[] XForwardedHost { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#x_forwarded_host WindowsFunctionApp#x_forwarded_host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#x_forwarded_host WindowsFunctionApp#x_forwarded_host}.
 
 ---
 
@@ -6274,8 +6256,8 @@ new WindowsFunctionAppStickySettings {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStickySettings.property.appSettingNames">AppSettingNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#app_setting_names WindowsFunctionApp#app_setting_names}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStickySettings.property.connectionStringNames">ConnectionStringNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#connection_string_names WindowsFunctionApp#connection_string_names}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStickySettings.property.appSettingNames">AppSettingNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#app_setting_names WindowsFunctionApp#app_setting_names}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStickySettings.property.connectionStringNames">ConnectionStringNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#connection_string_names WindowsFunctionApp#connection_string_names}. |
 
 ---
 
@@ -6287,7 +6269,7 @@ public string[] AppSettingNames { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#app_setting_names WindowsFunctionApp#app_setting_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#app_setting_names WindowsFunctionApp#app_setting_names}.
 
 ---
 
@@ -6299,7 +6281,7 @@ public string[] ConnectionStringNames { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#connection_string_names WindowsFunctionApp#connection_string_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#connection_string_names WindowsFunctionApp#connection_string_names}.
 
 ---
 
@@ -6324,12 +6306,12 @@ new WindowsFunctionAppStorageAccount {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount.property.accessKey">AccessKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#access_key WindowsFunctionApp#access_key}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount.property.accountName">AccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#account_name WindowsFunctionApp#account_name}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#name WindowsFunctionApp#name}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount.property.shareName">ShareName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#share_name WindowsFunctionApp#share_name}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#type WindowsFunctionApp#type}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount.property.mountPath">MountPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#mount_path WindowsFunctionApp#mount_path}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount.property.accessKey">AccessKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#access_key WindowsFunctionApp#access_key}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount.property.accountName">AccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#account_name WindowsFunctionApp#account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#name WindowsFunctionApp#name}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount.property.shareName">ShareName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#share_name WindowsFunctionApp#share_name}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#type WindowsFunctionApp#type}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount.property.mountPath">MountPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#mount_path WindowsFunctionApp#mount_path}. |
 
 ---
 
@@ -6341,7 +6323,7 @@ public string AccessKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#access_key WindowsFunctionApp#access_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#access_key WindowsFunctionApp#access_key}.
 
 ---
 
@@ -6353,7 +6335,7 @@ public string AccountName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#account_name WindowsFunctionApp#account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#account_name WindowsFunctionApp#account_name}.
 
 ---
 
@@ -6365,7 +6347,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#name WindowsFunctionApp#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#name WindowsFunctionApp#name}.
 
 ---
 
@@ -6377,7 +6359,7 @@ public string ShareName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#share_name WindowsFunctionApp#share_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#share_name WindowsFunctionApp#share_name}.
 
 ---
 
@@ -6389,7 +6371,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#type WindowsFunctionApp#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#type WindowsFunctionApp#type}.
 
 ---
 
@@ -6401,7 +6383,7 @@ public string MountPath { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#mount_path WindowsFunctionApp#mount_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#mount_path WindowsFunctionApp#mount_path}.
 
 ---
 
@@ -6424,10 +6406,10 @@ new WindowsFunctionAppTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#create WindowsFunctionApp#create}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#delete WindowsFunctionApp#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#read WindowsFunctionApp#read}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#update WindowsFunctionApp#update}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#create WindowsFunctionApp#create}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#delete WindowsFunctionApp#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#read WindowsFunctionApp#read}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#update WindowsFunctionApp#update}. |
 
 ---
 
@@ -6439,7 +6421,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#create WindowsFunctionApp#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#create WindowsFunctionApp#create}.
 
 ---
 
@@ -6451,7 +6433,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#delete WindowsFunctionApp#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#delete WindowsFunctionApp#delete}.
 
 ---
 
@@ -6463,7 +6445,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#read WindowsFunctionApp#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#read WindowsFunctionApp#read}.
 
 ---
 
@@ -6475,7 +6457,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app#update WindowsFunctionApp#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app#update WindowsFunctionApp#update}.
 
 ---
 

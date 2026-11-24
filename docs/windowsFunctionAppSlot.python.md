@@ -4,7 +4,7 @@
 
 ### WindowsFunctionAppSlot <a name="WindowsFunctionAppSlot" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot azurerm_windows_function_app_slot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot azurerm_windows_function_app_slot}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer"></a>
 
@@ -71,40 +71,40 @@ windowsFunctionAppSlot.WindowsFunctionAppSlot(
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.functionAppId">function_app_id</a></code> | <code>str</code> | The ID of the Windows Function App this Slot is a member of. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.name">name</a></code> | <code>str</code> | Specifies the name of the Windows Function App Slot. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the Windows Function App Slot. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.siteConfig">site_config</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig">WindowsFunctionAppSlotSiteConfig</a></code> | site_config block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.appSettings">app_settings</a></code> | <code>typing.Mapping[str]</code> | A map of key-value pairs for [App Settings](https://docs.microsoft.com/azure/azure-functions/functions-app-settings) and custom values. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.appSettings">app_settings</a></code> | <code>typing.Mapping[str]</code> | A map of key-value pairs for [App Settings](https://learn.microsoft.com/azure/azure-functions/functions-app-settings) and custom values. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.authSettings">auth_settings</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings">WindowsFunctionAppSlotAuthSettings</a></code> | auth_settings block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.authSettingsV2">auth_settings_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2">WindowsFunctionAppSlotAuthSettingsV2</a></code> | auth_settings_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.backup">backup</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackup">WindowsFunctionAppSlotBackup</a></code> | backup block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.builtinLoggingEnabled">builtin_logging_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should built in logging be enabled. Configures `AzureWebJobsDashboard` app setting based on the configured storage setting. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.clientCertificateEnabled">client_certificate_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Function App Slot use Client Certificates. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.clientCertificateExclusionPaths">client_certificate_exclusion_paths</a></code> | <code>str</code> | Paths to exclude when using client certificates, separated by ; |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.builtinLoggingEnabled">builtin_logging_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should built in logging be enabled? Configures `AzureWebJobsDashboard` app setting based on the configured storage setting. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.clientCertificateEnabled">client_certificate_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Function App Slot use Client Certificates? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.clientCertificateExclusionPaths">client_certificate_exclusion_paths</a></code> | <code>str</code> | Paths to exclude when using client certificates, separated by `;`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.clientCertificateMode">client_certificate_mode</a></code> | <code>str</code> | The mode of the Function App Slot's client certificates requirement for incoming requests. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.connectionString">connection_string</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionString">WindowsFunctionAppSlotConnectionString</a>]</code> | connection_string block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.contentShareForceDisabled">content_share_force_disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Force disable the content share settings. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.dailyMemoryTimeQuota">daily_memory_time_quota</a></code> | <code>typing.Union[int, float]</code> | The amount of memory in gigabyte-seconds that your application is allowed to consume per day. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Is the Windows Function App Slot enabled. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.endToEndTlsEncryptionEnabled">end_to_end_tls_encryption_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#end_to_end_tls_encryption_enabled WindowsFunctionAppSlot#end_to_end_tls_encryption_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.ftpPublishBasicAuthenticationEnabled">ftp_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#ftp_publish_basic_authentication_enabled WindowsFunctionAppSlot#ftp_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Is the Windows Function App Slot enabled? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.endToEndTlsEncryptionEnabled">end_to_end_tls_encryption_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#end_to_end_tls_encryption_enabled WindowsFunctionAppSlot#end_to_end_tls_encryption_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.ftpPublishBasicAuthenticationEnabled">ftp_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#ftp_publish_basic_authentication_enabled WindowsFunctionAppSlot#ftp_publish_basic_authentication_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.functionsExtensionVersion">functions_extension_version</a></code> | <code>str</code> | The runtime version associated with the Function App Slot. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.httpsOnly">https_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Can the Function App Slot only be accessed via HTTPS? |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#id WindowsFunctionAppSlot#id}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#id WindowsFunctionAppSlot#id}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotIdentity">WindowsFunctionAppSlotIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.keyVaultReferenceIdentityId">key_vault_reference_identity_id</a></code> | <code>str</code> | The User Assigned Identity to use for Key Vault access. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#public_network_access_enabled WindowsFunctionAppSlot#public_network_access_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.servicePlanId">service_plan_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#service_plan_id WindowsFunctionAppSlot#service_plan_id}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#public_network_access_enabled WindowsFunctionAppSlot#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.servicePlanId">service_plan_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#service_plan_id WindowsFunctionAppSlot#service_plan_id}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.storageAccount">storage_account</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccount">WindowsFunctionAppSlotStorageAccount</a>]</code> | storage_account block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.storageAccountAccessKey">storage_account_access_key</a></code> | <code>str</code> | The access key which will be used to access the storage account for the Function App Slot. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.storageAccountName">storage_account_name</a></code> | <code>str</code> | The backend storage account name which will be used by this Function App Slot. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.storageKeyVaultSecretId">storage_key_vault_secret_id</a></code> | <code>str</code> | The Key Vault Secret ID, including version, that contains the Connection String to connect to the storage account for this Function App. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.storageAccountAccessKey">storage_account_access_key</a></code> | <code>str</code> | The access key which will be used to access the Storage Account for the Function App Slot. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.storageAccountName">storage_account_name</a></code> | <code>str</code> | The backend Storage Account name which will be used by this Function App Slot. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.storageKeyVaultSecretId">storage_key_vault_secret_id</a></code> | <code>str</code> | The Key Vault Secret ID, including version, that contains the Connection String to connect to the Storage Account for this Function App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.storageUsesManagedIdentity">storage_uses_managed_identity</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Function App Slot use its Managed Identity to access storage? |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#tags WindowsFunctionAppSlot#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#tags WindowsFunctionAppSlot#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotTimeouts">WindowsFunctionAppSlotTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.virtualNetworkBackupRestoreEnabled">virtual_network_backup_restore_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#virtual_network_backup_restore_enabled WindowsFunctionAppSlot#virtual_network_backup_restore_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.virtualNetworkSubnetId">virtual_network_subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#virtual_network_subnet_id WindowsFunctionAppSlot#virtual_network_subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.vnetImagePullEnabled">vnet_image_pull_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Is container image pull over virtual network enabled? Defaults to `false`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.webdeployPublishBasicAuthenticationEnabled">webdeploy_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#webdeploy_publish_basic_authentication_enabled WindowsFunctionAppSlot#webdeploy_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.virtualNetworkBackupRestoreEnabled">virtual_network_backup_restore_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#virtual_network_backup_restore_enabled WindowsFunctionAppSlot#virtual_network_backup_restore_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.virtualNetworkSubnetId">virtual_network_subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#virtual_network_subnet_id WindowsFunctionAppSlot#virtual_network_subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.vnetImagePullEnabled">vnet_image_pull_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Is container image pull over Virtual Network enabled? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer.parameter.webdeployPublishBasicAuthenticationEnabled">webdeploy_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#webdeploy_publish_basic_authentication_enabled WindowsFunctionAppSlot#webdeploy_publish_basic_authentication_enabled}. |
 
 ---
 
@@ -174,7 +174,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the Windows Function App this Slot is a member of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#function_app_id WindowsFunctionAppSlot#function_app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#function_app_id WindowsFunctionAppSlot#function_app_id}
 
 ---
 
@@ -182,9 +182,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Specifies the name of the Windows Function App Slot.
+The name of the Windows Function App Slot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#name WindowsFunctionAppSlot#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#name WindowsFunctionAppSlot#name}
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 site_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#site_config WindowsFunctionAppSlot#site_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#site_config WindowsFunctionAppSlot#site_config}
 
 ---
 
@@ -202,9 +202,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-A map of key-value pairs for [App Settings](https://docs.microsoft.com/azure/azure-functions/functions-app-settings) and custom values.
+A map of key-value pairs for [App Settings](https://learn.microsoft.com/azure/azure-functions/functions-app-settings) and custom values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#app_settings WindowsFunctionAppSlot#app_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#app_settings WindowsFunctionAppSlot#app_settings}
 
 ---
 
@@ -214,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 auth_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#auth_settings WindowsFunctionAppSlot#auth_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#auth_settings WindowsFunctionAppSlot#auth_settings}
 
 ---
 
@@ -224,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 auth_settings_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#auth_settings_v2 WindowsFunctionAppSlot#auth_settings_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#auth_settings_v2 WindowsFunctionAppSlot#auth_settings_v2}
 
 ---
 
@@ -234,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 backup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#backup WindowsFunctionAppSlot#backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#backup WindowsFunctionAppSlot#backup}
 
 ---
 
@@ -242,9 +242,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Should built in logging be enabled. Configures `AzureWebJobsDashboard` app setting based on the configured storage setting.
+Should built in logging be enabled? Configures `AzureWebJobsDashboard` app setting based on the configured storage setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#builtin_logging_enabled WindowsFunctionAppSlot#builtin_logging_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#builtin_logging_enabled WindowsFunctionAppSlot#builtin_logging_enabled}
 
 ---
 
@@ -252,9 +252,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the Function App Slot use Client Certificates.
+Should the Function App Slot use Client Certificates?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_certificate_enabled WindowsFunctionAppSlot#client_certificate_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_certificate_enabled WindowsFunctionAppSlot#client_certificate_enabled}
 
 ---
 
@@ -262,9 +262,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Paths to exclude when using client certificates, separated by ;
+Paths to exclude when using client certificates, separated by `;`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_certificate_exclusion_paths WindowsFunctionAppSlot#client_certificate_exclusion_paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_certificate_exclusion_paths WindowsFunctionAppSlot#client_certificate_exclusion_paths}
 
 ---
 
@@ -274,9 +274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The mode of the Function App Slot's client certificates requirement for incoming requests.
 
-Possible values are `Required`, `Optional`, and `OptionalInteractiveUser`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_certificate_mode WindowsFunctionAppSlot#client_certificate_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_certificate_mode WindowsFunctionAppSlot#client_certificate_mode}
 
 ---
 
@@ -286,7 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 connection_string block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#connection_string WindowsFunctionAppSlot#connection_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#connection_string WindowsFunctionAppSlot#connection_string}
 
 ---
 
@@ -296,7 +294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Force disable the content share settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#content_share_force_disabled WindowsFunctionAppSlot#content_share_force_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#content_share_force_disabled WindowsFunctionAppSlot#content_share_force_disabled}
 
 ---
 
@@ -306,9 +304,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The amount of memory in gigabyte-seconds that your application is allowed to consume per day.
 
-Setting this value only affects function apps in Consumption Plans.
+Setting this value only affects Function Apps in Consumption Plans.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#daily_memory_time_quota WindowsFunctionAppSlot#daily_memory_time_quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#daily_memory_time_quota WindowsFunctionAppSlot#daily_memory_time_quota}
 
 ---
 
@@ -316,9 +314,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Is the Windows Function App Slot enabled.
+Is the Windows Function App Slot enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#enabled WindowsFunctionAppSlot#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#enabled WindowsFunctionAppSlot#enabled}
 
 ---
 
@@ -326,7 +324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#end_to_end_tls_encryption_enabled WindowsFunctionAppSlot#end_to_end_tls_encryption_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#end_to_end_tls_encryption_enabled WindowsFunctionAppSlot#end_to_end_tls_encryption_enabled}.
 
 ---
 
@@ -334,7 +332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#ftp_publish_basic_authentication_enabled WindowsFunctionAppSlot#ftp_publish_basic_authentication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#ftp_publish_basic_authentication_enabled WindowsFunctionAppSlot#ftp_publish_basic_authentication_enabled}.
 
 ---
 
@@ -344,7 +342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The runtime version associated with the Function App Slot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#functions_extension_version WindowsFunctionAppSlot#functions_extension_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#functions_extension_version WindowsFunctionAppSlot#functions_extension_version}
 
 ---
 
@@ -354,7 +352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Can the Function App Slot only be accessed via HTTPS?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#https_only WindowsFunctionAppSlot#https_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#https_only WindowsFunctionAppSlot#https_only}
 
 ---
 
@@ -362,7 +360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#id WindowsFunctionAppSlot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#id WindowsFunctionAppSlot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -375,7 +373,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#identity WindowsFunctionAppSlot#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#identity WindowsFunctionAppSlot#identity}
 
 ---
 
@@ -385,7 +383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The User Assigned Identity to use for Key Vault access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#key_vault_reference_identity_id WindowsFunctionAppSlot#key_vault_reference_identity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#key_vault_reference_identity_id WindowsFunctionAppSlot#key_vault_reference_identity_id}
 
 ---
 
@@ -393,7 +391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#public_network_access_enabled WindowsFunctionAppSlot#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#public_network_access_enabled WindowsFunctionAppSlot#public_network_access_enabled}.
 
 ---
 
@@ -401,7 +399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#service_plan_id WindowsFunctionAppSlot#service_plan_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#service_plan_id WindowsFunctionAppSlot#service_plan_id}.
 
 ---
 
@@ -411,7 +409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 storage_account block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#storage_account WindowsFunctionAppSlot#storage_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#storage_account WindowsFunctionAppSlot#storage_account}
 
 ---
 
@@ -419,9 +417,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The access key which will be used to access the storage account for the Function App Slot.
+The access key which will be used to access the Storage Account for the Function App Slot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#storage_account_access_key WindowsFunctionAppSlot#storage_account_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#storage_account_access_key WindowsFunctionAppSlot#storage_account_access_key}
 
 ---
 
@@ -429,9 +427,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The backend storage account name which will be used by this Function App Slot.
+The backend Storage Account name which will be used by this Function App Slot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#storage_account_name WindowsFunctionAppSlot#storage_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#storage_account_name WindowsFunctionAppSlot#storage_account_name}
 
 ---
 
@@ -439,9 +437,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The Key Vault Secret ID, including version, that contains the Connection String to connect to the storage account for this Function App.
+The Key Vault Secret ID, including version, that contains the Connection String to connect to the Storage Account for this Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#storage_key_vault_secret_id WindowsFunctionAppSlot#storage_key_vault_secret_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#storage_key_vault_secret_id WindowsFunctionAppSlot#storage_key_vault_secret_id}
 
 ---
 
@@ -451,7 +449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Should the Function App Slot use its Managed Identity to access storage?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#storage_uses_managed_identity WindowsFunctionAppSlot#storage_uses_managed_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#storage_uses_managed_identity WindowsFunctionAppSlot#storage_uses_managed_identity}
 
 ---
 
@@ -459,7 +457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#tags WindowsFunctionAppSlot#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#tags WindowsFunctionAppSlot#tags}.
 
 ---
 
@@ -469,7 +467,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#timeouts WindowsFunctionAppSlot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#timeouts WindowsFunctionAppSlot#timeouts}
 
 ---
 
@@ -477,7 +475,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#virtual_network_backup_restore_enabled WindowsFunctionAppSlot#virtual_network_backup_restore_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#virtual_network_backup_restore_enabled WindowsFunctionAppSlot#virtual_network_backup_restore_enabled}.
 
 ---
 
@@ -485,7 +483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#virtual_network_subnet_id WindowsFunctionAppSlot#virtual_network_subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#virtual_network_subnet_id WindowsFunctionAppSlot#virtual_network_subnet_id}.
 
 ---
 
@@ -493,9 +491,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Is container image pull over virtual network enabled? Defaults to `false`.
+Is container image pull over Virtual Network enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#vnet_image_pull_enabled WindowsFunctionAppSlot#vnet_image_pull_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#vnet_image_pull_enabled WindowsFunctionAppSlot#vnet_image_pull_enabled}
 
 ---
 
@@ -503,7 +501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#webdeploy_publish_basic_authentication_enabled WindowsFunctionAppSlot#webdeploy_publish_basic_authentication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#webdeploy_publish_basic_authentication_enabled WindowsFunctionAppSlot#webdeploy_publish_basic_authentication_enabled}.
 
 ---
 
@@ -954,7 +952,7 @@ def put_auth_settings(
 
 Should the Authentication / Authorization feature be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#enabled WindowsFunctionAppSlot#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#enabled WindowsFunctionAppSlot#enabled}
 
 ---
 
@@ -964,7 +962,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 active_directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#active_directory WindowsFunctionAppSlot#active_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#active_directory WindowsFunctionAppSlot#active_directory}
 
 ---
 
@@ -972,9 +970,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Specifies a map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in.
+A map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#additional_login_parameters WindowsFunctionAppSlot#additional_login_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#additional_login_parameters WindowsFunctionAppSlot#additional_login_parameters}
 
 ---
 
@@ -982,9 +980,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Specifies a list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App.
+A list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#allowed_external_redirect_urls WindowsFunctionAppSlot#allowed_external_redirect_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#allowed_external_redirect_urls WindowsFunctionAppSlot#allowed_external_redirect_urls}
 
 ---
 
@@ -994,9 +992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The default authentication provider to use when multiple providers are configured.
 
-Possible values include: `AzureActiveDirectory`, `Facebook`, `Google`, `MicrosoftAccount`, `Twitter`, `Github`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#default_provider WindowsFunctionAppSlot#default_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#default_provider WindowsFunctionAppSlot#default_provider}
 
 ---
 
@@ -1006,7 +1002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 facebook block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#facebook WindowsFunctionAppSlot#facebook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#facebook WindowsFunctionAppSlot#facebook}
 
 ---
 
@@ -1016,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#github WindowsFunctionAppSlot#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#github WindowsFunctionAppSlot#github}
 
 ---
 
@@ -1026,7 +1022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 google block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#google WindowsFunctionAppSlot#google}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#google WindowsFunctionAppSlot#google}
 
 ---
 
@@ -1036,7 +1032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The OpenID Connect Issuer URI that represents the entity which issues access tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#issuer WindowsFunctionAppSlot#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#issuer WindowsFunctionAppSlot#issuer}
 
 ---
 
@@ -1046,7 +1042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 microsoft block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#microsoft WindowsFunctionAppSlot#microsoft}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#microsoft WindowsFunctionAppSlot#microsoft}
 
 ---
 
@@ -1056,7 +1052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The RuntimeVersion of the Authentication / Authorization feature in use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#runtime_version WindowsFunctionAppSlot#runtime_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#runtime_version WindowsFunctionAppSlot#runtime_version}
 
 ---
 
@@ -1066,9 +1062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The number of hours after session token expiration that a session token can be used to call the token refresh API.
 
-Defaults to `72` hours.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#token_refresh_extension_hours WindowsFunctionAppSlot#token_refresh_extension_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#token_refresh_extension_hours WindowsFunctionAppSlot#token_refresh_extension_hours}
 
 ---
 
@@ -1076,9 +1070,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`.
+Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#token_store_enabled WindowsFunctionAppSlot#token_store_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#token_store_enabled WindowsFunctionAppSlot#token_store_enabled}
 
 ---
 
@@ -1088,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 twitter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#twitter WindowsFunctionAppSlot#twitter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#twitter WindowsFunctionAppSlot#twitter}
 
 ---
 
@@ -1096,9 +1090,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The action to take when an unauthenticated client attempts to access the app. Possible values include: `RedirectToLoginPage`, `AllowAnonymous`.
+The action to take when an unauthenticated client attempts to access the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#unauthenticated_client_action WindowsFunctionAppSlot#unauthenticated_client_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#unauthenticated_client_action WindowsFunctionAppSlot#unauthenticated_client_action}
 
 ---
 
@@ -1137,7 +1131,7 @@ def put_auth_settings_v2(
 
 login block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#login WindowsFunctionAppSlot#login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#login WindowsFunctionAppSlot#login}
 
 ---
 
@@ -1147,7 +1141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 active_directory_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#active_directory_v2 WindowsFunctionAppSlot#active_directory_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#active_directory_v2 WindowsFunctionAppSlot#active_directory_v2}
 
 ---
 
@@ -1157,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 apple_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#apple_v2 WindowsFunctionAppSlot#apple_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#apple_v2 WindowsFunctionAppSlot#apple_v2}
 
 ---
 
@@ -1165,9 +1159,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the AuthV2 Settings be enabled. Defaults to `false`.
+Should the AuthV2 Settings be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#auth_enabled WindowsFunctionAppSlot#auth_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#auth_enabled WindowsFunctionAppSlot#auth_enabled}
 
 ---
 
@@ -1177,7 +1171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 azure_static_web_app_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#azure_static_web_app_v2 WindowsFunctionAppSlot#azure_static_web_app_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#azure_static_web_app_v2 WindowsFunctionAppSlot#azure_static_web_app_v2}
 
 ---
 
@@ -1187,7 +1181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The path to the App Auth settings. **Note:** Relative Paths are evaluated from the Site Root directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#config_file_path WindowsFunctionAppSlot#config_file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#config_file_path WindowsFunctionAppSlot#config_file_path}
 
 ---
 
@@ -1197,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 custom_oidc_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#custom_oidc_v2 WindowsFunctionAppSlot#custom_oidc_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#custom_oidc_v2 WindowsFunctionAppSlot#custom_oidc_v2}
 
 ---
 
@@ -1209,7 +1203,7 @@ The Default Authentication Provider to use when the `unauthenticated_action` is 
 
 Possible values include: `apple`, `azureactivedirectory`, `facebook`, `github`, `google`, `twitter` and the `name` of your `custom_oidc_v2` provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#default_provider WindowsFunctionAppSlot#default_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#default_provider WindowsFunctionAppSlot#default_provider}
 
 ---
 
@@ -1219,7 +1213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The paths which should be excluded from the `unauthenticated_action` when it is set to `RedirectToLoginPage`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#excluded_paths WindowsFunctionAppSlot#excluded_paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#excluded_paths WindowsFunctionAppSlot#excluded_paths}
 
 ---
 
@@ -1229,7 +1223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 facebook_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#facebook_v2 WindowsFunctionAppSlot#facebook_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#facebook_v2 WindowsFunctionAppSlot#facebook_v2}
 
 ---
 
@@ -1237,11 +1231,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The convention used to determine the url of the request made.
+The convention used to determine the URL of the request made.
 
-Possible values include `ForwardProxyConventionNoProxy`, `ForwardProxyConventionStandard`, `ForwardProxyConventionCustom`. Defaults to `ForwardProxyConventionNoProxy`
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#forward_proxy_convention WindowsFunctionAppSlot#forward_proxy_convention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#forward_proxy_convention WindowsFunctionAppSlot#forward_proxy_convention}
 
 ---
 
@@ -1251,7 +1243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the header containing the host of the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#forward_proxy_custom_host_header_name WindowsFunctionAppSlot#forward_proxy_custom_host_header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#forward_proxy_custom_host_header_name WindowsFunctionAppSlot#forward_proxy_custom_host_header_name}
 
 ---
 
@@ -1261,7 +1253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the header containing the scheme of the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#forward_proxy_custom_scheme_header_name WindowsFunctionAppSlot#forward_proxy_custom_scheme_header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#forward_proxy_custom_scheme_header_name WindowsFunctionAppSlot#forward_proxy_custom_scheme_header_name}
 
 ---
 
@@ -1271,7 +1263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 github_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#github_v2 WindowsFunctionAppSlot#github_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#github_v2 WindowsFunctionAppSlot#github_v2}
 
 ---
 
@@ -1281,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 google_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#google_v2 WindowsFunctionAppSlot#google_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#google_v2 WindowsFunctionAppSlot#google_v2}
 
 ---
 
@@ -1289,9 +1281,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The prefix that should precede all the authentication and authorisation paths. Defaults to `/.auth`.
+The prefix that should precede all the authentication and authorisation paths.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#http_route_api_prefix WindowsFunctionAppSlot#http_route_api_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#http_route_api_prefix WindowsFunctionAppSlot#http_route_api_prefix}
 
 ---
 
@@ -1301,7 +1293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 microsoft_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#microsoft_v2 WindowsFunctionAppSlot#microsoft_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#microsoft_v2 WindowsFunctionAppSlot#microsoft_v2}
 
 ---
 
@@ -1309,9 +1301,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the authentication flow be used for all requests.
+Should the authentication flow be used for all requests?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#require_authentication WindowsFunctionAppSlot#require_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#require_authentication WindowsFunctionAppSlot#require_authentication}
 
 ---
 
@@ -1319,9 +1311,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Should HTTPS be required on connections? Defaults to true.
+Should HTTPS be required on connections?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#require_https WindowsFunctionAppSlot#require_https}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#require_https WindowsFunctionAppSlot#require_https}
 
 ---
 
@@ -1329,9 +1321,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The Runtime Version of the Authentication and Authorisation feature of this App. Defaults to `~1`.
+The Runtime Version of the Authentication and Authorisation feature of this App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#runtime_version WindowsFunctionAppSlot#runtime_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#runtime_version WindowsFunctionAppSlot#runtime_version}
 
 ---
 
@@ -1341,7 +1333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 twitter_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#twitter_v2 WindowsFunctionAppSlot#twitter_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#twitter_v2 WindowsFunctionAppSlot#twitter_v2}
 
 ---
 
@@ -1351,9 +1343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The action to take for requests made without authentication.
 
-Possible values include `RedirectToLoginPage`, `AllowAnonymous`, `Return401`, and `Return403`. Defaults to `RedirectToLoginPage`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#unauthenticated_action WindowsFunctionAppSlot#unauthenticated_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#unauthenticated_action WindowsFunctionAppSlot#unauthenticated_action}
 
 ---
 
@@ -1374,7 +1364,7 @@ def put_backup(
 
 The name which should be used for this Backup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#name WindowsFunctionAppSlot#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#name WindowsFunctionAppSlot#name}
 
 ---
 
@@ -1384,7 +1374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#schedule WindowsFunctionAppSlot#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#schedule WindowsFunctionAppSlot#schedule}
 
 ---
 
@@ -1394,7 +1384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The SAS URL to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#storage_account_url WindowsFunctionAppSlot#storage_account_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#storage_account_url WindowsFunctionAppSlot#storage_account_url}
 
 ---
 
@@ -1404,7 +1394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Should this backup job be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#enabled WindowsFunctionAppSlot#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#enabled WindowsFunctionAppSlot#enabled}
 
 ---
 
@@ -1435,7 +1425,7 @@ def put_identity(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#type WindowsFunctionAppSlot#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#type WindowsFunctionAppSlot#type}.
 
 ---
 
@@ -1443,7 +1433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#identity_ids WindowsFunctionAppSlot#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#identity_ids WindowsFunctionAppSlot#identity_ids}.
 
 ---
 
@@ -1493,9 +1483,9 @@ def put_site_config(
 
 - *Type:* bool | cdktn.IResolvable
 
-If this Windows Web App is Always On enabled. Defaults to `false`.
+If this Windows Web App is Always On enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#always_on WindowsFunctionAppSlot#always_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#always_on WindowsFunctionAppSlot#always_on}
 
 ---
 
@@ -1505,7 +1495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The URL of the API definition that describes this Windows Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#api_definition_url WindowsFunctionAppSlot#api_definition_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#api_definition_url WindowsFunctionAppSlot#api_definition_url}
 
 ---
 
@@ -1515,7 +1505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the API Management API for this Windows Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#api_management_api_id WindowsFunctionAppSlot#api_management_api_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#api_management_api_id WindowsFunctionAppSlot#api_management_api_id}
 
 ---
 
@@ -1525,7 +1515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The program and any arguments used to launch this app via the command line. (Example `node myapp.js`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#app_command_line WindowsFunctionAppSlot#app_command_line}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#app_command_line WindowsFunctionAppSlot#app_command_line}
 
 ---
 
@@ -1535,7 +1525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Connection String for linking the Windows Function App to Application Insights.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#application_insights_connection_string WindowsFunctionAppSlot#application_insights_connection_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#application_insights_connection_string WindowsFunctionAppSlot#application_insights_connection_string}
 
 ---
 
@@ -1545,7 +1535,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Instrumentation Key for connecting the Windows Function App to Application Insights.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#application_insights_key WindowsFunctionAppSlot#application_insights_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#application_insights_key WindowsFunctionAppSlot#application_insights_key}
 
 ---
 
@@ -1555,7 +1545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 application_stack block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#application_stack WindowsFunctionAppSlot#application_stack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#application_stack WindowsFunctionAppSlot#application_stack}
 
 ---
 
@@ -1563,11 +1553,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-The number of workers this function app can scale out to.
+The number of workers this Function App can scale out to.
 
 Only applicable to apps on the Consumption and Premium plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#app_scale_limit WindowsFunctionAppSlot#app_scale_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#app_scale_limit WindowsFunctionAppSlot#app_scale_limit}
 
 ---
 
@@ -1577,7 +1567,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 app_service_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#app_service_logs WindowsFunctionAppSlot#app_service_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#app_service_logs WindowsFunctionAppSlot#app_service_logs}
 
 ---
 
@@ -1585,7 +1575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#auto_swap_slot_name WindowsFunctionAppSlot#auto_swap_slot_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#auto_swap_slot_name WindowsFunctionAppSlot#auto_swap_slot_name}.
 
 ---
 
@@ -1595,7 +1585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#cors WindowsFunctionAppSlot#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#cors WindowsFunctionAppSlot#cors}
 
 ---
 
@@ -1603,9 +1593,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Specifies a list of Default Documents for the Windows Web App.
+A list of Default Documents for the Windows Web App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#default_documents WindowsFunctionAppSlot#default_documents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#default_documents WindowsFunctionAppSlot#default_documents}
 
 ---
 
@@ -1615,7 +1605,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The number of minimum instances for this Windows Function App. Only affects apps on Elastic Premium plans.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#elastic_instance_minimum WindowsFunctionAppSlot#elastic_instance_minimum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#elastic_instance_minimum WindowsFunctionAppSlot#elastic_instance_minimum}
 
 ---
 
@@ -1623,11 +1613,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-State of FTP / FTPS service for this function app.
+State of FTP / FTPS service for this Function App.
 
-Possible values include: `AllAllowed`, `FtpsOnly` and `Disabled`. Defaults to `Disabled`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#ftps_state WindowsFunctionAppSlot#ftps_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#ftps_state WindowsFunctionAppSlot#ftps_state}
 
 ---
 
@@ -1637,9 +1625,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The amount of time in minutes that a node is unhealthy before being removed from the load balancer.
 
-Possible values are between `2` and `10`. Defaults to `10`. Only valid in conjunction with `health_check_path`
+Only valid in conjunction with `health_check_path`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#health_check_eviction_time_in_min WindowsFunctionAppSlot#health_check_eviction_time_in_min}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#health_check_eviction_time_in_min WindowsFunctionAppSlot#health_check_eviction_time_in_min}
 
 ---
 
@@ -1647,9 +1635,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The path to be checked for this function app health.
+The path to be checked for this Function App health.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#health_check_path WindowsFunctionAppSlot#health_check_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#health_check_path WindowsFunctionAppSlot#health_check_path}
 
 ---
 
@@ -1657,9 +1645,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Specifies if the http2 protocol should be enabled. Defaults to `false`.
+Whether the http2 protocol should be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#http2_enabled WindowsFunctionAppSlot#http2_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#http2_enabled WindowsFunctionAppSlot#http2_enabled}
 
 ---
 
@@ -1669,7 +1657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ip_restriction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#ip_restriction WindowsFunctionAppSlot#ip_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#ip_restriction WindowsFunctionAppSlot#ip_restriction}
 
 ---
 
@@ -1677,7 +1665,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#ip_restriction_default_action WindowsFunctionAppSlot#ip_restriction_default_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#ip_restriction_default_action WindowsFunctionAppSlot#ip_restriction_default_action}.
 
 ---
 
@@ -1685,9 +1673,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The Site load balancing mode. Possible values include: `WeightedRoundRobin`, `LeastRequests`, `LeastResponseTime`, `WeightedTotalTraffic`, `RequestHash`, `PerSiteRoundRobin`. Defaults to `LeastRequests` if omitted.
+The Site load balancing mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#load_balancing_mode WindowsFunctionAppSlot#load_balancing_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#load_balancing_mode WindowsFunctionAppSlot#load_balancing_mode}
 
 ---
 
@@ -1695,9 +1683,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The Managed Pipeline mode. Possible values include: `Integrated`, `Classic`. Defaults to `Integrated`.
+The Managed Pipeline mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#managed_pipeline_mode WindowsFunctionAppSlot#managed_pipeline_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#managed_pipeline_mode WindowsFunctionAppSlot#managed_pipeline_mode}
 
 ---
 
@@ -1707,7 +1695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Configures the minimum TLS cipher suite for the incoming requests to the Site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#minimum_tls_cipher_suite WindowsFunctionAppSlot#minimum_tls_cipher_suite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#minimum_tls_cipher_suite WindowsFunctionAppSlot#minimum_tls_cipher_suite}
 
 ---
 
@@ -1717,9 +1705,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The configures the minimum version of TLS required for SSL requests.
 
-Possible values include: `1.0`, `1.1`, `1.2` and `1.3`. Defaults to `1.2`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#minimum_tls_version WindowsFunctionAppSlot#minimum_tls_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#minimum_tls_version WindowsFunctionAppSlot#minimum_tls_version}
 
 ---
 
@@ -1727,9 +1713,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-The number of pre-warmed instances for this function app. Only affects apps on an Elastic Premium plan.
+The number of pre-warmed instances for this Function App. Only affects apps on an Elastic Premium plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#pre_warmed_instance_count WindowsFunctionAppSlot#pre_warmed_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#pre_warmed_instance_count WindowsFunctionAppSlot#pre_warmed_instance_count}
 
 ---
 
@@ -1737,9 +1723,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Should Remote Debugging be enabled. Defaults to `false`.
+Should Remote Debugging be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#remote_debugging_enabled WindowsFunctionAppSlot#remote_debugging_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#remote_debugging_enabled WindowsFunctionAppSlot#remote_debugging_enabled}
 
 ---
 
@@ -1747,9 +1733,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The Remote Debugging Version. Currently only `VS2022` is supported.
+The Remote Debugging Version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#remote_debugging_version WindowsFunctionAppSlot#remote_debugging_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#remote_debugging_version WindowsFunctionAppSlot#remote_debugging_version}
 
 ---
 
@@ -1757,9 +1743,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Should Functions Runtime Scale Monitoring be enabled.
+Should Functions Runtime Scale Monitoring be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#runtime_scale_monitoring_enabled WindowsFunctionAppSlot#runtime_scale_monitoring_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#runtime_scale_monitoring_enabled WindowsFunctionAppSlot#runtime_scale_monitoring_enabled}
 
 ---
 
@@ -1769,7 +1755,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 scm_ip_restriction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#scm_ip_restriction WindowsFunctionAppSlot#scm_ip_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#scm_ip_restriction WindowsFunctionAppSlot#scm_ip_restriction}
 
 ---
 
@@ -1777,7 +1763,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#scm_ip_restriction_default_action WindowsFunctionAppSlot#scm_ip_restriction_default_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#scm_ip_restriction_default_action WindowsFunctionAppSlot#scm_ip_restriction_default_action}.
 
 ---
 
@@ -1785,9 +1771,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Configures the minimum version of TLS required for SSL requests to the SCM site Possible values include: `1.0`, `1.1`, `1.2` and `1.3`. Defaults to `1.2`.
+Configures the minimum version of TLS required for SSL requests to the SCM site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#scm_minimum_tls_version WindowsFunctionAppSlot#scm_minimum_tls_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#scm_minimum_tls_version WindowsFunctionAppSlot#scm_minimum_tls_version}
 
 ---
 
@@ -1795,9 +1781,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the Windows Function App `ip_restriction` configuration be used for the SCM also.
+Should the Windows Function App `ip_restriction` configuration be used for the SCM also?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#scm_use_main_ip_restriction WindowsFunctionAppSlot#scm_use_main_ip_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#scm_use_main_ip_restriction WindowsFunctionAppSlot#scm_use_main_ip_restriction}
 
 ---
 
@@ -1805,9 +1791,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the Windows Function App use a 32-bit worker.
+Should the Windows Function App use a 32-bit worker?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#use_32_bit_worker WindowsFunctionAppSlot#use_32_bit_worker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#use_32_bit_worker WindowsFunctionAppSlot#use_32_bit_worker}
 
 ---
 
@@ -1815,9 +1801,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`.
+Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#vnet_route_all_enabled WindowsFunctionAppSlot#vnet_route_all_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#vnet_route_all_enabled WindowsFunctionAppSlot#vnet_route_all_enabled}
 
 ---
 
@@ -1825,9 +1811,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Should Web Sockets be enabled. Defaults to `false`.
+Should Web Sockets be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#websockets_enabled WindowsFunctionAppSlot#websockets_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#websockets_enabled WindowsFunctionAppSlot#websockets_enabled}
 
 ---
 
@@ -1837,7 +1823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The number of Workers for this Windows Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#worker_count WindowsFunctionAppSlot#worker_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#worker_count WindowsFunctionAppSlot#worker_count}
 
 ---
 
@@ -1870,7 +1856,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#create WindowsFunctionAppSlot#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#create WindowsFunctionAppSlot#create}.
 
 ---
 
@@ -1878,7 +1864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#delete WindowsFunctionAppSlot#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#delete WindowsFunctionAppSlot#delete}.
 
 ---
 
@@ -1886,7 +1872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#read WindowsFunctionAppSlot#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#read WindowsFunctionAppSlot#read}.
 
 ---
 
@@ -1894,7 +1880,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#update WindowsFunctionAppSlot#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#update WindowsFunctionAppSlot#update}.
 
 ---
 
@@ -2204,7 +2190,7 @@ The construct id used in the generated config for the WindowsFunctionAppSlot to 
 
 The id of the existing WindowsFunctionAppSlot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -3300,8 +3286,8 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Authentication / Authorization feature be enabled? |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings.property.activeDirectory">active_directory</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsActiveDirectory">WindowsFunctionAppSlotAuthSettingsActiveDirectory</a></code> | active_directory block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings.property.additionalLoginParameters">additional_login_parameters</a></code> | <code>typing.Mapping[str]</code> | Specifies a map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings.property.allowedExternalRedirectUrls">allowed_external_redirect_urls</a></code> | <code>typing.List[str]</code> | Specifies a list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings.property.additionalLoginParameters">additional_login_parameters</a></code> | <code>typing.Mapping[str]</code> | A map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings.property.allowedExternalRedirectUrls">allowed_external_redirect_urls</a></code> | <code>typing.List[str]</code> | A list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings.property.defaultProvider">default_provider</a></code> | <code>str</code> | The default authentication provider to use when multiple providers are configured. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings.property.facebook">facebook</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsFacebook">WindowsFunctionAppSlotAuthSettingsFacebook</a></code> | facebook block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings.property.github">github</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGithub">WindowsFunctionAppSlotAuthSettingsGithub</a></code> | github block. |
@@ -3310,9 +3296,9 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings(
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings.property.microsoft">microsoft</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsMicrosoft">WindowsFunctionAppSlotAuthSettingsMicrosoft</a></code> | microsoft block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings.property.runtimeVersion">runtime_version</a></code> | <code>str</code> | The RuntimeVersion of the Authentication / Authorization feature in use. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings.property.tokenRefreshExtensionHours">token_refresh_extension_hours</a></code> | <code>typing.Union[int, float]</code> | The number of hours after session token expiration that a session token can be used to call the token refresh API. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings.property.tokenStoreEnabled">token_store_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings.property.tokenStoreEnabled">token_store_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings.property.twitter">twitter</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsTwitter">WindowsFunctionAppSlotAuthSettingsTwitter</a></code> | twitter block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings.property.unauthenticatedClientAction">unauthenticated_client_action</a></code> | <code>str</code> | The action to take when an unauthenticated client attempts to access the app. Possible values include: `RedirectToLoginPage`, `AllowAnonymous`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings.property.unauthenticatedClientAction">unauthenticated_client_action</a></code> | <code>str</code> | The action to take when an unauthenticated client attempts to access the app. |
 
 ---
 
@@ -3326,7 +3312,7 @@ enabled: bool | IResolvable
 
 Should the Authentication / Authorization feature be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#enabled WindowsFunctionAppSlot#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#enabled WindowsFunctionAppSlot#enabled}
 
 ---
 
@@ -3340,7 +3326,7 @@ active_directory: WindowsFunctionAppSlotAuthSettingsActiveDirectory
 
 active_directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#active_directory WindowsFunctionAppSlot#active_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#active_directory WindowsFunctionAppSlot#active_directory}
 
 ---
 
@@ -3352,9 +3338,9 @@ additional_login_parameters: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Specifies a map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in.
+A map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#additional_login_parameters WindowsFunctionAppSlot#additional_login_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#additional_login_parameters WindowsFunctionAppSlot#additional_login_parameters}
 
 ---
 
@@ -3366,9 +3352,9 @@ allowed_external_redirect_urls: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Specifies a list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App.
+A list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#allowed_external_redirect_urls WindowsFunctionAppSlot#allowed_external_redirect_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#allowed_external_redirect_urls WindowsFunctionAppSlot#allowed_external_redirect_urls}
 
 ---
 
@@ -3382,9 +3368,7 @@ default_provider: str
 
 The default authentication provider to use when multiple providers are configured.
 
-Possible values include: `AzureActiveDirectory`, `Facebook`, `Google`, `MicrosoftAccount`, `Twitter`, `Github`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#default_provider WindowsFunctionAppSlot#default_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#default_provider WindowsFunctionAppSlot#default_provider}
 
 ---
 
@@ -3398,7 +3382,7 @@ facebook: WindowsFunctionAppSlotAuthSettingsFacebook
 
 facebook block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#facebook WindowsFunctionAppSlot#facebook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#facebook WindowsFunctionAppSlot#facebook}
 
 ---
 
@@ -3412,7 +3396,7 @@ github: WindowsFunctionAppSlotAuthSettingsGithub
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#github WindowsFunctionAppSlot#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#github WindowsFunctionAppSlot#github}
 
 ---
 
@@ -3426,7 +3410,7 @@ google: WindowsFunctionAppSlotAuthSettingsGoogle
 
 google block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#google WindowsFunctionAppSlot#google}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#google WindowsFunctionAppSlot#google}
 
 ---
 
@@ -3440,7 +3424,7 @@ issuer: str
 
 The OpenID Connect Issuer URI that represents the entity which issues access tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#issuer WindowsFunctionAppSlot#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#issuer WindowsFunctionAppSlot#issuer}
 
 ---
 
@@ -3454,7 +3438,7 @@ microsoft: WindowsFunctionAppSlotAuthSettingsMicrosoft
 
 microsoft block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#microsoft WindowsFunctionAppSlot#microsoft}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#microsoft WindowsFunctionAppSlot#microsoft}
 
 ---
 
@@ -3468,7 +3452,7 @@ runtime_version: str
 
 The RuntimeVersion of the Authentication / Authorization feature in use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#runtime_version WindowsFunctionAppSlot#runtime_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#runtime_version WindowsFunctionAppSlot#runtime_version}
 
 ---
 
@@ -3482,9 +3466,7 @@ token_refresh_extension_hours: typing.Union[int, float]
 
 The number of hours after session token expiration that a session token can be used to call the token refresh API.
 
-Defaults to `72` hours.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#token_refresh_extension_hours WindowsFunctionAppSlot#token_refresh_extension_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#token_refresh_extension_hours WindowsFunctionAppSlot#token_refresh_extension_hours}
 
 ---
 
@@ -3496,9 +3478,9 @@ token_store_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`.
+Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#token_store_enabled WindowsFunctionAppSlot#token_store_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#token_store_enabled WindowsFunctionAppSlot#token_store_enabled}
 
 ---
 
@@ -3512,7 +3494,7 @@ twitter: WindowsFunctionAppSlotAuthSettingsTwitter
 
 twitter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#twitter WindowsFunctionAppSlot#twitter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#twitter WindowsFunctionAppSlot#twitter}
 
 ---
 
@@ -3524,9 +3506,9 @@ unauthenticated_client_action: str
 
 - *Type:* str
 
-The action to take when an unauthenticated client attempts to access the app. Possible values include: `RedirectToLoginPage`, `AllowAnonymous`.
+The action to take when an unauthenticated client attempts to access the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#unauthenticated_client_action WindowsFunctionAppSlot#unauthenticated_client_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#unauthenticated_client_action WindowsFunctionAppSlot#unauthenticated_client_action}
 
 ---
 
@@ -3550,9 +3532,9 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsActiveDirectory(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsActiveDirectory.property.clientId">client_id</a></code> | <code>str</code> | The ID of the Client to use to authenticate with Azure Active Directory. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsActiveDirectory.property.allowedAudiences">allowed_audiences</a></code> | <code>typing.List[str]</code> | Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsActiveDirectory.property.clientSecret">client_secret</a></code> | <code>str</code> | The Client Secret for the Client ID. Cannot be used with `client_secret_setting_name`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsActiveDirectory.property.clientSecretSettingName">client_secret_setting_name</a></code> | <code>str</code> | The App Setting name that contains the client secret of the Client. Cannot be used with `client_secret`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsActiveDirectory.property.allowedAudiences">allowed_audiences</a></code> | <code>typing.List[str]</code> | A list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsActiveDirectory.property.clientSecret">client_secret</a></code> | <code>str</code> | The Client Secret for the Client ID. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsActiveDirectory.property.clientSecretSettingName">client_secret_setting_name</a></code> | <code>str</code> | The App Setting name that contains the client secret of the Client. |
 
 ---
 
@@ -3566,7 +3548,7 @@ client_id: str
 
 The ID of the Client to use to authenticate with Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
 
 ---
 
@@ -3578,9 +3560,9 @@ allowed_audiences: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
+A list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#allowed_audiences WindowsFunctionAppSlot#allowed_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#allowed_audiences WindowsFunctionAppSlot#allowed_audiences}
 
 ---
 
@@ -3592,9 +3574,9 @@ client_secret: str
 
 - *Type:* str
 
-The Client Secret for the Client ID. Cannot be used with `client_secret_setting_name`.
+The Client Secret for the Client ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret WindowsFunctionAppSlot#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret WindowsFunctionAppSlot#client_secret}
 
 ---
 
@@ -3606,9 +3588,9 @@ client_secret_setting_name: str
 
 - *Type:* str
 
-The App Setting name that contains the client secret of the Client. Cannot be used with `client_secret`.
+The App Setting name that contains the client secret of the Client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
 
 ---
 
@@ -3632,9 +3614,9 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsFacebook(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsFacebook.property.appId">app_id</a></code> | <code>str</code> | The App ID of the Facebook app used for login. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsFacebook.property.appSecret">app_secret</a></code> | <code>str</code> | The App Secret of the Facebook app used for Facebook Login. Cannot be specified with `app_secret_setting_name`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsFacebook.property.appSecretSettingName">app_secret_setting_name</a></code> | <code>str</code> | The app setting name that contains the `app_secret` value used for Facebook Login. Cannot be specified with `app_secret`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsFacebook.property.oauthScopes">oauth_scopes</a></code> | <code>typing.List[str]</code> | Specifies a list of OAuth 2.0 scopes to be requested as part of Facebook Login authentication. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsFacebook.property.appSecret">app_secret</a></code> | <code>str</code> | The App Secret of the Facebook app used for Facebook Login. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsFacebook.property.appSecretSettingName">app_secret_setting_name</a></code> | <code>str</code> | The app setting name that contains the `app_secret` value used for Facebook Login. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsFacebook.property.oauthScopes">oauth_scopes</a></code> | <code>typing.List[str]</code> | A list of OAuth 2.0 scopes to be requested as part of Facebook Login authentication. |
 
 ---
 
@@ -3648,7 +3630,7 @@ app_id: str
 
 The App ID of the Facebook app used for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#app_id WindowsFunctionAppSlot#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#app_id WindowsFunctionAppSlot#app_id}
 
 ---
 
@@ -3660,9 +3642,9 @@ app_secret: str
 
 - *Type:* str
 
-The App Secret of the Facebook app used for Facebook Login. Cannot be specified with `app_secret_setting_name`.
+The App Secret of the Facebook app used for Facebook Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#app_secret WindowsFunctionAppSlot#app_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#app_secret WindowsFunctionAppSlot#app_secret}
 
 ---
 
@@ -3674,9 +3656,9 @@ app_secret_setting_name: str
 
 - *Type:* str
 
-The app setting name that contains the `app_secret` value used for Facebook Login. Cannot be specified with `app_secret`.
+The app setting name that contains the `app_secret` value used for Facebook Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#app_secret_setting_name WindowsFunctionAppSlot#app_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#app_secret_setting_name WindowsFunctionAppSlot#app_secret_setting_name}
 
 ---
 
@@ -3688,9 +3670,9 @@ oauth_scopes: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Specifies a list of OAuth 2.0 scopes to be requested as part of Facebook Login authentication.
+A list of OAuth 2.0 scopes to be requested as part of Facebook Login authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#oauth_scopes WindowsFunctionAppSlot#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#oauth_scopes WindowsFunctionAppSlot#oauth_scopes}
 
 ---
 
@@ -3714,9 +3696,9 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGithub(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGithub.property.clientId">client_id</a></code> | <code>str</code> | The ID of the GitHub app used for login. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGithub.property.clientSecret">client_secret</a></code> | <code>str</code> | The Client Secret of the GitHub app used for GitHub Login. Cannot be specified with `client_secret_setting_name`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGithub.property.clientSecretSettingName">client_secret_setting_name</a></code> | <code>str</code> | The app setting name that contains the `client_secret` value used for GitHub Login. Cannot be specified with `client_secret`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGithub.property.oauthScopes">oauth_scopes</a></code> | <code>typing.List[str]</code> | Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGithub.property.clientSecret">client_secret</a></code> | <code>str</code> | The Client Secret of the GitHub app used for GitHub Login. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGithub.property.clientSecretSettingName">client_secret_setting_name</a></code> | <code>str</code> | The app setting name that contains the `client_secret` value used for GitHub Login. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGithub.property.oauthScopes">oauth_scopes</a></code> | <code>typing.List[str]</code> | A list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication. |
 
 ---
 
@@ -3730,7 +3712,7 @@ client_id: str
 
 The ID of the GitHub app used for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
 
 ---
 
@@ -3742,9 +3724,9 @@ client_secret: str
 
 - *Type:* str
 
-The Client Secret of the GitHub app used for GitHub Login. Cannot be specified with `client_secret_setting_name`.
+The Client Secret of the GitHub app used for GitHub Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret WindowsFunctionAppSlot#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret WindowsFunctionAppSlot#client_secret}
 
 ---
 
@@ -3756,9 +3738,9 @@ client_secret_setting_name: str
 
 - *Type:* str
 
-The app setting name that contains the `client_secret` value used for GitHub Login. Cannot be specified with `client_secret`.
+The app setting name that contains the `client_secret` value used for GitHub Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
 
 ---
 
@@ -3770,9 +3752,9 @@ oauth_scopes: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
+A list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#oauth_scopes WindowsFunctionAppSlot#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#oauth_scopes WindowsFunctionAppSlot#oauth_scopes}
 
 ---
 
@@ -3796,9 +3778,9 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGoogle(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGoogle.property.clientId">client_id</a></code> | <code>str</code> | The OpenID Connect Client ID for the Google web application. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGoogle.property.clientSecret">client_secret</a></code> | <code>str</code> | The client secret associated with the Google web application.  Cannot be specified with `client_secret_setting_name`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGoogle.property.clientSecretSettingName">client_secret_setting_name</a></code> | <code>str</code> | The app setting name that contains the `client_secret` value used for Google Login. Cannot be specified with `client_secret`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGoogle.property.oauthScopes">oauth_scopes</a></code> | <code>typing.List[str]</code> | Specifies a list of OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. If not specified, "openid", "profile", and "email" are used as default scopes. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGoogle.property.clientSecret">client_secret</a></code> | <code>str</code> | The client secret associated with the Google web application. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGoogle.property.clientSecretSettingName">client_secret_setting_name</a></code> | <code>str</code> | The app setting name that contains the `client_secret` value used for Google Login. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGoogle.property.oauthScopes">oauth_scopes</a></code> | <code>typing.List[str]</code> | A list of OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. If not specified, "openid", "profile", and "email" are used as default scopes. |
 
 ---
 
@@ -3812,7 +3794,7 @@ client_id: str
 
 The OpenID Connect Client ID for the Google web application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
 
 ---
 
@@ -3824,9 +3806,9 @@ client_secret: str
 
 - *Type:* str
 
-The client secret associated with the Google web application.  Cannot be specified with `client_secret_setting_name`.
+The client secret associated with the Google web application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret WindowsFunctionAppSlot#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret WindowsFunctionAppSlot#client_secret}
 
 ---
 
@@ -3838,9 +3820,9 @@ client_secret_setting_name: str
 
 - *Type:* str
 
-The app setting name that contains the `client_secret` value used for Google Login. Cannot be specified with `client_secret`.
+The app setting name that contains the `client_secret` value used for Google Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
 
 ---
 
@@ -3852,9 +3834,9 @@ oauth_scopes: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Specifies a list of OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. If not specified, "openid", "profile", and "email" are used as default scopes.
+A list of OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. If not specified, "openid", "profile", and "email" are used as default scopes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#oauth_scopes WindowsFunctionAppSlot#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#oauth_scopes WindowsFunctionAppSlot#oauth_scopes}
 
 ---
 
@@ -3878,8 +3860,8 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsMicrosoft(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsMicrosoft.property.clientId">client_id</a></code> | <code>str</code> | The OAuth 2.0 client ID that was created for the app used for authentication. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsMicrosoft.property.clientSecret">client_secret</a></code> | <code>str</code> | The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret_setting_name`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsMicrosoft.property.clientSecretSettingName">client_secret_setting_name</a></code> | <code>str</code> | The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsMicrosoft.property.clientSecret">client_secret</a></code> | <code>str</code> | The OAuth 2.0 client secret that was created for the app used for authentication. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsMicrosoft.property.clientSecretSettingName">client_secret_setting_name</a></code> | <code>str</code> | The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsMicrosoft.property.oauthScopes">oauth_scopes</a></code> | <code>typing.List[str]</code> | The list of OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. If not specified, `wl.basic` is used as the default scope. |
 
 ---
@@ -3894,7 +3876,7 @@ client_id: str
 
 The OAuth 2.0 client ID that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
 
 ---
 
@@ -3906,9 +3888,9 @@ client_secret: str
 
 - *Type:* str
 
-The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret_setting_name`.
+The OAuth 2.0 client secret that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret WindowsFunctionAppSlot#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret WindowsFunctionAppSlot#client_secret}
 
 ---
 
@@ -3920,9 +3902,9 @@ client_secret_setting_name: str
 
 - *Type:* str
 
-The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret`.
+The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
 
 ---
 
@@ -3936,7 +3918,7 @@ oauth_scopes: typing.List[str]
 
 The list of OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. If not specified, `wl.basic` is used as the default scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#oauth_scopes WindowsFunctionAppSlot#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#oauth_scopes WindowsFunctionAppSlot#oauth_scopes}
 
 ---
 
@@ -3959,7 +3941,7 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsTwitter(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsTwitter.property.consumerKey">consumer_key</a></code> | <code>str</code> | The OAuth 1.0a consumer key of the Twitter application used for sign-in. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsTwitter.property.consumerSecret">consumer_secret</a></code> | <code>str</code> | The OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret_setting_name`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsTwitter.property.consumerSecret">consumer_secret</a></code> | <code>str</code> | The OAuth 1.0a consumer secret of the Twitter application used for sign-in. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsTwitter.property.consumerSecretSettingName">consumer_secret_setting_name</a></code> | <code>str</code> | The app setting name that contains the OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret`. |
 
 ---
@@ -3974,7 +3956,7 @@ consumer_key: str
 
 The OAuth 1.0a consumer key of the Twitter application used for sign-in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#consumer_key WindowsFunctionAppSlot#consumer_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#consumer_key WindowsFunctionAppSlot#consumer_key}
 
 ---
 
@@ -3986,9 +3968,9 @@ consumer_secret: str
 
 - *Type:* str
 
-The OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret_setting_name`.
+The OAuth 1.0a consumer secret of the Twitter application used for sign-in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#consumer_secret WindowsFunctionAppSlot#consumer_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#consumer_secret WindowsFunctionAppSlot#consumer_secret}
 
 ---
 
@@ -4002,7 +3984,7 @@ consumer_secret_setting_name: str
 
 The app setting name that contains the OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#consumer_secret_setting_name WindowsFunctionAppSlot#consumer_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#consumer_secret_setting_name WindowsFunctionAppSlot#consumer_secret_setting_name}
 
 ---
 
@@ -4046,23 +4028,23 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2(
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.login">login</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login">WindowsFunctionAppSlotAuthSettingsV2Login</a></code> | login block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.activeDirectoryV2">active_directory_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2">WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2</a></code> | active_directory_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.appleV2">apple_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2AppleV2">WindowsFunctionAppSlotAuthSettingsV2AppleV2</a></code> | apple_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.authEnabled">auth_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the AuthV2 Settings be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.authEnabled">auth_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the AuthV2 Settings be enabled? |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.azureStaticWebAppV2">azure_static_web_app_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2">WindowsFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2</a></code> | azure_static_web_app_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.configFilePath">config_file_path</a></code> | <code>str</code> | The path to the App Auth settings. **Note:** Relative Paths are evaluated from the Site Root directory. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.customOidcV2">custom_oidc_v2</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2CustomOidcV2">WindowsFunctionAppSlotAuthSettingsV2CustomOidcV2</a>]</code> | custom_oidc_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.defaultProvider">default_provider</a></code> | <code>str</code> | The Default Authentication Provider to use when the `unauthenticated_action` is set to `RedirectToLoginPage`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.excludedPaths">excluded_paths</a></code> | <code>typing.List[str]</code> | The paths which should be excluded from the `unauthenticated_action` when it is set to `RedirectToLoginPage`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.facebookV2">facebook_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2FacebookV2">WindowsFunctionAppSlotAuthSettingsV2FacebookV2</a></code> | facebook_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.forwardProxyConvention">forward_proxy_convention</a></code> | <code>str</code> | The convention used to determine the url of the request made. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.forwardProxyConvention">forward_proxy_convention</a></code> | <code>str</code> | The convention used to determine the URL of the request made. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.forwardProxyCustomHostHeaderName">forward_proxy_custom_host_header_name</a></code> | <code>str</code> | The name of the header containing the host of the request. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.forwardProxyCustomSchemeHeaderName">forward_proxy_custom_scheme_header_name</a></code> | <code>str</code> | The name of the header containing the scheme of the request. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.githubV2">github_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GithubV2">WindowsFunctionAppSlotAuthSettingsV2GithubV2</a></code> | github_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.googleV2">google_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GoogleV2">WindowsFunctionAppSlotAuthSettingsV2GoogleV2</a></code> | google_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.httpRouteApiPrefix">http_route_api_prefix</a></code> | <code>str</code> | The prefix that should precede all the authentication and authorisation paths. Defaults to `/.auth`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.httpRouteApiPrefix">http_route_api_prefix</a></code> | <code>str</code> | The prefix that should precede all the authentication and authorisation paths. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.microsoftV2">microsoft_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2MicrosoftV2">WindowsFunctionAppSlotAuthSettingsV2MicrosoftV2</a></code> | microsoft_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.requireAuthentication">require_authentication</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the authentication flow be used for all requests. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.requireHttps">require_https</a></code> | <code>bool \| cdktn.IResolvable</code> | Should HTTPS be required on connections? Defaults to true. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.runtimeVersion">runtime_version</a></code> | <code>str</code> | The Runtime Version of the Authentication and Authorisation feature of this App. Defaults to `~1`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.requireAuthentication">require_authentication</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the authentication flow be used for all requests? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.requireHttps">require_https</a></code> | <code>bool \| cdktn.IResolvable</code> | Should HTTPS be required on connections? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.runtimeVersion">runtime_version</a></code> | <code>str</code> | The Runtime Version of the Authentication and Authorisation feature of this App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.twitterV2">twitter_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2TwitterV2">WindowsFunctionAppSlotAuthSettingsV2TwitterV2</a></code> | twitter_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.property.unauthenticatedAction">unauthenticated_action</a></code> | <code>str</code> | The action to take for requests made without authentication. |
 
@@ -4078,7 +4060,7 @@ login: WindowsFunctionAppSlotAuthSettingsV2Login
 
 login block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#login WindowsFunctionAppSlot#login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#login WindowsFunctionAppSlot#login}
 
 ---
 
@@ -4092,7 +4074,7 @@ active_directory_v2: WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2
 
 active_directory_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#active_directory_v2 WindowsFunctionAppSlot#active_directory_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#active_directory_v2 WindowsFunctionAppSlot#active_directory_v2}
 
 ---
 
@@ -4106,7 +4088,7 @@ apple_v2: WindowsFunctionAppSlotAuthSettingsV2AppleV2
 
 apple_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#apple_v2 WindowsFunctionAppSlot#apple_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#apple_v2 WindowsFunctionAppSlot#apple_v2}
 
 ---
 
@@ -4118,9 +4100,9 @@ auth_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the AuthV2 Settings be enabled. Defaults to `false`.
+Should the AuthV2 Settings be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#auth_enabled WindowsFunctionAppSlot#auth_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#auth_enabled WindowsFunctionAppSlot#auth_enabled}
 
 ---
 
@@ -4134,7 +4116,7 @@ azure_static_web_app_v2: WindowsFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2
 
 azure_static_web_app_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#azure_static_web_app_v2 WindowsFunctionAppSlot#azure_static_web_app_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#azure_static_web_app_v2 WindowsFunctionAppSlot#azure_static_web_app_v2}
 
 ---
 
@@ -4148,7 +4130,7 @@ config_file_path: str
 
 The path to the App Auth settings. **Note:** Relative Paths are evaluated from the Site Root directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#config_file_path WindowsFunctionAppSlot#config_file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#config_file_path WindowsFunctionAppSlot#config_file_path}
 
 ---
 
@@ -4162,7 +4144,7 @@ custom_oidc_v2: IResolvable | typing.List[WindowsFunctionAppSlotAuthSettingsV2Cu
 
 custom_oidc_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#custom_oidc_v2 WindowsFunctionAppSlot#custom_oidc_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#custom_oidc_v2 WindowsFunctionAppSlot#custom_oidc_v2}
 
 ---
 
@@ -4178,7 +4160,7 @@ The Default Authentication Provider to use when the `unauthenticated_action` is 
 
 Possible values include: `apple`, `azureactivedirectory`, `facebook`, `github`, `google`, `twitter` and the `name` of your `custom_oidc_v2` provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#default_provider WindowsFunctionAppSlot#default_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#default_provider WindowsFunctionAppSlot#default_provider}
 
 ---
 
@@ -4192,7 +4174,7 @@ excluded_paths: typing.List[str]
 
 The paths which should be excluded from the `unauthenticated_action` when it is set to `RedirectToLoginPage`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#excluded_paths WindowsFunctionAppSlot#excluded_paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#excluded_paths WindowsFunctionAppSlot#excluded_paths}
 
 ---
 
@@ -4206,7 +4188,7 @@ facebook_v2: WindowsFunctionAppSlotAuthSettingsV2FacebookV2
 
 facebook_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#facebook_v2 WindowsFunctionAppSlot#facebook_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#facebook_v2 WindowsFunctionAppSlot#facebook_v2}
 
 ---
 
@@ -4218,11 +4200,9 @@ forward_proxy_convention: str
 
 - *Type:* str
 
-The convention used to determine the url of the request made.
+The convention used to determine the URL of the request made.
 
-Possible values include `ForwardProxyConventionNoProxy`, `ForwardProxyConventionStandard`, `ForwardProxyConventionCustom`. Defaults to `ForwardProxyConventionNoProxy`
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#forward_proxy_convention WindowsFunctionAppSlot#forward_proxy_convention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#forward_proxy_convention WindowsFunctionAppSlot#forward_proxy_convention}
 
 ---
 
@@ -4236,7 +4216,7 @@ forward_proxy_custom_host_header_name: str
 
 The name of the header containing the host of the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#forward_proxy_custom_host_header_name WindowsFunctionAppSlot#forward_proxy_custom_host_header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#forward_proxy_custom_host_header_name WindowsFunctionAppSlot#forward_proxy_custom_host_header_name}
 
 ---
 
@@ -4250,7 +4230,7 @@ forward_proxy_custom_scheme_header_name: str
 
 The name of the header containing the scheme of the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#forward_proxy_custom_scheme_header_name WindowsFunctionAppSlot#forward_proxy_custom_scheme_header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#forward_proxy_custom_scheme_header_name WindowsFunctionAppSlot#forward_proxy_custom_scheme_header_name}
 
 ---
 
@@ -4264,7 +4244,7 @@ github_v2: WindowsFunctionAppSlotAuthSettingsV2GithubV2
 
 github_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#github_v2 WindowsFunctionAppSlot#github_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#github_v2 WindowsFunctionAppSlot#github_v2}
 
 ---
 
@@ -4278,7 +4258,7 @@ google_v2: WindowsFunctionAppSlotAuthSettingsV2GoogleV2
 
 google_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#google_v2 WindowsFunctionAppSlot#google_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#google_v2 WindowsFunctionAppSlot#google_v2}
 
 ---
 
@@ -4290,9 +4270,9 @@ http_route_api_prefix: str
 
 - *Type:* str
 
-The prefix that should precede all the authentication and authorisation paths. Defaults to `/.auth`.
+The prefix that should precede all the authentication and authorisation paths.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#http_route_api_prefix WindowsFunctionAppSlot#http_route_api_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#http_route_api_prefix WindowsFunctionAppSlot#http_route_api_prefix}
 
 ---
 
@@ -4306,7 +4286,7 @@ microsoft_v2: WindowsFunctionAppSlotAuthSettingsV2MicrosoftV2
 
 microsoft_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#microsoft_v2 WindowsFunctionAppSlot#microsoft_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#microsoft_v2 WindowsFunctionAppSlot#microsoft_v2}
 
 ---
 
@@ -4318,9 +4298,9 @@ require_authentication: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the authentication flow be used for all requests.
+Should the authentication flow be used for all requests?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#require_authentication WindowsFunctionAppSlot#require_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#require_authentication WindowsFunctionAppSlot#require_authentication}
 
 ---
 
@@ -4332,9 +4312,9 @@ require_https: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Should HTTPS be required on connections? Defaults to true.
+Should HTTPS be required on connections?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#require_https WindowsFunctionAppSlot#require_https}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#require_https WindowsFunctionAppSlot#require_https}
 
 ---
 
@@ -4346,9 +4326,9 @@ runtime_version: str
 
 - *Type:* str
 
-The Runtime Version of the Authentication and Authorisation feature of this App. Defaults to `~1`.
+The Runtime Version of the Authentication and Authorisation feature of this App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#runtime_version WindowsFunctionAppSlot#runtime_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#runtime_version WindowsFunctionAppSlot#runtime_version}
 
 ---
 
@@ -4362,7 +4342,7 @@ twitter_v2: WindowsFunctionAppSlotAuthSettingsV2TwitterV2
 
 twitter_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#twitter_v2 WindowsFunctionAppSlot#twitter_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#twitter_v2 WindowsFunctionAppSlot#twitter_v2}
 
 ---
 
@@ -4376,9 +4356,7 @@ unauthenticated_action: str
 
 The action to take for requests made without authentication.
 
-Possible values include `RedirectToLoginPage`, `AllowAnonymous`, `Return401`, and `Return403`. Defaults to `RedirectToLoginPage`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#unauthenticated_action WindowsFunctionAppSlot#unauthenticated_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#unauthenticated_action WindowsFunctionAppSlot#unauthenticated_action}
 
 ---
 
@@ -4412,7 +4390,7 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2(
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2.property.clientId">client_id</a></code> | <code>str</code> | The ID of the Client to use to authenticate with Azure Active Directory. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2.property.tenantAuthEndpoint">tenant_auth_endpoint</a></code> | <code>str</code> | The Azure Tenant Endpoint for the Authenticating Tenant. e.g. `https://login.microsoftonline.com/v2.0/{tenant-guid}/`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2.property.allowedApplications">allowed_applications</a></code> | <code>typing.List[str]</code> | The list of allowed Applications for the Default Authorisation Policy. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2.property.allowedAudiences">allowed_audiences</a></code> | <code>typing.List[str]</code> | Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2.property.allowedAudiences">allowed_audiences</a></code> | <code>typing.List[str]</code> | A list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2.property.allowedGroups">allowed_groups</a></code> | <code>typing.List[str]</code> | The list of allowed Group Names for the Default Authorisation Policy. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2.property.allowedIdentities">allowed_identities</a></code> | <code>typing.List[str]</code> | The list of allowed Identities for the Default Authorisation Policy. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2.property.clientSecretCertificateThumbprint">client_secret_certificate_thumbprint</a></code> | <code>str</code> | The thumbprint of the certificate used for signing purposes. |
@@ -4420,7 +4398,7 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2(
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2.property.jwtAllowedClientApplications">jwt_allowed_client_applications</a></code> | <code>typing.List[str]</code> | A list of Allowed Client Applications in the JWT Claim. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2.property.jwtAllowedGroups">jwt_allowed_groups</a></code> | <code>typing.List[str]</code> | A list of Allowed Groups in the JWT Claim. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2.property.loginParameters">login_parameters</a></code> | <code>typing.Mapping[str]</code> | A map of key-value pairs to send to the Authorisation Endpoint when a user logs in. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2.property.wwwAuthenticationDisabled">www_authentication_disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the www-authenticate provider should be omitted from the request? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2.property.wwwAuthenticationDisabled">www_authentication_disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the www-authenticate provider should be omitted from the request? |
 
 ---
 
@@ -4434,7 +4412,7 @@ client_id: str
 
 The ID of the Client to use to authenticate with Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
 
 ---
 
@@ -4448,7 +4426,7 @@ tenant_auth_endpoint: str
 
 The Azure Tenant Endpoint for the Authenticating Tenant. e.g. `https://login.microsoftonline.com/v2.0/{tenant-guid}/`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#tenant_auth_endpoint WindowsFunctionAppSlot#tenant_auth_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#tenant_auth_endpoint WindowsFunctionAppSlot#tenant_auth_endpoint}
 
 ---
 
@@ -4462,7 +4440,7 @@ allowed_applications: typing.List[str]
 
 The list of allowed Applications for the Default Authorisation Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#allowed_applications WindowsFunctionAppSlot#allowed_applications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#allowed_applications WindowsFunctionAppSlot#allowed_applications}
 
 ---
 
@@ -4474,9 +4452,9 @@ allowed_audiences: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
+A list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#allowed_audiences WindowsFunctionAppSlot#allowed_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#allowed_audiences WindowsFunctionAppSlot#allowed_audiences}
 
 ---
 
@@ -4490,7 +4468,7 @@ allowed_groups: typing.List[str]
 
 The list of allowed Group Names for the Default Authorisation Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#allowed_groups WindowsFunctionAppSlot#allowed_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#allowed_groups WindowsFunctionAppSlot#allowed_groups}
 
 ---
 
@@ -4504,7 +4482,7 @@ allowed_identities: typing.List[str]
 
 The list of allowed Identities for the Default Authorisation Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#allowed_identities WindowsFunctionAppSlot#allowed_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#allowed_identities WindowsFunctionAppSlot#allowed_identities}
 
 ---
 
@@ -4518,7 +4496,7 @@ client_secret_certificate_thumbprint: str
 
 The thumbprint of the certificate used for signing purposes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret_certificate_thumbprint WindowsFunctionAppSlot#client_secret_certificate_thumbprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret_certificate_thumbprint WindowsFunctionAppSlot#client_secret_certificate_thumbprint}
 
 ---
 
@@ -4532,7 +4510,7 @@ client_secret_setting_name: str
 
 The App Setting name that contains the client secret of the Client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
 
 ---
 
@@ -4546,7 +4524,7 @@ jwt_allowed_client_applications: typing.List[str]
 
 A list of Allowed Client Applications in the JWT Claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#jwt_allowed_client_applications WindowsFunctionAppSlot#jwt_allowed_client_applications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#jwt_allowed_client_applications WindowsFunctionAppSlot#jwt_allowed_client_applications}
 
 ---
 
@@ -4560,7 +4538,7 @@ jwt_allowed_groups: typing.List[str]
 
 A list of Allowed Groups in the JWT Claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#jwt_allowed_groups WindowsFunctionAppSlot#jwt_allowed_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#jwt_allowed_groups WindowsFunctionAppSlot#jwt_allowed_groups}
 
 ---
 
@@ -4574,7 +4552,7 @@ login_parameters: typing.Mapping[str]
 
 A map of key-value pairs to send to the Authorisation Endpoint when a user logs in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#login_parameters WindowsFunctionAppSlot#login_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#login_parameters WindowsFunctionAppSlot#login_parameters}
 
 ---
 
@@ -4586,9 +4564,9 @@ www_authentication_disabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the www-authenticate provider should be omitted from the request? Defaults to `false`.
+Should the www-authenticate provider should be omitted from the request?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#www_authentication_disabled WindowsFunctionAppSlot#www_authentication_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#www_authentication_disabled WindowsFunctionAppSlot#www_authentication_disabled}
 
 ---
 
@@ -4624,7 +4602,7 @@ client_id: str
 
 The OpenID Connect Client ID for the Apple web application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
 
 ---
 
@@ -4638,7 +4616,7 @@ client_secret_setting_name: str
 
 The app setting name that contains the `client_secret` value used for Apple Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
 
 ---
 
@@ -4672,7 +4650,7 @@ client_id: str
 
 The ID of the Client to use to authenticate with Azure Static Web App Authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
 
 ---
 
@@ -4714,7 +4692,7 @@ client_id: str
 
 The ID of the Client to use to authenticate with this Custom OIDC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
 
 ---
 
@@ -4728,7 +4706,7 @@ name: str
 
 The name of the Custom OIDC Authentication Provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#name WindowsFunctionAppSlot#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#name WindowsFunctionAppSlot#name}
 
 ---
 
@@ -4742,7 +4720,7 @@ openid_configuration_endpoint: str
 
 The endpoint that contains all the configuration endpoints for this Custom OIDC provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#openid_configuration_endpoint WindowsFunctionAppSlot#openid_configuration_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#openid_configuration_endpoint WindowsFunctionAppSlot#openid_configuration_endpoint}
 
 ---
 
@@ -4756,7 +4734,7 @@ name_claim_type: str
 
 The name of the claim that contains the users name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#name_claim_type WindowsFunctionAppSlot#name_claim_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#name_claim_type WindowsFunctionAppSlot#name_claim_type}
 
 ---
 
@@ -4770,7 +4748,7 @@ scopes: typing.List[str]
 
 The list of the scopes that should be requested while authenticating.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#scopes WindowsFunctionAppSlot#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#scopes WindowsFunctionAppSlot#scopes}
 
 ---
 
@@ -4796,7 +4774,7 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2FacebookV2(
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2FacebookV2.property.appId">app_id</a></code> | <code>str</code> | The App ID of the Facebook app used for login. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2FacebookV2.property.appSecretSettingName">app_secret_setting_name</a></code> | <code>str</code> | The app setting name that contains the `app_secret` value used for Facebook Login. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2FacebookV2.property.graphApiVersion">graph_api_version</a></code> | <code>str</code> | The version of the Facebook API to be used while logging in. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2FacebookV2.property.loginScopes">login_scopes</a></code> | <code>typing.List[str]</code> | Specifies a list of scopes to be requested as part of Facebook Login authentication. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2FacebookV2.property.loginScopes">login_scopes</a></code> | <code>typing.List[str]</code> | A list of scopes to be requested as part of Facebook Login authentication. |
 
 ---
 
@@ -4810,7 +4788,7 @@ app_id: str
 
 The App ID of the Facebook app used for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#app_id WindowsFunctionAppSlot#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#app_id WindowsFunctionAppSlot#app_id}
 
 ---
 
@@ -4824,7 +4802,7 @@ app_secret_setting_name: str
 
 The app setting name that contains the `app_secret` value used for Facebook Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#app_secret_setting_name WindowsFunctionAppSlot#app_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#app_secret_setting_name WindowsFunctionAppSlot#app_secret_setting_name}
 
 ---
 
@@ -4838,7 +4816,7 @@ graph_api_version: str
 
 The version of the Facebook API to be used while logging in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#graph_api_version WindowsFunctionAppSlot#graph_api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#graph_api_version WindowsFunctionAppSlot#graph_api_version}
 
 ---
 
@@ -4850,9 +4828,9 @@ login_scopes: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Specifies a list of scopes to be requested as part of Facebook Login authentication.
+A list of scopes to be requested as part of Facebook Login authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#login_scopes WindowsFunctionAppSlot#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#login_scopes WindowsFunctionAppSlot#login_scopes}
 
 ---
 
@@ -4876,7 +4854,7 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GithubV2(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GithubV2.property.clientId">client_id</a></code> | <code>str</code> | The ID of the GitHub app used for login. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GithubV2.property.clientSecretSettingName">client_secret_setting_name</a></code> | <code>str</code> | The app setting name that contains the `client_secret` value used for GitHub Login. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GithubV2.property.loginScopes">login_scopes</a></code> | <code>typing.List[str]</code> | Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GithubV2.property.loginScopes">login_scopes</a></code> | <code>typing.List[str]</code> | A list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication. |
 
 ---
 
@@ -4890,7 +4868,7 @@ client_id: str
 
 The ID of the GitHub app used for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
 
 ---
 
@@ -4904,7 +4882,7 @@ client_secret_setting_name: str
 
 The app setting name that contains the `client_secret` value used for GitHub Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
 
 ---
 
@@ -4916,9 +4894,9 @@ login_scopes: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
+A list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#login_scopes WindowsFunctionAppSlot#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#login_scopes WindowsFunctionAppSlot#login_scopes}
 
 ---
 
@@ -4943,8 +4921,8 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GoogleV2(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GoogleV2.property.clientId">client_id</a></code> | <code>str</code> | The OpenID Connect Client ID for the Google web application. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GoogleV2.property.clientSecretSettingName">client_secret_setting_name</a></code> | <code>str</code> | The app setting name that contains the `client_secret` value used for Google Login. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GoogleV2.property.allowedAudiences">allowed_audiences</a></code> | <code>typing.List[str]</code> | Specifies a list of Allowed Audiences that will be requested as part of Google Sign-In authentication. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GoogleV2.property.loginScopes">login_scopes</a></code> | <code>typing.List[str]</code> | Specifies a list of Login scopes that will be requested as part of Google Sign-In authentication. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GoogleV2.property.allowedAudiences">allowed_audiences</a></code> | <code>typing.List[str]</code> | A list of Allowed Audiences that will be requested as part of Google Sign-In authentication. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GoogleV2.property.loginScopes">login_scopes</a></code> | <code>typing.List[str]</code> | A list of Login scopes that will be requested as part of Google Sign-In authentication. |
 
 ---
 
@@ -4958,7 +4936,7 @@ client_id: str
 
 The OpenID Connect Client ID for the Google web application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
 
 ---
 
@@ -4972,7 +4950,7 @@ client_secret_setting_name: str
 
 The app setting name that contains the `client_secret` value used for Google Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
 
 ---
 
@@ -4984,9 +4962,9 @@ allowed_audiences: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Specifies a list of Allowed Audiences that will be requested as part of Google Sign-In authentication.
+A list of Allowed Audiences that will be requested as part of Google Sign-In authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#allowed_audiences WindowsFunctionAppSlot#allowed_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#allowed_audiences WindowsFunctionAppSlot#allowed_audiences}
 
 ---
 
@@ -4998,9 +4976,9 @@ login_scopes: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Specifies a list of Login scopes that will be requested as part of Google Sign-In authentication.
+A list of Login scopes that will be requested as part of Google Sign-In authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#login_scopes WindowsFunctionAppSlot#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#login_scopes WindowsFunctionAppSlot#login_scopes}
 
 ---
 
@@ -5031,16 +5009,16 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login.property.allowedExternalRedirectUrls">allowed_external_redirect_urls</a></code> | <code>typing.List[str]</code> | External URLs that can be redirected to as part of logging in or logging out of the app. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login.property.cookieExpirationConvention">cookie_expiration_convention</a></code> | <code>str</code> | The method by which cookies expire. Possible values include: `FixedTime`, and `IdentityProviderDerived`. Defaults to `FixedTime`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login.property.cookieExpirationTime">cookie_expiration_time</a></code> | <code>str</code> | The time after the request is made when the session cookie should expire. Defaults to `08:00:00`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login.property.cookieExpirationConvention">cookie_expiration_convention</a></code> | <code>str</code> | The method by which cookies expire. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login.property.cookieExpirationTime">cookie_expiration_time</a></code> | <code>str</code> | The time after the request is made when the session cookie should expire. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login.property.logoutEndpoint">logout_endpoint</a></code> | <code>str</code> | The endpoint to which logout requests should be made. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login.property.nonceExpirationTime">nonce_expiration_time</a></code> | <code>str</code> | The time after the request is made when the nonce should expire. Defaults to `00:05:00`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login.property.preserveUrlFragmentsForLogins">preserve_url_fragments_for_logins</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the fragments from the request be preserved after the login request is made. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login.property.nonceExpirationTime">nonce_expiration_time</a></code> | <code>str</code> | The time after the request is made when the nonce should expire. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login.property.preserveUrlFragmentsForLogins">preserve_url_fragments_for_logins</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the fragments from the request be preserved after the login request is made? |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login.property.tokenRefreshExtensionTime">token_refresh_extension_time</a></code> | <code>typing.Union[int, float]</code> | The number of hours after session token expiration that a session token can be used to call the token refresh API. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login.property.tokenStoreEnabled">token_store_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Token Store configuration Enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login.property.tokenStoreEnabled">token_store_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Token Store configuration Enabled? |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login.property.tokenStorePath">token_store_path</a></code> | <code>str</code> | The directory path in the App Filesystem in which the tokens will be stored. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login.property.tokenStoreSasSettingName">token_store_sas_setting_name</a></code> | <code>str</code> | The name of the app setting which contains the SAS URL of the blob storage containing the tokens. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login.property.validateNonce">validate_nonce</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the nonce be validated while completing the login flow. Defaults to `true`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login.property.validateNonce">validate_nonce</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the nonce be validated while completing the login flow? |
 
 ---
 
@@ -5056,7 +5034,7 @@ External URLs that can be redirected to as part of logging in or logging out of 
 
 This is an advanced setting typically only needed by Windows Store application backends. **Note:** URLs within the current domain are always implicitly allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#allowed_external_redirect_urls WindowsFunctionAppSlot#allowed_external_redirect_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#allowed_external_redirect_urls WindowsFunctionAppSlot#allowed_external_redirect_urls}
 
 ---
 
@@ -5068,9 +5046,9 @@ cookie_expiration_convention: str
 
 - *Type:* str
 
-The method by which cookies expire. Possible values include: `FixedTime`, and `IdentityProviderDerived`. Defaults to `FixedTime`.
+The method by which cookies expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#cookie_expiration_convention WindowsFunctionAppSlot#cookie_expiration_convention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#cookie_expiration_convention WindowsFunctionAppSlot#cookie_expiration_convention}
 
 ---
 
@@ -5082,9 +5060,9 @@ cookie_expiration_time: str
 
 - *Type:* str
 
-The time after the request is made when the session cookie should expire. Defaults to `08:00:00`.
+The time after the request is made when the session cookie should expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#cookie_expiration_time WindowsFunctionAppSlot#cookie_expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#cookie_expiration_time WindowsFunctionAppSlot#cookie_expiration_time}
 
 ---
 
@@ -5098,7 +5076,7 @@ logout_endpoint: str
 
 The endpoint to which logout requests should be made.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#logout_endpoint WindowsFunctionAppSlot#logout_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#logout_endpoint WindowsFunctionAppSlot#logout_endpoint}
 
 ---
 
@@ -5110,9 +5088,9 @@ nonce_expiration_time: str
 
 - *Type:* str
 
-The time after the request is made when the nonce should expire. Defaults to `00:05:00`.
+The time after the request is made when the nonce should expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#nonce_expiration_time WindowsFunctionAppSlot#nonce_expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#nonce_expiration_time WindowsFunctionAppSlot#nonce_expiration_time}
 
 ---
 
@@ -5124,9 +5102,9 @@ preserve_url_fragments_for_logins: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the fragments from the request be preserved after the login request is made. Defaults to `false`.
+Should the fragments from the request be preserved after the login request is made?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#preserve_url_fragments_for_logins WindowsFunctionAppSlot#preserve_url_fragments_for_logins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#preserve_url_fragments_for_logins WindowsFunctionAppSlot#preserve_url_fragments_for_logins}
 
 ---
 
@@ -5140,9 +5118,7 @@ token_refresh_extension_time: typing.Union[int, float]
 
 The number of hours after session token expiration that a session token can be used to call the token refresh API.
 
-Defaults to `72` hours.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#token_refresh_extension_time WindowsFunctionAppSlot#token_refresh_extension_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#token_refresh_extension_time WindowsFunctionAppSlot#token_refresh_extension_time}
 
 ---
 
@@ -5154,9 +5130,9 @@ token_store_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the Token Store configuration Enabled. Defaults to `false`.
+Should the Token Store configuration Enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#token_store_enabled WindowsFunctionAppSlot#token_store_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#token_store_enabled WindowsFunctionAppSlot#token_store_enabled}
 
 ---
 
@@ -5170,7 +5146,7 @@ token_store_path: str
 
 The directory path in the App Filesystem in which the tokens will be stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#token_store_path WindowsFunctionAppSlot#token_store_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#token_store_path WindowsFunctionAppSlot#token_store_path}
 
 ---
 
@@ -5184,7 +5160,7 @@ token_store_sas_setting_name: str
 
 The name of the app setting which contains the SAS URL of the blob storage containing the tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#token_store_sas_setting_name WindowsFunctionAppSlot#token_store_sas_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#token_store_sas_setting_name WindowsFunctionAppSlot#token_store_sas_setting_name}
 
 ---
 
@@ -5196,9 +5172,9 @@ validate_nonce: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the nonce be validated while completing the login flow. Defaults to `true`.
+Should the nonce be validated while completing the login flow?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#validate_nonce WindowsFunctionAppSlot#validate_nonce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#validate_nonce WindowsFunctionAppSlot#validate_nonce}
 
 ---
 
@@ -5223,7 +5199,7 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2MicrosoftV2(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2MicrosoftV2.property.clientId">client_id</a></code> | <code>str</code> | The OAuth 2.0 client ID that was created for the app used for authentication. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2MicrosoftV2.property.clientSecretSettingName">client_secret_setting_name</a></code> | <code>str</code> | The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2MicrosoftV2.property.allowedAudiences">allowed_audiences</a></code> | <code>typing.List[str]</code> | Specifies a list of Allowed Audiences that will be requested as part of Microsoft Sign-In authentication. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2MicrosoftV2.property.allowedAudiences">allowed_audiences</a></code> | <code>typing.List[str]</code> | A list of Allowed Audiences that will be requested as part of Microsoft Sign-In authentication. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2MicrosoftV2.property.loginScopes">login_scopes</a></code> | <code>typing.List[str]</code> | The list of Login scopes that will be requested as part of Microsoft Account authentication. |
 
 ---
@@ -5238,7 +5214,7 @@ client_id: str
 
 The OAuth 2.0 client ID that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
 
 ---
 
@@ -5252,7 +5228,7 @@ client_secret_setting_name: str
 
 The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
 
 ---
 
@@ -5264,9 +5240,9 @@ allowed_audiences: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Specifies a list of Allowed Audiences that will be requested as part of Microsoft Sign-In authentication.
+A list of Allowed Audiences that will be requested as part of Microsoft Sign-In authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#allowed_audiences WindowsFunctionAppSlot#allowed_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#allowed_audiences WindowsFunctionAppSlot#allowed_audiences}
 
 ---
 
@@ -5280,7 +5256,7 @@ login_scopes: typing.List[str]
 
 The list of Login scopes that will be requested as part of Microsoft Account authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#login_scopes WindowsFunctionAppSlot#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#login_scopes WindowsFunctionAppSlot#login_scopes}
 
 ---
 
@@ -5316,7 +5292,7 @@ consumer_key: str
 
 The OAuth 1.0a consumer key of the Twitter application used for sign-in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#consumer_key WindowsFunctionAppSlot#consumer_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#consumer_key WindowsFunctionAppSlot#consumer_key}
 
 ---
 
@@ -5330,7 +5306,7 @@ consumer_secret_setting_name: str
 
 The app setting name that contains the OAuth 1.0a consumer secret of the Twitter application used for sign-in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#consumer_secret_setting_name WindowsFunctionAppSlot#consumer_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#consumer_secret_setting_name WindowsFunctionAppSlot#consumer_secret_setting_name}
 
 ---
 
@@ -5370,7 +5346,7 @@ name: str
 
 The name which should be used for this Backup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#name WindowsFunctionAppSlot#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#name WindowsFunctionAppSlot#name}
 
 ---
 
@@ -5384,7 +5360,7 @@ schedule: WindowsFunctionAppSlotBackupSchedule
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#schedule WindowsFunctionAppSlot#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#schedule WindowsFunctionAppSlot#schedule}
 
 ---
 
@@ -5398,7 +5374,7 @@ storage_account_url: str
 
 The SAS URL to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#storage_account_url WindowsFunctionAppSlot#storage_account_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#storage_account_url WindowsFunctionAppSlot#storage_account_url}
 
 ---
 
@@ -5412,7 +5388,7 @@ enabled: bool | IResolvable
 
 Should this backup job be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#enabled WindowsFunctionAppSlot#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#enabled WindowsFunctionAppSlot#enabled}
 
 ---
 
@@ -5437,8 +5413,8 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotBackupSchedule(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupSchedule.property.frequencyInterval">frequency_interval</a></code> | <code>typing.Union[int, float]</code> | How often the backup should be executed (e.g. for weekly backup, this should be set to `7` and `frequency_unit` should be set to `Day`). |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupSchedule.property.frequencyUnit">frequency_unit</a></code> | <code>str</code> | The unit of time for how often the backup should take place. Possible values include: `Day` and `Hour`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupSchedule.property.keepAtLeastOneBackup">keep_at_least_one_backup</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the service keep at least one backup, regardless of age of backup. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupSchedule.property.frequencyUnit">frequency_unit</a></code> | <code>str</code> | The unit of time for how often the backup should take place. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupSchedule.property.keepAtLeastOneBackup">keep_at_least_one_backup</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the service keep at least one backup, regardless of age of backup? |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupSchedule.property.retentionPeriodDays">retention_period_days</a></code> | <code>typing.Union[int, float]</code> | After how many days backups should be deleted. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupSchedule.property.startTime">start_time</a></code> | <code>str</code> | When the schedule should start working in RFC-3339 format. |
 
@@ -5454,7 +5430,7 @@ frequency_interval: typing.Union[int, float]
 
 How often the backup should be executed (e.g. for weekly backup, this should be set to `7` and `frequency_unit` should be set to `Day`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#frequency_interval WindowsFunctionAppSlot#frequency_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#frequency_interval WindowsFunctionAppSlot#frequency_interval}
 
 ---
 
@@ -5466,9 +5442,9 @@ frequency_unit: str
 
 - *Type:* str
 
-The unit of time for how often the backup should take place. Possible values include: `Day` and `Hour`.
+The unit of time for how often the backup should take place.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#frequency_unit WindowsFunctionAppSlot#frequency_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#frequency_unit WindowsFunctionAppSlot#frequency_unit}
 
 ---
 
@@ -5480,9 +5456,9 @@ keep_at_least_one_backup: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the service keep at least one backup, regardless of age of backup. Defaults to `false`.
+Should the service keep at least one backup, regardless of age of backup?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#keep_at_least_one_backup WindowsFunctionAppSlot#keep_at_least_one_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#keep_at_least_one_backup WindowsFunctionAppSlot#keep_at_least_one_backup}
 
 ---
 
@@ -5496,7 +5472,7 @@ retention_period_days: typing.Union[int, float]
 
 After how many days backups should be deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#retention_period_days WindowsFunctionAppSlot#retention_period_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#retention_period_days WindowsFunctionAppSlot#retention_period_days}
 
 ---
 
@@ -5510,7 +5486,7 @@ start_time: str
 
 When the schedule should start working in RFC-3339 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#start_time WindowsFunctionAppSlot#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#start_time WindowsFunctionAppSlot#start_time}
 
 ---
 
@@ -5579,40 +5555,40 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotConfig(
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.functionAppId">function_app_id</a></code> | <code>str</code> | The ID of the Windows Function App this Slot is a member of. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.name">name</a></code> | <code>str</code> | Specifies the name of the Windows Function App Slot. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.name">name</a></code> | <code>str</code> | The name of the Windows Function App Slot. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.siteConfig">site_config</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig">WindowsFunctionAppSlotSiteConfig</a></code> | site_config block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.appSettings">app_settings</a></code> | <code>typing.Mapping[str]</code> | A map of key-value pairs for [App Settings](https://docs.microsoft.com/azure/azure-functions/functions-app-settings) and custom values. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.appSettings">app_settings</a></code> | <code>typing.Mapping[str]</code> | A map of key-value pairs for [App Settings](https://learn.microsoft.com/azure/azure-functions/functions-app-settings) and custom values. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.authSettings">auth_settings</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings">WindowsFunctionAppSlotAuthSettings</a></code> | auth_settings block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.authSettingsV2">auth_settings_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2">WindowsFunctionAppSlotAuthSettingsV2</a></code> | auth_settings_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.backup">backup</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackup">WindowsFunctionAppSlotBackup</a></code> | backup block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.builtinLoggingEnabled">builtin_logging_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should built in logging be enabled. Configures `AzureWebJobsDashboard` app setting based on the configured storage setting. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.clientCertificateEnabled">client_certificate_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Function App Slot use Client Certificates. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.clientCertificateExclusionPaths">client_certificate_exclusion_paths</a></code> | <code>str</code> | Paths to exclude when using client certificates, separated by ; |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.builtinLoggingEnabled">builtin_logging_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should built in logging be enabled? Configures `AzureWebJobsDashboard` app setting based on the configured storage setting. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.clientCertificateEnabled">client_certificate_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Function App Slot use Client Certificates? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.clientCertificateExclusionPaths">client_certificate_exclusion_paths</a></code> | <code>str</code> | Paths to exclude when using client certificates, separated by `;`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.clientCertificateMode">client_certificate_mode</a></code> | <code>str</code> | The mode of the Function App Slot's client certificates requirement for incoming requests. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.connectionString">connection_string</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionString">WindowsFunctionAppSlotConnectionString</a>]</code> | connection_string block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.contentShareForceDisabled">content_share_force_disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Force disable the content share settings. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.dailyMemoryTimeQuota">daily_memory_time_quota</a></code> | <code>typing.Union[int, float]</code> | The amount of memory in gigabyte-seconds that your application is allowed to consume per day. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Is the Windows Function App Slot enabled. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.endToEndTlsEncryptionEnabled">end_to_end_tls_encryption_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#end_to_end_tls_encryption_enabled WindowsFunctionAppSlot#end_to_end_tls_encryption_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.ftpPublishBasicAuthenticationEnabled">ftp_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#ftp_publish_basic_authentication_enabled WindowsFunctionAppSlot#ftp_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Is the Windows Function App Slot enabled? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.endToEndTlsEncryptionEnabled">end_to_end_tls_encryption_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#end_to_end_tls_encryption_enabled WindowsFunctionAppSlot#end_to_end_tls_encryption_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.ftpPublishBasicAuthenticationEnabled">ftp_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#ftp_publish_basic_authentication_enabled WindowsFunctionAppSlot#ftp_publish_basic_authentication_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.functionsExtensionVersion">functions_extension_version</a></code> | <code>str</code> | The runtime version associated with the Function App Slot. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.httpsOnly">https_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Can the Function App Slot only be accessed via HTTPS? |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#id WindowsFunctionAppSlot#id}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#id WindowsFunctionAppSlot#id}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotIdentity">WindowsFunctionAppSlotIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.keyVaultReferenceIdentityId">key_vault_reference_identity_id</a></code> | <code>str</code> | The User Assigned Identity to use for Key Vault access. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#public_network_access_enabled WindowsFunctionAppSlot#public_network_access_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.servicePlanId">service_plan_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#service_plan_id WindowsFunctionAppSlot#service_plan_id}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#public_network_access_enabled WindowsFunctionAppSlot#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.servicePlanId">service_plan_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#service_plan_id WindowsFunctionAppSlot#service_plan_id}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.storageAccount">storage_account</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccount">WindowsFunctionAppSlotStorageAccount</a>]</code> | storage_account block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.storageAccountAccessKey">storage_account_access_key</a></code> | <code>str</code> | The access key which will be used to access the storage account for the Function App Slot. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.storageAccountName">storage_account_name</a></code> | <code>str</code> | The backend storage account name which will be used by this Function App Slot. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.storageKeyVaultSecretId">storage_key_vault_secret_id</a></code> | <code>str</code> | The Key Vault Secret ID, including version, that contains the Connection String to connect to the storage account for this Function App. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.storageAccountAccessKey">storage_account_access_key</a></code> | <code>str</code> | The access key which will be used to access the Storage Account for the Function App Slot. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.storageAccountName">storage_account_name</a></code> | <code>str</code> | The backend Storage Account name which will be used by this Function App Slot. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.storageKeyVaultSecretId">storage_key_vault_secret_id</a></code> | <code>str</code> | The Key Vault Secret ID, including version, that contains the Connection String to connect to the Storage Account for this Function App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.storageUsesManagedIdentity">storage_uses_managed_identity</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Function App Slot use its Managed Identity to access storage? |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#tags WindowsFunctionAppSlot#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#tags WindowsFunctionAppSlot#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotTimeouts">WindowsFunctionAppSlotTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.virtualNetworkBackupRestoreEnabled">virtual_network_backup_restore_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#virtual_network_backup_restore_enabled WindowsFunctionAppSlot#virtual_network_backup_restore_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.virtualNetworkSubnetId">virtual_network_subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#virtual_network_subnet_id WindowsFunctionAppSlot#virtual_network_subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.vnetImagePullEnabled">vnet_image_pull_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Is container image pull over virtual network enabled? Defaults to `false`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.webdeployPublishBasicAuthenticationEnabled">webdeploy_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#webdeploy_publish_basic_authentication_enabled WindowsFunctionAppSlot#webdeploy_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.virtualNetworkBackupRestoreEnabled">virtual_network_backup_restore_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#virtual_network_backup_restore_enabled WindowsFunctionAppSlot#virtual_network_backup_restore_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.virtualNetworkSubnetId">virtual_network_subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#virtual_network_subnet_id WindowsFunctionAppSlot#virtual_network_subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.vnetImagePullEnabled">vnet_image_pull_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Is container image pull over Virtual Network enabled? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.webdeployPublishBasicAuthenticationEnabled">webdeploy_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#webdeploy_publish_basic_authentication_enabled WindowsFunctionAppSlot#webdeploy_publish_basic_authentication_enabled}. |
 
 ---
 
@@ -5696,7 +5672,7 @@ function_app_id: str
 
 The ID of the Windows Function App this Slot is a member of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#function_app_id WindowsFunctionAppSlot#function_app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#function_app_id WindowsFunctionAppSlot#function_app_id}
 
 ---
 
@@ -5708,9 +5684,9 @@ name: str
 
 - *Type:* str
 
-Specifies the name of the Windows Function App Slot.
+The name of the Windows Function App Slot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#name WindowsFunctionAppSlot#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#name WindowsFunctionAppSlot#name}
 
 ---
 
@@ -5724,7 +5700,7 @@ site_config: WindowsFunctionAppSlotSiteConfig
 
 site_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#site_config WindowsFunctionAppSlot#site_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#site_config WindowsFunctionAppSlot#site_config}
 
 ---
 
@@ -5736,9 +5712,9 @@ app_settings: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-A map of key-value pairs for [App Settings](https://docs.microsoft.com/azure/azure-functions/functions-app-settings) and custom values.
+A map of key-value pairs for [App Settings](https://learn.microsoft.com/azure/azure-functions/functions-app-settings) and custom values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#app_settings WindowsFunctionAppSlot#app_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#app_settings WindowsFunctionAppSlot#app_settings}
 
 ---
 
@@ -5752,7 +5728,7 @@ auth_settings: WindowsFunctionAppSlotAuthSettings
 
 auth_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#auth_settings WindowsFunctionAppSlot#auth_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#auth_settings WindowsFunctionAppSlot#auth_settings}
 
 ---
 
@@ -5766,7 +5742,7 @@ auth_settings_v2: WindowsFunctionAppSlotAuthSettingsV2
 
 auth_settings_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#auth_settings_v2 WindowsFunctionAppSlot#auth_settings_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#auth_settings_v2 WindowsFunctionAppSlot#auth_settings_v2}
 
 ---
 
@@ -5780,7 +5756,7 @@ backup: WindowsFunctionAppSlotBackup
 
 backup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#backup WindowsFunctionAppSlot#backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#backup WindowsFunctionAppSlot#backup}
 
 ---
 
@@ -5792,9 +5768,9 @@ builtin_logging_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Should built in logging be enabled. Configures `AzureWebJobsDashboard` app setting based on the configured storage setting.
+Should built in logging be enabled? Configures `AzureWebJobsDashboard` app setting based on the configured storage setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#builtin_logging_enabled WindowsFunctionAppSlot#builtin_logging_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#builtin_logging_enabled WindowsFunctionAppSlot#builtin_logging_enabled}
 
 ---
 
@@ -5806,9 +5782,9 @@ client_certificate_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the Function App Slot use Client Certificates.
+Should the Function App Slot use Client Certificates?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_certificate_enabled WindowsFunctionAppSlot#client_certificate_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_certificate_enabled WindowsFunctionAppSlot#client_certificate_enabled}
 
 ---
 
@@ -5820,9 +5796,9 @@ client_certificate_exclusion_paths: str
 
 - *Type:* str
 
-Paths to exclude when using client certificates, separated by ;
+Paths to exclude when using client certificates, separated by `;`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_certificate_exclusion_paths WindowsFunctionAppSlot#client_certificate_exclusion_paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_certificate_exclusion_paths WindowsFunctionAppSlot#client_certificate_exclusion_paths}
 
 ---
 
@@ -5836,9 +5812,7 @@ client_certificate_mode: str
 
 The mode of the Function App Slot's client certificates requirement for incoming requests.
 
-Possible values are `Required`, `Optional`, and `OptionalInteractiveUser`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_certificate_mode WindowsFunctionAppSlot#client_certificate_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_certificate_mode WindowsFunctionAppSlot#client_certificate_mode}
 
 ---
 
@@ -5852,7 +5826,7 @@ connection_string: IResolvable | typing.List[WindowsFunctionAppSlotConnectionStr
 
 connection_string block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#connection_string WindowsFunctionAppSlot#connection_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#connection_string WindowsFunctionAppSlot#connection_string}
 
 ---
 
@@ -5866,7 +5840,7 @@ content_share_force_disabled: bool | IResolvable
 
 Force disable the content share settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#content_share_force_disabled WindowsFunctionAppSlot#content_share_force_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#content_share_force_disabled WindowsFunctionAppSlot#content_share_force_disabled}
 
 ---
 
@@ -5880,9 +5854,9 @@ daily_memory_time_quota: typing.Union[int, float]
 
 The amount of memory in gigabyte-seconds that your application is allowed to consume per day.
 
-Setting this value only affects function apps in Consumption Plans.
+Setting this value only affects Function Apps in Consumption Plans.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#daily_memory_time_quota WindowsFunctionAppSlot#daily_memory_time_quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#daily_memory_time_quota WindowsFunctionAppSlot#daily_memory_time_quota}
 
 ---
 
@@ -5894,9 +5868,9 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Is the Windows Function App Slot enabled.
+Is the Windows Function App Slot enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#enabled WindowsFunctionAppSlot#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#enabled WindowsFunctionAppSlot#enabled}
 
 ---
 
@@ -5908,7 +5882,7 @@ end_to_end_tls_encryption_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#end_to_end_tls_encryption_enabled WindowsFunctionAppSlot#end_to_end_tls_encryption_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#end_to_end_tls_encryption_enabled WindowsFunctionAppSlot#end_to_end_tls_encryption_enabled}.
 
 ---
 
@@ -5920,7 +5894,7 @@ ftp_publish_basic_authentication_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#ftp_publish_basic_authentication_enabled WindowsFunctionAppSlot#ftp_publish_basic_authentication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#ftp_publish_basic_authentication_enabled WindowsFunctionAppSlot#ftp_publish_basic_authentication_enabled}.
 
 ---
 
@@ -5934,7 +5908,7 @@ functions_extension_version: str
 
 The runtime version associated with the Function App Slot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#functions_extension_version WindowsFunctionAppSlot#functions_extension_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#functions_extension_version WindowsFunctionAppSlot#functions_extension_version}
 
 ---
 
@@ -5948,7 +5922,7 @@ https_only: bool | IResolvable
 
 Can the Function App Slot only be accessed via HTTPS?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#https_only WindowsFunctionAppSlot#https_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#https_only WindowsFunctionAppSlot#https_only}
 
 ---
 
@@ -5960,7 +5934,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#id WindowsFunctionAppSlot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#id WindowsFunctionAppSlot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5977,7 +5951,7 @@ identity: WindowsFunctionAppSlotIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#identity WindowsFunctionAppSlot#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#identity WindowsFunctionAppSlot#identity}
 
 ---
 
@@ -5991,7 +5965,7 @@ key_vault_reference_identity_id: str
 
 The User Assigned Identity to use for Key Vault access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#key_vault_reference_identity_id WindowsFunctionAppSlot#key_vault_reference_identity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#key_vault_reference_identity_id WindowsFunctionAppSlot#key_vault_reference_identity_id}
 
 ---
 
@@ -6003,7 +5977,7 @@ public_network_access_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#public_network_access_enabled WindowsFunctionAppSlot#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#public_network_access_enabled WindowsFunctionAppSlot#public_network_access_enabled}.
 
 ---
 
@@ -6015,7 +5989,7 @@ service_plan_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#service_plan_id WindowsFunctionAppSlot#service_plan_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#service_plan_id WindowsFunctionAppSlot#service_plan_id}.
 
 ---
 
@@ -6029,7 +6003,7 @@ storage_account: IResolvable | typing.List[WindowsFunctionAppSlotStorageAccount]
 
 storage_account block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#storage_account WindowsFunctionAppSlot#storage_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#storage_account WindowsFunctionAppSlot#storage_account}
 
 ---
 
@@ -6041,9 +6015,9 @@ storage_account_access_key: str
 
 - *Type:* str
 
-The access key which will be used to access the storage account for the Function App Slot.
+The access key which will be used to access the Storage Account for the Function App Slot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#storage_account_access_key WindowsFunctionAppSlot#storage_account_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#storage_account_access_key WindowsFunctionAppSlot#storage_account_access_key}
 
 ---
 
@@ -6055,9 +6029,9 @@ storage_account_name: str
 
 - *Type:* str
 
-The backend storage account name which will be used by this Function App Slot.
+The backend Storage Account name which will be used by this Function App Slot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#storage_account_name WindowsFunctionAppSlot#storage_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#storage_account_name WindowsFunctionAppSlot#storage_account_name}
 
 ---
 
@@ -6069,9 +6043,9 @@ storage_key_vault_secret_id: str
 
 - *Type:* str
 
-The Key Vault Secret ID, including version, that contains the Connection String to connect to the storage account for this Function App.
+The Key Vault Secret ID, including version, that contains the Connection String to connect to the Storage Account for this Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#storage_key_vault_secret_id WindowsFunctionAppSlot#storage_key_vault_secret_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#storage_key_vault_secret_id WindowsFunctionAppSlot#storage_key_vault_secret_id}
 
 ---
 
@@ -6085,7 +6059,7 @@ storage_uses_managed_identity: bool | IResolvable
 
 Should the Function App Slot use its Managed Identity to access storage?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#storage_uses_managed_identity WindowsFunctionAppSlot#storage_uses_managed_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#storage_uses_managed_identity WindowsFunctionAppSlot#storage_uses_managed_identity}
 
 ---
 
@@ -6097,7 +6071,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#tags WindowsFunctionAppSlot#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#tags WindowsFunctionAppSlot#tags}.
 
 ---
 
@@ -6111,7 +6085,7 @@ timeouts: WindowsFunctionAppSlotTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#timeouts WindowsFunctionAppSlot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#timeouts WindowsFunctionAppSlot#timeouts}
 
 ---
 
@@ -6123,7 +6097,7 @@ virtual_network_backup_restore_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#virtual_network_backup_restore_enabled WindowsFunctionAppSlot#virtual_network_backup_restore_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#virtual_network_backup_restore_enabled WindowsFunctionAppSlot#virtual_network_backup_restore_enabled}.
 
 ---
 
@@ -6135,7 +6109,7 @@ virtual_network_subnet_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#virtual_network_subnet_id WindowsFunctionAppSlot#virtual_network_subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#virtual_network_subnet_id WindowsFunctionAppSlot#virtual_network_subnet_id}.
 
 ---
 
@@ -6147,9 +6121,9 @@ vnet_image_pull_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Is container image pull over virtual network enabled? Defaults to `false`.
+Is container image pull over Virtual Network enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#vnet_image_pull_enabled WindowsFunctionAppSlot#vnet_image_pull_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#vnet_image_pull_enabled WindowsFunctionAppSlot#vnet_image_pull_enabled}
 
 ---
 
@@ -6161,7 +6135,7 @@ webdeploy_publish_basic_authentication_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#webdeploy_publish_basic_authentication_enabled WindowsFunctionAppSlot#webdeploy_publish_basic_authentication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#webdeploy_publish_basic_authentication_enabled WindowsFunctionAppSlot#webdeploy_publish_basic_authentication_enabled}.
 
 ---
 
@@ -6184,7 +6158,7 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionString(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionString.property.name">name</a></code> | <code>str</code> | The name which should be used for this Connection. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionString.property.type">type</a></code> | <code>str</code> | Type of database. Possible values include: `MySQL`, `SQLServer`, `SQLAzure`, `Custom`, `NotificationHub`, `ServiceBus`, `EventHub`, `APIHub`, `DocDb`, `RedisCache`, and `PostgreSQL`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionString.property.type">type</a></code> | <code>str</code> | Type of database. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionString.property.value">value</a></code> | <code>str</code> | The connection string value. |
 
 ---
@@ -6199,7 +6173,7 @@ name: str
 
 The name which should be used for this Connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#name WindowsFunctionAppSlot#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#name WindowsFunctionAppSlot#name}
 
 ---
 
@@ -6211,9 +6185,9 @@ type: str
 
 - *Type:* str
 
-Type of database. Possible values include: `MySQL`, `SQLServer`, `SQLAzure`, `Custom`, `NotificationHub`, `ServiceBus`, `EventHub`, `APIHub`, `DocDb`, `RedisCache`, and `PostgreSQL`.
+Type of database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#type WindowsFunctionAppSlot#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#type WindowsFunctionAppSlot#type}
 
 ---
 
@@ -6227,7 +6201,7 @@ value: str
 
 The connection string value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#value WindowsFunctionAppSlot#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#value WindowsFunctionAppSlot#value}
 
 ---
 
@@ -6248,8 +6222,8 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotIdentity(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotIdentity.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#type WindowsFunctionAppSlot#type}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotIdentity.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#identity_ids WindowsFunctionAppSlot#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotIdentity.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#type WindowsFunctionAppSlot#type}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotIdentity.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#identity_ids WindowsFunctionAppSlot#identity_ids}. |
 
 ---
 
@@ -6261,7 +6235,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#type WindowsFunctionAppSlot#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#type WindowsFunctionAppSlot#type}.
 
 ---
 
@@ -6273,7 +6247,7 @@ identity_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#identity_ids WindowsFunctionAppSlot#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#identity_ids WindowsFunctionAppSlot#identity_ids}.
 
 ---
 
@@ -6327,40 +6301,40 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.alwaysOn">always_on</a></code> | <code>bool \| cdktn.IResolvable</code> | If this Windows Web App is Always On enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.alwaysOn">always_on</a></code> | <code>bool \| cdktn.IResolvable</code> | If this Windows Web App is Always On enabled. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.apiDefinitionUrl">api_definition_url</a></code> | <code>str</code> | The URL of the API definition that describes this Windows Function App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.apiManagementApiId">api_management_api_id</a></code> | <code>str</code> | The ID of the API Management API for this Windows Function App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.appCommandLine">app_command_line</a></code> | <code>str</code> | The program and any arguments used to launch this app via the command line. (Example `node myapp.js`). |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.applicationInsightsConnectionString">application_insights_connection_string</a></code> | <code>str</code> | The Connection String for linking the Windows Function App to Application Insights. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.applicationInsightsKey">application_insights_key</a></code> | <code>str</code> | The Instrumentation Key for connecting the Windows Function App to Application Insights. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.applicationStack">application_stack</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStack">WindowsFunctionAppSlotSiteConfigApplicationStack</a></code> | application_stack block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.appScaleLimit">app_scale_limit</a></code> | <code>typing.Union[int, float]</code> | The number of workers this function app can scale out to. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.appScaleLimit">app_scale_limit</a></code> | <code>typing.Union[int, float]</code> | The number of workers this Function App can scale out to. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.appServiceLogs">app_service_logs</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigAppServiceLogs">WindowsFunctionAppSlotSiteConfigAppServiceLogs</a></code> | app_service_logs block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.autoSwapSlotName">auto_swap_slot_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#auto_swap_slot_name WindowsFunctionAppSlot#auto_swap_slot_name}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.autoSwapSlotName">auto_swap_slot_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#auto_swap_slot_name WindowsFunctionAppSlot#auto_swap_slot_name}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.cors">cors</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigCors">WindowsFunctionAppSlotSiteConfigCors</a></code> | cors block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.defaultDocuments">default_documents</a></code> | <code>typing.List[str]</code> | Specifies a list of Default Documents for the Windows Web App. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.defaultDocuments">default_documents</a></code> | <code>typing.List[str]</code> | A list of Default Documents for the Windows Web App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.elasticInstanceMinimum">elastic_instance_minimum</a></code> | <code>typing.Union[int, float]</code> | The number of minimum instances for this Windows Function App. Only affects apps on Elastic Premium plans. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.ftpsState">ftps_state</a></code> | <code>str</code> | State of FTP / FTPS service for this function app. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.ftpsState">ftps_state</a></code> | <code>str</code> | State of FTP / FTPS service for this Function App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.healthCheckEvictionTimeInMin">health_check_eviction_time_in_min</a></code> | <code>typing.Union[int, float]</code> | The amount of time in minutes that a node is unhealthy before being removed from the load balancer. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.healthCheckPath">health_check_path</a></code> | <code>str</code> | The path to be checked for this function app health. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.http2Enabled">http2_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies if the http2 protocol should be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.healthCheckPath">health_check_path</a></code> | <code>str</code> | The path to be checked for this Function App health. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.http2Enabled">http2_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the http2 protocol should be enabled. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.ipRestriction">ip_restriction</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestriction">WindowsFunctionAppSlotSiteConfigIpRestriction</a>]</code> | ip_restriction block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.ipRestrictionDefaultAction">ip_restriction_default_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#ip_restriction_default_action WindowsFunctionAppSlot#ip_restriction_default_action}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.loadBalancingMode">load_balancing_mode</a></code> | <code>str</code> | The Site load balancing mode. Possible values include: `WeightedRoundRobin`, `LeastRequests`, `LeastResponseTime`, `WeightedTotalTraffic`, `RequestHash`, `PerSiteRoundRobin`. Defaults to `LeastRequests` if omitted. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.managedPipelineMode">managed_pipeline_mode</a></code> | <code>str</code> | The Managed Pipeline mode. Possible values include: `Integrated`, `Classic`. Defaults to `Integrated`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.ipRestrictionDefaultAction">ip_restriction_default_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#ip_restriction_default_action WindowsFunctionAppSlot#ip_restriction_default_action}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.loadBalancingMode">load_balancing_mode</a></code> | <code>str</code> | The Site load balancing mode. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.managedPipelineMode">managed_pipeline_mode</a></code> | <code>str</code> | The Managed Pipeline mode. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.minimumTlsCipherSuite">minimum_tls_cipher_suite</a></code> | <code>str</code> | Configures the minimum TLS cipher suite for the incoming requests to the Site. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.minimumTlsVersion">minimum_tls_version</a></code> | <code>str</code> | The configures the minimum version of TLS required for SSL requests. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.preWarmedInstanceCount">pre_warmed_instance_count</a></code> | <code>typing.Union[int, float]</code> | The number of pre-warmed instances for this function app. Only affects apps on an Elastic Premium plan. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.remoteDebuggingEnabled">remote_debugging_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should Remote Debugging be enabled. Defaults to `false`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.remoteDebuggingVersion">remote_debugging_version</a></code> | <code>str</code> | The Remote Debugging Version. Currently only `VS2022` is supported. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.runtimeScaleMonitoringEnabled">runtime_scale_monitoring_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should Functions Runtime Scale Monitoring be enabled. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.preWarmedInstanceCount">pre_warmed_instance_count</a></code> | <code>typing.Union[int, float]</code> | The number of pre-warmed instances for this Function App. Only affects apps on an Elastic Premium plan. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.remoteDebuggingEnabled">remote_debugging_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should Remote Debugging be enabled? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.remoteDebuggingVersion">remote_debugging_version</a></code> | <code>str</code> | The Remote Debugging Version. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.runtimeScaleMonitoringEnabled">runtime_scale_monitoring_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should Functions Runtime Scale Monitoring be enabled? |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.scmIpRestriction">scm_ip_restriction</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestriction">WindowsFunctionAppSlotSiteConfigScmIpRestriction</a>]</code> | scm_ip_restriction block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.scmIpRestrictionDefaultAction">scm_ip_restriction_default_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#scm_ip_restriction_default_action WindowsFunctionAppSlot#scm_ip_restriction_default_action}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.scmMinimumTlsVersion">scm_minimum_tls_version</a></code> | <code>str</code> | Configures the minimum version of TLS required for SSL requests to the SCM site Possible values include: `1.0`, `1.1`, `1.2` and `1.3`. Defaults to `1.2`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.scmUseMainIpRestriction">scm_use_main_ip_restriction</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Windows Function App `ip_restriction` configuration be used for the SCM also. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.use32BitWorker">use32_bit_worker</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Windows Function App use a 32-bit worker. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.vnetRouteAllEnabled">vnet_route_all_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.websocketsEnabled">websockets_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should Web Sockets be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.scmIpRestrictionDefaultAction">scm_ip_restriction_default_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#scm_ip_restriction_default_action WindowsFunctionAppSlot#scm_ip_restriction_default_action}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.scmMinimumTlsVersion">scm_minimum_tls_version</a></code> | <code>str</code> | Configures the minimum version of TLS required for SSL requests to the SCM site. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.scmUseMainIpRestriction">scm_use_main_ip_restriction</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Windows Function App `ip_restriction` configuration be used for the SCM also? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.use32BitWorker">use32_bit_worker</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Windows Function App use a 32-bit worker? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.vnetRouteAllEnabled">vnet_route_all_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.websocketsEnabled">websockets_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should Web Sockets be enabled? |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.property.workerCount">worker_count</a></code> | <code>typing.Union[int, float]</code> | The number of Workers for this Windows Function App. |
 
 ---
@@ -6373,9 +6347,9 @@ always_on: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-If this Windows Web App is Always On enabled. Defaults to `false`.
+If this Windows Web App is Always On enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#always_on WindowsFunctionAppSlot#always_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#always_on WindowsFunctionAppSlot#always_on}
 
 ---
 
@@ -6389,7 +6363,7 @@ api_definition_url: str
 
 The URL of the API definition that describes this Windows Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#api_definition_url WindowsFunctionAppSlot#api_definition_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#api_definition_url WindowsFunctionAppSlot#api_definition_url}
 
 ---
 
@@ -6403,7 +6377,7 @@ api_management_api_id: str
 
 The ID of the API Management API for this Windows Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#api_management_api_id WindowsFunctionAppSlot#api_management_api_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#api_management_api_id WindowsFunctionAppSlot#api_management_api_id}
 
 ---
 
@@ -6417,7 +6391,7 @@ app_command_line: str
 
 The program and any arguments used to launch this app via the command line. (Example `node myapp.js`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#app_command_line WindowsFunctionAppSlot#app_command_line}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#app_command_line WindowsFunctionAppSlot#app_command_line}
 
 ---
 
@@ -6431,7 +6405,7 @@ application_insights_connection_string: str
 
 The Connection String for linking the Windows Function App to Application Insights.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#application_insights_connection_string WindowsFunctionAppSlot#application_insights_connection_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#application_insights_connection_string WindowsFunctionAppSlot#application_insights_connection_string}
 
 ---
 
@@ -6445,7 +6419,7 @@ application_insights_key: str
 
 The Instrumentation Key for connecting the Windows Function App to Application Insights.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#application_insights_key WindowsFunctionAppSlot#application_insights_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#application_insights_key WindowsFunctionAppSlot#application_insights_key}
 
 ---
 
@@ -6459,7 +6433,7 @@ application_stack: WindowsFunctionAppSlotSiteConfigApplicationStack
 
 application_stack block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#application_stack WindowsFunctionAppSlot#application_stack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#application_stack WindowsFunctionAppSlot#application_stack}
 
 ---
 
@@ -6471,11 +6445,11 @@ app_scale_limit: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-The number of workers this function app can scale out to.
+The number of workers this Function App can scale out to.
 
 Only applicable to apps on the Consumption and Premium plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#app_scale_limit WindowsFunctionAppSlot#app_scale_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#app_scale_limit WindowsFunctionAppSlot#app_scale_limit}
 
 ---
 
@@ -6489,7 +6463,7 @@ app_service_logs: WindowsFunctionAppSlotSiteConfigAppServiceLogs
 
 app_service_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#app_service_logs WindowsFunctionAppSlot#app_service_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#app_service_logs WindowsFunctionAppSlot#app_service_logs}
 
 ---
 
@@ -6501,7 +6475,7 @@ auto_swap_slot_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#auto_swap_slot_name WindowsFunctionAppSlot#auto_swap_slot_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#auto_swap_slot_name WindowsFunctionAppSlot#auto_swap_slot_name}.
 
 ---
 
@@ -6515,7 +6489,7 @@ cors: WindowsFunctionAppSlotSiteConfigCors
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#cors WindowsFunctionAppSlot#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#cors WindowsFunctionAppSlot#cors}
 
 ---
 
@@ -6527,9 +6501,9 @@ default_documents: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Specifies a list of Default Documents for the Windows Web App.
+A list of Default Documents for the Windows Web App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#default_documents WindowsFunctionAppSlot#default_documents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#default_documents WindowsFunctionAppSlot#default_documents}
 
 ---
 
@@ -6543,7 +6517,7 @@ elastic_instance_minimum: typing.Union[int, float]
 
 The number of minimum instances for this Windows Function App. Only affects apps on Elastic Premium plans.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#elastic_instance_minimum WindowsFunctionAppSlot#elastic_instance_minimum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#elastic_instance_minimum WindowsFunctionAppSlot#elastic_instance_minimum}
 
 ---
 
@@ -6555,11 +6529,9 @@ ftps_state: str
 
 - *Type:* str
 
-State of FTP / FTPS service for this function app.
+State of FTP / FTPS service for this Function App.
 
-Possible values include: `AllAllowed`, `FtpsOnly` and `Disabled`. Defaults to `Disabled`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#ftps_state WindowsFunctionAppSlot#ftps_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#ftps_state WindowsFunctionAppSlot#ftps_state}
 
 ---
 
@@ -6573,9 +6545,9 @@ health_check_eviction_time_in_min: typing.Union[int, float]
 
 The amount of time in minutes that a node is unhealthy before being removed from the load balancer.
 
-Possible values are between `2` and `10`. Defaults to `10`. Only valid in conjunction with `health_check_path`
+Only valid in conjunction with `health_check_path`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#health_check_eviction_time_in_min WindowsFunctionAppSlot#health_check_eviction_time_in_min}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#health_check_eviction_time_in_min WindowsFunctionAppSlot#health_check_eviction_time_in_min}
 
 ---
 
@@ -6587,9 +6559,9 @@ health_check_path: str
 
 - *Type:* str
 
-The path to be checked for this function app health.
+The path to be checked for this Function App health.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#health_check_path WindowsFunctionAppSlot#health_check_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#health_check_path WindowsFunctionAppSlot#health_check_path}
 
 ---
 
@@ -6601,9 +6573,9 @@ http2_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Specifies if the http2 protocol should be enabled. Defaults to `false`.
+Whether the http2 protocol should be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#http2_enabled WindowsFunctionAppSlot#http2_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#http2_enabled WindowsFunctionAppSlot#http2_enabled}
 
 ---
 
@@ -6617,7 +6589,7 @@ ip_restriction: IResolvable | typing.List[WindowsFunctionAppSlotSiteConfigIpRest
 
 ip_restriction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#ip_restriction WindowsFunctionAppSlot#ip_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#ip_restriction WindowsFunctionAppSlot#ip_restriction}
 
 ---
 
@@ -6629,7 +6601,7 @@ ip_restriction_default_action: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#ip_restriction_default_action WindowsFunctionAppSlot#ip_restriction_default_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#ip_restriction_default_action WindowsFunctionAppSlot#ip_restriction_default_action}.
 
 ---
 
@@ -6641,9 +6613,9 @@ load_balancing_mode: str
 
 - *Type:* str
 
-The Site load balancing mode. Possible values include: `WeightedRoundRobin`, `LeastRequests`, `LeastResponseTime`, `WeightedTotalTraffic`, `RequestHash`, `PerSiteRoundRobin`. Defaults to `LeastRequests` if omitted.
+The Site load balancing mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#load_balancing_mode WindowsFunctionAppSlot#load_balancing_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#load_balancing_mode WindowsFunctionAppSlot#load_balancing_mode}
 
 ---
 
@@ -6655,9 +6627,9 @@ managed_pipeline_mode: str
 
 - *Type:* str
 
-The Managed Pipeline mode. Possible values include: `Integrated`, `Classic`. Defaults to `Integrated`.
+The Managed Pipeline mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#managed_pipeline_mode WindowsFunctionAppSlot#managed_pipeline_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#managed_pipeline_mode WindowsFunctionAppSlot#managed_pipeline_mode}
 
 ---
 
@@ -6671,7 +6643,7 @@ minimum_tls_cipher_suite: str
 
 Configures the minimum TLS cipher suite for the incoming requests to the Site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#minimum_tls_cipher_suite WindowsFunctionAppSlot#minimum_tls_cipher_suite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#minimum_tls_cipher_suite WindowsFunctionAppSlot#minimum_tls_cipher_suite}
 
 ---
 
@@ -6685,9 +6657,7 @@ minimum_tls_version: str
 
 The configures the minimum version of TLS required for SSL requests.
 
-Possible values include: `1.0`, `1.1`, `1.2` and `1.3`. Defaults to `1.2`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#minimum_tls_version WindowsFunctionAppSlot#minimum_tls_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#minimum_tls_version WindowsFunctionAppSlot#minimum_tls_version}
 
 ---
 
@@ -6699,9 +6669,9 @@ pre_warmed_instance_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-The number of pre-warmed instances for this function app. Only affects apps on an Elastic Premium plan.
+The number of pre-warmed instances for this Function App. Only affects apps on an Elastic Premium plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#pre_warmed_instance_count WindowsFunctionAppSlot#pre_warmed_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#pre_warmed_instance_count WindowsFunctionAppSlot#pre_warmed_instance_count}
 
 ---
 
@@ -6713,9 +6683,9 @@ remote_debugging_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Should Remote Debugging be enabled. Defaults to `false`.
+Should Remote Debugging be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#remote_debugging_enabled WindowsFunctionAppSlot#remote_debugging_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#remote_debugging_enabled WindowsFunctionAppSlot#remote_debugging_enabled}
 
 ---
 
@@ -6727,9 +6697,9 @@ remote_debugging_version: str
 
 - *Type:* str
 
-The Remote Debugging Version. Currently only `VS2022` is supported.
+The Remote Debugging Version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#remote_debugging_version WindowsFunctionAppSlot#remote_debugging_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#remote_debugging_version WindowsFunctionAppSlot#remote_debugging_version}
 
 ---
 
@@ -6741,9 +6711,9 @@ runtime_scale_monitoring_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Should Functions Runtime Scale Monitoring be enabled.
+Should Functions Runtime Scale Monitoring be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#runtime_scale_monitoring_enabled WindowsFunctionAppSlot#runtime_scale_monitoring_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#runtime_scale_monitoring_enabled WindowsFunctionAppSlot#runtime_scale_monitoring_enabled}
 
 ---
 
@@ -6757,7 +6727,7 @@ scm_ip_restriction: IResolvable | typing.List[WindowsFunctionAppSlotSiteConfigSc
 
 scm_ip_restriction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#scm_ip_restriction WindowsFunctionAppSlot#scm_ip_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#scm_ip_restriction WindowsFunctionAppSlot#scm_ip_restriction}
 
 ---
 
@@ -6769,7 +6739,7 @@ scm_ip_restriction_default_action: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#scm_ip_restriction_default_action WindowsFunctionAppSlot#scm_ip_restriction_default_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#scm_ip_restriction_default_action WindowsFunctionAppSlot#scm_ip_restriction_default_action}.
 
 ---
 
@@ -6781,9 +6751,9 @@ scm_minimum_tls_version: str
 
 - *Type:* str
 
-Configures the minimum version of TLS required for SSL requests to the SCM site Possible values include: `1.0`, `1.1`, `1.2` and `1.3`. Defaults to `1.2`.
+Configures the minimum version of TLS required for SSL requests to the SCM site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#scm_minimum_tls_version WindowsFunctionAppSlot#scm_minimum_tls_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#scm_minimum_tls_version WindowsFunctionAppSlot#scm_minimum_tls_version}
 
 ---
 
@@ -6795,9 +6765,9 @@ scm_use_main_ip_restriction: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the Windows Function App `ip_restriction` configuration be used for the SCM also.
+Should the Windows Function App `ip_restriction` configuration be used for the SCM also?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#scm_use_main_ip_restriction WindowsFunctionAppSlot#scm_use_main_ip_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#scm_use_main_ip_restriction WindowsFunctionAppSlot#scm_use_main_ip_restriction}
 
 ---
 
@@ -6809,9 +6779,9 @@ use32_bit_worker: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the Windows Function App use a 32-bit worker.
+Should the Windows Function App use a 32-bit worker?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#use_32_bit_worker WindowsFunctionAppSlot#use_32_bit_worker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#use_32_bit_worker WindowsFunctionAppSlot#use_32_bit_worker}
 
 ---
 
@@ -6823,9 +6793,9 @@ vnet_route_all_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`.
+Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#vnet_route_all_enabled WindowsFunctionAppSlot#vnet_route_all_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#vnet_route_all_enabled WindowsFunctionAppSlot#vnet_route_all_enabled}
 
 ---
 
@@ -6837,9 +6807,9 @@ websockets_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Should Web Sockets be enabled. Defaults to `false`.
+Should Web Sockets be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#websockets_enabled WindowsFunctionAppSlot#websockets_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#websockets_enabled WindowsFunctionAppSlot#websockets_enabled}
 
 ---
 
@@ -6853,7 +6823,7 @@ worker_count: typing.Union[int, float]
 
 The number of Workers for this Windows Function App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#worker_count WindowsFunctionAppSlot#worker_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#worker_count WindowsFunctionAppSlot#worker_count}
 
 ---
 
@@ -6878,12 +6848,12 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStack(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStack.property.dotnetVersion">dotnet_version</a></code> | <code>str</code> | The version of .Net. Possible values are `v3.0`, `v4.0`, `v6.0`, `v7.0`, `v8.0`, `v9.0` and `v10.0`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStack.property.javaVersion">java_version</a></code> | <code>str</code> | The version of Java to use. Possible values are `1.8`, `11`, `17`, `21` and `25`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStack.property.nodeVersion">node_version</a></code> | <code>str</code> | The version of Node to use. Possible values include `~12`, `~14`, `~16`, `~18`, `~20`, `~22` and `~24`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStack.property.powershellCoreVersion">powershell_core_version</a></code> | <code>str</code> | The PowerShell Core version to use. Possible values are `7`, `7.2`, `7.4`, and `7.6`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStack.property.dotnetVersion">dotnet_version</a></code> | <code>str</code> | The version of .Net. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStack.property.javaVersion">java_version</a></code> | <code>str</code> | The version of Java to use. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStack.property.nodeVersion">node_version</a></code> | <code>str</code> | The version of Node to use. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStack.property.powershellCoreVersion">powershell_core_version</a></code> | <code>str</code> | The PowerShell Core version to use. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStack.property.useCustomRuntime">use_custom_runtime</a></code> | <code>bool \| cdktn.IResolvable</code> | Does the Function App use a custom Application Stack? |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStack.property.useDotnetIsolatedRuntime">use_dotnet_isolated_runtime</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the DotNet process use an isolated runtime. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStack.property.useDotnetIsolatedRuntime">use_dotnet_isolated_runtime</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the DotNet process use an isolated runtime? |
 
 ---
 
@@ -6895,9 +6865,9 @@ dotnet_version: str
 
 - *Type:* str
 
-The version of .Net. Possible values are `v3.0`, `v4.0`, `v6.0`, `v7.0`, `v8.0`, `v9.0` and `v10.0`.
+The version of .Net.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#dotnet_version WindowsFunctionAppSlot#dotnet_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#dotnet_version WindowsFunctionAppSlot#dotnet_version}
 
 ---
 
@@ -6909,9 +6879,9 @@ java_version: str
 
 - *Type:* str
 
-The version of Java to use. Possible values are `1.8`, `11`, `17`, `21` and `25`.
+The version of Java to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#java_version WindowsFunctionAppSlot#java_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#java_version WindowsFunctionAppSlot#java_version}
 
 ---
 
@@ -6923,9 +6893,9 @@ node_version: str
 
 - *Type:* str
 
-The version of Node to use. Possible values include `~12`, `~14`, `~16`, `~18`, `~20`, `~22` and `~24`.
+The version of Node to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#node_version WindowsFunctionAppSlot#node_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#node_version WindowsFunctionAppSlot#node_version}
 
 ---
 
@@ -6937,9 +6907,9 @@ powershell_core_version: str
 
 - *Type:* str
 
-The PowerShell Core version to use. Possible values are `7`, `7.2`, `7.4`, and `7.6`.
+The PowerShell Core version to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#powershell_core_version WindowsFunctionAppSlot#powershell_core_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#powershell_core_version WindowsFunctionAppSlot#powershell_core_version}
 
 ---
 
@@ -6953,7 +6923,7 @@ use_custom_runtime: bool | IResolvable
 
 Does the Function App use a custom Application Stack?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#use_custom_runtime WindowsFunctionAppSlot#use_custom_runtime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#use_custom_runtime WindowsFunctionAppSlot#use_custom_runtime}
 
 ---
 
@@ -6965,9 +6935,9 @@ use_dotnet_isolated_runtime: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the DotNet process use an isolated runtime. Defaults to `false`.
+Should the DotNet process use an isolated runtime?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#use_dotnet_isolated_runtime WindowsFunctionAppSlot#use_dotnet_isolated_runtime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#use_dotnet_isolated_runtime WindowsFunctionAppSlot#use_dotnet_isolated_runtime}
 
 ---
 
@@ -6988,8 +6958,8 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigAppServiceLogs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigAppServiceLogs.property.diskQuotaMb">disk_quota_mb</a></code> | <code>typing.Union[int, float]</code> | The amount of disk space to use for logs. Valid values are between `25` and `100`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigAppServiceLogs.property.retentionPeriodDays">retention_period_days</a></code> | <code>typing.Union[int, float]</code> | The retention period for logs in days. Valid values are between `0` and `99999`. Defaults to `0` (never delete). |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigAppServiceLogs.property.diskQuotaMb">disk_quota_mb</a></code> | <code>typing.Union[int, float]</code> | The amount of disk space to use for logs. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigAppServiceLogs.property.retentionPeriodDays">retention_period_days</a></code> | <code>typing.Union[int, float]</code> | The retention period for logs in days. Defaults to `0` (never delete). |
 
 ---
 
@@ -7001,9 +6971,9 @@ disk_quota_mb: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-The amount of disk space to use for logs. Valid values are between `25` and `100`.
+The amount of disk space to use for logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#disk_quota_mb WindowsFunctionAppSlot#disk_quota_mb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#disk_quota_mb WindowsFunctionAppSlot#disk_quota_mb}
 
 ---
 
@@ -7015,9 +6985,9 @@ retention_period_days: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-The retention period for logs in days. Valid values are between `0` and `99999`. Defaults to `0` (never delete).
+The retention period for logs in days. Defaults to `0` (never delete).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#retention_period_days WindowsFunctionAppSlot#retention_period_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#retention_period_days WindowsFunctionAppSlot#retention_period_days}
 
 ---
 
@@ -7038,8 +7008,8 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigCors(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigCors.property.allowedOrigins">allowed_origins</a></code> | <code>typing.List[str]</code> | Specifies a list of origins that should be allowed to make cross-origin calls. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigCors.property.supportCredentials">support_credentials</a></code> | <code>bool \| cdktn.IResolvable</code> | Are credentials allowed in CORS requests? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigCors.property.allowedOrigins">allowed_origins</a></code> | <code>typing.List[str]</code> | A list of origins that should be allowed to make cross-origin calls. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigCors.property.supportCredentials">support_credentials</a></code> | <code>bool \| cdktn.IResolvable</code> | Are credentials allowed in CORS requests? |
 
 ---
 
@@ -7051,9 +7021,9 @@ allowed_origins: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Specifies a list of origins that should be allowed to make cross-origin calls.
+A list of origins that should be allowed to make cross-origin calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#allowed_origins WindowsFunctionAppSlot#allowed_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#allowed_origins WindowsFunctionAppSlot#allowed_origins}
 
 ---
 
@@ -7065,9 +7035,9 @@ support_credentials: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Are credentials allowed in CORS requests? Defaults to `false`.
+Are credentials allowed in CORS requests?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#support_credentials WindowsFunctionAppSlot#support_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#support_credentials WindowsFunctionAppSlot#support_credentials}
 
 ---
 
@@ -7094,9 +7064,9 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestriction(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestriction.property.action">action</a></code> | <code>str</code> | The action to take. Possible values are `Allow` or `Deny`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestriction.property.action">action</a></code> | <code>str</code> | The action to take. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestriction.property.description">description</a></code> | <code>str</code> | The description of the IP restriction rule. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestriction.property.headers">headers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeaders">WindowsFunctionAppSlotSiteConfigIpRestrictionHeaders</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#headers WindowsFunctionAppSlot#headers}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestriction.property.headers">headers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeaders">WindowsFunctionAppSlotSiteConfigIpRestrictionHeaders</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#headers WindowsFunctionAppSlot#headers}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestriction.property.ipAddress">ip_address</a></code> | <code>str</code> | The CIDR notation of the IP or IP Range to match. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestriction.property.name">name</a></code> | <code>str</code> | The name which should be used for this `ip_restriction`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestriction.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | The priority value of this `ip_restriction`. |
@@ -7113,9 +7083,9 @@ action: str
 
 - *Type:* str
 
-The action to take. Possible values are `Allow` or `Deny`.
+The action to take.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#action WindowsFunctionAppSlot#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#action WindowsFunctionAppSlot#action}
 
 ---
 
@@ -7129,7 +7099,7 @@ description: str
 
 The description of the IP restriction rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#description WindowsFunctionAppSlot#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#description WindowsFunctionAppSlot#description}
 
 ---
 
@@ -7141,7 +7111,7 @@ headers: IResolvable | typing.List[WindowsFunctionAppSlotSiteConfigIpRestriction
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeaders">WindowsFunctionAppSlotSiteConfigIpRestrictionHeaders</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#headers WindowsFunctionAppSlot#headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#headers WindowsFunctionAppSlot#headers}.
 
 ---
 
@@ -7155,9 +7125,9 @@ ip_address: str
 
 The CIDR notation of the IP or IP Range to match.
 
-For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`
+For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#ip_address WindowsFunctionAppSlot#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#ip_address WindowsFunctionAppSlot#ip_address}
 
 ---
 
@@ -7171,7 +7141,7 @@ name: str
 
 The name which should be used for this `ip_restriction`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#name WindowsFunctionAppSlot#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#name WindowsFunctionAppSlot#name}
 
 ---
 
@@ -7185,7 +7155,7 @@ priority: typing.Union[int, float]
 
 The priority value of this `ip_restriction`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#priority WindowsFunctionAppSlot#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#priority WindowsFunctionAppSlot#priority}
 
 ---
 
@@ -7199,7 +7169,7 @@ service_tag: str
 
 The Service Tag used for this IP Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#service_tag WindowsFunctionAppSlot#service_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#service_tag WindowsFunctionAppSlot#service_tag}
 
 ---
 
@@ -7213,7 +7183,7 @@ virtual_network_subnet_id: str
 
 The Virtual Network Subnet ID used for this IP Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#virtual_network_subnet_id WindowsFunctionAppSlot#virtual_network_subnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#virtual_network_subnet_id WindowsFunctionAppSlot#virtual_network_subnet_id}
 
 ---
 
@@ -7236,10 +7206,10 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeaders(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeaders.property.xAzureFdid">x_azure_fdid</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#x_azure_fdid WindowsFunctionAppSlot#x_azure_fdid}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeaders.property.xFdHealthProbe">x_fd_health_probe</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#x_fd_health_probe WindowsFunctionAppSlot#x_fd_health_probe}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeaders.property.xForwardedFor">x_forwarded_for</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#x_forwarded_for WindowsFunctionAppSlot#x_forwarded_for}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeaders.property.xForwardedHost">x_forwarded_host</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#x_forwarded_host WindowsFunctionAppSlot#x_forwarded_host}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeaders.property.xAzureFdid">x_azure_fdid</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#x_azure_fdid WindowsFunctionAppSlot#x_azure_fdid}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeaders.property.xFdHealthProbe">x_fd_health_probe</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#x_fd_health_probe WindowsFunctionAppSlot#x_fd_health_probe}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeaders.property.xForwardedFor">x_forwarded_for</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#x_forwarded_for WindowsFunctionAppSlot#x_forwarded_for}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeaders.property.xForwardedHost">x_forwarded_host</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#x_forwarded_host WindowsFunctionAppSlot#x_forwarded_host}. |
 
 ---
 
@@ -7251,7 +7221,7 @@ x_azure_fdid: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#x_azure_fdid WindowsFunctionAppSlot#x_azure_fdid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#x_azure_fdid WindowsFunctionAppSlot#x_azure_fdid}.
 
 ---
 
@@ -7263,7 +7233,7 @@ x_fd_health_probe: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#x_fd_health_probe WindowsFunctionAppSlot#x_fd_health_probe}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#x_fd_health_probe WindowsFunctionAppSlot#x_fd_health_probe}.
 
 ---
 
@@ -7275,7 +7245,7 @@ x_forwarded_for: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#x_forwarded_for WindowsFunctionAppSlot#x_forwarded_for}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#x_forwarded_for WindowsFunctionAppSlot#x_forwarded_for}.
 
 ---
 
@@ -7287,7 +7257,7 @@ x_forwarded_host: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#x_forwarded_host WindowsFunctionAppSlot#x_forwarded_host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#x_forwarded_host WindowsFunctionAppSlot#x_forwarded_host}.
 
 ---
 
@@ -7314,9 +7284,9 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestriction(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestriction.property.action">action</a></code> | <code>str</code> | The action to take. Possible values are `Allow` or `Deny`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestriction.property.action">action</a></code> | <code>str</code> | The action to take. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestriction.property.description">description</a></code> | <code>str</code> | The description of the IP restriction rule. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestriction.property.headers">headers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeaders</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#headers WindowsFunctionAppSlot#headers}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestriction.property.headers">headers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeaders</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#headers WindowsFunctionAppSlot#headers}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestriction.property.ipAddress">ip_address</a></code> | <code>str</code> | The CIDR notation of the IP or IP Range to match. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestriction.property.name">name</a></code> | <code>str</code> | The name which should be used for this `ip_restriction`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestriction.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | The priority value of this `ip_restriction`. |
@@ -7333,9 +7303,9 @@ action: str
 
 - *Type:* str
 
-The action to take. Possible values are `Allow` or `Deny`.
+The action to take.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#action WindowsFunctionAppSlot#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#action WindowsFunctionAppSlot#action}
 
 ---
 
@@ -7349,7 +7319,7 @@ description: str
 
 The description of the IP restriction rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#description WindowsFunctionAppSlot#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#description WindowsFunctionAppSlot#description}
 
 ---
 
@@ -7361,7 +7331,7 @@ headers: IResolvable | typing.List[WindowsFunctionAppSlotSiteConfigScmIpRestrict
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeaders</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#headers WindowsFunctionAppSlot#headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#headers WindowsFunctionAppSlot#headers}.
 
 ---
 
@@ -7375,9 +7345,9 @@ ip_address: str
 
 The CIDR notation of the IP or IP Range to match.
 
-For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`
+For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#ip_address WindowsFunctionAppSlot#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#ip_address WindowsFunctionAppSlot#ip_address}
 
 ---
 
@@ -7391,7 +7361,7 @@ name: str
 
 The name which should be used for this `ip_restriction`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#name WindowsFunctionAppSlot#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#name WindowsFunctionAppSlot#name}
 
 ---
 
@@ -7405,7 +7375,7 @@ priority: typing.Union[int, float]
 
 The priority value of this `ip_restriction`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#priority WindowsFunctionAppSlot#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#priority WindowsFunctionAppSlot#priority}
 
 ---
 
@@ -7419,7 +7389,7 @@ service_tag: str
 
 The Service Tag used for this IP Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#service_tag WindowsFunctionAppSlot#service_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#service_tag WindowsFunctionAppSlot#service_tag}
 
 ---
 
@@ -7433,7 +7403,7 @@ virtual_network_subnet_id: str
 
 The Virtual Network Subnet ID used for this IP Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#virtual_network_subnet_id WindowsFunctionAppSlot#virtual_network_subnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#virtual_network_subnet_id WindowsFunctionAppSlot#virtual_network_subnet_id}
 
 ---
 
@@ -7456,10 +7426,10 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeaders(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeaders.property.xAzureFdid">x_azure_fdid</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#x_azure_fdid WindowsFunctionAppSlot#x_azure_fdid}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeaders.property.xFdHealthProbe">x_fd_health_probe</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#x_fd_health_probe WindowsFunctionAppSlot#x_fd_health_probe}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeaders.property.xForwardedFor">x_forwarded_for</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#x_forwarded_for WindowsFunctionAppSlot#x_forwarded_for}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeaders.property.xForwardedHost">x_forwarded_host</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#x_forwarded_host WindowsFunctionAppSlot#x_forwarded_host}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeaders.property.xAzureFdid">x_azure_fdid</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#x_azure_fdid WindowsFunctionAppSlot#x_azure_fdid}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeaders.property.xFdHealthProbe">x_fd_health_probe</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#x_fd_health_probe WindowsFunctionAppSlot#x_fd_health_probe}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeaders.property.xForwardedFor">x_forwarded_for</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#x_forwarded_for WindowsFunctionAppSlot#x_forwarded_for}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeaders.property.xForwardedHost">x_forwarded_host</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#x_forwarded_host WindowsFunctionAppSlot#x_forwarded_host}. |
 
 ---
 
@@ -7471,7 +7441,7 @@ x_azure_fdid: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#x_azure_fdid WindowsFunctionAppSlot#x_azure_fdid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#x_azure_fdid WindowsFunctionAppSlot#x_azure_fdid}.
 
 ---
 
@@ -7483,7 +7453,7 @@ x_fd_health_probe: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#x_fd_health_probe WindowsFunctionAppSlot#x_fd_health_probe}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#x_fd_health_probe WindowsFunctionAppSlot#x_fd_health_probe}.
 
 ---
 
@@ -7495,7 +7465,7 @@ x_forwarded_for: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#x_forwarded_for WindowsFunctionAppSlot#x_forwarded_for}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#x_forwarded_for WindowsFunctionAppSlot#x_forwarded_for}.
 
 ---
 
@@ -7507,7 +7477,7 @@ x_forwarded_host: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#x_forwarded_host WindowsFunctionAppSlot#x_forwarded_host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#x_forwarded_host WindowsFunctionAppSlot#x_forwarded_host}.
 
 ---
 
@@ -7543,12 +7513,12 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccount(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccount.property.accessKey">access_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#access_key WindowsFunctionAppSlot#access_key}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccount.property.accountName">account_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#account_name WindowsFunctionAppSlot#account_name}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccount.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#name WindowsFunctionAppSlot#name}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccount.property.shareName">share_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#share_name WindowsFunctionAppSlot#share_name}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccount.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#type WindowsFunctionAppSlot#type}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccount.property.mountPath">mount_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#mount_path WindowsFunctionAppSlot#mount_path}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccount.property.accessKey">access_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#access_key WindowsFunctionAppSlot#access_key}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccount.property.accountName">account_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#account_name WindowsFunctionAppSlot#account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccount.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#name WindowsFunctionAppSlot#name}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccount.property.shareName">share_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#share_name WindowsFunctionAppSlot#share_name}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccount.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#type WindowsFunctionAppSlot#type}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccount.property.mountPath">mount_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#mount_path WindowsFunctionAppSlot#mount_path}. |
 
 ---
 
@@ -7560,7 +7530,7 @@ access_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#access_key WindowsFunctionAppSlot#access_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#access_key WindowsFunctionAppSlot#access_key}.
 
 ---
 
@@ -7572,7 +7542,7 @@ account_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#account_name WindowsFunctionAppSlot#account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#account_name WindowsFunctionAppSlot#account_name}.
 
 ---
 
@@ -7584,7 +7554,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#name WindowsFunctionAppSlot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#name WindowsFunctionAppSlot#name}.
 
 ---
 
@@ -7596,7 +7566,7 @@ share_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#share_name WindowsFunctionAppSlot#share_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#share_name WindowsFunctionAppSlot#share_name}.
 
 ---
 
@@ -7608,7 +7578,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#type WindowsFunctionAppSlot#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#type WindowsFunctionAppSlot#type}.
 
 ---
 
@@ -7620,7 +7590,7 @@ mount_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#mount_path WindowsFunctionAppSlot#mount_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#mount_path WindowsFunctionAppSlot#mount_path}.
 
 ---
 
@@ -7643,10 +7613,10 @@ windowsFunctionAppSlot.WindowsFunctionAppSlotTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#create WindowsFunctionAppSlot#create}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#delete WindowsFunctionAppSlot#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#read WindowsFunctionAppSlot#read}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#update WindowsFunctionAppSlot#update}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#create WindowsFunctionAppSlot#create}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#delete WindowsFunctionAppSlot#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#read WindowsFunctionAppSlot#read}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#update WindowsFunctionAppSlot#update}. |
 
 ---
 
@@ -7658,7 +7628,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#create WindowsFunctionAppSlot#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#create WindowsFunctionAppSlot#create}.
 
 ---
 
@@ -7670,7 +7640,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#delete WindowsFunctionAppSlot#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#delete WindowsFunctionAppSlot#delete}.
 
 ---
 
@@ -7682,7 +7652,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#read WindowsFunctionAppSlot#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#read WindowsFunctionAppSlot#read}.
 
 ---
 
@@ -7694,7 +7664,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#update WindowsFunctionAppSlot#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#update WindowsFunctionAppSlot#update}.
 
 ---
 
@@ -9880,7 +9850,7 @@ def put_active_directory(
 
 The ID of the Client to use to authenticate with Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
 
 ---
 
@@ -9888,9 +9858,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
+A list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#allowed_audiences WindowsFunctionAppSlot#allowed_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#allowed_audiences WindowsFunctionAppSlot#allowed_audiences}
 
 ---
 
@@ -9898,9 +9868,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The Client Secret for the Client ID. Cannot be used with `client_secret_setting_name`.
+The Client Secret for the Client ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret WindowsFunctionAppSlot#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret WindowsFunctionAppSlot#client_secret}
 
 ---
 
@@ -9908,9 +9878,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The App Setting name that contains the client secret of the Client. Cannot be used with `client_secret`.
+The App Setting name that contains the client secret of the Client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
 
 ---
 
@@ -9931,7 +9901,7 @@ def put_facebook(
 
 The App ID of the Facebook app used for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#app_id WindowsFunctionAppSlot#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#app_id WindowsFunctionAppSlot#app_id}
 
 ---
 
@@ -9939,9 +9909,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The App Secret of the Facebook app used for Facebook Login. Cannot be specified with `app_secret_setting_name`.
+The App Secret of the Facebook app used for Facebook Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#app_secret WindowsFunctionAppSlot#app_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#app_secret WindowsFunctionAppSlot#app_secret}
 
 ---
 
@@ -9949,9 +9919,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The app setting name that contains the `app_secret` value used for Facebook Login. Cannot be specified with `app_secret`.
+The app setting name that contains the `app_secret` value used for Facebook Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#app_secret_setting_name WindowsFunctionAppSlot#app_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#app_secret_setting_name WindowsFunctionAppSlot#app_secret_setting_name}
 
 ---
 
@@ -9959,9 +9929,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Specifies a list of OAuth 2.0 scopes to be requested as part of Facebook Login authentication.
+A list of OAuth 2.0 scopes to be requested as part of Facebook Login authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#oauth_scopes WindowsFunctionAppSlot#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#oauth_scopes WindowsFunctionAppSlot#oauth_scopes}
 
 ---
 
@@ -9982,7 +9952,7 @@ def put_github(
 
 The ID of the GitHub app used for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
 
 ---
 
@@ -9990,9 +9960,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The Client Secret of the GitHub app used for GitHub Login. Cannot be specified with `client_secret_setting_name`.
+The Client Secret of the GitHub app used for GitHub Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret WindowsFunctionAppSlot#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret WindowsFunctionAppSlot#client_secret}
 
 ---
 
@@ -10000,9 +9970,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The app setting name that contains the `client_secret` value used for GitHub Login. Cannot be specified with `client_secret`.
+The app setting name that contains the `client_secret` value used for GitHub Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
 
 ---
 
@@ -10010,9 +9980,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
+A list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#oauth_scopes WindowsFunctionAppSlot#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#oauth_scopes WindowsFunctionAppSlot#oauth_scopes}
 
 ---
 
@@ -10033,7 +10003,7 @@ def put_google(
 
 The OpenID Connect Client ID for the Google web application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
 
 ---
 
@@ -10041,9 +10011,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The client secret associated with the Google web application.  Cannot be specified with `client_secret_setting_name`.
+The client secret associated with the Google web application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret WindowsFunctionAppSlot#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret WindowsFunctionAppSlot#client_secret}
 
 ---
 
@@ -10051,9 +10021,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The app setting name that contains the `client_secret` value used for Google Login. Cannot be specified with `client_secret`.
+The app setting name that contains the `client_secret` value used for Google Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
 
 ---
 
@@ -10061,9 +10031,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Specifies a list of OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. If not specified, "openid", "profile", and "email" are used as default scopes.
+A list of OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. If not specified, "openid", "profile", and "email" are used as default scopes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#oauth_scopes WindowsFunctionAppSlot#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#oauth_scopes WindowsFunctionAppSlot#oauth_scopes}
 
 ---
 
@@ -10084,7 +10054,7 @@ def put_microsoft(
 
 The OAuth 2.0 client ID that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
 
 ---
 
@@ -10092,9 +10062,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret_setting_name`.
+The OAuth 2.0 client secret that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret WindowsFunctionAppSlot#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret WindowsFunctionAppSlot#client_secret}
 
 ---
 
@@ -10102,9 +10072,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret`.
+The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
 
 ---
 
@@ -10114,7 +10084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The list of OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. If not specified, `wl.basic` is used as the default scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#oauth_scopes WindowsFunctionAppSlot#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#oauth_scopes WindowsFunctionAppSlot#oauth_scopes}
 
 ---
 
@@ -10134,7 +10104,7 @@ def put_twitter(
 
 The OAuth 1.0a consumer key of the Twitter application used for sign-in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#consumer_key WindowsFunctionAppSlot#consumer_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#consumer_key WindowsFunctionAppSlot#consumer_key}
 
 ---
 
@@ -10142,9 +10112,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret_setting_name`.
+The OAuth 1.0a consumer secret of the Twitter application used for sign-in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#consumer_secret WindowsFunctionAppSlot#consumer_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#consumer_secret WindowsFunctionAppSlot#consumer_secret}
 
 ---
 
@@ -10154,7 +10124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The app setting name that contains the OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#consumer_secret_setting_name WindowsFunctionAppSlot#consumer_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#consumer_secret_setting_name WindowsFunctionAppSlot#consumer_secret_setting_name}
 
 ---
 
@@ -15211,7 +15181,7 @@ def put_active_directory_v2(
 
 The ID of the Client to use to authenticate with Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
 
 ---
 
@@ -15221,7 +15191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Azure Tenant Endpoint for the Authenticating Tenant. e.g. `https://login.microsoftonline.com/v2.0/{tenant-guid}/`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#tenant_auth_endpoint WindowsFunctionAppSlot#tenant_auth_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#tenant_auth_endpoint WindowsFunctionAppSlot#tenant_auth_endpoint}
 
 ---
 
@@ -15231,7 +15201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The list of allowed Applications for the Default Authorisation Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#allowed_applications WindowsFunctionAppSlot#allowed_applications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#allowed_applications WindowsFunctionAppSlot#allowed_applications}
 
 ---
 
@@ -15239,9 +15209,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
+A list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#allowed_audiences WindowsFunctionAppSlot#allowed_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#allowed_audiences WindowsFunctionAppSlot#allowed_audiences}
 
 ---
 
@@ -15251,7 +15221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The list of allowed Group Names for the Default Authorisation Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#allowed_groups WindowsFunctionAppSlot#allowed_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#allowed_groups WindowsFunctionAppSlot#allowed_groups}
 
 ---
 
@@ -15261,7 +15231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The list of allowed Identities for the Default Authorisation Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#allowed_identities WindowsFunctionAppSlot#allowed_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#allowed_identities WindowsFunctionAppSlot#allowed_identities}
 
 ---
 
@@ -15271,7 +15241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The thumbprint of the certificate used for signing purposes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret_certificate_thumbprint WindowsFunctionAppSlot#client_secret_certificate_thumbprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret_certificate_thumbprint WindowsFunctionAppSlot#client_secret_certificate_thumbprint}
 
 ---
 
@@ -15281,7 +15251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The App Setting name that contains the client secret of the Client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
 
 ---
 
@@ -15291,7 +15261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of Allowed Client Applications in the JWT Claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#jwt_allowed_client_applications WindowsFunctionAppSlot#jwt_allowed_client_applications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#jwt_allowed_client_applications WindowsFunctionAppSlot#jwt_allowed_client_applications}
 
 ---
 
@@ -15301,7 +15271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of Allowed Groups in the JWT Claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#jwt_allowed_groups WindowsFunctionAppSlot#jwt_allowed_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#jwt_allowed_groups WindowsFunctionAppSlot#jwt_allowed_groups}
 
 ---
 
@@ -15311,7 +15281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A map of key-value pairs to send to the Authorisation Endpoint when a user logs in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#login_parameters WindowsFunctionAppSlot#login_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#login_parameters WindowsFunctionAppSlot#login_parameters}
 
 ---
 
@@ -15319,9 +15289,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the www-authenticate provider should be omitted from the request? Defaults to `false`.
+Should the www-authenticate provider should be omitted from the request?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#www_authentication_disabled WindowsFunctionAppSlot#www_authentication_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#www_authentication_disabled WindowsFunctionAppSlot#www_authentication_disabled}
 
 ---
 
@@ -15340,7 +15310,7 @@ def put_apple_v2(
 
 The OpenID Connect Client ID for the Apple web application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
 
 ---
 
@@ -15350,7 +15320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The app setting name that contains the `client_secret` value used for Apple Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
 
 ---
 
@@ -15368,7 +15338,7 @@ def put_azure_static_web_app_v2(
 
 The ID of the Client to use to authenticate with Azure Static Web App Authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
 
 ---
 
@@ -15403,7 +15373,7 @@ def put_facebook_v2(
 
 The App ID of the Facebook app used for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#app_id WindowsFunctionAppSlot#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#app_id WindowsFunctionAppSlot#app_id}
 
 ---
 
@@ -15413,7 +15383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The app setting name that contains the `app_secret` value used for Facebook Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#app_secret_setting_name WindowsFunctionAppSlot#app_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#app_secret_setting_name WindowsFunctionAppSlot#app_secret_setting_name}
 
 ---
 
@@ -15423,7 +15393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The version of the Facebook API to be used while logging in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#graph_api_version WindowsFunctionAppSlot#graph_api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#graph_api_version WindowsFunctionAppSlot#graph_api_version}
 
 ---
 
@@ -15431,9 +15401,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Specifies a list of scopes to be requested as part of Facebook Login authentication.
+A list of scopes to be requested as part of Facebook Login authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#login_scopes WindowsFunctionAppSlot#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#login_scopes WindowsFunctionAppSlot#login_scopes}
 
 ---
 
@@ -15453,7 +15423,7 @@ def put_github_v2(
 
 The ID of the GitHub app used for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
 
 ---
 
@@ -15463,7 +15433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The app setting name that contains the `client_secret` value used for GitHub Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
 
 ---
 
@@ -15471,9 +15441,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
+A list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#login_scopes WindowsFunctionAppSlot#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#login_scopes WindowsFunctionAppSlot#login_scopes}
 
 ---
 
@@ -15494,7 +15464,7 @@ def put_google_v2(
 
 The OpenID Connect Client ID for the Google web application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
 
 ---
 
@@ -15504,7 +15474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The app setting name that contains the `client_secret` value used for Google Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
 
 ---
 
@@ -15512,9 +15482,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Specifies a list of Allowed Audiences that will be requested as part of Google Sign-In authentication.
+A list of Allowed Audiences that will be requested as part of Google Sign-In authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#allowed_audiences WindowsFunctionAppSlot#allowed_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#allowed_audiences WindowsFunctionAppSlot#allowed_audiences}
 
 ---
 
@@ -15522,9 +15492,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Specifies a list of Login scopes that will be requested as part of Google Sign-In authentication.
+A list of Login scopes that will be requested as part of Google Sign-In authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#login_scopes WindowsFunctionAppSlot#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#login_scopes WindowsFunctionAppSlot#login_scopes}
 
 ---
 
@@ -15554,7 +15524,7 @@ External URLs that can be redirected to as part of logging in or logging out of 
 
 This is an advanced setting typically only needed by Windows Store application backends. **Note:** URLs within the current domain are always implicitly allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#allowed_external_redirect_urls WindowsFunctionAppSlot#allowed_external_redirect_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#allowed_external_redirect_urls WindowsFunctionAppSlot#allowed_external_redirect_urls}
 
 ---
 
@@ -15562,9 +15532,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The method by which cookies expire. Possible values include: `FixedTime`, and `IdentityProviderDerived`. Defaults to `FixedTime`.
+The method by which cookies expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#cookie_expiration_convention WindowsFunctionAppSlot#cookie_expiration_convention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#cookie_expiration_convention WindowsFunctionAppSlot#cookie_expiration_convention}
 
 ---
 
@@ -15572,9 +15542,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The time after the request is made when the session cookie should expire. Defaults to `08:00:00`.
+The time after the request is made when the session cookie should expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#cookie_expiration_time WindowsFunctionAppSlot#cookie_expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#cookie_expiration_time WindowsFunctionAppSlot#cookie_expiration_time}
 
 ---
 
@@ -15584,7 +15554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The endpoint to which logout requests should be made.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#logout_endpoint WindowsFunctionAppSlot#logout_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#logout_endpoint WindowsFunctionAppSlot#logout_endpoint}
 
 ---
 
@@ -15592,9 +15562,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The time after the request is made when the nonce should expire. Defaults to `00:05:00`.
+The time after the request is made when the nonce should expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#nonce_expiration_time WindowsFunctionAppSlot#nonce_expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#nonce_expiration_time WindowsFunctionAppSlot#nonce_expiration_time}
 
 ---
 
@@ -15602,9 +15572,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the fragments from the request be preserved after the login request is made. Defaults to `false`.
+Should the fragments from the request be preserved after the login request is made?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#preserve_url_fragments_for_logins WindowsFunctionAppSlot#preserve_url_fragments_for_logins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#preserve_url_fragments_for_logins WindowsFunctionAppSlot#preserve_url_fragments_for_logins}
 
 ---
 
@@ -15614,9 +15584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The number of hours after session token expiration that a session token can be used to call the token refresh API.
 
-Defaults to `72` hours.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#token_refresh_extension_time WindowsFunctionAppSlot#token_refresh_extension_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#token_refresh_extension_time WindowsFunctionAppSlot#token_refresh_extension_time}
 
 ---
 
@@ -15624,9 +15592,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the Token Store configuration Enabled. Defaults to `false`.
+Should the Token Store configuration Enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#token_store_enabled WindowsFunctionAppSlot#token_store_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#token_store_enabled WindowsFunctionAppSlot#token_store_enabled}
 
 ---
 
@@ -15636,7 +15604,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The directory path in the App Filesystem in which the tokens will be stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#token_store_path WindowsFunctionAppSlot#token_store_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#token_store_path WindowsFunctionAppSlot#token_store_path}
 
 ---
 
@@ -15646,7 +15614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the app setting which contains the SAS URL of the blob storage containing the tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#token_store_sas_setting_name WindowsFunctionAppSlot#token_store_sas_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#token_store_sas_setting_name WindowsFunctionAppSlot#token_store_sas_setting_name}
 
 ---
 
@@ -15654,9 +15622,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the nonce be validated while completing the login flow. Defaults to `true`.
+Should the nonce be validated while completing the login flow?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#validate_nonce WindowsFunctionAppSlot#validate_nonce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#validate_nonce WindowsFunctionAppSlot#validate_nonce}
 
 ---
 
@@ -15677,7 +15645,7 @@ def put_microsoft_v2(
 
 The OAuth 2.0 client ID that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_id WindowsFunctionAppSlot#client_id}
 
 ---
 
@@ -15687,7 +15655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#client_secret_setting_name WindowsFunctionAppSlot#client_secret_setting_name}
 
 ---
 
@@ -15695,9 +15663,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Specifies a list of Allowed Audiences that will be requested as part of Microsoft Sign-In authentication.
+A list of Allowed Audiences that will be requested as part of Microsoft Sign-In authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#allowed_audiences WindowsFunctionAppSlot#allowed_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#allowed_audiences WindowsFunctionAppSlot#allowed_audiences}
 
 ---
 
@@ -15707,7 +15675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The list of Login scopes that will be requested as part of Microsoft Account authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#login_scopes WindowsFunctionAppSlot#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#login_scopes WindowsFunctionAppSlot#login_scopes}
 
 ---
 
@@ -15726,7 +15694,7 @@ def put_twitter_v2(
 
 The OAuth 1.0a consumer key of the Twitter application used for sign-in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#consumer_key WindowsFunctionAppSlot#consumer_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#consumer_key WindowsFunctionAppSlot#consumer_key}
 
 ---
 
@@ -15736,7 +15704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The app setting name that contains the OAuth 1.0a consumer secret of the Twitter application used for sign-in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#consumer_secret_setting_name WindowsFunctionAppSlot#consumer_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#consumer_secret_setting_name WindowsFunctionAppSlot#consumer_secret_setting_name}
 
 ---
 
@@ -16962,7 +16930,7 @@ def put_schedule(
 
 How often the backup should be executed (e.g. for weekly backup, this should be set to `7` and `frequency_unit` should be set to `Day`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#frequency_interval WindowsFunctionAppSlot#frequency_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#frequency_interval WindowsFunctionAppSlot#frequency_interval}
 
 ---
 
@@ -16970,9 +16938,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The unit of time for how often the backup should take place. Possible values include: `Day` and `Hour`.
+The unit of time for how often the backup should take place.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#frequency_unit WindowsFunctionAppSlot#frequency_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#frequency_unit WindowsFunctionAppSlot#frequency_unit}
 
 ---
 
@@ -16980,9 +16948,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the service keep at least one backup, regardless of age of backup. Defaults to `false`.
+Should the service keep at least one backup, regardless of age of backup?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#keep_at_least_one_backup WindowsFunctionAppSlot#keep_at_least_one_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#keep_at_least_one_backup WindowsFunctionAppSlot#keep_at_least_one_backup}
 
 ---
 
@@ -16992,7 +16960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 After how many days backups should be deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#retention_period_days WindowsFunctionAppSlot#retention_period_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#retention_period_days WindowsFunctionAppSlot#retention_period_days}
 
 ---
 
@@ -17002,7 +16970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 When the schedule should start working in RFC-3339 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#start_time WindowsFunctionAppSlot#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#start_time WindowsFunctionAppSlot#start_time}
 
 ---
 
@@ -21127,9 +21095,9 @@ def put_application_stack(
 
 - *Type:* str
 
-The version of .Net. Possible values are `v3.0`, `v4.0`, `v6.0`, `v7.0`, `v8.0`, `v9.0` and `v10.0`.
+The version of .Net.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#dotnet_version WindowsFunctionAppSlot#dotnet_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#dotnet_version WindowsFunctionAppSlot#dotnet_version}
 
 ---
 
@@ -21137,9 +21105,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The version of Java to use. Possible values are `1.8`, `11`, `17`, `21` and `25`.
+The version of Java to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#java_version WindowsFunctionAppSlot#java_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#java_version WindowsFunctionAppSlot#java_version}
 
 ---
 
@@ -21147,9 +21115,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The version of Node to use. Possible values include `~12`, `~14`, `~16`, `~18`, `~20`, `~22` and `~24`.
+The version of Node to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#node_version WindowsFunctionAppSlot#node_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#node_version WindowsFunctionAppSlot#node_version}
 
 ---
 
@@ -21157,9 +21125,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The PowerShell Core version to use. Possible values are `7`, `7.2`, `7.4`, and `7.6`.
+The PowerShell Core version to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#powershell_core_version WindowsFunctionAppSlot#powershell_core_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#powershell_core_version WindowsFunctionAppSlot#powershell_core_version}
 
 ---
 
@@ -21169,7 +21137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Does the Function App use a custom Application Stack?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#use_custom_runtime WindowsFunctionAppSlot#use_custom_runtime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#use_custom_runtime WindowsFunctionAppSlot#use_custom_runtime}
 
 ---
 
@@ -21177,9 +21145,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Should the DotNet process use an isolated runtime. Defaults to `false`.
+Should the DotNet process use an isolated runtime?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#use_dotnet_isolated_runtime WindowsFunctionAppSlot#use_dotnet_isolated_runtime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#use_dotnet_isolated_runtime WindowsFunctionAppSlot#use_dotnet_isolated_runtime}
 
 ---
 
@@ -21196,9 +21164,9 @@ def put_app_service_logs(
 
 - *Type:* typing.Union[int, float]
 
-The amount of disk space to use for logs. Valid values are between `25` and `100`.
+The amount of disk space to use for logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#disk_quota_mb WindowsFunctionAppSlot#disk_quota_mb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#disk_quota_mb WindowsFunctionAppSlot#disk_quota_mb}
 
 ---
 
@@ -21206,9 +21174,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-The retention period for logs in days. Valid values are between `0` and `99999`. Defaults to `0` (never delete).
+The retention period for logs in days. Defaults to `0` (never delete).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#retention_period_days WindowsFunctionAppSlot#retention_period_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#retention_period_days WindowsFunctionAppSlot#retention_period_days}
 
 ---
 
@@ -21225,9 +21193,9 @@ def put_cors(
 
 - *Type:* typing.List[str]
 
-Specifies a list of origins that should be allowed to make cross-origin calls.
+A list of origins that should be allowed to make cross-origin calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#allowed_origins WindowsFunctionAppSlot#allowed_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#allowed_origins WindowsFunctionAppSlot#allowed_origins}
 
 ---
 
@@ -21235,9 +21203,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Are credentials allowed in CORS requests? Defaults to `false`.
+Are credentials allowed in CORS requests?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/windows_function_app_slot#support_credentials WindowsFunctionAppSlot#support_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/windows_function_app_slot#support_credentials WindowsFunctionAppSlot#support_credentials}
 
 ---
 

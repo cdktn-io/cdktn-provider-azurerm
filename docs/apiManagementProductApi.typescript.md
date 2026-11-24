@@ -4,7 +4,7 @@
 
 ### ApiManagementProductApi <a name="ApiManagementProductApi" id="@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApi"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_product_api azurerm_api_management_product_api}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_product_api azurerm_api_management_product_api}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApi.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ApiManagementProductApi to
 
 The id of the existing ApiManagementProductApi that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_product_api#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_product_api#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -864,11 +864,11 @@ const apiManagementProductApiConfig: apiManagementProductApi.ApiManagementProduc
 | <code><a href="#@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApiConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApiConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApiConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApiConfig.property.apiManagementName">apiManagementName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_product_api#api_management_name ApiManagementProductApi#api_management_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApiConfig.property.apiName">apiName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_product_api#api_name ApiManagementProductApi#api_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApiConfig.property.productId">productId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_product_api#product_id ApiManagementProductApi#product_id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApiConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_product_api#resource_group_name ApiManagementProductApi#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApiConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_product_api#id ApiManagementProductApi#id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApiConfig.property.apiManagementName">apiManagementName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_product_api#api_management_name ApiManagementProductApi#api_management_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApiConfig.property.apiName">apiName</a></code> | <code>string</code> | The Name of the API Management API within the API Management Service. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApiConfig.property.productId">productId</a></code> | <code>string</code> | The ID of the API Management Product within the API Management Service. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApiConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_product_api#resource_group_name ApiManagementProductApi#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApiConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_product_api#id ApiManagementProductApi#id}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApiConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApiTimeouts">ApiManagementProductApiTimeouts</a></code> | timeouts block. |
 
 ---
@@ -951,7 +951,7 @@ public readonly apiManagementName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_product_api#api_management_name ApiManagementProductApi#api_management_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_product_api#api_management_name ApiManagementProductApi#api_management_name}.
 
 ---
 
@@ -963,7 +963,9 @@ public readonly apiName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_product_api#api_name ApiManagementProductApi#api_name}.
+The Name of the API Management API within the API Management Service.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_product_api#api_name ApiManagementProductApi#api_name}
 
 ---
 
@@ -975,7 +977,9 @@ public readonly productId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_product_api#product_id ApiManagementProductApi#product_id}.
+The ID of the API Management Product within the API Management Service.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_product_api#product_id ApiManagementProductApi#product_id}
 
 ---
 
@@ -987,7 +991,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_product_api#resource_group_name ApiManagementProductApi#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_product_api#resource_group_name ApiManagementProductApi#resource_group_name}.
 
 ---
 
@@ -999,7 +1003,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_product_api#id ApiManagementProductApi#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_product_api#id ApiManagementProductApi#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1016,7 +1020,7 @@ public readonly timeouts: ApiManagementProductApiTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_product_api#timeouts ApiManagementProductApi#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_product_api#timeouts ApiManagementProductApi#timeouts}
 
 ---
 
@@ -1034,9 +1038,9 @@ const apiManagementProductApiTimeouts: apiManagementProductApi.ApiManagementProd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApiTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_product_api#create ApiManagementProductApi#create}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApiTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_product_api#delete ApiManagementProductApi#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApiTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_product_api#read ApiManagementProductApi#read}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApiTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_product_api#create ApiManagementProductApi#create}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApiTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_product_api#delete ApiManagementProductApi#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementProductApi.ApiManagementProductApiTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_product_api#read ApiManagementProductApi#read}. |
 
 ---
 
@@ -1048,7 +1052,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_product_api#create ApiManagementProductApi#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_product_api#create ApiManagementProductApi#create}.
 
 ---
 
@@ -1060,7 +1064,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_product_api#delete ApiManagementProductApi#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_product_api#delete ApiManagementProductApi#delete}.
 
 ---
 
@@ -1072,7 +1076,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management_product_api#read ApiManagementProductApi#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management_product_api#read ApiManagementProductApi#read}.
 
 ---
 

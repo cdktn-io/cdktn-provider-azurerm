@@ -4,7 +4,7 @@
 
 ### PimEligibleRoleAssignment <a name="PimEligibleRoleAssignment" id="@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment azurerm_pim_eligible_role_assignment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment azurerm_pim_eligible_role_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment.Initializer"></a>
 
@@ -45,13 +45,13 @@ pimEligibleRoleAssignment.PimEligibleRoleAssignment(
 | <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment.Initializer.parameter.principalId">principal_id</a></code> | <code>str</code> | Object ID of the principal for this eligible role assignment. |
-| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment.Initializer.parameter.roleDefinitionId">role_definition_id</a></code> | <code>str</code> | Role definition ID for this eligible role assignment. |
-| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment.Initializer.parameter.scope">scope</a></code> | <code>str</code> | Scope for this eligible role assignment, should be a valid resource ID. |
-| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment.Initializer.parameter.condition">condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#condition PimEligibleRoleAssignment#condition}. |
-| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment.Initializer.parameter.conditionVersion">condition_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#condition_version PimEligibleRoleAssignment#condition_version}. |
-| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#id PimEligibleRoleAssignment#id}. |
-| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment.Initializer.parameter.justification">justification</a></code> | <code>str</code> | The justification for this eligible role assignment. |
+| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment.Initializer.parameter.principalId">principal_id</a></code> | <code>str</code> | Object ID of the principal for this eligible Role Assignment. |
+| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment.Initializer.parameter.roleDefinitionId">role_definition_id</a></code> | <code>str</code> | Role Definition ID for this eligible Role Assignment. |
+| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment.Initializer.parameter.scope">scope</a></code> | <code>str</code> | Scope for this eligible Role Assignment, should be a valid resource ID. |
+| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment.Initializer.parameter.condition">condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#condition PimEligibleRoleAssignment#condition}. |
+| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment.Initializer.parameter.conditionVersion">condition_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#condition_version PimEligibleRoleAssignment#condition_version}. |
+| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#id PimEligibleRoleAssignment#id}. |
+| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment.Initializer.parameter.justification">justification</a></code> | <code>str</code> | The justification for this eligible Role Assignment. |
 | <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment.Initializer.parameter.schedule">schedule</a></code> | <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentSchedule">PimEligibleRoleAssignmentSchedule</a></code> | schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment.Initializer.parameter.ticket">ticket</a></code> | <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentTicket">PimEligibleRoleAssignmentTicket</a></code> | ticket block. |
 | <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignment.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentTimeouts">PimEligibleRoleAssignmentTimeouts</a></code> | timeouts block. |
@@ -122,9 +122,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Object ID of the principal for this eligible role assignment.
+Object ID of the principal for this eligible Role Assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#principal_id PimEligibleRoleAssignment#principal_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#principal_id PimEligibleRoleAssignment#principal_id}
 
 ---
 
@@ -132,9 +132,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Role definition ID for this eligible role assignment.
+Role Definition ID for this eligible Role Assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#role_definition_id PimEligibleRoleAssignment#role_definition_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#role_definition_id PimEligibleRoleAssignment#role_definition_id}
 
 ---
 
@@ -142,9 +142,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Scope for this eligible role assignment, should be a valid resource ID.
+Scope for this eligible Role Assignment, should be a valid resource ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#scope PimEligibleRoleAssignment#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#scope PimEligibleRoleAssignment#scope}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#condition PimEligibleRoleAssignment#condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#condition PimEligibleRoleAssignment#condition}.
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#condition_version PimEligibleRoleAssignment#condition_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#condition_version PimEligibleRoleAssignment#condition_version}.
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#id PimEligibleRoleAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#id PimEligibleRoleAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -179,9 +179,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-The justification for this eligible role assignment.
+The justification for this eligible Role Assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#justification PimEligibleRoleAssignment#justification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#justification PimEligibleRoleAssignment#justification}
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#schedule PimEligibleRoleAssignment#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#schedule PimEligibleRoleAssignment#schedule}
 
 ---
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ticket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#ticket PimEligibleRoleAssignment#ticket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#ticket PimEligibleRoleAssignment#ticket}
 
 ---
 
@@ -211,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#timeouts PimEligibleRoleAssignment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#timeouts PimEligibleRoleAssignment#timeouts}
 
 ---
 
@@ -619,7 +619,7 @@ def put_schedule(
 
 expiration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#expiration PimEligibleRoleAssignment#expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#expiration PimEligibleRoleAssignment#expiration}
 
 ---
 
@@ -629,7 +629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The start date/time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#start_date_time PimEligibleRoleAssignment#start_date_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#start_date_time PimEligibleRoleAssignment#start_date_time}
 
 ---
 
@@ -648,7 +648,7 @@ def put_ticket(
 
 User-supplied ticket number to be included with the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#number PimEligibleRoleAssignment#number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#number PimEligibleRoleAssignment#number}
 
 ---
 
@@ -658,7 +658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User-supplied ticket system name to be included with the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#system PimEligibleRoleAssignment#system}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#system PimEligibleRoleAssignment#system}
 
 ---
 
@@ -676,7 +676,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#create PimEligibleRoleAssignment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#create PimEligibleRoleAssignment#create}.
 
 ---
 
@@ -684,7 +684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#delete PimEligibleRoleAssignment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#delete PimEligibleRoleAssignment#delete}.
 
 ---
 
@@ -692,7 +692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#read PimEligibleRoleAssignment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#read PimEligibleRoleAssignment#read}.
 
 ---
 
@@ -852,7 +852,7 @@ The construct id used in the generated config for the PimEligibleRoleAssignment 
 
 The id of the existing PimEligibleRoleAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1317,13 +1317,13 @@ pimEligibleRoleAssignment.PimEligibleRoleAssignmentConfig(
 | <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentConfig.property.principalId">principal_id</a></code> | <code>str</code> | Object ID of the principal for this eligible role assignment. |
-| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentConfig.property.roleDefinitionId">role_definition_id</a></code> | <code>str</code> | Role definition ID for this eligible role assignment. |
-| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentConfig.property.scope">scope</a></code> | <code>str</code> | Scope for this eligible role assignment, should be a valid resource ID. |
-| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentConfig.property.condition">condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#condition PimEligibleRoleAssignment#condition}. |
-| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentConfig.property.conditionVersion">condition_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#condition_version PimEligibleRoleAssignment#condition_version}. |
-| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#id PimEligibleRoleAssignment#id}. |
-| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentConfig.property.justification">justification</a></code> | <code>str</code> | The justification for this eligible role assignment. |
+| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentConfig.property.principalId">principal_id</a></code> | <code>str</code> | Object ID of the principal for this eligible Role Assignment. |
+| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentConfig.property.roleDefinitionId">role_definition_id</a></code> | <code>str</code> | Role Definition ID for this eligible Role Assignment. |
+| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentConfig.property.scope">scope</a></code> | <code>str</code> | Scope for this eligible Role Assignment, should be a valid resource ID. |
+| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentConfig.property.condition">condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#condition PimEligibleRoleAssignment#condition}. |
+| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentConfig.property.conditionVersion">condition_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#condition_version PimEligibleRoleAssignment#condition_version}. |
+| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#id PimEligibleRoleAssignment#id}. |
+| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentConfig.property.justification">justification</a></code> | <code>str</code> | The justification for this eligible Role Assignment. |
 | <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentConfig.property.schedule">schedule</a></code> | <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentSchedule">PimEligibleRoleAssignmentSchedule</a></code> | schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentConfig.property.ticket">ticket</a></code> | <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentTicket">PimEligibleRoleAssignmentTicket</a></code> | ticket block. |
 | <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentTimeouts">PimEligibleRoleAssignmentTimeouts</a></code> | timeouts block. |
@@ -1408,9 +1408,9 @@ principal_id: str
 
 - *Type:* str
 
-Object ID of the principal for this eligible role assignment.
+Object ID of the principal for this eligible Role Assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#principal_id PimEligibleRoleAssignment#principal_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#principal_id PimEligibleRoleAssignment#principal_id}
 
 ---
 
@@ -1422,9 +1422,9 @@ role_definition_id: str
 
 - *Type:* str
 
-Role definition ID for this eligible role assignment.
+Role Definition ID for this eligible Role Assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#role_definition_id PimEligibleRoleAssignment#role_definition_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#role_definition_id PimEligibleRoleAssignment#role_definition_id}
 
 ---
 
@@ -1436,9 +1436,9 @@ scope: str
 
 - *Type:* str
 
-Scope for this eligible role assignment, should be a valid resource ID.
+Scope for this eligible Role Assignment, should be a valid resource ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#scope PimEligibleRoleAssignment#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#scope PimEligibleRoleAssignment#scope}
 
 ---
 
@@ -1450,7 +1450,7 @@ condition: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#condition PimEligibleRoleAssignment#condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#condition PimEligibleRoleAssignment#condition}.
 
 ---
 
@@ -1462,7 +1462,7 @@ condition_version: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#condition_version PimEligibleRoleAssignment#condition_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#condition_version PimEligibleRoleAssignment#condition_version}.
 
 ---
 
@@ -1474,7 +1474,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#id PimEligibleRoleAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#id PimEligibleRoleAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1489,9 +1489,9 @@ justification: str
 
 - *Type:* str
 
-The justification for this eligible role assignment.
+The justification for this eligible Role Assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#justification PimEligibleRoleAssignment#justification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#justification PimEligibleRoleAssignment#justification}
 
 ---
 
@@ -1505,7 +1505,7 @@ schedule: PimEligibleRoleAssignmentSchedule
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#schedule PimEligibleRoleAssignment#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#schedule PimEligibleRoleAssignment#schedule}
 
 ---
 
@@ -1519,7 +1519,7 @@ ticket: PimEligibleRoleAssignmentTicket
 
 ticket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#ticket PimEligibleRoleAssignment#ticket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#ticket PimEligibleRoleAssignment#ticket}
 
 ---
 
@@ -1533,7 +1533,7 @@ timeouts: PimEligibleRoleAssignmentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#timeouts PimEligibleRoleAssignment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#timeouts PimEligibleRoleAssignment#timeouts}
 
 ---
 
@@ -1569,7 +1569,7 @@ expiration: PimEligibleRoleAssignmentScheduleExpiration
 
 expiration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#expiration PimEligibleRoleAssignment#expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#expiration PimEligibleRoleAssignment#expiration}
 
 ---
 
@@ -1583,7 +1583,7 @@ start_date_time: str
 
 The start date/time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#start_date_time PimEligibleRoleAssignment#start_date_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#start_date_time PimEligibleRoleAssignment#start_date_time}
 
 ---
 
@@ -1605,9 +1605,9 @@ pimEligibleRoleAssignment.PimEligibleRoleAssignmentScheduleExpiration(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentScheduleExpiration.property.durationDays">duration_days</a></code> | <code>typing.Union[int, float]</code> | The duration of the eligible role assignment in days. |
-| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentScheduleExpiration.property.durationHours">duration_hours</a></code> | <code>typing.Union[int, float]</code> | The duration of the eligible role assignment in hours. |
-| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentScheduleExpiration.property.endDateTime">end_date_time</a></code> | <code>str</code> | The end date/time of the eligible role assignment. |
+| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentScheduleExpiration.property.durationDays">duration_days</a></code> | <code>typing.Union[int, float]</code> | The duration of the eligible Role Assignment in days. |
+| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentScheduleExpiration.property.durationHours">duration_hours</a></code> | <code>typing.Union[int, float]</code> | The duration of the eligible Role Assignment in hours. |
+| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentScheduleExpiration.property.endDateTime">end_date_time</a></code> | <code>str</code> | The end date/time of the eligible Role Assignment. |
 
 ---
 
@@ -1619,9 +1619,9 @@ duration_days: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-The duration of the eligible role assignment in days.
+The duration of the eligible Role Assignment in days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#duration_days PimEligibleRoleAssignment#duration_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#duration_days PimEligibleRoleAssignment#duration_days}
 
 ---
 
@@ -1633,9 +1633,9 @@ duration_hours: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-The duration of the eligible role assignment in hours.
+The duration of the eligible Role Assignment in hours.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#duration_hours PimEligibleRoleAssignment#duration_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#duration_hours PimEligibleRoleAssignment#duration_hours}
 
 ---
 
@@ -1647,9 +1647,9 @@ end_date_time: str
 
 - *Type:* str
 
-The end date/time of the eligible role assignment.
+The end date/time of the eligible Role Assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#end_date_time PimEligibleRoleAssignment#end_date_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#end_date_time PimEligibleRoleAssignment#end_date_time}
 
 ---
 
@@ -1685,7 +1685,7 @@ number: str
 
 User-supplied ticket number to be included with the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#number PimEligibleRoleAssignment#number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#number PimEligibleRoleAssignment#number}
 
 ---
 
@@ -1699,7 +1699,7 @@ system_attribute: str
 
 User-supplied ticket system name to be included with the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#system PimEligibleRoleAssignment#system}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#system PimEligibleRoleAssignment#system}
 
 ---
 
@@ -1721,9 +1721,9 @@ pimEligibleRoleAssignment.PimEligibleRoleAssignmentTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#create PimEligibleRoleAssignment#create}. |
-| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#delete PimEligibleRoleAssignment#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#read PimEligibleRoleAssignment#read}. |
+| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#create PimEligibleRoleAssignment#create}. |
+| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#delete PimEligibleRoleAssignment#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.pimEligibleRoleAssignment.PimEligibleRoleAssignmentTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#read PimEligibleRoleAssignment#read}. |
 
 ---
 
@@ -1735,7 +1735,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#create PimEligibleRoleAssignment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#create PimEligibleRoleAssignment#create}.
 
 ---
 
@@ -1747,7 +1747,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#delete PimEligibleRoleAssignment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#delete PimEligibleRoleAssignment#delete}.
 
 ---
 
@@ -1759,7 +1759,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#read PimEligibleRoleAssignment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#read PimEligibleRoleAssignment#read}.
 
 ---
 
@@ -2371,9 +2371,9 @@ def put_expiration(
 
 - *Type:* typing.Union[int, float]
 
-The duration of the eligible role assignment in days.
+The duration of the eligible Role Assignment in days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#duration_days PimEligibleRoleAssignment#duration_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#duration_days PimEligibleRoleAssignment#duration_days}
 
 ---
 
@@ -2381,9 +2381,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-The duration of the eligible role assignment in hours.
+The duration of the eligible Role Assignment in hours.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#duration_hours PimEligibleRoleAssignment#duration_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#duration_hours PimEligibleRoleAssignment#duration_hours}
 
 ---
 
@@ -2391,9 +2391,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The end date/time of the eligible role assignment.
+The end date/time of the eligible Role Assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/pim_eligible_role_assignment#end_date_time PimEligibleRoleAssignment#end_date_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/pim_eligible_role_assignment#end_date_time PimEligibleRoleAssignment#end_date_time}
 
 ---
 

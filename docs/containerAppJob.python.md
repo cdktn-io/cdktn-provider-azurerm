@@ -4,7 +4,7 @@
 
 ### ContainerAppJob <a name="ContainerAppJob" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job azurerm_container_app_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job azurerm_container_app_job}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer"></a>
 
@@ -52,23 +52,23 @@ containerAppJob.ContainerAppJob(
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.containerAppEnvironmentId">container_app_environment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#container_app_environment_id ContainerAppJob#container_app_environment_id}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#location ContainerAppJob#location}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#name ContainerAppJob#name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.replicaTimeoutInSeconds">replica_timeout_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#replica_timeout_in_seconds ContainerAppJob#replica_timeout_in_seconds}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#resource_group_name ContainerAppJob#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.containerAppEnvironmentId">container_app_environment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#container_app_environment_id ContainerAppJob#container_app_environment_id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#location ContainerAppJob#location}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#name ContainerAppJob#name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.replicaTimeoutInSeconds">replica_timeout_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#replica_timeout_in_seconds ContainerAppJob#replica_timeout_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#resource_group_name ContainerAppJob#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.template">template</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplate">ContainerAppJobTemplate</a></code> | template block. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.eventTriggerConfig">event_trigger_config</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfig">ContainerAppJobEventTriggerConfig</a></code> | event_trigger_config block. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#id ContainerAppJob#id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#id ContainerAppJob#id}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobIdentity">ContainerAppJobIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.manualTriggerConfig">manual_trigger_config</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobManualTriggerConfig">ContainerAppJobManualTriggerConfig</a></code> | manual_trigger_config block. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.registry">registry</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistry">ContainerAppJobRegistry</a>]</code> | registry block. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.replicaRetryLimit">replica_retry_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#replica_retry_limit ContainerAppJob#replica_retry_limit}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.replicaRetryLimit">replica_retry_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#replica_retry_limit ContainerAppJob#replica_retry_limit}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.scheduleTriggerConfig">schedule_trigger_config</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobScheduleTriggerConfig">ContainerAppJobScheduleTriggerConfig</a></code> | schedule_trigger_config block. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.secret">secret</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret">ContainerAppJobSecret</a>]</code> | secret block. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#tags ContainerAppJob#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#tags ContainerAppJob#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeouts">ContainerAppJobTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.workloadProfileName">workload_profile_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#workload_profile_name ContainerAppJob#workload_profile_name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.Initializer.parameter.workloadProfileName">workload_profile_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#workload_profile_name ContainerAppJob#workload_profile_name}. |
 
 ---
 
@@ -136,7 +136,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#container_app_environment_id ContainerAppJob#container_app_environment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#container_app_environment_id ContainerAppJob#container_app_environment_id}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#location ContainerAppJob#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#location ContainerAppJob#location}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#name ContainerAppJob#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#name ContainerAppJob#name}.
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#replica_timeout_in_seconds ContainerAppJob#replica_timeout_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#replica_timeout_in_seconds ContainerAppJob#replica_timeout_in_seconds}.
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#resource_group_name ContainerAppJob#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#resource_group_name ContainerAppJob#resource_group_name}.
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#template ContainerAppJob#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#template ContainerAppJob#template}
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 event_trigger_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#event_trigger_config ContainerAppJob#event_trigger_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#event_trigger_config ContainerAppJob#event_trigger_config}
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#id ContainerAppJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#id ContainerAppJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -209,7 +209,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#identity ContainerAppJob#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#identity ContainerAppJob#identity}
 
 ---
 
@@ -219,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 manual_trigger_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#manual_trigger_config ContainerAppJob#manual_trigger_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#manual_trigger_config ContainerAppJob#manual_trigger_config}
 
 ---
 
@@ -229,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 registry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#registry ContainerAppJob#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#registry ContainerAppJob#registry}
 
 ---
 
@@ -237,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#replica_retry_limit ContainerAppJob#replica_retry_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#replica_retry_limit ContainerAppJob#replica_retry_limit}.
 
 ---
 
@@ -247,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 schedule_trigger_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#schedule_trigger_config ContainerAppJob#schedule_trigger_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#schedule_trigger_config ContainerAppJob#schedule_trigger_config}
 
 ---
 
@@ -257,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#secret ContainerAppJob#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#secret ContainerAppJob#secret}
 
 ---
 
@@ -265,7 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#tags ContainerAppJob#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#tags ContainerAppJob#tags}.
 
 ---
 
@@ -275,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#timeouts ContainerAppJob#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#timeouts ContainerAppJob#timeouts}
 
 ---
 
@@ -283,7 +283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#workload_profile_name ContainerAppJob#workload_profile_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#workload_profile_name ContainerAppJob#workload_profile_name}.
 
 ---
 
@@ -699,7 +699,7 @@ def put_event_trigger_config(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}.
 
 ---
 
@@ -707,7 +707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}.
 
 ---
 
@@ -717,7 +717,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 scale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#scale ContainerAppJob#scale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#scale ContainerAppJob#scale}
 
 ---
 
@@ -734,7 +734,7 @@ def put_identity(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#type ContainerAppJob#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#type ContainerAppJob#type}.
 
 ---
 
@@ -742,7 +742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#identity_ids ContainerAppJob#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#identity_ids ContainerAppJob#identity_ids}.
 
 ---
 
@@ -759,7 +759,7 @@ def put_manual_trigger_config(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}.
 
 ---
 
@@ -767,7 +767,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}.
 
 ---
 
@@ -799,7 +799,7 @@ def put_schedule_trigger_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#cron_expression ContainerAppJob#cron_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#cron_expression ContainerAppJob#cron_expression}.
 
 ---
 
@@ -807,7 +807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}.
 
 ---
 
@@ -815,7 +815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}.
 
 ---
 
@@ -849,7 +849,7 @@ def put_template(
 
 container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#container ContainerAppJob#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#container ContainerAppJob#container}
 
 ---
 
@@ -859,7 +859,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 init_container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#init_container ContainerAppJob#init_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#init_container ContainerAppJob#init_container}
 
 ---
 
@@ -869,7 +869,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#volume ContainerAppJob#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#volume ContainerAppJob#volume}
 
 ---
 
@@ -888,7 +888,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#create ContainerAppJob#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#create ContainerAppJob#create}.
 
 ---
 
@@ -896,7 +896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#delete ContainerAppJob#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#delete ContainerAppJob#delete}.
 
 ---
 
@@ -904,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#read ContainerAppJob#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#read ContainerAppJob#read}.
 
 ---
 
@@ -912,7 +912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#update ContainerAppJob#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#update ContainerAppJob#update}.
 
 ---
 
@@ -1096,7 +1096,7 @@ The construct id used in the generated config for the ContainerAppJob to import.
 
 The id of the existing ContainerAppJob that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1733,23 +1733,23 @@ containerAppJob.ContainerAppJobConfig(
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.containerAppEnvironmentId">container_app_environment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#container_app_environment_id ContainerAppJob#container_app_environment_id}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#location ContainerAppJob#location}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#name ContainerAppJob#name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.replicaTimeoutInSeconds">replica_timeout_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#replica_timeout_in_seconds ContainerAppJob#replica_timeout_in_seconds}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#resource_group_name ContainerAppJob#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.containerAppEnvironmentId">container_app_environment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#container_app_environment_id ContainerAppJob#container_app_environment_id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#location ContainerAppJob#location}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#name ContainerAppJob#name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.replicaTimeoutInSeconds">replica_timeout_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#replica_timeout_in_seconds ContainerAppJob#replica_timeout_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#resource_group_name ContainerAppJob#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.template">template</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplate">ContainerAppJobTemplate</a></code> | template block. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.eventTriggerConfig">event_trigger_config</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfig">ContainerAppJobEventTriggerConfig</a></code> | event_trigger_config block. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#id ContainerAppJob#id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#id ContainerAppJob#id}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobIdentity">ContainerAppJobIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.manualTriggerConfig">manual_trigger_config</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobManualTriggerConfig">ContainerAppJobManualTriggerConfig</a></code> | manual_trigger_config block. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.registry">registry</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistry">ContainerAppJobRegistry</a>]</code> | registry block. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.replicaRetryLimit">replica_retry_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#replica_retry_limit ContainerAppJob#replica_retry_limit}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.replicaRetryLimit">replica_retry_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#replica_retry_limit ContainerAppJob#replica_retry_limit}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.scheduleTriggerConfig">schedule_trigger_config</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobScheduleTriggerConfig">ContainerAppJobScheduleTriggerConfig</a></code> | schedule_trigger_config block. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.secret">secret</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret">ContainerAppJobSecret</a>]</code> | secret block. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#tags ContainerAppJob#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#tags ContainerAppJob#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeouts">ContainerAppJobTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.workloadProfileName">workload_profile_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#workload_profile_name ContainerAppJob#workload_profile_name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.workloadProfileName">workload_profile_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#workload_profile_name ContainerAppJob#workload_profile_name}. |
 
 ---
 
@@ -1831,7 +1831,7 @@ container_app_environment_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#container_app_environment_id ContainerAppJob#container_app_environment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#container_app_environment_id ContainerAppJob#container_app_environment_id}.
 
 ---
 
@@ -1843,7 +1843,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#location ContainerAppJob#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#location ContainerAppJob#location}.
 
 ---
 
@@ -1855,7 +1855,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#name ContainerAppJob#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#name ContainerAppJob#name}.
 
 ---
 
@@ -1867,7 +1867,7 @@ replica_timeout_in_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#replica_timeout_in_seconds ContainerAppJob#replica_timeout_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#replica_timeout_in_seconds ContainerAppJob#replica_timeout_in_seconds}.
 
 ---
 
@@ -1879,7 +1879,7 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#resource_group_name ContainerAppJob#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#resource_group_name ContainerAppJob#resource_group_name}.
 
 ---
 
@@ -1893,7 +1893,7 @@ template: ContainerAppJobTemplate
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#template ContainerAppJob#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#template ContainerAppJob#template}
 
 ---
 
@@ -1907,7 +1907,7 @@ event_trigger_config: ContainerAppJobEventTriggerConfig
 
 event_trigger_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#event_trigger_config ContainerAppJob#event_trigger_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#event_trigger_config ContainerAppJob#event_trigger_config}
 
 ---
 
@@ -1919,7 +1919,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#id ContainerAppJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#id ContainerAppJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1936,7 +1936,7 @@ identity: ContainerAppJobIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#identity ContainerAppJob#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#identity ContainerAppJob#identity}
 
 ---
 
@@ -1950,7 +1950,7 @@ manual_trigger_config: ContainerAppJobManualTriggerConfig
 
 manual_trigger_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#manual_trigger_config ContainerAppJob#manual_trigger_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#manual_trigger_config ContainerAppJob#manual_trigger_config}
 
 ---
 
@@ -1964,7 +1964,7 @@ registry: IResolvable | typing.List[ContainerAppJobRegistry]
 
 registry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#registry ContainerAppJob#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#registry ContainerAppJob#registry}
 
 ---
 
@@ -1976,7 +1976,7 @@ replica_retry_limit: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#replica_retry_limit ContainerAppJob#replica_retry_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#replica_retry_limit ContainerAppJob#replica_retry_limit}.
 
 ---
 
@@ -1990,7 +1990,7 @@ schedule_trigger_config: ContainerAppJobScheduleTriggerConfig
 
 schedule_trigger_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#schedule_trigger_config ContainerAppJob#schedule_trigger_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#schedule_trigger_config ContainerAppJob#schedule_trigger_config}
 
 ---
 
@@ -2004,7 +2004,7 @@ secret: IResolvable | typing.List[ContainerAppJobSecret]
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#secret ContainerAppJob#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#secret ContainerAppJob#secret}
 
 ---
 
@@ -2016,7 +2016,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#tags ContainerAppJob#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#tags ContainerAppJob#tags}.
 
 ---
 
@@ -2030,7 +2030,7 @@ timeouts: ContainerAppJobTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#timeouts ContainerAppJob#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#timeouts ContainerAppJob#timeouts}
 
 ---
 
@@ -2042,7 +2042,7 @@ workload_profile_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#workload_profile_name ContainerAppJob#workload_profile_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#workload_profile_name ContainerAppJob#workload_profile_name}.
 
 ---
 
@@ -2064,8 +2064,8 @@ containerAppJob.ContainerAppJobEventTriggerConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfig.property.parallelism">parallelism</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfig.property.replicaCompletionCount">replica_completion_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfig.property.parallelism">parallelism</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfig.property.replicaCompletionCount">replica_completion_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfig.property.scale">scale</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale">ContainerAppJobEventTriggerConfigScale</a>]</code> | scale block. |
 
 ---
@@ -2078,7 +2078,7 @@ parallelism: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}.
 
 ---
 
@@ -2090,7 +2090,7 @@ replica_completion_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}.
 
 ---
 
@@ -2104,7 +2104,7 @@ scale: IResolvable | typing.List[ContainerAppJobEventTriggerConfigScale]
 
 scale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#scale ContainerAppJob#scale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#scale ContainerAppJob#scale}
 
 ---
 
@@ -2127,9 +2127,9 @@ containerAppJob.ContainerAppJobEventTriggerConfigScale(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale.property.maxExecutions">max_executions</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#max_executions ContainerAppJob#max_executions}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale.property.minExecutions">min_executions</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#min_executions ContainerAppJob#min_executions}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale.property.pollingIntervalInSeconds">polling_interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#polling_interval_in_seconds ContainerAppJob#polling_interval_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale.property.maxExecutions">max_executions</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#max_executions ContainerAppJob#max_executions}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale.property.minExecutions">min_executions</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#min_executions ContainerAppJob#min_executions}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale.property.pollingIntervalInSeconds">polling_interval_in_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#polling_interval_in_seconds ContainerAppJob#polling_interval_in_seconds}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale.property.rules">rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules">ContainerAppJobEventTriggerConfigScaleRules</a>]</code> | rules block. |
 
 ---
@@ -2142,7 +2142,7 @@ max_executions: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#max_executions ContainerAppJob#max_executions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#max_executions ContainerAppJob#max_executions}.
 
 ---
 
@@ -2154,7 +2154,7 @@ min_executions: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#min_executions ContainerAppJob#min_executions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#min_executions ContainerAppJob#min_executions}.
 
 ---
 
@@ -2166,7 +2166,7 @@ polling_interval_in_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#polling_interval_in_seconds ContainerAppJob#polling_interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#polling_interval_in_seconds ContainerAppJob#polling_interval_in_seconds}.
 
 ---
 
@@ -2180,7 +2180,7 @@ rules: IResolvable | typing.List[ContainerAppJobEventTriggerConfigScaleRules]
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#rules ContainerAppJob#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#rules ContainerAppJob#rules}
 
 ---
 
@@ -2204,9 +2204,9 @@ containerAppJob.ContainerAppJobEventTriggerConfigScaleRules(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules.property.customRuleType">custom_rule_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#custom_rule_type ContainerAppJob#custom_rule_type}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#metadata ContainerAppJob#metadata}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#name ContainerAppJob#name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules.property.customRuleType">custom_rule_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#custom_rule_type ContainerAppJob#custom_rule_type}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#metadata ContainerAppJob#metadata}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#name ContainerAppJob#name}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules.property.authentication">authentication</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication">ContainerAppJobEventTriggerConfigScaleRulesAuthentication</a>]</code> | authentication block. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules.property.identityId">identity_id</a></code> | <code>str</code> | ID of the System or User Managed Identity used to execute scale rule. |
 
@@ -2220,7 +2220,7 @@ custom_rule_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#custom_rule_type ContainerAppJob#custom_rule_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#custom_rule_type ContainerAppJob#custom_rule_type}.
 
 ---
 
@@ -2232,7 +2232,7 @@ metadata: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#metadata ContainerAppJob#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#metadata ContainerAppJob#metadata}.
 
 ---
 
@@ -2244,7 +2244,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#name ContainerAppJob#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#name ContainerAppJob#name}.
 
 ---
 
@@ -2258,7 +2258,7 @@ authentication: IResolvable | typing.List[ContainerAppJobEventTriggerConfigScale
 
 authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#authentication ContainerAppJob#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#authentication ContainerAppJob#authentication}
 
 ---
 
@@ -2272,7 +2272,7 @@ identity_id: str
 
 ID of the System or User Managed Identity used to execute scale rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#identity_id ContainerAppJob#identity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#identity_id ContainerAppJob#identity_id}
 
 ---
 
@@ -2293,8 +2293,8 @@ containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication.property.secretName">secret_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#secret_name ContainerAppJob#secret_name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication.property.triggerParameter">trigger_parameter</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#trigger_parameter ContainerAppJob#trigger_parameter}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication.property.secretName">secret_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#secret_name ContainerAppJob#secret_name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication.property.triggerParameter">trigger_parameter</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#trigger_parameter ContainerAppJob#trigger_parameter}. |
 
 ---
 
@@ -2306,7 +2306,7 @@ secret_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#secret_name ContainerAppJob#secret_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#secret_name ContainerAppJob#secret_name}.
 
 ---
 
@@ -2318,7 +2318,7 @@ trigger_parameter: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#trigger_parameter ContainerAppJob#trigger_parameter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#trigger_parameter ContainerAppJob#trigger_parameter}.
 
 ---
 
@@ -2339,8 +2339,8 @@ containerAppJob.ContainerAppJobIdentity(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobIdentity.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#type ContainerAppJob#type}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobIdentity.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#identity_ids ContainerAppJob#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobIdentity.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#type ContainerAppJob#type}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobIdentity.property.identityIds">identity_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#identity_ids ContainerAppJob#identity_ids}. |
 
 ---
 
@@ -2352,7 +2352,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#type ContainerAppJob#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#type ContainerAppJob#type}.
 
 ---
 
@@ -2364,7 +2364,7 @@ identity_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#identity_ids ContainerAppJob#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#identity_ids ContainerAppJob#identity_ids}.
 
 ---
 
@@ -2385,8 +2385,8 @@ containerAppJob.ContainerAppJobManualTriggerConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobManualTriggerConfig.property.parallelism">parallelism</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobManualTriggerConfig.property.replicaCompletionCount">replica_completion_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobManualTriggerConfig.property.parallelism">parallelism</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobManualTriggerConfig.property.replicaCompletionCount">replica_completion_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}. |
 
 ---
 
@@ -2398,7 +2398,7 @@ parallelism: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}.
 
 ---
 
@@ -2410,7 +2410,7 @@ replica_completion_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}.
 
 ---
 
@@ -2450,7 +2450,7 @@ server: str
 
 The hostname for the Container Registry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#server ContainerAppJob#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#server ContainerAppJob#server}
 
 ---
 
@@ -2464,7 +2464,7 @@ identity: str
 
 ID of the System or User Managed Identity used to pull images from the Container Registry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#identity ContainerAppJob#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#identity ContainerAppJob#identity}
 
 ---
 
@@ -2478,7 +2478,7 @@ password_secret_name: str
 
 The name of the Secret Reference containing the password value for this user on the Container Registry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#password_secret_name ContainerAppJob#password_secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#password_secret_name ContainerAppJob#password_secret_name}
 
 ---
 
@@ -2492,7 +2492,7 @@ username: str
 
 The username to use for this Container Registry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#username ContainerAppJob#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#username ContainerAppJob#username}
 
 ---
 
@@ -2514,9 +2514,9 @@ containerAppJob.ContainerAppJobScheduleTriggerConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobScheduleTriggerConfig.property.cronExpression">cron_expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#cron_expression ContainerAppJob#cron_expression}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobScheduleTriggerConfig.property.parallelism">parallelism</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobScheduleTriggerConfig.property.replicaCompletionCount">replica_completion_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobScheduleTriggerConfig.property.cronExpression">cron_expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#cron_expression ContainerAppJob#cron_expression}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobScheduleTriggerConfig.property.parallelism">parallelism</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobScheduleTriggerConfig.property.replicaCompletionCount">replica_completion_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}. |
 
 ---
 
@@ -2528,7 +2528,7 @@ cron_expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#cron_expression ContainerAppJob#cron_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#cron_expression ContainerAppJob#cron_expression}.
 
 ---
 
@@ -2540,7 +2540,7 @@ parallelism: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}.
 
 ---
 
@@ -2552,7 +2552,7 @@ replica_completion_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}.
 
 ---
 
@@ -2576,7 +2576,7 @@ containerAppJob.ContainerAppJobSecret(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret.property.name">name</a></code> | <code>str</code> | The secret name. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret.property.identity">identity</a></code> | <code>str</code> | The identity to use for accessing key vault reference. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret.property.identity">identity</a></code> | <code>str</code> | The identity to use for accessing Key Vault reference. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret.property.keyVaultSecretId">key_vault_secret_id</a></code> | <code>str</code> | The Key Vault Secret ID. Could be either one of `id` or `versionless_id`. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret.property.value">value</a></code> | <code>str</code> | The value for this secret. |
 
@@ -2592,7 +2592,7 @@ name: str
 
 The secret name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#name ContainerAppJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#name ContainerAppJob#name}
 
 ---
 
@@ -2604,9 +2604,9 @@ identity: str
 
 - *Type:* str
 
-The identity to use for accessing key vault reference.
+The identity to use for accessing Key Vault reference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#identity ContainerAppJob#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#identity ContainerAppJob#identity}
 
 ---
 
@@ -2620,7 +2620,7 @@ key_vault_secret_id: str
 
 The Key Vault Secret ID. Could be either one of `id` or `versionless_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#key_vault_secret_id ContainerAppJob#key_vault_secret_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#key_vault_secret_id ContainerAppJob#key_vault_secret_id}
 
 ---
 
@@ -2634,7 +2634,7 @@ value: str
 
 The value for this secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#value ContainerAppJob#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#value ContainerAppJob#value}
 
 ---
 
@@ -2672,7 +2672,7 @@ container: IResolvable | typing.List[ContainerAppJobTemplateContainer]
 
 container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#container ContainerAppJob#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#container ContainerAppJob#container}
 
 ---
 
@@ -2686,7 +2686,7 @@ init_container: IResolvable | typing.List[ContainerAppJobTemplateInitContainer]
 
 init_container block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#init_container ContainerAppJob#init_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#init_container ContainerAppJob#init_container}
 
 ---
 
@@ -2700,7 +2700,7 @@ volume: IResolvable | typing.List[ContainerAppJobTemplateVolume]
 
 volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#volume ContainerAppJob#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#volume ContainerAppJob#volume}
 
 ---
 
@@ -2754,7 +2754,7 @@ cpu: typing.Union[int, float]
 
 The amount of vCPU to allocate to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#cpu ContainerAppJob#cpu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#cpu ContainerAppJob#cpu}
 
 ---
 
@@ -2768,7 +2768,7 @@ image: str
 
 The image to use to create the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#image ContainerAppJob#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#image ContainerAppJob#image}
 
 ---
 
@@ -2782,7 +2782,7 @@ memory: str
 
 The amount of memory to allocate to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#memory ContainerAppJob#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#memory ContainerAppJob#memory}
 
 ---
 
@@ -2796,7 +2796,7 @@ name: str
 
 The name of the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#name ContainerAppJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#name ContainerAppJob#name}
 
 ---
 
@@ -2810,7 +2810,7 @@ args: typing.List[str]
 
 A list of args to pass to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#args ContainerAppJob#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#args ContainerAppJob#args}
 
 ---
 
@@ -2826,7 +2826,7 @@ A command to pass to the container to override the default.
 
 This is provided as a list of command line elements without spaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#command ContainerAppJob#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#command ContainerAppJob#command}
 
 ---
 
@@ -2840,7 +2840,7 @@ env: IResolvable | typing.List[ContainerAppJobTemplateContainerEnv]
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#env ContainerAppJob#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#env ContainerAppJob#env}
 
 ---
 
@@ -2854,7 +2854,7 @@ liveness_probe: IResolvable | typing.List[ContainerAppJobTemplateContainerLivene
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#liveness_probe ContainerAppJob#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#liveness_probe ContainerAppJob#liveness_probe}
 
 ---
 
@@ -2868,7 +2868,7 @@ readiness_probe: IResolvable | typing.List[ContainerAppJobTemplateContainerReadi
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#readiness_probe ContainerAppJob#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#readiness_probe ContainerAppJob#readiness_probe}
 
 ---
 
@@ -2882,7 +2882,7 @@ startup_probe: IResolvable | typing.List[ContainerAppJobTemplateContainerStartup
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#startup_probe ContainerAppJob#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#startup_probe ContainerAppJob#startup_probe}
 
 ---
 
@@ -2896,7 +2896,7 @@ volume_mounts: IResolvable | typing.List[ContainerAppJobTemplateContainerVolumeM
 
 volume_mounts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#volume_mounts ContainerAppJob#volume_mounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#volume_mounts ContainerAppJob#volume_mounts}
 
 ---
 
@@ -2934,7 +2934,7 @@ name: str
 
 The name of the environment variable for the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#name ContainerAppJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#name ContainerAppJob#name}
 
 ---
 
@@ -2948,7 +2948,7 @@ secret_name: str
 
 The name of the secret that contains the value for this environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#secret_name ContainerAppJob#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#secret_name ContainerAppJob#secret_name}
 
 ---
 
@@ -2962,7 +2962,7 @@ value: str
 
 The value for this environment variable. **NOTE:** This value is ignored if `secret_name` is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#value ContainerAppJob#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#value ContainerAppJob#value}
 
 ---
 
@@ -2990,15 +2990,15 @@ containerAppJob.ContainerAppJobTemplateContainerLivenessProbe(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.port">port</a></code> | <code>typing.Union[int, float]</code> | The port number on which to connect. Possible values are between `1` and `65535`. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.transport">transport</a></code> | <code>str</code> | Type of probe. Possible values are `TCP`, `HTTP`, and `HTTPS`. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.port">port</a></code> | <code>typing.Union[int, float]</code> | The port number on which to connect. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.transport">transport</a></code> | <code>str</code> | Type of probe. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.failureCountThreshold">failure_count_threshold</a></code> | <code>typing.Union[int, float]</code> | The number of consecutive failures required to consider this probe as failed. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.header">header</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeader">ContainerAppJobTemplateContainerLivenessProbeHeader</a>]</code> | header block. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.host">host</a></code> | <code>str</code> | The probe hostname. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.initialDelay">initial_delay</a></code> | <code>typing.Union[int, float]</code> | The number of seconds elapsed after the container has started before the probe is initiated. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.intervalSeconds">interval_seconds</a></code> | <code>typing.Union[int, float]</code> | How often, in seconds, the probe should run. Possible values are between `1` and `240`. Defaults to `10`. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.path">path</a></code> | <code>str</code> | The URI to use with the `host` for http type probes. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.timeout">timeout</a></code> | <code>typing.Union[int, float]</code> | Time in seconds after which the probe times out. Possible values are between `1` an `240`. Defaults to `1`. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.intervalSeconds">interval_seconds</a></code> | <code>typing.Union[int, float]</code> | How often, in seconds, the probe should run. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.path">path</a></code> | <code>str</code> | The URI to use with the `host` for HTTP type probes. Not valid for `TCP` type probes. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.timeout">timeout</a></code> | <code>typing.Union[int, float]</code> | Time in seconds after which the probe times out. |
 
 ---
 
@@ -3010,9 +3010,9 @@ port: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-The port number on which to connect. Possible values are between `1` and `65535`.
+The port number on which to connect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#port ContainerAppJob#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#port ContainerAppJob#port}
 
 ---
 
@@ -3024,9 +3024,9 @@ transport: str
 
 - *Type:* str
 
-Type of probe. Possible values are `TCP`, `HTTP`, and `HTTPS`.
+Type of probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#transport ContainerAppJob#transport}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#transport ContainerAppJob#transport}
 
 ---
 
@@ -3040,9 +3040,7 @@ failure_count_threshold: typing.Union[int, float]
 
 The number of consecutive failures required to consider this probe as failed.
 
-Possible values are between `1` and `30`. Defaults to `3`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#failure_count_threshold ContainerAppJob#failure_count_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#failure_count_threshold ContainerAppJob#failure_count_threshold}
 
 ---
 
@@ -3056,7 +3054,7 @@ header: IResolvable | typing.List[ContainerAppJobTemplateContainerLivenessProbeH
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#header ContainerAppJob#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#header ContainerAppJob#header}
 
 ---
 
@@ -3072,7 +3070,7 @@ The probe hostname.
 
 Defaults to the pod IP address. Setting a value for `Host` in `headers` can be used to override this for `http` and `https` type probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#host ContainerAppJob#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#host ContainerAppJob#host}
 
 ---
 
@@ -3086,9 +3084,7 @@ initial_delay: typing.Union[int, float]
 
 The number of seconds elapsed after the container has started before the probe is initiated.
 
-Possible values are between `0` and `60`. Defaults to `1` seconds.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#initial_delay ContainerAppJob#initial_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#initial_delay ContainerAppJob#initial_delay}
 
 ---
 
@@ -3100,9 +3096,9 @@ interval_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-How often, in seconds, the probe should run. Possible values are between `1` and `240`. Defaults to `10`.
+How often, in seconds, the probe should run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#interval_seconds ContainerAppJob#interval_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#interval_seconds ContainerAppJob#interval_seconds}
 
 ---
 
@@ -3114,11 +3110,9 @@ path: str
 
 - *Type:* str
 
-The URI to use with the `host` for http type probes.
+The URI to use with the `host` for HTTP type probes. Not valid for `TCP` type probes.
 
-Not valid for `TCP` type probes. Defaults to `/`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#path ContainerAppJob#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#path ContainerAppJob#path}
 
 ---
 
@@ -3130,9 +3124,9 @@ timeout: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Time in seconds after which the probe times out. Possible values are between `1` an `240`. Defaults to `1`.
+Time in seconds after which the probe times out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#timeout ContainerAppJob#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#timeout ContainerAppJob#timeout}
 
 ---
 
@@ -3168,7 +3162,7 @@ name: str
 
 The HTTP Header Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#name ContainerAppJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#name ContainerAppJob#name}
 
 ---
 
@@ -3182,7 +3176,7 @@ value: str
 
 The HTTP Header value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#value ContainerAppJob#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#value ContainerAppJob#value}
 
 ---
 
@@ -3211,16 +3205,16 @@ containerAppJob.ContainerAppJobTemplateContainerReadinessProbe(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.port">port</a></code> | <code>typing.Union[int, float]</code> | The port number on which to connect. Possible values are between `1` and `65535`. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.transport">transport</a></code> | <code>str</code> | Type of probe. Possible values are `TCP`, `HTTP`, and `HTTPS`. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.port">port</a></code> | <code>typing.Union[int, float]</code> | The port number on which to connect. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.transport">transport</a></code> | <code>str</code> | Type of probe. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.failureCountThreshold">failure_count_threshold</a></code> | <code>typing.Union[int, float]</code> | The number of consecutive failures required to consider this probe as failed. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.header">header</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeader">ContainerAppJobTemplateContainerReadinessProbeHeader</a>]</code> | header block. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.host">host</a></code> | <code>str</code> | The probe hostname. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.initialDelay">initial_delay</a></code> | <code>typing.Union[int, float]</code> | The number of seconds elapsed after the container has started before the probe is initiated. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.intervalSeconds">interval_seconds</a></code> | <code>typing.Union[int, float]</code> | How often, in seconds, the probe should run. Possible values are between `1` and `240`. Defaults to `10`. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.path">path</a></code> | <code>str</code> | The URI to use for http type probes. Not valid for `TCP` type probes. Defaults to `/`. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.intervalSeconds">interval_seconds</a></code> | <code>typing.Union[int, float]</code> | How often, in seconds, the probe should run. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.path">path</a></code> | <code>str</code> | The URI to use for HTTP type probes. Not valid for `TCP` type probes. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.successCountThreshold">success_count_threshold</a></code> | <code>typing.Union[int, float]</code> | The number of consecutive successful responses required to consider this probe as successful. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.timeout">timeout</a></code> | <code>typing.Union[int, float]</code> | Time in seconds after which the probe times out. Possible values are between `1` an `240`. Defaults to `1`. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.timeout">timeout</a></code> | <code>typing.Union[int, float]</code> | Time in seconds after which the probe times out. |
 
 ---
 
@@ -3232,9 +3226,9 @@ port: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-The port number on which to connect. Possible values are between `1` and `65535`.
+The port number on which to connect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#port ContainerAppJob#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#port ContainerAppJob#port}
 
 ---
 
@@ -3246,9 +3240,9 @@ transport: str
 
 - *Type:* str
 
-Type of probe. Possible values are `TCP`, `HTTP`, and `HTTPS`.
+Type of probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#transport ContainerAppJob#transport}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#transport ContainerAppJob#transport}
 
 ---
 
@@ -3262,9 +3256,7 @@ failure_count_threshold: typing.Union[int, float]
 
 The number of consecutive failures required to consider this probe as failed.
 
-Possible values are between `1` and `48`. Defaults to `3`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#failure_count_threshold ContainerAppJob#failure_count_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#failure_count_threshold ContainerAppJob#failure_count_threshold}
 
 ---
 
@@ -3278,7 +3270,7 @@ header: IResolvable | typing.List[ContainerAppJobTemplateContainerReadinessProbe
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#header ContainerAppJob#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#header ContainerAppJob#header}
 
 ---
 
@@ -3294,7 +3286,7 @@ The probe hostname.
 
 Defaults to the pod IP address. Setting a value for `Host` in `headers` can be used to override this for `http` and `https` type probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#host ContainerAppJob#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#host ContainerAppJob#host}
 
 ---
 
@@ -3308,9 +3300,7 @@ initial_delay: typing.Union[int, float]
 
 The number of seconds elapsed after the container has started before the probe is initiated.
 
-Possible values are between `0` and `60`. Defaults to `0` seconds.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#initial_delay ContainerAppJob#initial_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#initial_delay ContainerAppJob#initial_delay}
 
 ---
 
@@ -3322,9 +3312,9 @@ interval_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-How often, in seconds, the probe should run. Possible values are between `1` and `240`. Defaults to `10`.
+How often, in seconds, the probe should run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#interval_seconds ContainerAppJob#interval_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#interval_seconds ContainerAppJob#interval_seconds}
 
 ---
 
@@ -3336,9 +3326,9 @@ path: str
 
 - *Type:* str
 
-The URI to use for http type probes. Not valid for `TCP` type probes. Defaults to `/`.
+The URI to use for HTTP type probes. Not valid for `TCP` type probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#path ContainerAppJob#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#path ContainerAppJob#path}
 
 ---
 
@@ -3352,9 +3342,7 @@ success_count_threshold: typing.Union[int, float]
 
 The number of consecutive successful responses required to consider this probe as successful.
 
-Possible values are between `1` and `10`. Defaults to `3`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#success_count_threshold ContainerAppJob#success_count_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#success_count_threshold ContainerAppJob#success_count_threshold}
 
 ---
 
@@ -3366,9 +3354,9 @@ timeout: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Time in seconds after which the probe times out. Possible values are between `1` an `240`. Defaults to `1`.
+Time in seconds after which the probe times out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#timeout ContainerAppJob#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#timeout ContainerAppJob#timeout}
 
 ---
 
@@ -3404,7 +3392,7 @@ name: str
 
 The HTTP Header Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#name ContainerAppJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#name ContainerAppJob#name}
 
 ---
 
@@ -3418,7 +3406,7 @@ value: str
 
 The HTTP Header value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#value ContainerAppJob#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#value ContainerAppJob#value}
 
 ---
 
@@ -3446,15 +3434,15 @@ containerAppJob.ContainerAppJobTemplateContainerStartupProbe(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.port">port</a></code> | <code>typing.Union[int, float]</code> | The port number on which to connect. Possible values are between `1` and `65535`. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.transport">transport</a></code> | <code>str</code> | Type of probe. Possible values are `TCP`, `HTTP`, and `HTTPS`. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.port">port</a></code> | <code>typing.Union[int, float]</code> | The port number on which to connect. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.transport">transport</a></code> | <code>str</code> | Type of probe. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.failureCountThreshold">failure_count_threshold</a></code> | <code>typing.Union[int, float]</code> | The number of consecutive failures required to consider this probe as failed. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.header">header</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeader">ContainerAppJobTemplateContainerStartupProbeHeader</a>]</code> | header block. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.host">host</a></code> | <code>str</code> | The probe hostname. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.initialDelay">initial_delay</a></code> | <code>typing.Union[int, float]</code> | The number of seconds elapsed after the container has started before the probe is initiated. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.intervalSeconds">interval_seconds</a></code> | <code>typing.Union[int, float]</code> | How often, in seconds, the probe should run. Possible values are between `1` and `240`. Defaults to `10`. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.path">path</a></code> | <code>str</code> | The URI to use with the `host` for http type probes. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.timeout">timeout</a></code> | <code>typing.Union[int, float]</code> | Time in seconds after which the probe times out. Possible values are between `1` an `240`. Defaults to `1`. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.intervalSeconds">interval_seconds</a></code> | <code>typing.Union[int, float]</code> | How often, in seconds, the probe should run. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.path">path</a></code> | <code>str</code> | The URI to use with the `host` for HTTP type probes. Not valid for `TCP` type probes. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.timeout">timeout</a></code> | <code>typing.Union[int, float]</code> | Time in seconds after which the probe times out. |
 
 ---
 
@@ -3466,9 +3454,9 @@ port: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-The port number on which to connect. Possible values are between `1` and `65535`.
+The port number on which to connect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#port ContainerAppJob#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#port ContainerAppJob#port}
 
 ---
 
@@ -3480,9 +3468,9 @@ transport: str
 
 - *Type:* str
 
-Type of probe. Possible values are `TCP`, `HTTP`, and `HTTPS`.
+Type of probe.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#transport ContainerAppJob#transport}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#transport ContainerAppJob#transport}
 
 ---
 
@@ -3496,9 +3484,7 @@ failure_count_threshold: typing.Union[int, float]
 
 The number of consecutive failures required to consider this probe as failed.
 
-Possible values are between `1` and `240`. Defaults to `3`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#failure_count_threshold ContainerAppJob#failure_count_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#failure_count_threshold ContainerAppJob#failure_count_threshold}
 
 ---
 
@@ -3512,7 +3498,7 @@ header: IResolvable | typing.List[ContainerAppJobTemplateContainerStartupProbeHe
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#header ContainerAppJob#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#header ContainerAppJob#header}
 
 ---
 
@@ -3528,7 +3514,7 @@ The probe hostname.
 
 Defaults to the pod IP address. Setting a value for `Host` in `headers` can be used to override this for `http` and `https` type probes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#host ContainerAppJob#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#host ContainerAppJob#host}
 
 ---
 
@@ -3542,9 +3528,7 @@ initial_delay: typing.Union[int, float]
 
 The number of seconds elapsed after the container has started before the probe is initiated.
 
-Possible values are between `0` and `60`. Defaults to `0` seconds.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#initial_delay ContainerAppJob#initial_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#initial_delay ContainerAppJob#initial_delay}
 
 ---
 
@@ -3556,9 +3540,9 @@ interval_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-How often, in seconds, the probe should run. Possible values are between `1` and `240`. Defaults to `10`.
+How often, in seconds, the probe should run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#interval_seconds ContainerAppJob#interval_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#interval_seconds ContainerAppJob#interval_seconds}
 
 ---
 
@@ -3570,11 +3554,9 @@ path: str
 
 - *Type:* str
 
-The URI to use with the `host` for http type probes.
+The URI to use with the `host` for HTTP type probes. Not valid for `TCP` type probes.
 
-Not valid for `TCP` type probes. Defaults to `/`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#path ContainerAppJob#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#path ContainerAppJob#path}
 
 ---
 
@@ -3586,9 +3568,9 @@ timeout: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Time in seconds after which the probe times out. Possible values are between `1` an `240`. Defaults to `1`.
+Time in seconds after which the probe times out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#timeout ContainerAppJob#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#timeout ContainerAppJob#timeout}
 
 ---
 
@@ -3624,7 +3606,7 @@ name: str
 
 The HTTP Header Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#name ContainerAppJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#name ContainerAppJob#name}
 
 ---
 
@@ -3638,7 +3620,7 @@ value: str
 
 The HTTP Header value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#value ContainerAppJob#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#value ContainerAppJob#value}
 
 ---
 
@@ -3676,7 +3658,7 @@ name: str
 
 The name of the Volume to be mounted in the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#name ContainerAppJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#name ContainerAppJob#name}
 
 ---
 
@@ -3690,7 +3672,7 @@ path: str
 
 The path in the container at which to mount this volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#path ContainerAppJob#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#path ContainerAppJob#path}
 
 ---
 
@@ -3704,7 +3686,7 @@ sub_path: str
 
 The sub path of the volume to be mounted in the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#sub_path ContainerAppJob#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#sub_path ContainerAppJob#sub_path}
 
 ---
 
@@ -3752,7 +3734,7 @@ image: str
 
 The image to use to create the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#image ContainerAppJob#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#image ContainerAppJob#image}
 
 ---
 
@@ -3766,7 +3748,7 @@ name: str
 
 The name of the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#name ContainerAppJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#name ContainerAppJob#name}
 
 ---
 
@@ -3780,7 +3762,7 @@ args: typing.List[str]
 
 A list of args to pass to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#args ContainerAppJob#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#args ContainerAppJob#args}
 
 ---
 
@@ -3796,7 +3778,7 @@ A command to pass to the container to override the default.
 
 This is provided as a list of command line elements without spaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#command ContainerAppJob#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#command ContainerAppJob#command}
 
 ---
 
@@ -3810,7 +3792,7 @@ cpu: typing.Union[int, float]
 
 The amount of vCPU to allocate to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#cpu ContainerAppJob#cpu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#cpu ContainerAppJob#cpu}
 
 ---
 
@@ -3824,7 +3806,7 @@ env: IResolvable | typing.List[ContainerAppJobTemplateInitContainerEnv]
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#env ContainerAppJob#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#env ContainerAppJob#env}
 
 ---
 
@@ -3838,7 +3820,7 @@ memory: str
 
 The amount of memory to allocate to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#memory ContainerAppJob#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#memory ContainerAppJob#memory}
 
 ---
 
@@ -3852,7 +3834,7 @@ volume_mounts: IResolvable | typing.List[ContainerAppJobTemplateInitContainerVol
 
 volume_mounts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#volume_mounts ContainerAppJob#volume_mounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#volume_mounts ContainerAppJob#volume_mounts}
 
 ---
 
@@ -3890,7 +3872,7 @@ name: str
 
 The name of the environment variable for the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#name ContainerAppJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#name ContainerAppJob#name}
 
 ---
 
@@ -3904,7 +3886,7 @@ secret_name: str
 
 The name of the secret that contains the value for this environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#secret_name ContainerAppJob#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#secret_name ContainerAppJob#secret_name}
 
 ---
 
@@ -3918,7 +3900,7 @@ value: str
 
 The value for this environment variable. **NOTE:** This value is ignored if `secret_name` is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#value ContainerAppJob#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#value ContainerAppJob#value}
 
 ---
 
@@ -3956,7 +3938,7 @@ name: str
 
 The name of the Volume to be mounted in the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#name ContainerAppJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#name ContainerAppJob#name}
 
 ---
 
@@ -3970,7 +3952,7 @@ path: str
 
 The path in the container at which to mount this volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#path ContainerAppJob#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#path ContainerAppJob#path}
 
 ---
 
@@ -3984,7 +3966,7 @@ sub_path: str
 
 The sub path of the volume to be mounted in the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#sub_path ContainerAppJob#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#sub_path ContainerAppJob#sub_path}
 
 ---
 
@@ -4010,7 +3992,7 @@ containerAppJob.ContainerAppJobTemplateVolume(
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume.property.name">name</a></code> | <code>str</code> | The name of the volume. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume.property.mountOptions">mount_options</a></code> | <code>str</code> | Mount options used while mounting the AzureFile. Must be a comma-separated string. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume.property.storageName">storage_name</a></code> | <code>str</code> | The name of the `AzureFile` storage. Required when `storage_type` is `AzureFile`. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume.property.storageType">storage_type</a></code> | <code>str</code> | The type of storage volume. Possible values include `AzureFile` and `EmptyDir`. Defaults to `EmptyDir`. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume.property.storageType">storage_type</a></code> | <code>str</code> | The type of storage volume. |
 
 ---
 
@@ -4024,7 +4006,7 @@ name: str
 
 The name of the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#name ContainerAppJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#name ContainerAppJob#name}
 
 ---
 
@@ -4038,7 +4020,7 @@ mount_options: str
 
 Mount options used while mounting the AzureFile. Must be a comma-separated string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#mount_options ContainerAppJob#mount_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#mount_options ContainerAppJob#mount_options}
 
 ---
 
@@ -4052,7 +4034,7 @@ storage_name: str
 
 The name of the `AzureFile` storage. Required when `storage_type` is `AzureFile`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#storage_name ContainerAppJob#storage_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#storage_name ContainerAppJob#storage_name}
 
 ---
 
@@ -4064,9 +4046,9 @@ storage_type: str
 
 - *Type:* str
 
-The type of storage volume. Possible values include `AzureFile` and `EmptyDir`. Defaults to `EmptyDir`.
+The type of storage volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#storage_type ContainerAppJob#storage_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#storage_type ContainerAppJob#storage_type}
 
 ---
 
@@ -4089,10 +4071,10 @@ containerAppJob.ContainerAppJobTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#create ContainerAppJob#create}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#delete ContainerAppJob#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#read ContainerAppJob#read}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#update ContainerAppJob#update}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#create ContainerAppJob#create}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#delete ContainerAppJob#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#read ContainerAppJob#read}. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#update ContainerAppJob#update}. |
 
 ---
 
@@ -4104,7 +4086,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#create ContainerAppJob#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#create ContainerAppJob#create}.
 
 ---
 
@@ -4116,7 +4098,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#delete ContainerAppJob#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#delete ContainerAppJob#delete}.
 
 ---
 
@@ -4128,7 +4110,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#read ContainerAppJob#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#read ContainerAppJob#read}.
 
 ---
 
@@ -4140,7 +4122,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/container_app_job#update ContainerAppJob#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/container_app_job#update ContainerAppJob#update}.
 
 ---
 

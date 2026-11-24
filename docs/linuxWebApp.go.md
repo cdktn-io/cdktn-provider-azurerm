@@ -4,7 +4,7 @@
 
 ### LinuxWebApp <a name="LinuxWebApp" id="@cdktn/provider-azurerm.linuxWebApp.LinuxWebApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app azurerm_linux_web_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app azurerm_linux_web_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.linuxWebApp.LinuxWebApp.Initializer"></a>
 
@@ -808,7 +808,7 @@ The construct id used in the generated config for the LinuxWebApp to import.
 
 The id of the existing LinuxWebApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1838,8 +1838,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettings.property.enabled">Enabled</a></code> | <code>interface{}</code> | Should the Authentication / Authorization feature be enabled? |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettings.property.activeDirectory">ActiveDirectory</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsActiveDirectory">LinuxWebAppAuthSettingsActiveDirectory</a></code> | active_directory block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettings.property.additionalLoginParameters">AdditionalLoginParameters</a></code> | <code>*map[string]*string</code> | Specifies a map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettings.property.allowedExternalRedirectUrls">AllowedExternalRedirectUrls</a></code> | <code>*[]*string</code> | Specifies a list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettings.property.additionalLoginParameters">AdditionalLoginParameters</a></code> | <code>*map[string]*string</code> | A map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettings.property.allowedExternalRedirectUrls">AllowedExternalRedirectUrls</a></code> | <code>*[]*string</code> | A list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettings.property.defaultProvider">DefaultProvider</a></code> | <code>*string</code> | The default authentication provider to use when multiple providers are configured. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettings.property.facebook">Facebook</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsFacebook">LinuxWebAppAuthSettingsFacebook</a></code> | facebook block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettings.property.github">Github</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsGithub">LinuxWebAppAuthSettingsGithub</a></code> | github block. |
@@ -1848,9 +1848,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettings.property.microsoft">Microsoft</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsMicrosoft">LinuxWebAppAuthSettingsMicrosoft</a></code> | microsoft block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettings.property.runtimeVersion">RuntimeVersion</a></code> | <code>*string</code> | The RuntimeVersion of the Authentication / Authorization feature in use. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettings.property.tokenRefreshExtensionHours">TokenRefreshExtensionHours</a></code> | <code>*f64</code> | The number of hours after session token expiration that a session token can be used to call the token refresh API. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettings.property.tokenStoreEnabled">TokenStoreEnabled</a></code> | <code>interface{}</code> | Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettings.property.tokenStoreEnabled">TokenStoreEnabled</a></code> | <code>interface{}</code> | Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettings.property.twitter">Twitter</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsTwitter">LinuxWebAppAuthSettingsTwitter</a></code> | twitter block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettings.property.unauthenticatedClientAction">UnauthenticatedClientAction</a></code> | <code>*string</code> | The action to take when an unauthenticated client attempts to access the app. Possible values include: `RedirectToLoginPage`, `AllowAnonymous`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettings.property.unauthenticatedClientAction">UnauthenticatedClientAction</a></code> | <code>*string</code> | The action to take when an unauthenticated client attempts to access the app. |
 
 ---
 
@@ -1864,7 +1864,7 @@ Enabled interface{}
 
 Should the Authentication / Authorization feature be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#enabled LinuxWebApp#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#enabled LinuxWebApp#enabled}
 
 ---
 
@@ -1878,7 +1878,7 @@ ActiveDirectory LinuxWebAppAuthSettingsActiveDirectory
 
 active_directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#active_directory LinuxWebApp#active_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#active_directory LinuxWebApp#active_directory}
 
 ---
 
@@ -1890,9 +1890,9 @@ AdditionalLoginParameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Specifies a map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in.
+A map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#additional_login_parameters LinuxWebApp#additional_login_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#additional_login_parameters LinuxWebApp#additional_login_parameters}
 
 ---
 
@@ -1904,9 +1904,9 @@ AllowedExternalRedirectUrls *[]*string
 
 - *Type:* *[]*string
 
-Specifies a list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App.
+A list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#allowed_external_redirect_urls LinuxWebApp#allowed_external_redirect_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#allowed_external_redirect_urls LinuxWebApp#allowed_external_redirect_urls}
 
 ---
 
@@ -1920,9 +1920,7 @@ DefaultProvider *string
 
 The default authentication provider to use when multiple providers are configured.
 
-Possible values include: `AzureActiveDirectory`, `Facebook`, `Google`, `MicrosoftAccount`, `Twitter`, `Github`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#default_provider LinuxWebApp#default_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#default_provider LinuxWebApp#default_provider}
 
 ---
 
@@ -1936,7 +1934,7 @@ Facebook LinuxWebAppAuthSettingsFacebook
 
 facebook block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#facebook LinuxWebApp#facebook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#facebook LinuxWebApp#facebook}
 
 ---
 
@@ -1950,7 +1948,7 @@ Github LinuxWebAppAuthSettingsGithub
 
 github block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#github LinuxWebApp#github}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#github LinuxWebApp#github}
 
 ---
 
@@ -1964,7 +1962,7 @@ Google LinuxWebAppAuthSettingsGoogle
 
 google block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#google LinuxWebApp#google}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#google LinuxWebApp#google}
 
 ---
 
@@ -1978,7 +1976,7 @@ Issuer *string
 
 The OpenID Connect Issuer URI that represents the entity which issues access tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#issuer LinuxWebApp#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#issuer LinuxWebApp#issuer}
 
 ---
 
@@ -1992,7 +1990,7 @@ Microsoft LinuxWebAppAuthSettingsMicrosoft
 
 microsoft block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#microsoft LinuxWebApp#microsoft}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#microsoft LinuxWebApp#microsoft}
 
 ---
 
@@ -2006,7 +2004,7 @@ RuntimeVersion *string
 
 The RuntimeVersion of the Authentication / Authorization feature in use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#runtime_version LinuxWebApp#runtime_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#runtime_version LinuxWebApp#runtime_version}
 
 ---
 
@@ -2020,9 +2018,7 @@ TokenRefreshExtensionHours *f64
 
 The number of hours after session token expiration that a session token can be used to call the token refresh API.
 
-Defaults to `72` hours.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#token_refresh_extension_hours LinuxWebApp#token_refresh_extension_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#token_refresh_extension_hours LinuxWebApp#token_refresh_extension_hours}
 
 ---
 
@@ -2034,9 +2030,9 @@ TokenStoreEnabled interface{}
 
 - *Type:* interface{}
 
-Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`.
+Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#token_store_enabled LinuxWebApp#token_store_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#token_store_enabled LinuxWebApp#token_store_enabled}
 
 ---
 
@@ -2050,7 +2046,7 @@ Twitter LinuxWebAppAuthSettingsTwitter
 
 twitter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#twitter LinuxWebApp#twitter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#twitter LinuxWebApp#twitter}
 
 ---
 
@@ -2062,9 +2058,9 @@ UnauthenticatedClientAction *string
 
 - *Type:* *string
 
-The action to take when an unauthenticated client attempts to access the app. Possible values include: `RedirectToLoginPage`, `AllowAnonymous`.
+The action to take when an unauthenticated client attempts to access the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#unauthenticated_client_action LinuxWebApp#unauthenticated_client_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#unauthenticated_client_action LinuxWebApp#unauthenticated_client_action}
 
 ---
 
@@ -2088,9 +2084,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsActiveDirectory.property.clientId">ClientId</a></code> | <code>*string</code> | The ID of the Client to use to authenticate with Azure Active Directory. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsActiveDirectory.property.allowedAudiences">AllowedAudiences</a></code> | <code>*[]*string</code> | Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsActiveDirectory.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | The Client Secret for the Client ID. Cannot be used with `client_secret_setting_name`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsActiveDirectory.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>*string</code> | The App Setting name that contains the client secret of the Client. Cannot be used with `client_secret`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsActiveDirectory.property.allowedAudiences">AllowedAudiences</a></code> | <code>*[]*string</code> | A list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsActiveDirectory.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | The Client Secret for the Client ID. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsActiveDirectory.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>*string</code> | The App Setting name that contains the client secret of the Client. |
 
 ---
 
@@ -2104,7 +2100,7 @@ ClientId *string
 
 The ID of the Client to use to authenticate with Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
 
 ---
 
@@ -2116,9 +2112,9 @@ AllowedAudiences *[]*string
 
 - *Type:* *[]*string
 
-Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
+A list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#allowed_audiences LinuxWebApp#allowed_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#allowed_audiences LinuxWebApp#allowed_audiences}
 
 ---
 
@@ -2130,9 +2126,9 @@ ClientSecret *string
 
 - *Type:* *string
 
-The Client Secret for the Client ID. Cannot be used with `client_secret_setting_name`.
+The Client Secret for the Client ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_secret LinuxWebApp#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_secret LinuxWebApp#client_secret}
 
 ---
 
@@ -2144,9 +2140,9 @@ ClientSecretSettingName *string
 
 - *Type:* *string
 
-The App Setting name that contains the client secret of the Client. Cannot be used with `client_secret`.
+The App Setting name that contains the client secret of the Client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
 
 ---
 
@@ -2170,9 +2166,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsFacebook.property.appId">AppId</a></code> | <code>*string</code> | The App ID of the Facebook app used for login. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsFacebook.property.appSecret">AppSecret</a></code> | <code>*string</code> | The App Secret of the Facebook app used for Facebook Login. Cannot be specified with `app_secret_setting_name`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsFacebook.property.appSecretSettingName">AppSecretSettingName</a></code> | <code>*string</code> | The app setting name that contains the `app_secret` value used for Facebook Login. Cannot be specified with `app_secret`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsFacebook.property.oauthScopes">OauthScopes</a></code> | <code>*[]*string</code> | Specifies a list of OAuth 2.0 scopes to be requested as part of Facebook Login authentication. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsFacebook.property.appSecret">AppSecret</a></code> | <code>*string</code> | The App Secret of the Facebook app used for Facebook Login. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsFacebook.property.appSecretSettingName">AppSecretSettingName</a></code> | <code>*string</code> | The app setting name that contains the `app_secret` value used for Facebook Login. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsFacebook.property.oauthScopes">OauthScopes</a></code> | <code>*[]*string</code> | A list of OAuth 2.0 scopes to be requested as part of Facebook Login authentication. |
 
 ---
 
@@ -2186,7 +2182,7 @@ AppId *string
 
 The App ID of the Facebook app used for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#app_id LinuxWebApp#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#app_id LinuxWebApp#app_id}
 
 ---
 
@@ -2198,9 +2194,9 @@ AppSecret *string
 
 - *Type:* *string
 
-The App Secret of the Facebook app used for Facebook Login. Cannot be specified with `app_secret_setting_name`.
+The App Secret of the Facebook app used for Facebook Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#app_secret LinuxWebApp#app_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#app_secret LinuxWebApp#app_secret}
 
 ---
 
@@ -2212,9 +2208,9 @@ AppSecretSettingName *string
 
 - *Type:* *string
 
-The app setting name that contains the `app_secret` value used for Facebook Login. Cannot be specified with `app_secret`.
+The app setting name that contains the `app_secret` value used for Facebook Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#app_secret_setting_name LinuxWebApp#app_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#app_secret_setting_name LinuxWebApp#app_secret_setting_name}
 
 ---
 
@@ -2226,9 +2222,9 @@ OauthScopes *[]*string
 
 - *Type:* *[]*string
 
-Specifies a list of OAuth 2.0 scopes to be requested as part of Facebook Login authentication.
+A list of OAuth 2.0 scopes to be requested as part of Facebook Login authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#oauth_scopes LinuxWebApp#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#oauth_scopes LinuxWebApp#oauth_scopes}
 
 ---
 
@@ -2252,9 +2248,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsGithub.property.clientId">ClientId</a></code> | <code>*string</code> | The ID of the GitHub app used for login. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsGithub.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | The Client Secret of the GitHub app used for GitHub Login. Cannot be specified with `client_secret_setting_name`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsGithub.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>*string</code> | The app setting name that contains the `client_secret` value used for GitHub Login. Cannot be specified with `client_secret`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsGithub.property.oauthScopes">OauthScopes</a></code> | <code>*[]*string</code> | Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsGithub.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | The Client Secret of the GitHub app used for GitHub Login. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsGithub.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>*string</code> | The app setting name that contains the `client_secret` value used for GitHub Login. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsGithub.property.oauthScopes">OauthScopes</a></code> | <code>*[]*string</code> | A list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication. |
 
 ---
 
@@ -2268,7 +2264,7 @@ ClientId *string
 
 The ID of the GitHub app used for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
 
 ---
 
@@ -2280,9 +2276,9 @@ ClientSecret *string
 
 - *Type:* *string
 
-The Client Secret of the GitHub app used for GitHub Login. Cannot be specified with `client_secret_setting_name`.
+The Client Secret of the GitHub app used for GitHub Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_secret LinuxWebApp#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_secret LinuxWebApp#client_secret}
 
 ---
 
@@ -2294,9 +2290,9 @@ ClientSecretSettingName *string
 
 - *Type:* *string
 
-The app setting name that contains the `client_secret` value used for GitHub Login. Cannot be specified with `client_secret`.
+The app setting name that contains the `client_secret` value used for GitHub Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
 
 ---
 
@@ -2308,9 +2304,9 @@ OauthScopes *[]*string
 
 - *Type:* *[]*string
 
-Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
+A list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#oauth_scopes LinuxWebApp#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#oauth_scopes LinuxWebApp#oauth_scopes}
 
 ---
 
@@ -2334,9 +2330,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsGoogle.property.clientId">ClientId</a></code> | <code>*string</code> | The OpenID Connect Client ID for the Google web application. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsGoogle.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | The client secret associated with the Google web application.  Cannot be specified with `client_secret_setting_name`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsGoogle.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>*string</code> | The app setting name that contains the `client_secret` value used for Google Login. Cannot be specified with `client_secret`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsGoogle.property.oauthScopes">OauthScopes</a></code> | <code>*[]*string</code> | Specifies a list of OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. If not specified, "openid", "profile", and "email" are used as default scopes. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsGoogle.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | The client secret associated with the Google web application. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsGoogle.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>*string</code> | The app setting name that contains the `client_secret` value used for Google Login. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsGoogle.property.oauthScopes">OauthScopes</a></code> | <code>*[]*string</code> | A list of OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. If not specified, "openid", "profile", and "email" are used as default scopes. |
 
 ---
 
@@ -2350,7 +2346,7 @@ ClientId *string
 
 The OpenID Connect Client ID for the Google web application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
 
 ---
 
@@ -2362,9 +2358,9 @@ ClientSecret *string
 
 - *Type:* *string
 
-The client secret associated with the Google web application.  Cannot be specified with `client_secret_setting_name`.
+The client secret associated with the Google web application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_secret LinuxWebApp#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_secret LinuxWebApp#client_secret}
 
 ---
 
@@ -2376,9 +2372,9 @@ ClientSecretSettingName *string
 
 - *Type:* *string
 
-The app setting name that contains the `client_secret` value used for Google Login. Cannot be specified with `client_secret`.
+The app setting name that contains the `client_secret` value used for Google Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
 
 ---
 
@@ -2390,9 +2386,9 @@ OauthScopes *[]*string
 
 - *Type:* *[]*string
 
-Specifies a list of OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. If not specified, "openid", "profile", and "email" are used as default scopes.
+A list of OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. If not specified, "openid", "profile", and "email" are used as default scopes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#oauth_scopes LinuxWebApp#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#oauth_scopes LinuxWebApp#oauth_scopes}
 
 ---
 
@@ -2416,8 +2412,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsMicrosoft.property.clientId">ClientId</a></code> | <code>*string</code> | The OAuth 2.0 client ID that was created for the app used for authentication. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsMicrosoft.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret_setting_name`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsMicrosoft.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>*string</code> | The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsMicrosoft.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | The OAuth 2.0 client secret that was created for the app used for authentication. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsMicrosoft.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>*string</code> | The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsMicrosoft.property.oauthScopes">OauthScopes</a></code> | <code>*[]*string</code> | The list of OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. If not specified, `wl.basic` is used as the default scope. |
 
 ---
@@ -2432,7 +2428,7 @@ ClientId *string
 
 The OAuth 2.0 client ID that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
 
 ---
 
@@ -2444,9 +2440,9 @@ ClientSecret *string
 
 - *Type:* *string
 
-The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret_setting_name`.
+The OAuth 2.0 client secret that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_secret LinuxWebApp#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_secret LinuxWebApp#client_secret}
 
 ---
 
@@ -2458,9 +2454,9 @@ ClientSecretSettingName *string
 
 - *Type:* *string
 
-The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret`.
+The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
 
 ---
 
@@ -2474,7 +2470,7 @@ OauthScopes *[]*string
 
 The list of OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. If not specified, `wl.basic` is used as the default scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#oauth_scopes LinuxWebApp#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#oauth_scopes LinuxWebApp#oauth_scopes}
 
 ---
 
@@ -2497,7 +2493,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsTwitter.property.consumerKey">ConsumerKey</a></code> | <code>*string</code> | The OAuth 1.0a consumer key of the Twitter application used for sign-in. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsTwitter.property.consumerSecret">ConsumerSecret</a></code> | <code>*string</code> | The OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret_setting_name`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsTwitter.property.consumerSecret">ConsumerSecret</a></code> | <code>*string</code> | The OAuth 1.0a consumer secret of the Twitter application used for sign-in. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsTwitter.property.consumerSecretSettingName">ConsumerSecretSettingName</a></code> | <code>*string</code> | The app setting name that contains the OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret`. |
 
 ---
@@ -2512,7 +2508,7 @@ ConsumerKey *string
 
 The OAuth 1.0a consumer key of the Twitter application used for sign-in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#consumer_key LinuxWebApp#consumer_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#consumer_key LinuxWebApp#consumer_key}
 
 ---
 
@@ -2524,9 +2520,9 @@ ConsumerSecret *string
 
 - *Type:* *string
 
-The OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret_setting_name`.
+The OAuth 1.0a consumer secret of the Twitter application used for sign-in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#consumer_secret LinuxWebApp#consumer_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#consumer_secret LinuxWebApp#consumer_secret}
 
 ---
 
@@ -2540,7 +2536,7 @@ ConsumerSecretSettingName *string
 
 The app setting name that contains the OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#consumer_secret_setting_name LinuxWebApp#consumer_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#consumer_secret_setting_name LinuxWebApp#consumer_secret_setting_name}
 
 ---
 
@@ -2584,23 +2580,23 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.login">Login</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2Login">LinuxWebAppAuthSettingsV2Login</a></code> | login block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.activeDirectoryV2">ActiveDirectoryV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2ActiveDirectoryV2">LinuxWebAppAuthSettingsV2ActiveDirectoryV2</a></code> | active_directory_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.appleV2">AppleV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2AppleV2">LinuxWebAppAuthSettingsV2AppleV2</a></code> | apple_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.authEnabled">AuthEnabled</a></code> | <code>interface{}</code> | Should the AuthV2 Settings be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.authEnabled">AuthEnabled</a></code> | <code>interface{}</code> | Should the AuthV2 Settings be enabled? |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.azureStaticWebAppV2">AzureStaticWebAppV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2AzureStaticWebAppV2">LinuxWebAppAuthSettingsV2AzureStaticWebAppV2</a></code> | azure_static_web_app_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.configFilePath">ConfigFilePath</a></code> | <code>*string</code> | The path to the App Auth settings. **Note:** Relative Paths are evaluated from the Site Root directory. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.customOidcV2">CustomOidcV2</a></code> | <code>interface{}</code> | custom_oidc_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.defaultProvider">DefaultProvider</a></code> | <code>*string</code> | The Default Authentication Provider to use when the `unauthenticated_action` is set to `RedirectToLoginPage`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.excludedPaths">ExcludedPaths</a></code> | <code>*[]*string</code> | The paths which should be excluded from the `unauthenticated_action` when it is set to `RedirectToLoginPage`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.facebookV2">FacebookV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2FacebookV2">LinuxWebAppAuthSettingsV2FacebookV2</a></code> | facebook_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.forwardProxyConvention">ForwardProxyConvention</a></code> | <code>*string</code> | The convention used to determine the url of the request made. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.forwardProxyConvention">ForwardProxyConvention</a></code> | <code>*string</code> | The convention used to determine the URL of the request made. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.forwardProxyCustomHostHeaderName">ForwardProxyCustomHostHeaderName</a></code> | <code>*string</code> | The name of the header containing the host of the request. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.forwardProxyCustomSchemeHeaderName">ForwardProxyCustomSchemeHeaderName</a></code> | <code>*string</code> | The name of the header containing the scheme of the request. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.githubV2">GithubV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2GithubV2">LinuxWebAppAuthSettingsV2GithubV2</a></code> | github_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.googleV2">GoogleV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2GoogleV2">LinuxWebAppAuthSettingsV2GoogleV2</a></code> | google_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.httpRouteApiPrefix">HttpRouteApiPrefix</a></code> | <code>*string</code> | The prefix that should precede all the authentication and authorisation paths. Defaults to `/.auth`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.httpRouteApiPrefix">HttpRouteApiPrefix</a></code> | <code>*string</code> | The prefix that should precede all the authentication and authorisation paths. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.microsoftV2">MicrosoftV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2MicrosoftV2">LinuxWebAppAuthSettingsV2MicrosoftV2</a></code> | microsoft_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.requireAuthentication">RequireAuthentication</a></code> | <code>interface{}</code> | Should the authentication flow be used for all requests. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.requireHttps">RequireHttps</a></code> | <code>interface{}</code> | Should HTTPS be required on connections? Defaults to true. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.runtimeVersion">RuntimeVersion</a></code> | <code>*string</code> | The Runtime Version of the Authentication and Authorisation feature of this App. Defaults to `~1`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.requireAuthentication">RequireAuthentication</a></code> | <code>interface{}</code> | Should the authentication flow be used for all requests? |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.requireHttps">RequireHttps</a></code> | <code>interface{}</code> | Should HTTPS be required on connections? |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.runtimeVersion">RuntimeVersion</a></code> | <code>*string</code> | The Runtime Version of the Authentication and Authorisation feature of this App. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.twitterV2">TwitterV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2TwitterV2">LinuxWebAppAuthSettingsV2TwitterV2</a></code> | twitter_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2.property.unauthenticatedAction">UnauthenticatedAction</a></code> | <code>*string</code> | The action to take for requests made without authentication. |
 
@@ -2616,7 +2612,7 @@ Login LinuxWebAppAuthSettingsV2Login
 
 login block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#login LinuxWebApp#login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#login LinuxWebApp#login}
 
 ---
 
@@ -2630,7 +2626,7 @@ ActiveDirectoryV2 LinuxWebAppAuthSettingsV2ActiveDirectoryV2
 
 active_directory_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#active_directory_v2 LinuxWebApp#active_directory_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#active_directory_v2 LinuxWebApp#active_directory_v2}
 
 ---
 
@@ -2644,7 +2640,7 @@ AppleV2 LinuxWebAppAuthSettingsV2AppleV2
 
 apple_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#apple_v2 LinuxWebApp#apple_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#apple_v2 LinuxWebApp#apple_v2}
 
 ---
 
@@ -2656,9 +2652,9 @@ AuthEnabled interface{}
 
 - *Type:* interface{}
 
-Should the AuthV2 Settings be enabled. Defaults to `false`.
+Should the AuthV2 Settings be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#auth_enabled LinuxWebApp#auth_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#auth_enabled LinuxWebApp#auth_enabled}
 
 ---
 
@@ -2672,7 +2668,7 @@ AzureStaticWebAppV2 LinuxWebAppAuthSettingsV2AzureStaticWebAppV2
 
 azure_static_web_app_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#azure_static_web_app_v2 LinuxWebApp#azure_static_web_app_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#azure_static_web_app_v2 LinuxWebApp#azure_static_web_app_v2}
 
 ---
 
@@ -2686,7 +2682,7 @@ ConfigFilePath *string
 
 The path to the App Auth settings. **Note:** Relative Paths are evaluated from the Site Root directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#config_file_path LinuxWebApp#config_file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#config_file_path LinuxWebApp#config_file_path}
 
 ---
 
@@ -2700,7 +2696,7 @@ CustomOidcV2 interface{}
 
 custom_oidc_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#custom_oidc_v2 LinuxWebApp#custom_oidc_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#custom_oidc_v2 LinuxWebApp#custom_oidc_v2}
 
 ---
 
@@ -2716,7 +2712,7 @@ The Default Authentication Provider to use when the `unauthenticated_action` is 
 
 Possible values include: `apple`, `azureactivedirectory`, `facebook`, `github`, `google`, `twitter` and the `name` of your `custom_oidc_v2` provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#default_provider LinuxWebApp#default_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#default_provider LinuxWebApp#default_provider}
 
 ---
 
@@ -2730,7 +2726,7 @@ ExcludedPaths *[]*string
 
 The paths which should be excluded from the `unauthenticated_action` when it is set to `RedirectToLoginPage`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#excluded_paths LinuxWebApp#excluded_paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#excluded_paths LinuxWebApp#excluded_paths}
 
 ---
 
@@ -2744,7 +2740,7 @@ FacebookV2 LinuxWebAppAuthSettingsV2FacebookV2
 
 facebook_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#facebook_v2 LinuxWebApp#facebook_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#facebook_v2 LinuxWebApp#facebook_v2}
 
 ---
 
@@ -2756,11 +2752,9 @@ ForwardProxyConvention *string
 
 - *Type:* *string
 
-The convention used to determine the url of the request made.
+The convention used to determine the URL of the request made.
 
-Possible values include `ForwardProxyConventionNoProxy`, `ForwardProxyConventionStandard`, `ForwardProxyConventionCustom`. Defaults to `ForwardProxyConventionNoProxy`
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#forward_proxy_convention LinuxWebApp#forward_proxy_convention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#forward_proxy_convention LinuxWebApp#forward_proxy_convention}
 
 ---
 
@@ -2774,7 +2768,7 @@ ForwardProxyCustomHostHeaderName *string
 
 The name of the header containing the host of the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#forward_proxy_custom_host_header_name LinuxWebApp#forward_proxy_custom_host_header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#forward_proxy_custom_host_header_name LinuxWebApp#forward_proxy_custom_host_header_name}
 
 ---
 
@@ -2788,7 +2782,7 @@ ForwardProxyCustomSchemeHeaderName *string
 
 The name of the header containing the scheme of the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#forward_proxy_custom_scheme_header_name LinuxWebApp#forward_proxy_custom_scheme_header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#forward_proxy_custom_scheme_header_name LinuxWebApp#forward_proxy_custom_scheme_header_name}
 
 ---
 
@@ -2802,7 +2796,7 @@ GithubV2 LinuxWebAppAuthSettingsV2GithubV2
 
 github_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#github_v2 LinuxWebApp#github_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#github_v2 LinuxWebApp#github_v2}
 
 ---
 
@@ -2816,7 +2810,7 @@ GoogleV2 LinuxWebAppAuthSettingsV2GoogleV2
 
 google_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#google_v2 LinuxWebApp#google_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#google_v2 LinuxWebApp#google_v2}
 
 ---
 
@@ -2828,9 +2822,9 @@ HttpRouteApiPrefix *string
 
 - *Type:* *string
 
-The prefix that should precede all the authentication and authorisation paths. Defaults to `/.auth`.
+The prefix that should precede all the authentication and authorisation paths.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#http_route_api_prefix LinuxWebApp#http_route_api_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#http_route_api_prefix LinuxWebApp#http_route_api_prefix}
 
 ---
 
@@ -2844,7 +2838,7 @@ MicrosoftV2 LinuxWebAppAuthSettingsV2MicrosoftV2
 
 microsoft_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#microsoft_v2 LinuxWebApp#microsoft_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#microsoft_v2 LinuxWebApp#microsoft_v2}
 
 ---
 
@@ -2856,9 +2850,9 @@ RequireAuthentication interface{}
 
 - *Type:* interface{}
 
-Should the authentication flow be used for all requests.
+Should the authentication flow be used for all requests?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#require_authentication LinuxWebApp#require_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#require_authentication LinuxWebApp#require_authentication}
 
 ---
 
@@ -2870,9 +2864,9 @@ RequireHttps interface{}
 
 - *Type:* interface{}
 
-Should HTTPS be required on connections? Defaults to true.
+Should HTTPS be required on connections?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#require_https LinuxWebApp#require_https}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#require_https LinuxWebApp#require_https}
 
 ---
 
@@ -2884,9 +2878,9 @@ RuntimeVersion *string
 
 - *Type:* *string
 
-The Runtime Version of the Authentication and Authorisation feature of this App. Defaults to `~1`.
+The Runtime Version of the Authentication and Authorisation feature of this App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#runtime_version LinuxWebApp#runtime_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#runtime_version LinuxWebApp#runtime_version}
 
 ---
 
@@ -2900,7 +2894,7 @@ TwitterV2 LinuxWebAppAuthSettingsV2TwitterV2
 
 twitter_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#twitter_v2 LinuxWebApp#twitter_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#twitter_v2 LinuxWebApp#twitter_v2}
 
 ---
 
@@ -2914,9 +2908,7 @@ UnauthenticatedAction *string
 
 The action to take for requests made without authentication.
 
-Possible values include `RedirectToLoginPage`, `AllowAnonymous`, `Return401`, and `Return403`. Defaults to `RedirectToLoginPage`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#unauthenticated_action LinuxWebApp#unauthenticated_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#unauthenticated_action LinuxWebApp#unauthenticated_action}
 
 ---
 
@@ -2950,7 +2942,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2ActiveDirectoryV2.property.clientId">ClientId</a></code> | <code>*string</code> | The ID of the Client to use to authenticate with Azure Active Directory. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2ActiveDirectoryV2.property.tenantAuthEndpoint">TenantAuthEndpoint</a></code> | <code>*string</code> | The Azure Tenant Endpoint for the Authenticating Tenant. e.g. `https://login.microsoftonline.com/v2.0/{tenant-guid}/`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2ActiveDirectoryV2.property.allowedApplications">AllowedApplications</a></code> | <code>*[]*string</code> | The list of allowed Applications for the Default Authorisation Policy. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2ActiveDirectoryV2.property.allowedAudiences">AllowedAudiences</a></code> | <code>*[]*string</code> | Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2ActiveDirectoryV2.property.allowedAudiences">AllowedAudiences</a></code> | <code>*[]*string</code> | A list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2ActiveDirectoryV2.property.allowedGroups">AllowedGroups</a></code> | <code>*[]*string</code> | The list of allowed Group Names for the Default Authorisation Policy. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2ActiveDirectoryV2.property.allowedIdentities">AllowedIdentities</a></code> | <code>*[]*string</code> | The list of allowed Identities for the Default Authorisation Policy. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2ActiveDirectoryV2.property.clientSecretCertificateThumbprint">ClientSecretCertificateThumbprint</a></code> | <code>*string</code> | The thumbprint of the certificate used for signing purposes. |
@@ -2958,7 +2950,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2ActiveDirectoryV2.property.jwtAllowedClientApplications">JwtAllowedClientApplications</a></code> | <code>*[]*string</code> | A list of Allowed Client Applications in the JWT Claim. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2ActiveDirectoryV2.property.jwtAllowedGroups">JwtAllowedGroups</a></code> | <code>*[]*string</code> | A list of Allowed Groups in the JWT Claim. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2ActiveDirectoryV2.property.loginParameters">LoginParameters</a></code> | <code>*map[string]*string</code> | A map of key-value pairs to send to the Authorisation Endpoint when a user logs in. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2ActiveDirectoryV2.property.wwwAuthenticationDisabled">WwwAuthenticationDisabled</a></code> | <code>interface{}</code> | Should the www-authenticate provider should be omitted from the request? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2ActiveDirectoryV2.property.wwwAuthenticationDisabled">WwwAuthenticationDisabled</a></code> | <code>interface{}</code> | Should the www-authenticate provider should be omitted from the request? |
 
 ---
 
@@ -2972,7 +2964,7 @@ ClientId *string
 
 The ID of the Client to use to authenticate with Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
 
 ---
 
@@ -2986,7 +2978,7 @@ TenantAuthEndpoint *string
 
 The Azure Tenant Endpoint for the Authenticating Tenant. e.g. `https://login.microsoftonline.com/v2.0/{tenant-guid}/`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#tenant_auth_endpoint LinuxWebApp#tenant_auth_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#tenant_auth_endpoint LinuxWebApp#tenant_auth_endpoint}
 
 ---
 
@@ -3000,7 +2992,7 @@ AllowedApplications *[]*string
 
 The list of allowed Applications for the Default Authorisation Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#allowed_applications LinuxWebApp#allowed_applications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#allowed_applications LinuxWebApp#allowed_applications}
 
 ---
 
@@ -3012,9 +3004,9 @@ AllowedAudiences *[]*string
 
 - *Type:* *[]*string
 
-Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
+A list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#allowed_audiences LinuxWebApp#allowed_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#allowed_audiences LinuxWebApp#allowed_audiences}
 
 ---
 
@@ -3028,7 +3020,7 @@ AllowedGroups *[]*string
 
 The list of allowed Group Names for the Default Authorisation Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#allowed_groups LinuxWebApp#allowed_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#allowed_groups LinuxWebApp#allowed_groups}
 
 ---
 
@@ -3042,7 +3034,7 @@ AllowedIdentities *[]*string
 
 The list of allowed Identities for the Default Authorisation Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#allowed_identities LinuxWebApp#allowed_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#allowed_identities LinuxWebApp#allowed_identities}
 
 ---
 
@@ -3056,7 +3048,7 @@ ClientSecretCertificateThumbprint *string
 
 The thumbprint of the certificate used for signing purposes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_secret_certificate_thumbprint LinuxWebApp#client_secret_certificate_thumbprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_secret_certificate_thumbprint LinuxWebApp#client_secret_certificate_thumbprint}
 
 ---
 
@@ -3070,7 +3062,7 @@ ClientSecretSettingName *string
 
 The App Setting name that contains the client secret of the Client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
 
 ---
 
@@ -3084,7 +3076,7 @@ JwtAllowedClientApplications *[]*string
 
 A list of Allowed Client Applications in the JWT Claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#jwt_allowed_client_applications LinuxWebApp#jwt_allowed_client_applications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#jwt_allowed_client_applications LinuxWebApp#jwt_allowed_client_applications}
 
 ---
 
@@ -3098,7 +3090,7 @@ JwtAllowedGroups *[]*string
 
 A list of Allowed Groups in the JWT Claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#jwt_allowed_groups LinuxWebApp#jwt_allowed_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#jwt_allowed_groups LinuxWebApp#jwt_allowed_groups}
 
 ---
 
@@ -3112,7 +3104,7 @@ LoginParameters *map[string]*string
 
 A map of key-value pairs to send to the Authorisation Endpoint when a user logs in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#login_parameters LinuxWebApp#login_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#login_parameters LinuxWebApp#login_parameters}
 
 ---
 
@@ -3124,9 +3116,9 @@ WwwAuthenticationDisabled interface{}
 
 - *Type:* interface{}
 
-Should the www-authenticate provider should be omitted from the request? Defaults to `false`.
+Should the www-authenticate provider should be omitted from the request?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#www_authentication_disabled LinuxWebApp#www_authentication_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#www_authentication_disabled LinuxWebApp#www_authentication_disabled}
 
 ---
 
@@ -3162,7 +3154,7 @@ ClientId *string
 
 The OpenID Connect Client ID for the Apple web application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
 
 ---
 
@@ -3176,7 +3168,7 @@ ClientSecretSettingName *string
 
 The app setting name that contains the `client_secret` value used for Apple Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
 
 ---
 
@@ -3210,7 +3202,7 @@ ClientId *string
 
 The ID of the Client to use to authenticate with Azure Static Web App Authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
 
 ---
 
@@ -3252,7 +3244,7 @@ ClientId *string
 
 The ID of the Client to use to authenticate with this Custom OIDC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
 
 ---
 
@@ -3266,7 +3258,7 @@ Name *string
 
 The name of the Custom OIDC Authentication Provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#name LinuxWebApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#name LinuxWebApp#name}
 
 ---
 
@@ -3280,7 +3272,7 @@ OpenidConfigurationEndpoint *string
 
 The endpoint that contains all the configuration endpoints for this Custom OIDC provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#openid_configuration_endpoint LinuxWebApp#openid_configuration_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#openid_configuration_endpoint LinuxWebApp#openid_configuration_endpoint}
 
 ---
 
@@ -3294,7 +3286,7 @@ NameClaimType *string
 
 The name of the claim that contains the users name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#name_claim_type LinuxWebApp#name_claim_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#name_claim_type LinuxWebApp#name_claim_type}
 
 ---
 
@@ -3308,7 +3300,7 @@ Scopes *[]*string
 
 The list of the scopes that should be requested while authenticating.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#scopes LinuxWebApp#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#scopes LinuxWebApp#scopes}
 
 ---
 
@@ -3334,7 +3326,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2FacebookV2.property.appId">AppId</a></code> | <code>*string</code> | The App ID of the Facebook app used for login. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2FacebookV2.property.appSecretSettingName">AppSecretSettingName</a></code> | <code>*string</code> | The app setting name that contains the `app_secret` value used for Facebook Login. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2FacebookV2.property.graphApiVersion">GraphApiVersion</a></code> | <code>*string</code> | The version of the Facebook API to be used while logging in. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2FacebookV2.property.loginScopes">LoginScopes</a></code> | <code>*[]*string</code> | Specifies a list of scopes to be requested as part of Facebook Login authentication. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2FacebookV2.property.loginScopes">LoginScopes</a></code> | <code>*[]*string</code> | A list of scopes to be requested as part of Facebook Login authentication. |
 
 ---
 
@@ -3348,7 +3340,7 @@ AppId *string
 
 The App ID of the Facebook app used for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#app_id LinuxWebApp#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#app_id LinuxWebApp#app_id}
 
 ---
 
@@ -3362,7 +3354,7 @@ AppSecretSettingName *string
 
 The app setting name that contains the `app_secret` value used for Facebook Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#app_secret_setting_name LinuxWebApp#app_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#app_secret_setting_name LinuxWebApp#app_secret_setting_name}
 
 ---
 
@@ -3376,7 +3368,7 @@ GraphApiVersion *string
 
 The version of the Facebook API to be used while logging in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#graph_api_version LinuxWebApp#graph_api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#graph_api_version LinuxWebApp#graph_api_version}
 
 ---
 
@@ -3388,9 +3380,9 @@ LoginScopes *[]*string
 
 - *Type:* *[]*string
 
-Specifies a list of scopes to be requested as part of Facebook Login authentication.
+A list of scopes to be requested as part of Facebook Login authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#login_scopes LinuxWebApp#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#login_scopes LinuxWebApp#login_scopes}
 
 ---
 
@@ -3414,7 +3406,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2GithubV2.property.clientId">ClientId</a></code> | <code>*string</code> | The ID of the GitHub app used for login. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2GithubV2.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>*string</code> | The app setting name that contains the `client_secret` value used for GitHub Login. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2GithubV2.property.loginScopes">LoginScopes</a></code> | <code>*[]*string</code> | Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2GithubV2.property.loginScopes">LoginScopes</a></code> | <code>*[]*string</code> | A list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication. |
 
 ---
 
@@ -3428,7 +3420,7 @@ ClientId *string
 
 The ID of the GitHub app used for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
 
 ---
 
@@ -3442,7 +3434,7 @@ ClientSecretSettingName *string
 
 The app setting name that contains the `client_secret` value used for GitHub Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
 
 ---
 
@@ -3454,9 +3446,9 @@ LoginScopes *[]*string
 
 - *Type:* *[]*string
 
-Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
+A list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#login_scopes LinuxWebApp#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#login_scopes LinuxWebApp#login_scopes}
 
 ---
 
@@ -3481,8 +3473,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2GoogleV2.property.clientId">ClientId</a></code> | <code>*string</code> | The OpenID Connect Client ID for the Google web application. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2GoogleV2.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>*string</code> | The app setting name that contains the `client_secret` value used for Google Login. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2GoogleV2.property.allowedAudiences">AllowedAudiences</a></code> | <code>*[]*string</code> | Specifies a list of Allowed Audiences that will be requested as part of Google Sign-In authentication. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2GoogleV2.property.loginScopes">LoginScopes</a></code> | <code>*[]*string</code> | Specifies a list of Login scopes that will be requested as part of Google Sign-In authentication. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2GoogleV2.property.allowedAudiences">AllowedAudiences</a></code> | <code>*[]*string</code> | A list of Allowed Audiences that will be requested as part of Google Sign-In authentication. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2GoogleV2.property.loginScopes">LoginScopes</a></code> | <code>*[]*string</code> | A list of Login scopes that will be requested as part of Google Sign-In authentication. |
 
 ---
 
@@ -3496,7 +3488,7 @@ ClientId *string
 
 The OpenID Connect Client ID for the Google web application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
 
 ---
 
@@ -3510,7 +3502,7 @@ ClientSecretSettingName *string
 
 The app setting name that contains the `client_secret` value used for Google Login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
 
 ---
 
@@ -3522,9 +3514,9 @@ AllowedAudiences *[]*string
 
 - *Type:* *[]*string
 
-Specifies a list of Allowed Audiences that will be requested as part of Google Sign-In authentication.
+A list of Allowed Audiences that will be requested as part of Google Sign-In authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#allowed_audiences LinuxWebApp#allowed_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#allowed_audiences LinuxWebApp#allowed_audiences}
 
 ---
 
@@ -3536,9 +3528,9 @@ LoginScopes *[]*string
 
 - *Type:* *[]*string
 
-Specifies a list of Login scopes that will be requested as part of Google Sign-In authentication.
+A list of Login scopes that will be requested as part of Google Sign-In authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#login_scopes LinuxWebApp#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#login_scopes LinuxWebApp#login_scopes}
 
 ---
 
@@ -3569,16 +3561,16 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2Login.property.allowedExternalRedirectUrls">AllowedExternalRedirectUrls</a></code> | <code>*[]*string</code> | External URLs that can be redirected to as part of logging in or logging out of the app. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2Login.property.cookieExpirationConvention">CookieExpirationConvention</a></code> | <code>*string</code> | The method by which cookies expire. Possible values include: `FixedTime`, and `IdentityProviderDerived`. Defaults to `FixedTime`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2Login.property.cookieExpirationTime">CookieExpirationTime</a></code> | <code>*string</code> | The time after the request is made when the session cookie should expire. Defaults to `08:00:00`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2Login.property.cookieExpirationConvention">CookieExpirationConvention</a></code> | <code>*string</code> | The method by which cookies expire. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2Login.property.cookieExpirationTime">CookieExpirationTime</a></code> | <code>*string</code> | The time after the request is made when the session cookie should expire. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2Login.property.logoutEndpoint">LogoutEndpoint</a></code> | <code>*string</code> | The endpoint to which logout requests should be made. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2Login.property.nonceExpirationTime">NonceExpirationTime</a></code> | <code>*string</code> | The time after the request is made when the nonce should expire. Defaults to `00:05:00`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2Login.property.preserveUrlFragmentsForLogins">PreserveUrlFragmentsForLogins</a></code> | <code>interface{}</code> | Should the fragments from the request be preserved after the login request is made. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2Login.property.nonceExpirationTime">NonceExpirationTime</a></code> | <code>*string</code> | The time after the request is made when the nonce should expire. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2Login.property.preserveUrlFragmentsForLogins">PreserveUrlFragmentsForLogins</a></code> | <code>interface{}</code> | Should the fragments from the request be preserved after the login request is made? |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2Login.property.tokenRefreshExtensionTime">TokenRefreshExtensionTime</a></code> | <code>*f64</code> | The number of hours after session token expiration that a session token can be used to call the token refresh API. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2Login.property.tokenStoreEnabled">TokenStoreEnabled</a></code> | <code>interface{}</code> | Should the Token Store configuration Enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2Login.property.tokenStoreEnabled">TokenStoreEnabled</a></code> | <code>interface{}</code> | Should the Token Store configuration Enabled? |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2Login.property.tokenStorePath">TokenStorePath</a></code> | <code>*string</code> | The directory path in the App Filesystem in which the tokens will be stored. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2Login.property.tokenStoreSasSettingName">TokenStoreSasSettingName</a></code> | <code>*string</code> | The name of the app setting which contains the SAS URL of the blob storage containing the tokens. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2Login.property.validateNonce">ValidateNonce</a></code> | <code>interface{}</code> | Should the nonce be validated while completing the login flow. Defaults to `true`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2Login.property.validateNonce">ValidateNonce</a></code> | <code>interface{}</code> | Should the nonce be validated while completing the login flow? |
 
 ---
 
@@ -3594,7 +3586,7 @@ External URLs that can be redirected to as part of logging in or logging out of 
 
 This is an advanced setting typically only needed by Windows Store application backends. **Note:** URLs within the current domain are always implicitly allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#allowed_external_redirect_urls LinuxWebApp#allowed_external_redirect_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#allowed_external_redirect_urls LinuxWebApp#allowed_external_redirect_urls}
 
 ---
 
@@ -3606,9 +3598,9 @@ CookieExpirationConvention *string
 
 - *Type:* *string
 
-The method by which cookies expire. Possible values include: `FixedTime`, and `IdentityProviderDerived`. Defaults to `FixedTime`.
+The method by which cookies expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#cookie_expiration_convention LinuxWebApp#cookie_expiration_convention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#cookie_expiration_convention LinuxWebApp#cookie_expiration_convention}
 
 ---
 
@@ -3620,9 +3612,9 @@ CookieExpirationTime *string
 
 - *Type:* *string
 
-The time after the request is made when the session cookie should expire. Defaults to `08:00:00`.
+The time after the request is made when the session cookie should expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#cookie_expiration_time LinuxWebApp#cookie_expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#cookie_expiration_time LinuxWebApp#cookie_expiration_time}
 
 ---
 
@@ -3636,7 +3628,7 @@ LogoutEndpoint *string
 
 The endpoint to which logout requests should be made.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#logout_endpoint LinuxWebApp#logout_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#logout_endpoint LinuxWebApp#logout_endpoint}
 
 ---
 
@@ -3648,9 +3640,9 @@ NonceExpirationTime *string
 
 - *Type:* *string
 
-The time after the request is made when the nonce should expire. Defaults to `00:05:00`.
+The time after the request is made when the nonce should expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#nonce_expiration_time LinuxWebApp#nonce_expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#nonce_expiration_time LinuxWebApp#nonce_expiration_time}
 
 ---
 
@@ -3662,9 +3654,9 @@ PreserveUrlFragmentsForLogins interface{}
 
 - *Type:* interface{}
 
-Should the fragments from the request be preserved after the login request is made. Defaults to `false`.
+Should the fragments from the request be preserved after the login request is made?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#preserve_url_fragments_for_logins LinuxWebApp#preserve_url_fragments_for_logins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#preserve_url_fragments_for_logins LinuxWebApp#preserve_url_fragments_for_logins}
 
 ---
 
@@ -3678,9 +3670,7 @@ TokenRefreshExtensionTime *f64
 
 The number of hours after session token expiration that a session token can be used to call the token refresh API.
 
-Defaults to `72` hours.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#token_refresh_extension_time LinuxWebApp#token_refresh_extension_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#token_refresh_extension_time LinuxWebApp#token_refresh_extension_time}
 
 ---
 
@@ -3692,9 +3682,9 @@ TokenStoreEnabled interface{}
 
 - *Type:* interface{}
 
-Should the Token Store configuration Enabled. Defaults to `false`.
+Should the Token Store configuration Enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#token_store_enabled LinuxWebApp#token_store_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#token_store_enabled LinuxWebApp#token_store_enabled}
 
 ---
 
@@ -3708,7 +3698,7 @@ TokenStorePath *string
 
 The directory path in the App Filesystem in which the tokens will be stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#token_store_path LinuxWebApp#token_store_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#token_store_path LinuxWebApp#token_store_path}
 
 ---
 
@@ -3722,7 +3712,7 @@ TokenStoreSasSettingName *string
 
 The name of the app setting which contains the SAS URL of the blob storage containing the tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#token_store_sas_setting_name LinuxWebApp#token_store_sas_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#token_store_sas_setting_name LinuxWebApp#token_store_sas_setting_name}
 
 ---
 
@@ -3734,9 +3724,9 @@ ValidateNonce interface{}
 
 - *Type:* interface{}
 
-Should the nonce be validated while completing the login flow. Defaults to `true`.
+Should the nonce be validated while completing the login flow?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#validate_nonce LinuxWebApp#validate_nonce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#validate_nonce LinuxWebApp#validate_nonce}
 
 ---
 
@@ -3761,7 +3751,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2MicrosoftV2.property.clientId">ClientId</a></code> | <code>*string</code> | The OAuth 2.0 client ID that was created for the app used for authentication. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2MicrosoftV2.property.clientSecretSettingName">ClientSecretSettingName</a></code> | <code>*string</code> | The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2MicrosoftV2.property.allowedAudiences">AllowedAudiences</a></code> | <code>*[]*string</code> | Specifies a list of Allowed Audiences that will be requested as part of Microsoft Sign-In authentication. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2MicrosoftV2.property.allowedAudiences">AllowedAudiences</a></code> | <code>*[]*string</code> | A list of Allowed Audiences that will be requested as part of Microsoft Sign-In authentication. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2MicrosoftV2.property.loginScopes">LoginScopes</a></code> | <code>*[]*string</code> | The list of Login scopes that will be requested as part of Microsoft Account authentication. |
 
 ---
@@ -3776,7 +3766,7 @@ ClientId *string
 
 The OAuth 2.0 client ID that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
 
 ---
 
@@ -3790,7 +3780,7 @@ ClientSecretSettingName *string
 
 The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
 
 ---
 
@@ -3802,9 +3792,9 @@ AllowedAudiences *[]*string
 
 - *Type:* *[]*string
 
-Specifies a list of Allowed Audiences that will be requested as part of Microsoft Sign-In authentication.
+A list of Allowed Audiences that will be requested as part of Microsoft Sign-In authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#allowed_audiences LinuxWebApp#allowed_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#allowed_audiences LinuxWebApp#allowed_audiences}
 
 ---
 
@@ -3818,7 +3808,7 @@ LoginScopes *[]*string
 
 The list of Login scopes that will be requested as part of Microsoft Account authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#login_scopes LinuxWebApp#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#login_scopes LinuxWebApp#login_scopes}
 
 ---
 
@@ -3854,7 +3844,7 @@ ConsumerKey *string
 
 The OAuth 1.0a consumer key of the Twitter application used for sign-in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#consumer_key LinuxWebApp#consumer_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#consumer_key LinuxWebApp#consumer_key}
 
 ---
 
@@ -3868,7 +3858,7 @@ ConsumerSecretSettingName *string
 
 The app setting name that contains the OAuth 1.0a consumer secret of the Twitter application used for sign-in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#consumer_secret_setting_name LinuxWebApp#consumer_secret_setting_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#consumer_secret_setting_name LinuxWebApp#consumer_secret_setting_name}
 
 ---
 
@@ -3908,7 +3898,7 @@ Name *string
 
 The name which should be used for this Backup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#name LinuxWebApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#name LinuxWebApp#name}
 
 ---
 
@@ -3922,7 +3912,7 @@ Schedule LinuxWebAppBackupSchedule
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#schedule LinuxWebApp#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#schedule LinuxWebApp#schedule}
 
 ---
 
@@ -3936,7 +3926,7 @@ StorageAccountUrl *string
 
 The SAS URL to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#storage_account_url LinuxWebApp#storage_account_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#storage_account_url LinuxWebApp#storage_account_url}
 
 ---
 
@@ -3950,7 +3940,7 @@ Enabled interface{}
 
 Should this backup job be enabled?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#enabled LinuxWebApp#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#enabled LinuxWebApp#enabled}
 
 ---
 
@@ -3975,8 +3965,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppBackupSchedule.property.frequencyInterval">FrequencyInterval</a></code> | <code>*f64</code> | How often the backup should be executed (e.g. for weekly backup, this should be set to `7` and `frequency_unit` should be set to `Day`). |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppBackupSchedule.property.frequencyUnit">FrequencyUnit</a></code> | <code>*string</code> | The unit of time for how often the backup should take place. Possible values include: `Day` and `Hour`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppBackupSchedule.property.keepAtLeastOneBackup">KeepAtLeastOneBackup</a></code> | <code>interface{}</code> | Should the service keep at least one backup, regardless of age of backup. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppBackupSchedule.property.frequencyUnit">FrequencyUnit</a></code> | <code>*string</code> | The unit of time for how often the backup should take place. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppBackupSchedule.property.keepAtLeastOneBackup">KeepAtLeastOneBackup</a></code> | <code>interface{}</code> | Should the service keep at least one backup, regardless of age of backup? |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppBackupSchedule.property.retentionPeriodDays">RetentionPeriodDays</a></code> | <code>*f64</code> | After how many days backups should be deleted. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppBackupSchedule.property.startTime">StartTime</a></code> | <code>*string</code> | When the schedule should start working in RFC-3339 format. |
 
@@ -3992,7 +3982,7 @@ FrequencyInterval *f64
 
 How often the backup should be executed (e.g. for weekly backup, this should be set to `7` and `frequency_unit` should be set to `Day`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#frequency_interval LinuxWebApp#frequency_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#frequency_interval LinuxWebApp#frequency_interval}
 
 ---
 
@@ -4004,9 +3994,9 @@ FrequencyUnit *string
 
 - *Type:* *string
 
-The unit of time for how often the backup should take place. Possible values include: `Day` and `Hour`.
+The unit of time for how often the backup should take place.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#frequency_unit LinuxWebApp#frequency_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#frequency_unit LinuxWebApp#frequency_unit}
 
 ---
 
@@ -4018,9 +4008,9 @@ KeepAtLeastOneBackup interface{}
 
 - *Type:* interface{}
 
-Should the service keep at least one backup, regardless of age of backup. Defaults to `false`.
+Should the service keep at least one backup, regardless of age of backup?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#keep_at_least_one_backup LinuxWebApp#keep_at_least_one_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#keep_at_least_one_backup LinuxWebApp#keep_at_least_one_backup}
 
 ---
 
@@ -4034,7 +4024,7 @@ RetentionPeriodDays *f64
 
 After how many days backups should be deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#retention_period_days LinuxWebApp#retention_period_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#retention_period_days LinuxWebApp#retention_period_days}
 
 ---
 
@@ -4048,7 +4038,7 @@ StartTime *string
 
 When the schedule should start working in RFC-3339 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#start_time LinuxWebApp#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#start_time LinuxWebApp#start_time}
 
 ---
 
@@ -4113,37 +4103,37 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#location LinuxWebApp#location}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#name LinuxWebApp#name}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#resource_group_name LinuxWebApp#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.servicePlanId">ServicePlanId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#service_plan_id LinuxWebApp#service_plan_id}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#location LinuxWebApp#location}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#name LinuxWebApp#name}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#resource_group_name LinuxWebApp#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.servicePlanId">ServicePlanId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#service_plan_id LinuxWebApp#service_plan_id}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.siteConfig">SiteConfig</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig">LinuxWebAppSiteConfig</a></code> | site_config block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.appSettings">AppSettings</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#app_settings LinuxWebApp#app_settings}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.appSettings">AppSettings</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#app_settings LinuxWebApp#app_settings}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.authSettings">AuthSettings</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettings">LinuxWebAppAuthSettings</a></code> | auth_settings block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.authSettingsV2">AuthSettingsV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppAuthSettingsV2">LinuxWebAppAuthSettingsV2</a></code> | auth_settings_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.backup">Backup</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppBackup">LinuxWebAppBackup</a></code> | backup block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.clientAffinityEnabled">ClientAffinityEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_affinity_enabled LinuxWebApp#client_affinity_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.clientCertificateEnabled">ClientCertificateEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_certificate_enabled LinuxWebApp#client_certificate_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.clientCertificateExclusionPaths">ClientCertificateExclusionPaths</a></code> | <code>*string</code> | Paths to exclude when using client certificates, separated by ; |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.clientCertificateMode">ClientCertificateMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_certificate_mode LinuxWebApp#client_certificate_mode}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.clientAffinityEnabled">ClientAffinityEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_affinity_enabled LinuxWebApp#client_affinity_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.clientCertificateEnabled">ClientCertificateEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_certificate_enabled LinuxWebApp#client_certificate_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.clientCertificateExclusionPaths">ClientCertificateExclusionPaths</a></code> | <code>*string</code> | Paths to exclude when using client certificates, separated by `;`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.clientCertificateMode">ClientCertificateMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_certificate_mode LinuxWebApp#client_certificate_mode}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.connectionString">ConnectionString</a></code> | <code>interface{}</code> | connection_string block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#enabled LinuxWebApp#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.endToEndTlsEncryptionEnabled">EndToEndTlsEncryptionEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#end_to_end_tls_encryption_enabled LinuxWebApp#end_to_end_tls_encryption_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.ftpPublishBasicAuthenticationEnabled">FtpPublishBasicAuthenticationEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#ftp_publish_basic_authentication_enabled LinuxWebApp#ftp_publish_basic_authentication_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.httpsOnly">HttpsOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#https_only LinuxWebApp#https_only}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#id LinuxWebApp#id}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#enabled LinuxWebApp#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.endToEndTlsEncryptionEnabled">EndToEndTlsEncryptionEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#end_to_end_tls_encryption_enabled LinuxWebApp#end_to_end_tls_encryption_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.ftpPublishBasicAuthenticationEnabled">FtpPublishBasicAuthenticationEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#ftp_publish_basic_authentication_enabled LinuxWebApp#ftp_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.httpsOnly">HttpsOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#https_only LinuxWebApp#https_only}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#id LinuxWebApp#id}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppIdentity">LinuxWebAppIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.keyVaultReferenceIdentityId">KeyVaultReferenceIdentityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#key_vault_reference_identity_id LinuxWebApp#key_vault_reference_identity_id}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.keyVaultReferenceIdentityId">KeyVaultReferenceIdentityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#key_vault_reference_identity_id LinuxWebApp#key_vault_reference_identity_id}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.logs">Logs</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogs">LinuxWebAppLogs</a></code> | logs block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.publicNetworkAccessEnabled">PublicNetworkAccessEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#public_network_access_enabled LinuxWebApp#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.publicNetworkAccessEnabled">PublicNetworkAccessEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#public_network_access_enabled LinuxWebApp#public_network_access_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.stickySettings">StickySettings</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppStickySettings">LinuxWebAppStickySettings</a></code> | sticky_settings block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.storageAccount">StorageAccount</a></code> | <code>interface{}</code> | storage_account block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#tags LinuxWebApp#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#tags LinuxWebApp#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppTimeouts">LinuxWebAppTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.virtualNetworkBackupRestoreEnabled">VirtualNetworkBackupRestoreEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#virtual_network_backup_restore_enabled LinuxWebApp#virtual_network_backup_restore_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.virtualNetworkSubnetId">VirtualNetworkSubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#virtual_network_subnet_id LinuxWebApp#virtual_network_subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.vnetImagePullEnabled">VnetImagePullEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#vnet_image_pull_enabled LinuxWebApp#vnet_image_pull_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.webdeployPublishBasicAuthenticationEnabled">WebdeployPublishBasicAuthenticationEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#webdeploy_publish_basic_authentication_enabled LinuxWebApp#webdeploy_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.virtualNetworkBackupRestoreEnabled">VirtualNetworkBackupRestoreEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#virtual_network_backup_restore_enabled LinuxWebApp#virtual_network_backup_restore_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.virtualNetworkSubnetId">VirtualNetworkSubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#virtual_network_subnet_id LinuxWebApp#virtual_network_subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.vnetImagePullEnabled">VnetImagePullEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#vnet_image_pull_enabled LinuxWebApp#vnet_image_pull_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.webdeployPublishBasicAuthenticationEnabled">WebdeployPublishBasicAuthenticationEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#webdeploy_publish_basic_authentication_enabled LinuxWebApp#webdeploy_publish_basic_authentication_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConfig.property.zipDeployFile">ZipDeployFile</a></code> | <code>*string</code> | The local path and filename of the Zip packaged application to deploy to this Linux Web App. |
 
 ---
@@ -4226,7 +4216,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#location LinuxWebApp#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#location LinuxWebApp#location}.
 
 ---
 
@@ -4238,7 +4228,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#name LinuxWebApp#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#name LinuxWebApp#name}.
 
 ---
 
@@ -4250,7 +4240,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#resource_group_name LinuxWebApp#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#resource_group_name LinuxWebApp#resource_group_name}.
 
 ---
 
@@ -4262,7 +4252,7 @@ ServicePlanId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#service_plan_id LinuxWebApp#service_plan_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#service_plan_id LinuxWebApp#service_plan_id}.
 
 ---
 
@@ -4276,7 +4266,7 @@ SiteConfig LinuxWebAppSiteConfig
 
 site_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#site_config LinuxWebApp#site_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#site_config LinuxWebApp#site_config}
 
 ---
 
@@ -4288,7 +4278,7 @@ AppSettings *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#app_settings LinuxWebApp#app_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#app_settings LinuxWebApp#app_settings}.
 
 ---
 
@@ -4302,7 +4292,7 @@ AuthSettings LinuxWebAppAuthSettings
 
 auth_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#auth_settings LinuxWebApp#auth_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#auth_settings LinuxWebApp#auth_settings}
 
 ---
 
@@ -4316,7 +4306,7 @@ AuthSettingsV2 LinuxWebAppAuthSettingsV2
 
 auth_settings_v2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#auth_settings_v2 LinuxWebApp#auth_settings_v2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#auth_settings_v2 LinuxWebApp#auth_settings_v2}
 
 ---
 
@@ -4330,7 +4320,7 @@ Backup LinuxWebAppBackup
 
 backup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#backup LinuxWebApp#backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#backup LinuxWebApp#backup}
 
 ---
 
@@ -4342,7 +4332,7 @@ ClientAffinityEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_affinity_enabled LinuxWebApp#client_affinity_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_affinity_enabled LinuxWebApp#client_affinity_enabled}.
 
 ---
 
@@ -4354,7 +4344,7 @@ ClientCertificateEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_certificate_enabled LinuxWebApp#client_certificate_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_certificate_enabled LinuxWebApp#client_certificate_enabled}.
 
 ---
 
@@ -4366,9 +4356,9 @@ ClientCertificateExclusionPaths *string
 
 - *Type:* *string
 
-Paths to exclude when using client certificates, separated by ;
+Paths to exclude when using client certificates, separated by `;`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_certificate_exclusion_paths LinuxWebApp#client_certificate_exclusion_paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_certificate_exclusion_paths LinuxWebApp#client_certificate_exclusion_paths}
 
 ---
 
@@ -4380,7 +4370,7 @@ ClientCertificateMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#client_certificate_mode LinuxWebApp#client_certificate_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#client_certificate_mode LinuxWebApp#client_certificate_mode}.
 
 ---
 
@@ -4394,7 +4384,7 @@ ConnectionString interface{}
 
 connection_string block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#connection_string LinuxWebApp#connection_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#connection_string LinuxWebApp#connection_string}
 
 ---
 
@@ -4406,7 +4396,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#enabled LinuxWebApp#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#enabled LinuxWebApp#enabled}.
 
 ---
 
@@ -4418,7 +4408,7 @@ EndToEndTlsEncryptionEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#end_to_end_tls_encryption_enabled LinuxWebApp#end_to_end_tls_encryption_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#end_to_end_tls_encryption_enabled LinuxWebApp#end_to_end_tls_encryption_enabled}.
 
 ---
 
@@ -4430,7 +4420,7 @@ FtpPublishBasicAuthenticationEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#ftp_publish_basic_authentication_enabled LinuxWebApp#ftp_publish_basic_authentication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#ftp_publish_basic_authentication_enabled LinuxWebApp#ftp_publish_basic_authentication_enabled}.
 
 ---
 
@@ -4442,7 +4432,7 @@ HttpsOnly interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#https_only LinuxWebApp#https_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#https_only LinuxWebApp#https_only}.
 
 ---
 
@@ -4454,7 +4444,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#id LinuxWebApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#id LinuxWebApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4471,7 +4461,7 @@ Identity LinuxWebAppIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#identity LinuxWebApp#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#identity LinuxWebApp#identity}
 
 ---
 
@@ -4483,7 +4473,7 @@ KeyVaultReferenceIdentityId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#key_vault_reference_identity_id LinuxWebApp#key_vault_reference_identity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#key_vault_reference_identity_id LinuxWebApp#key_vault_reference_identity_id}.
 
 ---
 
@@ -4497,7 +4487,7 @@ Logs LinuxWebAppLogs
 
 logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#logs LinuxWebApp#logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#logs LinuxWebApp#logs}
 
 ---
 
@@ -4509,7 +4499,7 @@ PublicNetworkAccessEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#public_network_access_enabled LinuxWebApp#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#public_network_access_enabled LinuxWebApp#public_network_access_enabled}.
 
 ---
 
@@ -4523,7 +4513,7 @@ StickySettings LinuxWebAppStickySettings
 
 sticky_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#sticky_settings LinuxWebApp#sticky_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#sticky_settings LinuxWebApp#sticky_settings}
 
 ---
 
@@ -4537,7 +4527,7 @@ StorageAccount interface{}
 
 storage_account block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#storage_account LinuxWebApp#storage_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#storage_account LinuxWebApp#storage_account}
 
 ---
 
@@ -4549,7 +4539,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#tags LinuxWebApp#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#tags LinuxWebApp#tags}.
 
 ---
 
@@ -4563,7 +4553,7 @@ Timeouts LinuxWebAppTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#timeouts LinuxWebApp#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#timeouts LinuxWebApp#timeouts}
 
 ---
 
@@ -4575,7 +4565,7 @@ VirtualNetworkBackupRestoreEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#virtual_network_backup_restore_enabled LinuxWebApp#virtual_network_backup_restore_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#virtual_network_backup_restore_enabled LinuxWebApp#virtual_network_backup_restore_enabled}.
 
 ---
 
@@ -4587,7 +4577,7 @@ VirtualNetworkSubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#virtual_network_subnet_id LinuxWebApp#virtual_network_subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#virtual_network_subnet_id LinuxWebApp#virtual_network_subnet_id}.
 
 ---
 
@@ -4599,7 +4589,7 @@ VnetImagePullEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#vnet_image_pull_enabled LinuxWebApp#vnet_image_pull_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#vnet_image_pull_enabled LinuxWebApp#vnet_image_pull_enabled}.
 
 ---
 
@@ -4611,7 +4601,7 @@ WebdeployPublishBasicAuthenticationEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#webdeploy_publish_basic_authentication_enabled LinuxWebApp#webdeploy_publish_basic_authentication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#webdeploy_publish_basic_authentication_enabled LinuxWebApp#webdeploy_publish_basic_authentication_enabled}.
 
 ---
 
@@ -4627,7 +4617,7 @@ The local path and filename of the Zip packaged application to deploy to this Li
 
 **Note:** Using this value requires either `WEBSITE_RUN_FROM_PACKAGE=1` or `SCM_DO_BUILD_DURING_DEPLOYMENT=true` to be set on the App in `app_settings`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#zip_deploy_file LinuxWebApp#zip_deploy_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#zip_deploy_file LinuxWebApp#zip_deploy_file}
 
 ---
 
@@ -4650,7 +4640,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConnectionString.property.name">Name</a></code> | <code>*string</code> | The name which should be used for this Connection. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConnectionString.property.type">Type</a></code> | <code>*string</code> | Type of database. Possible values include: `MySQL`, `SQLServer`, `SQLAzure`, `Custom`, `NotificationHub`, `ServiceBus`, `EventHub`, `APIHub`, `DocDb`, `RedisCache`, and `PostgreSQL`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConnectionString.property.type">Type</a></code> | <code>*string</code> | Type of database. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppConnectionString.property.value">Value</a></code> | <code>*string</code> | The connection string value. |
 
 ---
@@ -4665,7 +4655,7 @@ Name *string
 
 The name which should be used for this Connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#name LinuxWebApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#name LinuxWebApp#name}
 
 ---
 
@@ -4677,9 +4667,9 @@ Type *string
 
 - *Type:* *string
 
-Type of database. Possible values include: `MySQL`, `SQLServer`, `SQLAzure`, `Custom`, `NotificationHub`, `ServiceBus`, `EventHub`, `APIHub`, `DocDb`, `RedisCache`, and `PostgreSQL`.
+Type of database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#type LinuxWebApp#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#type LinuxWebApp#type}
 
 ---
 
@@ -4693,7 +4683,7 @@ Value *string
 
 The connection string value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#value LinuxWebApp#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#value LinuxWebApp#value}
 
 ---
 
@@ -4714,8 +4704,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#type LinuxWebApp#type}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#identity_ids LinuxWebApp#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#type LinuxWebApp#type}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#identity_ids LinuxWebApp#identity_ids}. |
 
 ---
 
@@ -4727,7 +4717,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#type LinuxWebApp#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#type LinuxWebApp#type}.
 
 ---
 
@@ -4739,7 +4729,7 @@ IdentityIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#identity_ids LinuxWebApp#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#identity_ids LinuxWebApp#identity_ids}.
 
 ---
 
@@ -4763,8 +4753,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogs.property.applicationLogs">ApplicationLogs</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogsApplicationLogs">LinuxWebAppLogsApplicationLogs</a></code> | application_logs block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogs.property.detailedErrorMessages">DetailedErrorMessages</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#detailed_error_messages LinuxWebApp#detailed_error_messages}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogs.property.failedRequestTracing">FailedRequestTracing</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#failed_request_tracing LinuxWebApp#failed_request_tracing}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogs.property.detailedErrorMessages">DetailedErrorMessages</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#detailed_error_messages LinuxWebApp#detailed_error_messages}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogs.property.failedRequestTracing">FailedRequestTracing</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#failed_request_tracing LinuxWebApp#failed_request_tracing}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogs.property.httpLogs">HttpLogs</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogsHttpLogs">LinuxWebAppLogsHttpLogs</a></code> | http_logs block. |
 
 ---
@@ -4779,7 +4769,7 @@ ApplicationLogs LinuxWebAppLogsApplicationLogs
 
 application_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#application_logs LinuxWebApp#application_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#application_logs LinuxWebApp#application_logs}
 
 ---
 
@@ -4791,7 +4781,7 @@ DetailedErrorMessages interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#detailed_error_messages LinuxWebApp#detailed_error_messages}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#detailed_error_messages LinuxWebApp#detailed_error_messages}.
 
 ---
 
@@ -4803,7 +4793,7 @@ FailedRequestTracing interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#failed_request_tracing LinuxWebApp#failed_request_tracing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#failed_request_tracing LinuxWebApp#failed_request_tracing}.
 
 ---
 
@@ -4817,7 +4807,7 @@ HttpLogs LinuxWebAppLogsHttpLogs
 
 http_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#http_logs LinuxWebApp#http_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#http_logs LinuxWebApp#http_logs}
 
 ---
 
@@ -4838,7 +4828,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogsApplicationLogs.property.fileSystemLevel">FileSystemLevel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#file_system_level LinuxWebApp#file_system_level}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogsApplicationLogs.property.fileSystemLevel">FileSystemLevel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#file_system_level LinuxWebApp#file_system_level}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogsApplicationLogs.property.azureBlobStorage">AzureBlobStorage</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogsApplicationLogsAzureBlobStorage">LinuxWebAppLogsApplicationLogsAzureBlobStorage</a></code> | azure_blob_storage block. |
 
 ---
@@ -4851,7 +4841,7 @@ FileSystemLevel *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#file_system_level LinuxWebApp#file_system_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#file_system_level LinuxWebApp#file_system_level}.
 
 ---
 
@@ -4865,7 +4855,7 @@ AzureBlobStorage LinuxWebAppLogsApplicationLogsAzureBlobStorage
 
 azure_blob_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#azure_blob_storage LinuxWebApp#azure_blob_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#azure_blob_storage LinuxWebApp#azure_blob_storage}
 
 ---
 
@@ -4887,9 +4877,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogsApplicationLogsAzureBlobStorage.property.level">Level</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#level LinuxWebApp#level}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogsApplicationLogsAzureBlobStorage.property.retentionInDays">RetentionInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#retention_in_days LinuxWebApp#retention_in_days}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogsApplicationLogsAzureBlobStorage.property.sasUrl">SasUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#sas_url LinuxWebApp#sas_url}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogsApplicationLogsAzureBlobStorage.property.level">Level</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#level LinuxWebApp#level}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogsApplicationLogsAzureBlobStorage.property.retentionInDays">RetentionInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#retention_in_days LinuxWebApp#retention_in_days}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogsApplicationLogsAzureBlobStorage.property.sasUrl">SasUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#sas_url LinuxWebApp#sas_url}. |
 
 ---
 
@@ -4901,7 +4891,7 @@ Level *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#level LinuxWebApp#level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#level LinuxWebApp#level}.
 
 ---
 
@@ -4913,7 +4903,7 @@ RetentionInDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#retention_in_days LinuxWebApp#retention_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#retention_in_days LinuxWebApp#retention_in_days}.
 
 ---
 
@@ -4925,7 +4915,7 @@ SasUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#sas_url LinuxWebApp#sas_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#sas_url LinuxWebApp#sas_url}.
 
 ---
 
@@ -4961,7 +4951,7 @@ AzureBlobStorage LinuxWebAppLogsHttpLogsAzureBlobStorage
 
 azure_blob_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#azure_blob_storage LinuxWebApp#azure_blob_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#azure_blob_storage LinuxWebApp#azure_blob_storage}
 
 ---
 
@@ -4975,7 +4965,7 @@ FileSystem LinuxWebAppLogsHttpLogsFileSystem
 
 file_system block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#file_system LinuxWebApp#file_system}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#file_system LinuxWebApp#file_system}
 
 ---
 
@@ -4996,8 +4986,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogsHttpLogsAzureBlobStorage.property.sasUrl">SasUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#sas_url LinuxWebApp#sas_url}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogsHttpLogsAzureBlobStorage.property.retentionInDays">RetentionInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#retention_in_days LinuxWebApp#retention_in_days}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogsHttpLogsAzureBlobStorage.property.sasUrl">SasUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#sas_url LinuxWebApp#sas_url}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogsHttpLogsAzureBlobStorage.property.retentionInDays">RetentionInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#retention_in_days LinuxWebApp#retention_in_days}. |
 
 ---
 
@@ -5009,7 +4999,7 @@ SasUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#sas_url LinuxWebApp#sas_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#sas_url LinuxWebApp#sas_url}.
 
 ---
 
@@ -5021,7 +5011,7 @@ RetentionInDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#retention_in_days LinuxWebApp#retention_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#retention_in_days LinuxWebApp#retention_in_days}.
 
 ---
 
@@ -5042,8 +5032,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogsHttpLogsFileSystem.property.retentionInDays">RetentionInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#retention_in_days LinuxWebApp#retention_in_days}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogsHttpLogsFileSystem.property.retentionInMb">RetentionInMb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#retention_in_mb LinuxWebApp#retention_in_mb}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogsHttpLogsFileSystem.property.retentionInDays">RetentionInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#retention_in_days LinuxWebApp#retention_in_days}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppLogsHttpLogsFileSystem.property.retentionInMb">RetentionInMb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#retention_in_mb LinuxWebApp#retention_in_mb}. |
 
 ---
 
@@ -5055,7 +5045,7 @@ RetentionInDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#retention_in_days LinuxWebApp#retention_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#retention_in_days LinuxWebApp#retention_in_days}.
 
 ---
 
@@ -5067,7 +5057,7 @@ RetentionInMb *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#retention_in_mb LinuxWebApp#retention_in_mb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#retention_in_mb LinuxWebApp#retention_in_mb}.
 
 ---
 
@@ -5117,37 +5107,37 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.alwaysOn">AlwaysOn</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#always_on LinuxWebApp#always_on}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.apiDefinitionUrl">ApiDefinitionUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#api_definition_url LinuxWebApp#api_definition_url}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.apiManagementApiId">ApiManagementApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#api_management_api_id LinuxWebApp#api_management_api_id}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.appCommandLine">AppCommandLine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#app_command_line LinuxWebApp#app_command_line}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.alwaysOn">AlwaysOn</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#always_on LinuxWebApp#always_on}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.apiDefinitionUrl">ApiDefinitionUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#api_definition_url LinuxWebApp#api_definition_url}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.apiManagementApiId">ApiManagementApiId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#api_management_api_id LinuxWebApp#api_management_api_id}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.appCommandLine">AppCommandLine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#app_command_line LinuxWebApp#app_command_line}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.applicationStack">ApplicationStack</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack">LinuxWebAppSiteConfigApplicationStack</a></code> | application_stack block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.autoHealSetting">AutoHealSetting</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSetting">LinuxWebAppSiteConfigAutoHealSetting</a></code> | auto_heal_setting block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.containerRegistryManagedIdentityClientId">ContainerRegistryManagedIdentityClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#container_registry_managed_identity_client_id LinuxWebApp#container_registry_managed_identity_client_id}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.containerRegistryUseManagedIdentity">ContainerRegistryUseManagedIdentity</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#container_registry_use_managed_identity LinuxWebApp#container_registry_use_managed_identity}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.containerRegistryManagedIdentityClientId">ContainerRegistryManagedIdentityClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#container_registry_managed_identity_client_id LinuxWebApp#container_registry_managed_identity_client_id}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.containerRegistryUseManagedIdentity">ContainerRegistryUseManagedIdentity</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#container_registry_use_managed_identity LinuxWebApp#container_registry_use_managed_identity}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.cors">Cors</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigCors">LinuxWebAppSiteConfigCors</a></code> | cors block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.defaultDocuments">DefaultDocuments</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#default_documents LinuxWebApp#default_documents}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.ftpsState">FtpsState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#ftps_state LinuxWebApp#ftps_state}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.defaultDocuments">DefaultDocuments</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#default_documents LinuxWebApp#default_documents}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.ftpsState">FtpsState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#ftps_state LinuxWebApp#ftps_state}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.healthCheckEvictionTimeInMin">HealthCheckEvictionTimeInMin</a></code> | <code>*f64</code> | The amount of time in minutes that a node is unhealthy before being removed from the load balancer. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.healthCheckPath">HealthCheckPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#health_check_path LinuxWebApp#health_check_path}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.http2Enabled">Http2Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#http2_enabled LinuxWebApp#http2_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.healthCheckPath">HealthCheckPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#health_check_path LinuxWebApp#health_check_path}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.http2Enabled">Http2Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#http2_enabled LinuxWebApp#http2_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.ipRestriction">IpRestriction</a></code> | <code>interface{}</code> | ip_restriction block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.ipRestrictionDefaultAction">IpRestrictionDefaultAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#ip_restriction_default_action LinuxWebApp#ip_restriction_default_action}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.loadBalancingMode">LoadBalancingMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#load_balancing_mode LinuxWebApp#load_balancing_mode}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.localMysqlEnabled">LocalMysqlEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#local_mysql_enabled LinuxWebApp#local_mysql_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.managedPipelineMode">ManagedPipelineMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#managed_pipeline_mode LinuxWebApp#managed_pipeline_mode}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.ipRestrictionDefaultAction">IpRestrictionDefaultAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#ip_restriction_default_action LinuxWebApp#ip_restriction_default_action}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.loadBalancingMode">LoadBalancingMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#load_balancing_mode LinuxWebApp#load_balancing_mode}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.localMysqlEnabled">LocalMysqlEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#local_mysql_enabled LinuxWebApp#local_mysql_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.managedPipelineMode">ManagedPipelineMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#managed_pipeline_mode LinuxWebApp#managed_pipeline_mode}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.minimumTlsCipherSuite">MinimumTlsCipherSuite</a></code> | <code>*string</code> | Configures the minimum TLS cipher suite for the incoming requests to the Site. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.minimumTlsVersion">MinimumTlsVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#minimum_tls_version LinuxWebApp#minimum_tls_version}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.remoteDebuggingEnabled">RemoteDebuggingEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#remote_debugging_enabled LinuxWebApp#remote_debugging_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.remoteDebuggingVersion">RemoteDebuggingVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#remote_debugging_version LinuxWebApp#remote_debugging_version}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.minimumTlsVersion">MinimumTlsVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#minimum_tls_version LinuxWebApp#minimum_tls_version}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.remoteDebuggingEnabled">RemoteDebuggingEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#remote_debugging_enabled LinuxWebApp#remote_debugging_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.remoteDebuggingVersion">RemoteDebuggingVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#remote_debugging_version LinuxWebApp#remote_debugging_version}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.scmIpRestriction">ScmIpRestriction</a></code> | <code>interface{}</code> | scm_ip_restriction block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.scmIpRestrictionDefaultAction">ScmIpRestrictionDefaultAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#scm_ip_restriction_default_action LinuxWebApp#scm_ip_restriction_default_action}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.scmMinimumTlsVersion">ScmMinimumTlsVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#scm_minimum_tls_version LinuxWebApp#scm_minimum_tls_version}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.scmUseMainIpRestriction">ScmUseMainIpRestriction</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#scm_use_main_ip_restriction LinuxWebApp#scm_use_main_ip_restriction}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.use32BitWorker">Use32BitWorker</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#use_32_bit_worker LinuxWebApp#use_32_bit_worker}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.vnetRouteAllEnabled">VnetRouteAllEnabled</a></code> | <code>interface{}</code> | Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.websocketsEnabled">WebsocketsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#websockets_enabled LinuxWebApp#websockets_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.workerCount">WorkerCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#worker_count LinuxWebApp#worker_count}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.scmIpRestrictionDefaultAction">ScmIpRestrictionDefaultAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#scm_ip_restriction_default_action LinuxWebApp#scm_ip_restriction_default_action}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.scmMinimumTlsVersion">ScmMinimumTlsVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#scm_minimum_tls_version LinuxWebApp#scm_minimum_tls_version}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.scmUseMainIpRestriction">ScmUseMainIpRestriction</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#scm_use_main_ip_restriction LinuxWebApp#scm_use_main_ip_restriction}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.use32BitWorker">Use32BitWorker</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#use_32_bit_worker LinuxWebApp#use_32_bit_worker}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.vnetRouteAllEnabled">VnetRouteAllEnabled</a></code> | <code>interface{}</code> | Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.websocketsEnabled">WebsocketsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#websockets_enabled LinuxWebApp#websockets_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfig.property.workerCount">WorkerCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#worker_count LinuxWebApp#worker_count}. |
 
 ---
 
@@ -5159,7 +5149,7 @@ AlwaysOn interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#always_on LinuxWebApp#always_on}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#always_on LinuxWebApp#always_on}.
 
 ---
 
@@ -5171,7 +5161,7 @@ ApiDefinitionUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#api_definition_url LinuxWebApp#api_definition_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#api_definition_url LinuxWebApp#api_definition_url}.
 
 ---
 
@@ -5183,7 +5173,7 @@ ApiManagementApiId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#api_management_api_id LinuxWebApp#api_management_api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#api_management_api_id LinuxWebApp#api_management_api_id}.
 
 ---
 
@@ -5195,7 +5185,7 @@ AppCommandLine *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#app_command_line LinuxWebApp#app_command_line}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#app_command_line LinuxWebApp#app_command_line}.
 
 ---
 
@@ -5209,7 +5199,7 @@ ApplicationStack LinuxWebAppSiteConfigApplicationStack
 
 application_stack block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#application_stack LinuxWebApp#application_stack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#application_stack LinuxWebApp#application_stack}
 
 ---
 
@@ -5223,7 +5213,7 @@ AutoHealSetting LinuxWebAppSiteConfigAutoHealSetting
 
 auto_heal_setting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#auto_heal_setting LinuxWebApp#auto_heal_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#auto_heal_setting LinuxWebApp#auto_heal_setting}
 
 ---
 
@@ -5235,7 +5225,7 @@ ContainerRegistryManagedIdentityClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#container_registry_managed_identity_client_id LinuxWebApp#container_registry_managed_identity_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#container_registry_managed_identity_client_id LinuxWebApp#container_registry_managed_identity_client_id}.
 
 ---
 
@@ -5247,7 +5237,7 @@ ContainerRegistryUseManagedIdentity interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#container_registry_use_managed_identity LinuxWebApp#container_registry_use_managed_identity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#container_registry_use_managed_identity LinuxWebApp#container_registry_use_managed_identity}.
 
 ---
 
@@ -5261,7 +5251,7 @@ Cors LinuxWebAppSiteConfigCors
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#cors LinuxWebApp#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#cors LinuxWebApp#cors}
 
 ---
 
@@ -5273,7 +5263,7 @@ DefaultDocuments *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#default_documents LinuxWebApp#default_documents}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#default_documents LinuxWebApp#default_documents}.
 
 ---
 
@@ -5285,7 +5275,7 @@ FtpsState *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#ftps_state LinuxWebApp#ftps_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#ftps_state LinuxWebApp#ftps_state}.
 
 ---
 
@@ -5299,9 +5289,7 @@ HealthCheckEvictionTimeInMin *f64
 
 The amount of time in minutes that a node is unhealthy before being removed from the load balancer.
 
-Possible values are between `2` and `10`. Only valid in conjunction with `health_check_path`
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#health_check_eviction_time_in_min LinuxWebApp#health_check_eviction_time_in_min}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#health_check_eviction_time_in_min LinuxWebApp#health_check_eviction_time_in_min}
 
 ---
 
@@ -5313,7 +5301,7 @@ HealthCheckPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#health_check_path LinuxWebApp#health_check_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#health_check_path LinuxWebApp#health_check_path}.
 
 ---
 
@@ -5325,7 +5313,7 @@ Http2Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#http2_enabled LinuxWebApp#http2_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#http2_enabled LinuxWebApp#http2_enabled}.
 
 ---
 
@@ -5339,7 +5327,7 @@ IpRestriction interface{}
 
 ip_restriction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#ip_restriction LinuxWebApp#ip_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#ip_restriction LinuxWebApp#ip_restriction}
 
 ---
 
@@ -5351,7 +5339,7 @@ IpRestrictionDefaultAction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#ip_restriction_default_action LinuxWebApp#ip_restriction_default_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#ip_restriction_default_action LinuxWebApp#ip_restriction_default_action}.
 
 ---
 
@@ -5363,7 +5351,7 @@ LoadBalancingMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#load_balancing_mode LinuxWebApp#load_balancing_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#load_balancing_mode LinuxWebApp#load_balancing_mode}.
 
 ---
 
@@ -5375,7 +5363,7 @@ LocalMysqlEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#local_mysql_enabled LinuxWebApp#local_mysql_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#local_mysql_enabled LinuxWebApp#local_mysql_enabled}.
 
 ---
 
@@ -5387,7 +5375,7 @@ ManagedPipelineMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#managed_pipeline_mode LinuxWebApp#managed_pipeline_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#managed_pipeline_mode LinuxWebApp#managed_pipeline_mode}.
 
 ---
 
@@ -5401,7 +5389,7 @@ MinimumTlsCipherSuite *string
 
 Configures the minimum TLS cipher suite for the incoming requests to the Site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#minimum_tls_cipher_suite LinuxWebApp#minimum_tls_cipher_suite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#minimum_tls_cipher_suite LinuxWebApp#minimum_tls_cipher_suite}
 
 ---
 
@@ -5413,7 +5401,7 @@ MinimumTlsVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#minimum_tls_version LinuxWebApp#minimum_tls_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#minimum_tls_version LinuxWebApp#minimum_tls_version}.
 
 ---
 
@@ -5425,7 +5413,7 @@ RemoteDebuggingEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#remote_debugging_enabled LinuxWebApp#remote_debugging_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#remote_debugging_enabled LinuxWebApp#remote_debugging_enabled}.
 
 ---
 
@@ -5437,7 +5425,7 @@ RemoteDebuggingVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#remote_debugging_version LinuxWebApp#remote_debugging_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#remote_debugging_version LinuxWebApp#remote_debugging_version}.
 
 ---
 
@@ -5451,7 +5439,7 @@ ScmIpRestriction interface{}
 
 scm_ip_restriction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#scm_ip_restriction LinuxWebApp#scm_ip_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#scm_ip_restriction LinuxWebApp#scm_ip_restriction}
 
 ---
 
@@ -5463,7 +5451,7 @@ ScmIpRestrictionDefaultAction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#scm_ip_restriction_default_action LinuxWebApp#scm_ip_restriction_default_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#scm_ip_restriction_default_action LinuxWebApp#scm_ip_restriction_default_action}.
 
 ---
 
@@ -5475,7 +5463,7 @@ ScmMinimumTlsVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#scm_minimum_tls_version LinuxWebApp#scm_minimum_tls_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#scm_minimum_tls_version LinuxWebApp#scm_minimum_tls_version}.
 
 ---
 
@@ -5487,7 +5475,7 @@ ScmUseMainIpRestriction interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#scm_use_main_ip_restriction LinuxWebApp#scm_use_main_ip_restriction}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#scm_use_main_ip_restriction LinuxWebApp#scm_use_main_ip_restriction}.
 
 ---
 
@@ -5499,7 +5487,7 @@ Use32BitWorker interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#use_32_bit_worker LinuxWebApp#use_32_bit_worker}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#use_32_bit_worker LinuxWebApp#use_32_bit_worker}.
 
 ---
 
@@ -5511,9 +5499,9 @@ VnetRouteAllEnabled interface{}
 
 - *Type:* interface{}
 
-Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`.
+Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#vnet_route_all_enabled LinuxWebApp#vnet_route_all_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#vnet_route_all_enabled LinuxWebApp#vnet_route_all_enabled}
 
 ---
 
@@ -5525,7 +5513,7 @@ WebsocketsEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#websockets_enabled LinuxWebApp#websockets_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#websockets_enabled LinuxWebApp#websockets_enabled}.
 
 ---
 
@@ -5537,7 +5525,7 @@ WorkerCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#worker_count LinuxWebApp#worker_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#worker_count LinuxWebApp#worker_count}.
 
 ---
 
@@ -5568,18 +5556,18 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.dockerImageName">DockerImageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#docker_image_name LinuxWebApp#docker_image_name}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.dockerRegistryPassword">DockerRegistryPassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#docker_registry_password LinuxWebApp#docker_registry_password}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.dockerRegistryUrl">DockerRegistryUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#docker_registry_url LinuxWebApp#docker_registry_url}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.dockerRegistryUsername">DockerRegistryUsername</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#docker_registry_username LinuxWebApp#docker_registry_username}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.dotnetVersion">DotnetVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#dotnet_version LinuxWebApp#dotnet_version}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.goVersion">GoVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#go_version LinuxWebApp#go_version}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.javaServer">JavaServer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#java_server LinuxWebApp#java_server}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.javaServerVersion">JavaServerVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#java_server_version LinuxWebApp#java_server_version}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.javaVersion">JavaVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#java_version LinuxWebApp#java_version}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.nodeVersion">NodeVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#node_version LinuxWebApp#node_version}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.phpVersion">PhpVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#php_version LinuxWebApp#php_version}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.pythonVersion">PythonVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#python_version LinuxWebApp#python_version}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.dockerImageName">DockerImageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#docker_image_name LinuxWebApp#docker_image_name}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.dockerRegistryPassword">DockerRegistryPassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#docker_registry_password LinuxWebApp#docker_registry_password}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.dockerRegistryUrl">DockerRegistryUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#docker_registry_url LinuxWebApp#docker_registry_url}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.dockerRegistryUsername">DockerRegistryUsername</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#docker_registry_username LinuxWebApp#docker_registry_username}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.dotnetVersion">DotnetVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#dotnet_version LinuxWebApp#dotnet_version}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.goVersion">GoVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#go_version LinuxWebApp#go_version}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.javaServer">JavaServer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#java_server LinuxWebApp#java_server}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.javaServerVersion">JavaServerVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#java_server_version LinuxWebApp#java_server_version}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.javaVersion">JavaVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#java_version LinuxWebApp#java_version}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.nodeVersion">NodeVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#node_version LinuxWebApp#node_version}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.phpVersion">PhpVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#php_version LinuxWebApp#php_version}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigApplicationStack.property.pythonVersion">PythonVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#python_version LinuxWebApp#python_version}. |
 
 ---
 
@@ -5591,7 +5579,7 @@ DockerImageName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#docker_image_name LinuxWebApp#docker_image_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#docker_image_name LinuxWebApp#docker_image_name}.
 
 ---
 
@@ -5603,7 +5591,7 @@ DockerRegistryPassword *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#docker_registry_password LinuxWebApp#docker_registry_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#docker_registry_password LinuxWebApp#docker_registry_password}.
 
 ---
 
@@ -5615,7 +5603,7 @@ DockerRegistryUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#docker_registry_url LinuxWebApp#docker_registry_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#docker_registry_url LinuxWebApp#docker_registry_url}.
 
 ---
 
@@ -5627,7 +5615,7 @@ DockerRegistryUsername *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#docker_registry_username LinuxWebApp#docker_registry_username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#docker_registry_username LinuxWebApp#docker_registry_username}.
 
 ---
 
@@ -5639,7 +5627,7 @@ DotnetVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#dotnet_version LinuxWebApp#dotnet_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#dotnet_version LinuxWebApp#dotnet_version}.
 
 ---
 
@@ -5651,7 +5639,7 @@ GoVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#go_version LinuxWebApp#go_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#go_version LinuxWebApp#go_version}.
 
 ---
 
@@ -5663,7 +5651,7 @@ JavaServer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#java_server LinuxWebApp#java_server}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#java_server LinuxWebApp#java_server}.
 
 ---
 
@@ -5675,7 +5663,7 @@ JavaServerVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#java_server_version LinuxWebApp#java_server_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#java_server_version LinuxWebApp#java_server_version}.
 
 ---
 
@@ -5687,7 +5675,7 @@ JavaVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#java_version LinuxWebApp#java_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#java_version LinuxWebApp#java_version}.
 
 ---
 
@@ -5699,7 +5687,7 @@ NodeVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#node_version LinuxWebApp#node_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#node_version LinuxWebApp#node_version}.
 
 ---
 
@@ -5711,7 +5699,7 @@ PhpVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#php_version LinuxWebApp#php_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#php_version LinuxWebApp#php_version}.
 
 ---
 
@@ -5723,7 +5711,7 @@ PythonVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#python_version LinuxWebApp#python_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#python_version LinuxWebApp#python_version}.
 
 ---
 
@@ -5759,7 +5747,7 @@ Action LinuxWebAppSiteConfigAutoHealSettingAction
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#action LinuxWebApp#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#action LinuxWebApp#action}
 
 ---
 
@@ -5773,7 +5761,7 @@ Trigger LinuxWebAppSiteConfigAutoHealSettingTrigger
 
 trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#trigger LinuxWebApp#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#trigger LinuxWebApp#trigger}
 
 ---
 
@@ -5794,8 +5782,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingAction.property.actionType">ActionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#action_type LinuxWebApp#action_type}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingAction.property.minimumProcessExecutionTime">MinimumProcessExecutionTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#minimum_process_execution_time LinuxWebApp#minimum_process_execution_time}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingAction.property.actionType">ActionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#action_type LinuxWebApp#action_type}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingAction.property.minimumProcessExecutionTime">MinimumProcessExecutionTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#minimum_process_execution_time LinuxWebApp#minimum_process_execution_time}. |
 
 ---
 
@@ -5807,7 +5795,7 @@ ActionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#action_type LinuxWebApp#action_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#action_type LinuxWebApp#action_type}.
 
 ---
 
@@ -5819,7 +5807,7 @@ MinimumProcessExecutionTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#minimum_process_execution_time LinuxWebApp#minimum_process_execution_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#minimum_process_execution_time LinuxWebApp#minimum_process_execution_time}.
 
 ---
 
@@ -5859,7 +5847,7 @@ Requests LinuxWebAppSiteConfigAutoHealSettingTriggerRequests
 
 requests block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#requests LinuxWebApp#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#requests LinuxWebApp#requests}
 
 ---
 
@@ -5873,7 +5861,7 @@ SlowRequest LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequest
 
 slow_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#slow_request LinuxWebApp#slow_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#slow_request LinuxWebApp#slow_request}
 
 ---
 
@@ -5887,7 +5875,7 @@ SlowRequestWithPath interface{}
 
 slow_request_with_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#slow_request_with_path LinuxWebApp#slow_request_with_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#slow_request_with_path LinuxWebApp#slow_request_with_path}
 
 ---
 
@@ -5901,7 +5889,7 @@ StatusCode interface{}
 
 status_code block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#status_code LinuxWebApp#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#status_code LinuxWebApp#status_code}
 
 ---
 
@@ -5922,8 +5910,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerRequests.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#count LinuxWebApp#count}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerRequests.property.interval">Interval</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerRequests.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#count LinuxWebApp#count}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerRequests.property.interval">Interval</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}. |
 
 ---
 
@@ -5935,7 +5923,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#count LinuxWebApp#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#count LinuxWebApp#count}.
 
 ---
 
@@ -5947,7 +5935,7 @@ Interval *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}.
 
 ---
 
@@ -5969,9 +5957,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequest.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#count LinuxWebApp#count}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequest.property.interval">Interval</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequest.property.timeTaken">TimeTaken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#time_taken LinuxWebApp#time_taken}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequest.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#count LinuxWebApp#count}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequest.property.interval">Interval</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequest.property.timeTaken">TimeTaken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#time_taken LinuxWebApp#time_taken}. |
 
 ---
 
@@ -5983,7 +5971,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#count LinuxWebApp#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#count LinuxWebApp#count}.
 
 ---
 
@@ -5995,7 +5983,7 @@ Interval *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}.
 
 ---
 
@@ -6007,7 +5995,7 @@ TimeTaken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#time_taken LinuxWebApp#time_taken}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#time_taken LinuxWebApp#time_taken}.
 
 ---
 
@@ -6030,10 +6018,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#count LinuxWebApp#count}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath.property.interval">Interval</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath.property.timeTaken">TimeTaken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#time_taken LinuxWebApp#time_taken}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#path LinuxWebApp#path}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#count LinuxWebApp#count}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath.property.interval">Interval</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath.property.timeTaken">TimeTaken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#time_taken LinuxWebApp#time_taken}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#path LinuxWebApp#path}. |
 
 ---
 
@@ -6045,7 +6033,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#count LinuxWebApp#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#count LinuxWebApp#count}.
 
 ---
 
@@ -6057,7 +6045,7 @@ Interval *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}.
 
 ---
 
@@ -6069,7 +6057,7 @@ TimeTaken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#time_taken LinuxWebApp#time_taken}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#time_taken LinuxWebApp#time_taken}.
 
 ---
 
@@ -6081,7 +6069,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#path LinuxWebApp#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#path LinuxWebApp#path}.
 
 ---
 
@@ -6106,12 +6094,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#count LinuxWebApp#count}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode.property.interval">Interval</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode.property.statusCodeRange">StatusCodeRange</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#status_code_range LinuxWebApp#status_code_range}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#path LinuxWebApp#path}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode.property.subStatus">SubStatus</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#sub_status LinuxWebApp#sub_status}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode.property.win32StatusCode">Win32StatusCode</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#win32_status_code LinuxWebApp#win32_status_code}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#count LinuxWebApp#count}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode.property.interval">Interval</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode.property.statusCodeRange">StatusCodeRange</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#status_code_range LinuxWebApp#status_code_range}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#path LinuxWebApp#path}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode.property.subStatus">SubStatus</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#sub_status LinuxWebApp#sub_status}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode.property.win32StatusCode">Win32StatusCode</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#win32_status_code LinuxWebApp#win32_status_code}. |
 
 ---
 
@@ -6123,7 +6111,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#count LinuxWebApp#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#count LinuxWebApp#count}.
 
 ---
 
@@ -6135,7 +6123,7 @@ Interval *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}.
 
 ---
 
@@ -6147,7 +6135,7 @@ StatusCodeRange *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#status_code_range LinuxWebApp#status_code_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#status_code_range LinuxWebApp#status_code_range}.
 
 ---
 
@@ -6159,7 +6147,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#path LinuxWebApp#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#path LinuxWebApp#path}.
 
 ---
 
@@ -6171,7 +6159,7 @@ SubStatus *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#sub_status LinuxWebApp#sub_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#sub_status LinuxWebApp#sub_status}.
 
 ---
 
@@ -6183,7 +6171,7 @@ Win32StatusCode *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#win32_status_code LinuxWebApp#win32_status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#win32_status_code LinuxWebApp#win32_status_code}.
 
 ---
 
@@ -6204,8 +6192,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigCors.property.allowedOrigins">AllowedOrigins</a></code> | <code>*[]*string</code> | Specifies a list of origins that should be allowed to make cross-origin calls. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigCors.property.supportCredentials">SupportCredentials</a></code> | <code>interface{}</code> | Are credentials allowed in CORS requests? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigCors.property.allowedOrigins">AllowedOrigins</a></code> | <code>*[]*string</code> | A list of origins that should be allowed to make cross-origin calls. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigCors.property.supportCredentials">SupportCredentials</a></code> | <code>interface{}</code> | Are credentials allowed in CORS requests? |
 
 ---
 
@@ -6217,9 +6205,9 @@ AllowedOrigins *[]*string
 
 - *Type:* *[]*string
 
-Specifies a list of origins that should be allowed to make cross-origin calls.
+A list of origins that should be allowed to make cross-origin calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#allowed_origins LinuxWebApp#allowed_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#allowed_origins LinuxWebApp#allowed_origins}
 
 ---
 
@@ -6231,9 +6219,9 @@ SupportCredentials interface{}
 
 - *Type:* interface{}
 
-Are credentials allowed in CORS requests? Defaults to `false`.
+Are credentials allowed in CORS requests?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#support_credentials LinuxWebApp#support_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#support_credentials LinuxWebApp#support_credentials}
 
 ---
 
@@ -6260,9 +6248,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigIpRestriction.property.action">Action</a></code> | <code>*string</code> | The action to take. Possible values are `Allow` or `Deny`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigIpRestriction.property.action">Action</a></code> | <code>*string</code> | The action to take. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigIpRestriction.property.description">Description</a></code> | <code>*string</code> | The description of the IP restriction rule. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigIpRestriction.property.headers">Headers</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#headers LinuxWebApp#headers}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigIpRestriction.property.headers">Headers</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#headers LinuxWebApp#headers}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigIpRestriction.property.ipAddress">IpAddress</a></code> | <code>*string</code> | The CIDR notation of the IP or IP Range to match. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigIpRestriction.property.name">Name</a></code> | <code>*string</code> | The name which should be used for this `ip_restriction`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigIpRestriction.property.priority">Priority</a></code> | <code>*f64</code> | The priority value of this `ip_restriction`. |
@@ -6279,9 +6267,9 @@ Action *string
 
 - *Type:* *string
 
-The action to take. Possible values are `Allow` or `Deny`.
+The action to take.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#action LinuxWebApp#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#action LinuxWebApp#action}
 
 ---
 
@@ -6295,7 +6283,7 @@ Description *string
 
 The description of the IP restriction rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#description LinuxWebApp#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#description LinuxWebApp#description}
 
 ---
 
@@ -6307,7 +6295,7 @@ Headers interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#headers LinuxWebApp#headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#headers LinuxWebApp#headers}.
 
 ---
 
@@ -6321,9 +6309,9 @@ IpAddress *string
 
 The CIDR notation of the IP or IP Range to match.
 
-For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`
+For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#ip_address LinuxWebApp#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#ip_address LinuxWebApp#ip_address}
 
 ---
 
@@ -6337,7 +6325,7 @@ Name *string
 
 The name which should be used for this `ip_restriction`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#name LinuxWebApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#name LinuxWebApp#name}
 
 ---
 
@@ -6351,7 +6339,7 @@ Priority *f64
 
 The priority value of this `ip_restriction`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#priority LinuxWebApp#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#priority LinuxWebApp#priority}
 
 ---
 
@@ -6365,7 +6353,7 @@ ServiceTag *string
 
 The Service Tag used for this IP Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#service_tag LinuxWebApp#service_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#service_tag LinuxWebApp#service_tag}
 
 ---
 
@@ -6379,7 +6367,7 @@ VirtualNetworkSubnetId *string
 
 The Virtual Network Subnet ID used for this IP Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#virtual_network_subnet_id LinuxWebApp#virtual_network_subnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#virtual_network_subnet_id LinuxWebApp#virtual_network_subnet_id}
 
 ---
 
@@ -6402,10 +6390,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigIpRestrictionHeaders.property.xAzureFdid">XAzureFdid</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#x_azure_fdid LinuxWebApp#x_azure_fdid}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigIpRestrictionHeaders.property.xFdHealthProbe">XFdHealthProbe</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#x_fd_health_probe LinuxWebApp#x_fd_health_probe}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigIpRestrictionHeaders.property.xForwardedFor">XForwardedFor</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#x_forwarded_for LinuxWebApp#x_forwarded_for}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigIpRestrictionHeaders.property.xForwardedHost">XForwardedHost</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#x_forwarded_host LinuxWebApp#x_forwarded_host}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigIpRestrictionHeaders.property.xAzureFdid">XAzureFdid</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#x_azure_fdid LinuxWebApp#x_azure_fdid}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigIpRestrictionHeaders.property.xFdHealthProbe">XFdHealthProbe</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#x_fd_health_probe LinuxWebApp#x_fd_health_probe}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigIpRestrictionHeaders.property.xForwardedFor">XForwardedFor</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#x_forwarded_for LinuxWebApp#x_forwarded_for}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigIpRestrictionHeaders.property.xForwardedHost">XForwardedHost</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#x_forwarded_host LinuxWebApp#x_forwarded_host}. |
 
 ---
 
@@ -6417,7 +6405,7 @@ XAzureFdid *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#x_azure_fdid LinuxWebApp#x_azure_fdid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#x_azure_fdid LinuxWebApp#x_azure_fdid}.
 
 ---
 
@@ -6429,7 +6417,7 @@ XFdHealthProbe *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#x_fd_health_probe LinuxWebApp#x_fd_health_probe}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#x_fd_health_probe LinuxWebApp#x_fd_health_probe}.
 
 ---
 
@@ -6441,7 +6429,7 @@ XForwardedFor *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#x_forwarded_for LinuxWebApp#x_forwarded_for}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#x_forwarded_for LinuxWebApp#x_forwarded_for}.
 
 ---
 
@@ -6453,7 +6441,7 @@ XForwardedHost *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#x_forwarded_host LinuxWebApp#x_forwarded_host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#x_forwarded_host LinuxWebApp#x_forwarded_host}.
 
 ---
 
@@ -6480,9 +6468,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigScmIpRestriction.property.action">Action</a></code> | <code>*string</code> | The action to take. Possible values are `Allow` or `Deny`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigScmIpRestriction.property.action">Action</a></code> | <code>*string</code> | The action to take. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigScmIpRestriction.property.description">Description</a></code> | <code>*string</code> | The description of the IP restriction rule. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigScmIpRestriction.property.headers">Headers</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#headers LinuxWebApp#headers}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigScmIpRestriction.property.headers">Headers</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#headers LinuxWebApp#headers}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigScmIpRestriction.property.ipAddress">IpAddress</a></code> | <code>*string</code> | The CIDR notation of the IP or IP Range to match. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigScmIpRestriction.property.name">Name</a></code> | <code>*string</code> | The name which should be used for this `ip_restriction`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigScmIpRestriction.property.priority">Priority</a></code> | <code>*f64</code> | The priority value of this `ip_restriction`. |
@@ -6499,9 +6487,9 @@ Action *string
 
 - *Type:* *string
 
-The action to take. Possible values are `Allow` or `Deny`.
+The action to take.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#action LinuxWebApp#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#action LinuxWebApp#action}
 
 ---
 
@@ -6515,7 +6503,7 @@ Description *string
 
 The description of the IP restriction rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#description LinuxWebApp#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#description LinuxWebApp#description}
 
 ---
 
@@ -6527,7 +6515,7 @@ Headers interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#headers LinuxWebApp#headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#headers LinuxWebApp#headers}.
 
 ---
 
@@ -6541,9 +6529,9 @@ IpAddress *string
 
 The CIDR notation of the IP or IP Range to match.
 
-For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`
+For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#ip_address LinuxWebApp#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#ip_address LinuxWebApp#ip_address}
 
 ---
 
@@ -6557,7 +6545,7 @@ Name *string
 
 The name which should be used for this `ip_restriction`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#name LinuxWebApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#name LinuxWebApp#name}
 
 ---
 
@@ -6571,7 +6559,7 @@ Priority *f64
 
 The priority value of this `ip_restriction`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#priority LinuxWebApp#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#priority LinuxWebApp#priority}
 
 ---
 
@@ -6585,7 +6573,7 @@ ServiceTag *string
 
 The Service Tag used for this IP Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#service_tag LinuxWebApp#service_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#service_tag LinuxWebApp#service_tag}
 
 ---
 
@@ -6599,7 +6587,7 @@ VirtualNetworkSubnetId *string
 
 The Virtual Network Subnet ID used for this IP Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#virtual_network_subnet_id LinuxWebApp#virtual_network_subnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#virtual_network_subnet_id LinuxWebApp#virtual_network_subnet_id}
 
 ---
 
@@ -6622,10 +6610,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigScmIpRestrictionHeaders.property.xAzureFdid">XAzureFdid</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#x_azure_fdid LinuxWebApp#x_azure_fdid}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigScmIpRestrictionHeaders.property.xFdHealthProbe">XFdHealthProbe</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#x_fd_health_probe LinuxWebApp#x_fd_health_probe}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigScmIpRestrictionHeaders.property.xForwardedFor">XForwardedFor</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#x_forwarded_for LinuxWebApp#x_forwarded_for}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigScmIpRestrictionHeaders.property.xForwardedHost">XForwardedHost</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#x_forwarded_host LinuxWebApp#x_forwarded_host}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigScmIpRestrictionHeaders.property.xAzureFdid">XAzureFdid</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#x_azure_fdid LinuxWebApp#x_azure_fdid}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigScmIpRestrictionHeaders.property.xFdHealthProbe">XFdHealthProbe</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#x_fd_health_probe LinuxWebApp#x_fd_health_probe}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigScmIpRestrictionHeaders.property.xForwardedFor">XForwardedFor</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#x_forwarded_for LinuxWebApp#x_forwarded_for}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppSiteConfigScmIpRestrictionHeaders.property.xForwardedHost">XForwardedHost</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#x_forwarded_host LinuxWebApp#x_forwarded_host}. |
 
 ---
 
@@ -6637,7 +6625,7 @@ XAzureFdid *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#x_azure_fdid LinuxWebApp#x_azure_fdid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#x_azure_fdid LinuxWebApp#x_azure_fdid}.
 
 ---
 
@@ -6649,7 +6637,7 @@ XFdHealthProbe *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#x_fd_health_probe LinuxWebApp#x_fd_health_probe}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#x_fd_health_probe LinuxWebApp#x_fd_health_probe}.
 
 ---
 
@@ -6661,7 +6649,7 @@ XForwardedFor *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#x_forwarded_for LinuxWebApp#x_forwarded_for}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#x_forwarded_for LinuxWebApp#x_forwarded_for}.
 
 ---
 
@@ -6673,7 +6661,7 @@ XForwardedHost *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#x_forwarded_host LinuxWebApp#x_forwarded_host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#x_forwarded_host LinuxWebApp#x_forwarded_host}.
 
 ---
 
@@ -6707,8 +6695,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppStickySettings.property.appSettingNames">AppSettingNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#app_setting_names LinuxWebApp#app_setting_names}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppStickySettings.property.connectionStringNames">ConnectionStringNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#connection_string_names LinuxWebApp#connection_string_names}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppStickySettings.property.appSettingNames">AppSettingNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#app_setting_names LinuxWebApp#app_setting_names}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppStickySettings.property.connectionStringNames">ConnectionStringNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#connection_string_names LinuxWebApp#connection_string_names}. |
 
 ---
 
@@ -6720,7 +6708,7 @@ AppSettingNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#app_setting_names LinuxWebApp#app_setting_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#app_setting_names LinuxWebApp#app_setting_names}.
 
 ---
 
@@ -6732,7 +6720,7 @@ ConnectionStringNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#connection_string_names LinuxWebApp#connection_string_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#connection_string_names LinuxWebApp#connection_string_names}.
 
 ---
 
@@ -6757,12 +6745,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppStorageAccount.property.accessKey">AccessKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#access_key LinuxWebApp#access_key}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppStorageAccount.property.accountName">AccountName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#account_name LinuxWebApp#account_name}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppStorageAccount.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#name LinuxWebApp#name}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppStorageAccount.property.shareName">ShareName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#share_name LinuxWebApp#share_name}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppStorageAccount.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#type LinuxWebApp#type}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppStorageAccount.property.mountPath">MountPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#mount_path LinuxWebApp#mount_path}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppStorageAccount.property.accessKey">AccessKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#access_key LinuxWebApp#access_key}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppStorageAccount.property.accountName">AccountName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#account_name LinuxWebApp#account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppStorageAccount.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#name LinuxWebApp#name}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppStorageAccount.property.shareName">ShareName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#share_name LinuxWebApp#share_name}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppStorageAccount.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#type LinuxWebApp#type}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppStorageAccount.property.mountPath">MountPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#mount_path LinuxWebApp#mount_path}. |
 
 ---
 
@@ -6774,7 +6762,7 @@ AccessKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#access_key LinuxWebApp#access_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#access_key LinuxWebApp#access_key}.
 
 ---
 
@@ -6786,7 +6774,7 @@ AccountName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#account_name LinuxWebApp#account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#account_name LinuxWebApp#account_name}.
 
 ---
 
@@ -6798,7 +6786,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#name LinuxWebApp#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#name LinuxWebApp#name}.
 
 ---
 
@@ -6810,7 +6798,7 @@ ShareName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#share_name LinuxWebApp#share_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#share_name LinuxWebApp#share_name}.
 
 ---
 
@@ -6822,7 +6810,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#type LinuxWebApp#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#type LinuxWebApp#type}.
 
 ---
 
@@ -6834,7 +6822,7 @@ MountPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#mount_path LinuxWebApp#mount_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#mount_path LinuxWebApp#mount_path}.
 
 ---
 
@@ -6857,10 +6845,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v19/linuxwebapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#create LinuxWebApp#create}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#delete LinuxWebApp#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#read LinuxWebApp#read}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#update LinuxWebApp#update}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#create LinuxWebApp#create}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#delete LinuxWebApp#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#read LinuxWebApp#read}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxWebApp.LinuxWebAppTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#update LinuxWebApp#update}. |
 
 ---
 
@@ -6872,7 +6860,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#create LinuxWebApp#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#create LinuxWebApp#create}.
 
 ---
 
@@ -6884,7 +6872,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#delete LinuxWebApp#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#delete LinuxWebApp#delete}.
 
 ---
 
@@ -6896,7 +6884,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#read LinuxWebApp#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#read LinuxWebApp#read}.
 
 ---
 
@@ -6908,7 +6896,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/linux_web_app#update LinuxWebApp#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/linux_web_app#update LinuxWebApp#update}.
 
 ---
 

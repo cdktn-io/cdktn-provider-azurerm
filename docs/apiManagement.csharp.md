@@ -4,7 +4,7 @@
 
 ### ApiManagement <a name="ApiManagement" id="@cdktn/provider-azurerm.apiManagement.ApiManagement"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management azurerm_api_management}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management azurerm_api_management}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagement.ApiManagement.Initializer"></a>
 
@@ -799,7 +799,7 @@ The construct id used in the generated config for the ApiManagement to import.
 
 The id of the existing ApiManagement that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1719,12 +1719,12 @@ new ApiManagementAdditionalLocation {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementAdditionalLocation.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#location ApiManagement#location}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementAdditionalLocation.property.capacity">Capacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#capacity ApiManagement#capacity}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementAdditionalLocation.property.gatewayDisabled">GatewayDisabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#gateway_disabled ApiManagement#gateway_disabled}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementAdditionalLocation.property.publicIpAddressId">PublicIpAddressId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#public_ip_address_id ApiManagement#public_ip_address_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementAdditionalLocation.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#location ApiManagement#location}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementAdditionalLocation.property.capacity">Capacity</a></code> | <code>double</code> | The number of compute units in this region. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementAdditionalLocation.property.gatewayDisabled">GatewayDisabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Only valid for an API Management service deployed in multiple locations. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementAdditionalLocation.property.publicIpAddressId">PublicIpAddressId</a></code> | <code>string</code> | ID of a standard SKU IPv4 Public IP. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementAdditionalLocation.property.virtualNetworkConfiguration">VirtualNetworkConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementAdditionalLocationVirtualNetworkConfiguration">ApiManagementAdditionalLocationVirtualNetworkConfiguration</a></code> | virtual_network_configuration block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementAdditionalLocation.property.zones">Zones</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#zones ApiManagement#zones}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementAdditionalLocation.property.zones">Zones</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#zones ApiManagement#zones}. |
 
 ---
 
@@ -1736,7 +1736,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#location ApiManagement#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#location ApiManagement#location}.
 
 ---
 
@@ -1748,7 +1748,9 @@ public double Capacity { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#capacity ApiManagement#capacity}.
+The number of compute units in this region.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#capacity ApiManagement#capacity}
 
 ---
 
@@ -1760,7 +1762,11 @@ public bool|IResolvable GatewayDisabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#gateway_disabled ApiManagement#gateway_disabled}.
+Only valid for an API Management service deployed in multiple locations.
+
+This can be used to disable the gateway in this additional location.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#gateway_disabled ApiManagement#gateway_disabled}
 
 ---
 
@@ -1772,7 +1778,9 @@ public string PublicIpAddressId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#public_ip_address_id ApiManagement#public_ip_address_id}.
+ID of a standard SKU IPv4 Public IP.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#public_ip_address_id ApiManagement#public_ip_address_id}
 
 ---
 
@@ -1786,7 +1794,7 @@ public ApiManagementAdditionalLocationVirtualNetworkConfiguration VirtualNetwork
 
 virtual_network_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#virtual_network_configuration ApiManagement#virtual_network_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#virtual_network_configuration ApiManagement#virtual_network_configuration}
 
 ---
 
@@ -1798,7 +1806,7 @@ public string[] Zones { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#zones ApiManagement#zones}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#zones ApiManagement#zones}.
 
 ---
 
@@ -1818,7 +1826,7 @@ new ApiManagementAdditionalLocationVirtualNetworkConfiguration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementAdditionalLocationVirtualNetworkConfiguration.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#subnet_id ApiManagement#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementAdditionalLocationVirtualNetworkConfiguration.property.subnetId">SubnetId</a></code> | <code>string</code> | The ID of the subnet that will be used for the API Management. |
 
 ---
 
@@ -1830,7 +1838,9 @@ public string SubnetId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#subnet_id ApiManagement#subnet_id}.
+The ID of the subnet that will be used for the API Management.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#subnet_id ApiManagement#subnet_id}
 
 ---
 
@@ -1852,9 +1862,9 @@ new ApiManagementCertificate {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementCertificate.property.encodedCertificate">EncodedCertificate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#encoded_certificate ApiManagement#encoded_certificate}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementCertificate.property.storeName">StoreName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#store_name ApiManagement#store_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementCertificate.property.certificatePassword">CertificatePassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate_password ApiManagement#certificate_password}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementCertificate.property.encodedCertificate">EncodedCertificate</a></code> | <code>string</code> | The Base64 Encoded PFX or Base64 Encoded X.509 Certificate. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementCertificate.property.storeName">StoreName</a></code> | <code>string</code> | The name of the Certificate Store where this certificate should be stored. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementCertificate.property.certificatePassword">CertificatePassword</a></code> | <code>string</code> | The password for the certificate. |
 
 ---
 
@@ -1866,7 +1876,9 @@ public string EncodedCertificate { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#encoded_certificate ApiManagement#encoded_certificate}.
+The Base64 Encoded PFX or Base64 Encoded X.509 Certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#encoded_certificate ApiManagement#encoded_certificate}
 
 ---
 
@@ -1878,7 +1890,9 @@ public string StoreName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#store_name ApiManagement#store_name}.
+The name of the Certificate Store where this certificate should be stored.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#store_name ApiManagement#store_name}
 
 ---
 
@@ -1890,7 +1904,9 @@ public string CertificatePassword { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate_password ApiManagement#certificate_password}.
+The password for the certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#certificate_password ApiManagement#certificate_password}
 
 ---
 
@@ -1951,34 +1967,34 @@ new ApiManagementConfig {
 | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#location ApiManagement#location}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#name ApiManagement#name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.publisherEmail">PublisherEmail</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#publisher_email ApiManagement#publisher_email}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.publisherName">PublisherName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#publisher_name ApiManagement#publisher_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#resource_group_name ApiManagement#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.skuName">SkuName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#sku_name ApiManagement#sku_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#location ApiManagement#location}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#name ApiManagement#name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.publisherEmail">PublisherEmail</a></code> | <code>string</code> | The email of publisher/company. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.publisherName">PublisherName</a></code> | <code>string</code> | The name of publisher/company. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#resource_group_name ApiManagement#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.skuName">SkuName</a></code> | <code>string</code> | `sku_name` is a string consisting of two parts separated by an underscore(\_). |
 | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.additionalLocation">AdditionalLocation</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementAdditionalLocation">ApiManagementAdditionalLocation</a>[]</code> | additional_location block. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.certificate">Certificate</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementCertificate">ApiManagementCertificate</a>[]</code> | certificate block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.clientCertificateEnabled">ClientCertificateEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#client_certificate_enabled ApiManagement#client_certificate_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.clientCertificateEnabled">ClientCertificateEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Enforce a client certificate to be presented on each request to the gateway? |
 | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.delegation">Delegation</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementDelegation">ApiManagementDelegation</a></code> | delegation block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.gatewayDisabled">GatewayDisabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#gateway_disabled ApiManagement#gateway_disabled}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.gatewayDisabled">GatewayDisabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Disable the gateway in main region? This is only supported when `additional_location` is set. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.hostnameConfiguration">HostnameConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfiguration">ApiManagementHostnameConfiguration</a></code> | hostname_configuration block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#id ApiManagement#id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#id ApiManagement#id}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementIdentity">ApiManagementIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.minApiVersion">MinApiVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#min_api_version ApiManagement#min_api_version}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.notificationSenderEmail">NotificationSenderEmail</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#notification_sender_email ApiManagement#notification_sender_email}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.minApiVersion">MinApiVersion</a></code> | <code>string</code> | The version which the control plane API calls to API Management service are limited with version equal to or newer than. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.notificationSenderEmail">NotificationSenderEmail</a></code> | <code>string</code> | Email address from which the notification will be sent. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.protocols">Protocols</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementProtocols">ApiManagementProtocols</a></code> | protocols block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.publicIpAddressId">PublicIpAddressId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#public_ip_address_id ApiManagement#public_ip_address_id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.publicNetworkAccessEnabled">PublicNetworkAccessEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#public_network_access_enabled ApiManagement#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.publicIpAddressId">PublicIpAddressId</a></code> | <code>string</code> | ID of a standard SKU IPv4 Public IP. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.publicNetworkAccessEnabled">PublicNetworkAccessEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Is public access to the service allowed? |
 | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.security">Security</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity">ApiManagementSecurity</a></code> | security block. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.signIn">SignIn</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSignIn">ApiManagementSignIn</a></code> | sign_in block. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.signUp">SignUp</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSignUp">ApiManagementSignUp</a></code> | sign_up block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tags ApiManagement#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#tags ApiManagement#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.tenantAccess">TenantAccess</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementTenantAccess">ApiManagementTenantAccess</a></code> | tenant_access block. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementTimeouts">ApiManagementTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.virtualNetworkConfiguration">VirtualNetworkConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementVirtualNetworkConfiguration">ApiManagementVirtualNetworkConfiguration</a></code> | virtual_network_configuration block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.virtualNetworkType">VirtualNetworkType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#virtual_network_type ApiManagement#virtual_network_type}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.zones">Zones</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#zones ApiManagement#zones}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.virtualNetworkType">VirtualNetworkType</a></code> | <code>string</code> | The type of Virtual Network you want to use. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementConfig.property.zones">Zones</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#zones ApiManagement#zones}. |
 
 ---
 
@@ -2060,7 +2076,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#location ApiManagement#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#location ApiManagement#location}.
 
 ---
 
@@ -2072,7 +2088,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#name ApiManagement#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#name ApiManagement#name}.
 
 ---
 
@@ -2084,7 +2100,9 @@ public string PublisherEmail { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#publisher_email ApiManagement#publisher_email}.
+The email of publisher/company.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#publisher_email ApiManagement#publisher_email}
 
 ---
 
@@ -2096,7 +2114,9 @@ public string PublisherName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#publisher_name ApiManagement#publisher_name}.
+The name of publisher/company.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#publisher_name ApiManagement#publisher_name}
 
 ---
 
@@ -2108,7 +2128,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#resource_group_name ApiManagement#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#resource_group_name ApiManagement#resource_group_name}.
 
 ---
 
@@ -2120,7 +2140,11 @@ public string SkuName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#sku_name ApiManagement#sku_name}.
+`sku_name` is a string consisting of two parts separated by an underscore(\_).
+
+The first part is the `name`. The second part is the `capacity` (e.g. the number of deployed units of the `sku`), which must be a positive `integer` (e.g. `Developer_1`).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#sku_name ApiManagement#sku_name}
 
 ---
 
@@ -2134,7 +2158,7 @@ public IResolvable|ApiManagementAdditionalLocation[] AdditionalLocation { get; s
 
 additional_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#additional_location ApiManagement#additional_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#additional_location ApiManagement#additional_location}
 
 ---
 
@@ -2148,7 +2172,7 @@ public IResolvable|ApiManagementCertificate[] Certificate { get; set; }
 
 certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate ApiManagement#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#certificate ApiManagement#certificate}
 
 ---
 
@@ -2160,7 +2184,11 @@ public bool|IResolvable ClientCertificateEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#client_certificate_enabled ApiManagement#client_certificate_enabled}.
+Enforce a client certificate to be presented on each request to the gateway?
+
+This is only supported when SKU type is `Consumption`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#client_certificate_enabled ApiManagement#client_certificate_enabled}
 
 ---
 
@@ -2174,7 +2202,7 @@ public ApiManagementDelegation Delegation { get; set; }
 
 delegation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#delegation ApiManagement#delegation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#delegation ApiManagement#delegation}
 
 ---
 
@@ -2186,7 +2214,9 @@ public bool|IResolvable GatewayDisabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#gateway_disabled ApiManagement#gateway_disabled}.
+Disable the gateway in main region? This is only supported when `additional_location` is set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#gateway_disabled ApiManagement#gateway_disabled}
 
 ---
 
@@ -2200,7 +2230,7 @@ public ApiManagementHostnameConfiguration HostnameConfiguration { get; set; }
 
 hostname_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#hostname_configuration ApiManagement#hostname_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#hostname_configuration ApiManagement#hostname_configuration}
 
 ---
 
@@ -2212,7 +2242,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#id ApiManagement#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#id ApiManagement#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2229,7 +2259,7 @@ public ApiManagementIdentity Identity { get; set; }
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#identity ApiManagement#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#identity ApiManagement#identity}
 
 ---
 
@@ -2241,7 +2271,9 @@ public string MinApiVersion { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#min_api_version ApiManagement#min_api_version}.
+The version which the control plane API calls to API Management service are limited with version equal to or newer than.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#min_api_version ApiManagement#min_api_version}
 
 ---
 
@@ -2253,7 +2285,9 @@ public string NotificationSenderEmail { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#notification_sender_email ApiManagement#notification_sender_email}.
+Email address from which the notification will be sent.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#notification_sender_email ApiManagement#notification_sender_email}
 
 ---
 
@@ -2267,7 +2301,7 @@ public ApiManagementProtocols Protocols { get; set; }
 
 protocols block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#protocols ApiManagement#protocols}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#protocols ApiManagement#protocols}
 
 ---
 
@@ -2279,7 +2313,9 @@ public string PublicIpAddressId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#public_ip_address_id ApiManagement#public_ip_address_id}.
+ID of a standard SKU IPv4 Public IP.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#public_ip_address_id ApiManagement#public_ip_address_id}
 
 ---
 
@@ -2291,7 +2327,9 @@ public bool|IResolvable PublicNetworkAccessEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#public_network_access_enabled ApiManagement#public_network_access_enabled}.
+Is public access to the service allowed?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#public_network_access_enabled ApiManagement#public_network_access_enabled}
 
 ---
 
@@ -2305,7 +2343,7 @@ public ApiManagementSecurity Security { get; set; }
 
 security block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#security ApiManagement#security}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#security ApiManagement#security}
 
 ---
 
@@ -2319,7 +2357,7 @@ public ApiManagementSignIn SignIn { get; set; }
 
 sign_in block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#sign_in ApiManagement#sign_in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#sign_in ApiManagement#sign_in}
 
 ---
 
@@ -2333,7 +2371,7 @@ public ApiManagementSignUp SignUp { get; set; }
 
 sign_up block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#sign_up ApiManagement#sign_up}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#sign_up ApiManagement#sign_up}
 
 ---
 
@@ -2345,7 +2383,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tags ApiManagement#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#tags ApiManagement#tags}.
 
 ---
 
@@ -2359,7 +2397,7 @@ public ApiManagementTenantAccess TenantAccess { get; set; }
 
 tenant_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tenant_access ApiManagement#tenant_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#tenant_access ApiManagement#tenant_access}
 
 ---
 
@@ -2373,7 +2411,7 @@ public ApiManagementTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#timeouts ApiManagement#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#timeouts ApiManagement#timeouts}
 
 ---
 
@@ -2387,7 +2425,7 @@ public ApiManagementVirtualNetworkConfiguration VirtualNetworkConfiguration { ge
 
 virtual_network_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#virtual_network_configuration ApiManagement#virtual_network_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#virtual_network_configuration ApiManagement#virtual_network_configuration}
 
 ---
 
@@ -2399,7 +2437,9 @@ public string VirtualNetworkType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#virtual_network_type ApiManagement#virtual_network_type}.
+The type of Virtual Network you want to use.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#virtual_network_type ApiManagement#virtual_network_type}
 
 ---
 
@@ -2411,7 +2451,7 @@ public string[] Zones { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#zones ApiManagement#zones}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#zones ApiManagement#zones}.
 
 ---
 
@@ -2434,10 +2474,10 @@ new ApiManagementDelegation {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementDelegation.property.subscriptionsEnabled">SubscriptionsEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#subscriptions_enabled ApiManagement#subscriptions_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementDelegation.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#url ApiManagement#url}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementDelegation.property.userRegistrationEnabled">UserRegistrationEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#user_registration_enabled ApiManagement#user_registration_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementDelegation.property.validationKey">ValidationKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#validation_key ApiManagement#validation_key}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementDelegation.property.subscriptionsEnabled">SubscriptionsEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should subscription requests be delegated to an external URL? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementDelegation.property.url">Url</a></code> | <code>string</code> | The delegation URL. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementDelegation.property.userRegistrationEnabled">UserRegistrationEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should user registration requests be delegated to an external URL? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementDelegation.property.validationKey">ValidationKey</a></code> | <code>string</code> | A base64-encoded validation key to validate, that a request is coming from Azure API Management. |
 
 ---
 
@@ -2449,7 +2489,9 @@ public bool|IResolvable SubscriptionsEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#subscriptions_enabled ApiManagement#subscriptions_enabled}.
+Should subscription requests be delegated to an external URL?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#subscriptions_enabled ApiManagement#subscriptions_enabled}
 
 ---
 
@@ -2461,7 +2503,9 @@ public string Url { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#url ApiManagement#url}.
+The delegation URL.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#url ApiManagement#url}
 
 ---
 
@@ -2473,7 +2517,9 @@ public bool|IResolvable UserRegistrationEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#user_registration_enabled ApiManagement#user_registration_enabled}.
+Should user registration requests be delegated to an external URL?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#user_registration_enabled ApiManagement#user_registration_enabled}
 
 ---
 
@@ -2485,7 +2531,9 @@ public string ValidationKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#validation_key ApiManagement#validation_key}.
+A base64-encoded validation key to validate, that a request is coming from Azure API Management.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#validation_key ApiManagement#validation_key}
 
 ---
 
@@ -2527,7 +2575,7 @@ public IResolvable|ApiManagementHostnameConfigurationDeveloperPortal[] Developer
 
 developer_portal block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#developer_portal ApiManagement#developer_portal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#developer_portal ApiManagement#developer_portal}
 
 ---
 
@@ -2541,7 +2589,7 @@ public IResolvable|ApiManagementHostnameConfigurationManagement[] Management { g
 
 management block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#management ApiManagement#management}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#management ApiManagement#management}
 
 ---
 
@@ -2555,7 +2603,7 @@ public IResolvable|ApiManagementHostnameConfigurationPortal[] Portal { get; set;
 
 portal block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#portal ApiManagement#portal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#portal ApiManagement#portal}
 
 ---
 
@@ -2569,7 +2617,7 @@ public IResolvable|ApiManagementHostnameConfigurationProxy[] Proxy { get; set; }
 
 proxy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#proxy ApiManagement#proxy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#proxy ApiManagement#proxy}
 
 ---
 
@@ -2583,7 +2631,7 @@ public IResolvable|ApiManagementHostnameConfigurationScm[] Scm { get; set; }
 
 scm block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#scm ApiManagement#scm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#scm ApiManagement#scm}
 
 ---
 
@@ -2608,12 +2656,12 @@ new ApiManagementHostnameConfigurationDeveloperPortal {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationDeveloperPortal.property.hostName">HostName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#host_name ApiManagement#host_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationDeveloperPortal.property.certificate">Certificate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate ApiManagement#certificate}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationDeveloperPortal.property.certificatePassword">CertificatePassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate_password ApiManagement#certificate_password}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationDeveloperPortal.property.keyVaultCertificateId">KeyVaultCertificateId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#key_vault_certificate_id ApiManagement#key_vault_certificate_id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationDeveloperPortal.property.negotiateClientCertificate">NegotiateClientCertificate</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#negotiate_client_certificate ApiManagement#negotiate_client_certificate}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationDeveloperPortal.property.sslKeyvaultIdentityClientId">SslKeyvaultIdentityClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#ssl_keyvault_identity_client_id ApiManagement#ssl_keyvault_identity_client_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationDeveloperPortal.property.hostName">HostName</a></code> | <code>string</code> | The host name to use. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationDeveloperPortal.property.certificate">Certificate</a></code> | <code>string</code> | The Base64-encoded certificate. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationDeveloperPortal.property.certificatePassword">CertificatePassword</a></code> | <code>string</code> | The password associated with the certificate provided above. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationDeveloperPortal.property.keyVaultCertificateId">KeyVaultCertificateId</a></code> | <code>string</code> | The ID of the Key Vault Secret containing the SSL Certificate, which must be of the type `application/x-pkcs12`. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationDeveloperPortal.property.negotiateClientCertificate">NegotiateClientCertificate</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should Client Certificate Negotiation be enabled for this Hostname? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationDeveloperPortal.property.sslKeyvaultIdentityClientId">SslKeyvaultIdentityClientId</a></code> | <code>string</code> | The Managed Service Identity Client ID, which has `GET` access to the Key Vault containing the SSL certificate. |
 
 ---
 
@@ -2625,7 +2673,9 @@ public string HostName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#host_name ApiManagement#host_name}.
+The host name to use.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#host_name ApiManagement#host_name}
 
 ---
 
@@ -2637,7 +2687,9 @@ public string Certificate { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate ApiManagement#certificate}.
+The Base64-encoded certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#certificate ApiManagement#certificate}
 
 ---
 
@@ -2649,7 +2701,9 @@ public string CertificatePassword { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate_password ApiManagement#certificate_password}.
+The password associated with the certificate provided above.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#certificate_password ApiManagement#certificate_password}
 
 ---
 
@@ -2661,7 +2715,9 @@ public string KeyVaultCertificateId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#key_vault_certificate_id ApiManagement#key_vault_certificate_id}.
+The ID of the Key Vault Secret containing the SSL Certificate, which must be of the type `application/x-pkcs12`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#key_vault_certificate_id ApiManagement#key_vault_certificate_id}
 
 ---
 
@@ -2673,7 +2729,9 @@ public bool|IResolvable NegotiateClientCertificate { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#negotiate_client_certificate ApiManagement#negotiate_client_certificate}.
+Should Client Certificate Negotiation be enabled for this Hostname?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#negotiate_client_certificate ApiManagement#negotiate_client_certificate}
 
 ---
 
@@ -2685,7 +2743,9 @@ public string SslKeyvaultIdentityClientId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#ssl_keyvault_identity_client_id ApiManagement#ssl_keyvault_identity_client_id}.
+The Managed Service Identity Client ID, which has `GET` access to the Key Vault containing the SSL certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#ssl_keyvault_identity_client_id ApiManagement#ssl_keyvault_identity_client_id}
 
 ---
 
@@ -2710,12 +2770,12 @@ new ApiManagementHostnameConfigurationManagement {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationManagement.property.hostName">HostName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#host_name ApiManagement#host_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationManagement.property.certificate">Certificate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate ApiManagement#certificate}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationManagement.property.certificatePassword">CertificatePassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate_password ApiManagement#certificate_password}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationManagement.property.keyVaultCertificateId">KeyVaultCertificateId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#key_vault_certificate_id ApiManagement#key_vault_certificate_id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationManagement.property.negotiateClientCertificate">NegotiateClientCertificate</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#negotiate_client_certificate ApiManagement#negotiate_client_certificate}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationManagement.property.sslKeyvaultIdentityClientId">SslKeyvaultIdentityClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#ssl_keyvault_identity_client_id ApiManagement#ssl_keyvault_identity_client_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationManagement.property.hostName">HostName</a></code> | <code>string</code> | The host name to use. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationManagement.property.certificate">Certificate</a></code> | <code>string</code> | The Base64-encoded certificate. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationManagement.property.certificatePassword">CertificatePassword</a></code> | <code>string</code> | The password associated with the certificate provided above. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationManagement.property.keyVaultCertificateId">KeyVaultCertificateId</a></code> | <code>string</code> | The ID of the Key Vault Secret containing the SSL Certificate, which must be of the type `application/x-pkcs12`. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationManagement.property.negotiateClientCertificate">NegotiateClientCertificate</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should Client Certificate Negotiation be enabled for this Hostname? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationManagement.property.sslKeyvaultIdentityClientId">SslKeyvaultIdentityClientId</a></code> | <code>string</code> | The Managed Service Identity Client ID, which has `GET` access to the Key Vault containing the SSL certificate. |
 
 ---
 
@@ -2727,7 +2787,9 @@ public string HostName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#host_name ApiManagement#host_name}.
+The host name to use.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#host_name ApiManagement#host_name}
 
 ---
 
@@ -2739,7 +2801,9 @@ public string Certificate { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate ApiManagement#certificate}.
+The Base64-encoded certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#certificate ApiManagement#certificate}
 
 ---
 
@@ -2751,7 +2815,9 @@ public string CertificatePassword { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate_password ApiManagement#certificate_password}.
+The password associated with the certificate provided above.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#certificate_password ApiManagement#certificate_password}
 
 ---
 
@@ -2763,7 +2829,9 @@ public string KeyVaultCertificateId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#key_vault_certificate_id ApiManagement#key_vault_certificate_id}.
+The ID of the Key Vault Secret containing the SSL Certificate, which must be of the type `application/x-pkcs12`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#key_vault_certificate_id ApiManagement#key_vault_certificate_id}
 
 ---
 
@@ -2775,7 +2843,9 @@ public bool|IResolvable NegotiateClientCertificate { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#negotiate_client_certificate ApiManagement#negotiate_client_certificate}.
+Should Client Certificate Negotiation be enabled for this Hostname?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#negotiate_client_certificate ApiManagement#negotiate_client_certificate}
 
 ---
 
@@ -2787,7 +2857,9 @@ public string SslKeyvaultIdentityClientId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#ssl_keyvault_identity_client_id ApiManagement#ssl_keyvault_identity_client_id}.
+The Managed Service Identity Client ID, which has `GET` access to the Key Vault containing the SSL certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#ssl_keyvault_identity_client_id ApiManagement#ssl_keyvault_identity_client_id}
 
 ---
 
@@ -2812,12 +2884,12 @@ new ApiManagementHostnameConfigurationPortal {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationPortal.property.hostName">HostName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#host_name ApiManagement#host_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationPortal.property.certificate">Certificate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate ApiManagement#certificate}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationPortal.property.certificatePassword">CertificatePassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate_password ApiManagement#certificate_password}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationPortal.property.keyVaultCertificateId">KeyVaultCertificateId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#key_vault_certificate_id ApiManagement#key_vault_certificate_id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationPortal.property.negotiateClientCertificate">NegotiateClientCertificate</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#negotiate_client_certificate ApiManagement#negotiate_client_certificate}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationPortal.property.sslKeyvaultIdentityClientId">SslKeyvaultIdentityClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#ssl_keyvault_identity_client_id ApiManagement#ssl_keyvault_identity_client_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationPortal.property.hostName">HostName</a></code> | <code>string</code> | The host name to use. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationPortal.property.certificate">Certificate</a></code> | <code>string</code> | The Base64-encoded certificate. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationPortal.property.certificatePassword">CertificatePassword</a></code> | <code>string</code> | The password associated with the certificate provided above. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationPortal.property.keyVaultCertificateId">KeyVaultCertificateId</a></code> | <code>string</code> | The ID of the Key Vault Secret containing the SSL Certificate, which must be of the type `application/x-pkcs12`. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationPortal.property.negotiateClientCertificate">NegotiateClientCertificate</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should Client Certificate Negotiation be enabled for this Hostname? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationPortal.property.sslKeyvaultIdentityClientId">SslKeyvaultIdentityClientId</a></code> | <code>string</code> | The Managed Service Identity Client ID, which has `GET` access to the Key Vault containing the SSL certificate. |
 
 ---
 
@@ -2829,7 +2901,9 @@ public string HostName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#host_name ApiManagement#host_name}.
+The host name to use.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#host_name ApiManagement#host_name}
 
 ---
 
@@ -2841,7 +2915,9 @@ public string Certificate { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate ApiManagement#certificate}.
+The Base64-encoded certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#certificate ApiManagement#certificate}
 
 ---
 
@@ -2853,7 +2929,9 @@ public string CertificatePassword { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate_password ApiManagement#certificate_password}.
+The password associated with the certificate provided above.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#certificate_password ApiManagement#certificate_password}
 
 ---
 
@@ -2865,7 +2943,9 @@ public string KeyVaultCertificateId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#key_vault_certificate_id ApiManagement#key_vault_certificate_id}.
+The ID of the Key Vault Secret containing the SSL Certificate, which must be of the type `application/x-pkcs12`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#key_vault_certificate_id ApiManagement#key_vault_certificate_id}
 
 ---
 
@@ -2877,7 +2957,9 @@ public bool|IResolvable NegotiateClientCertificate { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#negotiate_client_certificate ApiManagement#negotiate_client_certificate}.
+Should Client Certificate Negotiation be enabled for this Hostname?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#negotiate_client_certificate ApiManagement#negotiate_client_certificate}
 
 ---
 
@@ -2889,7 +2971,9 @@ public string SslKeyvaultIdentityClientId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#ssl_keyvault_identity_client_id ApiManagement#ssl_keyvault_identity_client_id}.
+The Managed Service Identity Client ID, which has `GET` access to the Key Vault containing the SSL certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#ssl_keyvault_identity_client_id ApiManagement#ssl_keyvault_identity_client_id}
 
 ---
 
@@ -2915,13 +2999,13 @@ new ApiManagementHostnameConfigurationProxy {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationProxy.property.hostName">HostName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#host_name ApiManagement#host_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationProxy.property.certificate">Certificate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate ApiManagement#certificate}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationProxy.property.certificatePassword">CertificatePassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate_password ApiManagement#certificate_password}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationProxy.property.defaultSslBinding">DefaultSslBinding</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#default_ssl_binding ApiManagement#default_ssl_binding}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationProxy.property.keyVaultCertificateId">KeyVaultCertificateId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#key_vault_certificate_id ApiManagement#key_vault_certificate_id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationProxy.property.negotiateClientCertificate">NegotiateClientCertificate</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#negotiate_client_certificate ApiManagement#negotiate_client_certificate}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationProxy.property.sslKeyvaultIdentityClientId">SslKeyvaultIdentityClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#ssl_keyvault_identity_client_id ApiManagement#ssl_keyvault_identity_client_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationProxy.property.hostName">HostName</a></code> | <code>string</code> | The host name to use. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationProxy.property.certificate">Certificate</a></code> | <code>string</code> | The Base64-encoded certificate. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationProxy.property.certificatePassword">CertificatePassword</a></code> | <code>string</code> | The password associated with the certificate provided above. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationProxy.property.defaultSslBinding">DefaultSslBinding</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#default_ssl_binding ApiManagement#default_ssl_binding}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationProxy.property.keyVaultCertificateId">KeyVaultCertificateId</a></code> | <code>string</code> | The ID of the Key Vault Secret containing the SSL Certificate, which must be of the type `application/x-pkcs12`. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationProxy.property.negotiateClientCertificate">NegotiateClientCertificate</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should Client Certificate Negotiation be enabled for this Hostname? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationProxy.property.sslKeyvaultIdentityClientId">SslKeyvaultIdentityClientId</a></code> | <code>string</code> | The Managed Service Identity Client ID, which has `GET` access to the Key Vault containing the SSL certificate. |
 
 ---
 
@@ -2933,7 +3017,9 @@ public string HostName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#host_name ApiManagement#host_name}.
+The host name to use.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#host_name ApiManagement#host_name}
 
 ---
 
@@ -2945,7 +3031,9 @@ public string Certificate { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate ApiManagement#certificate}.
+The Base64-encoded certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#certificate ApiManagement#certificate}
 
 ---
 
@@ -2957,7 +3045,9 @@ public string CertificatePassword { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate_password ApiManagement#certificate_password}.
+The password associated with the certificate provided above.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#certificate_password ApiManagement#certificate_password}
 
 ---
 
@@ -2969,7 +3059,7 @@ public bool|IResolvable DefaultSslBinding { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#default_ssl_binding ApiManagement#default_ssl_binding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#default_ssl_binding ApiManagement#default_ssl_binding}.
 
 ---
 
@@ -2981,7 +3071,9 @@ public string KeyVaultCertificateId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#key_vault_certificate_id ApiManagement#key_vault_certificate_id}.
+The ID of the Key Vault Secret containing the SSL Certificate, which must be of the type `application/x-pkcs12`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#key_vault_certificate_id ApiManagement#key_vault_certificate_id}
 
 ---
 
@@ -2993,7 +3085,9 @@ public bool|IResolvable NegotiateClientCertificate { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#negotiate_client_certificate ApiManagement#negotiate_client_certificate}.
+Should Client Certificate Negotiation be enabled for this Hostname?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#negotiate_client_certificate ApiManagement#negotiate_client_certificate}
 
 ---
 
@@ -3005,7 +3099,9 @@ public string SslKeyvaultIdentityClientId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#ssl_keyvault_identity_client_id ApiManagement#ssl_keyvault_identity_client_id}.
+The Managed Service Identity Client ID, which has `GET` access to the Key Vault containing the SSL certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#ssl_keyvault_identity_client_id ApiManagement#ssl_keyvault_identity_client_id}
 
 ---
 
@@ -3030,12 +3126,12 @@ new ApiManagementHostnameConfigurationScm {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationScm.property.hostName">HostName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#host_name ApiManagement#host_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationScm.property.certificate">Certificate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate ApiManagement#certificate}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationScm.property.certificatePassword">CertificatePassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate_password ApiManagement#certificate_password}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationScm.property.keyVaultCertificateId">KeyVaultCertificateId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#key_vault_certificate_id ApiManagement#key_vault_certificate_id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationScm.property.negotiateClientCertificate">NegotiateClientCertificate</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#negotiate_client_certificate ApiManagement#negotiate_client_certificate}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationScm.property.sslKeyvaultIdentityClientId">SslKeyvaultIdentityClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#ssl_keyvault_identity_client_id ApiManagement#ssl_keyvault_identity_client_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationScm.property.hostName">HostName</a></code> | <code>string</code> | The host name to use. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationScm.property.certificate">Certificate</a></code> | <code>string</code> | The Base64-encoded certificate. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationScm.property.certificatePassword">CertificatePassword</a></code> | <code>string</code> | The password associated with the certificate provided above. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationScm.property.keyVaultCertificateId">KeyVaultCertificateId</a></code> | <code>string</code> | The ID of the Key Vault Secret containing the SSL Certificate, which must be of the type `application/x-pkcs12`. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationScm.property.negotiateClientCertificate">NegotiateClientCertificate</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should Client Certificate Negotiation be enabled for this Hostname? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementHostnameConfigurationScm.property.sslKeyvaultIdentityClientId">SslKeyvaultIdentityClientId</a></code> | <code>string</code> | The Managed Service Identity Client ID, which has `GET` access to the Key Vault containing the SSL certificate. |
 
 ---
 
@@ -3047,7 +3143,9 @@ public string HostName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#host_name ApiManagement#host_name}.
+The host name to use.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#host_name ApiManagement#host_name}
 
 ---
 
@@ -3059,7 +3157,9 @@ public string Certificate { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate ApiManagement#certificate}.
+The Base64-encoded certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#certificate ApiManagement#certificate}
 
 ---
 
@@ -3071,7 +3171,9 @@ public string CertificatePassword { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#certificate_password ApiManagement#certificate_password}.
+The password associated with the certificate provided above.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#certificate_password ApiManagement#certificate_password}
 
 ---
 
@@ -3083,7 +3185,9 @@ public string KeyVaultCertificateId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#key_vault_certificate_id ApiManagement#key_vault_certificate_id}.
+The ID of the Key Vault Secret containing the SSL Certificate, which must be of the type `application/x-pkcs12`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#key_vault_certificate_id ApiManagement#key_vault_certificate_id}
 
 ---
 
@@ -3095,7 +3199,9 @@ public bool|IResolvable NegotiateClientCertificate { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#negotiate_client_certificate ApiManagement#negotiate_client_certificate}.
+Should Client Certificate Negotiation be enabled for this Hostname?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#negotiate_client_certificate ApiManagement#negotiate_client_certificate}
 
 ---
 
@@ -3107,7 +3213,9 @@ public string SslKeyvaultIdentityClientId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#ssl_keyvault_identity_client_id ApiManagement#ssl_keyvault_identity_client_id}.
+The Managed Service Identity Client ID, which has `GET` access to the Key Vault containing the SSL certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#ssl_keyvault_identity_client_id ApiManagement#ssl_keyvault_identity_client_id}
 
 ---
 
@@ -3128,8 +3236,8 @@ new ApiManagementIdentity {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#type ApiManagement#type}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#identity_ids ApiManagement#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#type ApiManagement#type}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#identity_ids ApiManagement#identity_ids}. |
 
 ---
 
@@ -3141,7 +3249,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#type ApiManagement#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#type ApiManagement#type}.
 
 ---
 
@@ -3153,7 +3261,7 @@ public string[] IdentityIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#identity_ids ApiManagement#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#identity_ids ApiManagement#identity_ids}.
 
 ---
 
@@ -3173,7 +3281,7 @@ new ApiManagementProtocols {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementProtocols.property.http2Enabled">Http2Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#http2_enabled ApiManagement#http2_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementProtocols.property.http2Enabled">Http2Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should HTTP/2 be supported by the API Management Service? |
 
 ---
 
@@ -3185,7 +3293,9 @@ public bool|IResolvable Http2Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#http2_enabled ApiManagement#http2_enabled}.
+Should HTTP/2 be supported by the API Management Service?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#http2_enabled ApiManagement#http2_enabled}
 
 ---
 
@@ -3221,23 +3331,23 @@ new ApiManagementSecurity {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.backendSsl30Enabled">BackendSsl30Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#backend_ssl30_enabled ApiManagement#backend_ssl30_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.backendTls10Enabled">BackendTls10Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#backend_tls10_enabled ApiManagement#backend_tls10_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.backendTls11Enabled">BackendTls11Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#backend_tls11_enabled ApiManagement#backend_tls11_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.frontendSsl30Enabled">FrontendSsl30Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#frontend_ssl30_enabled ApiManagement#frontend_ssl30_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.frontendTls10Enabled">FrontendTls10Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#frontend_tls10_enabled ApiManagement#frontend_tls10_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.frontendTls11Enabled">FrontendTls11Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#frontend_tls11_enabled ApiManagement#frontend_tls11_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tlsEcdheEcdsaWithAes128CbcShaCiphersEnabled">TlsEcdheEcdsaWithAes128CbcShaCiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tls_ecdhe_ecdsa_with_aes128_cbc_sha_ciphers_enabled ApiManagement#tls_ecdhe_ecdsa_with_aes128_cbc_sha_ciphers_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tlsEcdheEcdsaWithAes256CbcShaCiphersEnabled">TlsEcdheEcdsaWithAes256CbcShaCiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tls_ecdhe_ecdsa_with_aes256_cbc_sha_ciphers_enabled ApiManagement#tls_ecdhe_ecdsa_with_aes256_cbc_sha_ciphers_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tlsEcdheRsaWithAes128CbcShaCiphersEnabled">TlsEcdheRsaWithAes128CbcShaCiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tls_ecdhe_rsa_with_aes128_cbc_sha_ciphers_enabled ApiManagement#tls_ecdhe_rsa_with_aes128_cbc_sha_ciphers_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tlsEcdheRsaWithAes256CbcShaCiphersEnabled">TlsEcdheRsaWithAes256CbcShaCiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tls_ecdhe_rsa_with_aes256_cbc_sha_ciphers_enabled ApiManagement#tls_ecdhe_rsa_with_aes256_cbc_sha_ciphers_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tlsRsaWithAes128CbcSha256CiphersEnabled">TlsRsaWithAes128CbcSha256CiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tls_rsa_with_aes128_cbc_sha256_ciphers_enabled ApiManagement#tls_rsa_with_aes128_cbc_sha256_ciphers_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tlsRsaWithAes128CbcShaCiphersEnabled">TlsRsaWithAes128CbcShaCiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tls_rsa_with_aes128_cbc_sha_ciphers_enabled ApiManagement#tls_rsa_with_aes128_cbc_sha_ciphers_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tlsRsaWithAes128GcmSha256CiphersEnabled">TlsRsaWithAes128GcmSha256CiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tls_rsa_with_aes128_gcm_sha256_ciphers_enabled ApiManagement#tls_rsa_with_aes128_gcm_sha256_ciphers_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tlsRsaWithAes256CbcSha256CiphersEnabled">TlsRsaWithAes256CbcSha256CiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tls_rsa_with_aes256_cbc_sha256_ciphers_enabled ApiManagement#tls_rsa_with_aes256_cbc_sha256_ciphers_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tlsRsaWithAes256CbcShaCiphersEnabled">TlsRsaWithAes256CbcShaCiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tls_rsa_with_aes256_cbc_sha_ciphers_enabled ApiManagement#tls_rsa_with_aes256_cbc_sha_ciphers_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tlsRsaWithAes256GcmSha384CiphersEnabled">TlsRsaWithAes256GcmSha384CiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tls_rsa_with_aes256_gcm_sha384_ciphers_enabled ApiManagement#tls_rsa_with_aes256_gcm_sha384_ciphers_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tripleDesCiphersEnabled">TripleDesCiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#triple_des_ciphers_enabled ApiManagement#triple_des_ciphers_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.backendSsl30Enabled">BackendSsl30Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should SSL 3.0 be enabled on the backend of the gateway? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.backendTls10Enabled">BackendTls10Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should TLS 1.0 be enabled on the backend of the gateway? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.backendTls11Enabled">BackendTls11Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should TLS 1.1 be enabled on the backend of the gateway? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.frontendSsl30Enabled">FrontendSsl30Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should SSL 3.0 be enabled on the frontend of the gateway? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.frontendTls10Enabled">FrontendTls10Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should TLS 1.0 be enabled on the frontend of the gateway? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.frontendTls11Enabled">FrontendTls11Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should TLS 1.1 be enabled on the frontend of the gateway? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tlsEcdheEcdsaWithAes128CbcShaCiphersEnabled">TlsEcdheEcdsaWithAes128CbcShaCiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the `TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA` cipher be enabled? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tlsEcdheEcdsaWithAes256CbcShaCiphersEnabled">TlsEcdheEcdsaWithAes256CbcShaCiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the `TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA` cipher be enabled? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tlsEcdheRsaWithAes128CbcShaCiphersEnabled">TlsEcdheRsaWithAes128CbcShaCiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA` cipher be enabled? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tlsEcdheRsaWithAes256CbcShaCiphersEnabled">TlsEcdheRsaWithAes256CbcShaCiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA` cipher be enabled? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tlsRsaWithAes128CbcSha256CiphersEnabled">TlsRsaWithAes128CbcSha256CiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the `TLS_RSA_WITH_AES_128_CBC_SHA256` cipher be enabled? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tlsRsaWithAes128CbcShaCiphersEnabled">TlsRsaWithAes128CbcShaCiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the `TLS_RSA_WITH_AES_128_CBC_SHA` cipher be enabled? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tlsRsaWithAes128GcmSha256CiphersEnabled">TlsRsaWithAes128GcmSha256CiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the `TLS_RSA_WITH_AES_128_GCM_SHA256` cipher be enabled? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tlsRsaWithAes256CbcSha256CiphersEnabled">TlsRsaWithAes256CbcSha256CiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the `TLS_RSA_WITH_AES_256_CBC_SHA256` cipher be enabled? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tlsRsaWithAes256CbcShaCiphersEnabled">TlsRsaWithAes256CbcShaCiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the `TLS_RSA_WITH_AES_256_CBC_SHA` cipher be enabled? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tlsRsaWithAes256GcmSha384CiphersEnabled">TlsRsaWithAes256GcmSha384CiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the `TLS_RSA_WITH_AES_256_GCM_SHA384` cipher be enabled? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSecurity.property.tripleDesCiphersEnabled">TripleDesCiphersEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the `TLS_RSA_WITH_3DES_EDE_CBC_SHA` cipher be enabled for alL TLS versions (1.0, 1.1 and 1.2)? |
 
 ---
 
@@ -3249,7 +3359,9 @@ public bool|IResolvable BackendSsl30Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#backend_ssl30_enabled ApiManagement#backend_ssl30_enabled}.
+Should SSL 3.0 be enabled on the backend of the gateway?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#backend_ssl30_enabled ApiManagement#backend_ssl30_enabled}
 
 ---
 
@@ -3261,7 +3373,9 @@ public bool|IResolvable BackendTls10Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#backend_tls10_enabled ApiManagement#backend_tls10_enabled}.
+Should TLS 1.0 be enabled on the backend of the gateway?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#backend_tls10_enabled ApiManagement#backend_tls10_enabled}
 
 ---
 
@@ -3273,7 +3387,9 @@ public bool|IResolvable BackendTls11Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#backend_tls11_enabled ApiManagement#backend_tls11_enabled}.
+Should TLS 1.1 be enabled on the backend of the gateway?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#backend_tls11_enabled ApiManagement#backend_tls11_enabled}
 
 ---
 
@@ -3285,7 +3401,9 @@ public bool|IResolvable FrontendSsl30Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#frontend_ssl30_enabled ApiManagement#frontend_ssl30_enabled}.
+Should SSL 3.0 be enabled on the frontend of the gateway?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#frontend_ssl30_enabled ApiManagement#frontend_ssl30_enabled}
 
 ---
 
@@ -3297,7 +3415,9 @@ public bool|IResolvable FrontendTls10Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#frontend_tls10_enabled ApiManagement#frontend_tls10_enabled}.
+Should TLS 1.0 be enabled on the frontend of the gateway?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#frontend_tls10_enabled ApiManagement#frontend_tls10_enabled}
 
 ---
 
@@ -3309,7 +3429,9 @@ public bool|IResolvable FrontendTls11Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#frontend_tls11_enabled ApiManagement#frontend_tls11_enabled}.
+Should TLS 1.1 be enabled on the frontend of the gateway?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#frontend_tls11_enabled ApiManagement#frontend_tls11_enabled}
 
 ---
 
@@ -3321,7 +3443,9 @@ public bool|IResolvable TlsEcdheEcdsaWithAes128CbcShaCiphersEnabled { get; set; 
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tls_ecdhe_ecdsa_with_aes128_cbc_sha_ciphers_enabled ApiManagement#tls_ecdhe_ecdsa_with_aes128_cbc_sha_ciphers_enabled}.
+Should the `TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA` cipher be enabled?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#tls_ecdhe_ecdsa_with_aes128_cbc_sha_ciphers_enabled ApiManagement#tls_ecdhe_ecdsa_with_aes128_cbc_sha_ciphers_enabled}
 
 ---
 
@@ -3333,7 +3457,9 @@ public bool|IResolvable TlsEcdheEcdsaWithAes256CbcShaCiphersEnabled { get; set; 
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tls_ecdhe_ecdsa_with_aes256_cbc_sha_ciphers_enabled ApiManagement#tls_ecdhe_ecdsa_with_aes256_cbc_sha_ciphers_enabled}.
+Should the `TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA` cipher be enabled?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#tls_ecdhe_ecdsa_with_aes256_cbc_sha_ciphers_enabled ApiManagement#tls_ecdhe_ecdsa_with_aes256_cbc_sha_ciphers_enabled}
 
 ---
 
@@ -3345,7 +3471,9 @@ public bool|IResolvable TlsEcdheRsaWithAes128CbcShaCiphersEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tls_ecdhe_rsa_with_aes128_cbc_sha_ciphers_enabled ApiManagement#tls_ecdhe_rsa_with_aes128_cbc_sha_ciphers_enabled}.
+Should the `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA` cipher be enabled?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#tls_ecdhe_rsa_with_aes128_cbc_sha_ciphers_enabled ApiManagement#tls_ecdhe_rsa_with_aes128_cbc_sha_ciphers_enabled}
 
 ---
 
@@ -3357,7 +3485,9 @@ public bool|IResolvable TlsEcdheRsaWithAes256CbcShaCiphersEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tls_ecdhe_rsa_with_aes256_cbc_sha_ciphers_enabled ApiManagement#tls_ecdhe_rsa_with_aes256_cbc_sha_ciphers_enabled}.
+Should the `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA` cipher be enabled?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#tls_ecdhe_rsa_with_aes256_cbc_sha_ciphers_enabled ApiManagement#tls_ecdhe_rsa_with_aes256_cbc_sha_ciphers_enabled}
 
 ---
 
@@ -3369,7 +3499,9 @@ public bool|IResolvable TlsRsaWithAes128CbcSha256CiphersEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tls_rsa_with_aes128_cbc_sha256_ciphers_enabled ApiManagement#tls_rsa_with_aes128_cbc_sha256_ciphers_enabled}.
+Should the `TLS_RSA_WITH_AES_128_CBC_SHA256` cipher be enabled?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#tls_rsa_with_aes128_cbc_sha256_ciphers_enabled ApiManagement#tls_rsa_with_aes128_cbc_sha256_ciphers_enabled}
 
 ---
 
@@ -3381,7 +3513,9 @@ public bool|IResolvable TlsRsaWithAes128CbcShaCiphersEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tls_rsa_with_aes128_cbc_sha_ciphers_enabled ApiManagement#tls_rsa_with_aes128_cbc_sha_ciphers_enabled}.
+Should the `TLS_RSA_WITH_AES_128_CBC_SHA` cipher be enabled?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#tls_rsa_with_aes128_cbc_sha_ciphers_enabled ApiManagement#tls_rsa_with_aes128_cbc_sha_ciphers_enabled}
 
 ---
 
@@ -3393,7 +3527,9 @@ public bool|IResolvable TlsRsaWithAes128GcmSha256CiphersEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tls_rsa_with_aes128_gcm_sha256_ciphers_enabled ApiManagement#tls_rsa_with_aes128_gcm_sha256_ciphers_enabled}.
+Should the `TLS_RSA_WITH_AES_128_GCM_SHA256` cipher be enabled?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#tls_rsa_with_aes128_gcm_sha256_ciphers_enabled ApiManagement#tls_rsa_with_aes128_gcm_sha256_ciphers_enabled}
 
 ---
 
@@ -3405,7 +3541,9 @@ public bool|IResolvable TlsRsaWithAes256CbcSha256CiphersEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tls_rsa_with_aes256_cbc_sha256_ciphers_enabled ApiManagement#tls_rsa_with_aes256_cbc_sha256_ciphers_enabled}.
+Should the `TLS_RSA_WITH_AES_256_CBC_SHA256` cipher be enabled?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#tls_rsa_with_aes256_cbc_sha256_ciphers_enabled ApiManagement#tls_rsa_with_aes256_cbc_sha256_ciphers_enabled}
 
 ---
 
@@ -3417,7 +3555,9 @@ public bool|IResolvable TlsRsaWithAes256CbcShaCiphersEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tls_rsa_with_aes256_cbc_sha_ciphers_enabled ApiManagement#tls_rsa_with_aes256_cbc_sha_ciphers_enabled}.
+Should the `TLS_RSA_WITH_AES_256_CBC_SHA` cipher be enabled?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#tls_rsa_with_aes256_cbc_sha_ciphers_enabled ApiManagement#tls_rsa_with_aes256_cbc_sha_ciphers_enabled}
 
 ---
 
@@ -3429,7 +3569,9 @@ public bool|IResolvable TlsRsaWithAes256GcmSha384CiphersEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#tls_rsa_with_aes256_gcm_sha384_ciphers_enabled ApiManagement#tls_rsa_with_aes256_gcm_sha384_ciphers_enabled}.
+Should the `TLS_RSA_WITH_AES_256_GCM_SHA384` cipher be enabled?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#tls_rsa_with_aes256_gcm_sha384_ciphers_enabled ApiManagement#tls_rsa_with_aes256_gcm_sha384_ciphers_enabled}
 
 ---
 
@@ -3441,7 +3583,9 @@ public bool|IResolvable TripleDesCiphersEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#triple_des_ciphers_enabled ApiManagement#triple_des_ciphers_enabled}.
+Should the `TLS_RSA_WITH_3DES_EDE_CBC_SHA` cipher be enabled for alL TLS versions (1.0, 1.1 and 1.2)?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#triple_des_ciphers_enabled ApiManagement#triple_des_ciphers_enabled}
 
 ---
 
@@ -3461,7 +3605,7 @@ new ApiManagementSignIn {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSignIn.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#enabled ApiManagement#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSignIn.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should anonymous users be redirected to the sign in page? |
 
 ---
 
@@ -3473,7 +3617,9 @@ public bool|IResolvable Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#enabled ApiManagement#enabled}.
+Should anonymous users be redirected to the sign in page?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#enabled ApiManagement#enabled}
 
 ---
 
@@ -3494,7 +3640,7 @@ new ApiManagementSignUp {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSignUp.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#enabled ApiManagement#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSignUp.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Can users sign up on the development portal? |
 | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSignUp.property.termsOfService">TermsOfService</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSignUpTermsOfService">ApiManagementSignUpTermsOfService</a></code> | terms_of_service block. |
 
 ---
@@ -3507,7 +3653,9 @@ public bool|IResolvable Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#enabled ApiManagement#enabled}.
+Can users sign up on the development portal?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#enabled ApiManagement#enabled}
 
 ---
 
@@ -3521,7 +3669,7 @@ public ApiManagementSignUpTermsOfService TermsOfService { get; set; }
 
 terms_of_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#terms_of_service ApiManagement#terms_of_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#terms_of_service ApiManagement#terms_of_service}
 
 ---
 
@@ -3543,9 +3691,9 @@ new ApiManagementSignUpTermsOfService {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSignUpTermsOfService.property.consentRequired">ConsentRequired</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#consent_required ApiManagement#consent_required}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSignUpTermsOfService.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#enabled ApiManagement#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSignUpTermsOfService.property.text">Text</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#text ApiManagement#text}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSignUpTermsOfService.property.consentRequired">ConsentRequired</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the user be asked for consent during sign up? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSignUpTermsOfService.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should Terms of Service be displayed during sign up? |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementSignUpTermsOfService.property.text">Text</a></code> | <code>string</code> | The Terms of Service which users are required to agree to in order to sign up. |
 
 ---
 
@@ -3557,7 +3705,9 @@ public bool|IResolvable ConsentRequired { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#consent_required ApiManagement#consent_required}.
+Should the user be asked for consent during sign up?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#consent_required ApiManagement#consent_required}
 
 ---
 
@@ -3569,7 +3719,9 @@ public bool|IResolvable Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#enabled ApiManagement#enabled}.
+Should Terms of Service be displayed during sign up?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#enabled ApiManagement#enabled}
 
 ---
 
@@ -3581,7 +3733,9 @@ public string Text { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#text ApiManagement#text}.
+The Terms of Service which users are required to agree to in order to sign up.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#text ApiManagement#text}
 
 ---
 
@@ -3601,7 +3755,7 @@ new ApiManagementTenantAccess {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementTenantAccess.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#enabled ApiManagement#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementTenantAccess.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the access to the management API be enabled? |
 
 ---
 
@@ -3613,7 +3767,9 @@ public bool|IResolvable Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#enabled ApiManagement#enabled}.
+Should the access to the management API be enabled?
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#enabled ApiManagement#enabled}
 
 ---
 
@@ -3636,10 +3792,10 @@ new ApiManagementTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#create ApiManagement#create}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#delete ApiManagement#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#read ApiManagement#read}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#update ApiManagement#update}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#create ApiManagement#create}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#delete ApiManagement#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#read ApiManagement#read}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#update ApiManagement#update}. |
 
 ---
 
@@ -3651,7 +3807,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#create ApiManagement#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#create ApiManagement#create}.
 
 ---
 
@@ -3663,7 +3819,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#delete ApiManagement#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#delete ApiManagement#delete}.
 
 ---
 
@@ -3675,7 +3831,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#read ApiManagement#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#read ApiManagement#read}.
 
 ---
 
@@ -3687,7 +3843,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#update ApiManagement#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#update ApiManagement#update}.
 
 ---
 
@@ -3707,7 +3863,7 @@ new ApiManagementVirtualNetworkConfiguration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementVirtualNetworkConfiguration.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#subnet_id ApiManagement#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagement.ApiManagementVirtualNetworkConfiguration.property.subnetId">SubnetId</a></code> | <code>string</code> | The ID of the subnet that will be used for the API Management. |
 
 ---
 
@@ -3719,7 +3875,9 @@ public string SubnetId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.14.0/docs/resources/api_management#subnet_id ApiManagement#subnet_id}.
+The ID of the subnet that will be used for the API Management.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.15.0/docs/resources/api_management#subnet_id ApiManagement#subnet_id}
 
 ---
 
